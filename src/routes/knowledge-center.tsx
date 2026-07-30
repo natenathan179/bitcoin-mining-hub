@@ -31,6 +31,22 @@ export const Route = createFileRoute("/knowledge-center")({
 
 const ARTICLES = [
   {
+    id: "how-to-mine-bitcoin",
+    img: articleFarm,
+    tag: "Beginner Guides",
+    date: "July 28, 2026",
+    title: "How to Mine Bitcoin in 2026: A Step-by-Step Guide",
+    paras: [
+      "Mining bitcoin means running purpose-built hardware that repeatedly hashes candidate blocks until one meets the network's difficulty target. In 2026 that hardware is exclusively ASIC — application-specific integrated circuits built for SHA-256. GPUs, laptops and phones cannot compete and never will again, so the honest starting point for anyone asking how to mine bitcoin is: buy an ASIC, or buy hosted hashrate from someone who runs them.",
+      "Step one is arithmetic, not shopping. Find your electricity rate per kilowatt hour including delivery charges. A modern 3.5 kW miner running non-stop consumes about 84 kWh a day, so at $0.10/kWh it costs roughly $8.40 a day to run. Compare that against the daily revenue the machine's hashrate earns at current difficulty and price. If the gap is not comfortably positive today, it will not survive the next difficulty adjustment.",
+      "Step two is choosing hardware to match that number. Cheap power (under six cents) makes previous-generation machines such as the S19j Pro+ or Whatsminer M50S attractive because the purchase price is low and payback is quick. Expensive power (over ten cents) demands current-generation efficiency in the 12 to 18 J/TH band — the S21 series, the M60 series, and their hydro variants. Home miners with a spare 240 V circuit should also weigh noise: air-cooled units run at 72 to 80 dB, while hydro and immersion machines are near-silent.",
+      "Step three is the electrical install. Almost every ASIC needs 200-240 V at 16 to 20 amps, not a standard household outlet. Have an electrician confirm your panel capacity, install a dedicated breaker and the correct receptacle, and plan intake and exhaust airflow so hot air never recirculates back into the machine.",
+      "Step four is joining a pool. Solo mining a block with one machine is a lottery ticket; pools pay steady proportional rewards instead. Create a pool account, add a worker, then enter the pool's stratum URL, your worker name and password in the miner's web interface. Point payouts at a wallet you control — never at an exchange deposit address you cannot verify.",
+      "Step five is operating the machine. Watch hashrate against the rated figure, watch the temperature spread across hashboard sensors, keep firmware current, and clean dust quarterly. Track revenue against electricity weekly so you know your real margin rather than the one in a calculator.",
+      "If you would rather skip the electrical work entirely, hosting is the pragmatic route: we deploy your machine in a tier-grade North American facility at industrial power rates with 24/7 monitoring. Either way, send us your power cost and capacity and we will model the specific machines that make sense for you before you spend anything.",
+    ],
+  },
+  {
     id: "most-profitable-bitcoin-miners",
     img: articleProfit,
     tag: "Mining Guides",
