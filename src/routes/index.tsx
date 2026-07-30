@@ -37,7 +37,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { Stars } from "@/components/site/Stars";
 import { categoriesQuery, productsQuery, reviewsQuery } from "@/lib/data";
-import { submitToEmail } from "@/lib/site";
+import { submitToEmail, SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
   loader: ({ context }) => {
