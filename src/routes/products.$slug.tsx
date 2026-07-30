@@ -30,6 +30,32 @@ export const Route = createFileRoute("/products/$slug")({
     const description =
       p.short_description ||
       `Buy the ${p.name} ${p.brand} bitcoin miner with warranty, tested hashrate and worldwide shipping.`;
+    const url = `/products/${p.slug}`;
+    const image = p.images?.filter((i) => i?.startsWith("https://")) ?? [];
+    const price = p.sale_price ?? p.price;
+    const inStock = /out|sold/i.test(p.stock_status ?? "")
+      ? "https://schema.org/OutOfStock"
+      : "https://schema.org/InStock";
+    const productFaqs = [
+      {
+        q: `Is the ${p.name} new or used?`,
+        a: `This ${p.name} is supplied in ${p.condition || "tested"} condition. Every unit is bench tested before dispatch and ships with a measured hashrate report.`,
+      },
+      {
+        q: `What warranty comes with the ${p.name}?`,
+        a: "New miners carry the manufacturer warranty, normally 12 months. Refurbished and used units carry a 6 month Bitcoin Mining Depot warranty handled by our in-house repair lab.",
+      },
+      {
+        q: `How much power does the ${p.name} use?`,
+        a: p.power && p.power !== "-"
+          ? `The ${p.name} draws approximately ${p.power}${p.efficiency && p.efficiency !== "-" ? ` at an efficiency of ${p.efficiency}` : ""}. It requires a 200-240V circuit, not a standard residential outlet.`
+          : `The ${p.name} requires a 200-240V circuit rather than a standard residential outlet. Contact our team for the exact electrical requirements of your configuration.`,
+      },
+      {
+        q: `How is the ${p.name} shipped?`,
+        a: "In-stock units dispatch within one to three business days on insured, tracked freight with pre-filled customs paperwork. We ship to more than 100 countries.",
+      },
+    ];
     return {
       meta: [
         { title },
@@ -37,13 +63,116 @@ export const Route = createFileRoute("/products/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "product" },
+        { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
-        ...(p.images?.[0]?.startsWith("https://")
+        ...(image[0]
           ? [
-              { property: "og:image", content: p.images[0] },
-              { name: "twitter:image", content: p.images[0] },
+              { property: "og:image", content: image[0] },
+              { name: "twitter:image", content: image[0] },
             ]
           : []),
+      ],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: p.name,
+            sku: p.slug,
+            mpn: p.slug,
+            description,
+            ...(image.length ? { image } : {}),
+            brand: { "@type": "Brand", name: p.brand },
+            category: p.algorithm ? `ASIC Miner / ${p.algorithm}` : "ASIC Miner",
+            itemCondition: /new/i.test(p.condition ?? "")
+              ? "https://schema.org/NewCondition"
+              : "https://schema.org/RefurbishedCondition",
+            additionalProperty: [
+              ["Hashrate", p.hashrate],
+              ["Power draw", p.power],
+              ["Efficiency", p.efficiency],
+              ["Algorithm", p.algorithm],
+              ...Object.entries(p.specs ?? {}),
+            ]
+              .filter(([, v]) => v && v !== "-")
+              .map(([name, value]) => ({
+                "@type": "PropertyValue",
+                name,
+                value: String(value),
+              })),
+            offers: {
+              "@type": "Offer",
+              url,
+              priceCurrency: "USD",
+              price: price ? String(price) : "0",
+              availability: inStock,
+              itemCondition: /new/i.test(p.condition ?? "")
+                ? "https://schema.org/NewCondition"
+                : "https://schema.org/RefurbishedCondition",
+              seller: { "@type": "Organization", name: "Bitcoin Mining Depot" },
+              priceValidUntil: new Date(Date.now() + 1000 * 60 * 60 * 24 * 90)
+                .toISOString()
+                .slice(0, 10),
+              shippingDetails: {
+                "@type": "OfferShippingDetails",
+                shippingDestination: {
+                  "@type": "DefinedRegion",
+                  addressCountry: ["US", "CA", "GB", "AE", "AU"],
+                },
+                deliveryTime: {
+                  "@type": "ShippingDeliveryTime",
+                  handlingTime: {
+                    "@type": "QuantitativeValue",
+                    minValue: 1,
+                    maxValue: 3,
+                    unitCode: "DAY",
+                  },
+                  transitTime: {
+                    "@type": "QuantitativeValue",
+                    minValue: 2,
+                    maxValue: 12,
+                    unitCode: "DAY",
+                  },
+                },
+              },
+              hasMerchantReturnPolicy: {
+                "@type": "MerchantReturnPolicy",
+                applicableCountry: "US",
+                returnPolicyCategory:
+                  "https://schema.org/MerchantReturnFiniteReturnWindow",
+                merchantReturnDays: 30,
+                returnMethod: "https://schema.org/ReturnByMail",
+                returnFees: "https://schema.org/ReturnShippingFees",
+              },
+            },
+          }),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "/" },
+              { "@type": "ListItem", position: 2, name: "Shop", item: "/products" },
+              { "@type": "ListItem", position: 3, name: p.name, item: url },
+            ],
+          }),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: productFaqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        },
       ],
     };
   },
