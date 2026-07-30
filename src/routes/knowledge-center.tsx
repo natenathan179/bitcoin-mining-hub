@@ -22,7 +22,9 @@ export const Route = createFileRoute("/knowledge-center")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "/knowledge-center" },
     ],
+    links: [{ rel: "canonical", href: "/knowledge-center" }],
   }),
   component: KnowledgePage,
 });

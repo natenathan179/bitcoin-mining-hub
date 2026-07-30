@@ -26,7 +26,9 @@ export const Route = createFileRoute("/reviews")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "/reviews" },
     ],
+    links: [{ rel: "canonical", href: "/reviews" }],
   }),
   component: ReviewsPage,
 });

@@ -21,7 +21,9 @@ export const Route = createFileRoute("/repair-services")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "/repair-services" },
     ],
+    links: [{ rel: "canonical", href: "/repair-services" }],
   }),
   component: RepairPage,
 });

@@ -20,7 +20,9 @@ export const Route = createFileRoute("/wholesale")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "/wholesale" },
     ],
+    links: [{ rel: "canonical", href: "/wholesale" }],
   }),
   component: WholesalePage,
 });
