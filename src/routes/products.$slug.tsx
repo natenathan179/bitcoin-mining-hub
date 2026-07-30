@@ -450,8 +450,7 @@ function ProductDetail() {
         </div>
       </section>
 
-      {related.length > 0 && (
-        <section className="border-t border-border bg-card">
+      <section className="border-t border-border bg-card">
           <div className="mx-auto max-w-[860px] px-4 py-12">
             <h2 className="font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
               {product.name} — frequently asked questions
@@ -469,8 +468,7 @@ function ProductDetail() {
               ))}
             </Accordion>
           </div>
-        </section>
-      )}
+      </section>
 
       {related.length > 0 && (
         <section className="mx-auto max-w-[1280px] px-4 py-12">
