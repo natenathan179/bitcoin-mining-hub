@@ -6,11 +6,11 @@ import heroImg from "@/assets/hero-mining-facility.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Bitcoin Mining Depot | Enterprise Mining Hardware Supplier" },
+      { title: "About Bitcoin Mining Depot | ASIC Hardware Supplier" },
       {
         name: "description",
         content:
-          "Bitcoin Mining Depot supplies genuine ASIC miners, hosting and repair services to more than 10,000 customers in 100+ countries. Learn about our sourcing, testing and support standards.",
+          "We supply genuine ASIC miners, hosting and repairs to 10,000+ customers in 100+ countries. Learn our sourcing, testing and support standards.",
       },
       { property: "og:title", content: "About Bitcoin Mining Depot" },
       {
