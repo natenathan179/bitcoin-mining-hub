@@ -24,6 +24,50 @@ export const Route = createFileRoute("/repair-services")({
       { property: "og:url", content: "/repair-services" },
     ],
     links: [{ rel: "canonical", href: "/repair-services" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "ASIC Miner Repair Services",
+          serviceType: "ASIC Miner Repair",
+          description:
+            "Chip-level hashboard diagnosis and repair, control board replacement, PSU repair and fan service for Antminer, Whatsminer and Avalon ASIC miners.",
+          url: "/repair-services",
+          areaServed: "Worldwide",
+          provider: {
+            "@type": "LocalBusiness",
+            name: SITE.name,
+            url: SITE.url,
+            telephone: SITE.phone,
+            email: SITE.email,
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "3411 Silverside Rd",
+              addressLocality: "Wilmington",
+              addressRegion: "DE",
+              postalCode: "19810",
+              addressCountry: "US",
+            },
+          },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Repair services",
+            itemListElement: [
+              "Hashboard chip-level repair",
+              "Control board replacement",
+              "Power supply repair",
+              "Fan and cooling service",
+              "Full diagnostic and bench test",
+            ].map((name) => ({
+              "@type": "Offer",
+              itemOffered: { "@type": "Service", name },
+            })),
+          },
+        }),
+      },
+    ],
   }),
   component: RepairPage,
 });
