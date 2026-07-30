@@ -7,10 +7,13 @@ import { Stars } from "@/components/site/Stars";
 import { reviewsQuery } from "@/lib/data";
 
 export const Route = createFileRoute("/reviews")({
-  loader: ({ context }) => {
-    context.queryClient.ensureQueryData(reviewsQuery());
+  loader: async ({ context }) => {
+    const reviews = await context.queryClient.ensureQueryData(reviewsQuery());
+    const count = reviews.length;
+    const rating = count ? reviews.reduce((n, r) => n + r.rating, 0) / count : 0;
+    return { count, rating: Number(rating.toFixed(1)) };
   },
-  head: () => ({
+  head: ({ loaderData }) => ({
     meta: [
       { title: "Customer Reviews | Bitcoin Mining Depot" },
       {
@@ -26,7 +29,30 @@ export const Route = createFileRoute("/reviews")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "/reviews" },
     ],
+    links: [{ rel: "canonical", href: "/reviews" }],
+    scripts:
+      loaderData && loaderData.count > 0
+        ? [
+            {
+              type: "application/ld+json",
+              children: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                name: "Bitcoin Mining Depot",
+                url: "/",
+                aggregateRating: {
+                  "@type": "AggregateRating",
+                  ratingValue: String(loaderData.rating),
+                  bestRating: "5",
+                  worstRating: "1",
+                  reviewCount: String(loaderData.count),
+                },
+              }),
+            },
+          ]
+        : [],
   }),
   component: ReviewsPage,
 });

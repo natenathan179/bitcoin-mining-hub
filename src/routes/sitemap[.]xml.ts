@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
+import { createClient } from "@supabase/supabase-js";
 
 const BASE_URL = "https://bitcoinminingdepot.com";
 
@@ -29,6 +30,26 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/privacy", changefreq: "yearly", priority: "0.3" },
           { path: "/terms", changefreq: "yearly", priority: "0.3" },
         ];
+
+        try {
+          const supabase = createClient(
+            process.env.VITE_SUPABASE_URL ?? "",
+            process.env.VITE_SUPABASE_PUBLISHABLE_KEY ?? "",
+            { auth: { persistSession: false } },
+          );
+          const { data } = await supabase.from("products").select("slug");
+          for (const row of (data ?? []) as { slug: string }[]) {
+            if (row?.slug) {
+              entries.push({
+                path: `/products/${row.slug}`,
+                changefreq: "weekly",
+                priority: "0.8",
+              });
+            }
+          }
+        } catch {
+          // Product rows unavailable; serve the static routes only.
+        }
 
         const urls = entries.map((e) =>
           [

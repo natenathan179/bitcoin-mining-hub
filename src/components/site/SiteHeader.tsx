@@ -86,14 +86,23 @@ export function SiteHeader() {
                 <span className="block text-muted-foreground">Staff Access</span>
               </span>
             </Link>
-            <Link to="/cart" className="flex items-center gap-2 border-border pl-4 sm:border-l sm:pl-6">
+            <Link
+              to="/cart"
+              aria-label={`Cart, ${count} item${count === 1 ? "" : "s"}`}
+              className="flex items-center gap-2 border-border pl-4 sm:border-l sm:pl-6"
+            >
               <span className="relative">
                 <ShoppingCart className="h-6 w-6 text-charcoal" aria-hidden="true" />
-                <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-semibold text-primary-foreground">
+                <span
+                  aria-hidden="true"
+                  className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-primary text-[10px] font-semibold text-primary-foreground"
+                >
                   {count}
                 </span>
               </span>
-              <span className="hidden text-xs font-medium sm:block">Cart</span>
+              <span aria-hidden="true" className="hidden text-xs font-medium sm:block">
+                Cart
+              </span>
             </Link>
           </div>
         </div>

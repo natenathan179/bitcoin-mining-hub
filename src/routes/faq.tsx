@@ -75,7 +75,9 @@ export const Route = createFileRoute("/faq")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "/faq" },
     ],
+    links: [{ rel: "canonical", href: "/faq" }],
     scripts: [
       {
         type: "application/ld+json",

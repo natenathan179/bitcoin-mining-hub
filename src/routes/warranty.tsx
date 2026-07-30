@@ -18,7 +18,9 @@ export const Route = createFileRoute("/warranty")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "/warranty" },
     ],
+    links: [{ rel: "canonical", href: "/warranty" }],
   }),
   component: () => (
     <PolicyPage
