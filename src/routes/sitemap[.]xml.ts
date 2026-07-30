@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 
-// TODO: replace with your project URL once a project name or custom domain is set.
-const BASE_URL = "";
+const BASE_URL = "https://bitcoinminingdepot.com";
 
 interface SitemapEntry {
   path: string;
@@ -14,7 +13,22 @@ export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
-        const entries: SitemapEntry[] = [{ path: "/", changefreq: "weekly", priority: "1.0" }];
+        const entries: SitemapEntry[] = [
+          { path: "/", changefreq: "weekly", priority: "1.0" },
+          { path: "/products", changefreq: "daily", priority: "0.9" },
+          { path: "/wholesale", changefreq: "monthly", priority: "0.8" },
+          { path: "/hosting", changefreq: "monthly", priority: "0.8" },
+          { path: "/repair-services", changefreq: "monthly", priority: "0.8" },
+          { path: "/knowledge-center", changefreq: "weekly", priority: "0.7" },
+          { path: "/reviews", changefreq: "weekly", priority: "0.7" },
+          { path: "/about", changefreq: "yearly", priority: "0.6" },
+          { path: "/contact", changefreq: "yearly", priority: "0.6" },
+          { path: "/faq", changefreq: "monthly", priority: "0.6" },
+          { path: "/shipping-returns", changefreq: "yearly", priority: "0.4" },
+          { path: "/warranty", changefreq: "yearly", priority: "0.4" },
+          { path: "/privacy", changefreq: "yearly", priority: "0.3" },
+          { path: "/terms", changefreq: "yearly", priority: "0.3" },
+        ];
 
         const urls = entries.map((e) =>
           [
