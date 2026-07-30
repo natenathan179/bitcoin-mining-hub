@@ -451,6 +451,28 @@ function ProductDetail() {
       </section>
 
       {related.length > 0 && (
+        <section className="border-t border-border bg-card">
+          <div className="mx-auto max-w-[860px] px-4 py-12">
+            <h2 className="font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
+              {product.name} — frequently asked questions
+            </h2>
+            <Accordion type="single" collapsible className="mt-4 w-full">
+              {buildFaqs(product).map((f, i) => (
+                <AccordionItem key={f.q} value={`faq-${i}`}>
+                  <AccordionTrigger className="text-left font-semibold text-charcoal">
+                    {f.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                    {f.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </section>
+      )}
+
+      {related.length > 0 && (
         <section className="mx-auto max-w-[1280px] px-4 py-12">
           <h2 className="font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
             Related hardware
