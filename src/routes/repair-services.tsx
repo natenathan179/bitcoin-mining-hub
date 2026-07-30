@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { LeadForm } from "@/components/site/LeadForm";
+import { SITE } from "@/lib/site";
 import articleRepair from "@/assets/article-repair.jpg";
 
 export const Route = createFileRoute("/repair-services")({
