@@ -64,6 +64,60 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": `${SITE.url}/#business`,
+          name: SITE.name,
+          url: SITE.url,
+          telephone: SITE.phone,
+          email: SITE.email,
+          description:
+            "Supplier of genuine ASIC bitcoin miners with wholesale pricing, hosting, repair services and worldwide shipping.",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "3411 Silverside Rd",
+            addressLocality: "Wilmington",
+            addressRegion: "DE",
+            postalCode: "19810",
+            addressCountry: "US",
+          },
+          openingHoursSpecification: [
+            {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+              ],
+              opens: "09:00",
+              closes: "18:00",
+            },
+          ],
+          areaServed: "Worldwide",
+          priceRange: "$$$",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: SITE.name,
+          url: SITE.url,
+          potentialAction: {
+            "@type": "SearchAction",
+            target: `${SITE.url}/products?q={search_term_string}`,
+            "query-input": "required name=search_term_string",
+          },
+        }),
+      },
+    ],
   }),
   component: Index,
 });
