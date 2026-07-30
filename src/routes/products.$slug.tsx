@@ -12,6 +12,38 @@ import { formatPrice, SITE } from "@/lib/site";
 import { useCart } from "@/lib/cart";
 import minerBlack from "@/assets/miner-black.jpg";
 
+import type { Product } from "@/lib/data";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+function buildFaqs(p: Product) {
+  return [
+    {
+      q: `Is the ${p.name} new or used?`,
+      a: `This ${p.name} is supplied in ${p.condition || "tested"} condition. Every unit is bench tested before dispatch and ships with a measured hashrate report.`,
+    },
+    {
+      q: `What warranty comes with the ${p.name}?`,
+      a: "New miners carry the manufacturer warranty, normally 12 months. Refurbished and used units carry a 6 month Bitcoin Mining Depot warranty handled by our in-house repair lab.",
+    },
+    {
+      q: `How much power does the ${p.name} use?`,
+      a:
+        p.power && p.power !== "-"
+          ? `The ${p.name} draws approximately ${p.power}${p.efficiency && p.efficiency !== "-" ? ` at an efficiency of ${p.efficiency}` : ""}. It requires a 200-240V circuit, not a standard residential outlet.`
+          : `The ${p.name} requires a 200-240V circuit rather than a standard residential outlet. Contact our team for the exact electrical requirements of your configuration.`,
+    },
+    {
+      q: `How is the ${p.name} shipped?`,
+      a: "In-stock units dispatch within one to three business days on insured, tracked freight with pre-filled customs paperwork. We ship to more than 100 countries.",
+    },
+  ];
+}
+
 export const Route = createFileRoute("/products/$slug")({
   loader: async ({ context, params }) => {
     const product = await context.queryClient.ensureQueryData(productQuery(params.slug));
@@ -36,26 +68,7 @@ export const Route = createFileRoute("/products/$slug")({
     const inStock = /out|sold/i.test(p.stock_status ?? "")
       ? "https://schema.org/OutOfStock"
       : "https://schema.org/InStock";
-    const productFaqs = [
-      {
-        q: `Is the ${p.name} new or used?`,
-        a: `This ${p.name} is supplied in ${p.condition || "tested"} condition. Every unit is bench tested before dispatch and ships with a measured hashrate report.`,
-      },
-      {
-        q: `What warranty comes with the ${p.name}?`,
-        a: "New miners carry the manufacturer warranty, normally 12 months. Refurbished and used units carry a 6 month Bitcoin Mining Depot warranty handled by our in-house repair lab.",
-      },
-      {
-        q: `How much power does the ${p.name} use?`,
-        a: p.power && p.power !== "-"
-          ? `The ${p.name} draws approximately ${p.power}${p.efficiency && p.efficiency !== "-" ? ` at an efficiency of ${p.efficiency}` : ""}. It requires a 200-240V circuit, not a standard residential outlet.`
-          : `The ${p.name} requires a 200-240V circuit rather than a standard residential outlet. Contact our team for the exact electrical requirements of your configuration.`,
-      },
-      {
-        q: `How is the ${p.name} shipped?`,
-        a: "In-stock units dispatch within one to three business days on insured, tracked freight with pre-filled customs paperwork. We ship to more than 100 countries.",
-      },
-    ];
+    const productFaqs = buildFaqs(p);
     return {
       meta: [
         { title },
