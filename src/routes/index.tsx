@@ -253,16 +253,20 @@ function Index() {
   return (
     <SiteLayout>
       {/* Hero */}
-      <section className="relative isolate overflow-hidden bg-navy">
+      <section className="relative isolate flex min-h-[420px] items-center overflow-hidden bg-navy md:min-h-[520px] lg:min-h-[600px]">
         <img
           src={heroImg}
           alt="Rows of enterprise bitcoin mining machines in a data center"
           width={1920}
           height={912}
-          className="absolute inset-0 h-full w-full object-cover opacity-90"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+          sizes="100vw"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_45%] opacity-90"
         />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
-        <div className="relative mx-auto max-w-[1280px] px-4 py-20 md:py-28">
+        <div className="relative mx-auto w-full max-w-[1280px] px-4 py-16 md:py-24">
           <h1 className="max-w-2xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-charcoal-foreground md:text-6xl">
             Enterprise Bitcoin Mining Machines
             <span className="block text-ice">For Every Scale</span>
