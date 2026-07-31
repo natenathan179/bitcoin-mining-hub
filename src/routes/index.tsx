@@ -308,7 +308,7 @@ function Index() {
             />
             <div
               aria-hidden="true"
-              className="absolute left-1/2 top-1/2 h-[62%] w-[62%] -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-[3rem] bg-primary/85 blur-[0.5px]"
+              className="absolute left-1/2 top-1/2 h-[68%] w-[68%] -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-[2rem] bg-primary/85"
             />
             <img
               src={heroMiner}
