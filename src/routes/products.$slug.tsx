@@ -626,7 +626,40 @@ function ProductDetail() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-card">
+      <section id="setup-guide" className="border-t border-border bg-card">
+        <div className="mx-auto max-w-[860px] px-4 py-12">
+          <h2 className="font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
+            How to set up the {product.name} — step-by-step guide
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Follow these steps in order to go from delivery to a live, hashing machine. Most
+            deployments are online the same day, and our support desk will stay on the call with you
+            until the miner hits its rated hashrate.
+          </p>
+          <ol className="mt-8 space-y-8">
+            {buildSetupSteps(product).map((s) => (
+              <li key={s.title} className="border-l-2 border-primary pl-5">
+                <h3 className="font-display text-base font-semibold uppercase tracking-wide text-charcoal">
+                  {s.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
+                {s.bullets && (
+                  <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                    {s.bullets.map((b) => (
+                      <li key={b} className="flex gap-2">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden="true" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="border-t border-border bg-secondary">
           <div className="mx-auto max-w-[860px] px-4 py-12">
             <h2 className="font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
               {product.name} — frequently asked questions
