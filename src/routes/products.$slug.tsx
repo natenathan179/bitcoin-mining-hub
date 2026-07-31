@@ -21,7 +21,41 @@ import {
 } from "@/components/ui/accordion";
 
 function buildFaqs(p: Product) {
+  const price = p.sale_price ?? p.price;
+  const priceLabel = price ? `$${Number(price).toLocaleString("en-US")}` : "the listed price";
+  const algo = p.algorithm && p.algorithm !== "-" ? p.algorithm : "SHA-256";
   return [
+    {
+      q: `Is the ${p.name} profitable in ${new Date().getFullYear()}?`,
+      a: `Profitability for the ${p.name} depends on three variables: your electricity rate, the ${algo} network difficulty, and the coin price. As a rule of thumb, a machine rated ${p.hashrate && p.hashrate !== "-" ? p.hashrate : "at this hashrate"}${p.power && p.power !== "-" ? ` drawing ${p.power}` : ""} stays profitable at power costs under roughly $0.08/kWh, and is comfortable under $0.05/kWh in hosted or industrial facilities. Send us your kWh rate and we will run a live daily-revenue and break-even model for your exact setup before you buy.`,
+    },
+    {
+      q: `What is the ROI or payback period on the ${p.name}?`,
+      a: `At ${priceLabel} hardware cost, typical payback for this class of miner runs about 12–24 months at $0.06–0.07/kWh, and can shorten to 8–14 months at industrial rates near $0.04/kWh. ROI improves when difficulty flattens or the coin price rises, and lengthens after each difficulty increase, so we recommend modelling a conservative case. Our team provides a free written ROI projection with every quote.`,
+    },
+    {
+      q: `How much power does the ${p.name} use and what electrical setup do I need?`,
+      a:
+        p.power && p.power !== "-"
+          ? `The ${p.name} draws approximately ${p.power}${p.efficiency && p.efficiency !== "-" ? ` at an efficiency of ${p.efficiency}` : ""}. It requires a dedicated 200–240V circuit with a suitable breaker and a C13/C19 or equivalent PDU connection — a standard 110V residential outlet is not sufficient. Plan for continuous load, not peak, and leave 20% breaker headroom.`
+          : `The ${p.name} requires a dedicated 200–240V circuit rather than a standard residential outlet, plus a PDU rated for continuous load with 20% breaker headroom. Contact our team for the exact amperage and connector requirements of your configuration.`,
+    },
+    {
+      q: `How do I set up the ${p.name}?`,
+      a: `Setup takes under 30 minutes: rack or shelf the unit with clear intake and exhaust airflow, connect the 200–240V PSU feed, plug in Ethernet (Wi-Fi is not supported), then find the miner's IP with the manufacturer's IP reporter or your router's DHCP list. Log in to the web dashboard, enter your mining pool URL, worker name and password, save, and confirm the hashrate stabilises at the rated figure within 15–20 minutes. We ship a printed quick-start guide and offer free remote setup support.`,
+    },
+    {
+      q: `What hosting, cooling and noise should I plan for with the ${p.name}?`,
+      a: `Air-cooled units of this class run around 70–80 dB — too loud for a home office or apartment, so most buyers use a garage, dedicated shed, or a professional hosting facility. Keep intake air below 35°C and maintain negative-pressure exhaust so hot air is never recirculated. Bitcoin Mining Depot offers hosting from $0.06–0.08/kWh with 24/7 monitoring if you would rather not run the hardware yourself.`,
+    },
+    {
+      q: `Which coins and pools can the ${p.name} mine?`,
+      a: `The ${p.name} is an ${algo} ASIC, so it mines coins on that algorithm only — it cannot be reprogrammed for other algorithms. It works with all major pools (F2Pool, ViaBTC, Antpool, Foundry USA, Luxor and others) using standard stratum configuration, and supports up to three pool endpoints for automatic failover.`,
+    },
+    {
+      q: `How much does the ${p.name} cost and do you offer bulk pricing?`,
+      a: `This unit is listed at ${priceLabel}. Orders of 5+ units qualify for wholesale tiers, and 50+ unit deployments receive container-level pricing with dedicated logistics. We accept bank wire, USDT and BTC; escrow is available on large orders. Request a quote and we will confirm live stock and landed cost to your location.`,
+    },
     {
       q: `Is the ${p.name} new or used?`,
       a: `This ${p.name} is supplied in ${p.condition || "tested"} condition. Every unit is bench tested before dispatch and ships with a measured hashrate report.`,
@@ -31,15 +65,12 @@ function buildFaqs(p: Product) {
       a: "New miners carry the manufacturer warranty, normally 12 months. Refurbished and used units carry a 6 month Bitcoin Mining Depot warranty handled by our in-house repair lab.",
     },
     {
-      q: `How much power does the ${p.name} use?`,
-      a:
-        p.power && p.power !== "-"
-          ? `The ${p.name} draws approximately ${p.power}${p.efficiency && p.efficiency !== "-" ? ` at an efficiency of ${p.efficiency}` : ""}. It requires a 200-240V circuit, not a standard residential outlet.`
-          : `The ${p.name} requires a 200-240V circuit rather than a standard residential outlet. Contact our team for the exact electrical requirements of your configuration.`,
-    },
-    {
       q: `How is the ${p.name} shipped?`,
       a: "In-stock units dispatch within one to three business days on insured, tracked freight with pre-filled customs paperwork. We ship to more than 100 countries.",
+    },
+    {
+      q: `Can I return the ${p.name} if it does not perform as rated?`,
+      a: `Yes. Every unit is hashrate-verified before dispatch, and if a miner arrives dead-on-arrival or hashes materially below spec, report it within 7 days of delivery for a replacement or repair at our cost. Our in-house lab also handles out-of-warranty hashboard, PSU and control-board repairs.`,
     },
   ];
 }
