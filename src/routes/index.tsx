@@ -63,9 +63,10 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: "/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
-    // Preload the LCP hero image
-    ...{},
+    links: [
+      { rel: "canonical", href: "/" },
+      { rel: "preload", as: "image", href: heroImg, fetchpriority: "high" },
+    ],
     scripts: [
       {
         type: "application/ld+json",
