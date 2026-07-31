@@ -21,6 +21,11 @@ export const Route = createFileRoute("/sitemap.xml")({
           { path: "/hosting", changefreq: "monthly", priority: "0.8" },
           { path: "/repair-services", changefreq: "monthly", priority: "0.8" },
           { path: "/knowledge-center", changefreq: "weekly", priority: "0.7" },
+          {
+            path: "/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+            changefreq: "monthly",
+            priority: "0.8",
+          },
           { path: "/reviews", changefreq: "weekly", priority: "0.7" },
           { path: "/about", changefreq: "yearly", priority: "0.6" },
           { path: "/contact", changefreq: "yearly", priority: "0.6" },
