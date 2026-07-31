@@ -107,6 +107,87 @@ function buildFaqs(p: Product) {
   return faqs;
 }
 
+function buildSetupSteps(p: Product) {
+  const isHydro = /hydro|water|immersion/i.test(`${p.name} ${p.slug} ${p.short_description ?? ""}`);
+  const isScrypt = /scrypt|doge|litecoin|ltc/i.test(`${p.name} ${p.slug} ${p.algorithm ?? ""} ${p.short_description ?? ""}`);
+
+  const steps: { title: string; body: string; bullets?: string[] }[] = [
+    {
+      title: "1. Confirm site power before delivery",
+      body: isHydro
+        ? `The ${p.name} runs on industrial three-phase service (typically 380–480V) and draws ${p.power && p.power !== "-" ? p.power : "several kilowatts"} continuously. Have a licensed electrician land a dedicated feed with a correctly sized breaker per unit, leave 20% headroom, and verify your hydro-rated PDU and cabling are matched to the connector supplied.`
+        : `Provision a dedicated 200–240V circuit per unit with 20% breaker headroom and a PDU rated for continuous load — a standard residential outlet cannot run this machine.`,
+    },
+    ...(isHydro
+      ? [
+          {
+            title: "2. Build and pressure-test the water loop",
+            body: `Hydro units cannot run on air. Plumb the miner into a closed loop with a dry cooler or cooling tower, circulation pump, 50-micron filtration and a coolant reservoir before you ever power on.`,
+            bullets: [
+              "Fill with deionised or distilled water plus 10–20% corrosion-inhibiting glycol — never untreated tap water",
+              "Target 30–45°C inlet temperature and roughly 6–8 L/min flow per unit",
+              "Pressure-test all quick-connect fittings and manifolds for 30 minutes and confirm zero leaks",
+              "Bleed trapped air from the loop so the pump never runs dry",
+            ],
+          },
+          {
+            title: "3. Mount the miner and connect the coolant lines",
+            body: `Rack the unit level, attach the inlet and outlet quick-connects in the correct direction of flow, then re-check for weeping joints under running pressure. Only connect power once coolant is circulating.`,
+          },
+        ]
+      : [
+          {
+            title: "2. Rack the unit with clean airflow",
+            body: `Mount the miner with unobstructed intake and exhaust, keep intake air below 35°C, and run negative-pressure exhaust so hot air is never recirculated.`,
+          },
+        ]),
+    {
+      title: `${isHydro ? "4" : "3"}. Network the miner and find its IP`,
+      body: `Connect Ethernet — Wi-Fi is not supported. Power on, wait about 60 seconds, then locate the machine using the manufacturer's IP reporter tool or your router's DHCP client list. Open that IP in a browser and sign in to the web dashboard, then immediately change the default password.`,
+    },
+    ...(isScrypt
+      ? [
+          {
+            title: `${isHydro ? "5" : "4"}. Set up your Dogecoin and Litecoin wallets`,
+            body: `Scrypt merged mining pays you in both LTC and DOGE from the same hashrate, so you need one receiving address for each coin before configuring the pool.`,
+            bullets: [
+              "Create an LTC address (starting with L or ltc1) and a DOGE address (starting with D) in a hardware or reputable software wallet",
+              "Exchange deposit addresses work but can change — a self-custody wallet is safer for daily payouts",
+              "Paste both addresses into your pool account's payout settings, never into the miner itself",
+              "Send a small test transaction to each address first to confirm you control it",
+            ],
+          },
+          {
+            title: `${isHydro ? "6" : "5"}. Configure DOGE/LTC merged mining pools`,
+            body: `In the miner dashboard open the Miner Configuration or Pools tab and enter a Scrypt merged-mining stratum endpoint with two backups for automatic failover. Popular choices are ViaBTC, litecoinpool.org, Antpool, F2Pool and Prohashing.`,
+            bullets: [
+              "URL: stratum+tcp://ltc.viabtc.io:3333 (or your pool's Scrypt endpoint)",
+              "Worker: youraccount.dl1-01 — use a unique worker name per machine so you can spot failures",
+              "Password: 123 or x, unless your pool requires a difficulty string such as d=1000000",
+              "Add pool 2 and pool 3 with different providers or regions as failover",
+              "Enable merged mining in the pool account so DOGE is paid alongside LTC",
+            ],
+          },
+        ]
+      : [
+          {
+            title: `${isHydro ? "5" : "4"}. Configure your wallet and mining pool`,
+            body: `Create a receiving address for the coin you intend to mine, add it to your pool account payout settings, then enter the pool stratum URL, worker name and password in the miner's Pools tab. Configure two backup pools for automatic failover.`,
+          },
+        ]),
+    {
+      title: `${isHydro ? (isScrypt ? "7" : "6") : isScrypt ? "6" : "5"}. Verify hashrate and stabilise`,
+      body: `Save the configuration and let the machine warm up for 15–20 minutes. Confirm the dashboard shows the rated ${p.hashrate && p.hashrate !== "-" ? p.hashrate : "hashrate"} with zero hardware errors, and check the same worker appears live on your pool page. ${isHydro ? "Watch inlet and outlet water temperatures for the first hour and confirm the delta stays within manufacturer spec." : "Watch board temperatures and fan speeds for the first hour."}`,
+    },
+    {
+      title: `${isHydro ? (isScrypt ? "8" : "7") : isScrypt ? "7" : "6"}. Monitor, maintain and get support`,
+      body: `Set pool alerts for offline workers, review payouts after the first 24 hours, and schedule maintenance — ${isHydro ? "quarterly coolant pH checks, filter changes and an annual loop flush." : "quarterly dust cleaning and fan inspection."} Bitcoin Mining Depot provides free remote setup assistance and 24/7 technical support for every unit we ship.`,
+    },
+  ];
+
+  return steps;
+}
+
 export const Route = createFileRoute("/products/$slug")({
   loader: async ({ context, params }) => {
     const product = await context.queryClient.ensureQueryData(productQuery(params.slug));
@@ -132,6 +213,7 @@ export const Route = createFileRoute("/products/$slug")({
       ? "https://schema.org/OutOfStock"
       : "https://schema.org/InStock";
     const productFaqs = buildFaqs(p);
+    const setupSteps = buildSetupSteps(p);
     return {
       meta: [
         { title },
@@ -246,6 +328,28 @@ export const Route = createFileRoute("/products/$slug")({
               "@type": "Question",
               name: f.q,
               acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          }),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            name: `How to set up the ${p.name}`,
+            description: `Step-by-step setup guide for the ${p.name}: site power, cooling, networking, wallet and mining pool configuration, and hashrate verification.`,
+            totalTime: "PT45M",
+            ...(image.length ? { image: image[0] } : {}),
+            tool: [
+              { "@type": "HowToTool", name: "Ethernet cable" },
+              { "@type": "HowToTool", name: "Laptop or phone with a browser" },
+            ],
+            step: setupSteps.map((s, i) => ({
+              "@type": "HowToStep",
+              position: i + 1,
+              name: s.title.replace(/^\d+\.\s*/, ""),
+              text: [s.body, ...(s.bullets ?? [])].join(" "),
+              url: `${url}#setup-guide`,
             })),
           }),
         },
@@ -522,7 +626,40 @@ function ProductDetail() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-card">
+      <section id="setup-guide" className="border-t border-border bg-card">
+        <div className="mx-auto max-w-[860px] px-4 py-12">
+          <h2 className="font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
+            How to set up the {product.name} — step-by-step guide
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Follow these steps in order to go from delivery to a live, hashing machine. Most
+            deployments are online the same day, and our support desk will stay on the call with you
+            until the miner hits its rated hashrate.
+          </p>
+          <ol className="mt-8 space-y-8">
+            {buildSetupSteps(product).map((s) => (
+              <li key={s.title} className="border-l-2 border-primary pl-5">
+                <h3 className="font-display text-base font-semibold uppercase tracking-wide text-charcoal">
+                  {s.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
+                {s.bullets && (
+                  <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
+                    {s.bullets.map((b) => (
+                      <li key={b} className="flex gap-2">
+                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden="true" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="border-t border-border bg-secondary">
           <div className="mx-auto max-w-[860px] px-4 py-12">
             <h2 className="font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
               {product.name} — frequently asked questions
