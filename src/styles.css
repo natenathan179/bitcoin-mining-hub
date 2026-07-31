@@ -165,3 +165,18 @@
     color: var(--color-foreground);
   }
 }
+
+@keyframes hero-float {
+  0%, 100% { transform: translateY(-10px); }
+  50% { transform: translateY(10px); }
+}
+
+@utility animate-hero-float {
+  animation: hero-float 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-float {
+    animation: none;
+  }
+}

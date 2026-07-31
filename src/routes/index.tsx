@@ -30,6 +30,7 @@ import {
 } from "lucide-react";
 
 import heroImg from "@/assets/hero-mining-facility.jpg";
+import heroMiner from "@/assets/hero-miner-3d.png";
 import articleProfit from "@/assets/article-profit.jpg";
 import articleFarm from "@/assets/article-farm.jpg";
 import articleRepair from "@/assets/article-repair.jpg";
@@ -266,7 +267,8 @@ function Index() {
           className="absolute inset-0 h-full w-full object-cover object-[50%_45%] opacity-90"
         />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
-        <div className="relative mx-auto w-full max-w-[1280px] px-4 py-16 md:py-24">
+        <div className="relative mx-auto grid w-full max-w-[1280px] items-center gap-10 px-4 py-16 md:py-24 lg:grid-cols-2">
+          <div>
           <h1 className="max-w-2xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-charcoal-foreground md:text-6xl">
             Enterprise Bitcoin Mining Machines
             <span className="block text-ice">For Every Scale</span>
@@ -289,6 +291,34 @@ function Index() {
             >
               <Users className="h-4 w-4" aria-hidden="true" /> Request Wholesale Pricing
             </Link>
+          </div>
+          </div>
+
+          {/* Animated miner visual */}
+          <div className="relative hidden aspect-square w-full max-w-[520px] justify-self-center lg:flex lg:items-center lg:justify-center">
+            <div
+              aria-hidden="true"
+              className="absolute inset-0"
+              style={{
+                backgroundImage:
+                  "radial-gradient(currentColor 1.5px, transparent 1.5px)",
+                backgroundSize: "22px 22px",
+                color: "color-mix(in oklch, var(--color-charcoal-foreground) 25%, transparent)",
+              }}
+            />
+            <div
+              aria-hidden="true"
+              className="absolute left-1/2 top-1/2 h-[68%] w-[68%] -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-[2rem] bg-primary/85"
+            />
+            <img
+              src={heroMiner}
+              alt="Antminer ASIC bitcoin miner with red LED lighting"
+              width={1024}
+              height={1024}
+              decoding="async"
+              loading="lazy"
+              className="animate-hero-float relative h-auto w-[86%] drop-shadow-[0_25px_45px_rgba(0,0,0,0.55)]"
+            />
           </div>
         </div>
       </section>
