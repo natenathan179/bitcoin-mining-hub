@@ -24,7 +24,8 @@ function buildFaqs(p: Product) {
   const price = p.sale_price ?? p.price;
   const priceLabel = price ? `$${Number(price).toLocaleString("en-US")}` : "the listed price";
   const algo = p.algorithm && p.algorithm !== "-" ? p.algorithm : "SHA-256";
-  return [
+  const isHydro = /hydro|water|immersion/i.test(`${p.name} ${p.slug} ${p.short_description ?? ""}`);
+  const faqs = [
     {
       q: `Is the ${p.name} profitable in ${new Date().getFullYear()}?`,
       a: `Profitability for the ${p.name} depends on three variables: your electricity rate, the ${algo} network difficulty, and the coin price. As a rule of thumb, a machine rated ${p.hashrate && p.hashrate !== "-" ? p.hashrate : "at this hashrate"}${p.power && p.power !== "-" ? ` drawing ${p.power}` : ""} stays profitable at power costs under roughly $0.08/kWh, and is comfortable under $0.05/kWh in hosted or industrial facilities. Send us your kWh rate and we will run a live daily-revenue and break-even model for your exact setup before you buy.`,
@@ -73,6 +74,37 @@ function buildFaqs(p: Product) {
       a: `Yes. Every unit is hashrate-verified before dispatch, and if a miner arrives dead-on-arrival or hashes materially below spec, report it within 7 days of delivery for a replacement or repair at our cost. Our in-house lab also handles out-of-warranty hashboard, PSU and control-board repairs.`,
     },
   ];
+
+  if (isHydro) {
+    faqs.push(
+      {
+        q: `What water cooling loop does the ${p.name} require?`,
+        a: `The ${p.name} is a hydro-cooled ASIC and cannot run on air. It must be plumbed into a closed water loop with a dry cooler or cooling tower, a circulation pump, filtration and a coolant reservoir. Plan for roughly 55–65°C outlet temperature, an inlet target of 30–45°C, and a flow rate around 6–8 litres per minute per unit. Bitcoin Mining Depot supplies matched hydro containers, manifolds and quick-connect fittings with every order.`,
+      },
+      {
+        q: `What coolant and water quality does the ${p.name} need?`,
+        a: `Use deionised or distilled water with a corrosion-inhibiting glycol mix (typically 10–20%) — never untreated tap water, which scales the cold plates and voids warranty. Check pH quarterly, keep particulate filtration at 50 microns or finer, and flush the loop annually. We include a coolant specification sheet and can pre-commission your loop before shipping.`,
+      },
+      {
+        q: `How much heat can I recover from the ${p.name}?`,
+        a: `Almost all of the ${p.power && p.power !== "-" ? p.power : "rated input power"} leaves the machine as hot water, so a single unit can feed district heating, greenhouses, drying rooms or industrial process water. Heat recovery commonly cuts effective mining cost by $0.01–0.02/kWh, materially shortening the payback period versus an air-cooled deployment.`,
+      },
+      {
+        q: `Is the ${p.name} quieter than an air-cooled miner?`,
+        a: `Yes. Hydro units run around 45–50 dB versus 70–80 dB for air-cooled ASICs because there are no high-RPM fans in the miner itself — the only noise comes from the pump and external dry cooler. That makes hydro viable on sites with residential noise limits where air-cooled machines are not.`,
+      },
+      {
+        q: `What three-phase power and site infrastructure does the ${p.name} need?`,
+        a: `Hydro machines of this class run on industrial three-phase service (typically 380–480V) with a correctly sized breaker per unit and a hydro-rated PDU — single-phase residential service is not sufficient. Budget the electrical build, the cooling loop and pump load together. Send us your one-line diagram and site plan and we will confirm feasibility before you order.`,
+      },
+      {
+        q: `Does hydro cooling improve profitability and lifespan for the ${p.name}?`,
+        a: `On both counts. Stable liquid-cooled chip temperatures let the unit hold rated hashrate without thermal throttling, so real-world output tracks spec far more closely than air-cooled hardware in warm climates. Lower thermal cycling and zero dust ingress also extend hashboard life, improving realised ROI across a three to four year deployment.`,
+      },
+    );
+  }
+
+  return faqs;
 }
 
 export const Route = createFileRoute("/products/$slug")({
