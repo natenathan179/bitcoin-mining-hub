@@ -7,7 +7,7 @@ import { ShoppingCart, MessageSquare, ShieldCheck, Truck, Wrench, Check } from "
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { InquiryModal } from "@/components/site/InquiryModal";
-import { productQuery, productsQuery } from "@/lib/data";
+import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
 import { formatPrice, SITE } from "@/lib/site";
 import { useCart } from "@/lib/cart";
 import minerBlack from "@/assets/miner-black.jpg";
@@ -193,7 +193,17 @@ export const Route = createFileRoute("/products/$slug")({
     const product = await context.queryClient.ensureQueryData(productQuery(params.slug));
     if (!product) throw notFound();
     context.queryClient.ensureQueryData(productsQuery());
-    return { product };
+    const reviews = await context.queryClient
+      .ensureQueryData(reviewsQuery())
+      .catch(() => []);
+    const matched = (reviews ?? []).filter(
+      (r) =>
+        r.approved &&
+        r.product_name &&
+        (r.product_name.toLowerCase() === product.name.toLowerCase() ||
+          product.name.toLowerCase().includes(r.product_name.toLowerCase())),
+    );
+    return { product, reviews: matched };
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
@@ -206,14 +216,45 @@ export const Route = createFileRoute("/products/$slug")({
     const description =
       p.short_description ||
       `Buy the ${p.name} ${p.brand} bitcoin miner with warranty, tested hashrate and worldwide shipping.`;
-    const url = `/products/${p.slug}`;
-    const image = p.images?.filter((i) => i?.startsWith("https://")) ?? [];
+    const path = `/products/${p.slug}`;
+    const absolute = (u: string) => (u.startsWith("http") ? u : `${SITE.url}${u.startsWith("/") ? "" : "/"}${u}`);
+    const url = absolute(path);
+    const pageImages = (p.images ?? []).filter((i) => i?.startsWith("https://"));
+    const image = pageImages.length ? pageImages : [absolute(minerBlack)];
     const price = p.sale_price ?? p.price;
     const inStock = /out|sold/i.test(p.stock_status ?? "")
       ? "https://schema.org/OutOfStock"
       : "https://schema.org/InStock";
     const productFaqs = buildFaqs(p);
     const setupSteps = buildSetupSteps(p);
+    const specs = (p.specs ?? {}) as Record<string, string>;
+    const model = specs["Model"] || specs["model"] || "";
+    const reviews = loaderData.reviews ?? [];
+    const ratingSum = reviews.reduce((sum, r) => sum + Number(r.rating || 0), 0);
+    const aggregate = reviews.length
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: (ratingSum / reviews.length).toFixed(1),
+            reviewCount: reviews.length,
+            bestRating: 5,
+            worstRating: 1,
+          },
+          review: reviews.slice(0, 5).map((r) => ({
+            "@type": "Review",
+            name: r.title || `Review of ${p.name}`,
+            reviewBody: r.body,
+            datePublished: (r.created_at ?? "").slice(0, 10) || undefined,
+            author: { "@type": "Person", name: r.name },
+            reviewRating: {
+              "@type": "Rating",
+              ratingValue: Number(r.rating || 5),
+              bestRating: 5,
+              worstRating: 1,
+            },
+          })),
+        }
+      : {};
     return {
       meta: [
         { title },
@@ -221,32 +262,35 @@ export const Route = createFileRoute("/products/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "product" },
-        { property: "og:url", content: url },
+        { property: "og:url", content: path },
         { name: "twitter:card", content: "summary_large_image" },
-        ...(image[0]
+        ...(pageImages[0]
           ? [
-              { property: "og:image", content: image[0] },
-              { name: "twitter:image", content: image[0] },
+              { property: "og:image", content: pageImages[0] },
+              { name: "twitter:image", content: pageImages[0] },
             ]
           : []),
       ],
-      links: [{ rel: "canonical", href: url }],
+      links: [{ rel: "canonical", href: path }],
       scripts: [
         {
           type: "application/ld+json",
           children: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
+            "@id": `${url}#product`,
+            url,
             name: p.name,
             sku: p.slug,
-            mpn: p.slug,
+            ...(model ? { mpn: model, model } : {}),
             description,
-            ...(image.length ? { image } : {}),
+            image,
             brand: { "@type": "Brand", name: p.brand },
             category: p.algorithm ? `ASIC Miner / ${p.algorithm}` : "ASIC Miner",
             itemCondition: /new/i.test(p.condition ?? "")
               ? "https://schema.org/NewCondition"
               : "https://schema.org/RefurbishedCondition",
+            ...aggregate,
             additionalProperty: [
               ["Hashrate", p.hashrate],
               ["Power draw", p.power],
@@ -254,7 +298,7 @@ export const Route = createFileRoute("/products/$slug")({
               ["Algorithm", p.algorithm],
               ...Object.entries(p.specs ?? {}),
             ]
-              .filter(([, v]) => v && v !== "-")
+              .filter(([, v]) => v && v !== "-" && String(v).length <= 200)
               .map(([name, value]) => ({
                 "@type": "PropertyValue",
                 name,
@@ -264,12 +308,25 @@ export const Route = createFileRoute("/products/$slug")({
               "@type": "Offer",
               url,
               priceCurrency: "USD",
-              price: price ? String(price) : "0",
+              price: Number(price || 0).toFixed(2),
               availability: inStock,
+              availableAtOrFrom: {
+                "@type": "Place",
+                address: {
+                  "@type": "PostalAddress",
+                  addressCountry: "US",
+                },
+              },
               itemCondition: /new/i.test(p.condition ?? "")
                 ? "https://schema.org/NewCondition"
                 : "https://schema.org/RefurbishedCondition",
-              seller: { "@type": "Organization", name: "Bitcoin Mining Depot" },
+              seller: {
+                "@type": "Organization",
+                name: SITE.name,
+                url: SITE.url,
+                email: SITE.email,
+                telephone: SITE.phone,
+              },
               priceValidUntil: new Date(Date.now() + 1000 * 60 * 60 * 24 * 90)
                 .toISOString()
                 .slice(0, 10),
@@ -297,12 +354,15 @@ export const Route = createFileRoute("/products/$slug")({
               },
               hasMerchantReturnPolicy: {
                 "@type": "MerchantReturnPolicy",
-                applicableCountry: "US",
+                applicableCountry: ["US", "CA", "GB", "AE", "AU"],
                 returnPolicyCategory:
                   "https://schema.org/MerchantReturnFiniteReturnWindow",
                 merchantReturnDays: 30,
                 returnMethod: "https://schema.org/ReturnByMail",
-                returnFees: "https://schema.org/ReturnShippingFees",
+                returnFees: "https://schema.org/ReturnFeesCustomerResponsibility",
+                restockingFee: 10,
+                returnPolicyCountry: "US",
+                merchantReturnLink: `${SITE.url}/shipping-returns`,
               },
             },
           }),
@@ -313,8 +373,8 @@ export const Route = createFileRoute("/products/$slug")({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-              { "@type": "ListItem", position: 2, name: "Shop", item: "/products" },
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
+              { "@type": "ListItem", position: 2, name: "Shop", item: `${SITE.url}/products` },
               { "@type": "ListItem", position: 3, name: p.name, item: url },
             ],
           }),
@@ -324,6 +384,7 @@ export const Route = createFileRoute("/products/$slug")({
           children: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+            "@id": `${url}#faq`,
             mainEntity: productFaqs.map((f) => ({
               "@type": "Question",
               name: f.q,
@@ -339,7 +400,7 @@ export const Route = createFileRoute("/products/$slug")({
             name: `How to set up the ${p.name}`,
             description: `Step-by-step setup guide for the ${p.name}: site power, cooling, networking, wallet and mining pool configuration, and hashrate verification.`,
             totalTime: "PT45M",
-            ...(image.length ? { image: image[0] } : {}),
+            image: image[0],
             tool: [
               { "@type": "HowToTool", name: "Ethernet cable" },
               { "@type": "HowToTool", name: "Laptop or phone with a browser" },
