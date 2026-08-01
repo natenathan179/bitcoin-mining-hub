@@ -9,6 +9,7 @@ import { SITE } from "@/lib/site";
 export const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "Shop", to: "/products" },
+  { label: "Used Miners", to: "/used-refurbished-miners" },
   { label: "Wholesale", to: "/wholesale" },
   { label: "Hosting", to: "/hosting" },
   { label: "Repair Services", to: "/repair-services" },
