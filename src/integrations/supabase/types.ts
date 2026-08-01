@@ -44,6 +44,51 @@ export type Database = {
         }
         Relationships: []
       }
+      payment_methods: {
+        Row: {
+          active: boolean
+          address: string
+          confirmations: number
+          created_at: string
+          id: string
+          instructions: string
+          name: string
+          network: string
+          qr_image_url: string
+          sort_order: number
+          symbol: string
+          updated_at: string
+        }
+        Insert: {
+          active?: boolean
+          address?: string
+          confirmations?: number
+          created_at?: string
+          id?: string
+          instructions?: string
+          name: string
+          network?: string
+          qr_image_url?: string
+          sort_order?: number
+          symbol: string
+          updated_at?: string
+        }
+        Update: {
+          active?: boolean
+          address?: string
+          confirmations?: number
+          created_at?: string
+          id?: string
+          instructions?: string
+          name?: string
+          network?: string
+          qr_image_url?: string
+          sort_order?: number
+          symbol?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       products: {
         Row: {
           algorithm: string

@@ -1,9 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
 import { Trash2, ShoppingBag } from "lucide-react";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
-import { InquiryModal } from "@/components/site/InquiryModal";
 import { useCart } from "@/lib/cart";
 import { formatPrice } from "@/lib/site";
 
@@ -14,12 +12,12 @@ export const Route = createFileRoute("/cart")({
       {
         name: "description",
         content:
-          "Review your selected bitcoin mining hardware and submit an order request. Our sales desk replies with a final invoice, freight cost and payment options.",
+          "Review your selected bitcoin mining hardware and check out securely with cryptocurrency — pay with Bitcoin, USDT, Ethereum and more.",
       },
       { property: "og:title", content: "Your Cart | Bitcoin Mining Depot" },
       {
         property: "og:description",
-        content: "Review selected miners and submit an order request to our sales desk.",
+        content: "Review selected miners and check out with crypto payment.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -33,14 +31,13 @@ export const Route = createFileRoute("/cart")({
 
 function CartPage() {
   const { items, total, setQty, remove, clear } = useCart();
-  const [checkout, setCheckout] = useState(false);
 
   return (
     <SiteLayout>
       <PageHero
         eyebrow="Checkout"
         title="Your Cart"
-        subtitle="Submit your cart as an order request. We confirm stock, calculate freight to your address and send a final invoice with payment options including bank wire, card and crypto."
+        subtitle="Check out with cryptocurrency. Pick your coin, scan the wallet QR code, then submit your transaction ID and delivery details — we verify the payment on-chain and dispatch your hardware."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-10">
@@ -139,29 +136,21 @@ function CartPage() {
                   <dd className="font-bold text-charcoal">{formatPrice(total)}</dd>
                 </div>
               </dl>
-              <button
-                onClick={() => setCheckout(true)}
-                className="mt-5 w-full rounded-md bg-primary py-3 text-sm font-semibold uppercase tracking-wide text-primary-foreground hover:bg-ice"
+              <Link
+                to="/checkout"
+                className="mt-5 block w-full rounded-md bg-primary py-3 text-center text-sm font-semibold uppercase tracking-wide text-primary-foreground hover:bg-ice"
               >
-                Proceed to checkout
-              </button>
+                Proceed to crypto checkout
+              </Link>
               <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">
-                Checkout submits an order request to our sales desk. No payment is taken online —
-                you receive a formal invoice with verified stock and freight before paying.
+                Checkout is paid on-chain: choose a cryptocurrency, scan the wallet QR code, then
+                paste your transaction ID and delivery details. We verify the payment and confirm
+                freight before dispatch.
               </p>
             </aside>
           </div>
         )}
       </div>
-
-      <InquiryModal
-        open={checkout}
-        onOpenChange={setCheckout}
-        mode="checkout"
-        items={items}
-        total={total}
-        onSuccess={clear}
-      />
     </SiteLayout>
   );
 }

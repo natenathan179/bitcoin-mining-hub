@@ -46,6 +46,19 @@ export interface Review {
   created_at: string;
 }
 
+export interface PaymentMethod {
+  id: string;
+  name: string;
+  symbol: string;
+  network: string;
+  address: string;
+  qr_image_url: string;
+  instructions: string;
+  confirmations: number;
+  sort_order: number;
+  active: boolean;
+}
+
 const table = (name: string) => supabase.from(name as never);
 
 export async function fetchCategories(): Promise<Category[]> {
@@ -85,6 +98,18 @@ export const productQuery = (slug: string) =>
   queryOptions({ queryKey: ["product", slug], queryFn: () => fetchProductBySlug(slug) });
 
 export const reviewsQuery = () => queryOptions({ queryKey: ["reviews"], queryFn: fetchReviews });
+
+export async function fetchPaymentMethods(): Promise<PaymentMethod[]> {
+  const { data, error } = await table("payment_methods")
+    .select("*")
+    .order("sort_order")
+    .order("name");
+  if (error) throw error;
+  return (data ?? []) as unknown as PaymentMethod[];
+}
+
+export const paymentMethodsQuery = () =>
+  queryOptions({ queryKey: ["payment_methods"], queryFn: fetchPaymentMethods });
 
 export function productImage(product: Pick<Product, "images">, fallback: string) {
   return product.images?.[0] || fallback;
