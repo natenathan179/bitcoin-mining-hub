@@ -1,9 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
 import { Trash2, ShoppingBag } from "lucide-react";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
-import { InquiryModal } from "@/components/site/InquiryModal";
 import { useCart } from "@/lib/cart";
 import { formatPrice } from "@/lib/site";
 
@@ -14,12 +12,12 @@ export const Route = createFileRoute("/cart")({
       {
         name: "description",
         content:
-          "Review your selected bitcoin mining hardware and submit an order request. Our sales desk replies with a final invoice, freight cost and payment options.",
+          "Review your selected bitcoin mining hardware and check out securely with cryptocurrency — pay with Bitcoin, USDT, Ethereum and more.",
       },
       { property: "og:title", content: "Your Cart | Bitcoin Mining Depot" },
       {
         property: "og:description",
-        content: "Review selected miners and submit an order request to our sales desk.",
+        content: "Review selected miners and check out with crypto payment.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -33,14 +31,13 @@ export const Route = createFileRoute("/cart")({
 
 function CartPage() {
   const { items, total, setQty, remove, clear } = useCart();
-  const [checkout, setCheckout] = useState(false);
 
   return (
     <SiteLayout>
       <PageHero
         eyebrow="Checkout"
         title="Your Cart"
-        subtitle="Submit your cart as an order request. We confirm stock, calculate freight to your address and send a final invoice with payment options including bank wire, card and crypto."
+        subtitle="Check out with cryptocurrency. Pick your coin, scan the wallet QR code, then submit your transaction ID and delivery details — we verify the payment on-chain and dispatch your hardware."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-10">
