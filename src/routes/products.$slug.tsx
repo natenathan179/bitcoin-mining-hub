@@ -332,12 +332,6 @@ export const Route = createFileRoute("/products/$slug")({
                 .slice(0, 10),
               shippingDetails: {
                 "@type": "OfferShippingDetails",
-                shippingRate: {
-                  "@type": "MonetaryAmount",
-                  currency: "USD",
-                  minValue: 0,
-                  maxValue: 0,
-                },
                 shippingDestination: {
                   "@type": "DefinedRegion",
                   addressCountry: ["US", "CA", "GB", "AE", "AU"],
@@ -366,11 +360,9 @@ export const Route = createFileRoute("/products/$slug")({
                 merchantReturnDays: 30,
                 returnMethod: "https://schema.org/ReturnByMail",
                 returnFees: "https://schema.org/ReturnFeesCustomerResponsibility",
-                restockingFee: {
-                  "@type": "MonetaryAmount",
-                  currency: "USD",
-                  value: 0,
-                },
+                restockingFee: 10,
+                returnPolicyCountry: "US",
+                merchantReturnLink: `${SITE.url}/shipping-returns`,
               },
             },
           }),
