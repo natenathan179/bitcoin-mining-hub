@@ -1,6 +1,6 @@
 import { createFileRoute, Link, Outlet, useNavigate } from "@tanstack/react-router";
 import { useQueryClient } from "@tanstack/react-query";
-import { LogOut, Package, Layers, Star, Store } from "lucide-react";
+import { LogOut, Package, Layers, Star, Store, Wallet } from "lucide-react";
 
 import { supabase } from "@/integrations/supabase/client";
 import { Logo } from "@/components/site/Logo";
@@ -19,6 +19,7 @@ const LINKS = [
   { to: "/admin", label: "Products", icon: Package, exact: true },
   { to: "/admin/categories", label: "Categories", icon: Layers, exact: false },
   { to: "/admin/reviews", label: "Reviews", icon: Star, exact: false },
+  { to: "/admin/payments", label: "Payments", icon: Wallet, exact: false },
 ] as const;
 
 function AdminLayout() {
