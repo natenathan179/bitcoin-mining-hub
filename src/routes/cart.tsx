@@ -136,29 +136,21 @@ function CartPage() {
                   <dd className="font-bold text-charcoal">{formatPrice(total)}</dd>
                 </div>
               </dl>
-              <button
-                onClick={() => setCheckout(true)}
-                className="mt-5 w-full rounded-md bg-primary py-3 text-sm font-semibold uppercase tracking-wide text-primary-foreground hover:bg-ice"
+              <Link
+                to="/checkout"
+                className="mt-5 block w-full rounded-md bg-primary py-3 text-center text-sm font-semibold uppercase tracking-wide text-primary-foreground hover:bg-ice"
               >
-                Proceed to checkout
-              </button>
+                Proceed to crypto checkout
+              </Link>
               <p className="mt-3 text-[11px] leading-relaxed text-muted-foreground">
-                Checkout submits an order request to our sales desk. No payment is taken online —
-                you receive a formal invoice with verified stock and freight before paying.
+                Checkout is paid on-chain: choose a cryptocurrency, scan the wallet QR code, then
+                paste your transaction ID and delivery details. We verify the payment and confirm
+                freight before dispatch.
               </p>
             </aside>
           </div>
         )}
       </div>
-
-      <InquiryModal
-        open={checkout}
-        onOpenChange={setCheckout}
-        mode="checkout"
-        items={items}
-        total={total}
-        onSuccess={clear}
-      />
     </SiteLayout>
   );
 }
