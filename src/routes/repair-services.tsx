@@ -45,11 +45,11 @@ export const Route = createFileRoute("/repair-services")({
             email: SITE.email,
             address: {
               "@type": "PostalAddress",
-              streetAddress: "3411 Silverside Rd",
-              addressLocality: "Wilmington",
-              addressRegion: "DE",
-              postalCode: "19810",
-              addressCountry: "US",
+              streetAddress: "Calgary Trl NW",
+              addressLocality: "Edmonton",
+              addressRegion: "AB",
+              postalCode: "T2P 1J9",
+              addressCountry: "CA",
             },
           },
           hasOfferCatalog: {
