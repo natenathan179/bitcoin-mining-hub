@@ -3,8 +3,9 @@ export const SITE = {
   domain: "bitcoinminingdepot.com",
   url: "https://bitcoinminingdepot.com",
   email: "sales@bitcoinminingdepot.com",
-  phone: "+1 (888) 806-4021",
-  address: "3411 Silverside Rd, Wilmington, DE 19810, United States",
+  phone: "+1 587-315-9294",
+  whatsapp: "15873159294",
+  address: "Calgary Trl NW, Edmonton, AB T2P 1J9, Canada",
   tagline: "Powering the Future of Bitcoin Mining.",
 };
 
