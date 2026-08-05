@@ -300,6 +300,24 @@ function AdminPayments() {
         >
           <div className="space-y-1.5">
             <Label htmlFor="p-name">Coin name</Label>
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="p-kind">Method type</Label>
+            <select
+              id="p-kind"
+              value={form.kind}
+              onChange={(e) => set("kind", e.target.value)}
+              className="h-10 w-full rounded-md border border-input bg-background px-3 text-sm"
+            >
+              {KINDS.map((k) => (
+                <option key={k.value} value={k.value}>
+                  {k.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="p-name">Method name</Label>
             <Input
               id="p-name"
               value={form.name}
@@ -335,6 +353,15 @@ function AdminPayments() {
             />
           </div>
           <div className="space-y-1.5">
+            <Label htmlFor="p-handle">Handle / tag (Cash App, Chime)</Label>
+            <Input
+              id="p-handle"
+              value={form.handle}
+              onChange={(e) => set("handle", e.target.value)}
+              placeholder="$yourcashtag"
+            />
+          </div>
+          <div className="space-y-1.5">
             <Label htmlFor="p-conf">Required confirmations</Label>
             <Input
               id="p-conf"
@@ -352,6 +379,16 @@ function AdminPayments() {
               value={form.instructions}
               onChange={(e) => set("instructions", e.target.value)}
               placeholder="Send only BTC on the Bitcoin network. Order ships after 2 confirmations."
+            />
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="p-review">Review / safety note</Label>
+            <Textarea
+              id="p-review"
+              rows={2}
+              value={form.review_note}
+              onChange={(e) => set("review_note", e.target.value)}
+              placeholder="Details are sent to you directly after review to protect you from payment fraud."
             />
           </div>
           <div className="space-y-1.5">
