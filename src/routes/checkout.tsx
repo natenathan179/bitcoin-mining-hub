@@ -718,7 +718,11 @@ function CheckoutPage() {
                   </Button>
                   <Button type="submit" disabled={sending}>
                     {sending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                    Submit payment & delivery details
+                    {isCrypto(selected)
+                      ? "Submit payment & delivery details"
+                      : isBank(selected)
+                        ? "Request bank account details"
+                        : "Submit order & request payment"}
                   </Button>
                 </div>
               </form>
@@ -743,11 +747,20 @@ function CheckoutPage() {
                 <dd className="font-bold text-charcoal">{formatPrice(total)}</dd>
               </div>
             </dl>
-            {selected && (
+            {selected && isCrypto(selected) && (
               <p className="rounded-md bg-secondary p-3 text-xs text-muted-foreground">
                 Paying in <strong>{selected.symbol}</strong>
                 {selected.network ? ` on ${selected.network}` : ""} · released after{" "}
                 {selected.confirmations} confirmation(s).
+              </p>
+            )}
+            {selected && !isCrypto(selected) && (
+              <p className="rounded-md bg-secondary p-3 text-xs text-muted-foreground">
+                Paying with <strong>{selected.name}</strong> ·{" "}
+                {isBank(selected)
+                  ? "account details sent after review"
+                  : "payment request sent after review"}
+                .
               </p>
             )}
             <p className="text-[11px] leading-relaxed text-muted-foreground">
