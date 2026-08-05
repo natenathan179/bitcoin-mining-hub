@@ -492,6 +492,7 @@ function CheckoutPage() {
 
             {step === 2 && selected && (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {isCrypto(selected) ? (
                 <section className="rounded-md border border-border bg-card p-6">
                   <h2 className="font-display text-lg uppercase tracking-wide text-charcoal">
                     Payment proof
@@ -531,6 +532,90 @@ function CheckoutPage() {
                     </p>
                   </div>
                 </section>
+                ) : (
+                  <section className="rounded-md border border-border bg-card p-6">
+                    <h2 className="font-display text-lg uppercase tracking-wide text-charcoal">
+                      {isBank(selected) ? "Bank transfer request" : `${selected.name} payment request`}
+                    </h2>
+                    <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                      {isBank(selected)
+                        ? "Tell us how you would like to transfer the funds. Our finance team reviews your order and replies with the full bank account details and a unique payment reference — we never publish account numbers on the website."
+                        : `Enter the ${selected.name} handle you will pay from. Our finance team reviews your order and sends you a payment request with the exact amount and our verified handle. After you pay, upload a screenshot of the completed payment below (or reply to our email with it) so we can release your order.`}
+                    </p>
+                    <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                      {isBank(selected) ? (
+                        <div className="space-y-1.5 sm:col-span-2">
+                          <Label htmlFor="co-banknote">Your message to our finance team *</Label>
+                          <Textarea
+                            id="co-banknote"
+                            name="banknote"
+                            rows={4}
+                            required
+                            maxLength={1200}
+                            placeholder="e.g. I would like to pay by domestic wire from a US business account, and I need an invoice addressed to my company."
+                          />
+                        </div>
+                      ) : (
+                        <>
+                          <div className="space-y-1.5">
+                            <Label htmlFor="co-handle">
+                              Your {selected.name} handle / tag *
+                            </Label>
+                            <Input
+                              id="co-handle"
+                              name="handle"
+                              required
+                              maxLength={100}
+                              placeholder={selected.kind === "cashapp" ? "$yourcashtag" : "your Chime handle"}
+                            />
+                          </div>
+                          <div className="space-y-1.5">
+                            <Label>Payment screenshot (upload after you pay)</Label>
+                            {proofUrl ? (
+                              <div className="flex items-center gap-3">
+                                <img
+                                  src={proofUrl}
+                                  alt="Uploaded payment screenshot preview"
+                                  className="h-20 w-20 rounded-md border border-border object-contain p-1"
+                                />
+                                <button
+                                  type="button"
+                                  onClick={() => setProofUrl("")}
+                                  className="text-xs text-destructive"
+                                >
+                                  Remove
+                                </button>
+                              </div>
+                            ) : (
+                              <label className="flex h-20 cursor-pointer flex-col items-center justify-center gap-1 rounded-md border border-dashed border-border text-xs text-muted-foreground">
+                                {uploading ? (
+                                  <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+                                ) : (
+                                  <>
+                                    <Upload className="h-4 w-4" aria-hidden="true" /> Upload screenshot
+                                  </>
+                                )}
+                                <input
+                                  type="file"
+                                  accept="image/*"
+                                  className="hidden"
+                                  aria-label="Upload payment screenshot"
+                                  onChange={(e) => {
+                                    const f = e.target.files?.[0];
+                                    if (f) handleProofUpload(f);
+                                  }}
+                                />
+                              </label>
+                            )}
+                            <p className="text-[11px] text-muted-foreground">
+                              Optional now — you can also send it by email once you have paid.
+                            </p>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  </section>
+                )}
 
                 <section className="rounded-md border border-border bg-card p-6">
                   <h2 className="font-display text-lg uppercase tracking-wide text-charcoal">
