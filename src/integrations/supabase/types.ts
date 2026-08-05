@@ -50,11 +50,14 @@ export type Database = {
           address: string
           confirmations: number
           created_at: string
+          handle: string
           id: string
           instructions: string
+          kind: string
           name: string
           network: string
           qr_image_url: string
+          review_note: string
           sort_order: number
           symbol: string
           updated_at: string
@@ -64,11 +67,14 @@ export type Database = {
           address?: string
           confirmations?: number
           created_at?: string
+          handle?: string
           id?: string
           instructions?: string
+          kind?: string
           name: string
           network?: string
           qr_image_url?: string
+          review_note?: string
           sort_order?: number
           symbol: string
           updated_at?: string
@@ -78,11 +84,14 @@ export type Database = {
           address?: string
           confirmations?: number
           created_at?: string
+          handle?: string
           id?: string
           instructions?: string
+          kind?: string
           name?: string
           network?: string
           qr_image_url?: string
+          review_note?: string
           sort_order?: number
           symbol?: string
           updated_at?: string

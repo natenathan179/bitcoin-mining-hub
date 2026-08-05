@@ -57,6 +57,9 @@ export interface PaymentMethod {
   confirmations: number;
   sort_order: number;
   active: boolean;
+  kind: string;
+  handle: string;
+  review_note: string;
 }
 
 const table = (name: string) => supabase.from(name as never);

@@ -24,7 +24,17 @@ const EMPTY = {
   instructions: "",
   confirmations: "2",
   qr_image_url: "",
+  kind: "crypto",
+  handle: "",
+  review_note: "",
 };
+
+const KINDS = [
+  { value: "crypto", label: "Crypto wallet (QR + address)" },
+  { value: "cashapp", label: "Cash App (admin sends payment request)" },
+  { value: "chime", label: "Chime (admin sends payment request)" },
+  { value: "bank", label: "Bank transfer (admin sends account details)" },
+];
 
 function AdminPayments() {
   const queryClient = useQueryClient();
@@ -45,6 +55,9 @@ function AdminPayments() {
         instructions: form.instructions.trim(),
         confirmations: Number(form.confirmations) || 1,
         qr_image_url: form.qr_image_url,
+        kind: form.kind,
+        handle: form.handle.trim(),
+        review_note: form.review_note.trim(),
         sort_order: methods.length + 1,
         active: true,
       } as never);
@@ -101,11 +114,13 @@ function AdminPayments() {
     <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
       <div>
         <h1 className="font-display text-2xl font-bold uppercase tracking-tight text-charcoal">
-          Crypto payment methods
+          Payment methods
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          These are the coins customers can pay with at checkout. Each method shows its wallet
-          address and QR code on the checkout page.
+          These are the options customers can pay with at checkout. Crypto methods show a wallet
+          address and QR code. Cash App, Chime and bank methods are review-based: the customer
+          submits their order, you send them a payment request or account details, then they confirm
+          and send proof of payment.
         </p>
 
         <div className="mt-6 space-y-4">
@@ -142,6 +157,20 @@ function AdminPayments() {
                   </label>
                 )}
                 <div className="grid flex-1 gap-3 sm:grid-cols-2">
+                  <div className="sm:col-span-2">
+                    <select
+                      aria-label="Payment method type"
+                      value={m.kind}
+                      onChange={(e) => update.mutate({ id: m.id, patch: { kind: e.target.value } })}
+                      className="h-10 w-full rounded-md border border-input bg-background px-3 text-sm"
+                    >
+                      {KINDS.map((k) => (
+                        <option key={k.value} value={k.value}>
+                          {k.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                   <Input
                     aria-label="Coin name"
                     defaultValue={m.name}
@@ -190,6 +219,16 @@ function AdminPayments() {
                       update.mutate({ id: m.id, patch: { address: e.target.value } })
                     }
                   />
+                  <Input
+                    aria-label="Handle or tag"
+                    className="sm:col-span-2"
+                    defaultValue={m.handle}
+                    placeholder="Cash App $Cashtag / Chime handle (optional, shown to customer)"
+                    onBlur={(e) =>
+                      e.target.value !== m.handle &&
+                      update.mutate({ id: m.id, patch: { handle: e.target.value } })
+                    }
+                  />
                   <Textarea
                     aria-label="Payment instructions"
                     className="sm:col-span-2"
@@ -199,6 +238,17 @@ function AdminPayments() {
                     onBlur={(e) =>
                       e.target.value !== m.instructions &&
                       update.mutate({ id: m.id, patch: { instructions: e.target.value } })
+                    }
+                  />
+                  <Textarea
+                    aria-label="Review note"
+                    className="sm:col-span-2"
+                    rows={2}
+                    defaultValue={m.review_note}
+                    placeholder="Short safety / review note shown in a highlighted box (optional)"
+                    onBlur={(e) =>
+                      e.target.value !== m.review_note &&
+                      update.mutate({ id: m.id, patch: { review_note: e.target.value } })
                     }
                   />
                 </div>
@@ -244,12 +294,31 @@ function AdminPayments() {
             e.preventDefault();
             if (!form.name.trim() || !form.symbol.trim())
               return toast.error("Coin name and symbol are required");
-            if (!form.address.trim()) return toast.error("Wallet address is required");
+            if (form.kind === "crypto" && !form.address.trim())
+              return toast.error("Wallet address is required for crypto methods");
             create.mutate();
           }}
         >
           <div className="space-y-1.5">
             <Label htmlFor="p-name">Coin name</Label>
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="p-kind">Method type</Label>
+            <select
+              id="p-kind"
+              value={form.kind}
+              onChange={(e) => set("kind", e.target.value)}
+              className="h-10 w-full rounded-md border border-input bg-background px-3 text-sm"
+            >
+              {KINDS.map((k) => (
+                <option key={k.value} value={k.value}>
+                  {k.label}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="p-name">Method name</Label>
             <Input
               id="p-name"
               value={form.name}
@@ -285,6 +354,15 @@ function AdminPayments() {
             />
           </div>
           <div className="space-y-1.5">
+            <Label htmlFor="p-handle">Handle / tag (Cash App, Chime)</Label>
+            <Input
+              id="p-handle"
+              value={form.handle}
+              onChange={(e) => set("handle", e.target.value)}
+              placeholder="$yourcashtag"
+            />
+          </div>
+          <div className="space-y-1.5">
             <Label htmlFor="p-conf">Required confirmations</Label>
             <Input
               id="p-conf"
@@ -302,6 +380,16 @@ function AdminPayments() {
               value={form.instructions}
               onChange={(e) => set("instructions", e.target.value)}
               placeholder="Send only BTC on the Bitcoin network. Order ships after 2 confirmations."
+            />
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="p-review">Review / safety note</Label>
+            <Textarea
+              id="p-review"
+              rows={2}
+              value={form.review_note}
+              onChange={(e) => set("review_note", e.target.value)}
+              placeholder="Details are sent to you directly after review to protect you from payment fraud."
             />
           </div>
           <div className="space-y-1.5">
