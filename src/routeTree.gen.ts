@@ -13,7 +13,6 @@ import { Route as WholesaleRouteImport } from './routes/wholesale'
 import { Route as WarrantyRouteImport } from './routes/warranty'
 import { Route as UsedRefurbishedMinersRouteImport } from './routes/used-refurbished-miners'
 import { Route as TermsRouteImport } from './routes/terms'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ShippingReturnsRouteImport } from './routes/shipping-returns'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RepairServicesRouteImport } from './routes/repair-services'
@@ -56,11 +55,6 @@ const UsedRefurbishedMinersRoute = UsedRefurbishedMinersRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ShippingReturnsRoute = ShippingReturnsRouteImport.update({
@@ -196,7 +190,6 @@ export interface FileRoutesByFullPath {
   '/repair-services': typeof RepairServicesRoute
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/used-refurbished-miners': typeof UsedRefurbishedMinersRoute
   '/warranty': typeof WarrantyRoute
@@ -225,7 +218,6 @@ export interface FileRoutesByTo {
   '/repair-services': typeof RepairServicesRoute
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/used-refurbished-miners': typeof UsedRefurbishedMinersRoute
   '/warranty': typeof WarrantyRoute
@@ -255,7 +247,6 @@ export interface FileRoutesById {
   '/repair-services': typeof RepairServicesRoute
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
-  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
   '/used-refurbished-miners': typeof UsedRefurbishedMinersRoute
   '/warranty': typeof WarrantyRoute
@@ -286,7 +277,6 @@ export interface FileRouteTypes {
     | '/repair-services'
     | '/reviews'
     | '/shipping-returns'
-    | '/sitemap.xml'
     | '/terms'
     | '/used-refurbished-miners'
     | '/warranty'
@@ -315,7 +305,6 @@ export interface FileRouteTypes {
     | '/repair-services'
     | '/reviews'
     | '/shipping-returns'
-    | '/sitemap.xml'
     | '/terms'
     | '/used-refurbished-miners'
     | '/warranty'
@@ -344,7 +333,6 @@ export interface FileRouteTypes {
     | '/repair-services'
     | '/reviews'
     | '/shipping-returns'
-    | '/sitemap.xml'
     | '/terms'
     | '/used-refurbished-miners'
     | '/warranty'
@@ -375,7 +363,6 @@ export interface RootRouteChildren {
   RepairServicesRoute: typeof RepairServicesRoute
   ReviewsRoute: typeof ReviewsRoute
   ShippingReturnsRoute: typeof ShippingReturnsRoute
-  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
   UsedRefurbishedMinersRoute: typeof UsedRefurbishedMinersRoute
   WarrantyRoute: typeof WarrantyRoute
@@ -414,13 +401,6 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/shipping-returns': {
@@ -631,7 +611,6 @@ const rootRouteChildren: RootRouteChildren = {
   RepairServicesRoute: RepairServicesRoute,
   ReviewsRoute: ReviewsRoute,
   ShippingReturnsRoute: ShippingReturnsRoute,
-  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
   UsedRefurbishedMinersRoute: UsedRefurbishedMinersRoute,
   WarrantyRoute: WarrantyRoute,
