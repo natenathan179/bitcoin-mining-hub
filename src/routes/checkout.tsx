@@ -346,7 +346,7 @@ function CheckoutPage() {
                   </p>
                 ) : active.length === 0 ? (
                   <p className="mt-4 text-sm text-muted-foreground">
-                    No crypto payment methods are published yet. Please email {SITE.email} or call{" "}
+                    No payment methods are published yet. Please email {SITE.email} or call{" "}
                     {SITE.phone} and our sales desk will send you payment instructions directly.
                   </p>
                 ) : (
@@ -356,7 +356,10 @@ function CheckoutPage() {
                         <button
                           key={m.id}
                           type="button"
-                          onClick={() => setSelected(m)}
+                          onClick={() => {
+                            setSelected(m);
+                            setProofUrl("");
+                          }}
                           className={`rounded-md border p-4 text-left ${
                             selected?.id === m.id
                               ? "border-primary bg-primary/5"
@@ -369,11 +372,18 @@ function CheckoutPage() {
                           {m.network && (
                             <p className="text-xs text-muted-foreground">Network: {m.network}</p>
                           )}
+                          <p className="mt-1 text-[11px] text-muted-foreground">
+                            {m.kind === "crypto"
+                              ? "On-chain payment · pay now, submit your TXID"
+                              : m.kind === "bank"
+                                ? "Reviewed by finance · we send account details"
+                                : "Reviewed by finance · we send a payment request"}
+                          </p>
                         </button>
                       ))}
                     </div>
 
-                    {selected && (
+                    {selected && isCrypto(selected) && (
                       <div className="mt-6 grid gap-6 rounded-md bg-secondary p-5 sm:grid-cols-[200px_1fr]">
                         {selected.qr_image_url ? (
                           <img
@@ -415,6 +425,53 @@ function CheckoutPage() {
                         </div>
                       </div>
                     )}
+
+                    {selected && !isCrypto(selected) && (
+                      <div className="mt-6 rounded-md bg-secondary p-5">
+                        <h3 className="text-sm font-semibold text-charcoal">
+                          Paying with {selected.name} — here is exactly what happens
+                        </h3>
+                        <ol className="mt-3 space-y-2 text-xs leading-relaxed text-muted-foreground">
+                          <li>
+                            <strong>Step 1:</strong> Continue and fill in your contact and delivery
+                            details, plus{" "}
+                            {isBank(selected)
+                              ? "a short message telling us how you want to transfer (ACH, domestic wire or international SWIFT)."
+                              : `the ${selected.name} handle you will pay from.`}
+                          </li>
+                          <li>
+                            <strong>Step 2:</strong> Our finance desk reviews your order and replies
+                            with{" "}
+                            {isBank(selected)
+                              ? "the full bank account details — account name, account number, routing/SWIFT code and a unique payment reference."
+                              : `a ${selected.name} payment request showing the exact amount and our verified handle.`}
+                          </li>
+                          <li>
+                            <strong>Step 3:</strong>{" "}
+                            {isBank(selected)
+                              ? "Complete the transfer from your bank and send us the transfer receipt."
+                              : "Confirm the request, complete the payment, then send us a screenshot of the completed payment (you can upload it on the next step or reply to our email)."}
+                          </li>
+                          <li>
+                            <strong>Step 4:</strong> We verify the funds, issue your invoice, then
+                            crate and ship your hardware with tracking.
+                          </li>
+                        </ol>
+                        {selected.handle && (
+                          <p className="mt-3 text-xs text-charcoal">
+                            Verified handle: <strong>{selected.handle}</strong>
+                          </p>
+                        )}
+                        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                          {selected.instructions}
+                        </p>
+                        {selected.review_note && (
+                          <p className="mt-2 rounded-md border border-border bg-background p-3 text-[11px] leading-relaxed text-muted-foreground">
+                            {selected.review_note}
+                          </p>
+                        )}
+                      </div>
+                    )}
                   </>
                 )}
                 <div className="mt-6 flex gap-3">
@@ -423,11 +480,11 @@ function CheckoutPage() {
                   </Button>
                   <Button
                     onClick={() => {
-                      if (!selected) return toast.error("Select a cryptocurrency to continue.");
+                      if (!selected) return toast.error("Select a payment method to continue.");
                       setStep(2);
                     }}
                   >
-                    I have sent the payment
+                    {isCrypto(selected) ? "I have sent the payment" : "Continue"}
                   </Button>
                 </div>
               </section>
