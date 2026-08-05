@@ -231,32 +231,32 @@ function CheckoutPage() {
     <SiteLayout>
       <PageHero
         eyebrow="Secure crypto checkout"
-        title="Pay With Cryptocurrency"
-        subtitle="We accept direct on-chain payments. Choose your coin, send the exact order total to the wallet address shown on the QR code, then submit your transaction ID with full delivery details so we can verify the payment and dispatch your hardware."
+        title="Choose How You Want To Pay"
+        subtitle="Pay on-chain with cryptocurrency, or use Cash App, Chime or a direct bank transfer. Crypto payments are instant and self-service; Cash App, Chime and bank transfers are reviewed by our finance desk, who send you a payment request or account details before you pay."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-10">
         {/* How it works */}
         <section className="rounded-md border border-border bg-card p-6">
           <h2 className="font-display text-lg font-semibold uppercase tracking-wide text-charcoal">
-            How crypto payment works — step by step
+            How payment works — step by step
           </h2>
           <ol className="mt-4 grid gap-5 md:grid-cols-3">
             {[
               {
                 icon: Wallet,
-                title: "1. Select your cryptocurrency",
-                body: "Pick the coin and network you want to pay with (for example Bitcoin on the Bitcoin network, or USDT on TRC-20). Each option shows the exact receiving wallet address plus a scannable QR code.",
+                title: "1. Select your payment method",
+                body: "Pay with crypto (each coin shows its receiving address and a scannable QR code), or choose Cash App, Chime or a direct bank transfer if you prefer to pay in fiat.",
               },
               {
                 icon: ShieldCheck,
-                title: "2. Send the exact amount",
-                body: "Convert your USD order total to the coin at the current market rate and send it from your own wallet or exchange. Always double-check the network before sending — funds sent on the wrong network cannot be recovered.",
+                title: "2. Pay or wait for our request",
+                body: "Crypto: send the exact USD equivalent to the address shown, double-checking the network first. Cash App / Chime: submit your details and we send a payment request with the exact amount and verified handle. Bank transfer: we reply with full account details and a payment reference.",
               },
               {
                 icon: Truck,
-                title: "3. Submit the transaction ID",
-                body: "Copy the transaction ID (TXID / hash) from your wallet, paste it here with your full delivery information, and we verify the payment on-chain. Once confirmed we invoice, crate and ship your miners.",
+                title: "3. Send your proof of payment",
+                body: "Crypto: paste the transaction ID (TXID / hash) and we verify it on-chain. Cash App / Chime: confirm the request, pay, then upload a screenshot of the completed payment. Bank transfer: send the transfer receipt. Once verified we invoice, crate and ship your miners.",
               },
             ].map(({ icon: Icon, title, body }) => (
               <li key={title} className="rounded-md bg-secondary p-4">
@@ -269,8 +269,11 @@ function CheckoutPage() {
           <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
             Important: cryptocurrency transfers are irreversible. Send only the coin shown, on the
             network shown, to the address shown on this page. Network fees are paid by the sender —
-            make sure the amount that arrives matches your order total. Freight cost, duties and any
-            balance differences are settled on the final invoice before dispatch.
+            make sure the amount that arrives matches your order total. For Cash App, Chime and bank
+            transfers we never publish handles or account numbers online: they are sent to you only
+            after our finance team reviews your order, so ignore any details received from any other
+            source. Freight cost, duties and any balance differences are settled on the final invoice
+            before dispatch.
           </p>
         </section>
 
