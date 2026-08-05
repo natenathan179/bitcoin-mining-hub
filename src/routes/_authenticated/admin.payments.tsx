@@ -245,7 +245,7 @@ function AdminPayments() {
                     className="sm:col-span-2"
                     rows={2}
                     defaultValue={m.review_note}
-                    placeholder="Short安 safety / review note shown in a highlighted box (optional)"
+                    placeholder="Short safety / review note shown in a highlighted box (optional)"
                     onBlur={(e) =>
                       e.target.value !== m.review_note &&
                       update.mutate({ id: m.id, patch: { review_note: e.target.value } })
