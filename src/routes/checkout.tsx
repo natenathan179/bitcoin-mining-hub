@@ -8,6 +8,7 @@ import {
   ShieldCheck,
   ShoppingBag,
   Truck,
+  Upload,
   Wallet,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -19,6 +20,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/lib/cart";
 import { paymentMethodsQuery, type PaymentMethod } from "@/lib/data";
+import { uploadProductImage } from "@/lib/storage";
 import { formatPrice, submitToEmail, SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/checkout")({
@@ -44,7 +46,11 @@ export const Route = createFileRoute("/checkout")({
   component: CheckoutPage,
 });
 
-const STEPS = ["Review order", "Choose crypto", "Payment proof & delivery"] as const;
+const STEPS = ["Review order", "Choose payment method", "Payment details & delivery"] as const;
+
+const isCrypto = (m: PaymentMethod | null) => !m || m.kind === "crypto";
+const isBank = (m: PaymentMethod | null) => m?.kind === "bank";
+const isRequest = (m: PaymentMethod | null) => m?.kind === "cashapp" || m?.kind === "chime";
 
 function CheckoutPage() {
   const { items, total, clear } = useCart();
@@ -56,6 +62,8 @@ function CheckoutPage() {
   const [selected, setSelected] = useState<PaymentMethod | null>(null);
   const [sending, setSending] = useState(false);
   const [done, setDone] = useState(false);
+  const [proofUrl, setProofUrl] = useState("");
+  const [uploading, setUploading] = useState(false);
 
   async function copy(value: string) {
     try {
@@ -66,24 +74,55 @@ function CheckoutPage() {
     }
   }
 
+  async function handleProofUpload(file: File) {
+    try {
+      setUploading(true);
+      setProofUrl(await uploadProductImage(file));
+      toast.success("Payment screenshot uploaded");
+    } catch (e) {
+      toast.error((e as Error).message);
+    } finally {
+      setUploading(false);
+    }
+  }
+
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const get = (k: string) => String(form.get(k) ?? "").trim();
 
-    if (!get("txid")) {
+    if (isCrypto(selected) && !get("txid")) {
       toast.error("Please paste the transaction ID (hash) of your payment.");
       return;
     }
 
+    const requestType = isCrypto(selected)
+      ? "Crypto Order — Payment Submitted"
+      : isBank(selected)
+        ? "Bank Transfer Order — Account Details Requested"
+        : `${selected?.name} Order — Awaiting Payment Request`;
+
     const payload: Record<string, string> = {
-      "Request Type": "Crypto Order — Payment Submitted",
-      "Payment Coin": `${selected?.name} (${selected?.symbol})`,
+      "Request Type": requestType,
+      "Payment Method": `${selected?.name} (${selected?.symbol})`,
       "Payment Network": selected?.network || "—",
-      "Receiving Address": selected?.address || "—",
-      "Transaction ID": get("txid"),
-      "Amount Sent": get("amount"),
-      "Sending Wallet (optional)": get("wallet"),
+      ...(isCrypto(selected)
+        ? {
+            "Receiving Address": selected?.address || "—",
+            "Transaction ID": get("txid"),
+            "Amount Sent": get("amount"),
+            "Sending Wallet (optional)": get("wallet"),
+          }
+        : {}),
+      ...(isRequest(selected)
+        ? {
+            "Customer Payment Handle": get("handle"),
+            "Payment Screenshot": proofUrl || "Not uploaded yet — customer will send after paying",
+          }
+        : {}),
+      ...(isBank(selected)
+        ? { "Bank / Transfer Preference": get("banknote") || "Not specified" }
+        : {}),
       Items: items
         .map(
           (i) =>
@@ -110,10 +149,14 @@ function CheckoutPage() {
 
     try {
       setSending(true);
-      await submitToEmail(`Crypto Order Payment from ${get("name")}`, payload);
+      await submitToEmail(`${selected?.name ?? "Order"} checkout from ${get("name")}`, payload);
       setDone(true);
       clear();
-      toast.success("Payment details received. We are verifying your transaction.");
+      toast.success(
+        isCrypto(selected)
+          ? "Payment details received. We are verifying your transaction."
+          : "Order received. Our finance desk will contact you shortly.",
+      );
     } catch {
       toast.error(`Could not submit. Please email ${SITE.email} with your transaction ID.`);
     } finally {
@@ -127,15 +170,35 @@ function CheckoutPage() {
         <div className="mx-auto max-w-2xl px-4 py-24 text-center">
           <CheckCircle2 className="mx-auto h-14 w-14 text-success" aria-hidden="true" />
           <h1 className="mt-5 font-display text-2xl font-bold uppercase text-charcoal">
-            Payment submitted — order pending confirmation
+            {isCrypto(selected)
+              ? "Payment submitted — order pending confirmation"
+              : "Order received — our finance desk will contact you"}
           </h1>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            Thank you. Our finance team is verifying your transaction on-chain. Once the required
-            network confirmations are reached you will receive an order confirmation and invoice by
-            email, followed by freight documents and a tracking number when your hardware ships.
-            For urgent questions call {SITE.phone} or email {SITE.email} and quote your transaction
-            ID.
-          </p>
+          {isCrypto(selected) ? (
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Thank you. Our finance team is verifying your transaction on-chain. Once the required
+              network confirmations are reached you will receive an order confirmation and invoice by
+              email, followed by freight documents and a tracking number when your hardware ships.
+              For urgent questions call {SITE.phone} or email {SITE.email} and quote your
+              transaction ID.
+            </p>
+          ) : isBank(selected) ? (
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Thank you. Our finance team is reviewing your order and will reply by email with the
+              full bank account details — account name, account number, routing or SWIFT code and
+              your unique payment reference. Complete the transfer from your bank, send us the
+              transfer receipt, and we crate and ship once the funds clear. Questions? Call{" "}
+              {SITE.phone} or email {SITE.email}.
+            </p>
+          ) : (
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Thank you. Our finance team is reviewing your order and will send you a{" "}
+              {selected?.name} payment request with the exact amount and the verified handle to pay.
+              Confirm the request, complete the payment, then reply with a screenshot of the
+              completed payment so we can release your order. Never pay a handle you receive from
+              anyone other than {SITE.email} or {SITE.phone}.
+            </p>
+          )}
           <Button className="mt-6" onClick={() => navigate({ to: "/products" })}>
             Continue shopping
           </Button>
