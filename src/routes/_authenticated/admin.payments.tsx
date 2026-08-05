@@ -294,7 +294,8 @@ function AdminPayments() {
             e.preventDefault();
             if (!form.name.trim() || !form.symbol.trim())
               return toast.error("Coin name and symbol are required");
-            if (!form.address.trim()) return toast.error("Wallet address is required");
+            if (form.kind === "crypto" && !form.address.trim())
+              return toast.error("Wallet address is required for crypto methods");
             create.mutate();
           }}
         >
