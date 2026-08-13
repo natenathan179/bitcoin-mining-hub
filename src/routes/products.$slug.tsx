@@ -6,6 +6,7 @@ import { ShoppingCart, MessageSquare, ShieldCheck, Truck, Wrench, Check } from "
 
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
+import { ProductInternalLinks } from "@/components/site/ProductInternalLinks";
 import { InquiryModal } from "@/components/site/InquiryModal";
 import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
 import { formatPrice, SITE } from "@/lib/site";
@@ -739,6 +740,8 @@ function ProductDetail() {
             </Accordion>
           </div>
       </section>
+
+      <ProductInternalLinks product={product} products={all} />
 
       {related.length > 0 && (
         <section className="mx-auto max-w-[1280px] px-4 py-12">

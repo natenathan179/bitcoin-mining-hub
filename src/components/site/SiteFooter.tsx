@@ -4,6 +4,13 @@ import { Facebook, Twitter, Youtube, Instagram, Linkedin, MapPin } from "lucide-
 import { Logo } from "./Logo";
 import { SITE } from "@/lib/site";
 import { COLLECTIONS } from "@/lib/collections";
+import { BLOG_CATEGORIES, BLOG_POSTS } from "@/lib/blog";
+
+// One evergreen guide per editorial category — sitewide internal links that
+// funnel crawl equity into the deepest blog content.
+const GUIDE_LINKS = BLOG_CATEGORIES.map(
+  (c) => BLOG_POSTS.find((p) => p.categoryId === c.id),
+).filter((p): p is (typeof BLOG_POSTS)[number] => Boolean(p));
 
 const COLUMNS = [
   {
@@ -110,6 +117,27 @@ export function SiteFooter() {
             <li className="flex gap-2">
               <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden="true" />
               {SITE.address}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-charcoal-foreground/10">
+        <div className="mx-auto max-w-[1280px] px-4 py-6">
+          <h3 className="font-display text-sm font-semibold uppercase tracking-wide">
+            Popular Mining Guides
+          </h3>
+          <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2 text-xs text-charcoal-foreground/70">
+            {GUIDE_LINKS.map((p) => (
+              <li key={p.slug}>
+                <Link to="/blog/$slug" params={{ slug: p.slug }} className="hover:text-ice">
+                  {p.title}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link to="/blog" className="font-semibold text-ice hover:underline">
+                All 99 guides
+              </Link>
             </li>
           </ul>
         </div>
