@@ -293,3 +293,80 @@ export function matchPosts(collection: Collection, limit = 12): BlogPost[] {
     .sort((a, b) => b.score - a.score || a.post.title.localeCompare(b.post.title));
   return scored.slice(0, limit).map((s) => s.post);
 }
+
+/* ---------------- internal linking helpers ---------------- */
+
+const STOP = new Set(["miner", "bitcoin", "asic", "for", "sale", "the", "and", "with", "pro", "th/s"]);
+
+/** Distinctive model tokens from a product name, e.g. "s21", "xp", "hyd". */
+export function modelTokens(product: Product): string[] {
+  return Array.from(
+    new Set(
+      `${product.name} ${product.brand}`
+        .toLowerCase()
+        .replace(/[^a-z0-9+ ]/g, " ")
+        .split(/\s+/)
+        .filter((t) => t.length > 1 && !STOP.has(t)),
+    ),
+  );
+}
+
+/** Descriptive anchor text for a product link — good for keyword-rich internal links. */
+export function productAnchor(product: Product): string {
+  const bits = [product.hashrate, product.efficiency].filter(Boolean).join(" · ");
+  return bits ? `${product.name} (${bits})` : product.name;
+}
+
+/** Blog posts most relevant to one specific product. */
+export function postsForProduct(product: Product, limit = 3): BlogPost[] {
+  const tokens = modelTokens(product);
+  const brand = product.brand?.toLowerCase() ?? "";
+  const used = /used|refurb/i.test(product.condition);
+  const scored = BLOG_POSTS.map((post) => {
+    const hay = `${post.title} ${post.description} ${post.keywords.join(" ")}`.toLowerCase();
+    let score = 0;
+    for (const t of tokens) if (hay.includes(t)) score += t.length > 2 ? 3 : 1;
+    if (brand && hay.includes(brand)) score += 3;
+    if (used && /(used|refurbish|second-hand|budget)/.test(hay)) score += 2;
+    if (post.categoryId === "profit" || post.categoryId === "buy") score += 1;
+    return { post, score };
+  })
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score || a.post.title.localeCompare(b.post.title));
+  return scored.slice(0, limit).map((s) => s.post);
+}
+
+export interface LinkGroup {
+  title: string;
+  products: Product[];
+}
+
+/** Group a collection's matched products by brand for a link hub. */
+export function brandLinkGroups(products: Product[], maxGroups = 6, perGroup = 8): LinkGroup[] {
+  const map = new Map<string, Product[]>();
+  for (const p of products) {
+    const brand = p.brand?.trim() || "Other brands";
+    const list = map.get(brand) ?? [];
+    list.push(p);
+    map.set(brand, list);
+  }
+  return Array.from(map.entries())
+    .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]))
+    .slice(0, maxGroups)
+    .map(([title, list]) => ({
+      title,
+      products: [...list]
+        .sort((a, b) => (b.sale_price ?? b.price) - (a.sale_price ?? a.price))
+        .slice(0, perGroup),
+    }));
+}
+
+/** Highest-value products in the collection, used for spotlight link cards. */
+export function spotlightProducts(products: Product[], limit = 6): Product[] {
+  return [...products]
+    .sort((a, b) => {
+      if (a.featured !== b.featured) return a.featured ? -1 : 1;
+      return (b.sale_price ?? b.price) - (a.sale_price ?? a.price);
+    })
+    .slice(0, limit);
+}
