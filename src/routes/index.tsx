@@ -418,23 +418,17 @@ function Index() {
         <h2 className="mb-6 text-center font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
           Shop by Category
         </h2>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
-          {categories.map((c) => {
-            const Icon = CATEGORY_ICONS[c.icon] ?? Cpu;
-            return (
-              <Link
-                key={c.id}
-                to="/products"
-                search={{ category: c.slug, q: undefined }}
-                className="flex flex-col items-center justify-center gap-3 rounded-md border border-border bg-card px-2 py-6 text-center transition-all hover:-translate-y-0.5 hover:border-primary"
-                style={{ boxShadow: "var(--shadow-card)" }}
-              >
-                <Icon className="h-7 w-7 text-primary" aria-hidden="true" />
-                <span className="text-[11px] font-medium leading-tight text-charcoal">{c.name}</span>
-              </Link>
-            );
-          })}
-        </div>
+        <Suspense
+          fallback={
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <Skeleton key={i} className="h-[110px]" />
+              ))}
+            </div>
+          }
+        >
+          <CategoryGrid />
+        </Suspense>
       </section>
 
       {/* Brands */}
@@ -480,16 +474,17 @@ function Index() {
             View All Products <ArrowRight className="h-3 w-3" aria-hidden="true" />
           </Link>
         </div>
-        <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-          {showcase.map((p) => (
-            <ProductCard key={p.id} product={p} />
-          ))}
-        </div>
-        {showcase.length === 0 && (
-          <p className="mt-8 text-center text-sm text-muted-foreground">
-            Products are being restocked. Contact our sales desk for current availability.
-          </p>
-        )}
+        <Suspense
+          fallback={
+            <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <Skeleton key={i} className="h-[280px]" />
+              ))}
+            </div>
+          }
+        >
+          <ProductShowcase />
+        </Suspense>
       </section>
 
       {/* Why us */}
