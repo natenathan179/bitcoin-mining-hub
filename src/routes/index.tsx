@@ -29,8 +29,8 @@ import {
   Bitcoin,
 } from "lucide-react";
 
-import heroImg from "@/assets/hero-mining-facility.jpg";
-import heroMiner from "@/assets/hero-miner-3d.png";
+import heroImg from "@/assets/hero-mining-facility.webp";
+import heroMiner from "@/assets/hero-miner-3d.webp";
 import articleProfit from "@/assets/article-profit.jpg";
 import articleFarm from "@/assets/article-farm.jpg";
 import articleRepair from "@/assets/article-repair.jpg";
@@ -313,8 +313,8 @@ function Index() {
             <img
               src={heroMiner}
               alt="Antminer ASIC bitcoin miner with red LED lighting"
-              width={1024}
-              height={1024}
+            width={800}
+            height={800}
               decoding="async"
               loading="lazy"
               className="animate-hero-float relative h-auto w-[86%] drop-shadow-[0_25px_45px_rgba(0,0,0,0.55)]"
