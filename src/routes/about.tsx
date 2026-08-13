@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
-import heroImg from "@/assets/hero-mining-facility.jpg";
+import heroImg from "@/assets/hero-mining-facility.webp";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
