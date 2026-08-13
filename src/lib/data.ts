@@ -106,6 +106,33 @@ export async function fetchReviews(): Promise<Review[]> {
   return (data ?? []) as unknown as Review[];
 }
 
+/** Homepage showcase: only the handful of rows the hero grid renders. */
+export async function fetchHomeProducts(): Promise<Product[]> {
+  const { data, error } = await table("products")
+    .select(PRODUCT_LIST_COLUMNS)
+    .order("featured", { ascending: false })
+    .order("created_at", { ascending: false })
+    .limit(6);
+  if (error) throw error;
+  return (data ?? []).map((row) => ({ description: "", ...(row as object) })) as unknown as Product[];
+}
+
+/** Homepage reviews strip: three most recent approved reviews. */
+export async function fetchTopReviews(): Promise<Review[]> {
+  const { data, error } = await table("reviews")
+    .select("id,name,location,rating,title,body,avatar_url,product_name,verified,approved,created_at")
+    .order("created_at", { ascending: false })
+    .limit(3);
+  if (error) throw error;
+  return (data ?? []) as unknown as Review[];
+}
+
+export const homeProductsQuery = () =>
+  queryOptions({ queryKey: ["products", "home"], queryFn: fetchHomeProducts });
+
+export const topReviewsQuery = () =>
+  queryOptions({ queryKey: ["reviews", "top"], queryFn: fetchTopReviews });
+
 export const categoriesQuery = () =>
   queryOptions({ queryKey: ["categories"], queryFn: fetchCategories });
 
