@@ -93,8 +93,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://bitcoinminingdepot.com/og-preview.jpg" },
     ],
     links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      // Fonts are self-hosted from /public/fonts — preload the body face used above the fold.
+      {
+        rel: "preload",
+        href: "/fonts/inter-var.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous" as const,
+      },
+      {
+        rel: "preload",
+        href: "/fonts/barlow-condensed-700.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous" as const,
+      },
       // Product imagery is served from backend storage — warm the connection early.
       ...(import.meta.env.VITE_SUPABASE_URL
         ? [
@@ -106,10 +119,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             { rel: "dns-prefetch", href: import.meta.env.VITE_SUPABASE_URL as string },
           ]
         : []),
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
-      },
       {
         rel: "stylesheet",
         href: appCss,
