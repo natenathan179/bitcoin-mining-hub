@@ -3,6 +3,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
+import { CollectionInternalLinks } from "@/components/site/CollectionInternalLinks";
 import { COLLECTIONS, findCollection, matchPosts, matchProducts } from "@/lib/collections";
 import { categoriesQuery, productsQuery } from "@/lib/data";
 import { SITE } from "@/lib/site";
@@ -166,6 +167,8 @@ function CollectionPage() {
             </article>
           ))}
         </section>
+
+        <CollectionInternalLinks collection={collection} products={matched} />
 
         {posts.length > 0 && (
           <section className="mt-14" aria-labelledby="collection-guides">
