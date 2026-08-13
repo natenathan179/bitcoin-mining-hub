@@ -14,6 +14,7 @@ const COLUMNS = [
       { label: "Hosting Solutions", to: "/hosting" },
       { label: "Repair Center", to: "/repair-services" },
       { label: "Knowledge Center", to: "/knowledge-center" },
+      { label: "Blog", to: "/blog" },
       { label: "Contact Us", to: "/contact" },
     ],
   },

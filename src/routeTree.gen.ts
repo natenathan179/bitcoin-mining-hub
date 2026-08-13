@@ -27,8 +27,10 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 import { Route as CompareAntminerS21XpHydVsS19XpPlusHydroRouteImport } from './routes/compare.antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as AdminLoginRouteImport } from './routes/admin.login'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
@@ -126,6 +128,11 @@ const ProductsIndexRoute = ProductsIndexRouteImport.update({
   path: '/products/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsSlugRoute = ProductsSlugRouteImport.update({
   id: '/products/$slug',
   path: '/products/$slug',
@@ -137,6 +144,11 @@ const CompareAntminerS21XpHydVsS19XpPlusHydroRoute =
     path: '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogSlugRoute = BlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminLoginRoute = AdminLoginRouteImport.update({
   id: '/admin/login',
   path: '/admin/login',
@@ -196,8 +208,10 @@ export interface FileRoutesByFullPath {
   '/wholesale': typeof WholesaleRoute
   '/admin': typeof AuthenticatedAdminRouteWithChildren
   '/admin/login': typeof AdminLoginRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/blog/': typeof BlogIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
@@ -223,8 +237,10 @@ export interface FileRoutesByTo {
   '/warranty': typeof WarrantyRoute
   '/wholesale': typeof WholesaleRoute
   '/admin/login': typeof AdminLoginRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/blog': typeof BlogIndexRoute
   '/products': typeof ProductsIndexRoute
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
@@ -253,8 +269,10 @@ export interface FileRoutesById {
   '/wholesale': typeof WholesaleRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRouteWithChildren
   '/admin/login': typeof AdminLoginRoute
+  '/blog/$slug': typeof BlogSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/blog/': typeof BlogIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/_authenticated/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/_authenticated/admin/payments': typeof AuthenticatedAdminPaymentsRoute
@@ -283,8 +301,10 @@ export interface FileRouteTypes {
     | '/wholesale'
     | '/admin'
     | '/admin/login'
+    | '/blog/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/blog/'
     | '/products/'
     | '/admin/categories'
     | '/admin/payments'
@@ -310,8 +330,10 @@ export interface FileRouteTypes {
     | '/warranty'
     | '/wholesale'
     | '/admin/login'
+    | '/blog/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/blog'
     | '/products'
     | '/admin/categories'
     | '/admin/payments'
@@ -339,8 +361,10 @@ export interface FileRouteTypes {
     | '/wholesale'
     | '/_authenticated/admin'
     | '/admin/login'
+    | '/blog/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/blog/'
     | '/products/'
     | '/_authenticated/admin/categories'
     | '/_authenticated/admin/payments'
@@ -368,8 +392,10 @@ export interface RootRouteChildren {
   WarrantyRoute: typeof WarrantyRoute
   WholesaleRoute: typeof WholesaleRoute
   AdminLoginRoute: typeof AdminLoginRoute
+  BlogSlugRoute: typeof BlogSlugRoute
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute: typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   ProductsSlugRoute: typeof ProductsSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
@@ -501,6 +527,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products/$slug': {
       id: '/products/$slug'
       path: '/products/$slug'
@@ -513,6 +546,13 @@ declare module '@tanstack/react-router' {
       path: '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
       fullPath: '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
       preLoaderRoute: typeof CompareAntminerS21XpHydVsS19XpPlusHydroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin/login': {
@@ -616,11 +656,23 @@ const rootRouteChildren: RootRouteChildren = {
   WarrantyRoute: WarrantyRoute,
   WholesaleRoute: WholesaleRoute,
   AdminLoginRoute: AdminLoginRoute,
+  BlogSlugRoute: BlogSlugRoute,
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute:
     CompareAntminerS21XpHydVsS19XpPlusHydroRoute,
   ProductsSlugRoute: ProductsSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
   ProductsIndexRoute: ProductsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
