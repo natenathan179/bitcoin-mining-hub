@@ -14,6 +14,7 @@ export const NAV_LINKS = [
   { label: "Hosting", to: "/hosting" },
   { label: "Repair Services", to: "/repair-services" },
   { label: "Knowledge Center", to: "/knowledge-center" },
+  { label: "Blog", to: "/blog" },
   { label: "Reviews", to: "/reviews" },
   { label: "About Us", to: "/about" },
   { label: "Contact Us", to: "/contact" },
