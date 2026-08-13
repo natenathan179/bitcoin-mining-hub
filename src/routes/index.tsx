@@ -565,21 +565,17 @@ function Index() {
             <h2 className="text-center font-display text-lg font-semibold uppercase tracking-wide text-charcoal">
               Customer Reviews
             </h2>
-            <ul className="mt-6 space-y-6">
-              {topReviews.map((r) => (
-                <li key={r.id} className="flex gap-3">
-                  <Quote className="h-6 w-6 shrink-0 text-silver" aria-hidden="true" />
-                  <div>
-                    <p className="text-sm leading-relaxed text-charcoal">{r.body}</p>
-                    <div className="mt-2">
-                      <Stars rating={r.rating} />
-                    </div>
-                    <p className="mt-2 text-sm font-semibold text-charcoal">{r.name}</p>
-                    <p className="text-xs text-muted-foreground">{r.location}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <Suspense
+              fallback={
+                <div className="mt-6 space-y-6">
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <Skeleton key={i} className="h-24" />
+                  ))}
+                </div>
+              }
+            >
+              <ReviewsList />
+            </Suspense>
             <div className="mt-6 text-center">
               <Link to="/reviews" className="text-xs font-semibold uppercase text-primary">
                 Read all reviews
