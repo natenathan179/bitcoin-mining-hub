@@ -254,21 +254,84 @@ function Newsletter() {
   );
 }
 
-function Index() {
-  const { data: products } = useSuspenseQuery(productsQuery());
-  const { data: categories } = useSuspenseQuery(categoriesQuery());
-  const { data: reviews } = useSuspenseQuery(reviewsQuery());
+function Skeleton({ className = "" }: { className?: string }) {
+  return <div className={`animate-pulse rounded-md bg-muted ${className}`} aria-hidden="true" />;
+}
 
+function CategoryGrid() {
+  const { data: categories } = useSuspenseQuery(categoriesQuery());
+  return (
+    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
+      {categories.map((c) => {
+        const Icon = CATEGORY_ICONS[c.icon] ?? Cpu;
+        return (
+          <Link
+            key={c.id}
+            to="/products"
+            search={{ category: c.slug, q: undefined }}
+            className="flex flex-col items-center justify-center gap-3 rounded-md border border-border bg-card px-2 py-6 text-center transition-all hover:-translate-y-0.5 hover:border-primary"
+            style={{ boxShadow: "var(--shadow-card)" }}
+          >
+            <Icon className="h-7 w-7 text-primary" aria-hidden="true" />
+            <span className="text-[11px] font-medium leading-tight text-charcoal">{c.name}</span>
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
+
+function ProductShowcase() {
+  const { data: products } = useSuspenseQuery(homeProductsQuery());
   const featured = products.filter((p) => p.featured);
   const showcase = (featured.length ? featured : products).slice(0, 6);
-  const topReviews = reviews.slice(0, 3);
 
+  if (showcase.length === 0) {
+    return (
+      <p className="mt-8 text-center text-sm text-muted-foreground">
+        Products are being restocked. Contact our sales desk for current availability.
+      </p>
+    );
+  }
+
+  return (
+    <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+      {showcase.map((p) => (
+        <ProductCard key={p.id} product={p} />
+      ))}
+    </div>
+  );
+}
+
+function ReviewsList() {
+  const { data: topReviews } = useSuspenseQuery(topReviewsQuery());
+  return (
+    <ul className="mt-6 space-y-6">
+      {topReviews.map((r) => (
+        <li key={r.id} className="flex gap-3">
+          <Quote className="h-6 w-6 shrink-0 text-silver" aria-hidden="true" />
+          <div>
+            <p className="text-sm leading-relaxed text-charcoal">{r.body}</p>
+            <div className="mt-2">
+              <Stars rating={r.rating} />
+            </div>
+            <p className="mt-2 text-sm font-semibold text-charcoal">{r.name}</p>
+            <p className="text-xs text-muted-foreground">{r.location}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Index() {
   return (
     <SiteLayout>
       {/* Hero */}
       <section className="relative isolate flex min-h-[420px] items-center overflow-hidden bg-navy md:min-h-[520px] lg:min-h-[600px]">
         <img
-          src={heroImg}
+          src={hero1440}
+          srcSet={HERO_SRCSET}
           alt="Rows of enterprise bitcoin mining machines in a data center"
           width={1920}
           height={912}
