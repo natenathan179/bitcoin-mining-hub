@@ -5,7 +5,7 @@ import { ArrowLeft, Loader2, Upload, X } from "lucide-react";
 import { toast } from "sonner";
 
 import { supabase } from "@/integrations/supabase/client";
-import { categoriesQuery, productsQuery, type Product } from "@/lib/data";
+import { categoriesQuery, productsFullQuery, type Product } from "@/lib/data";
 import { uploadProductImage } from "@/lib/storage";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -66,7 +66,7 @@ function ProductEditor() {
   const queryClient = useQueryClient();
 
   const { data: categories = [] } = useQuery(categoriesQuery());
-  const { data: products = [] } = useQuery(productsQuery());
+  const { data: products = [] } = useQuery(productsFullQuery());
   const existing = products.find((p) => p.id === id);
 
   const [form, setForm] = useState<FormState>(EMPTY);

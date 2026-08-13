@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 
-import logoMark from "@/assets/logo-mark.png";
+import logoMark from "@/assets/logo-mark.webp";
 
 export function Logo({ tone = "dark" }: { tone?: "dark" | "light" }) {
   return (

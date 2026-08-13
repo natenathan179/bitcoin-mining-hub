@@ -64,6 +64,11 @@ export interface PaymentMethod {
 
 const table = (name: string) => supabase.from(name as never);
 
+// Storefront lists never render the long-form `description` body (only product
+// detail pages do), so list queries omit it to keep payloads small and fast.
+const PRODUCT_LIST_COLUMNS =
+  "id,name,slug,brand,category_id,hashrate,power,efficiency,algorithm,condition,stock_status,price,sale_price,short_description,specs,images,featured,created_at";
+
 export async function fetchCategories(): Promise<Category[]> {
   const { data, error } = await table("categories").select("*").order("sort_order");
   if (error) throw error;
@@ -71,6 +76,15 @@ export async function fetchCategories(): Promise<Category[]> {
 }
 
 export async function fetchProducts(): Promise<Product[]> {
+  const { data, error } = await table("products")
+    .select(PRODUCT_LIST_COLUMNS)
+    .order("created_at", { ascending: false });
+  if (error) throw error;
+  return (data ?? []).map((row) => ({ description: "", ...(row as object) })) as unknown as Product[];
+}
+
+/** Full rows including `description` — used by the admin product editor. */
+export async function fetchProductsFull(): Promise<Product[]> {
   const { data, error } = await table("products")
     .select("*")
     .order("created_at", { ascending: false });
@@ -96,6 +110,9 @@ export const categoriesQuery = () =>
   queryOptions({ queryKey: ["categories"], queryFn: fetchCategories });
 
 export const productsQuery = () => queryOptions({ queryKey: ["products"], queryFn: fetchProducts });
+
+export const productsFullQuery = () =>
+  queryOptions({ queryKey: ["products", "full"], queryFn: fetchProductsFull });
 
 export const productQuery = (slug: string) =>
   queryOptions({ queryKey: ["product", slug], queryFn: () => fetchProductBySlug(slug) });
