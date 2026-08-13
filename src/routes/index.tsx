@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { toast } from "sonner";
 import {
   ShieldCheck,
@@ -30,6 +30,9 @@ import {
 } from "lucide-react";
 
 import heroImg from "@/assets/hero-mining-facility.webp";
+import hero640 from "@/assets/hero-mining-facility-640.webp";
+import hero1024 from "@/assets/hero-mining-facility-1024.webp";
+import hero1440 from "@/assets/hero-mining-facility-1440.webp";
 import heroMiner from "@/assets/hero-miner-3d.webp";
 import articleProfit from "@/assets/article-profit.jpg";
 import articleFarm from "@/assets/article-farm.jpg";
@@ -37,14 +40,16 @@ import articleRepair from "@/assets/article-repair.jpg";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { Stars } from "@/components/site/Stars";
-import { categoriesQuery, productsQuery, reviewsQuery } from "@/lib/data";
+import { categoriesQuery, homeProductsQuery, topReviewsQuery } from "@/lib/data";
 import { submitToEmail, SITE } from "@/lib/site";
+
+const HERO_SRCSET = `${hero640} 640w, ${hero1024} 1024w, ${hero1440} 1440w, ${heroImg} 1920w`;
 
 export const Route = createFileRoute("/")({
   loader: ({ context }) => {
-    context.queryClient.ensureQueryData(productsQuery());
+    context.queryClient.ensureQueryData(homeProductsQuery());
     context.queryClient.ensureQueryData(categoriesQuery());
-    context.queryClient.ensureQueryData(reviewsQuery());
+    context.queryClient.ensureQueryData(topReviewsQuery());
   },
   head: () => ({
     meta: [
@@ -66,7 +71,14 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "canonical", href: "/" },
-      { rel: "preload", as: "image", href: heroImg, fetchPriority: "high" },
+      {
+        rel: "preload",
+        as: "image",
+        href: hero1440,
+        imageSrcSet: HERO_SRCSET,
+        imageSizes: "100vw",
+        fetchPriority: "high",
+      },
     ],
     scripts: [
       {
