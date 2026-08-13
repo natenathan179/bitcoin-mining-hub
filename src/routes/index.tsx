@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { toast } from "sonner";
 import {
   ShieldCheck,
@@ -30,6 +30,9 @@ import {
 } from "lucide-react";
 
 import heroImg from "@/assets/hero-mining-facility.webp";
+import hero640 from "@/assets/hero-mining-facility-640.webp";
+import hero1024 from "@/assets/hero-mining-facility-1024.webp";
+import hero1440 from "@/assets/hero-mining-facility-1440.webp";
 import heroMiner from "@/assets/hero-miner-3d.webp";
 import articleProfit from "@/assets/article-profit.jpg";
 import articleFarm from "@/assets/article-farm.jpg";
@@ -37,14 +40,16 @@ import articleRepair from "@/assets/article-repair.jpg";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { Stars } from "@/components/site/Stars";
-import { categoriesQuery, productsQuery, reviewsQuery } from "@/lib/data";
+import { categoriesQuery, homeProductsQuery, topReviewsQuery } from "@/lib/data";
 import { submitToEmail, SITE } from "@/lib/site";
+
+const HERO_SRCSET = `${hero640} 640w, ${hero1024} 1024w, ${hero1440} 1440w, ${heroImg} 1920w`;
 
 export const Route = createFileRoute("/")({
   loader: ({ context }) => {
-    context.queryClient.ensureQueryData(productsQuery());
+    context.queryClient.ensureQueryData(homeProductsQuery());
     context.queryClient.ensureQueryData(categoriesQuery());
-    context.queryClient.ensureQueryData(reviewsQuery());
+    context.queryClient.ensureQueryData(topReviewsQuery());
   },
   head: () => ({
     meta: [
@@ -66,7 +71,14 @@ export const Route = createFileRoute("/")({
     ],
     links: [
       { rel: "canonical", href: "/" },
-      { rel: "preload", as: "image", href: heroImg, fetchPriority: "high" },
+      {
+        rel: "preload",
+        as: "image",
+        href: hero1440,
+        imageSrcSet: HERO_SRCSET,
+        imageSizes: "100vw",
+        fetchPriority: "high",
+      },
     ],
     scripts: [
       {
@@ -242,21 +254,84 @@ function Newsletter() {
   );
 }
 
-function Index() {
-  const { data: products } = useSuspenseQuery(productsQuery());
-  const { data: categories } = useSuspenseQuery(categoriesQuery());
-  const { data: reviews } = useSuspenseQuery(reviewsQuery());
+function Skeleton({ className = "" }: { className?: string }) {
+  return <div className={`animate-pulse rounded-md bg-muted ${className}`} aria-hidden="true" />;
+}
 
+function CategoryGrid() {
+  const { data: categories } = useSuspenseQuery(categoriesQuery());
+  return (
+    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
+      {categories.map((c) => {
+        const Icon = CATEGORY_ICONS[c.icon] ?? Cpu;
+        return (
+          <Link
+            key={c.id}
+            to="/products"
+            search={{ category: c.slug, q: undefined }}
+            className="flex flex-col items-center justify-center gap-3 rounded-md border border-border bg-card px-2 py-6 text-center transition-all hover:-translate-y-0.5 hover:border-primary"
+            style={{ boxShadow: "var(--shadow-card)" }}
+          >
+            <Icon className="h-7 w-7 text-primary" aria-hidden="true" />
+            <span className="text-[11px] font-medium leading-tight text-charcoal">{c.name}</span>
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
+
+function ProductShowcase() {
+  const { data: products } = useSuspenseQuery(homeProductsQuery());
   const featured = products.filter((p) => p.featured);
   const showcase = (featured.length ? featured : products).slice(0, 6);
-  const topReviews = reviews.slice(0, 3);
 
+  if (showcase.length === 0) {
+    return (
+      <p className="mt-8 text-center text-sm text-muted-foreground">
+        Products are being restocked. Contact our sales desk for current availability.
+      </p>
+    );
+  }
+
+  return (
+    <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+      {showcase.map((p) => (
+        <ProductCard key={p.id} product={p} />
+      ))}
+    </div>
+  );
+}
+
+function ReviewsList() {
+  const { data: topReviews } = useSuspenseQuery(topReviewsQuery());
+  return (
+    <ul className="mt-6 space-y-6">
+      {topReviews.map((r) => (
+        <li key={r.id} className="flex gap-3">
+          <Quote className="h-6 w-6 shrink-0 text-silver" aria-hidden="true" />
+          <div>
+            <p className="text-sm leading-relaxed text-charcoal">{r.body}</p>
+            <div className="mt-2">
+              <Stars rating={r.rating} />
+            </div>
+            <p className="mt-2 text-sm font-semibold text-charcoal">{r.name}</p>
+            <p className="text-xs text-muted-foreground">{r.location}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Index() {
   return (
     <SiteLayout>
       {/* Hero */}
       <section className="relative isolate flex min-h-[420px] items-center overflow-hidden bg-navy md:min-h-[520px] lg:min-h-[600px]">
         <img
-          src={heroImg}
+          src={hero1440}
+          srcSet={HERO_SRCSET}
           alt="Rows of enterprise bitcoin mining machines in a data center"
           width={1920}
           height={912}
@@ -343,23 +418,17 @@ function Index() {
         <h2 className="mb-6 text-center font-display text-xl font-semibold uppercase tracking-wide text-charcoal">
           Shop by Category
         </h2>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
-          {categories.map((c) => {
-            const Icon = CATEGORY_ICONS[c.icon] ?? Cpu;
-            return (
-              <Link
-                key={c.id}
-                to="/products"
-                search={{ category: c.slug, q: undefined }}
-                className="flex flex-col items-center justify-center gap-3 rounded-md border border-border bg-card px-2 py-6 text-center transition-all hover:-translate-y-0.5 hover:border-primary"
-                style={{ boxShadow: "var(--shadow-card)" }}
-              >
-                <Icon className="h-7 w-7 text-primary" aria-hidden="true" />
-                <span className="text-[11px] font-medium leading-tight text-charcoal">{c.name}</span>
-              </Link>
-            );
-          })}
-        </div>
+        <Suspense
+          fallback={
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8">
+              {Array.from({ length: 8 }).map((_, i) => (
+                <Skeleton key={i} className="h-[110px]" />
+              ))}
+            </div>
+          }
+        >
+          <CategoryGrid />
+        </Suspense>
       </section>
 
       {/* Brands */}
@@ -405,16 +474,17 @@ function Index() {
             View All Products <ArrowRight className="h-3 w-3" aria-hidden="true" />
           </Link>
         </div>
-        <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
-          {showcase.map((p) => (
-            <ProductCard key={p.id} product={p} />
-          ))}
-        </div>
-        {showcase.length === 0 && (
-          <p className="mt-8 text-center text-sm text-muted-foreground">
-            Products are being restocked. Contact our sales desk for current availability.
-          </p>
-        )}
+        <Suspense
+          fallback={
+            <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <Skeleton key={i} className="h-[280px]" />
+              ))}
+            </div>
+          }
+        >
+          <ProductShowcase />
+        </Suspense>
       </section>
 
       {/* Why us */}
@@ -495,21 +565,17 @@ function Index() {
             <h2 className="text-center font-display text-lg font-semibold uppercase tracking-wide text-charcoal">
               Customer Reviews
             </h2>
-            <ul className="mt-6 space-y-6">
-              {topReviews.map((r) => (
-                <li key={r.id} className="flex gap-3">
-                  <Quote className="h-6 w-6 shrink-0 text-silver" aria-hidden="true" />
-                  <div>
-                    <p className="text-sm leading-relaxed text-charcoal">{r.body}</p>
-                    <div className="mt-2">
-                      <Stars rating={r.rating} />
-                    </div>
-                    <p className="mt-2 text-sm font-semibold text-charcoal">{r.name}</p>
-                    <p className="text-xs text-muted-foreground">{r.location}</p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <Suspense
+              fallback={
+                <div className="mt-6 space-y-6">
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <Skeleton key={i} className="h-24" />
+                  ))}
+                </div>
+              }
+            >
+              <ReviewsList />
+            </Suspense>
             <div className="mt-6 text-center">
               <Link to="/reviews" className="text-xs font-semibold uppercase text-primary">
                 Read all reviews
