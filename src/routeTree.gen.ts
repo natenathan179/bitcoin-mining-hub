@@ -30,6 +30,7 @@ import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 import { Route as CompareAntminerS21XpHydVsS19XpPlusHydroRouteImport } from './routes/compare.antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
+import { Route as CollectionsSlugRouteImport } from './routes/collections.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as AdminLoginRouteImport } from './routes/admin.login'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
@@ -144,6 +145,11 @@ const CompareAntminerS21XpHydVsS19XpPlusHydroRoute =
     path: '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro',
     getParentRoute: () => rootRouteImport,
   } as any)
+const CollectionsSlugRoute = CollectionsSlugRouteImport.update({
+  id: '/collections/$slug',
+  path: '/collections/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/blog/$slug',
   path: '/blog/$slug',
@@ -209,6 +215,7 @@ export interface FileRoutesByFullPath {
   '/admin': typeof AuthenticatedAdminRouteWithChildren
   '/admin/login': typeof AdminLoginRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
   '/blog/': typeof BlogIndexRoute
@@ -238,6 +245,7 @@ export interface FileRoutesByTo {
   '/wholesale': typeof WholesaleRoute
   '/admin/login': typeof AdminLoginRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
   '/blog': typeof BlogIndexRoute
@@ -270,6 +278,7 @@ export interface FileRoutesById {
   '/_authenticated/admin': typeof AuthenticatedAdminRouteWithChildren
   '/admin/login': typeof AdminLoginRoute
   '/blog/$slug': typeof BlogSlugRoute
+  '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
   '/blog/': typeof BlogIndexRoute
@@ -302,6 +311,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/admin/login'
     | '/blog/$slug'
+    | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
     | '/blog/'
@@ -331,6 +341,7 @@ export interface FileRouteTypes {
     | '/wholesale'
     | '/admin/login'
     | '/blog/$slug'
+    | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
     | '/blog'
@@ -362,6 +373,7 @@ export interface FileRouteTypes {
     | '/_authenticated/admin'
     | '/admin/login'
     | '/blog/$slug'
+    | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
     | '/blog/'
@@ -393,6 +405,7 @@ export interface RootRouteChildren {
   WholesaleRoute: typeof WholesaleRoute
   AdminLoginRoute: typeof AdminLoginRoute
   BlogSlugRoute: typeof BlogSlugRoute
+  CollectionsSlugRoute: typeof CollectionsSlugRoute
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute: typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   ProductsSlugRoute: typeof ProductsSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
@@ -548,6 +561,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CompareAntminerS21XpHydVsS19XpPlusHydroRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/collections/$slug': {
+      id: '/collections/$slug'
+      path: '/collections/$slug'
+      fullPath: '/collections/$slug'
+      preLoaderRoute: typeof CollectionsSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/$slug': {
       id: '/blog/$slug'
       path: '/blog/$slug'
@@ -657,6 +677,7 @@ const rootRouteChildren: RootRouteChildren = {
   WholesaleRoute: WholesaleRoute,
   AdminLoginRoute: AdminLoginRoute,
   BlogSlugRoute: BlogSlugRoute,
+  CollectionsSlugRoute: CollectionsSlugRoute,
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute:
     CompareAntminerS21XpHydVsS19XpPlusHydroRoute,
   ProductsSlugRoute: ProductsSlugRoute,
