@@ -3,6 +3,7 @@ import { Facebook, Twitter, Youtube, Instagram, Linkedin, MapPin } from "lucide-
 
 import { Logo } from "./Logo";
 import { SITE } from "@/lib/site";
+import { COLLECTIONS } from "@/lib/collections";
 
 const COLUMNS = [
   {
@@ -43,7 +44,7 @@ const COLUMNS = [
 export function SiteFooter() {
   return (
     <footer className="bg-navy text-charcoal-foreground">
-      <div className="mx-auto grid max-w-[1280px] gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-[1280px] gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
         <div>
           <Logo tone="light" />
           <p className="mt-4 text-xs leading-relaxed text-charcoal-foreground/70">
@@ -75,6 +76,25 @@ export function SiteFooter() {
             </ul>
           </div>
         ))}
+
+        <div>
+          <h3 className="font-display text-sm font-semibold uppercase tracking-wide">
+            Shop by Category
+          </h3>
+          <ul className="mt-4 space-y-2 text-xs text-charcoal-foreground/70">
+            {COLLECTIONS.map((c) => (
+              <li key={c.slug}>
+                <Link
+                  to="/collections/$slug"
+                  params={{ slug: c.slug }}
+                  className="hover:text-ice"
+                >
+                  {c.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div>
           <h3 className="font-display text-sm font-semibold uppercase tracking-wide">Contact Us</h3>
