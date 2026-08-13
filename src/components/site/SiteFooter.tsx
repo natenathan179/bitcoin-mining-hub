@@ -44,7 +44,7 @@ const COLUMNS = [
 export function SiteFooter() {
   return (
     <footer className="bg-navy text-charcoal-foreground">
-      <div className="mx-auto grid max-w-[1280px] gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="mx-auto grid max-w-[1280px] gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
         <div>
           <Logo tone="light" />
           <p className="mt-4 text-xs leading-relaxed text-charcoal-foreground/70">
