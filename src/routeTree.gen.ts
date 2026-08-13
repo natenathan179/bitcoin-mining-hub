@@ -27,6 +27,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 import { Route as CompareAntminerS21XpHydVsS19XpPlusHydroRouteImport } from './routes/compare.antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
 import { Route as AdminLoginRouteImport } from './routes/admin.login'
@@ -126,6 +127,11 @@ const ProductsIndexRoute = ProductsIndexRouteImport.update({
   path: '/products/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProductsSlugRoute = ProductsSlugRouteImport.update({
   id: '/products/$slug',
   path: '/products/$slug',
@@ -198,6 +204,7 @@ export interface FileRoutesByFullPath {
   '/admin/login': typeof AdminLoginRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/blog/': typeof BlogIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
@@ -225,6 +232,7 @@ export interface FileRoutesByTo {
   '/admin/login': typeof AdminLoginRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/blog': typeof BlogIndexRoute
   '/products': typeof ProductsIndexRoute
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
@@ -255,6 +263,7 @@ export interface FileRoutesById {
   '/admin/login': typeof AdminLoginRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/blog/': typeof BlogIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/_authenticated/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/_authenticated/admin/payments': typeof AuthenticatedAdminPaymentsRoute
@@ -285,6 +294,7 @@ export interface FileRouteTypes {
     | '/admin/login'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/blog/'
     | '/products/'
     | '/admin/categories'
     | '/admin/payments'
@@ -312,6 +322,7 @@ export interface FileRouteTypes {
     | '/admin/login'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/blog'
     | '/products'
     | '/admin/categories'
     | '/admin/payments'
@@ -341,6 +352,7 @@ export interface FileRouteTypes {
     | '/admin/login'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/blog/'
     | '/products/'
     | '/_authenticated/admin/categories'
     | '/_authenticated/admin/payments'
@@ -370,6 +382,7 @@ export interface RootRouteChildren {
   AdminLoginRoute: typeof AdminLoginRoute
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute: typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   ProductsSlugRoute: typeof ProductsSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
 
@@ -501,6 +514,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProductsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products/$slug': {
       id: '/products/$slug'
       path: '/products/$slug'
@@ -619,6 +639,7 @@ const rootRouteChildren: RootRouteChildren = {
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute:
     CompareAntminerS21XpHydVsS19XpPlusHydroRoute,
   ProductsSlugRoute: ProductsSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
   ProductsIndexRoute: ProductsIndexRoute,
 }
 export const routeTree = rootRouteImport
