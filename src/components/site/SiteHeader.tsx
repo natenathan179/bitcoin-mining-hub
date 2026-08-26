@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
-import { Search, ShoppingCart, User, Menu, X, ChevronDown, Phone } from "lucide-react";
+import { Search, ShoppingCart, User, Menu, X, ChevronDown, Phone, Facebook } from "lucide-react";
 
 import { Logo } from "./Logo";
 import { useCart } from "@/lib/cart";
@@ -48,6 +48,16 @@ export function SiteHeader() {
             <span className="flex items-center gap-1">
               <Phone className="h-3 w-3" aria-hidden="true" /> {SITE.phone}
             </span>
+            <a
+              href={SITE.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Bitcoin Mining Depot on Facebook"
+              className="hover:text-ice"
+              title="Facebook"
+            >
+              <Facebook className="h-4 w-4" aria-hidden="true" />
+            </a>
           </div>
         </div>
       </div>

@@ -63,8 +63,22 @@ export function SiteFooter() {
             Canada, Europe, Asia, Australia, the Middle East and Latin America.
           </p>
           <div className="mt-5 flex gap-4 text-charcoal-foreground/70">
-            {[Facebook, Twitter, Youtube, Instagram, Linkedin].map((Icon, i) => (
-              <a key={i} href={SITE.url} aria-label="Social profile" className="hover:text-ice">
+            <a
+              href={SITE.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Bitcoin Mining Depot on Facebook"
+              className="hover:text-ice"
+            >
+              <Facebook className="h-4 w-4" aria-hidden="true" />
+            </a>
+            {[Twitter, Youtube, Instagram, Linkedin].map((Icon, i) => (
+              <a
+                key={i}
+                href={SITE.url}
+                aria-label="Social profile"
+                className="hover:text-ice"
+              >
                 <Icon className="h-4 w-4" aria-hidden="true" />
               </a>
             ))}

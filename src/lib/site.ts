@@ -5,6 +5,7 @@ export const SITE = {
   email: "sales@bitcoinminingdepot.com",
   phone: "+852 6465 3698",
   whatsapp: "85264653698",
+  facebook: "https://www.facebook.com/share/1GubwjKqqk/",
   address: "Tower 1, Times Square, 34號 Matheson St, Causeway Bay, Hong Kong Island, Hong Kong",
   tagline: "Powering the Future of Bitcoin Mining.",
   city: "Causeway Bay, Hong Kong",
