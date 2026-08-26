@@ -266,7 +266,7 @@ function BlogPostPage() {
               <li>Bench-tested, hashrate-verified hardware</li>
               <li>Written warranty terms in plain language</li>
               <li>Crypto, CashApp, Chime and bank payment</li>
-              <li>Shipping from Edmonton across North America</li>
+              <li>Shipping from Hong Kong worldwide</li>
             </ul>
             <a
               href={`mailto:${SITE.email}`}
