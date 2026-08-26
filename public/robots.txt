@@ -1,8 +1,12 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /admin
+Disallow: /admin/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /admin
+Disallow: /admin/
 
 User-agent: Twitterbot
 Allow: /
@@ -15,4 +19,4 @@ Allow: /
 Disallow: /admin
 Disallow: /admin/
 
-Sitemap: /sitemap.xml
+Sitemap: https://bitcoinminingdepot.com/sitemap.xml
