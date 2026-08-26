@@ -33,6 +33,7 @@ import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 import { Route as CompareAntminerS21XpHydVsS19XpPlusHydroRouteImport } from './routes/compare.antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
 import { Route as CollectionsSlugRouteImport } from './routes/collections.$slug'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as BitcoinMiningMarketplaceSlugRouteImport } from './routes/bitcoin-mining-marketplace.$slug'
 import { Route as AdminLoginRouteImport } from './routes/admin.login'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
@@ -162,6 +163,12 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BitcoinMiningMarketplaceSlugRoute =
+  BitcoinMiningMarketplaceSlugRouteImport.update({
+    id: '/bitcoin-mining-marketplace/$slug',
+    path: '/bitcoin-mining-marketplace/$slug',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const AdminLoginRoute = AdminLoginRouteImport.update({
   id: '/admin/login',
   path: '/admin/login',
@@ -221,6 +228,7 @@ export interface FileRoutesByFullPath {
   '/wholesale': typeof WholesaleRoute
   '/admin': typeof AuthenticatedAdminRouteWithChildren
   '/admin/login': typeof AdminLoginRoute
+  '/bitcoin-mining-marketplace/$slug': typeof BitcoinMiningMarketplaceSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
@@ -252,6 +260,7 @@ export interface FileRoutesByTo {
   '/warranty': typeof WarrantyRoute
   '/wholesale': typeof WholesaleRoute
   '/admin/login': typeof AdminLoginRoute
+  '/bitcoin-mining-marketplace/$slug': typeof BitcoinMiningMarketplaceSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
@@ -286,6 +295,7 @@ export interface FileRoutesById {
   '/wholesale': typeof WholesaleRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRouteWithChildren
   '/admin/login': typeof AdminLoginRoute
+  '/bitcoin-mining-marketplace/$slug': typeof BitcoinMiningMarketplaceSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
@@ -320,6 +330,7 @@ export interface FileRouteTypes {
     | '/wholesale'
     | '/admin'
     | '/admin/login'
+    | '/bitcoin-mining-marketplace/$slug'
     | '/blog/$slug'
     | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
@@ -351,6 +362,7 @@ export interface FileRouteTypes {
     | '/warranty'
     | '/wholesale'
     | '/admin/login'
+    | '/bitcoin-mining-marketplace/$slug'
     | '/blog/$slug'
     | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
@@ -384,6 +396,7 @@ export interface FileRouteTypes {
     | '/wholesale'
     | '/_authenticated/admin'
     | '/admin/login'
+    | '/bitcoin-mining-marketplace/$slug'
     | '/blog/$slug'
     | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
@@ -417,6 +430,7 @@ export interface RootRouteChildren {
   WarrantyRoute: typeof WarrantyRoute
   WholesaleRoute: typeof WholesaleRoute
   AdminLoginRoute: typeof AdminLoginRoute
+  BitcoinMiningMarketplaceSlugRoute: typeof BitcoinMiningMarketplaceSlugRoute
   BlogSlugRoute: typeof BlogSlugRoute
   CollectionsSlugRoute: typeof CollectionsSlugRoute
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute: typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
@@ -596,6 +610,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bitcoin-mining-marketplace/$slug': {
+      id: '/bitcoin-mining-marketplace/$slug'
+      path: '/bitcoin-mining-marketplace/$slug'
+      fullPath: '/bitcoin-mining-marketplace/$slug'
+      preLoaderRoute: typeof BitcoinMiningMarketplaceSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/login': {
       id: '/admin/login'
       path: '/admin/login'
@@ -697,6 +718,7 @@ const rootRouteChildren: RootRouteChildren = {
   WarrantyRoute: WarrantyRoute,
   WholesaleRoute: WholesaleRoute,
   AdminLoginRoute: AdminLoginRoute,
+  BitcoinMiningMarketplaceSlugRoute: BitcoinMiningMarketplaceSlugRoute,
   BlogSlugRoute: BlogSlugRoute,
   CollectionsSlugRoute: CollectionsSlugRoute,
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute:
