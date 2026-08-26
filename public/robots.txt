@@ -15,4 +15,4 @@ Allow: /
 Disallow: /admin
 Disallow: /admin/
 
-Sitemap: https://bitcoinminingdepot.com/sitemap.xml
+Sitemap: /sitemap.xml
