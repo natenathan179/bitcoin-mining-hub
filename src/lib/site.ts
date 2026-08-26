@@ -7,7 +7,32 @@ export const SITE = {
   whatsapp: "85264653698",
   address: "Tower 1, Times Square, 34號 Matheson St, Causeway Bay, Hong Kong Island, Hong Kong",
   tagline: "Powering the Future of Bitcoin Mining.",
+  city: "Causeway Bay, Hong Kong",
+  country: "Hong Kong",
+  hqLine: "Headquartered in Causeway Bay, Hong Kong — shipping worldwide",
+  shippingLine:
+    "Global shipping from our Hong Kong warehouse to the USA, Canada, Europe, Asia, Australia, the Middle East, Latin America and Africa.",
 };
+
+/** Regions we ship to — used across the storefront so buyers always see delivery coverage. */
+export const SHIPPING_REGIONS = [
+  {
+    name: "United States",
+    detail: "DHL / FedEx express air freight, 3–7 business days, duties handled at customs clearance.",
+  },
+  {
+    name: "Canada",
+    detail: "Door-to-door express delivery to Toronto, Vancouver, Calgary, Montreal and remote farms.",
+  },
+  {
+    name: "Europe & UK",
+    detail: "EU/UK delivery via Rotterdam, Frankfurt and London hubs with VAT/EORI documentation support.",
+  },
+  {
+    name: "Worldwide",
+    detail: "100+ countries across Asia, the Middle East, Africa, Latin America and Oceania — air or sea freight.",
+  },
+] as const;
 
 export const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${SITE.email}`;
 
