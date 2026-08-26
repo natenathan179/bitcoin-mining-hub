@@ -23,6 +23,7 @@ const COLUMNS = [
       { label: "Repair Center", to: "/repair-services" },
       { label: "Knowledge Center", to: "/knowledge-center" },
       { label: "Blog", to: "/blog" },
+      { label: "Mining Marketplace", to: "/bitcoin-mining-marketplace" },
       { label: "Contact Us", to: "/contact" },
     ],
   },
