@@ -27,6 +27,7 @@ import {
   Tag,
   ArrowRight,
   Bitcoin,
+  MapPin,
 } from "lucide-react";
 
 import heroImg from "@/assets/hero-mining-facility.webp";
