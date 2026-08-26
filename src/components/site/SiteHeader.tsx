@@ -35,7 +35,9 @@ export function SiteHeader() {
     <>
       <div className="bg-navy text-charcoal-foreground">
         <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-2 px-4 py-2 text-[11px]">
-          <p>The World's Trusted Source for Bitcoin Mining Machines &amp; Solutions</p>
+          <p>
+            Hong Kong HQ &middot; Worldwide shipping to the USA, Canada, Europe &amp; 100+ countries
+          </p>
           <div className="flex items-center gap-5">
             <span className="hidden items-center gap-1 sm:flex">
               USD <ChevronDown className="h-3 w-3" aria-hidden="true" />

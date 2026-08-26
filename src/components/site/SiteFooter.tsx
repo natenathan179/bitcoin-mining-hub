@@ -58,6 +58,10 @@ export function SiteFooter() {
             Your trusted source for bitcoin mining machines, ASIC miners, hosting and complete
             mining solutions. {SITE.tagline}
           </p>
+          <p className="mt-3 text-xs leading-relaxed text-charcoal-foreground/70">
+            Headquartered in Causeway Bay, Hong Kong, and shipping worldwide — including the USA,
+            Canada, Europe, Asia, Australia, the Middle East and Latin America.
+          </p>
           <div className="mt-5 flex gap-4 text-charcoal-foreground/70">
             {[Facebook, Twitter, Youtube, Instagram, Linkedin].map((Icon, i) => (
               <a key={i} href={SITE.url} aria-label="Social profile" className="hover:text-ice">
@@ -114,6 +118,10 @@ export function SiteFooter() {
               </a>
             </li>
             <li>Mon – Sun: 24/7 Support</li>
+            <li className="flex gap-2">
+              <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+              <span>Head Office (Hong Kong):</span>
+            </li>
             <li className="flex gap-2">
               <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden="true" />
               {SITE.address}
