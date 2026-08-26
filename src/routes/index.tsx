@@ -41,7 +41,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { Stars } from "@/components/site/Stars";
 import { categoriesQuery, homeProductsQuery, topReviewsQuery } from "@/lib/data";
-import { submitToEmail, SITE } from "@/lib/site";
+import { submitToEmail, SITE, SHIPPING_REGIONS } from "@/lib/site";
 
 const HERO_SRCSET = `${hero640} 640w, ${hero1024} 1024w, ${hero1440} 1440w, ${heroImg} 1920w`;
 
@@ -57,13 +57,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Buy genuine ASIC miners, Bitmain Antminer, WhatsMiner and Avalon bitcoin mining machines. Wholesale pricing, hosting, repair services and worldwide shipping.",
+          "Hong Kong-based supplier of genuine ASIC miners — Bitmain Antminer, WhatsMiner and Avalon. Wholesale pricing, hosting and fast worldwide delivery to the USA, Canada, Europe and 100+ countries.",
       },
       { property: "og:title", content: "Bitcoin Mining Depot | ASIC Miners for Every Scale" },
       {
         property: "og:description",
         content:
-          "Genuine bitcoin mining hardware, accessories, hosting and ASIC repair for home miners, businesses and industrial farms.",
+          "Genuine bitcoin mining hardware, hosting and ASIC repair, shipped from Hong Kong to the USA, Canada, Europe and worldwide.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -114,7 +114,12 @@ export const Route = createFileRoute("/")({
               closes: "18:00",
             },
           ],
-          areaServed: "Worldwide",
+          areaServed: [
+            { "@type": "Country", name: "United States" },
+            { "@type": "Country", name: "Canada" },
+            { "@type": "Place", name: "Europe" },
+            { "@type": "Place", name: "Worldwide" },
+          ],
           priceRange: "$$$",
         }),
       },
@@ -139,7 +144,7 @@ export const Route = createFileRoute("/")({
 
 const TRUST = [
   { icon: ShieldCheck, title: "Genuine Products", sub: "100% Authentic Miners" },
-  { icon: Truck, title: "Worldwide Shipping", sub: "Fast & Secure Delivery" },
+  { icon: Truck, title: "Worldwide Shipping", sub: "USA, Canada, Europe & 100+ countries" },
   { icon: Lock, title: "Secure Payments", sub: "Bank Wire, Card & Crypto" },
   { icon: Package, title: "Wholesale Pricing", sub: "Best Prices for Bulk Orders" },
   { icon: Headphones, title: "24/7 Support", sub: "Expert Technical Support" },
@@ -171,7 +176,7 @@ const STATS = [
   { icon: Award, value: "10+", label: "Years in Business" },
   { icon: Cpu, value: "50,000+", label: "Miners Sold" },
   { icon: Users, value: "10,000+", label: "Happy Customers" },
-  { icon: Globe, value: "100+", label: "Countries Shipped" },
+  { icon: Globe, value: "100+", label: "Countries Shipped From Hong Kong" },
   { icon: Clock, value: "24/7", label: "Support Available" },
 ];
 
@@ -348,9 +353,10 @@ function Index() {
             <span className="block text-ice">For Every Scale</span>
           </h1>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-charcoal-foreground/80 md:text-base">
-            Shop genuine ASIC miners, mining accessories and complete mining solutions for home
-            miners, businesses and industrial operations worldwide. Every machine is bench-tested,
-            warranty-backed and shipped from stock.
+            Based in Causeway Bay, Hong Kong, we ship genuine ASIC miners, accessories and complete
+            mining solutions worldwide — with fast, tracked delivery to the USA, Canada, Europe and
+            100+ other countries. Every machine is bench-tested, warranty-backed and shipped from
+            stock.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -537,6 +543,66 @@ function Index() {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* Global shipping & location */}
+      <section className="border-y border-border bg-background">
+        <div className="mx-auto max-w-[1280px] px-4 py-12">
+          <div className="grid gap-8 lg:grid-cols-[1fr_1.3fr]">
+            <div>
+              <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-primary">
+                <MapPin className="h-4 w-4" aria-hidden="true" /> Hong Kong Head Office
+              </p>
+              <h2 className="mt-3 font-display text-2xl font-bold uppercase tracking-tight text-charcoal">
+                Based in Hong Kong. Selling &amp; Delivering Worldwide.
+              </h2>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Bitcoin Mining Depot operates from {SITE.address}. Our Hong Kong location sits beside
+                the world's largest ASIC manufacturing and logistics corridor, so we secure genuine
+                Bitmain, MicroBT and Canaan hardware at source and dispatch it directly to miners in
+                the United States, Canada, Europe, Asia, the Middle East, Latin America, Africa and
+                Oceania.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                Every international order ships with a tracking number, commercial invoice and full
+                customs paperwork. Our team supports you in English 24/7 across all time zones —
+                call or WhatsApp {SITE.phone}, or email {SITE.email}.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-4">
+                <Link
+                  to="/shipping-returns"
+                  className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-ice"
+                >
+                  <Truck className="h-4 w-4" aria-hidden="true" /> Shipping &amp; Delivery Details
+                </Link>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-3 text-sm font-semibold text-charcoal transition-colors hover:border-primary"
+                >
+                  <Globe className="h-4 w-4" aria-hidden="true" /> Ask About Your Country
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {SHIPPING_REGIONS.map((r) => (
+                <div
+                  key={r.name}
+                  className="rounded-md border border-border bg-card p-5"
+                  style={{ boxShadow: "var(--shadow-card)" }}
+                >
+                  <div className="flex items-center gap-2">
+                    <Truck className="h-5 w-5 text-primary" aria-hidden="true" />
+                    <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-charcoal">
+                      {r.name}
+                    </h3>
+                  </div>
+                  <p className="mt-3 text-xs leading-relaxed text-muted-foreground">{r.detail}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

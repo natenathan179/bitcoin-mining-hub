@@ -117,11 +117,8 @@ export function SiteFooter() {
                 {SITE.email}
               </a>
             </li>
-            <li>Mon – Sun: 24/7 Support</li>
-            <li className="flex gap-2">
-              <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden="true" />
-              <span>Head Office (Hong Kong):</span>
-            </li>
+            <li>Mon – Sun: 24/7 Support (HKT / GMT+8)</li>
+            <li className="font-semibold text-charcoal-foreground/90">Head Office — Hong Kong</li>
             <li className="flex gap-2">
               <MapPin className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden="true" />
               {SITE.address}
