@@ -45,11 +45,10 @@ export const Route = createFileRoute("/repair-services")({
             email: SITE.email,
             address: {
               "@type": "PostalAddress",
-              streetAddress: "Calgary Trl NW",
-              addressLocality: "Edmonton",
-              addressRegion: "AB",
-              postalCode: "T2P 1J9",
-              addressCountry: "CA",
+              streetAddress: "Tower 1, Times Square, 34號 Matheson St",
+              addressLocality: "Causeway Bay",
+              addressRegion: "Hong Kong Island",
+              addressCountry: "HK",
             },
           },
           hasOfferCatalog: {

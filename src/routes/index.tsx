@@ -95,11 +95,10 @@ export const Route = createFileRoute("/")({
             "Supplier of genuine ASIC bitcoin miners with wholesale pricing, hosting, repair services and worldwide shipping.",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Calgary Trl NW",
-            addressLocality: "Edmonton",
-            addressRegion: "AB",
-            postalCode: "T2P 1J9",
-            addressCountry: "CA",
+            streetAddress: "Tower 1, Times Square, 34號 Matheson St",
+            addressLocality: "Causeway Bay",
+            addressRegion: "Hong Kong Island",
+            addressCountry: "HK",
           },
           openingHoursSpecification: [
             {
