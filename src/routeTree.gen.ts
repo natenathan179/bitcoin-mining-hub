@@ -28,6 +28,7 @@ import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProductsIndexRouteImport } from './routes/products.index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as BitcoinMiningMarketplaceIndexRouteImport } from './routes/bitcoin-mining-marketplace.index'
 import { Route as ProductsSlugRouteImport } from './routes/products.$slug'
 import { Route as CompareAntminerS21XpHydVsS19XpPlusHydroRouteImport } from './routes/compare.antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
 import { Route as CollectionsSlugRouteImport } from './routes/collections.$slug'
@@ -134,6 +135,12 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/blog/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BitcoinMiningMarketplaceIndexRoute =
+  BitcoinMiningMarketplaceIndexRouteImport.update({
+    id: '/bitcoin-mining-marketplace/',
+    path: '/bitcoin-mining-marketplace/',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProductsSlugRoute = ProductsSlugRouteImport.update({
   id: '/products/$slug',
   path: '/products/$slug',
@@ -218,6 +225,7 @@ export interface FileRoutesByFullPath {
   '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/bitcoin-mining-marketplace/': typeof BitcoinMiningMarketplaceIndexRoute
   '/blog/': typeof BlogIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
@@ -248,6 +256,7 @@ export interface FileRoutesByTo {
   '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/bitcoin-mining-marketplace': typeof BitcoinMiningMarketplaceIndexRoute
   '/blog': typeof BlogIndexRoute
   '/products': typeof ProductsIndexRoute
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
@@ -281,6 +290,7 @@ export interface FileRoutesById {
   '/collections/$slug': typeof CollectionsSlugRoute
   '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro': typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   '/products/$slug': typeof ProductsSlugRoute
+  '/bitcoin-mining-marketplace/': typeof BitcoinMiningMarketplaceIndexRoute
   '/blog/': typeof BlogIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/_authenticated/admin/categories': typeof AuthenticatedAdminCategoriesRoute
@@ -314,6 +324,7 @@ export interface FileRouteTypes {
     | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/bitcoin-mining-marketplace/'
     | '/blog/'
     | '/products/'
     | '/admin/categories'
@@ -344,6 +355,7 @@ export interface FileRouteTypes {
     | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/bitcoin-mining-marketplace'
     | '/blog'
     | '/products'
     | '/admin/categories'
@@ -376,6 +388,7 @@ export interface FileRouteTypes {
     | '/collections/$slug'
     | '/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro'
     | '/products/$slug'
+    | '/bitcoin-mining-marketplace/'
     | '/blog/'
     | '/products/'
     | '/_authenticated/admin/categories'
@@ -408,6 +421,7 @@ export interface RootRouteChildren {
   CollectionsSlugRoute: typeof CollectionsSlugRoute
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute: typeof CompareAntminerS21XpHydVsS19XpPlusHydroRoute
   ProductsSlugRoute: typeof ProductsSlugRoute
+  BitcoinMiningMarketplaceIndexRoute: typeof BitcoinMiningMarketplaceIndexRoute
   BlogIndexRoute: typeof BlogIndexRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
 }
@@ -547,6 +561,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bitcoin-mining-marketplace/': {
+      id: '/bitcoin-mining-marketplace/'
+      path: '/bitcoin-mining-marketplace'
+      fullPath: '/bitcoin-mining-marketplace/'
+      preLoaderRoute: typeof BitcoinMiningMarketplaceIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/products/$slug': {
       id: '/products/$slug'
       path: '/products/$slug'
@@ -681,6 +702,7 @@ const rootRouteChildren: RootRouteChildren = {
   CompareAntminerS21XpHydVsS19XpPlusHydroRoute:
     CompareAntminerS21XpHydVsS19XpPlusHydroRoute,
   ProductsSlugRoute: ProductsSlugRoute,
+  BitcoinMiningMarketplaceIndexRoute: BitcoinMiningMarketplaceIndexRoute,
   BlogIndexRoute: BlogIndexRoute,
   ProductsIndexRoute: ProductsIndexRoute,
 }
