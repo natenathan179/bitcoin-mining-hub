@@ -45,7 +45,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Machines in 2026: Top 20 ASIC Miners Ranked is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -128,7 +128,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "10 Most Profitable Bitcoin Miners You Can Buy Right Now is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -213,7 +213,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Best ASIC Miner for Bitcoin: Complete Buyer's Guide comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -297,7 +297,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Hardware for Home and Commercial Use is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -381,7 +381,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Machine for Beginners in 2026 is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -465,7 +465,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Top Bitcoin Mining Machines Ranked by Profitability and Efficiency is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -549,7 +549,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Which Bitcoin Miner Makes the Most Money Per Day? always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -633,7 +633,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Low-Power Bitcoin Mining Machines for Maximum ROI is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -716,7 +716,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Air-Cooled Bitcoin Miners Compared is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -805,7 +805,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Immersion-Cooled Bitcoin Miners for Large Mining Farms is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -893,7 +893,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Machines Under $1,000 is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -979,7 +979,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Machines Under $3,000 is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1065,7 +1065,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Machines for Passive Income is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1149,7 +1149,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Equipment for Long-Term Investment is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1234,7 +1234,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Miners with the Lowest Electricity Costs is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1317,7 +1317,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Machines Available in the USA is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1401,7 +1401,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Machines for Small Businesses is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1486,7 +1486,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Machines for Apartments and Home Offices is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1574,7 +1574,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Quiet Bitcoin Miners for Residential Mining is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1662,7 +1662,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Ultimate Bitcoin Mining Hardware Comparison Guide is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1747,7 +1747,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Bitcoin Mining Machine for Sale: How to Buy the Right ASIC Miner comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1831,7 +1831,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Where to Buy Bitcoin Mining Machines Online Safely comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1914,7 +1914,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. How to Buy an ASIC Miner Without Getting Scammed comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -1998,7 +1998,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. New vs Used Bitcoin Mining Machines: Which Is Better? comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2084,7 +2084,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Refurbished Bitcoin Miners: Are They Worth Buying? comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2172,7 +2172,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Bitcoin Mining Machine Price Guide: What You Should Expect comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2257,7 +2257,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. How Much Does a Bitcoin Mining Machine Cost in 2026? comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2341,7 +2341,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Best Places to Buy Antminer and WhatsMiner ASIC Miners comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2431,7 +2431,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Bitcoin Mining Hardware Buyer's Guide for First-Time Miners comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2516,7 +2516,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. What to Check Before Buying a Bitcoin Mining Machine comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2602,7 +2602,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Best Bitcoin Mining Deals and Discounts Available This Year comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2686,7 +2686,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. How to Choose the Best ASIC Miner for Your Budget comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2771,7 +2771,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Bitcoin Mining Machine Financing: Everything You Need to Know comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2852,7 +2852,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Should You Buy a New or Refurbished Antminer? comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -2941,7 +2941,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Wholesale Bitcoin Mining Machines: A Complete Guide comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3026,7 +3026,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Bitcoin Mining Equipment Suppliers: How to Find Trusted Sellers comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3110,7 +3110,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Buying Bitcoin Mining Machines with Cryptocurrency comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3195,7 +3195,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Importing Bitcoin Mining Machines: Costs, Taxes, and Shipping comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3281,7 +3281,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Bitcoin Mining Machine Warranty Guide: What Is Actually Covered? comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3365,7 +3365,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer S21 Review: Is It Still the Best Bitcoin Miner? deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3451,7 +3451,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer S21 Pro vs Antminer S21 XP: Which Should You Buy? deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3538,7 +3538,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer S19 Pro Review: Performance, Power, and Profitability deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3624,7 +3624,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer S19 XP vs WhatsMiner M60: Full Comparison deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3713,7 +3713,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Antminer Models for Bitcoin Mining in 2026 deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3803,7 +3803,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer Buying Guide: Which Model Fits Your Mining Goals? deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3889,7 +3889,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer S21 Setup Guide for Beginners is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -3977,7 +3977,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer Firmware Optimization Guide for Higher Profits is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4065,7 +4065,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer Maintenance Checklist to Extend Machine Lifespan is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4151,7 +4151,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer Power Consumption Explained is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4239,7 +4239,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer Noise Reduction Tips for Home Mining is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4329,7 +4329,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer Cooling Guide: Keep Your ASIC Running Efficiently is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4414,7 +4414,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Antminer ROI Calculator Explained always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4500,7 +4500,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Common Antminer Problems and How to Fix Them is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4586,7 +4586,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Is the Antminer S21 Worth Buying in 2026? deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4672,7 +4672,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "WhatsMiner M60 Review: Hashrate, Efficiency, and ROI deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4760,7 +4760,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "WhatsMiner vs Antminer: Which Bitcoin Miner Is Better? deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4849,7 +4849,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best WhatsMiner Models for Bitcoin Mining in 2026 deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -4935,7 +4935,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "WhatsMiner M50S vs Antminer S19 Pro Comparison deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5025,7 +5025,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Canaan Avalon Miner Review: Is It a Good Alternative to Antminer? deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5113,7 +5113,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Avalon A15 Pro Review: Efficiency and Profitability Tested deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5200,7 +5200,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Avalon Bitcoin Miners Ranked deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5286,7 +5286,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "MicroBT WhatsMiner Buying Guide deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5374,7 +5374,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Avalon vs WhatsMiner vs Antminer: Complete ASIC Comparison deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that matter, real-world thermal and efficiency behaviour, failure modes we see on the repair bench, and the buyer profile this hardware genuinely suits.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5463,7 +5463,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Which Bitcoin Miner Has the Best J/TH Efficiency? is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5546,7 +5546,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Is Bitcoin Mining Still Profitable in 2026? always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5629,7 +5629,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "How Much Can One Bitcoin Miner Earn Per Month? always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5712,7 +5712,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Bitcoin Mining Profitability Calculator Explained always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5793,7 +5793,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "How to Calculate ROI on an ASIC Miner always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5878,7 +5878,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "What Electricity Rate Makes Bitcoin Mining Profitable? always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -5961,7 +5961,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Bitcoin Mining Break-Even Calculator Guide always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6045,7 +6045,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "How Long Does It Take for an ASIC Miner to Pay for Itself? always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6129,7 +6129,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Most Profitable Bitcoin Mining Machine Right Now always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6214,7 +6214,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Bitcoin Mining vs Buying Bitcoin: Which Is More Profitable? always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6299,7 +6299,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "How to Increase ASIC Mining Profits Without Buying New Hardware always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6382,7 +6382,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Strategies to Maximize Bitcoin Mining ROI always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6466,7 +6466,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Bitcoin Mining Income Guide for Home Miners always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6550,7 +6550,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Hidden Costs of Running a Bitcoin Mining Machine always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6633,7 +6633,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Bitcoin Mining Profitability After the Halving always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6716,7 +6716,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "How Network Difficulty Affects Mining Profits always resolves to the same arithmetic: revenue per terahash against electricity cost per kilowatt hour, stress-tested against difficulty growth. This guide walks through the formulas, a worked example, the costs most calculators ignore, and how to track real performance against your model.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6798,7 +6798,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "How to Set Up a Bitcoin Mining Machine at Home is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6882,7 +6882,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Complete Bitcoin Mining Setup Guide for Beginners is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -6966,7 +6966,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Home Bitcoin Mining Setup in 2026 is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7050,7 +7050,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Bitcoin Mining Machine Power Requirements Explained is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7133,7 +7133,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "How to Reduce ASIC Miner Noise at Home is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7217,7 +7217,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Ventilation and Cooling for Home Bitcoin Mining is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7298,7 +7298,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Can You Mine Bitcoin in an Apartment? is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7385,7 +7385,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Bitcoin Mining on Solar Power: Is It Worth It? is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7468,7 +7468,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Home Bitcoin Mining Safety Guide is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7552,7 +7552,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Quiet Bitcoin Mining Setup: Step-by-Step Tutorial is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7641,7 +7641,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "ASIC Miner Firmware Guide: Improve Efficiency and Hashrate is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7725,7 +7725,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Best Bitcoin Mining Pools Compared for 2026 is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7811,7 +7811,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Solo Mining vs Pool Mining: Which Is Better for ASIC Miners? is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7894,7 +7894,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Bitcoin Mining Machine Maintenance Guide is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -7977,7 +7977,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "How to Extend the Lifespan of Your ASIC Miner is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -8060,7 +8060,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Most Energy-Efficient Bitcoin Miners Ranked by J/TH is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -8145,7 +8145,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Future of Bitcoin Mining Hardware: What to Expect Next is a question about matching hardware to your electricity rate, your site and your time horizon — not about finding one universally best machine. This guide ranks the options on the metrics that actually determine returns: efficiency in joules per terahash, delivered price per terahash, thermal behaviour and serviceability.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -8230,7 +8230,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Off-Grid Bitcoin Mining: A Complete Renewable Energy Guide is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -8314,7 +8314,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Immersion Cooling for Bitcoin Miners: The Ultimate Guide is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring right and the hardware largely looks after itself. Get them wrong and you will spend the year chasing throttling, dead fans and unexplained downtime.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {
@@ -8403,7 +8403,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "intro": [
       "Buying mining hardware is the point where most money is won or lost, long before the first block reward arrives. Bitcoin Mining Machine FAQ: Answers to the 100 Most Common Questions comes down to verifying the seller, understanding total landed cost, matching condition to your risk appetite, and running the payback math before funds move.",
-      "Everything below reflects how we deploy, service and sell machines from our Edmonton facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
+      "Everything below reflects how we deploy, service and sell machines from our Hong Kong facility, and every recommendation links to hardware we actually hold in stock so you can move from research to a shortlist in one step."
     ],
     "sections": [
       {

@@ -3,9 +3,9 @@ export const SITE = {
   domain: "bitcoinminingdepot.com",
   url: "https://bitcoinminingdepot.com",
   email: "sales@bitcoinminingdepot.com",
-  phone: "+1 587-315-9294",
-  whatsapp: "15873159294",
-  address: "Calgary Trl NW, Edmonton, AB T2P 1J9, Canada",
+  phone: "+852 6465 3698",
+  whatsapp: "85264653698",
+  address: "Tower 1, Times Square, 34號 Matheson St, Causeway Bay, Hong Kong Island, Hong Kong",
   tagline: "Powering the Future of Bitcoin Mining.",
 };
 
