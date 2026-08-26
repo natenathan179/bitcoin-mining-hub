@@ -9,7 +9,7 @@ export const Route = createFileRoute("/shipping-returns")({
       {
         name: "description",
         content:
-          "Shipping timeframes, insured worldwide freight, customs documentation, delivery inspection requirements and the 30 day return policy for bitcoin mining hardware.",
+          "We ship from Hong Kong worldwide — USA, Canada, Europe and 100+ countries. Timeframes, insured freight, customs documents and the 30 day return policy.",
       },
       { property: "og:title", content: "Shipping & Returns Policy" },
       {
@@ -27,8 +27,21 @@ export const Route = createFileRoute("/shipping-returns")({
     <PolicyPage
       eyebrow="Policies"
       title="Shipping & Returns"
-      subtitle="How your hardware gets to you, what to check on delivery, and what happens if something is wrong."
+      subtitle="We ship from our Hong Kong head office to the USA, Canada, Europe and 100+ countries worldwide. Here is how your hardware gets to you, what to check on delivery, and what happens if something is wrong."
       sections={[
+        {
+          heading: "Where we ship from, and where we deliver",
+          paras: [
+            "All orders are dispatched from our Hong Kong head office at Tower 1, Times Square, 34號 Matheson St, Causeway Bay, Hong Kong Island — next to the freight corridor every major ASIC brand uses.",
+            "We deliver worldwide. Our most common lanes are the United States and Canada (DHL/FedEx express air, typically 3–7 business days), the EU and UK via Rotterdam, Frankfurt and London hubs with VAT/EORI documentation support, and Asia, Australia, the Middle East, Latin America and Africa by air or consolidated sea freight for container-scale orders.",
+          ],
+          list: [
+            "United States — express air freight, duties settled at customs clearance",
+            "Canada — door-to-door delivery nationwide, including remote farm sites",
+            "Europe & UK — VAT/EORI paperwork prepared with every shipment",
+            "Worldwide — 100+ countries served across Asia, Oceania, MEA and LATAM",
+          ],
+        },
         {
           heading: "Dispatch times",
           paras: [
@@ -39,7 +52,7 @@ export const Route = createFileRoute("/shipping-returns")({
         {
           heading: "Transit and freight",
           paras: [
-            "Domestic North American shipments typically arrive within two to five business days. International shipments typically take five to twelve business days depending on destination and customs clearance.",
+            "Shipments to the United States and Canada typically arrive within three to seven business days by express air freight. European deliveries typically take four to eight business days, and other worldwide destinations five to twelve business days depending on customs clearance.",
             "All shipments are fully insured for the invoice value. We prepare export documentation with correct HS codes and commercial invoices. Import duties, VAT and clearance fees at the destination are the buyer's responsibility unless we have agreed delivered-duty-paid terms in writing.",
           ],
         },

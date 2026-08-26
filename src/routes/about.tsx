@@ -10,7 +10,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "We supply genuine ASIC miners, hosting and repairs to 10,000+ customers in 100+ countries. Learn our sourcing, testing and support standards.",
+          "Bitcoin Mining Depot is headquartered in Causeway Bay, Hong Kong, supplying genuine ASIC miners to 10,000+ customers in the USA, Canada, Europe and 100+ countries.",
       },
       { property: "og:title", content: "About Bitcoin Mining Depot" },
       {
@@ -33,7 +33,7 @@ function AboutPage() {
       <PageHero
         eyebrow="Who we are"
         title="Built By Miners, For Miners"
-        subtitle="Bitcoin Mining Depot began as an operator, not a reseller. Everything we sell is hardware we have run ourselves, tested on our own benches and deployed at our own sites."
+        subtitle="Bitcoin Mining Depot is headquartered in Causeway Bay, Hong Kong, and sells worldwide — delivering tested, warranty-backed mining hardware to the USA, Canada, Europe and 100+ other countries."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-12">
@@ -55,6 +55,22 @@ function AboutPage() {
               container, and institutional clients deploying tens of megawatts. The catalogue has
               grown, but the standard has not moved: we only list hardware we would run on our own
               floor, and we publish the test data to prove what each machine actually does.
+            </p>
+            <h2 className="pt-4 font-display text-2xl font-bold uppercase tracking-tight text-charcoal">
+              Where we are, and where we ship
+            </h2>
+            <p>
+              Our head office and logistics desk are in Tower 1, Times Square, 34號 Matheson St,
+              Causeway Bay, Hong Kong Island. Hong Kong is deliberate: it puts us minutes from the
+              manufacturing and freight corridor that every major ASIC brand ships through, which is
+              how we keep allocation, pricing and lead times competitive.
+            </p>
+            <p>
+              We sell worldwide. Orders leave Hong Kong on insured, tracked air freight to the United
+              States and Canada, into the EU and UK, and across Asia, Australia, the Middle East,
+              Latin America and Africa — 100+ countries to date. Every export ships with a
+              commercial invoice, correct HS codes and customs paperwork, and our team supports you
+              in English 24/7 regardless of your time zone.
             </p>
             <h2 className="pt-4 font-display text-2xl font-bold uppercase tracking-tight text-charcoal">
               How we work
