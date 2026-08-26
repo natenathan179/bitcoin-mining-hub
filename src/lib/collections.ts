@@ -44,7 +44,7 @@ export const COLLECTIONS: Collection[] = [
       "In-stock ASIC bitcoin miners ranked by efficiency and price per terahash, with expert guides for every model.",
     intro: [
       "An ASIC miner is a purpose-built machine that does one job — compute SHA-256 hashes for the Bitcoin network — and does it thousands of times more efficiently than any GPU or CPU. This category collects every application-specific integrated circuit miner we currently hold, from current-generation Antminer S21 and WhatsMiner M6x flagships to value-tier S19 and M30S units that still pay back quickly at low power rates.",
-      "Every listing below shows real, tested hashrate and wall power so you can calculate joules per terahash and dollars per terahash before you commit capital. Our Edmonton team benches each unit, and the guides linked further down this page explain exactly how to match a machine to your electricity price, breaker capacity and holding period.",
+      "Every listing below shows real, tested hashrate and wall power so you can calculate joules per terahash and dollars per terahash before you commit capital. Our Hong Kong team benches each unit, and the guides linked further down this page explain exactly how to match a machine to your electricity price, breaker capacity and holding period.",
     ],
     sections: [
       {
@@ -100,7 +100,7 @@ export const COLLECTIONS: Collection[] = [
       "Tested second-hand Antminer, WhatsMiner and Avalon units with verified hashrate and a warranty on refurbished stock.",
     intro: [
       "Used and refurbished ASIC miners are the fastest route to cheap terahash. Because second-hand hardware trades at a steep discount to new units, buyers with inexpensive electricity frequently recover their purchase price faster on a refurbished S19j Pro or M30S++ than on a current-generation flagship — you are buying hashrate, not novelty.",
-      "Every unit in this category has been opened, cleaned, repasted where required and benched at our Edmonton facility. We record hashrate, per-board chip temperatures and PSU behaviour, and we publish the real condition grade rather than a marketing label.",
+      "Every unit in this category has been opened, cleaned, repasted where required and benched at our Hong Kong facility. We record hashrate, per-board chip temperatures and PSU behaviour, and we publish the real condition grade rather than a marketing label.",
     ],
     sections: [
       {
