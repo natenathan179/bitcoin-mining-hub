@@ -16,6 +16,7 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ShippingReturnsRouteImport } from './routes/shipping-returns'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as RepairServicesRouteImport } from './routes/repair-services'
+import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as KnowledgeCenterRouteImport } from './routes/knowledge-center'
 import { Route as HostingRouteImport } from './routes/hosting'
@@ -75,6 +76,11 @@ const ReviewsRoute = ReviewsRouteImport.update({
 const RepairServicesRoute = RepairServicesRouteImport.update({
   id: '/repair-services',
   path: '/repair-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RefundPolicyRoute = RefundPolicyRouteImport.update({
+  id: '/refund-policy',
+  path: '/refund-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -219,6 +225,7 @@ export interface FileRoutesByFullPath {
   '/hosting': typeof HostingRoute
   '/knowledge-center': typeof KnowledgeCenterRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/repair-services': typeof RepairServicesRoute
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
@@ -252,6 +259,7 @@ export interface FileRoutesByTo {
   '/hosting': typeof HostingRoute
   '/knowledge-center': typeof KnowledgeCenterRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/repair-services': typeof RepairServicesRoute
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
@@ -286,6 +294,7 @@ export interface FileRoutesById {
   '/hosting': typeof HostingRoute
   '/knowledge-center': typeof KnowledgeCenterRoute
   '/privacy': typeof PrivacyRoute
+  '/refund-policy': typeof RefundPolicyRoute
   '/repair-services': typeof RepairServicesRoute
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
@@ -321,6 +330,7 @@ export interface FileRouteTypes {
     | '/hosting'
     | '/knowledge-center'
     | '/privacy'
+    | '/refund-policy'
     | '/repair-services'
     | '/reviews'
     | '/shipping-returns'
@@ -354,6 +364,7 @@ export interface FileRouteTypes {
     | '/hosting'
     | '/knowledge-center'
     | '/privacy'
+    | '/refund-policy'
     | '/repair-services'
     | '/reviews'
     | '/shipping-returns'
@@ -387,6 +398,7 @@ export interface FileRouteTypes {
     | '/hosting'
     | '/knowledge-center'
     | '/privacy'
+    | '/refund-policy'
     | '/repair-services'
     | '/reviews'
     | '/shipping-returns'
@@ -422,6 +434,7 @@ export interface RootRouteChildren {
   HostingRoute: typeof HostingRoute
   KnowledgeCenterRoute: typeof KnowledgeCenterRoute
   PrivacyRoute: typeof PrivacyRoute
+  RefundPolicyRoute: typeof RefundPolicyRoute
   RepairServicesRoute: typeof RepairServicesRoute
   ReviewsRoute: typeof ReviewsRoute
   ShippingReturnsRoute: typeof ShippingReturnsRoute
@@ -489,6 +502,13 @@ declare module '@tanstack/react-router' {
       path: '/repair-services'
       fullPath: '/repair-services'
       preLoaderRoute: typeof RepairServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/refund-policy': {
+      id: '/refund-policy'
+      path: '/refund-policy'
+      fullPath: '/refund-policy'
+      preLoaderRoute: typeof RefundPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -710,6 +730,7 @@ const rootRouteChildren: RootRouteChildren = {
   HostingRoute: HostingRoute,
   KnowledgeCenterRoute: KnowledgeCenterRoute,
   PrivacyRoute: PrivacyRoute,
+  RefundPolicyRoute: RefundPolicyRoute,
   RepairServicesRoute: RepairServicesRoute,
   ReviewsRoute: ReviewsRoute,
   ShippingReturnsRoute: ShippingReturnsRoute,
