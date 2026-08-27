@@ -270,7 +270,7 @@ export const Route = createFileRoute("/products/$slug")({
         { property: "og:title", content: title },
         { property: "og:description", content: description },
         { property: "og:type", content: "product" },
-        { property: "og:url", content: path },
+        { property: "og:url", content: url },
         { name: "twitter:card", content: "summary_large_image" },
         ...(pageImages[0]
           ? [
@@ -279,7 +279,12 @@ export const Route = createFileRoute("/products/$slug")({
             ]
           : []),
       ],
-      links: [{ rel: "canonical", href: path }],
+      links: [
+        { rel: "canonical", href: url },
+        ...(pageImages[0]
+          ? [{ rel: "preload", as: "image", href: pageImages[0], fetchpriority: "high" }]
+          : []),
+      ],
       scripts: [
         {
           type: "application/ld+json",
@@ -499,6 +504,7 @@ function ProductDetail() {
               width={1000}
               height={1000}
               fetchPriority="high"
+              decoding="async"
               className="mx-auto h-[320px] w-full object-contain md:h-[420px]"
             />
           </div>
