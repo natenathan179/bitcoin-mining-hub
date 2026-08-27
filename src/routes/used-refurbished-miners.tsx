@@ -6,9 +6,9 @@ import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { productsQuery } from "@/lib/data";
 
-const TITLE = "Used & Refurbished ASIC Miners for Sale | Bitcoin Mining Depot";
+const TITLE = "Used & Refurbished ASIC Miners for Sale | BMD";
 const DESCRIPTION =
-  "Buy tested used and refurbished ASIC bitcoin miners — Antminer S19, S19j Pro and more from $150. Search by brand, hashrate, wattage and budget with worldwide shipping.";
+  "Buy tested used and refurbished ASIC bitcoin miners — Antminer S19, S19j Pro and more. Filter by brand, hashrate, wattage and budget. Worldwide shipping.";
 
 export const Route = createFileRoute("/used-refurbished-miners")({
   loader: ({ context }) => {
