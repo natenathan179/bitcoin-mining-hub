@@ -29,9 +29,9 @@ export const Route = createFileRoute("/reviews")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/reviews" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/reviews" },
     ],
-    links: [{ rel: "canonical", href: "/reviews" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/reviews" }],
     scripts:
       loaderData && loaderData.count > 0
         ? [

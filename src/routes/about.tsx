@@ -20,9 +20,9 @@ export const Route = createFileRoute("/about")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/about" },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/about" }],
   }),
   component: AboutPage,
 });

@@ -21,9 +21,9 @@ export const Route = createFileRoute("/contact")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/contact" }],
   }),
   component: ContactPage,
 });

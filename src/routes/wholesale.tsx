@@ -20,9 +20,9 @@ export const Route = createFileRoute("/wholesale")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/wholesale" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/wholesale" },
     ],
-    links: [{ rel: "canonical", href: "/wholesale" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/wholesale" }],
   }),
   component: WholesalePage,
 });

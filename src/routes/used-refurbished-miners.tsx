@@ -22,9 +22,9 @@ export const Route = createFileRoute("/used-refurbished-miners")({
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/used-refurbished-miners" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/used-refurbished-miners" },
     ],
-    links: [{ rel: "canonical", href: "/used-refurbished-miners" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/used-refurbished-miners" }],
   }),
   errorComponent: ({ error }) => (
     <SiteLayout>
