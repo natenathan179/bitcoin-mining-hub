@@ -9,7 +9,7 @@ import { ProductCard } from "@/components/site/ProductCard";
 import { ProductInternalLinks } from "@/components/site/ProductInternalLinks";
 import { InquiryModal } from "@/components/site/InquiryModal";
 import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
-import { formatPrice, SITE } from "@/lib/site";
+import { formatPrice, SITE, seoDescription, seoTitle } from "@/lib/site";
 import { useCart } from "@/lib/cart";
 import minerBlack from "@/assets/miner-black.jpg";
 
