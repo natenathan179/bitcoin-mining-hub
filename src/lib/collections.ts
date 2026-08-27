@@ -37,9 +37,9 @@ export const COLLECTIONS: Collection[] = [
     eyebrow: "Category",
     name: "ASIC Miners",
     h1: "ASIC Bitcoin Miners for Sale",
-    metaTitle: "ASIC Miners for Sale | Antminer, WhatsMiner & Avalon Hardware",
+    metaTitle: "ASIC Miners for Sale | Antminer, WhatsMiner & Avalon",
     metaDescription:
-      "Buy new and in-stock ASIC bitcoin miners from Bitmain, MicroBT and Canaan. Compare hashrate, J/TH efficiency and price per terahash, with worldwide shipping and warranty.",
+      "Buy in-stock ASIC bitcoin miners from Bitmain, MicroBT and Canaan. Compare hashrate, J/TH efficiency and price per terahash, shipped worldwide.",
     ogDescription:
       "In-stock ASIC bitcoin miners ranked by efficiency and price per terahash, with expert guides for every model.",
     intro: [
@@ -93,9 +93,9 @@ export const COLLECTIONS: Collection[] = [
     eyebrow: "Category",
     name: "Used & Refurbished Miners",
     h1: "Used & Refurbished Bitcoin Miners",
-    metaTitle: "Used & Refurbished Bitcoin Miners for Sale | Tested ASIC Units",
+    metaTitle: "Used & Refurbished Bitcoin Miners | Tested ASIC Units",
     metaDescription:
-      "Shop tested used and refurbished ASIC bitcoin miners at a fraction of new-unit cost. Every S19, M30S and Avalon unit is benched for hashrate and backed by our repair centre.",
+      "Shop tested used and refurbished ASIC bitcoin miners at a fraction of new-unit cost. Every unit is benched for hashrate and warranty-backed.",
     ogDescription:
       "Tested second-hand Antminer, WhatsMiner and Avalon units with verified hashrate and a warranty on refurbished stock.",
     intro: [
@@ -148,9 +148,9 @@ export const COLLECTIONS: Collection[] = [
     eyebrow: "Category",
     name: "Immersion & Hydro Cooling",
     h1: "Immersion Cooling & Hydro Bitcoin Miners",
-    metaTitle: "Immersion Cooling & Hydro Miners | Liquid-Cooled ASIC Hardware",
+    metaTitle: "Immersion & Hydro Miners | Liquid-Cooled ASIC Hardware",
     metaDescription:
-      "Liquid-cooled bitcoin mining hardware: hydro Antminers, immersion-ready ASICs, dielectric tanks and dry coolers. Quieter operation, stable hashrate and higher density.",
+      "Liquid-cooled bitcoin mining hardware: hydro Antminers, immersion-ready ASICs, tanks and dry coolers. Quieter, denser, stable hashrate.",
     ogDescription:
       "Hydro and immersion bitcoin mining hardware for quieter, denser deployments that hold rated hashrate in any climate.",
     intro: [
@@ -203,7 +203,7 @@ export const COLLECTIONS: Collection[] = [
     eyebrow: "Category",
     name: "Hosting Solutions",
     h1: "Bitcoin Miner Hosting Solutions",
-    metaTitle: "Bitcoin Mining Hosting Solutions | Colocation for ASIC Miners",
+    metaTitle: "Bitcoin Miner Hosting | ASIC Colocation & Cheap Power",
     metaDescription:
       "Host your ASIC miners in a professional facility with low-cost power, 24/7 monitoring, on-site repair and transparent per-kWh pricing. Buy and host in one step.",
     ogDescription:

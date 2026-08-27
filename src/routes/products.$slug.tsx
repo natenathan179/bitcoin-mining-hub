@@ -9,7 +9,7 @@ import { ProductCard } from "@/components/site/ProductCard";
 import { ProductInternalLinks } from "@/components/site/ProductInternalLinks";
 import { InquiryModal } from "@/components/site/InquiryModal";
 import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
-import { formatPrice, SITE } from "@/lib/site";
+import { formatPrice, SITE, seoDescription, seoTitle } from "@/lib/site";
 import { useCart } from "@/lib/cart";
 import minerBlack from "@/assets/miner-black.jpg";
 
@@ -213,10 +213,17 @@ export const Route = createFileRoute("/products/$slug")({
       };
     }
     const p = loaderData.product;
-    const title = `${p.name} — ${p.hashrate || "ASIC Miner"} | Bitcoin Mining Depot`;
-    const description =
+    // Keep <title> inside Google's ~60 char display limit: drop the hashrate when the
+    // product name already includes it, and let the brand suffix fall away if needed.
+    const nameKey = p.name.toLowerCase().replace(/\s+/g, "");
+    const hashKey = (p.hashrate || "").toLowerCase().replace(/\s+/g, "");
+    const titleBase =
+      p.hashrate && hashKey && !nameKey.includes(hashKey) ? `${p.name} ${p.hashrate}` : p.name;
+    const title = seoTitle(titleBase);
+    const description = seoDescription(
       p.short_description ||
-      `Buy the ${p.name} ${p.brand} bitcoin miner with warranty, tested hashrate and worldwide shipping.`;
+        `Buy the ${p.name} ${p.brand} bitcoin miner with warranty, tested hashrate and worldwide shipping.`,
+    );
     const path = `/products/${p.slug}`;
     const absolute = (u: string) => (u.startsWith("http") ? u : `${SITE.url}${u.startsWith("/") ? "" : "/"}${u}`);
     const url = absolute(path);
