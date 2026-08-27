@@ -33,6 +33,7 @@ const COLUMNS = [
       { label: "Shipping & Delivery", to: "/shipping-returns" },
       { label: "Warranty Policy", to: "/warranty" },
       { label: "Returns & Refunds", to: "/shipping-returns" },
+      { label: "Refund Policy", to: "/refund-policy" },
       { label: "FAQ", to: "/faq" },
       { label: "Customer Reviews", to: "/reviews" },
       { label: "Admin Login", to: "/admin/login" },
@@ -43,6 +44,7 @@ const COLUMNS = [
     links: [
       { label: "Privacy Policy", to: "/privacy" },
       { label: "Terms & Conditions", to: "/terms" },
+      { label: "Refund Policy", to: "/refund-policy" },
       { label: "Warranty Policy", to: "/warranty" },
       { label: "Shipping & Returns", to: "/shipping-returns" },
     ],
