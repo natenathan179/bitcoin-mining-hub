@@ -2,426 +2,511 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bitcoinminingdepot.com/</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/collections/asic-miners</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/collections/used-refurbished-asic-miners</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/collections/immersion-cooling-miners</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/collections/hosting-solutions</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/used-refurbished-miners</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/wholesale</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/hosting</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/repair-services</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/knowledge-center</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/reviews</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/about</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/contact</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/faq</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/shipping-returns</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/warranty</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/privacy</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/refund-policy</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/terms</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/antminer-s19-loki-rig-42th-1000w-110v-used</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/antminer-s21-xp-hyd</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitaxe-gamma-turbo-gt-801-2-15-th-s-solo-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitdeer-sealminer-a4-pro-air-336-th-s-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitdeer-sealminer-a4-pro-hydro-680-th-s-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitdeer-sealminer-a4-ultra-hydro-886-th-s-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitdeer-sealminer-dl1-hydro-dogecoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-l9-16-5gh</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s19-105th-boosted-vnish-os-used</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s19-95th-blackout-vnish-os-used</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s19-95th-vnish-os-crypto-miner-used</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s19-home-miner-30th-700w-wifi-used</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s19-xp-plus-hydro</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s19j-pro-104th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s19j-pro-105th-braiins-vnish-30-day-warranty-used</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s19j-pro-108th-braiins-os-boosted-used</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s21-200th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s21-plus-235th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s21-xp-270th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s21j-xp-hydro-495-th-s-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-s23e-hydro-2u-865-th-s-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-t21-190th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-x9-1-mh-s-randomx-monero-xmr-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-z15-420ksol</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/bitmain-antminer-z15-pro</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/elphapex-dg-home-2gh-dogecoin-litecoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/fluminer-l1-litecoin-dogecoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/goldshell-ae-max-alephium-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/iceriver-al0-aleo-miner-50mh-zksnark</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/ipollo-clawpc-a1-mini-crypto-mining-ai-mini-pc</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/lucky-miner-lv07-pro-3-th-s-quiet-home-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/magicminer-wm02-pro-550-mh-s-dogecoin-litecoin-scrypt-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/microbt-whatsminer-m60s-plus</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/microbt-whatsminer-m63s-plus-hydro-430-th-s-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/microbt-whatsminer-m6ds-plus-hydro-540-th-s-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/microbt-whatsminer-m6ds-plus-plus-hydro-592-th-s-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/microbt-whatsminer-m78s-hydro-472-th-s-sha-256-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/nerdoctaxe-12th-home-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/pinecone-inibox-850mh</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/pinecone-inibox-pro-2-4gh</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/pinecone-matches-inibox-pro-2-4-gh-s-initverse-ini-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-k7-63-5th-nervos-ckb-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-l7-9500m-dogecoin-litecoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-l7-hydro-converted-9-5gh</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-l9-16gh-scrypt-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-l9-17gh-dogecoin-litecoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-l9-17gh-hydro-conversion-kit</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s19-hydro-151th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s19-hydro-158th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s19-hydro-198-251th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s19-pro-hyd-177th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s19-pro-plus-hyd-198th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s19-xp-141th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s19e-xp-hyd-251th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s19k-pro-120th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-s21-pro-234th-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-bitmain-antminer-t21-190th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-canaan-avalon-a1566-200th-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-microbt-whatsminer-m30s-plus-plus-112th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-microbt-whatsminer-m50-118th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-microbt-whatsminer-m50s-128-134th</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-microbt-whatsminer-m61-hydro-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/products/used-microbt-whatsminer-m64-206th-hydro-bitcoin-miner</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://bitcoinminingdepot.com/blog</loc>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>

@@ -19,9 +19,9 @@ export const Route = createFileRoute("/terms")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/terms" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/terms" },
     ],
-    links: [{ rel: "canonical", href: "/terms" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/terms" }],
   }),
   component: () => (
     <PolicyPage

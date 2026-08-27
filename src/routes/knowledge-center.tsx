@@ -22,9 +22,9 @@ export const Route = createFileRoute("/knowledge-center")({
       },
       { property: "og:type", content: "article" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/knowledge-center" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/knowledge-center" },
     ],
-    links: [{ rel: "canonical", href: "/knowledge-center" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/knowledge-center" }],
   }),
   component: KnowledgePage,
 });

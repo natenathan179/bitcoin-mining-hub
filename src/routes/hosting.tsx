@@ -21,9 +21,9 @@ export const Route = createFileRoute("/hosting")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/hosting" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/hosting" },
     ],
-    links: [{ rel: "canonical", href: "/hosting" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/hosting" }],
   }),
   component: HostingPage,
 });

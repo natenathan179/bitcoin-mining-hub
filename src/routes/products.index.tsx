@@ -37,9 +37,9 @@ export const Route = createFileRoute("/products/")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "/products" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/products" },
     ],
-    links: [{ rel: "canonical", href: "/products" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/products" }],
   }),
   component: ProductsPage,
 });

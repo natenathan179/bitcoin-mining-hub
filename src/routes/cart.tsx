@@ -22,9 +22,9 @@ export const Route = createFileRoute("/cart")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "robots", content: "noindex" },
-      { property: "og:url", content: "/cart" },
+      { property: "og:url", content: "https://bitcoinminingdepot.com/cart" },
     ],
-    links: [{ rel: "canonical", href: "/cart" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/cart" }],
   }),
   component: CartPage,
 });
