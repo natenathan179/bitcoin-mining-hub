@@ -5,7 +5,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { getPost, relatedPosts, type BlogPost } from "@/lib/blog";
 import { productsQuery, type Product } from "@/lib/data";
-import { SITE } from "@/lib/site";
+import { SITE, seoPageTitle } from "@/lib/site";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params, context }) => {
@@ -18,12 +18,18 @@ export const Route = createFileRoute("/blog/$slug")({
     const post = loaderData?.post;
     if (!post) return {};
     const url = `${SITE.url}/blog/${post.slug}`;
+    // Keep the meta title distinct from the on-page H1 (post.title) so crawlers
+    // don't report duplicated title/H1 pairs across the guide library: drop the
+    // subtitle after the colon and brand the tag instead.
+    const lead = post.title.split(":")[0].trim();
+    const base = lead.length >= 25 ? lead : post.title;
+    const metaTitle = seoPageTitle(base, "BMD Guide");
     return {
       meta: [
-        { title: post.title.length > 58 ? `${post.title.slice(0, 57)}…` : post.title },
+        { title: metaTitle },
         { name: "description", content: post.description },
         { name: "keywords", content: post.keywords.join(", ") },
-        { property: "og:title", content: post.title },
+        { property: "og:title", content: metaTitle },
         { property: "og:description", content: post.description },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
