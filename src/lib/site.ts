@@ -76,6 +76,15 @@ export function seoTitle(base: string, suffix = SITE.name, max = 60) {
   return name;
 }
 
+/**
+ * Build a <title> that always ends with `suffix`, so the meta title never reads
+ * byte-identical to the page's own H1 (search tools flag that as duplication).
+ */
+export function seoPageTitle(base: string, suffix: string, max = 60) {
+  const tail = ` | ${suffix}`;
+  return `${trimToWord(base, Math.max(20, max - tail.length))}${tail}`;
+}
+
 /** Clamp a meta description to under 160 characters on a word boundary. */
 export function seoDescription(value: string, max = 155) {
   return trimToWord(value, max);
