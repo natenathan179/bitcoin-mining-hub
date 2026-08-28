@@ -225,6 +225,7 @@ function CheckoutPage() {
             Shop miners
           </Link>
         </div>
+        <SeoCopy title={PAGE_COPY.checkout.title} blocks={PAGE_COPY.checkout.blocks} />
       </SiteLayout>
     );
   }
