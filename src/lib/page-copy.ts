@@ -309,6 +309,27 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
           "Any vendor should answer those in writing before payment. We do, and our reviews reflect buyers who tested those answers against reality in North America, Europe, the Middle East, Asia, Africa, Latin America and Oceania.",
         ],
       },
+      {
+        heading: "What buyers most often mention",
+        paras: [
+          "Three themes recur across the feedback above. First, hashrate honesty: units are listed at tested output rather than datasheet best case, so machines land at or near the number on the page. Second, freight predictability: buyers in North America and Europe consistently report express air delivery inside the quoted window with paperwork that cleared customs without a broker chasing us for missing HS codes. Third, responsiveness after the sale, which is the part most vendors quietly skip.",
+          "Where reviews are critical, it is usually about freight timing during peak season or a fan or PSU that failed early. Those are the realities of shipping heavy electronics internationally; what matters is that replacements and repairs were handled against written terms rather than argued about.",
+        ],
+      },
+      {
+        heading: "How reviews connect to our repair and hosting work",
+        paras: [
+          "A meaningful share of our reviewers are repeat customers who first came to us for a repair or for hosting and later bought hardware, or the reverse. That matters when judging feedback: these are buyers who have seen the whole operation - bench testing, coolant work, hashboard-level diagnosis, colocation uptime - not only the checkout page.",
+          "If you would like to speak with a customer running the machine you are considering in a climate similar to yours, ask the sales desk. Where a buyer has agreed to be a reference, we will connect you.",
+        ],
+      },
+      {
+        heading: "Leaving your own review",
+        paras: [
+          "After delivery and commissioning we invite buyers to review the specific unit they received. We ask for the model, destination, delivery time and measured hashrate at their ambient temperature, because that is the information the next buyer needs. Reviews are published as written; we do not edit criticism out or pay for feedback.",
+          "If something went wrong with your order, contact support before reviewing - not because we want the rating managed, but because most complaints have a fix, and a repaired outcome is more useful to future readers than an unresolved one.",
+        ],
+      },
     ],
   },
 
@@ -396,6 +417,41 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
         paras: [
           "Listings state hashrate, power draw, efficiency and condition as tested, not as printed on the manufacturer datasheet. Units are bench-tested and hashrate-verified before dispatch, packed for international air freight, and accompanied by commercial invoices and HS codes so customs clearance is routine.",
           "Payment options include major cryptocurrencies, CashApp, Chime and bank transfer, and every order is confirmed in writing with the exact model, quantity, PSU revision and delivery window before funds move.",
+        ],
+      },
+      {
+        heading: "Efficiency bands and what each one is for",
+        paras: [
+          "Hardware in this catalogue falls into three broad efficiency bands. Below roughly 15 joules per terahash you are buying current-generation silicon: highest capital cost per unit, lowest electricity cost per terahash, and the only sensible choice on tariffs above about nine cents per kilowatt-hour. Between 15 and 25 joules per terahash sit the previous-generation workhorses - the machines most commercial farms actually run, because the capital saving usually beats the efficiency loss on industrial power contracts. Above 25 joules per terahash you are in legacy territory, viable only with very cheap or curtailed power, flared gas, or heat-reuse projects where the warmth has value of its own.",
+          "Read the joules-per-terahash figure on every listing before the headline hashrate. Two machines quoting similar terahash can differ by 40 percent in electricity cost, and over a three-year hold that difference dwarfs the purchase price gap between them.",
+        ],
+      },
+      {
+        heading: "Air, hydro and immersion: choosing a cooling class",
+        paras: [
+          "Air-cooled units are the simplest to deploy and the easiest to resell, and they suit sites with generous airflow, moderate ambient temperatures and tolerance for noise. Hydro units move heat into a closed water loop, which lets you pack far more hashrate per square metre, run quietly, and push higher clocks - but they require a dry cooler or heat exchanger sized to the full load, correct flow rate, filtration and leak detection before the first unit is energised. Immersion places boards in dielectric fluid, giving excellent thermal stability and dust immunity at the cost of tank engineering, fluid handling and messier servicing.",
+          "Do not buy across cooling classes casually. A hydro flagship delivered to a site with no coolant loop is an expensive paperweight, and immersion conversions void some manufacturer warranties. If you are unsure which class your building supports, describe the site to us and we will tell you plainly what it can run today and what it could run after modest upgrades.",
+        ],
+      },
+      {
+        heading: "Electrical planning before the order, not after",
+        paras: [
+          "Each modern ASIC draws between roughly 3 and 11 kilowatts depending on model and tuning. Size circuits to continuous load with headroom rather than to nameplate at the breaker limit, confirm voltage compatibility - many high-power units expect 220 to 277 volts and will not run on standard North American residential 120 volt circuits - and plan for the PDU, cabling and breaker types the fleet actually needs.",
+          "Tell us your available amperage and voltage and we will state exactly how many of a given model that service supports, including the derating we recommend for continuous duty. This single check prevents the most common and most expensive purchasing mistake in the industry.",
+        ],
+      },
+      {
+        heading: "Freight, duties and lead times by region",
+        paras: [
+          "Orders leave our Hong Kong warehouse by express air freight for most destinations, typically arriving in three to seven business days for the United States, Canada, the United Kingdom, the European Union, the Gulf and Australia, with sea freight available on container-scale orders where cost matters more than speed. Every shipment carries a commercial invoice with the correct HS classification, declared values that match the invoice, and the documentation your broker needs.",
+          "Duties, VAT and import taxes are the buyer's responsibility as importer of record unless we agree otherwise in writing, and we will tell you the typical rate for your country before you order so the landed cost holds no surprises.",
+        ],
+      },
+      {
+        heading: "Ordering, payment and confirmation",
+        paras: [
+          "Add hardware to the cart or open the inquiry form on any listing to request a quote with your destination and quantity. We confirm availability, PSU revision, firmware, freight cost and delivery window in writing before any payment. Settlement is by major cryptocurrency against a published address with QR code and transaction-ID confirmation, or by CashApp, Chime or bank transfer for buyers who prefer fiat rails.",
+          "Once payment is verified you receive an invoice, packing confirmation and tracking. Larger fleet orders can be staged across multiple shipments so your electrical build and your hardware arrive in step.",
         ],
       },
     ],
