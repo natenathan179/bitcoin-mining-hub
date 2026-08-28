@@ -17,6 +17,16 @@ export const SITE = {
     "Global shipping from our Hong Kong warehouse to the USA, Canada, Europe, Asia, Australia, the Middle East, Latin America and Africa.",
 };
 
+/**
+ * Canonical WhatsApp click-to-chat URL.
+ * `wa.me` answers with a 302 to api.whatsapp.com, which SEO crawlers report as a
+ * redirected / broken external link — so we link the final 200 destination directly.
+ */
+export function whatsappUrl(message?: string) {
+  const base = `https://api.whatsapp.com/send?phone=${SITE.whatsapp}`;
+  return message ? `${base}&text=${encodeURIComponent(message)}` : base;
+}
+
 /** Regions we ship to — used across the storefront so buyers always see delivery coverage. */
 export const SHIPPING_REGIONS = [
   {

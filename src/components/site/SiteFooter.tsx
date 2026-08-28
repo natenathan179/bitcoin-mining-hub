@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Facebook, MessageCircle, Mail, MapPin } from "lucide-react";
 
 import { Logo } from "./Logo";
-import { SITE } from "@/lib/site";
+import { SITE, whatsappUrl } from "@/lib/site";
 import { COLLECTIONS } from "@/lib/collections";
 import { BLOG_CATEGORIES, BLOG_POSTS } from "@/lib/blog";
 
@@ -76,9 +76,9 @@ export function SiteFooter() {
               <Facebook className="h-4 w-4" aria-hidden="true" />
             </a>
             <a
-              href={`https://wa.me/${SITE.whatsapp}`}
+              href={whatsappUrl()}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               aria-label="Chat with sales on WhatsApp"
               className="hover:text-ice"
             >
