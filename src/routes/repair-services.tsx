@@ -4,6 +4,8 @@ import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { LeadForm } from "@/components/site/LeadForm";
 import { SITE } from "@/lib/site";
 import articleRepair from "@/assets/article-repair.jpg";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 export const Route = createFileRoute("/repair-services")({
   head: () => ({
@@ -35,7 +37,7 @@ export const Route = createFileRoute("/repair-services")({
           serviceType: "ASIC Miner Repair",
           description:
             "Chip-level hashboard diagnosis and repair, control board replacement, PSU repair and fan service for Antminer, Whatsminer and Avalon ASIC miners.",
-          url: "/repair-services",
+          url: `${SITE.url}/repair-services`,
           areaServed: "Worldwide",
           provider: {
             "@type": "LocalBusiness",
@@ -50,6 +52,9 @@ export const Route = createFileRoute("/repair-services")({
               addressRegion: "Hong Kong Island",
               addressCountry: "HK",
             },
+            image: SITE.logo,
+            logo: SITE.logo,
+            priceRange: "$$",
           },
           hasOfferCatalog: {
             "@type": "OfferCatalog",
@@ -157,6 +162,7 @@ function RepairPage() {
           </div>
         </div>
       </div>
+      <SeoCopy title={PAGE_COPY.repair.title} blocks={PAGE_COPY.repair.blocks} />
     </SiteLayout>
   );
 }

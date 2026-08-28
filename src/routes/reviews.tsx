@@ -5,6 +5,8 @@ import { BadgeCheck } from "lucide-react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { Stars } from "@/components/site/Stars";
 import { reviewsQuery } from "@/lib/data";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 export const Route = createFileRoute("/reviews")({
   loader: async ({ context }) => {
@@ -126,6 +128,7 @@ function ReviewsPage() {
           </article>
         ))}
       </div>
+      <SeoCopy title={PAGE_COPY.reviews.title} blocks={PAGE_COPY.reviews.blocks} />
     </SiteLayout>
   );
 }

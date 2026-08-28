@@ -22,6 +22,8 @@ import { useCart } from "@/lib/cart";
 import { paymentMethodsQuery, type PaymentMethod } from "@/lib/data";
 import { uploadProductImage } from "@/lib/storage";
 import { formatPrice, submitToEmail, SITE } from "@/lib/site";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 export const Route = createFileRoute("/checkout")({
   head: () => ({
@@ -771,6 +773,7 @@ function CheckoutPage() {
           </aside>
         </div>
       </div>
+      <SeoCopy title={PAGE_COPY.checkout.title} blocks={PAGE_COPY.checkout.blocks} />
     </SiteLayout>
   );
 }

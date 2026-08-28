@@ -48,13 +48,29 @@ function BlogIndex() {
     "@type": "Blog",
     name: "Bitcoin Mining Depot Blog",
     url: `${SITE.url}/blog`,
-    publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+      logo: { "@type": "ImageObject", url: SITE.logo },
+    },
     blogPost: BLOG_POSTS.slice(0, 30).map((p) => ({
       "@type": "BlogPosting",
       headline: p.title,
       url: `${SITE.url}/blog/${p.slug}`,
+      mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE.url}/blog/${p.slug}` },
       datePublished: p.date,
+      dateModified: p.date,
       description: p.description,
+      inLanguage: "en",
+      image: [SITE.ogImage],
+      author: { "@type": "Organization", name: SITE.name, url: SITE.url },
+      publisher: {
+        "@type": "Organization",
+        name: SITE.name,
+        url: SITE.url,
+        logo: { "@type": "ImageObject", url: SITE.logo },
+      },
     })),
   };
 

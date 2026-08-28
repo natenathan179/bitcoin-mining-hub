@@ -4,6 +4,12 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { productQuery, type Product } from "@/lib/data";
+import { SITE } from "@/lib/site";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
+
+const COMPARE_URL =
+  "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro";
 
 const SLUG_A = "antminer-s21-xp-hyd";
 const SLUG_B = "bitmain-antminer-s19-xp-plus-hydro";
@@ -41,6 +47,28 @@ export const Route = createFileRoute("/compare/antminer-s21-xp-hyd-vs-s19-xp-plu
       },
     ],
     scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: TITLE,
+          description: DESCRIPTION,
+          inLanguage: "en",
+          datePublished: "2026-06-01",
+          dateModified: "2026-08-01",
+          url: COMPARE_URL,
+          mainEntityOfPage: { "@type": "WebPage", "@id": COMPARE_URL },
+          image: [SITE.ogImage],
+          author: { "@type": "Organization", name: SITE.name, url: SITE.url },
+          publisher: {
+            "@type": "Organization",
+            name: SITE.name,
+            url: SITE.url,
+            logo: { "@type": "ImageObject", url: SITE.logo },
+          },
+        }),
+      },
       {
         type: "application/ld+json",
         children: JSON.stringify({
@@ -278,6 +306,7 @@ function ComparePage() {
           </p>
         </div>
       </section>
+      <SeoCopy title={PAGE_COPY.compare.title} blocks={PAGE_COPY.compare.blocks} />
     </SiteLayout>
   );
 }

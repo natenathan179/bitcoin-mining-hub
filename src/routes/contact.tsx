@@ -4,6 +4,8 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { LeadForm } from "@/components/site/LeadForm";
 import { SITE } from "@/lib/site";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -96,6 +98,7 @@ function ContactPage() {
           </div>
         </aside>
       </div>
+      <SeoCopy title={PAGE_COPY.contact.title} blocks={PAGE_COPY.contact.blocks} />
     </SiteLayout>
   );
 }

@@ -5,6 +5,8 @@ import { useMemo, useState } from "react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { productsQuery } from "@/lib/data";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 const TITLE = "Used & Refurbished ASIC Miners for Sale | BMD";
 const DESCRIPTION =
@@ -344,6 +346,7 @@ function UsedMinersPage() {
           </div>
         </section>
       </div>
+      <SeoCopy title={PAGE_COPY.used.title} blocks={PAGE_COPY.used.blocks} />
     </SiteLayout>
   );
 }
