@@ -30,13 +30,14 @@ export const Route = createFileRoute("/compare/antminer-s21-xp-hyd-vs-s19-xp-plu
       { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:url",
-        content: "/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+        content:
+          "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
       },
     ],
     links: [
       {
         rel: "canonical",
-        href: "/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+        href: "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
       },
     ],
     scripts: [
@@ -46,13 +47,13 @@ export const Route = createFileRoute("/compare/antminer-s21-xp-hyd-vs-s19-xp-plu
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-            { "@type": "ListItem", position: 2, name: "Compare Miners", item: "/products" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.com/" },
+            { "@type": "ListItem", position: 2, name: "Compare Miners", item: "https://bitcoinminingdepot.com/products" },
             {
               "@type": "ListItem",
               position: 3,
               name: "S21 XP Hyd vs S19 XP+ Hydro",
-              item: "/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+              item: "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
             },
           ],
         }),
