@@ -8,6 +8,8 @@ export const SITE = {
   facebook: "https://www.facebook.com/share/1GubwjKqqk/",
   address: "Tower 1, Times Square, 34號 Matheson St, Causeway Bay, Hong Kong Island, Hong Kong",
   tagline: "Powering the Future of Bitcoin Mining.",
+  ogImage: "https://bitcoinminingdepot.com/og-preview.jpg",
+  logo: "https://bitcoinminingdepot.com/favicon.png",
   city: "Causeway Bay, Hong Kong",
   country: "Hong Kong",
   hqLine: "Headquartered in Causeway Bay, Hong Kong — shipping worldwide",

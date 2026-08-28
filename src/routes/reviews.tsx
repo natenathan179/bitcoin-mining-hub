@@ -41,14 +41,8 @@ export const Route = createFileRoute("/reviews")({
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 name: "Bitcoin Mining Depot",
-                url: "/",
-                aggregateRating: {
-                  "@type": "AggregateRating",
-                  ratingValue: String(loaderData.rating),
-                  bestRating: "5",
-                  worstRating: "1",
-                  reviewCount: String(loaderData.count),
-                },
+                url: "https://bitcoinminingdepot.com",
+                logo: "https://bitcoinminingdepot.com/favicon.png",
               }),
             },
           ]

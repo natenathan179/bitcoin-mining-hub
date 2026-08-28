@@ -93,8 +93,52 @@ function ProductsPage() {
     return list;
   }, [products, activeCategory, brand, condition, maxPrice, q, sort]);
 
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Shop ASIC Bitcoin Miners",
+      url: "https://bitcoinminingdepot.com/products",
+      description:
+        "In-stock ASIC bitcoin miners, power supplies, immersion cooling and spare parts with worldwide shipping.",
+      isPartOf: {
+        "@type": "WebSite",
+        name: "Bitcoin Mining Depot",
+        url: "https://bitcoinminingdepot.com",
+      },
+      mainEntity: {
+        "@type": "ItemList",
+        numberOfItems: filtered.length,
+        itemListElement: filtered.slice(0, 25).map((p, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: p.name,
+          url: `https://bitcoinminingdepot.com/products/${p.slug}`,
+        })),
+      },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.com/" },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Shop",
+          item: "https://bitcoinminingdepot.com/products",
+        },
+      ],
+    },
+  ];
+
   return (
     <SiteLayout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <PageHero
         eyebrow="Shop"
         title={activeCategory ? activeCategory.name : "Bitcoin Mining Hardware"}

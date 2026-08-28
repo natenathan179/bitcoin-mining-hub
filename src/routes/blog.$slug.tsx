@@ -77,8 +77,10 @@ function BlogPostPage() {
       keywords: post.keywords.join(", "),
       articleSection: post.category,
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      url,
+      image: [SITE.ogImage],
       author: { "@type": "Organization", name: SITE.name, url: SITE.url },
-      publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+      publisher: { "@type": "Organization", name: SITE.name, url: SITE.url, logo: { "@type": "ImageObject", url: SITE.logo } },
     },
     {
       "@context": "https://schema.org",
