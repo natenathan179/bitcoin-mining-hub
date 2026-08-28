@@ -19,8 +19,11 @@ export const Route = createFileRoute("/blog/$slug")({
     if (!post) return {};
     const url = `${SITE.url}/blog/${post.slug}`;
     // Keep the meta title distinct from the on-page H1 (post.title) so crawlers
-    // don't report duplicated title/H1 pairs across the guide library.
-    const metaTitle = seoPageTitle(post.title, `${post.category} Guide`);
+    // don't report duplicated title/H1 pairs across the guide library: drop the
+    // subtitle after the colon and brand the tag instead.
+    const lead = post.title.split(":")[0].trim();
+    const base = lead.length >= 25 ? lead : post.title;
+    const metaTitle = seoPageTitle(base, "BMD Guide");
     return {
       meta: [
         { title: metaTitle },
