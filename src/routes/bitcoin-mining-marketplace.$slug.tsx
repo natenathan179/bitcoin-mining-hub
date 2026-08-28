@@ -73,8 +73,10 @@ function MarketplaceLocationPage() {
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
       about: { "@type": "Product", name: fam.product },
       spatialCoverage: { "@type": "Place", name: `${loc.place}, ${loc.country}` },
+      url,
+      image: [SITE.ogImage],
       author: { "@type": "Organization", name: SITE.name, url: SITE.url },
-      publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+      publisher: { "@type": "Organization", name: SITE.name, url: SITE.url, logo: { "@type": "ImageObject", url: SITE.logo } },
     },
     {
       "@context": "https://schema.org",
