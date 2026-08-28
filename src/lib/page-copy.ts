@@ -330,6 +330,20 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
           "If something went wrong with your order, contact support before reviewing - not because we want the rating managed, but because most complaints have a fix, and a repaired outcome is more useful to future readers than an unresolved one.",
         ],
       },
+      {
+        heading: "Independent checks you can run yourself",
+        paras: [
+          "Reviews are one input, not the whole picture. Before ordering from any vendor, ask for photographs or a short video of the exact unit powered on with the miner's own status page visible, showing hashrate per hashboard, chip temperatures and fan speeds. Ask for the firmware version and whether it is stock or third-party, since some tuned firmware voids manufacturer coverage. Request the PSU model and revision, because a mismatched supply is the most common cause of a machine that hashes for an hour and then throttles.",
+          "Then verify the commercial side: a written warranty term with a stated duration and scope, a clear returns and DOA process, and a named freight route with realistic transit times to your country. Ask who is importer of record and what duty rate applies. A vendor that answers all of that in writing before payment is a vendor whose reviews you can trust; one that deflects is telling you something important.",
+        ],
+      },
+      {
+        heading: "Why we publish deployment context with every review",
+        paras: [
+          "A five-star review from a buyer with three-cent power in a cold climate tells you little about how the same machine behaves in a humid coastal city at thirty-five degrees ambient. That is why the feedback above names locations and machines: it lets you weight the review against your own conditions instead of averaging strangers' experiences into a single number.",
+          "If you want the closest analogue to your site, filter mentally by climate and tariff rather than by rating, then ask us for the tuning profile that buyer settled on. We keep notes on what worked, and sharing them costs us nothing and saves you a month of experimenting.",
+        ],
+      },
     ],
   },
 
@@ -452,6 +466,13 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
         paras: [
           "Add hardware to the cart or open the inquiry form on any listing to request a quote with your destination and quantity. We confirm availability, PSU revision, firmware, freight cost and delivery window in writing before any payment. Settlement is by major cryptocurrency against a published address with QR code and transaction-ID confirmation, or by CashApp, Chime or bank transfer for buyers who prefer fiat rails.",
           "Once payment is verified you receive an invoice, packing confirmation and tracking. Larger fleet orders can be staged across multiple shipments so your electrical build and your hardware arrive in step.",
+        ],
+      },
+      {
+        heading: "Firmware, tuning and long-term maintenance",
+        paras: [
+          "Efficiency is not fixed at purchase. Undervolting and frequency tuning can cut power draw meaningfully at a modest hashrate cost, which on expensive tariffs often improves net margin. Conversely, sites with very cheap power sometimes overclock for more revenue per box. We ship machines on stock firmware unless you ask otherwise, document the tuning profiles that have worked for each model, and will walk you through applying them after delivery.",
+          "Maintenance is mostly discipline: filter cleaning, dust removal on a schedule, thermal paste refresh on older units, fan replacement before failure rather than after, and log monitoring so a degrading hashboard is caught while it is still a repair rather than a replacement. Our repair lab handles hashboard, controller, PSU and fan work for the models we sell, with spares held for high-volume lines.",
         ],
       },
     ],
