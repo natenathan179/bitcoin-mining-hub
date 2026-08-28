@@ -5,7 +5,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { getPost, relatedPosts, type BlogPost } from "@/lib/blog";
 import { productsQuery, type Product } from "@/lib/data";
-import { SITE } from "@/lib/site";
+import { SITE, seoPageTitle } from "@/lib/site";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params, context }) => {
