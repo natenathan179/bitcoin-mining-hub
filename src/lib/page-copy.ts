@@ -6,6 +6,60 @@ import type { CopyBlock } from "@/components/site/SeoCopy";
  * that SEO crawlers measure.
  */
 export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> = {
+  home: {
+    title: "Enterprise Bitcoin Mining Hardware, Hosting And Repair",
+    blocks: [
+      {
+        heading: "Buying mining hardware from a vendor that runs machines",
+        paras: [
+          "Bitcoin Mining Depot sells the hardware we commission, service and repair. Every ASIC leaves our Hong Kong warehouse bench-tested and hashrate-verified, with the PSU revision, firmware and condition confirmed in writing before you pay. We ship worldwide - the United States, Canada, Europe and the UK, Asia, the Middle East, Australia, Latin America and Africa - with commercial invoices and HS codes prepared so customs clearance is routine rather than a two-week problem.",
+          "Our catalogue spans current-generation air and hydro flagships, previous-generation workhorses, and thoroughly refurbished used units for buyers optimising capital cost over efficiency. Alongside hardware we operate hosting for miners without suitable power or cooling, and a repair lab for hashboard, controller, PSU and fan faults.",
+        ],
+      },
+      {
+        heading: "Match the machine to your power price, not to the spec sheet",
+        paras: [
+          "Profitability is decided by three numbers: your electricity rate, the machine's joules per terahash, and current hashprice. At low industrial tariffs, cheaper terahash from older hardware often returns more on invested capital. As power costs rise, efficiency dominates and newer machines win by a widening margin every day they run.",
+          "Send us your tariff, available amperage and cooling capability and we will model the options with your figures. If the honest answer is that self-hosting does not pay at your power price, we will say so and quote hosting instead.",
+        ],
+      },
+      {
+        heading: "Deployment, cooling and electrical planning",
+        paras: [
+          "Air-cooled fleets need real airflow design - separated hot and cold aisles, filtered intake and exhaust capacity sized to the full kilowatt load. Hydro machines need a closed coolant loop, correct flow and pressure, filtration and leak detection, with a dry cooler matched to the heat rejected. Immersion needs dielectric fluid, tank sealing and pump redundancy. Electrically, plan three-phase distribution with headroom rather than running at the breaker limit.",
+          "Our guide library and knowledge center document these builds step by step, from single-unit home installs through container deployments, so you can plan before hardware arrives instead of improvising after it does.",
+        ],
+      },
+      {
+        heading: "Payment, warranty and support",
+        paras: [
+          "We accept major cryptocurrencies with published QR addresses and transaction-ID confirmation, plus CashApp, Chime and bank transfer. Warranty terms are written in plain language, and claims are handled against those terms with spares kept for the models we sell in volume.",
+          "After delivery we help with pool setup, firmware and tuning, undervolting for efficiency, and fault diagnosis. Talk to the sales desk on WhatsApp, email or the contact form and you will reach someone who has commissioned the machine you are asking about.",
+        ],
+      },
+    ],
+  },
+
+  privacy: {
+    title: "How We Handle Your Information",
+    blocks: [
+      {
+        heading: "Data we collect and why",
+        paras: [
+          "We collect only what an order or an enquiry requires: your name, email, phone number, delivery address, the hardware you asked about, and - where you pay in cryptocurrency - the transaction identifier you submit so we can match payment to order. Quote requests and inquiry forms are delivered to our sales inbox and used to answer you, price freight and prepare customs paperwork.",
+          "We do not sell personal data, we do not build advertising profiles from it, and we do not share it beyond the parties needed to fulfil your order: payment confirmation, freight carriers and customs authorities.",
+        ],
+      },
+      {
+        heading: "Retention, security and your choices",
+        paras: [
+          "Order records are retained as long as commercial and tax obligations require, and enquiry records only as long as the conversation is useful. Access is limited to staff who need it. Traffic to the site is served over HTTPS, and administrative access to inventory and order data is authenticated.",
+          "You may ask us what we hold about you, request corrections, or ask for deletion of records we are not legally required to keep. Email the address on our contact page and we will respond in writing.",
+        ],
+      },
+    ],
+  },
+
   contact: {
     title: "How Our Hong Kong Sales Desk Works",
     blocks: [
@@ -55,6 +109,27 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
         paras: [
           "We accept cryptocurrency, CashApp, Chime and bank transfer. Crypto orders are confirmed on-chain: you choose the coin, pay to the published address shown at checkout, then paste the transaction ID with your delivery details so our team can verify the payment before dispatch. Payment details are only ever published on this website — never act on wallet addresses received by email or social media.",
           "New hardware carries the manufacturer warranty where applicable; used and refurbished machines carry our own 30-day functional warranty on hashboards and power supplies. Freight claims are handled with the carrier on your behalf, and our repair lab can service most units instead of writing them off.",
+        ],
+      },
+      {
+        heading: "Why our answers name numbers instead of slogans",
+        paras: [
+          "Mining is an engineering purchase, so every answer above commits to a figure: joules per terahash, amperage per unit, delivery windows by region, warranty length in months. Vague reassurance is what gets buyers into trouble - a machine that arrives without the right PSU revision, a farm wired to 80 percent of the load it actually needs, or a hydro deployment ordered before the dry cooler was sized.",
+          "If a question you have is not answered here, it is usually because the honest answer depends on your site: your tariff, your ambient temperature, your available breaker capacity and your import regime. Send those four numbers to the sales desk and we will answer specifically rather than generically.",
+        ],
+      },
+      {
+        heading: "How we handle pre-sales engineering questions",
+        paras: [
+          "Every quote request is reviewed by someone who has commissioned machines, not only sold them. We check that the electrical plan matches the fleet, that the cooling method suits the ambient conditions, and that the payback assumption uses a realistic hashprice rather than a peak-market figure. Where the numbers do not work we say so and propose either a different model, a used unit at lower capital cost, or hosting instead of self-hosting.",
+          "That review is free and carries no obligation. It exists because returned or bricked hardware costs us more than a lost sale, so we would rather spend an hour on your load calculation than process a dispute later.",
+        ],
+      },
+      {
+        heading: "Support after the invoice is paid",
+        paras: [
+          "Buyers receive tracking, customs paperwork and firmware guidance in writing. Once machines are on site we help with pool configuration, tuning profiles, undervolting for efficiency, and diagnosis of hashboard or fan faults over chat or email. If a unit needs bench work, our repair lab quotes the job before touching it and pressure-tests hydro units after any coolant-side service.",
+          "Warranty claims are handled against written terms, not discretion. You will always know what is covered, for how long, and what the process is before you buy.",
         ],
       },
     ],
@@ -220,6 +295,20 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
           "Our address, phone number and email are published on every page for exactly that reason, and our repair lab means a fault is a service ticket rather than a lost machine.",
         ],
       },
+      {
+        heading: "What we ask reviewers to cover",
+        paras: [
+          "Feedback is most useful when it names the machine, the destination country, the delivery window and how the hardware behaved after commissioning. That is why the reviews above read like deployment notes rather than star ratings: buyers care whether the hashrate matched the listing, whether the PSU revision was correct, how long customs took and what happened when something failed.",
+          "We publish critical reviews alongside positive ones. A vendor with only perfect feedback across hundreds of international freight shipments is not being straight with you - freight gets delayed, units occasionally arrive with a faulty fan, and how that is resolved is the real measure.",
+        ],
+      },
+      {
+        heading: "How to verify a hardware vendor before wiring funds",
+        paras: [
+          "Ask for bench-test evidence of the exact unit, a written warranty term, a serial or batch reference, and clarity on which PSU and firmware ship with the machine. Confirm the shipping route, who is the importer of record, and how duties and VAT are handled in your country. Ask what happens if the hashrate lands below spec at your ambient temperature.",
+          "Any vendor should answer those in writing before payment. We do, and our reviews reflect buyers who tested those answers against reality in North America, Europe, the Middle East, Asia, Africa, Latin America and Oceania.",
+        ],
+      },
     ],
   },
 
@@ -245,6 +334,27 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
         paras: [
           "Ask for the measured hashrate and error rate under load, not the factory rating. Ask how many hashboards have been repaired and whether the unit has been immersion-run, because coolant residue changes long-term reliability. Confirm the PSU model matches the board revision, confirm firmware and whether pool settings are locked, and confirm who pays return freight if the machine fails in the first month.",
           "Our used stock ships with a 30-day functional warranty on hashboards and power supplies, worldwide freight from Hong Kong, and access to the same repair lab that prepared the machine.",
+        ],
+      },
+      {
+        heading: "What refurbishment actually means here",
+        paras: [
+          "A used miner in our inventory has been opened, cleaned, thermal-paste refreshed where required, tested on all hashboards, and run under load long enough to confirm stable hashrate and temperatures. Fans and PSUs are replaced rather than nursed. Chips that underperform are logged and the machine is priced accordingly instead of being sold as if new.",
+          "That process is why used hardware can be the strongest return on capital in mining: you buy proven silicon at a fraction of new-unit pricing, and at moderate electricity rates a well-maintained previous-generation machine often pays back faster than a flagship.",
+        ],
+      },
+      {
+        heading: "Choosing used over new at your power price",
+        paras: [
+          "The rule of thumb is simple. Cheap power favours older, less efficient machines because capital cost dominates the return. Expensive power favours new, efficient machines because electricity dominates. Somewhere between roughly six and nine cents per kilowatt-hour the ranking flips, and where exactly depends on hashprice, uptime and your cooling overhead.",
+          "Send us your tariff and we will model both options with your numbers before you commit. If new hardware wins for your site we will tell you, even though the used unit is in stock today.",
+        ],
+      },
+      {
+        heading: "Warranty, spares and repair backing",
+        paras: [
+          "Used units ship with written warranty terms and access to our repair lab for hashboard, controller, PSU and fan work. We keep spares for the models we sell in volume, which matters more than the headline warranty length - a covered fault is only useful if the parts exist to fix it.",
+          "Every used listing states its condition honestly, and we ship worldwide from Hong Kong with full customs documentation so the machine clears without surprises.",
         ],
       },
     ],
@@ -274,6 +384,20 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
           "If you are unsure which machine suits your electricity rate and available amperage, send us those numbers and we will model the options before you spend anything.",
         ],
       },
+      {
+        heading: "How to shortlist from this catalogue",
+        paras: [
+          "Start with your electricity rate, then your available amperage, then your cooling method - in that order. The tariff sets the efficiency band you can afford to run, the amperage caps the fleet size per circuit, and the cooling method decides whether air, hydro or immersion models are even viable on your site. Only after those three constraints does brand preference matter.",
+          "Use the filters to narrow by category and search by model, then compare joules per terahash rather than headline terahash. A machine with lower total hashrate and better efficiency usually wins on any tariff above a few cents.",
+        ],
+      },
+      {
+        heading: "What ships with every order",
+        paras: [
+          "Listings state hashrate, power draw, efficiency and condition as tested, not as printed on the manufacturer datasheet. Units are bench-tested and hashrate-verified before dispatch, packed for international air freight, and accompanied by commercial invoices and HS codes so customs clearance is routine.",
+          "Payment options include major cryptocurrencies, CashApp, Chime and bank transfer, and every order is confirmed in writing with the exact model, quantity, PSU revision and delivery window before funds move.",
+        ],
+      },
     ],
   },
 
@@ -292,6 +416,20 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
         paras: [
           "Search by city, filter by country or hardware family, then open the page closest to your site. Use it to sanity-check the local power and import realities, then request a quote with your electricity rate and available amperage so we can confirm which machines pay back in your market.",
           "If your city is not listed, the guidance for the nearest listed location almost always applies — or simply contact the sales desk and we will price your delivery directly.",
+        ],
+      },
+      {
+        heading: "How the location guides are built",
+        paras: [
+          "Each marketplace page starts from local realities: typical industrial and residential electricity tariffs, grid stability, climate and cooling load, import duty treatment, and the availability of colocation nearby. Hardware recommendations follow from those constraints rather than from a generic bestseller list, so a page for a hot, high-tariff city recommends different machines than one for a cold, cheap-power region.",
+          "Every guide links straight into live inventory so you can move from research to a quote in one step, with delivery and duty handling explained for that market.",
+        ],
+      },
+      {
+        heading: "Using a location guide before you buy",
+        paras: [
+          "Read the power section first and compare the quoted tariff with your own bill, because that single number decides which efficiency band is worth buying. Then check the climate and cooling notes against your building, and the import notes against how you intend to receive the shipment. Finally open the linked hardware and ask us to confirm pricing and freight to your address.",
+          "If your city is not covered, the nearest listed location is usually close enough on power and import treatment to guide the decision, and our sales desk will confirm the specifics for your exact address.",
         ],
       },
     ],
