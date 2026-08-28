@@ -75,16 +75,22 @@ export function SiteFooter() {
             >
               <Facebook className="h-4 w-4" aria-hidden="true" />
             </a>
-            {[Twitter, Youtube, Instagram, Linkedin].map((Icon, i) => (
-              <a
-                key={i}
-                href={SITE.url}
-                aria-label="Social profile"
-                className="hover:text-ice"
-              >
-                <Icon className="h-4 w-4" aria-hidden="true" />
-              </a>
-            ))}
+            <a
+              href={`https://wa.me/${SITE.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat with sales on WhatsApp"
+              className="hover:text-ice"
+            >
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+            </a>
+            <a
+              href={`mailto:${SITE.email}`}
+              aria-label="Email Bitcoin Mining Depot sales"
+              className="hover:text-ice"
+            >
+              <Mail className="h-4 w-4" aria-hidden="true" />
+            </a>
           </div>
         </div>
 
