@@ -30,13 +30,14 @@ export const Route = createFileRoute("/compare/antminer-s21-xp-hyd-vs-s19-xp-plu
       { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:url",
-        content: "/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+        content:
+          "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
       },
     ],
     links: [
       {
         rel: "canonical",
-        href: "/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+        href: "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
       },
     ],
     scripts: [
