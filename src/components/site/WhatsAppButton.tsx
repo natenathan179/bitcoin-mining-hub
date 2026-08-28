@@ -1,15 +1,13 @@
-import { SITE } from "@/lib/site";
+import { whatsappUrl } from "@/lib/site";
 
 export function WhatsAppButton() {
-  const href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(
-    "Hello Bitcoin Mining Depot, I would like a quote on ASIC miners.",
-  )}`;
+  const href = whatsappUrl("Hello Bitcoin Mining Depot, I would like a quote on ASIC miners.");
 
   return (
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       aria-label="Chat with Bitcoin Mining Depot on WhatsApp"
       title="Chat with us on WhatsApp"
       className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition hover:scale-105 hover:shadow-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
