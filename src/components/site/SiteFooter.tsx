@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Facebook, MessageCircle, Mail, MapPin } from "lucide-react";
 
 import { Logo } from "./Logo";
-import { SITE } from "@/lib/site";
+import { SITE, whatsappUrl } from "@/lib/site";
 import { COLLECTIONS } from "@/lib/collections";
 import { BLOG_CATEGORIES, BLOG_POSTS } from "@/lib/blog";
 
