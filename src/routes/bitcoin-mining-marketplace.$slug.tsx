@@ -71,7 +71,7 @@ function MarketplaceLocationPage() {
       inLanguage: "en",
       keywords: page.keywords.join(", "),
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
-      about: { "@type": "Product", name: fam.product },
+      about: { "@type": "Thing", name: fam.product },
       spatialCoverage: { "@type": "Place", name: `${loc.place}, ${loc.country}` },
       url,
       image: [SITE.ogImage],

@@ -5,6 +5,8 @@ import { useMemo, useState } from "react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { categoriesQuery, productsQuery } from "@/lib/data";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 interface ProductSearch {
   q?: string;
@@ -336,6 +338,7 @@ function ProductsPage() {
           </div>
         </section>
       </div>
+      <SeoCopy title={PAGE_COPY.productsIndex.title} blocks={PAGE_COPY.productsIndex.blocks} />
     </SiteLayout>
   );
 }

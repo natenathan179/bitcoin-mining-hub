@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { PolicyPage } from "@/components/site/PolicyPage";
 import { SITE } from "@/lib/site";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 export const Route = createFileRoute("/privacy")({
   head: () => ({
@@ -66,6 +67,7 @@ export const Route = createFileRoute("/privacy")({
             `For any privacy question, contact ${SITE.email} or write to ${SITE.address}.`,
           ],
         },
+        ...PAGE_COPY.privacy.blocks.map((b) => ({ heading: b.heading, paras: b.paras })),
       ]}
     />
   ),

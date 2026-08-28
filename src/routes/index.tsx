@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 import { Suspense, useState } from "react";
 import { toast } from "sonner";
 import {
@@ -712,6 +714,7 @@ function Index() {
           ))}
         </div>
       </section>
+      <SeoCopy title={PAGE_COPY.home.title} blocks={PAGE_COPY.home.blocks} />
     </SiteLayout>
   );
 }

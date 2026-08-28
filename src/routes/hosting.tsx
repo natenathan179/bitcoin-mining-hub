@@ -3,6 +3,8 @@ import { Server, Gauge, ShieldCheck, Zap } from "lucide-react";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { LeadForm } from "@/components/site/LeadForm";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 export const Route = createFileRoute("/hosting")({
   head: () => ({
@@ -113,6 +115,7 @@ function HostingPage() {
           </div>
         </div>
       </div>
+      <SeoCopy title={PAGE_COPY.hosting.title} blocks={PAGE_COPY.hosting.blocks} />
     </SiteLayout>
   );
 }

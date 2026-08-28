@@ -7,6 +7,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 const FAQS = [
   {
@@ -118,6 +120,7 @@ function FaqPage() {
           ))}
         </Accordion>
       </div>
+      <SeoCopy title={PAGE_COPY.faq.title} blocks={PAGE_COPY.faq.blocks} />
     </SiteLayout>
   );
 }

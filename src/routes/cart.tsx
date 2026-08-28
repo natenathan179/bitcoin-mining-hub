@@ -4,6 +4,8 @@ import { Trash2, ShoppingBag } from "lucide-react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { useCart } from "@/lib/cart";
 import { formatPrice } from "@/lib/site";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 export const Route = createFileRoute("/cart")({
   head: () => ({
@@ -151,6 +153,7 @@ function CartPage() {
           </div>
         )}
       </div>
+      <SeoCopy title={PAGE_COPY.cart.title} blocks={PAGE_COPY.cart.blocks} />
     </SiteLayout>
   );
 }

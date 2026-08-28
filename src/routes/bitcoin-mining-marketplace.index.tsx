@@ -9,6 +9,8 @@ import {
   type FamilyId,
 } from "@/lib/marketplace";
 import { SITE } from "@/lib/site";
+import { SeoCopy } from "@/components/site/SeoCopy";
+import { PAGE_COPY } from "@/lib/page-copy";
 
 export const Route = createFileRoute("/bitcoin-mining-marketplace/")({
   head: () => ({
@@ -58,7 +60,12 @@ function MarketplaceIndex() {
     url: `${SITE.url}/bitcoin-mining-marketplace`,
     description:
       "Location-targeted buying pages for ASIC miners, the Bitmain Antminer S23 and the Antminer Z15 Pro across the USA, Canada, UK, Europe and Australia.",
-    publisher: { "@type": "Organization", name: SITE.name, url: SITE.url },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.url,
+      logo: { "@type": "ImageObject", url: SITE.logo },
+    },
     mainEntity: {
       "@type": "ItemList",
       numberOfItems: MARKET_LOCATIONS.length,
@@ -217,6 +224,7 @@ function MarketplaceIndex() {
           </div>
         </div>
       </div>
+      <SeoCopy title={PAGE_COPY.marketplaceIndex.title} blocks={PAGE_COPY.marketplaceIndex.blocks} />
     </SiteLayout>
   );
 }
