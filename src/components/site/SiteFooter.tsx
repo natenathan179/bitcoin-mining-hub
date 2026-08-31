@@ -2,11 +2,10 @@ import { Link } from "@tanstack/react-router";
 import { Facebook, MessageCircle, Mail, MapPin } from "lucide-react";
 
 import { Logo } from "./Logo";
-import { SITE, whatsappUrl } from "@/lib/site";
+import { SITE, openWhatsApp } from "@/lib/site";
 import { COLLECTIONS } from "@/lib/collections";
 import { BLOG_CATEGORIES, BLOG_POSTS } from "@/lib/blog";
 import { Button } from "@/components/ui/button";
-import { openWhatsApp } from "@/lib/site";
 
 // One evergreen guide per editorial category — sitewide internal links that
 // funnel crawl equity into the deepest blog content.
