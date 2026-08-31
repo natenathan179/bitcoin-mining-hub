@@ -5,6 +5,8 @@ import { Logo } from "./Logo";
 import { SITE, whatsappUrl } from "@/lib/site";
 import { COLLECTIONS } from "@/lib/collections";
 import { BLOG_CATEGORIES, BLOG_POSTS } from "@/lib/blog";
+import { Button } from "@/components/ui/button";
+import { openWhatsApp } from "@/lib/site";
 
 // One evergreen guide per editorial category — sitewide internal links that
 // funnel crawl equity into the deepest blog content.
@@ -75,15 +77,17 @@ export function SiteFooter() {
             >
               <Facebook className="h-4 w-4" aria-hidden="true" />
             </a>
-            <a
-              href={whatsappUrl()}
-              target="_blank"
-              rel="noopener noreferrer nofollow"
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon"
+              onClick={() => openWhatsApp()}
               aria-label="Chat with sales on WhatsApp"
-              className="hover:text-ice"
+              title="Chat with sales on WhatsApp"
+              className="h-6 w-6 text-charcoal-foreground/70 hover:bg-transparent hover:text-ice"
             >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            </a>
+            </Button>
             <a
               href={`mailto:${SITE.email}`}
               aria-label="Email Bitcoin Mining Depot sales"
