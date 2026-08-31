@@ -144,7 +144,7 @@ export async function fetchProductsFull(): Promise<Product[]> {
 }
 
 export async function fetchProductBySlug(slug: string): Promise<Product | null> {
-  return resilientRead<Product | null>(
+  const product = await resilientRead<Product | null>(
     `product:${slug}`,
     async () => {
       const { data, error } = await table("products").select("*").eq("slug", slug).maybeSingle();
@@ -153,36 +153,63 @@ export async function fetchProductBySlug(slug: string): Promise<Product | null> 
     },
     null,
   );
+  if (product) return product;
+  // A transient read failure must not turn a real product page into a 404/5xx —
+  // fall back to the cached catalogue list before giving up.
+  const list = await fetchProducts();
+  return list.find((item) => item.slug === slug) ?? null;
 }
 
-
 export async function fetchReviews(): Promise<Review[]> {
-  const { data, error } = await table("reviews")
-    .select("*")
-    .order("created_at", { ascending: false });
-  if (error) throw error;
-  return (data ?? []) as unknown as Review[];
+  return resilientRead<Review[]>(
+    "reviews",
+    async () => {
+      const { data, error } = await table("reviews")
+        .select("*")
+        .order("created_at", { ascending: false });
+      if (error) throw error;
+      return (data ?? []) as unknown as Review[];
+    },
+    [],
+  );
 }
 
 /** Homepage showcase: only the handful of rows the hero grid renders. */
 export async function fetchHomeProducts(): Promise<Product[]> {
-  const { data, error } = await table("products")
-    .select(PRODUCT_LIST_COLUMNS)
-    .order("featured", { ascending: false })
-    .order("created_at", { ascending: false })
-    .limit(6);
-  if (error) throw error;
-  return (data ?? []).map((row) => ({ description: "", ...(row as object) })) as unknown as Product[];
+  return resilientRead<Product[]>(
+    "products:home",
+    async () => {
+      const { data, error } = await table("products")
+        .select(PRODUCT_LIST_COLUMNS)
+        .order("featured", { ascending: false })
+        .order("created_at", { ascending: false })
+        .limit(6);
+      if (error) throw error;
+      return (data ?? []).map((row) => ({
+        description: "",
+        ...(row as object),
+      })) as unknown as Product[];
+    },
+    [],
+  );
 }
 
 /** Homepage reviews strip: three most recent approved reviews. */
 export async function fetchTopReviews(): Promise<Review[]> {
-  const { data, error } = await table("reviews")
-    .select("id,name,location,rating,title,body,avatar_url,product_name,verified,approved,created_at")
-    .order("created_at", { ascending: false })
-    .limit(3);
-  if (error) throw error;
-  return (data ?? []) as unknown as Review[];
+  return resilientRead<Review[]>(
+    "reviews:top",
+    async () => {
+      const { data, error } = await table("reviews")
+        .select(
+          "id,name,location,rating,title,body,avatar_url,product_name,verified,approved,created_at",
+        )
+        .order("created_at", { ascending: false })
+        .limit(3);
+      if (error) throw error;
+      return (data ?? []) as unknown as Review[];
+    },
+    [],
+  );
 }
 
 export const homeProductsQuery = () =>
