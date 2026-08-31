@@ -27,6 +27,11 @@ export function whatsappUrl(message?: string) {
   return message ? `${base}&text=${encodeURIComponent(message)}` : base;
 }
 
+/** Open WhatsApp from an explicit user action without publishing a crawlable external anchor. */
+export function openWhatsApp(message?: string) {
+  window.open(whatsappUrl(message), "_blank", "noopener,noreferrer");
+}
+
 /** Regions we ship to — used across the storefront so buyers always see delivery coverage. */
 export const SHIPPING_REGIONS = [
   {
