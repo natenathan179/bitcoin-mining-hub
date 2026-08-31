@@ -40,7 +40,7 @@ function BlogIndex() {
       if (term && !`${p.title} ${p.description} ${p.keywords.join(" ")}`.toLowerCase().includes(term))
         return false;
       return true;
-    });
+    }).sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.title.localeCompare(b.title)));
   }, [cat, q]);
 
   const jsonLd = {
