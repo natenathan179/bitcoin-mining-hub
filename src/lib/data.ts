@@ -232,12 +232,18 @@ export const productQuery = (slug: string) =>
 export const reviewsQuery = () => queryOptions({ queryKey: ["reviews"], queryFn: fetchReviews });
 
 export async function fetchPaymentMethods(): Promise<PaymentMethod[]> {
-  const { data, error } = await table("payment_methods")
-    .select("*")
-    .order("sort_order")
-    .order("name");
-  if (error) throw error;
-  return (data ?? []) as unknown as PaymentMethod[];
+  return resilientRead<PaymentMethod[]>(
+    "payment_methods",
+    async () => {
+      const { data, error } = await table("payment_methods")
+        .select("*")
+        .order("sort_order")
+        .order("name");
+      if (error) throw error;
+      return (data ?? []) as unknown as PaymentMethod[];
+    },
+    [],
+  );
 }
 
 export const paymentMethodsQuery = () =>
