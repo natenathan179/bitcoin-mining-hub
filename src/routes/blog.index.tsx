@@ -131,6 +131,13 @@ function BlogIndex() {
               <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-primary">
                 {p.category} · {p.readMinutes} min read
               </p>
+              <p className="mt-1 text-[10px] uppercase tracking-wide text-muted-foreground">
+                {new Date(p.date).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                })}
+              </p>
               <h2 className="mt-2 font-display text-base font-bold leading-snug text-charcoal">
                 <Link to="/blog/$slug" params={{ slug: p.slug }} className="hover:text-primary">
                   {p.title}
