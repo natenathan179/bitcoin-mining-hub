@@ -112,10 +112,9 @@ function AdminPayments() {
           Payment methods
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          These are the options customers can pay with at checkout. Crypto methods show a wallet
-          address and QR code. Cash App, Chime and bank methods are review-based: the customer
-          submits their order, you send them a payment request or account details, then they confirm
-          and send proof of payment.
+          These are the crypto options customers can pay with at checkout. Each method shows its
+          wallet address, network and QR code, and customers submit a transaction ID as proof of
+          payment.
         </p>
 
         <div className="mt-6 space-y-4">
