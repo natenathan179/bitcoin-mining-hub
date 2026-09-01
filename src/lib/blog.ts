@@ -16682,6 +16682,3583 @@ export const BLOG_POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 5
+  },
+  {
+    "slug": "used-bitcoin-miners-how-to-buy-tested-second-hand-asics",
+    "title": "Used Bitcoin Miners: How to Buy Tested Second-Hand ASICs",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-28",
+    "description": "Used Bitcoin Miners — real pricing, efficiency in J/TH, power requirements and payback math for used bitcoin miners, plus tested stock shipped worldwide from ",
+    "keywords": [
+      "used",
+      "bitcoin",
+      "miners",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers buying used bitcoin miners without inheriting someone else's failures. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"used bitcoin miners\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in used bitcoin miners comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in used bitcoin miners and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is used bitcoin miners a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run used bitcoin miners at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s19",
+        "m30"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "used-asic-miner-buying-guide-grades-tests-and-prices",
+    "title": "Used ASIC Miner Buying Guide: Grades, Tests and Prices",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-27",
+    "description": "Used ASIC Miner Buying Guide — real pricing, efficiency in J/TH, power requirements and payback math for used asic miner, plus tested stock shipped worldwide ",
+    "keywords": [
+      "used",
+      "asic",
+      "miner",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers grading a used ASIC miner before you wire any money. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"used asic miner\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run used asic miner at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is used asic miner a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s19"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "used-asic-miners-for-sale-best-value-models-ranked",
+    "title": "Used ASIC Miners for Sale: Best Value Models Ranked",
+    "category": "Hardware Rankings",
+    "categoryId": "rank",
+    "date": "2026-08-26",
+    "description": "Used ASIC Miners for Sale — real pricing, efficiency in J/TH, power requirements and payback math for used asic miners, plus tested stock shipped worldwide fr",
+    "keywords": [
+      "used",
+      "asic",
+      "miners",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers which used ASIC miners still return capital at today's difficulty. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"used asic miners\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in used asic miners comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in used asic miners and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run used asic miners at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is used asic miners a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s19",
+        "m50"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitcoin-mining-institute-a-practical-self-taught-curriculum",
+    "title": "Bitcoin Mining Institute: A Practical Self-Taught Curriculum",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-25",
+    "description": "Bitcoin Mining Institute — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining institute, plus tested stock shipped world",
+    "keywords": [
+      "bitcoin",
+      "mining",
+      "institute",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers teaching yourself mining properly instead of paying for a course. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitcoin mining institute\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in bitcoin mining institute comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in bitcoin mining institute and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is bitcoin mining institute a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run bitcoin mining institute at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitcoin-mining-business-plan-model-costs-and-margins",
+    "title": "Bitcoin Mining Business Plan: Model, Costs and Margins",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-08-24",
+    "description": "Bitcoin Mining Business Plan — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining business plan, plus tested stock shipp",
+    "keywords": [
+      "bitcoin",
+      "mining",
+      "business",
+      "plan",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers writing a bitcoin mining business plan a lender will actually read. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitcoin mining business plan\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run bitcoin mining business plan at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is bitcoin mining business plan a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "what-is-bit-mining-bitcoin-mining-explained-simply",
+    "title": "What Is Bit Mining? Bitcoin Mining Explained Simply",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-23",
+    "description": "What Is Bit Mining? Bitcoin Mining Explained Simply — real pricing, efficiency in J/TH, power requirements and payback math for what is bit mining, plus teste",
+    "keywords": [
+      "what",
+      "is",
+      "bit",
+      "mining",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers what bit mining actually is, in plain language. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"what is bit mining\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in what is bit mining comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in what is bit mining and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run what is bit mining at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is what is bit mining a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "where-to-mine-bitcoins-home-colocation-or-hosting",
+    "title": "Where to Mine Bitcoins: Home, Colocation or Hosting",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-22",
+    "description": "Where to Mine Bitcoins — real pricing, efficiency in J/TH, power requirements and payback math for where to mine bitcoins, plus tested stock shipped worldwide",
+    "keywords": [
+      "where",
+      "to",
+      "mine",
+      "bitcoins",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers choosing where your machines physically live. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"where to mine bitcoins\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in where to mine bitcoins comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in where to mine bitcoins and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is where to mine bitcoins a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run where to mine bitcoins at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "all-about-crypto-mining-hardware-coins-and-returns",
+    "title": "All About Crypto Mining: Hardware, Coins and Returns",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-21",
+    "description": "All About Crypto Mining — real pricing, efficiency in J/TH, power requirements and payback math for all about crypto mining, plus tested stock shipped worldwi",
+    "keywords": [
+      "all",
+      "about",
+      "crypto",
+      "mining",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the full picture of crypto mining across coins and hardware. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"all about crypto mining\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in all about crypto mining and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run all about crypto mining at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is all about crypto mining a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21",
+        "l7"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "all-about-mining-bitcoins-full-beginner-to-operator-guide",
+    "title": "All About Mining Bitcoins: Full Beginner-to-Operator Guide",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-20",
+    "description": "All About Mining Bitcoins — real pricing, efficiency in J/TH, power requirements and payback math for all about mining bitcoins, plus tested stock shipped wor",
+    "keywords": [
+      "all",
+      "about",
+      "mining",
+      "bitcoins",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers everything a first-time operator needs before buying a machine. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"all about mining bitcoins\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in all about mining bitcoins comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run all about mining bitcoins at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is all about mining bitcoins a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "are-all-crypto-coins-mined-proof-of-work-vs-proof-of-stake",
+    "title": "Are All Crypto Coins Mined? Proof of Work vs Proof of Stake",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-19",
+    "description": "Are All Crypto Coins Mined? Proof of Work vs Proof of Stake — real pricing, efficiency in J/TH, power requirements and payback math for are all crypto coins m",
+    "keywords": [
+      "are",
+      "all",
+      "crypto",
+      "coins",
+      "mined",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers which coins are mined and which are not. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"are all crypto coins mined\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in are all crypto coins mined comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in are all crypto coins mined and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is are all crypto coins mined a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run are all crypto coins mined at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "terms": [
+        "l7",
+        "kas"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "are-all-cryptocurrencies-mined-what-miners-can-earn",
+    "title": "Are All Cryptocurrencies Mined? What Miners Can Earn",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-18",
+    "description": "Are All Cryptocurrencies Mined? What Miners Can Earn — real pricing, efficiency in J/TH, power requirements and payback math for are all cryptocurrencies mine",
+    "keywords": [
+      "are",
+      "all",
+      "cryptocurrencies",
+      "mined",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the mineable share of the crypto market. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"are all cryptocurrencies mined\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in are all cryptocurrencies mined comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in are all cryptocurrencies mined and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run are all cryptocurrencies mined at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is are all cryptocurrencies mined a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "terms": [
+        "l7"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "are-all-cryptos-mined-mineable-coins-worth-hardware",
+    "title": "Are All Cryptos Mined? Mineable Coins Worth Hardware",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-08-17",
+    "description": "Are All Cryptos Mined? Mineable Coins Worth Hardware — real pricing, efficiency in J/TH, power requirements and payback math for are all cryptos mined, plus t",
+    "keywords": [
+      "are",
+      "all",
+      "cryptos",
+      "mined",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers which mineable coins justify buying hardware. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"are all cryptos mined\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run are all cryptos mined at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is are all cryptos mined a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "terms": [
+        "l7",
+        "x5"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "are-bitcoins-mined-how-new-btc-enters-circulation",
+    "title": "Are Bitcoins Mined? How New BTC Enters Circulation",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-16",
+    "description": "Are Bitcoins Mined? How New BTC Enters Circulation — real pricing, efficiency in J/TH, power requirements and payback math for are bitcoins mined, plus tested",
+    "keywords": [
+      "are",
+      "bitcoins",
+      "mined",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers how bitcoin issuance and mining rewards actually work. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"are bitcoins mined\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in are bitcoins mined comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in are bitcoins mined and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is are bitcoins mined a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run are bitcoins mined at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitmain-antminer-s23-hyd-specs-price-and-availability",
+    "title": "Bitmain Antminer S23 Hyd: Specs, Price and Availability",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-15",
+    "description": "Bitmain Antminer S23 Hyd — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s23 hyd, plus tested stock shipped world",
+    "keywords": [
+      "bitmain",
+      "antminer",
+      "s23",
+      "hyd",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the Antminer S23 Hyd and where it sits against the S21 family. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitmain antminer s23 hyd\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in bitmain antminer s23 hyd comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in bitmain antminer s23 hyd and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run bitmain antminer s23 hyd at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is bitmain antminer s23 hyd a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s23-hyd-review-efficiency-cooling-and-roi",
+    "title": "Antminer S23 Hyd Review: Efficiency, Cooling and ROI",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-14",
+    "description": "Antminer S23 Hyd Review — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23 hyd, plus tested stock shipped worldwide from",
+    "keywords": [
+      "antminer",
+      "s23",
+      "hyd",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the S23 Hyd in day-to-day operation. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer s23 hyd\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run antminer s23 hyd at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer s23 hyd a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitdeer-sealminer-a2-pro-hydro-specs-price-comparison",
+    "title": "Bitdeer SealMiner A2 Pro Hydro: Specs, Price, Comparison",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-13",
+    "description": "Bitdeer SealMiner A2 Pro Hydro — real pricing, efficiency in J/TH, power requirements and payback math for bitdeer sealminer a2 pro hydro, plus tested stock s",
+    "keywords": [
+      "bitdeer",
+      "sealminer",
+      "a2",
+      "pro",
+      "hydro",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the SealMiner A2 Pro Hydro versus Bitmain hydro units. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitdeer sealminer a2 pro hydro\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in bitdeer sealminer a2 pro hydro comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in bitdeer sealminer a2 pro hydro and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is bitdeer sealminer a2 pro hydro a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run bitdeer sealminer a2 pro hydro at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitdeer"
+      ],
+      "terms": [
+        "sealminer",
+        "a2"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s23-hydro-3u-rack-layout-plumbing-and-power",
+    "title": "Antminer S23 Hydro 3U: Rack Layout, Plumbing and Power",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-12",
+    "description": "Antminer S23 Hydro 3U — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s23 hydro 3u, plus tested stock shipped wor",
+    "keywords": [
+      "bitmain",
+      "antminer",
+      "s23",
+      "hydro",
+      "3u",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers deploying the S23 Hydro 3U in a rack. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitmain antminer s23 hydro 3u\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in bitmain antminer s23 hydro 3u comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in bitmain antminer s23 hydro 3u and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run bitmain antminer s23 hydro 3u at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is bitmain antminer s23 hydro 3u a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "hydrominer-guide-water-cooled-asic-mining-explained",
+    "title": "Hydrominer Guide: Water-Cooled ASIC Mining Explained",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-11",
+    "description": "Hydrominer Guide — real pricing, efficiency in J/TH, power requirements and payback math for hydrominer, plus tested stock shipped worldwide from Hong Kong.",
+    "keywords": [
+      "hydrominer",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers hydro mining hardware and the loop it needs. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"hydrominer\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in hydrominer and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run hydrominer at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is hydrominer a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT"
+      ],
+      "terms": [
+        "hyd"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s21-xp-hydro-profitability-real-numbers",
+    "title": "Antminer S21 XP Hydro Profitability: Real Numbers",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-08-10",
+    "description": "Antminer S21 XP Hydro Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer s21 xp hydro profitability, plus test",
+    "keywords": [
+      "antminer",
+      "s21",
+      "xp",
+      "hydro",
+      "profitability",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers S21 XP Hydro profitability at real power rates. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer s21 xp hydro profitability\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer s21 xp hydro profitability comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is antminer s21 xp hydro profitability a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer s21 xp hydro profitability at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21",
+        "xp"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s21e-hydro-specs-pricing-and-use-cases",
+    "title": "Antminer S21e Hydro: Specs, Pricing and Use Cases",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-09",
+    "description": "Antminer S21e Hydro — real pricing, efficiency in J/TH, power requirements and payback math for antminer s21e hydro, plus tested stock shipped worldwide from ",
+    "keywords": [
+      "antminer",
+      "s21e",
+      "hydro",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the S21e Hydro and who should buy it. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer s21e hydro\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer s21e hydro comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer s21e hydro and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer s21e hydro at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer s21e hydro a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitmain-antminer-s21-hydro-full-specification-review",
+    "title": "Bitmain Antminer S21 Hydro: Full Specification Review",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-08",
+    "description": "Bitmain Antminer S21 Hydro — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s21 hydro, plus tested stock shipped w",
+    "keywords": [
+      "bitmain",
+      "antminer",
+      "s21",
+      "hydro",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the S21 Hydro line in detail. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitmain antminer s21 hydro\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in bitmain antminer s21 hydro comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in bitmain antminer s21 hydro and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run bitmain antminer s21 hydro at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is bitmain antminer s21 hydro a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21",
+        "hyd"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s23-immersion-tanks-fluids-and-overclocking",
+    "title": "Antminer S23 Immersion: Tanks, Fluids and Overclocking",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-07",
+    "description": "Antminer S23 Immersion — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s23 immersion, plus tested stock shipped w",
+    "keywords": [
+      "bitmain",
+      "antminer",
+      "s23",
+      "immersion",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers running the S23 in immersion. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitmain antminer s23 immersion\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is bitmain antminer s23 immersion a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run bitmain antminer s23 immersion at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s21-hyd-335th-price-and-cost-per-terahash",
+    "title": "Antminer S21 Hyd 335TH Price and Cost per Terahash",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-06",
+    "description": "Antminer S21 Hyd 335TH Price and Cost per Terahash — real pricing, efficiency in J/TH, power requirements and payback math for antminer s21 hyd 335th price, p",
+    "keywords": [
+      "antminer",
+      "s21",
+      "hyd",
+      "335th",
+      "price",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers what the S21 Hyd 335TH should cost delivered. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer s21 hyd 335th price\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer s21 hyd 335th price comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer s21 hyd 335th price and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer s21 hyd 335th price at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer s21 hyd 335th price a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21",
+        "hyd"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitmain-antminer-s23-specs-variants-and-release-detail",
+    "title": "Bitmain Antminer S23: Specs, Variants and Release Detail",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-05",
+    "description": "Bitmain Antminer S23 — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s23, plus tested stock shipped worldwide fro",
+    "keywords": [
+      "bitmain",
+      "antminer",
+      "s23",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the whole Antminer S23 family. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitmain antminer s23\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in bitmain antminer s23 comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in bitmain antminer s23 and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run bitmain antminer s23 at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is bitmain antminer s23 a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-l11-scrypt-hashrate-power-and-litecoin-roi",
+    "title": "Antminer L11: Scrypt Hashrate, Power and Litecoin ROI",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-04",
+    "description": "Antminer L11 — real pricing, efficiency in J/TH, power requirements and payback math for antminer l11, plus tested stock shipped worldwide from Hong Kong.",
+    "keywords": [
+      "antminer",
+      "l11",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the Antminer L11 for Litecoin and Dogecoin. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer l11\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is antminer l11 a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer l11 at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "l11",
+        "l9",
+        "l7"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-al1-alephium-miner-specs-price-and-payback",
+    "title": "Antminer AL1: Alephium Miner Specs, Price and Payback",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-03",
+    "description": "Antminer AL1 — real pricing, efficiency in J/TH, power requirements and payback math for antminer al1, plus tested stock shipped worldwide from Hong Kong.",
+    "keywords": [
+      "antminer",
+      "al1",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the Antminer AL1 Alephium miner. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer al1\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer al1 comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer al1 and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer al1 at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer al1 a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "al1"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s23-hyd-price-guide-and-buying-checklist",
+    "title": "Antminer S23 Hyd Price Guide and Buying Checklist",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-02",
+    "description": "Antminer S23 Hyd Price Guide and Buying Checklist — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23 hyd, plus tested st",
+    "keywords": [
+      "antminer",
+      "s23",
+      "hyd",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers buying the S23 Hyd safely. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer s23 hyd\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer s23 hyd comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer s23 hyd and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run antminer s23 hyd at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer s23 hyd a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-l9-for-sale-tested-units-price-and-warranty",
+    "title": "Antminer L9 for Sale: Tested Units, Price and Warranty",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-01",
+    "description": "Antminer L9 for Sale — real pricing, efficiency in J/TH, power requirements and payback math for antminer l9 for sale, plus tested stock shipped worldwide fro",
+    "keywords": [
+      "antminer",
+      "l9",
+      "for",
+      "sale",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers sourcing an Antminer L9 with a real warranty. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer l9 for sale\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer l9 for sale and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is antminer l9 for sale a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer l9 for sale at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "l9"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s23-review-is-it-worth-waiting-for",
+    "title": "Antminer S23 Review: Is It Worth Waiting For?",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-07-31",
+    "description": "Antminer S23 Review — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23, plus tested stock shipped worldwide from Hong Ko",
+    "keywords": [
+      "antminer",
+      "s23",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers whether to wait for the S23 or buy S21 now. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer s23\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer s23 comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer s23 at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer s23 a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s21-pro-price-cost-per-th-and-payback-math",
+    "title": "Antminer S21 Pro Price: Cost per TH and Payback Math",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-07-30",
+    "description": "Antminer S21 Pro Price — real pricing, efficiency in J/TH, power requirements and payback math for antminer s21 pro price, plus tested stock shipped worldwide",
+    "keywords": [
+      "antminer",
+      "s21",
+      "pro",
+      "price",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers S21 Pro pricing and what it means per terahash. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer s21 pro price\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer s21 pro price comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer s21 pro price and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run antminer s21 pro price at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer s21 pro price a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21",
+        "pro"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-d9-profitability-dash-mining-returns-modelled",
+    "title": "Antminer D9 Profitability: Dash Mining Returns Modelled",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-07-29",
+    "description": "Antminer D9 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer d9 profitability, plus tested stock shipped wor",
+    "keywords": [
+      "antminer",
+      "d9",
+      "profitability",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers Antminer D9 returns from X11 Dash mining. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer d9 profitability\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer d9 profitability comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer d9 profitability and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is antminer d9 profitability a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer d9 profitability at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "d9"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-daily-profit-how-to-calculate-it-correctly",
+    "title": "Antminer Daily Profit: How to Calculate It Correctly",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-07-28",
+    "description": "Antminer Daily Profit — real pricing, efficiency in J/TH, power requirements and payback math for antminer daily profit, plus tested stock shipped worldwide f",
+    "keywords": [
+      "antminer",
+      "daily",
+      "profit",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers calculating true Antminer daily profit. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer daily profit\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer daily profit at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer daily profit a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21",
+        "s19"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-l5-profitability-is-the-old-scrypt-unit-viable",
+    "title": "Antminer L5 Profitability: Is the Old Scrypt Unit Viable?",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-07-27",
+    "description": "Antminer L5 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer l5 profitability, plus tested stock shipped wor",
+    "keywords": [
+      "antminer",
+      "l5",
+      "profitability",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers whether an Antminer L5 still earns. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer l5 profitability\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      },
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer l5 profitability comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer l5 profitability and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I run antminer l5 profitability at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is antminer l5 profitability a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "l5",
+        "l7"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-l7-9050-profitability-litecoin-doge-returns",
+    "title": "Antminer L7 9050 Profitability: Litecoin & Doge Returns",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-07-26",
+    "description": "Antminer L7 9050 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer l7 9050 profitability, plus tested stock s",
+    "keywords": [
+      "antminer",
+      "l7",
+      "9050",
+      "profitability",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers L7 9050M profitability with merge-mined Doge. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"antminer l7 9050 profitability\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "How This Fits a Diversified Mining Strategy",
+        "paras": [
+          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
+          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+        ]
+      },
+      {
+        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "paras": [
+          "Every buying decision in antminer l7 9050 profitability comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
+          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+        ]
+      },
+      {
+        "h2": "Price per Terahash, Not Headline Hashrate",
+        "paras": [
+          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer l7 9050 profitability and it routinely reorders the ranking you get from marketing pages.",
+          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+        ]
+      },
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is antminer l7 9050 profitability a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      },
+      {
+        "q": "Do you ship worldwide and handle customs?",
+        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+      },
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run antminer l7 9050 profitability at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "l7"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitcoin-mining-training-skills-every-operator-needs",
+    "title": "Bitcoin Mining Training: Skills Every Operator Needs",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-07-25",
+    "description": "Bitcoin Mining Training — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining institute curriculum, plus tested stock shi",
+    "keywords": [
+      "bitcoin",
+      "mining",
+      "institute",
+      "curriculum",
+      "price",
+      "specs",
+      "profitability"
+    ],
+    "intro": [
+      "This guide covers the operational skills that separate profitable sites from failed ones. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
+      "Search interest in \"bitcoin mining institute curriculum\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+    ],
+    "sections": [
+      {
+        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "paras": [
+          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
+          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+        ]
+      },
+      {
+        "h2": "Electrical Requirements and Circuit Planning",
+        "paras": [
+          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
+          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+        ]
+      },
+      {
+        "h2": "Firmware, Pools and Day-One Configuration",
+        "paras": [
+          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
+          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+        ]
+      },
+      {
+        "h2": "Maintenance, Spares and Real Operating Costs",
+        "paras": [
+          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
+          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+        ]
+      },
+      {
+        "h2": "Buying Safely: Verification Before Payment",
+        "paras": [
+          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
+          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+        ]
+      },
+      {
+        "h2": "Shipping Worldwide from Hong Kong",
+        "paras": [
+          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
+          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+        ]
+      },
+      {
+        "h2": "Resale Value and Exit Planning",
+        "paras": [
+          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
+          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What payment methods do you accept?",
+        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+      },
+      {
+        "q": "Is there a warranty on used machines?",
+        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+      },
+      {
+        "q": "Can I run bitcoin mining institute curriculum at home?",
+        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+      },
+      {
+        "q": "How do you test hardware before shipping?",
+        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+      },
+      {
+        "q": "Is bitcoin mining institute curriculum a good buy at my electricity rate?",
+        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
   }
 ];
 
