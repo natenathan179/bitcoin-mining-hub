@@ -343,7 +343,7 @@ function Index() {
           width={1920}
           height={912}
           loading="eager"
-          decoding="async"
+          decoding="sync"
           fetchPriority="high"
           sizes="100vw"
           className="absolute inset-0 h-full w-full object-cover object-[50%_45%] opacity-90"
