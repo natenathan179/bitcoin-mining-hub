@@ -8429,4 +8429,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url><loc>https://bitcoinminingdepot.com/blog/used-asic-miner-buying-guide-how-to-inspect-test-and-negotiate</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bitcoinminingdepot.com/blog/used-asic-miner-prices-what-second-hand-miners-actually-cost</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://bitcoinminingdepot.com/blog/used-asic-miner-profitability-payback-math-for-second-hand-rigs</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

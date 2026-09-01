@@ -10,9 +10,9 @@ import { PAGE_COPY } from "@/lib/page-copy";
 import { formatPrice, SITE, seoDescription, seoPageTitle } from "@/lib/site";
 
 const CANONICAL = "https://bitcoinminingdepot.com/used-asic-miners";
-const TITLE = seoPageTitle("Used ASIC Miners for Sale", "BMD");
+const TITLE = seoPageTitle("Used ASIC Miner Deals: Tested Stock", "BMD");
 const DESCRIPTION = seoDescription(
-  "Shop tested used ASIC miners with real photos, verified hashrate and live pricing. Antminer, Whatsminer and more, shipped worldwide from Hong Kong.",
+  "Buy a used ASIC miner from tested stock: real photos, measured hashrate, live pricing and a 30-day warranty on used ASIC miners shipped worldwide from Hong Kong.",
 );
 
 export const Route = createFileRoute("/used-asic-miners")({
@@ -106,16 +106,55 @@ function UsedAsicMinersPage() {
       name: "Used ASIC Miners for Sale",
       description: DESCRIPTION,
       url: CANONICAL,
+      about: { "@type": "Thing", name: "Used ASIC miner" },
       mainEntity: {
         "@type": "ItemList",
+        name: "Used ASIC miners in stock",
         numberOfItems: sorted.length,
         itemListElement: sorted.slice(0, 40).map((p, i) => ({
           "@type": "ListItem",
           position: i + 1,
           url: `https://bitcoinminingdepot.com/products/${p.slug}`,
           name: p.name,
+          item: {
+            "@type": "Product",
+            name: p.name,
+            url: `https://bitcoinminingdepot.com/products/${p.slug}`,
+            brand: { "@type": "Brand", name: p.brand || SITE.name },
+            itemCondition: "https://schema.org/UsedCondition",
+            offers: {
+              "@type": "Offer",
+              price: p.sale_price ?? p.price,
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock",
+              url: `https://bitcoinminingdepot.com/products/${p.slug}`,
+              seller: { "@type": "Organization", name: SITE.name },
+            },
+          },
         })),
       },
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "OfferCatalog",
+      name: "Used ASIC miners for sale",
+      url: CANONICAL,
+      numberOfItems: sorted.length,
+      ...(prices.length
+        ? {
+            itemListElement: [
+              {
+                "@type": "AggregateOffer",
+                priceCurrency: "USD",
+                lowPrice: cheapest,
+                highPrice: dearest,
+                offerCount: sorted.length,
+                availability: "https://schema.org/InStock",
+                itemOffered: { "@type": "Product", name: "Used ASIC miner" },
+              },
+            ],
+          }
+        : {}),
     },
     {
       "@context": "https://schema.org",
