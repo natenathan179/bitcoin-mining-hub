@@ -10,9 +10,9 @@ import { PAGE_COPY } from "@/lib/page-copy";
 import { formatPrice, SITE, seoDescription, seoPageTitle } from "@/lib/site";
 
 const CANONICAL = "https://bitcoinminingdepot.com/used-asic-miners";
-const TITLE = seoPageTitle("Used ASIC Miners for Sale", "BMD");
+const TITLE = seoPageTitle("Used ASIC Miner Deals: Tested Stock", "BMD");
 const DESCRIPTION = seoDescription(
-  "Shop tested used ASIC miners with real photos, verified hashrate and live pricing. Antminer, Whatsminer and more, shipped worldwide from Hong Kong.",
+  "Buy a used ASIC miner from tested stock: real photos, measured hashrate, live pricing and a 30-day warranty on used ASIC miners shipped worldwide from Hong Kong.",
 );
 
 export const Route = createFileRoute("/used-asic-miners")({

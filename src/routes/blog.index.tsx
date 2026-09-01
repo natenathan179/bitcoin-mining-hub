@@ -12,7 +12,7 @@ export const Route = createFileRoute("/blog/")({
       {
         name: "description",
         content:
-          "216 operator-written guides on the best bitcoin mining machines, ASIC buying advice, Antminer and WhatsMiner reviews, profitability math and home mining setup.",
+          "219 operator-written guides on the best bitcoin mining machines, used ASIC miner buying advice, Antminer and WhatsMiner reviews, profitability math and setup.",
       },
       { property: "og:title", content: "Bitcoin Mining Blog | Bitcoin Mining Depot" },
       {
@@ -32,6 +32,8 @@ export const Route = createFileRoute("/blog/")({
 function BlogIndex() {
   const [cat, setCat] = useState<string>("all");
   const [q, setQ] = useState("");
+
+  const usedPosts = useMemo(() => BLOG_POSTS.filter((p) => p.categoryId === "used").slice(0, 6), []);
 
   const posts = useMemo(() => {
     const term = q.trim().toLowerCase();
@@ -80,7 +82,7 @@ function BlogIndex() {
       <PageHero
         eyebrow="Blog"
         title="Bitcoin Mining Guides & ASIC Reviews"
-        subtitle="216 in-depth articles on choosing, buying, running and profiting from bitcoin mining hardware — every guide linked to the machines we hold in stock."
+        subtitle="219 in-depth articles on choosing, buying, running and profiting from bitcoin mining hardware — every guide linked to the machines we hold in stock."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-10">
@@ -112,7 +114,7 @@ function BlogIndex() {
               id="blog-search"
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="Search 216 mining guides..."
+              placeholder="Search 219 mining guides..."
               className="h-10 w-full rounded-md border border-border bg-background px-3 text-sm outline-none focus:border-primary md:w-72"
             />
           </div>
@@ -157,6 +159,35 @@ function BlogIndex() {
           ))}
         </div>
 
+
+        <section className="mt-14 rounded-md border border-primary/30 bg-secondary p-6">
+          <h2 className="font-display text-lg font-bold uppercase tracking-wide text-charcoal">
+            Used ASIC Miners: buying, pricing and profitability guides
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
+            Everything we know about buying used ASIC miners — how to inspect and load-test second-hand
+            hardware, what used ASIC miner prices should be per terahash, and whether a used rig pays back
+            at your electricity rate. Each guide links straight to tested stock you can order today.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {usedPosts.map((p) => (
+              <article key={p.slug} className="rounded-md border border-border bg-card p-4">
+                <h3 className="font-display text-sm font-bold leading-snug text-charcoal">
+                  <Link to="/blog/$slug" params={{ slug: p.slug }} className="hover:text-primary">
+                    {p.title}
+                  </Link>
+                </h3>
+                <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{p.description}</p>
+              </article>
+            ))}
+          </div>
+          <Link
+            to="/used-asic-miners"
+            className="mt-5 inline-block rounded-md bg-primary px-5 py-2.5 text-xs font-semibold uppercase tracking-wide text-primary-foreground"
+          >
+            Shop used ASIC miners in stock
+          </Link>
+        </section>
         {posts.length === 0 && (
           <p className="py-12 text-center text-sm text-muted-foreground">
             No articles match that search. Try a broader term such as “Antminer”, “ROI” or “cooling”.
