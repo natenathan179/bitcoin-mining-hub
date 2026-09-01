@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
@@ -64,6 +64,11 @@ function ProductsPage() {
   const [sort, setSort] = useState<(typeof SORTS)[number]["id"]>("newest");
   const [maxPrice, setMaxPrice] = useState<string>("");
   const [visible, setVisible] = useState(24);
+
+  // Reset pagination whenever the result set changes so users always see page one.
+  useEffect(() => {
+    setVisible(24);
+  }, [brand, condition, maxPrice, q, category, sort]);
 
   const brands = useMemo(
     () => Array.from(new Set(products.map((p) => p.brand).filter(Boolean))).sort(),
