@@ -63,6 +63,7 @@ function ProductsPage() {
   const [condition, setCondition] = useState<string>("all");
   const [sort, setSort] = useState<(typeof SORTS)[number]["id"]>("newest");
   const [maxPrice, setMaxPrice] = useState<string>("");
+  const [visible, setVisible] = useState(24);
 
   const brands = useMemo(
     () => Array.from(new Set(products.map((p) => p.brand).filter(Boolean))).sort(),
