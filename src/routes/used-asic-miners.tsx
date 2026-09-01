@@ -61,7 +61,7 @@ const FAQS = [
   },
   {
     q: "Where do you ship used ASIC miners?",
-    a: `We ship worldwide from ${SITE.address.city}: United States, Canada, Europe, Latin America, the Middle East and Asia, by DHL or FedEx with tracking, plus air and sea freight for pallet and container orders.`,
+    a: `We ship worldwide from ${SITE.city}: United States, Canada, Europe, Latin America, the Middle East and Asia, by DHL or FedEx with tracking, plus air and sea freight for pallet and container orders.`,
   },
 ];
 
