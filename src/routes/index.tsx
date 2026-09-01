@@ -343,7 +343,7 @@ function Index() {
           width={1920}
           height={912}
           loading="eager"
-          decoding="async"
+          decoding="sync"
           fetchPriority="high"
           sizes="100vw"
           className="absolute inset-0 h-full w-full object-cover object-[50%_45%] opacity-90"
@@ -662,6 +662,7 @@ function Index() {
                     src={a.img}
                     alt={a.title}
                     loading="lazy"
+                    decoding="async"
                     width={640}
                     height={512}
                     className="h-16 w-24 shrink-0 rounded-md object-cover"

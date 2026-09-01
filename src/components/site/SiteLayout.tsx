@@ -1,8 +1,27 @@
-import type { ReactNode } from "react";
+import { Suspense, lazy, useEffect, useState, type ReactNode } from "react";
 
 import { SiteHeader } from "./SiteHeader";
 import { SiteFooter } from "./SiteFooter";
-import { WhatsAppButton } from "./WhatsAppButton";
+
+// The floating WhatsApp widget is below-the-fold, interaction-only UI.
+// Loading it in a separate chunk after hydration keeps it off the critical path.
+const WhatsAppButton = lazy(() =>
+  import("./WhatsAppButton").then((m) => ({ default: m.WhatsAppButton })),
+);
+
+function DeferredWhatsApp() {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    const id = window.setTimeout(() => setReady(true), 1200);
+    return () => window.clearTimeout(id);
+  }, []);
+  if (!ready) return null;
+  return (
+    <Suspense fallback={null}>
+      <WhatsAppButton />
+    </Suspense>
+  );
+}
 
 export function SiteLayout({ children }: { children: ReactNode }) {
   return (
@@ -10,7 +29,7 @@ export function SiteLayout({ children }: { children: ReactNode }) {
       <SiteHeader />
       <main className="flex-1">{children}</main>
       <SiteFooter />
-      <WhatsAppButton />
+      <DeferredWhatsApp />
     </div>
   );
 }
