@@ -8946,8 +8946,8 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     "slug": "used-asic-miner-buying-guide-inspection-pricing-and-risk",
     "title": "Used ASIC Miner Buying Guide: Inspection, Pricing and Risk",
-    "category": "Buying Guides",
-    "categoryId": "buy",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
     "date": "2026-08-31",
     "description": "Used ASIC Miner Buying Guide — 43 tested used units in stock from $150, with live pricing, measured specs and payback math. Buy tested ASIC hardware with",
     "keywords": [
@@ -9040,8 +9040,8 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     "slug": "used-asic-miners-under-500-fastest-payback-machines-in-stock",
     "title": "Used ASIC Miners Under $500: Fastest Payback Machines in Stock",
-    "category": "Profitability",
-    "categoryId": "profit",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
     "date": "2026-08-31",
     "description": "Used ASIC Miners Under $500 — sub-$500 hashrate for operators with cheap or free power, with live pricing, measured specs and payback math. Buy tested",
     "keywords": [
@@ -9807,8 +9807,8 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     "slug": "asic-miner-on-alibaba-grey-market-risks-and-safer-routes",
     "title": "ASIC Miner on Alibaba: Grey-Market Risks and Safer Routes",
-    "category": "Buying Guides",
-    "categoryId": "buy",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
     "date": "2026-08-31",
     "description": "ASIC Miner on Alibaba — why marketplace listings fail on warranty, firmware and customs, with live pricing, measured specs and payback math. Buy tested",
     "keywords": [
@@ -16389,8 +16389,8 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     "slug": "aladdin-l2-miner-profitability-and-alternative-picks",
     "title": "Aladdin L2 Miner Profitability and Alternative Picks",
-    "category": "Profitability",
-    "categoryId": "profit",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
     "date": "2026-08-31",
     "description": "Aladdin L2 Miner Profitability and Alternative Picks — evaluating secondary-brand hardware against Bitmain and MicroBT, with live pricing, measured specs",
     "keywords": [
