@@ -178,7 +178,9 @@ function MarketplaceIndex() {
 
         <p className="mt-4 text-xs text-muted-foreground">
           {rows.length} location{rows.length === 1 ? "" : "s"} match
-          {shown.length < rows.length ? ` — showing the first ${shown.length}. Narrow by country or search to see the rest.` : "."}
+          {shown.length < rows.length
+            ? ` — showing the first ${shown.length}. Search or filter by country, or use the full directory below.`
+            : "."}
         </p>
 
         <ul className="mt-6 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
