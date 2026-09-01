@@ -317,6 +317,24 @@ export function productAnchor(product: Product): string {
   return bits ? `${product.name} (${bits})` : product.name;
 }
 
+/** Stable numeric seed from a string, used to rotate internal-link windows. */
+export function linkSeed(value: string): number {
+  let h = 0;
+  for (let i = 0; i < value.length; i++) h = (h * 31 + value.charCodeAt(i)) % 100003;
+  return h;
+}
+
+/**
+ * Rotating window over a list: each page links a different slice, so link equity
+ * reaches every page instead of piling on the first few entries.
+ */
+export function rotatingSlice<T>(items: T[], count: number, seed: number): T[] {
+  if (items.length === 0 || count <= 0) return [];
+  const n = Math.min(count, items.length);
+  const start = ((seed % items.length) + items.length) % items.length;
+  return Array.from({ length: n }, (_, k) => items[(start + k) % items.length]!);
+}
+
 /** Blog posts most relevant to one specific product. */
 export function postsForProduct(product: Product, limit = 3): BlogPost[] {
   const tokens = modelTokens(product);
@@ -333,7 +351,13 @@ export function postsForProduct(product: Product, limit = 3): BlogPost[] {
   })
     .filter((s) => s.score > 0)
     .sort((a, b) => b.score - a.score || a.post.title.localeCompare(b.post.title));
-  return scored.slice(0, limit).map((s) => s.post);
+  const ranked = scored.map((s) => s.post);
+  if (ranked.length <= limit) return ranked;
+  // Keep the two strongest topical matches, rotate the rest so deeper guides
+  // also collect incoming links from product pages.
+  const head = ranked.slice(0, Math.min(2, limit));
+  const tail = rotatingSlice(ranked.slice(head.length), limit - head.length, linkSeed(product.slug));
+  return [...head, ...tail];
 }
 
 export interface LinkGroup {
