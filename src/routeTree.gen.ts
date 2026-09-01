@@ -22,6 +22,7 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as KnowledgeCenterRouteImport } from './routes/knowledge-center'
 import { Route as HostingRouteImport } from './routes/hosting'
 import { Route as FaqRouteImport } from './routes/faq'
+import { Route as CryptoMiningForSaleRouteImport } from './routes/crypto-mining-for-sale'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CheckoutRouteImport } from './routes/checkout'
 import { Route as CartRouteImport } from './routes/cart'
@@ -108,6 +109,11 @@ const HostingRoute = HostingRouteImport.update({
 const FaqRoute = FaqRouteImport.update({
   id: '/faq',
   path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CryptoMiningForSaleRoute = CryptoMiningForSaleRouteImport.update({
+  id: '/crypto-mining-for-sale',
+  path: '/crypto-mining-for-sale',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -234,6 +240,7 @@ export interface FileRoutesByFullPath {
   '/cart': typeof CartRoute
   '/checkout': typeof CheckoutRoute
   '/contact': typeof ContactRoute
+  '/crypto-mining-for-sale': typeof CryptoMiningForSaleRoute
   '/faq': typeof FaqRoute
   '/hosting': typeof HostingRoute
   '/knowledge-center': typeof KnowledgeCenterRoute
@@ -270,6 +277,7 @@ export interface FileRoutesByTo {
   '/cart': typeof CartRoute
   '/checkout': typeof CheckoutRoute
   '/contact': typeof ContactRoute
+  '/crypto-mining-for-sale': typeof CryptoMiningForSaleRoute
   '/faq': typeof FaqRoute
   '/hosting': typeof HostingRoute
   '/knowledge-center': typeof KnowledgeCenterRoute
@@ -307,6 +315,7 @@ export interface FileRoutesById {
   '/cart': typeof CartRoute
   '/checkout': typeof CheckoutRoute
   '/contact': typeof ContactRoute
+  '/crypto-mining-for-sale': typeof CryptoMiningForSaleRoute
   '/faq': typeof FaqRoute
   '/hosting': typeof HostingRoute
   '/knowledge-center': typeof KnowledgeCenterRoute
@@ -345,6 +354,7 @@ export interface FileRouteTypes {
     | '/cart'
     | '/checkout'
     | '/contact'
+    | '/crypto-mining-for-sale'
     | '/faq'
     | '/hosting'
     | '/knowledge-center'
@@ -381,6 +391,7 @@ export interface FileRouteTypes {
     | '/cart'
     | '/checkout'
     | '/contact'
+    | '/crypto-mining-for-sale'
     | '/faq'
     | '/hosting'
     | '/knowledge-center'
@@ -417,6 +428,7 @@ export interface FileRouteTypes {
     | '/cart'
     | '/checkout'
     | '/contact'
+    | '/crypto-mining-for-sale'
     | '/faq'
     | '/hosting'
     | '/knowledge-center'
@@ -455,6 +467,7 @@ export interface RootRouteChildren {
   CartRoute: typeof CartRoute
   CheckoutRoute: typeof CheckoutRoute
   ContactRoute: typeof ContactRoute
+  CryptoMiningForSaleRoute: typeof CryptoMiningForSaleRoute
   FaqRoute: typeof FaqRoute
   HostingRoute: typeof HostingRoute
   KnowledgeCenterRoute: typeof KnowledgeCenterRoute
@@ -570,6 +583,13 @@ declare module '@tanstack/react-router' {
       path: '/faq'
       fullPath: '/faq'
       preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/crypto-mining-for-sale': {
+      id: '/crypto-mining-for-sale'
+      path: '/crypto-mining-for-sale'
+      fullPath: '/crypto-mining-for-sale'
+      preLoaderRoute: typeof CryptoMiningForSaleRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -767,6 +787,7 @@ const rootRouteChildren: RootRouteChildren = {
   CartRoute: CartRoute,
   CheckoutRoute: CheckoutRoute,
   ContactRoute: ContactRoute,
+  CryptoMiningForSaleRoute: CryptoMiningForSaleRoute,
   FaqRoute: FaqRoute,
   HostingRoute: HostingRoute,
   KnowledgeCenterRoute: KnowledgeCenterRoute,
