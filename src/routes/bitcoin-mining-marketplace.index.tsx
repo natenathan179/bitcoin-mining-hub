@@ -51,7 +51,9 @@ function MarketplaceIndex() {
     });
   }, [country, family, q]);
 
-  const shown = rows.slice(0, 400);
+  // Keep the interactive grid small: the full crawlable directory further down the page
+  // already ships every location link, so a large slice here only slows mobile rendering.
+  const shown = rows.slice(0, 60);
 
   // Every location grouped by country — rendered unfiltered so all links ship in the HTML.
   const directory = useMemo(() => {
