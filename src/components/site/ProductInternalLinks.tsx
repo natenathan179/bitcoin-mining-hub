@@ -1,11 +1,19 @@
 import { Link } from "@tanstack/react-router";
 
 import type { Product } from "@/lib/data";
-import { COLLECTIONS, postsForProduct, productAnchor } from "@/lib/collections";
+import {
+  COLLECTIONS,
+  linkSeed,
+  postsForProduct,
+  productAnchor,
+  rotatingSlice,
+} from "@/lib/collections";
 
 /**
  * Keyword-rich internal linking module for product pages: pushes authority to
  * category hubs, sibling model pages and the guides that cover this exact model.
+ * Sibling lists use a rotating window keyed on the product slug so every model
+ * page receives incoming links, not just the first few in the catalog order.
  */
 export function ProductInternalLinks({
   product,
@@ -16,13 +24,18 @@ export function ProductInternalLinks({
 }) {
   const guides = postsForProduct(product, 6);
   const used = /used|refurb/i.test(product.condition ?? "");
+  const seed = linkSeed(product.slug);
 
-  const sameBrand = products
-    .filter((p) => p.id !== product.id && p.brand === product.brand)
-    .slice(0, 8);
-  const alternatives = products
-    .filter((p) => p.id !== product.id && p.brand !== product.brand)
-    .slice(0, 8);
+  const sameBrand = rotatingSlice(
+    products.filter((p) => p.id !== product.id && p.brand === product.brand),
+    8,
+    seed,
+  );
+  const alternatives = rotatingSlice(
+    products.filter((p) => p.id !== product.id && p.brand !== product.brand),
+    10,
+    seed * 3 + 7,
+  );
 
   const hubs = COLLECTIONS.filter((c) =>
     used ? true : c.slug !== "used-refurbished-asic-miners",
