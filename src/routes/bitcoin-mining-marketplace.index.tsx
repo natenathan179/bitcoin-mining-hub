@@ -223,10 +223,11 @@ function MarketplaceIndex() {
             </Link>
           </div>
         </div>
-      </div>
+
         {/* Full crawlable directory: every location page is linked in the server-rendered
             HTML (the filtered grid above only shows a slice), so search engines can reach
-            all {MARKET_LOCATIONS.length} pages without running the filter UI. */}
+            every location page without running the filter UI. */}
+
         <section className="mt-14 border-t border-border pt-10">
           <h2 className="font-display text-xl font-bold uppercase tracking-tight text-charcoal">
             Full location directory
