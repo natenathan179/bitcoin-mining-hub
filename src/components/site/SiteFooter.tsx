@@ -19,6 +19,9 @@ const COLUMNS = [
     links: [
       { label: "About Us", to: "/about" },
       { label: "Shop All Miners", to: "/products" },
+      { label: "Crypto Mining For Sale", to: "/crypto-mining-for-sale" },
+      { label: "Used ASIC Miners", to: "/used-asic-miners" },
+
       { label: "Wholesale Program", to: "/wholesale" },
       { label: "Hosting Solutions", to: "/hosting" },
       { label: "Repair Center", to: "/repair-services" },

@@ -6,6 +6,39 @@ import type { CopyBlock } from "@/components/site/SeoCopy";
  * that SEO crawlers measure.
  */
 export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> = {
+  cryptoForSale: {
+    title: "Crypto Mining Hardware For Sale: How To Buy Well In 2026",
+    blocks: [
+      {
+        heading: "What you are actually buying when you buy crypto mining hardware",
+        paras: [
+          "A crypto miner is a purpose-built computer that does one arithmetic job billions of times a second. Bitcoin machines run SHA-256, Litecoin and Dogecoin machines run Scrypt, Kaspa units run kHeavyHash and Monero rigs run RandomX on CPUs. Because the silicon is fixed to one algorithm, a unit's value comes from three numbers only: hashrate, wall power and the efficiency between them, expressed in joules per terahash. Everything else - brand loyalty, resale hype, marketing names - is noise once those three figures are on the table.",
+          "Every unit listed for sale on this site is bench-tested under load in our Hong Kong warehouse before it is offered. We record measured hashrate rather than the sticker figure, note the PSU revision and firmware, and photograph the actual machine. That matters most on previous-generation and refurbished stock, where two units with identical model names can differ by ten percent in real output.",
+        ],
+      },
+      {
+        heading: "Pick the machine your electricity price can carry",
+        paras: [
+          "Your power tariff decides which half of the catalogue is relevant. Under about five cents per kilowatt-hour, older 30-38 J/TH workhorses remain profitable and give you the cheapest entry per terahash, which is why farm operators with cheap hydro or flared gas keep buying them. Between five and nine cents you want current-generation air-cooled hardware in the high-teens J/TH band. Above ten cents, only the newest hydro and immersion flagships stay comfortably cash-positive, and hosting is usually the better answer than buying retail power.",
+          "Run the arithmetic before you order: daily revenue is your hashrate share of network issuance, daily cost is kilowatts multiplied by twenty-four multiplied by your tariff. If the gap is thin at today's difficulty, it will close in the next adjustment. We publish specs per model and our team will sanity-check your numbers against the site's own operating data before you commit capital.",
+        ],
+      },
+      {
+        heading: "Cooling, hosting and the infrastructure most buyers underestimate",
+        paras: [
+          "Air-cooled ASICs push roughly three thousand watts of heat and eighty decibels of fan noise into whatever room they occupy, which rules out most homes and offices. Hydro and immersion machines are quieter and denser but require pumps, dry coolers or dielectric tanks and a plan for heat rejection. Before you buy, know your available amperage, breaker layout, ambient temperature range and airflow path - retrofitting these after a pallet arrives is where budgets break.",
+          "If you have no suitable site, hosting is the practical path: we rack, power, cool and monitor the machine in an industrial facility and you keep the pool payouts. If you already run a fleet, our repair lab handles hashboard, controller, PSU and fan faults, so hardware you buy here stays serviceable rather than becoming scrap after one failure.",
+        ],
+      },
+      {
+        heading: "Ordering, crypto payment and worldwide delivery",
+        paras: [
+          "Checkout is cryptocurrency-based and deliberately transparent. You choose the coin and network, we display the receiving address with a QR code, you send the payment, paste the transaction ID and complete full delivery details. Our team confirms the transaction on-chain, then releases the unit for dispatch and sends tracking. For pallet and container volumes, the wholesale desk quotes freight and prepares HS codes and commercial invoices in advance.",
+          "We ship from Hong Kong to the United States, Canada, Europe and the United Kingdom, Latin America, the Middle East, Asia, Australia and Africa. Express courier suits one to four machines; air or sea freight suits larger orders. Every unit carries a thirty-day functional warranty covering hashboard and power-supply failure, and support continues after delivery through the same team that tested the machine.",
+        ],
+      },
+    ],
+  },
   home: {
     title: "Enterprise Bitcoin Mining Hardware, Hosting And Repair",
     blocks: [
