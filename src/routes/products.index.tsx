@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
@@ -63,6 +63,12 @@ function ProductsPage() {
   const [condition, setCondition] = useState<string>("all");
   const [sort, setSort] = useState<(typeof SORTS)[number]["id"]>("newest");
   const [maxPrice, setMaxPrice] = useState<string>("");
+  const [visible, setVisible] = useState(24);
+
+  // Reset pagination whenever the result set changes so users always see page one.
+  useEffect(() => {
+    setVisible(24);
+  }, [brand, condition, maxPrice, q, category, sort]);
 
   const brands = useMemo(
     () => Array.from(new Set(products.map((p) => p.brand).filter(Boolean))).sort(),
@@ -309,11 +315,43 @@ function ProductsPage() {
               </Link>
             </div>
           ) : (
-            <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
-              {filtered.map((p) => (
-                <ProductCard key={p.id} product={p} />
-              ))}
-            </div>
+            <>
+              <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
+                {filtered.slice(0, visible).map((p) => (
+                  <ProductCard key={p.id} product={p} />
+                ))}
+              </div>
+              {visible < filtered.length && (
+                <div className="mt-8 text-center">
+                  <button
+                    onClick={() => setVisible((v) => v + 24)}
+                    className="rounded-md border border-border px-6 py-2.5 text-xs font-semibold uppercase tracking-wide text-charcoal hover:border-primary hover:text-primary"
+                  >
+                    Load more miners ({filtered.length - visible} left)
+                  </button>
+                </div>
+              )}
+              {/* Lightweight crawlable list so every model stays one hop from /products
+                  even though the grid renders in pages. */}
+              <div className="mt-10 rounded-md border border-border bg-card p-5">
+                <h2 className="font-display text-sm font-semibold uppercase tracking-wide text-charcoal">
+                  All {products.length} models in stock
+                </h2>
+                <ul className="mt-3 grid gap-1.5 text-[13px] sm:grid-cols-2 lg:grid-cols-3">
+                  {products.map((p) => (
+                    <li key={`idx-${p.id}`}>
+                      <Link
+                        to="/products/$slug"
+                        params={{ slug: p.slug }}
+                        className="text-muted-foreground hover:text-primary"
+                      >
+                        {p.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </>
           )}
 
           <div className="mt-12 rounded-md border border-border bg-card p-6">
