@@ -248,18 +248,18 @@ function CheckoutPage() {
             {[
               {
                 icon: Wallet,
-                title: "1. Select your payment method",
-                body: "Pay with crypto (each coin shows its receiving address and a scannable QR code), or choose Cash App, Chime or a direct bank transfer if you prefer to pay in fiat.",
+                title: "1. Select your cryptocurrency",
+                body: "Choose the coin you want to pay with — each option shows its receiving address, network and a scannable QR code.",
               },
               {
                 icon: ShieldCheck,
-                title: "2. Pay or wait for our request",
-                body: "Crypto: send the exact USD equivalent to the address shown, double-checking the network first. Cash App / Chime: submit your details and we send a payment request with the exact amount and verified handle. Bank transfer: we reply with full account details and a payment reference.",
+                title: "2. Send the payment",
+                body: "Send the exact USD equivalent to the address shown, double-checking the network first. Network fees are paid by the sender.",
               },
               {
                 icon: Truck,
                 title: "3. Send your proof of payment",
-                body: "Crypto: paste the transaction ID (TXID / hash) and we verify it on-chain. Cash App / Chime: confirm the request, pay, then upload a screenshot of the completed payment. Bank transfer: send the transfer receipt. Once verified we invoice, crate and ship your miners.",
+                body: "Paste the transaction ID (TXID / hash) and we verify it on-chain. Once verified we invoice, crate and ship your miners.",
               },
             ].map(({ icon: Icon, title, body }) => (
               <li key={title} className="rounded-md bg-secondary p-4">
