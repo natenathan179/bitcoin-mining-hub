@@ -32,6 +32,7 @@ export const Route = createFileRoute("/blog/")({
 function BlogIndex() {
   const [cat, setCat] = useState<string>("all");
   const [q, setQ] = useState("");
+  const [visible, setVisible] = useState(24);
 
   const usedPosts = useMemo(() => BLOG_POSTS.filter((p) => p.categoryId === "used").slice(0, 6), []);
 
