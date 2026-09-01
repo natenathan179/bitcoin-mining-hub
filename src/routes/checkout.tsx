@@ -235,7 +235,7 @@ function CheckoutPage() {
       <PageHero
         eyebrow="Secure crypto checkout"
         title="Choose How You Want To Pay"
-        subtitle="Pay on-chain with cryptocurrency, or use Cash App, Chime or a direct bank transfer. Crypto payments are instant and self-service; Cash App, Chime and bank transfers are reviewed by our finance desk, who send you a payment request or account details before you pay."
+        subtitle="Pay on-chain with cryptocurrency. Choose your coin, send the exact amount to the address and QR code shown, then submit your transaction ID — crypto payments are instant and fully self-service."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-10">
