@@ -23,6 +23,7 @@ export const BLOG_CATEGORIES = [
   { id: "brand", label: "Brand Reviews" },
   { id: "profit", label: "Profitability" },
   { id: "setup", label: "Setup & Operations" },
+  { id: "used", label: "Used ASIC Miners" },
 ] as const;
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -20259,6 +20260,233 @@ export const BLOG_POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 8
+  },
+  {
+    "slug": "used-asic-miner-buying-guide-how-to-inspect-test-and-negotiate",
+    "title": "Used ASIC Miner Buying Guide: Inspect, Test and Negotiate",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-08-28",
+    "description": "How to buy a used ASIC miner safely: hashboard checks, PSU and fan inspection, burn-in testing, firmware history, warranty terms and negotiation leverage.",
+    "keywords": [
+      "used asic miner",
+      "used asic miners",
+      "used bitcoin miners",
+      "buy used antminer",
+      "refurbished asic miner"
+    ],
+    "intro": [
+      "Buying a used ASIC miner is the cheapest way onto the network, and also the easiest way to buy someone else's failure. The difference between the two outcomes is almost entirely process: what you inspect, what you insist on seeing before payment, and what the seller agrees to in writing.",
+      "This guide is the checklist our own intake team runs on every used ASIC miner that arrives at our Hong Kong facility before it is photographed and listed for sale."
+    ],
+    "sections": [
+      {
+        "h2": "Ask for a load test, not a photo",
+        "paras": [
+          "A powered-on photo proves nothing. Ask for a pool screenshot or a miner status page showing the unit hashing at rated speed for at least two hours, with per-hashboard chip counts and inlet/outlet temperatures visible. On an S19-class machine you want all three boards reporting a full chip count and a rejected-share rate under one percent.",
+          "Every used ASIC miner we list is burned in this way in-house, so the hashrate on the listing is measured rather than copied off a spec sheet."
+        ]
+      },
+      {
+        "h2": "Inspect hashboards, PSU and airflow",
+        "paras": [
+          "Look for corrosion on board edges, discoloured heatsinks, missing or lifted heatsinks, and repasted chips done badly. Corrosion is common on hardware pulled from humid or coastal sites and predicts early board death.",
+          "Fans and power supplies are consumables. Bearing noise, wobble or a PSU that has been opened are all reasons to discount the price. Budget a spare PSU and a fan set per ten machines regardless of condition."
+        ]
+      },
+      {
+        "h2": "Firmware and overclock history matter",
+        "paras": [
+          "A machine that spent a year at an aggressive overclock has aged far faster than an underclocked one. Ask which firmware ran \u2014 stock, Braiins OS+, Vnish or LuxOS \u2014 and at what frequency and voltage. Persistent high-voltage tuning shortens chip life and is invisible in a photo.",
+          "Verify the control board is not vendor-locked to a previous owner's management platform, and that you can flash the firmware you intend to run before the unit leaves the seller."
+        ]
+      },
+      {
+        "h2": "Price the machine on delivered cost per terahash",
+        "paras": [
+          "Take the price, add freight, duties and any PSU or cord you must buy, then divide by measured terahash. That delivered figure is the only number worth comparing across listings, and it regularly reorders what looks cheap on the surface.",
+          "Then sanity-check the electricity side: watts divided by terahash gives J/TH. A used unit above roughly 34 J/TH only earns at very cheap power, no matter how low the purchase price is."
+        ]
+      },
+      {
+        "h2": "Get the terms in writing",
+        "paras": [
+          "Insist on a written functional warranty period, who pays return freight, and whether hashboard-level repair is available. A seller with an in-house repair lab can honour warranty economically; a broker usually cannot.",
+          "Our used ASIC miners ship with a 30-day functional warranty covering hashboard and PSU failure, prepared and tested in our own lab, with bulk terms extended for pallet and container orders."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I know a used ASIC miner is not a dud?",
+        "a": "Require evidence of a sustained load test at rated hashrate with full per-board chip counts, plus photos of the actual unit and its serial. Buy only where a written functional warranty and a repair path exist."
+      },
+      {
+        "q": "Should I buy used or refurbished?",
+        "a": "Refurbished units have had known faults repaired and consumables replaced, so they cost more but fail less. Used units in verified working order are cheaper per terahash and make sense when you keep spares on hand."
+      },
+      {
+        "q": "What spares should I order with a used miner?",
+        "a": "One spare PSU and one fan set per ten machines, plus thermal pads and paste. These are the parts that fail first and the cheapest way to avoid downtime."
+      }
+    ],
+    "match": {
+      "condition": "Used",
+      "terms": [
+        "antminer",
+        "s19"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "used-asic-miner-prices-what-second-hand-miners-actually-cost",
+    "title": "Used ASIC Miner Prices: What Second-Hand Miners Cost",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-08-29",
+    "description": "Used ASIC miner pricing explained: how cost per terahash is set, what drives second-hand prices up and down, pallet discounts and live in-stock price bands.",
+    "keywords": [
+      "used asic miner price",
+      "used asic miners for sale",
+      "used bitcoin miners price",
+      "second hand antminer price",
+      "cost per terahash"
+    ],
+    "intro": [
+      "Used ASIC miner prices are not set by age or model prestige \u2014 they are set by efficiency, by how much the network pays per terahash today, and by how many units are hitting the secondary market that month.",
+      "Below is how second-hand pricing is actually formed, and the bands our own used stock currently sits in so you can benchmark any quote you receive."
+    ],
+    "sections": [
+      {
+        "h2": "Efficiency sets the floor and the ceiling",
+        "paras": [
+          "Second-hand pricing tracks J/TH almost linearly. Machines in the 18-24 J/TH band hold value because they still earn at mid-range power costs. Anything above roughly 34 J/TH trades near scrap because it only earns at subsidised or flared-gas electricity.",
+          "When hashprice falls, the inefficient end of the market repriices first and hardest \u2014 which is exactly when disciplined buyers with cheap power pick up capacity."
+        ]
+      },
+      {
+        "h2": "What you should pay per terahash",
+        "paras": [
+          "Compare listings by delivered cost per terahash: price plus freight plus duties, divided by measured terahash. That normalisation lets you compare an S19j Pro against a hydro flagship honestly.",
+          "Current-generation hardware carries a premium per terahash because its efficiency survives difficulty growth. Older air-cooled stock is cheaper per terahash but the margin is thinner, so payback depends much more heavily on your power rate."
+        ]
+      },
+      {
+        "h2": "Condition, warranty and volume premiums",
+        "paras": [
+          "Expect to pay more for refurbished units with replaced consumables and a written warranty, and less for as-is lots with no test data. The discount on untested hardware is rarely large enough to cover the failure rate.",
+          "Pallet and container orders reduce the per-unit price meaningfully because handling, testing and freight are amortised. Our wholesale desk quotes tiered pricing from ten units upward."
+        ]
+      },
+      {
+        "h2": "Live pricing on our used inventory",
+        "paras": [
+          "Rather than publishing a static table that goes stale, our used ASIC miners page shows live pricing straight from inventory, spanning entry-level home units through S19-class 90-110 TH/s machines and hydro-cooled fleet hardware.",
+          "Every listed price includes the bench-test and preparation work, professional foam-and-carton packing, and DHL or FedEx export from Hong Kong with tracking."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How much does a used ASIC miner cost?",
+        "a": "Entry-level and low-wattage units start in the low hundreds of dollars, S19-class 90-110 TH/s machines sit in the mid range, and hydro-cooled high-hashrate hardware costs the most. Our used ASIC miners page carries live prices from stock."
+      },
+      {
+        "q": "Why did used miner prices drop after the halving?",
+        "a": "Block-subsidy halvings cut revenue per terahash, so the least efficient machines become unprofitable at typical power rates and are dumped onto the secondary market, pushing prices down across older models."
+      },
+      {
+        "q": "Do prices improve on bulk orders?",
+        "a": "Yes. Pallet and container pricing is tiered from around ten units and gets better with volume, including PSU bundles and staged shipping."
+      }
+    ],
+    "match": {
+      "condition": "Used",
+      "terms": [
+        "s19",
+        "antminer"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "used-asic-miner-profitability-payback-math-for-second-hand-rigs",
+    "title": "Used ASIC Miner Profitability: Payback Math for Second-Hand Rigs",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-08-30",
+    "description": "Work out whether a used ASIC miner earns at your electricity rate: daily revenue, power cost, breakeven J/TH, payback months and difficulty stress-testing.",
+    "keywords": [
+      "used asic miner profitability",
+      "used bitcoin miners roi",
+      "asic payback period",
+      "breakeven electricity rate",
+      "used antminer profit"
+    ],
+    "intro": [
+      "A used ASIC miner is profitable or not for one reason: whether the revenue it earns per terahash exceeds the electricity it burns per terahash at your rate. Purchase price only decides how long payback takes, not whether you are in the money.",
+      "Here is the arithmetic, in the order you should run it, plus the stress tests that stop a good-looking spreadsheet turning into a shed full of paperweights."
+    ],
+    "sections": [
+      {
+        "h2": "Step one: daily power cost",
+        "paras": [
+          "Multiply wall watts by 24, divide by 1,000 for kWh per day, then multiply by your all-in rate per kWh including delivery charges and demand fees. A 3,250 W machine draws 78 kWh per day; at $0.06 that is $4.68 of electricity.",
+          "Use the wall figure, not the marketing figure. Tuned firmware and warm inlet air both change real draw, and a used machine is rarely exactly at spec."
+        ]
+      },
+      {
+        "h2": "Step two: daily revenue and margin",
+        "paras": [
+          "Take current hashprice \u2014 revenue per terahash per day \u2014 and multiply by measured terahash. Subtract the power cost and any pool fee and hosting charge. What remains is your true daily margin.",
+          "Divide the delivered purchase cost by that daily margin to get payback in days. Under cheap power, used S19-class hardware often pays back in months; above ten cents per kWh the same machine may never clear its own electricity."
+        ]
+      },
+      {
+        "h2": "Step three: find your breakeven J/TH",
+        "paras": [
+          "Every electricity rate implies a maximum efficiency you can run. Divide hashprice by your rate per kWh, convert to joules, and you get the J/TH above which a machine loses money. Compare that ceiling against each candidate's real efficiency.",
+          "This one number filters the market faster than any spec table: hardware above your ceiling is not a bargain at any price."
+        ]
+      },
+      {
+        "h2": "Stress-test difficulty and price",
+        "paras": [
+          "Rerun the model with hashprice 30 percent lower and difficulty 15 percent higher. If the machine still covers electricity, it survives a bad quarter; if it does not, treat the purchase as a leveraged bet rather than an investment.",
+          "Also model uptime honestly. Ninety percent availability on a used fleet is realistic without spares on the shelf, and that lost tenth comes straight off margin."
+        ]
+      },
+      {
+        "h2": "Where used hardware wins",
+        "paras": [
+          "Used miners dominate on capital efficiency: the dollars at risk per terahash are small, so a drawdown hurts less and you can scale in steps. They also make excellent heat sources for space and water heating, which is real value the spreadsheet ignores.",
+          "Send us your electricity rate and available amperage and our engineers will model which specific used ASIC miners in stock actually pay back on your site before you spend anything."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are used ASIC miners still profitable?",
+        "a": "Yes, at electricity below roughly six cents per kWh, and often up to eight or nine cents for units in the 18-24 J/TH band. Above that, only current-generation efficiency holds margin reliably."
+      },
+      {
+        "q": "What payback period is realistic on a used miner?",
+        "a": "With cheap power and efficient second-hand hardware, payback is commonly measured in months rather than years, because the delivered capital cost per terahash is a fraction of new-unit pricing."
+      },
+      {
+        "q": "How does difficulty growth change the math?",
+        "a": "Rising difficulty reduces revenue per terahash, so always stress-test with hashprice cut around 30 percent. A machine that still covers electricity in that scenario is a defensible purchase."
+      }
+    ],
+    "match": {
+      "condition": "Used",
+      "terms": [
+        "s19",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 9
   }
 ];
 
