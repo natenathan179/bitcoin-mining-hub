@@ -662,6 +662,7 @@ function Index() {
                     src={a.img}
                     alt={a.title}
                     loading="lazy"
+                    decoding="async"
                     width={640}
                     height={512}
                     className="h-16 w-24 shrink-0 rounded-md object-cover"
