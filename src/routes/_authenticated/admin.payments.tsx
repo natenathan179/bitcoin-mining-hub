@@ -29,12 +29,7 @@ const EMPTY = {
   review_note: "",
 };
 
-const KINDS = [
-  { value: "crypto", label: "Crypto wallet (QR + address)" },
-  { value: "cashapp", label: "Cash App (admin sends payment request)" },
-  { value: "chime", label: "Chime (admin sends payment request)" },
-  { value: "bank", label: "Bank transfer (admin sends account details)" },
-];
+const KINDS = [{ value: "crypto", label: "Crypto wallet (QR + address)" }];
 
 function AdminPayments() {
   const queryClient = useQueryClient();
