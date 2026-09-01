@@ -20507,11 +20507,13 @@ export function relatedPosts(post: BlogPost, limit = 6): BlogPost[] {
   const idx = Math.max(0, BLOG_POSTS.findIndex((p) => p.slug === post.slug));
   const same = BLOG_POSTS.filter((p) => p.slug !== post.slug && p.categoryId === post.categoryId);
   const other = BLOG_POSTS.filter((p) => p.slug !== post.slug && p.categoryId !== post.categoryId);
+  // Chain link: guarantees every guide has at least one incoming link.
+  const chain = BLOG_POSTS[(idx + 1) % BLOG_POSTS.length]!;
   const primary = rotatingWindow(same, Math.ceil(limit * 0.7), idx + 1);
-  const secondary = rotatingWindow(other, limit - primary.length, idx * 5 + 3);
+  const secondary = rotatingWindow(other, Math.max(0, limit - 1 - primary.length), idx * 5 + 3);
   const seen = new Set<string>([post.slug]);
   const out: BlogPost[] = [];
-  for (const p of [...primary, ...secondary]) {
+  for (const p of [chain, ...primary, ...secondary]) {
     if (seen.has(p.slug)) continue;
     seen.add(p.slug);
     out.push(p);
