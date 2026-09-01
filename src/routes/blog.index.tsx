@@ -91,7 +91,7 @@ function BlogIndex() {
           <div className="flex flex-wrap gap-2">
             <button
               type="button"
-              onClick={() => setCat("all")}
+              onClick={() => { setCat("all"); setVisible(24); }}
               className={`rounded-sm border px-3 py-1.5 text-xs font-semibold uppercase tracking-wide ${cat === "all" ? "border-primary bg-primary text-primary-foreground" : "border-border text-charcoal hover:border-primary"}`}
             >
               All ({BLOG_POSTS.length})
@@ -100,7 +100,7 @@ function BlogIndex() {
               <button
                 key={c.id}
                 type="button"
-                onClick={() => setCat(c.id)}
+                onClick={() => { setCat(c.id); setVisible(24); }}
                 className={`rounded-sm border px-3 py-1.5 text-xs font-semibold uppercase tracking-wide ${cat === c.id ? "border-primary bg-primary text-primary-foreground" : "border-border text-charcoal hover:border-primary"}`}
               >
                 {c.label} ({BLOG_POSTS.filter((p) => p.categoryId === c.id).length})
@@ -114,7 +114,7 @@ function BlogIndex() {
             <input
               id="blog-search"
               value={q}
-              onChange={(e) => setQ(e.target.value)}
+              onChange={(e) => { setQ(e.target.value); setVisible(24); }}
               placeholder="Search 219 mining guides..."
               className="h-10 w-full rounded-md border border-border bg-background px-3 text-sm outline-none focus:border-primary md:w-72"
             />
