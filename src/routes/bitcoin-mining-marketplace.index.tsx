@@ -53,6 +53,18 @@ function MarketplaceIndex() {
 
   const shown = rows.slice(0, 400);
 
+  // Every location grouped by country — rendered unfiltered so all links ship in the HTML.
+  const directory = useMemo(() => {
+    const groups = new Map<string, typeof MARKET_LOCATIONS>();
+    for (const l of MARKET_LOCATIONS) {
+      const list = groups.get(l.country) ?? [];
+      list.push(l);
+      groups.set(l.country, list);
+    }
+    return [...groups.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  }, []);
+
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -223,8 +235,45 @@ function MarketplaceIndex() {
             </Link>
           </div>
         </div>
+
+        {/* Full crawlable directory: every location page is linked in the server-rendered
+            HTML (the filtered grid above only shows a slice), so search engines can reach
+            every location page without running the filter UI. */}
+
+        <section className="mt-14 border-t border-border pt-10">
+          <h2 className="font-display text-xl font-bold uppercase tracking-tight text-charcoal">
+            Full location directory
+          </h2>
+          <p className="mt-2 max-w-2xl text-sm text-muted-foreground">
+            Every city and state buying guide we publish, grouped by country.
+          </p>
+          <div className="mt-8 space-y-8">
+            {directory.map(([countryName, items]) => (
+              <div key={countryName}>
+                <h3 className="font-display text-sm font-bold uppercase tracking-wide text-charcoal">
+                  {countryName}{" "}
+                  <span className="text-muted-foreground">({items.length})</span>
+                </h3>
+                <ul className="mt-3 flex flex-wrap gap-x-4 gap-y-1.5 text-[13px]">
+                  {items.map((l) => (
+                    <li key={l.slug}>
+                      <Link
+                        to="/bitcoin-mining-marketplace/$slug"
+                        params={{ slug: l.slug }}
+                        className="text-muted-foreground hover:text-primary hover:underline"
+                      >
+                        {l.keyword}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
       <SeoCopy title={PAGE_COPY.marketplaceIndex.title} blocks={PAGE_COPY.marketplaceIndex.blocks} />
+
     </SiteLayout>
   );
 }
