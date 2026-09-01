@@ -323,17 +323,42 @@ export function buildPage(loc: MarketplaceLocation): MarketPage {
 
 /** Nearby pages in the same country/family for internal linking. */
 export function relatedLocations(loc: MarketplaceLocation, limit = 10) {
+  const seen = new Set<string>([loc.slug]);
+  const out: MarketplaceLocation[] = [];
+  const push = (list: MarketplaceLocation[]) => {
+    for (const l of list) {
+      if (out.length >= limit || seen.has(l.slug)) continue;
+      seen.add(l.slug);
+      out.push(l);
+    }
+  };
+
+  // Alphabetical neighbours in the same country + family (true "nearby" links).
   const same = MARKET_LOCATIONS.filter(
     (l) => l.slug !== loc.slug && l.country === loc.country && l.family === loc.family,
   );
   const i = same.findIndex((l) => l.place > loc.place);
-  const start = Math.max(0, (i === -1 ? same.length : i) - Math.floor(limit / 2));
-  const out = same.slice(start, start + limit);
-  if (out.length < limit) {
-    const others = MARKET_LOCATIONS.filter(
-      (l) => l.slug !== loc.slug && l.family !== loc.family && l.place === loc.place,
+  const centre = i === -1 ? same.length : i;
+  const window = Math.max(2, Math.floor(limit * 0.6));
+  push(same.slice(Math.max(0, centre - Math.floor(window / 2)), Math.max(0, centre - Math.floor(window / 2)) + window));
+
+  // Same place, other product families.
+  push(MARKET_LOCATIONS.filter((l) => l.place === loc.place && l.family !== loc.family));
+
+  // Rotating window across the rest of the country so every city page keeps
+  // collecting incoming links rather than only the alphabetical cluster.
+  const countryPool = MARKET_LOCATIONS.filter((l) => l.country === loc.country);
+  if (countryPool.length > 0 && out.length < limit) {
+    let h = 0;
+    for (let k = 0; k < loc.slug.length; k++) h = (h * 31 + loc.slug.charCodeAt(k)) % 100003;
+    const start = h % countryPool.length;
+    const need = limit - out.length;
+    push(
+      Array.from(
+        { length: Math.min(need * 3, countryPool.length) },
+        (_, k) => countryPool[(start + k) % countryPool.length]!,
+      ),
     );
-    out.push(...others.slice(0, limit - out.length));
   }
   return out;
 }

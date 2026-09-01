@@ -262,7 +262,7 @@ function BlogPostPage() {
               to="/blog"
               className="mt-4 inline-block text-xs font-semibold uppercase tracking-wide text-charcoal hover:text-primary"
             >
-              Browse all 99 guides →
+              Browse all guides →
             </Link>
           </div>
 
