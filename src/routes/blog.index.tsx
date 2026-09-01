@@ -121,11 +121,12 @@ function BlogIndex() {
         </div>
 
         <p className="mt-4 text-xs text-muted-foreground">
-          Showing {posts.length} article{posts.length === 1 ? "" : "s"}
+          Showing {Math.min(visible, posts.length)} of {posts.length} article
+          {posts.length === 1 ? "" : "s"}
         </p>
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((p) => (
+          {posts.slice(0, visible).map((p) => (
             <article
               key={p.slug}
               className="flex flex-col rounded-md border border-border bg-card p-5 transition-shadow hover:shadow-lg"
@@ -158,6 +159,39 @@ function BlogIndex() {
             </article>
           ))}
         </div>
+
+        {visible < posts.length && (
+          <div className="mt-6 text-center">
+            <button
+              onClick={() => setVisible((v) => v + 24)}
+              className="rounded-md border border-border px-6 py-2.5 text-xs font-semibold uppercase tracking-wide text-charcoal hover:border-primary hover:text-primary"
+            >
+              Load more guides
+            </button>
+          </div>
+        )}
+
+        {/* Lightweight crawlable index of every guide — keeps all posts one hop from /blog
+            without rendering hundreds of full cards on mobile. */}
+        <section className="mt-12 rounded-md border border-border bg-card p-5">
+          <h2 className="font-display text-sm font-semibold uppercase tracking-wide text-charcoal">
+            All {BLOG_POSTS.length} mining guides
+          </h2>
+          <ul className="mt-3 grid gap-1.5 text-[13px] sm:grid-cols-2 lg:grid-cols-3">
+            {BLOG_POSTS.map((p) => (
+              <li key={`idx-${p.slug}`}>
+                <Link
+                  to="/blog/$slug"
+                  params={{ slug: p.slug }}
+                  className="text-muted-foreground hover:text-primary"
+                >
+                  {p.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
 
 
         <section className="mt-14 rounded-md border border-primary/30 bg-secondary p-6">
