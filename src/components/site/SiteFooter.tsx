@@ -177,7 +177,7 @@ export function SiteFooter() {
         <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-4 px-4 py-5 text-[11px] text-charcoal-foreground/60">
           <p>© {new Date().getFullYear()} Bitcoin Mining Depot. All Rights Reserved.</p>
           <div className="flex flex-wrap gap-2">
-            {["VISA", "Mastercard", "AMEX", "Bank Wire", "Bitcoin", "USDT"].map((m) => (
+            {["Bitcoin", "USDT", "Bitcoin Cash", "BNB", "Dogecoin"].map((m) => (
               <span
                 key={m}
                 className="rounded-sm bg-charcoal-foreground/10 px-2 py-1 text-[10px] font-semibold"
