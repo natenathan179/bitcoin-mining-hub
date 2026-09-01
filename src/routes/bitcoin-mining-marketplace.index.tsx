@@ -53,6 +53,18 @@ function MarketplaceIndex() {
 
   const shown = rows.slice(0, 400);
 
+  // Every location grouped by country — rendered unfiltered so all links ship in the HTML.
+  const directory = useMemo(() => {
+    const groups = new Map<string, typeof MARKET_LOCATIONS>();
+    for (const l of MARKET_LOCATIONS) {
+      const list = groups.get(l.country) ?? [];
+      list.push(l);
+      groups.set(l.country, list);
+    }
+    return [...groups.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  }, []);
+
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
