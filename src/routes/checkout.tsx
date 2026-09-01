@@ -272,11 +272,8 @@ function CheckoutPage() {
           <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
             Important: cryptocurrency transfers are irreversible. Send only the coin shown, on the
             network shown, to the address shown on this page. Network fees are paid by the sender —
-            make sure the amount that arrives matches your order total. For Cash App, Chime and bank
-            transfers we never publish handles or account numbers online: they are sent to you only
-            after our finance team reviews your order, so ignore any details received from any other
-            source. Freight cost, duties and any balance differences are settled on the final invoice
-            before dispatch.
+            make sure the amount that arrives matches your order total. Freight cost, duties and any
+            balance differences are settled on the final invoice before dispatch.
           </p>
         </section>
 
