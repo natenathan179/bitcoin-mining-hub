@@ -25,6 +25,7 @@ export function ProductCard({ product }: { product: Product }) {
           src={image}
           alt={`${product.name} ${product.brand} ASIC bitcoin miner`}
           loading="lazy"
+          decoding="async"
           width={800}
           height={800}
           className="mx-auto h-36 w-full object-contain transition-transform group-hover:scale-[1.03]"
