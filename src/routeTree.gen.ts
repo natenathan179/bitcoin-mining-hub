@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as WholesaleRouteImport } from './routes/wholesale'
 import { Route as WarrantyRouteImport } from './routes/warranty'
 import { Route as UsedRefurbishedMinersRouteImport } from './routes/used-refurbished-miners'
+import { Route as UsedAsicMinersRouteImport } from './routes/used-asic-miners'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ShippingReturnsRouteImport } from './routes/shipping-returns'
 import { Route as ReviewsRouteImport } from './routes/reviews'
@@ -57,6 +58,11 @@ const WarrantyRoute = WarrantyRouteImport.update({
 const UsedRefurbishedMinersRoute = UsedRefurbishedMinersRouteImport.update({
   id: '/used-refurbished-miners',
   path: '/used-refurbished-miners',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UsedAsicMinersRoute = UsedAsicMinersRouteImport.update({
+  id: '/used-asic-miners',
+  path: '/used-asic-miners',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TermsRoute = TermsRouteImport.update({
@@ -237,6 +243,7 @@ export interface FileRoutesByFullPath {
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
   '/terms': typeof TermsRoute
+  '/used-asic-miners': typeof UsedAsicMinersRoute
   '/used-refurbished-miners': typeof UsedRefurbishedMinersRoute
   '/warranty': typeof WarrantyRoute
   '/wholesale': typeof WholesaleRoute
@@ -272,6 +279,7 @@ export interface FileRoutesByTo {
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
   '/terms': typeof TermsRoute
+  '/used-asic-miners': typeof UsedAsicMinersRoute
   '/used-refurbished-miners': typeof UsedRefurbishedMinersRoute
   '/warranty': typeof WarrantyRoute
   '/wholesale': typeof WholesaleRoute
@@ -308,6 +316,7 @@ export interface FileRoutesById {
   '/reviews': typeof ReviewsRoute
   '/shipping-returns': typeof ShippingReturnsRoute
   '/terms': typeof TermsRoute
+  '/used-asic-miners': typeof UsedAsicMinersRoute
   '/used-refurbished-miners': typeof UsedRefurbishedMinersRoute
   '/warranty': typeof WarrantyRoute
   '/wholesale': typeof WholesaleRoute
@@ -345,6 +354,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/shipping-returns'
     | '/terms'
+    | '/used-asic-miners'
     | '/used-refurbished-miners'
     | '/warranty'
     | '/wholesale'
@@ -380,6 +390,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/shipping-returns'
     | '/terms'
+    | '/used-asic-miners'
     | '/used-refurbished-miners'
     | '/warranty'
     | '/wholesale'
@@ -415,6 +426,7 @@ export interface FileRouteTypes {
     | '/reviews'
     | '/shipping-returns'
     | '/terms'
+    | '/used-asic-miners'
     | '/used-refurbished-miners'
     | '/warranty'
     | '/wholesale'
@@ -452,6 +464,7 @@ export interface RootRouteChildren {
   ReviewsRoute: typeof ReviewsRoute
   ShippingReturnsRoute: typeof ShippingReturnsRoute
   TermsRoute: typeof TermsRoute
+  UsedAsicMinersRoute: typeof UsedAsicMinersRoute
   UsedRefurbishedMinersRoute: typeof UsedRefurbishedMinersRoute
   WarrantyRoute: typeof WarrantyRoute
   WholesaleRoute: typeof WholesaleRoute
@@ -487,6 +500,13 @@ declare module '@tanstack/react-router' {
       path: '/used-refurbished-miners'
       fullPath: '/used-refurbished-miners'
       preLoaderRoute: typeof UsedRefurbishedMinersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/used-asic-miners': {
+      id: '/used-asic-miners'
+      path: '/used-asic-miners'
+      fullPath: '/used-asic-miners'
+      preLoaderRoute: typeof UsedAsicMinersRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/terms': {
@@ -756,6 +776,7 @@ const rootRouteChildren: RootRouteChildren = {
   ReviewsRoute: ReviewsRoute,
   ShippingReturnsRoute: ShippingReturnsRoute,
   TermsRoute: TermsRoute,
+  UsedAsicMinersRoute: UsedAsicMinersRoute,
   UsedRefurbishedMinersRoute: UsedRefurbishedMinersRoute,
   WarrantyRoute: WarrantyRoute,
   WholesaleRoute: WholesaleRoute,
