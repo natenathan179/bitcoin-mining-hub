@@ -235,7 +235,7 @@ function CheckoutPage() {
       <PageHero
         eyebrow="Secure crypto checkout"
         title="Choose How You Want To Pay"
-        subtitle="Pay on-chain with cryptocurrency, or use Cash App, Chime or a direct bank transfer. Crypto payments are instant and self-service; Cash App, Chime and bank transfers are reviewed by our finance desk, who send you a payment request or account details before you pay."
+        subtitle="Pay on-chain with cryptocurrency. Choose your coin, send the exact amount to the address and QR code shown, then submit your transaction ID — crypto payments are instant and fully self-service."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-10">
@@ -248,18 +248,18 @@ function CheckoutPage() {
             {[
               {
                 icon: Wallet,
-                title: "1. Select your payment method",
-                body: "Pay with crypto (each coin shows its receiving address and a scannable QR code), or choose Cash App, Chime or a direct bank transfer if you prefer to pay in fiat.",
+                title: "1. Select your cryptocurrency",
+                body: "Choose the coin you want to pay with — each option shows its receiving address, network and a scannable QR code.",
               },
               {
                 icon: ShieldCheck,
-                title: "2. Pay or wait for our request",
-                body: "Crypto: send the exact USD equivalent to the address shown, double-checking the network first. Cash App / Chime: submit your details and we send a payment request with the exact amount and verified handle. Bank transfer: we reply with full account details and a payment reference.",
+                title: "2. Send the payment",
+                body: "Send the exact USD equivalent to the address shown, double-checking the network first. Network fees are paid by the sender.",
               },
               {
                 icon: Truck,
                 title: "3. Send your proof of payment",
-                body: "Crypto: paste the transaction ID (TXID / hash) and we verify it on-chain. Cash App / Chime: confirm the request, pay, then upload a screenshot of the completed payment. Bank transfer: send the transfer receipt. Once verified we invoice, crate and ship your miners.",
+                body: "Paste the transaction ID (TXID / hash) and we verify it on-chain. Once verified we invoice, crate and ship your miners.",
               },
             ].map(({ icon: Icon, title, body }) => (
               <li key={title} className="rounded-md bg-secondary p-4">
@@ -272,11 +272,8 @@ function CheckoutPage() {
           <p className="mt-4 text-[11px] leading-relaxed text-muted-foreground">
             Important: cryptocurrency transfers are irreversible. Send only the coin shown, on the
             network shown, to the address shown on this page. Network fees are paid by the sender —
-            make sure the amount that arrives matches your order total. For Cash App, Chime and bank
-            transfers we never publish handles or account numbers online: they are sent to you only
-            after our finance team reviews your order, so ignore any details received from any other
-            source. Freight cost, duties and any balance differences are settled on the final invoice
-            before dispatch.
+            make sure the amount that arrives matches your order total. Freight cost, duties and any
+            balance differences are settled on the final invoice before dispatch.
           </p>
         </section>
 

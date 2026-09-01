@@ -29,12 +29,7 @@ const EMPTY = {
   review_note: "",
 };
 
-const KINDS = [
-  { value: "crypto", label: "Crypto wallet (QR + address)" },
-  { value: "cashapp", label: "Cash App (admin sends payment request)" },
-  { value: "chime", label: "Chime (admin sends payment request)" },
-  { value: "bank", label: "Bank transfer (admin sends account details)" },
-];
+const KINDS = [{ value: "crypto", label: "Crypto wallet (QR + address)" }];
 
 function AdminPayments() {
   const queryClient = useQueryClient();
@@ -117,10 +112,9 @@ function AdminPayments() {
           Payment methods
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
-          These are the options customers can pay with at checkout. Crypto methods show a wallet
-          address and QR code. Cash App, Chime and bank methods are review-based: the customer
-          submits their order, you send them a payment request or account details, then they confirm
-          and send proof of payment.
+          These are the crypto options customers can pay with at checkout. Each method shows its
+          wallet address, network and QR code, and customers submit a transaction ID as proof of
+          payment.
         </p>
 
         <div className="mt-6 space-y-4">
