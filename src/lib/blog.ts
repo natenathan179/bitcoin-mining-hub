@@ -20487,6 +20487,5069 @@ export const BLOG_POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 9
+  },
+  {
+    "slug": "ant-miner-buying-guide-models-prices-and-pitfalls",
+    "title": "Ant Miner Buying Guide: Models, Prices and Pitfalls",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-02",
+    "description": "Ant miner explained: which Antminer models are worth buying in 2026, what they cost per terahash, and the mistakes that sink first purchases.",
+    "keywords": [
+      "ant miner",
+      "antiminer",
+      "anteminer",
+      "ant iner",
+      "antminer 21",
+      "antminer"
+    ],
+    "intro": [
+      "Search \"ant miner\", \"antiminer\" or \"anteminer\" and you are looking for the same thing: Bitmain's Antminer line, the most widely deployed ASIC family in bitcoin mining. This guide maps the models that are still worth money, what each costs per terahash, and where first-time buyers lose it.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a Antminer",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Antminer Specifications That Actually Matter",
+        "paras": [
+          "The Antminer ships rated varies by model, 3,500 W at the wall, 12-40 J/TH depending on generation efficiency, SHA-256 and altcoin algorithms algorithm, air or hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the Antminer consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer Units: What Changes",
+        "paras": [
+          "Second-hand Antminer hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Antminer typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer hashrate and power draw?",
+        "a": "The Antminer is rated at varies by model drawing 3,500 W at the wall, which is 12-40 J/TH depending on generation. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the Antminer still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "antminer-s9-price-guide-what-used-units-cost-now",
+    "title": "Antminer S9 Price Guide: What Used Units Cost Now",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-08-31",
+    "description": "Antminer S9 pricing in 2026: what used S9 units really cost, when a 100 J/TH machine still earns, and how to test one before you pay.",
+    "keywords": [
+      "antminer s9",
+      "ant miner s9",
+      "s9 miner",
+      "s9 antminer",
+      "antminer s9 price",
+      "antminer s9 price used 2025",
+      "antminder s9",
+      "bitmain s9 for sale",
+      "buy bitmain s9"
+    ],
+    "intro": [
+      "The Antminer S9 is the machine that put home bitcoin mining on the map, and it still trades in volume as used hardware. The question is no longer whether it hashes — it does — but what it is worth when efficiency sits near 100 J/TH.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S9 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S9 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S9 ships rated 13.5 TH/s, 1,350 W at the wall, about 100 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S9 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S9 Electricity Looks Like",
+        "paras": [
+          "At 1,350 W continuous the Antminer S9 consumes roughly 32 kWh per day. At six cents per kilowatt hour that is about $2 of power per day; at twelve cents it doubles to roughly $4. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S9 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer S9: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer S9 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S9 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S9",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S9 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "If you want a cheap entry into SHA-256 hashing, compare against used S19-series machines at 21-30 J/TH — they cost more up front and earn far more per watt. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S9 hashrate and power draw?",
+        "a": "The Antminer S9 is rated at 13.5 TH/s drawing 1,350 W at the wall, which is about 100 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S9 use per day?",
+        "a": "Roughly 32 kWh per day of continuous operation — about $3 per day at eight cents per kilowatt hour, or $78 per month."
+      },
+      {
+        "q": "Is the Antminer S9 still profitable?",
+        "a": "That depends on your power rate more than anything else. S9-class hardware needs power under about three cents per kWh, curtailed energy, or a heat-reuse application to make sense in 2026."
+      },
+      {
+        "q": "Can I run a Antminer S9 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S9 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer S9?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Working S9 units trade as commodity heat sources rather than profit machines, so price them accordingly and never overpay for nostalgia."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s9"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "antminer-s9-miner-review-is-it-still-worth-buying",
+    "title": "Antminer S9 Miner Review: Is It Still Worth Buying?",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-29",
+    "description": "An honest Antminer S9 review for 2026: real hashrate, power draw, noise, the power price it needs, and who should still buy one.",
+    "keywords": [
+      "s9 miner",
+      "antminer s9",
+      "s9 antminer",
+      "ant miner s9"
+    ],
+    "intro": [
+      "The Antminer S9 is the most reviewed miner in history, and most of those reviews are years out of date. Here is what an S9 actually delivers today, what it costs to run, and the narrow set of situations where buying one is a rational decision rather than nostalgia.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S9 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S9 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S9 ships rated 13.5 TH/s, 1,350 W at the wall, about 100 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S9 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer S9 Sits in the Market",
+        "paras": [
+          "Efficiency (about 100 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "The S9 sits far above the value tier at roughly 100 J/TH, so it only earns where power is nearly free or already sunk. Compare the Antminer S9 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S9 Electricity Looks Like",
+        "paras": [
+          "At 1,350 W continuous the Antminer S9 consumes roughly 32 kWh per day. At six cents per kilowatt hour that is about $2 of power per day; at twelve cents it doubles to roughly $4. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S9 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S9 produces 72 to 80 dB continuously and dumps its entire 1.4 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S9 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "If you want a cheap entry into SHA-256 hashing, compare against used S19-series machines at 21-30 J/TH — they cost more up front and earn far more per watt. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S9 hashrate and power draw?",
+        "a": "The Antminer S9 is rated at 13.5 TH/s drawing 1,350 W at the wall, which is about 100 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S9 use per day?",
+        "a": "Roughly 32 kWh per day of continuous operation — about $3 per day at eight cents per kilowatt hour, or $78 per month."
+      },
+      {
+        "q": "Is the Antminer S9 still profitable?",
+        "a": "That depends on your power rate more than anything else. S9-class hardware needs power under about three cents per kWh, curtailed energy, or a heat-reuse application to make sense in 2026."
+      },
+      {
+        "q": "Can I run a Antminer S9 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S9 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s9"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitmain-antminer-s21e-xp-hyd-3u-860t-review",
+    "title": "Bitmain Antminer S21e XP Hyd 3U 860T Review",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-27",
+    "description": "Bitmain Antminer S21e XP Hyd 3U review: 860 TH/s per chassis, roughly 13 J/TH, and what a liquid-cooled deployment actually requires.",
+    "keywords": [
+      "bitmain antminer s21e xp hyd 3u",
+      "bitmain antminer s21e xp hyd 3u 860th",
+      "antminer s21e xp hyd",
+      "s21e xp hyd 3u"
+    ],
+    "intro": [
+      "The Antminer S21e XP Hyd 3U packs roughly 860 TH/s into a single 3U hydro chassis. That is density built for purpose-designed liquid halls, not for a garage — and the infrastructure it demands is as important as the hashrate it delivers.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21e XP Hyd 3U 860T hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S21e XP Hyd 3U 860T Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21e XP Hyd 3U 860T ships rated 860 TH/s, 11,180 W at the wall, about 13 J/TH efficiency, SHA-256 algorithm, hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled units hold their numbers because coolant temperature, not room temperature, sets the thermal ceiling. We bench every Antminer S21e XP Hyd 3U 860T before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer S21e XP Hyd 3U 860T Sits in the Market",
+        "paras": [
+          "Efficiency (about 13 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "This 3U hydro chassis delivers roughly 860 TH/s in a single slot — density that only makes sense in purpose-built liquid halls. Compare the Antminer S21e XP Hyd 3U 860T against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21e XP Hyd 3U 860T Electricity Looks Like",
+        "paras": [
+          "At 11,180 W continuous the Antminer S21e XP Hyd 3U 860T consumes roughly 268 kWh per day. At six cents per kilowatt hour that is about $16 of power per day; at twelve cents it doubles to roughly $32. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21e XP Hyd 3U 860T still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "Liquid cooling changes the siting conversation entirely. A Antminer S21e XP Hyd 3U 860T rejects its heat into a coolant loop, so the room stays quiet — typically 45 to 55 dB from pumps — but you now own a plumbing project: dry cooler or radiator, pump, filtration, coolant chemistry and leak detection. Budget for that infrastructure before the machines land.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S21e XP Hyd 3U 860T at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The S23 Hyd 3U at 1.16 PH/s is the next step up in both density and efficiency. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21e XP Hyd 3U 860T hashrate and power draw?",
+        "a": "The Antminer S21e XP Hyd 3U 860T is rated at 860 TH/s drawing 11,180 W at the wall, which is about 13 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21e XP Hyd 3U 860T use per day?",
+        "a": "Roughly 268 kWh per day of continuous operation — about $21 per day at eight cents per kilowatt hour, or $644 per month."
+      },
+      {
+        "q": "Is the Antminer S21e XP Hyd 3U 860T still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21e XP Hyd 3U 860T at home?",
+        "a": "Only with a coolant loop and a heat-rejection path. Liquid units are quieter than air-cooled machines but require plumbing, filtration and leak monitoring, so they suit purpose-built rooms rather than a spare bedroom."
+      },
+      {
+        "q": "Do you sell used Antminer S21e XP Hyd 3U 860T units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "hyd",
+        "hydro",
+        "s21"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "antminer-s21-pro-234t-review-and-roi-breakdown",
+    "title": "Antminer S21 Pro 234T Review and ROI Breakdown",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-25",
+    "description": "Antminer S21 Pro review: 234 TH/s at 15 J/TH, real running costs, payback modelling and how it compares to the S21 XP and M60S.",
+    "keywords": [
+      "antminer s21 pro",
+      "antminer s21 pro 234th",
+      "bitmain s21 pro",
+      "antminer s21 pro price"
+    ],
+    "intro": [
+      "The Antminer S21 Pro is the efficiency leader among air-cooled bitcoin miners at roughly 15 joules per terahash. If you pay commercial or residential power rates and cannot build a coolant loop, this is the machine the numbers keep pointing at.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21 Pro 234T hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S21 Pro 234T Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21 Pro 234T ships rated 234 TH/s, 3,510 W at the wall, 15 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S21 Pro 234T before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer S21 Pro 234T Sits in the Market",
+        "paras": [
+          "Efficiency (15 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "At 15 J/TH the S21 Pro is the efficiency leader among air-cooled machines and the safest air purchase for high-rate power. Compare the Antminer S21 Pro 234T against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21 Pro 234T Electricity Looks Like",
+        "paras": [
+          "At 3,510 W continuous the Antminer S21 Pro 234T consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21 Pro 234T still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S21 Pro 234T produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S21 Pro 234T at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The S21 XP pushes to roughly 13.5 J/TH; hydro variants go lower still if you can build a coolant loop. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21 Pro 234T hashrate and power draw?",
+        "a": "The Antminer S21 Pro 234T is rated at 234 TH/s drawing 3,510 W at the wall, which is 15 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21 Pro 234T use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the Antminer S21 Pro 234T still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21 Pro 234T at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S21 Pro 234T units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21",
+        "pro"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "antminer-s19-xp-review-the-21-5-j-th-workhorse",
+    "title": "Antminer S19 XP Review: The 21.5 J/TH Workhorse",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-23",
+    "description": "Antminer S19 XP review: 141 TH/s at 21.5 J/TH, running costs, real-world derating and whether it still beats newer hardware on price.",
+    "keywords": [
+      "antminer s19 xp",
+      "bitmain antminer s19 xp",
+      "s19 xp",
+      "s19 mining"
+    ],
+    "intro": [
+      "The Antminer S19 XP is the best of the previous generation and the most common upgrade target for operators leaving S17 and M30S fleets behind. At 21.5 J/TH it still earns under about eight cents per kilowatt hour.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S19 XP hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S19 XP Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S19 XP ships rated 141 TH/s, 3,010 W at the wall, 21.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S19 XP before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer S19 XP Sits in the Market",
+        "paras": [
+          "Efficiency (21.5 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "At 21.5 J/TH the S19 XP is the strongest of the previous generation and still viable under about eight cents per kWh. Compare the Antminer S19 XP against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S19 XP Electricity Looks Like",
+        "paras": [
+          "At 3,010 W continuous the Antminer S19 XP consumes roughly 72 kWh per day. At six cents per kilowatt hour that is about $4 of power per day; at twelve cents it doubles to roughly $9. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S19 XP still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S19 XP produces 72 to 80 dB continuously and dumps its entire 3.0 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S19 XP at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Compare against the S21 at 17.5 J/TH and the WhatsMiner M60S at 18.5 J/TH; the newer machines cost more per terahash but survive difficulty growth longer. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S19 XP hashrate and power draw?",
+        "a": "The Antminer S19 XP is rated at 141 TH/s drawing 3,010 W at the wall, which is 21.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S19 XP use per day?",
+        "a": "Roughly 72 kWh per day of continuous operation — about $6 per day at eight cents per kilowatt hour, or $173 per month."
+      },
+      {
+        "q": "Is the Antminer S19 XP still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S19 XP at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S19 XP units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s19",
+        "xp"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "antminer-s23-review-inside-the-sub-10-j-th-era",
+    "title": "Antminer S23 Review: Inside the Sub-10 J/TH Era",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-21",
+    "description": "Antminer S23 review: what sub-10 J/TH efficiency changes for site planning, power contracts and the resale value of older fleets.",
+    "keywords": [
+      "antminer s23",
+      "bitmain antminer s23",
+      "antminer s23 hyd",
+      "s23 miner"
+    ],
+    "intro": [
+      "The Antminer S23 generation broke the 10 joules per terahash barrier. That is not an incremental spec bump — it resets which power rates are viable and puts real pressure on the resale value of every machine above 20 J/TH.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S23 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S23 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S23 ships rated around 580 TH/s, 5,510 W at the wall, roughly 9.5 J/TH efficiency, SHA-256 algorithm, air/hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S23 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer S23 Sits in the Market",
+        "paras": [
+          "Efficiency (roughly 9.5 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "Sub-10 J/TH puts the S23 generation in a class of its own and resets what counts as viable power pricing. Compare the Antminer S23 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S23 Electricity Looks Like",
+        "paras": [
+          "At 5,510 W continuous the Antminer S23 consumes roughly 132 kWh per day. At six cents per kilowatt hour that is about $8 of power per day; at twelve cents it doubles to roughly $16. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S23 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S23 produces 72 to 80 dB continuously and dumps its entire 5.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S23 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Against the S21 XP at 13.5 J/TH the S23 cuts electricity by roughly 30 percent for the same hashrate. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S23 hashrate and power draw?",
+        "a": "The Antminer S23 is rated at around 580 TH/s drawing 5,510 W at the wall, which is roughly 9.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S23 use per day?",
+        "a": "Roughly 132 kWh per day of continuous operation — about $11 per day at eight cents per kilowatt hour, or $317 per month."
+      },
+      {
+        "q": "Is the Antminer S23 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S23 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S23 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23",
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s21-xp-guide-air-and-hydro-variants",
+    "title": "Antminer S21 XP Guide: Air and Hydro Variants",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-19",
+    "description": "Antminer S21 XP buying guide: air vs hydro variants, 13.5 J/TH economics, siting requirements and what to verify before you order.",
+    "keywords": [
+      "antminer s21 xp",
+      "s21 xp",
+      "bitmain antminer s21 xp",
+      "antminer s21 xp hydro",
+      "s21 xp hydro",
+      "bitmain antminer s21 xp hydro"
+    ],
+    "intro": [
+      "The Antminer S21 XP line spans an air-cooled unit near 13.5 J/TH and hydro variants that go lower still. Choosing between them is a site decision more than a hashrate decision, and getting it wrong is expensive.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21 XP hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a Antminer S21 XP",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S21 XP stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Antminer S21 XP Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21 XP ships rated 270 TH/s, 3,645 W at the wall, 13.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S21 XP before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21 XP Electricity Looks Like",
+        "paras": [
+          "At 3,645 W continuous the Antminer S21 XP consumes roughly 87 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21 XP still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S21 XP produces 72 to 80 dB continuously and dumps its entire 3.6 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer S21 XP Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S21 XP hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Antminer S21 XP typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21 XP hashrate and power draw?",
+        "a": "The Antminer S21 XP is rated at 270 TH/s drawing 3,645 W at the wall, which is 13.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21 XP use per day?",
+        "a": "Roughly 87 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $210 per month."
+      },
+      {
+        "q": "Is the Antminer S21 XP still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21 XP at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S21 XP units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21",
+        "xp"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "bitmain-antminer-s21-xp-hyd-specs-and-siting",
+    "title": "Bitmain Antminer S21 XP Hyd: Specs and Siting",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-17",
+    "description": "Bitmain Antminer S21 XP Hyd specs, coolant loop requirements, circuit sizing and deployment checks for a 12 J/TH hydro fleet.",
+    "keywords": [
+      "bitmain antminer s21 xp hyd",
+      "bitmain antminer s21 xp hydro",
+      "bitmain antminer s21 xp+ hyd",
+      "antminer s21 xp hyd"
+    ],
+    "intro": [
+      "The S21 XP Hyd sits near 12 joules per terahash — extraordinary efficiency that only materialises if the coolant loop behind it is engineered properly. This guide covers the plumbing, power and monitoring that decide whether you actually see those numbers.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21 XP Hyd hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S21 XP Hyd Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21 XP Hyd ships rated up to 473 TH/s, 5,676 W at the wall, about 12 J/TH efficiency, SHA-256 algorithm, hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled units hold their numbers because coolant temperature, not room temperature, sets the thermal ceiling. We bench every Antminer S21 XP Hyd before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A Antminer S21 XP Hyd needs a dedicated 240 V circuit sized at 125 percent of continuous load — roughly 30 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "Liquid cooling changes the siting conversation entirely. A Antminer S21 XP Hyd rejects its heat into a coolant loop, so the room stays quiet — typically 45 to 55 dB from pumps — but you now own a plumbing project: dry cooler or radiator, pump, filtration, coolant chemistry and leak detection. Budget for that infrastructure before the machines land.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S21 XP Hyd at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21 XP Hyd Electricity Looks Like",
+        "paras": [
+          "At 5,676 W continuous the Antminer S21 XP Hyd consumes roughly 136 kWh per day. At six cents per kilowatt hour that is about $8 of power per day; at twelve cents it doubles to roughly $16. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21 XP Hyd still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S21 XP Hyd",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S21 XP Hyd stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21 XP Hyd hashrate and power draw?",
+        "a": "The Antminer S21 XP Hyd is rated at up to 473 TH/s drawing 5,676 W at the wall, which is about 12 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21 XP Hyd use per day?",
+        "a": "Roughly 136 kWh per day of continuous operation — about $11 per day at eight cents per kilowatt hour, or $327 per month."
+      },
+      {
+        "q": "Is the Antminer S21 XP Hyd still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21 XP Hyd at home?",
+        "a": "Only with a coolant loop and a heat-rejection path. Liquid units are quieter than air-cooled machines but require plumbing, filtration and leak monitoring, so they suit purpose-built rooms rather than a spare bedroom."
+      },
+      {
+        "q": "Do you sell used Antminer S21 XP Hyd units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "hyd",
+        "hydro",
+        "s21"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "antminer-s21-hyd-335t-hydro-deployment-guide",
+    "title": "Antminer S21 Hyd 335T Hydro Deployment Guide",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-15",
+    "description": "Antminer S21 Hyd 335T guide: coolant loops, heat rejection, circuit sizing and monitoring for the entry point into hydro mining.",
+    "keywords": [
+      "antminer s21 hyd",
+      "bitmain antminer s21 hyd",
+      "bitmain antminer s21 hyd 335t",
+      "s21 hydro",
+      "antminer s21 hydro",
+      "bitmain antminer s21 hyd"
+    ],
+    "intro": [
+      "The Antminer S21 Hyd 335T is the practical first step into liquid-cooled bitcoin mining: 335 TH/s at 16 J/TH, quiet enough for occupied buildings, and forgiving enough that a well-built loop keeps it at rated output all year.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21 Hyd 335T hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S21 Hyd 335T Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21 Hyd 335T ships rated 335 TH/s, 5,360 W at the wall, 16 J/TH efficiency, SHA-256 algorithm, hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled units hold their numbers because coolant temperature, not room temperature, sets the thermal ceiling. We bench every Antminer S21 Hyd 335T before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A Antminer S21 Hyd 335T needs a dedicated 240 V circuit sized at 125 percent of continuous load — roughly 28 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "Liquid cooling changes the siting conversation entirely. A Antminer S21 Hyd 335T rejects its heat into a coolant loop, so the room stays quiet — typically 45 to 55 dB from pumps — but you now own a plumbing project: dry cooler or radiator, pump, filtration, coolant chemistry and leak detection. Budget for that infrastructure before the machines land.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S21 Hyd 335T at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21 Hyd 335T Electricity Looks Like",
+        "paras": [
+          "At 5,360 W continuous the Antminer S21 Hyd 335T consumes roughly 129 kWh per day. At six cents per kilowatt hour that is about $8 of power per day; at twelve cents it doubles to roughly $15. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21 Hyd 335T still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S21 Hyd 335T",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S21 Hyd 335T stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21 Hyd 335T hashrate and power draw?",
+        "a": "The Antminer S21 Hyd 335T is rated at 335 TH/s drawing 5,360 W at the wall, which is 16 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21 Hyd 335T use per day?",
+        "a": "Roughly 129 kWh per day of continuous operation — about $10 per day at eight cents per kilowatt hour, or $309 per month."
+      },
+      {
+        "q": "Is the Antminer S21 Hyd 335T still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21 Hyd 335T at home?",
+        "a": "Only with a coolant loop and a heat-rejection path. Liquid units are quieter than air-cooled machines but require plumbing, filtration and leak monitoring, so they suit purpose-built rooms rather than a spare bedroom."
+      },
+      {
+        "q": "Do you sell used Antminer S21 Hyd 335T units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "hyd",
+        "hydro",
+        "s21"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "bitcoin-miner-s21-family-every-variant-compared",
+    "title": "Bitcoin Miner S21 Family: Every Variant Compared",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-13",
+    "description": "The full Antminer S21 family compared: S21, S21+, S21 Pro, S21 XP and the hydro variants, with efficiency and cost per terahash.",
+    "keywords": [
+      "bitcoin miner s21",
+      "s21 miner",
+      "antminer s21",
+      "s21 xp",
+      "antminer s21+"
+    ],
+    "intro": [
+      "\"S21\" now covers at least six distinct machines with efficiencies from 17.5 down to under 12 joules per terahash. Buying the wrong one costs either capital you did not need to spend or electricity you cannot get back.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a Antminer S21",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S21 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Antminer S21 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21 ships rated 200 TH/s, 3,500 W at the wall, 17.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S21 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21 Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the Antminer S21 consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S21 produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer S21 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S21 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Antminer S21 typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21 hashrate and power draw?",
+        "a": "The Antminer S21 is rated at 200 TH/s drawing 3,500 W at the wall, which is 17.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21 use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the Antminer S21 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S21 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s21-price-guide-february-2026-market",
+    "title": "Antminer S21 Price Guide: February 2026 Market",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-11",
+    "description": "Antminer S21 pricing explained: how to read dollars per terahash, what moves the market, and how to time an order without guessing.",
+    "keywords": [
+      "antminer s21 price",
+      "antminer s21 price february 2026",
+      "s21 miner",
+      "antminer s21"
+    ],
+    "intro": [
+      "Antminer S21 pricing moves with bitcoin price, hashprice and shipping cycles, so a headline number goes stale fast. What does not go stale is the method: price every quote in dollars per terahash and compare it against efficiency.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S21 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21 ships rated 200 TH/s, 3,500 W at the wall, 17.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S21 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21 Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the Antminer S21 consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer S21: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer S21 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S21 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S21",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S21 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The S21 Pro at 15 J/TH and the S21 XP at 13.5 J/TH cost more but cut the power bill; the M60S is the closest MicroBT rival. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21 hashrate and power draw?",
+        "a": "The Antminer S21 is rated at 200 TH/s drawing 3,500 W at the wall, which is 17.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21 use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the Antminer S21 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S21 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer S21?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "antminer-s21-200-th-s-profitability-breakdown",
+    "title": "Antminer S21 200 TH/s Profitability Breakdown",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-08-09",
+    "description": "A full Antminer S21 profitability model: 200 TH/s revenue, power cost at every rate, stress tests and the payback math that matters.",
+    "keywords": [
+      "antminer s21 200th s",
+      "antminer s21",
+      "s21 miner",
+      "1000th/s"
+    ],
+    "intro": [
+      "A 200 TH/s Antminer S21 draws 3,500 W continuously. Those two numbers plus your electricity rate determine profitability more reliably than any online calculator, and this guide shows exactly how to combine them.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S21 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21 ships rated 200 TH/s, 3,500 W at the wall, 17.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S21 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21 Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the Antminer S21 consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer S21: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer S21 Sits in the Market",
+        "paras": [
+          "Efficiency (17.5 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "At 17.5 J/TH the S21 is the mainstream current-generation air machine and the default choice for commercial power rates. Compare the Antminer S21 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Antminer S21 typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The S21 Pro at 15 J/TH and the S21 XP at 13.5 J/TH cost more but cut the power bill; the M60S is the closest MicroBT rival. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21 hashrate and power draw?",
+        "a": "The Antminer S21 is rated at 200 TH/s drawing 3,500 W at the wall, which is 17.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21 use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the Antminer S21 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S21 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "antminer-s21-216t-review-specs-and-power-draw",
+    "title": "Antminer S21+ 216T Review: Specs and Power Draw",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-08-07",
+    "description": "Antminer S21+ review: 216 TH/s at 16.5 J/TH, how it differs from the base S21 and S21 Pro, and which one to actually buy.",
+    "keywords": [
+      "antminer s21+",
+      "antminer s21 plus",
+      "s21 miner",
+      "antminer s21"
+    ],
+    "intro": [
+      "The Antminer S21+ is a refresh rather than a revolution: slightly more hashrate, slightly better efficiency than the base S21. Whether that is worth the price difference depends entirely on the delivered cost per terahash.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21+ hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S21+ Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21+ ships rated 216 TH/s, 3,564 W at the wall, 16.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S21+ before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer S21+ Sits in the Market",
+        "paras": [
+          "Efficiency (16.5 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "The S21+ is a modest refresh of the S21 with slightly better efficiency at 16.5 J/TH. Compare the Antminer S21+ against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21+ Electricity Looks Like",
+        "paras": [
+          "At 3,564 W continuous the Antminer S21+ consumes roughly 86 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21+ still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S21+ produces 72 to 80 dB continuously and dumps its entire 3.6 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S21+ at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Compare with the S21 Pro at 15 J/TH — often the better buy per delivered terahash. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21+ hashrate and power draw?",
+        "a": "The Antminer S21+ is rated at 216 TH/s drawing 3,564 W at the wall, which is 16.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21+ use per day?",
+        "a": "Roughly 86 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $205 per month."
+      },
+      {
+        "q": "Is the Antminer S21+ still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21+ at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S21+ units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s21"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "antminer-s23-hyd-3u-1-16-ph-deployment-guide",
+    "title": "Antminer S23 Hyd 3U 1.16 PH Deployment Guide",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-08-05",
+    "description": "Antminer S23 Hyd 3U guide: a petahash per chassis at 9.5 J/TH, plus the coolant, power and monitoring an install actually needs.",
+    "keywords": [
+      "antminer s23 hyd 3u",
+      "bitmain antminer s23 hyd 3u 1.16 ph",
+      "antminer s23 hydro 3u",
+      "bitmain antminer s23 hydro 3u",
+      "s23 hydro",
+      "bitmain antminer s23 hyd"
+    ],
+    "intro": [
+      "One petahash per second in a 3U chassis at roughly 9.5 J/TH is the current frontier of industrial bitcoin mining. It is also 11 kW in one slot, which makes the supporting infrastructure the real project.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S23 Hyd 3U hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S23 Hyd 3U Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S23 Hyd 3U ships rated 1.16 PH/s, 11,020 W at the wall, about 9.5 J/TH efficiency, SHA-256 algorithm, hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled units hold their numbers because coolant temperature, not room temperature, sets the thermal ceiling. We bench every Antminer S23 Hyd 3U before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A Antminer S23 Hyd 3U needs a dedicated 240 V circuit sized at 125 percent of continuous load — roughly 58 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "Liquid cooling changes the siting conversation entirely. A Antminer S23 Hyd 3U rejects its heat into a coolant loop, so the room stays quiet — typically 45 to 55 dB from pumps — but you now own a plumbing project: dry cooler or radiator, pump, filtration, coolant chemistry and leak detection. Budget for that infrastructure before the machines land.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S23 Hyd 3U at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S23 Hyd 3U Electricity Looks Like",
+        "paras": [
+          "At 11,020 W continuous the Antminer S23 Hyd 3U consumes roughly 264 kWh per day. At six cents per kilowatt hour that is about $16 of power per day; at twelve cents it doubles to roughly $32. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S23 Hyd 3U still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S23 Hyd 3U",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S23 Hyd 3U stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S23 Hyd 3U hashrate and power draw?",
+        "a": "The Antminer S23 Hyd 3U is rated at 1.16 PH/s drawing 11,020 W at the wall, which is about 9.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S23 Hyd 3U use per day?",
+        "a": "Roughly 264 kWh per day of continuous operation — about $21 per day at eight cents per kilowatt hour, or $635 per month."
+      },
+      {
+        "q": "Is the Antminer S23 Hyd 3U still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S23 Hyd 3U at home?",
+        "a": "Only with a coolant loop and a heat-rejection path. Liquid units are quieter than air-cooled machines but require plumbing, filtration and leak monitoring, so they suit purpose-built rooms rather than a spare bedroom."
+      },
+      {
+        "q": "Do you sell used Antminer S23 Hyd 3U units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s23",
+        "hyd",
+        "hydro"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "s19-miner-guide-xp-pro-and-hydro-variants",
+    "title": "S19 Miner Guide: XP, Pro and Hydro Variants",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-08-03",
+    "description": "S19 miner buying guide: how the S19j Pro, S19 XP and hydro variants differ in efficiency, price per terahash and resale risk.",
+    "keywords": [
+      "s19 miner",
+      "s19 mining",
+      "s19 xp",
+      "antminer s19 xp",
+      "antminer s19 price"
+    ],
+    "intro": [
+      "The S19 series is the most traded ASIC family on the used market, spanning everything from 29 J/TH workhorses to the 21.5 J/TH XP. Knowing which variant you are actually being offered is most of the buying skill.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S19 XP hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a Antminer S19 XP",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S19 XP stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Antminer S19 XP Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S19 XP ships rated 141 TH/s, 3,010 W at the wall, 21.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S19 XP before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S19 XP Electricity Looks Like",
+        "paras": [
+          "At 3,010 W continuous the Antminer S19 XP consumes roughly 72 kWh per day. At six cents per kilowatt hour that is about $4 of power per day; at twelve cents it doubles to roughly $9. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S19 XP still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S19 XP produces 72 to 80 dB continuously and dumps its entire 3.0 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer S19 XP Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S19 XP hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Antminer S19 XP typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S19 XP hashrate and power draw?",
+        "a": "The Antminer S19 XP is rated at 141 TH/s drawing 3,010 W at the wall, which is 21.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S19 XP use per day?",
+        "a": "Roughly 72 kWh per day of continuous operation — about $6 per day at eight cents per kilowatt hour, or $173 per month."
+      },
+      {
+        "q": "Is the Antminer S19 XP still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S19 XP at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S19 XP units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s19"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "s19-xp-hyd-255t-price-and-profitability-guide",
+    "title": "S19 XP Hyd 255T Price and Profitability Guide",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-08-01",
+    "description": "S19 XP Hyd 255T pricing and returns: 20.8 J/TH hydro economics, coolant costs, payback modelling and used-market risk.",
+    "keywords": [
+      "s19 xp hyd 255th",
+      "antminer s19 xp hyd 255th",
+      "bitmain antminer s19 xp hyd",
+      "bitmain antminer s19 xp hyd 255th",
+      "bitmain antminer s19 xp hyd 255th price",
+      "bitmain antminer s19 xp hydro 255th",
+      "antminer s19 xp hydro",
+      "s19 xp hydro"
+    ],
+    "intro": [
+      "The S19 XP Hyd 255T was the machine that made hydro mainstream. It still holds its rated 255 TH/s better than any air unit of its generation, which is exactly why used pricing has stayed firm.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S19 XP Hyd 255T hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S19 XP Hyd 255T Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S19 XP Hyd 255T ships rated 255 TH/s, 5,304 W at the wall, 20.8 J/TH efficiency, SHA-256 algorithm, hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled units hold their numbers because coolant temperature, not room temperature, sets the thermal ceiling. We bench every Antminer S19 XP Hyd 255T before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S19 XP Hyd 255T Electricity Looks Like",
+        "paras": [
+          "At 5,304 W continuous the Antminer S19 XP Hyd 255T consumes roughly 127 kWh per day. At six cents per kilowatt hour that is about $8 of power per day; at twelve cents it doubles to roughly $15. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S19 XP Hyd 255T still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer S19 XP Hyd 255T: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer S19 XP Hyd 255T Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S19 XP Hyd 255T hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S19 XP Hyd 255T",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S19 XP Hyd 255T stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The S21 Hyd 335T improves both efficiency and density; compare delivered price per terahash before choosing. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S19 XP Hyd 255T hashrate and power draw?",
+        "a": "The Antminer S19 XP Hyd 255T is rated at 255 TH/s drawing 5,304 W at the wall, which is 20.8 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S19 XP Hyd 255T use per day?",
+        "a": "Roughly 127 kWh per day of continuous operation — about $10 per day at eight cents per kilowatt hour, or $306 per month."
+      },
+      {
+        "q": "Is the Antminer S19 XP Hyd 255T still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S19 XP Hyd 255T at home?",
+        "a": "Only with a coolant loop and a heat-rejection path. Liquid units are quieter than air-cooled machines but require plumbing, filtration and leak monitoring, so they suit purpose-built rooms rather than a spare bedroom."
+      },
+      {
+        "q": "Do you sell used Antminer S19 XP Hyd 255T units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer S19 XP Hyd 255T?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s19",
+        "hyd",
+        "hydro"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "antminer-s17-and-s17-pro-used-buyers-guide",
+    "title": "Antminer S17 and S17 Pro Used Buyer's Guide",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-07-30",
+    "description": "Buying a used Antminer S17 or S17 Pro: known hashboard failures, the tests that catch them, fair pricing and honest expectations.",
+    "keywords": [
+      "antminer s17",
+      "bitmain antminer s17 pro",
+      "bitmain antminer s17pro",
+      "bitmain s17 for sale",
+      "bitmain s17 miner hosting"
+    ],
+    "intro": [
+      "The Antminer S17 generation is cheap for a reason: hashboard failures were common and repair parts are now scarce. Bought carefully at the right price, it still hashes; bought carelessly, it is a paperweight with a fan.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S17 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Used and Refurbished Antminer S17 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S17 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Antminer S17 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S17 ships rated 53-56 TH/s, 2,400 W at the wall, roughly 40-45 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S17 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S17 Electricity Looks Like",
+        "paras": [
+          "At 2,400 W continuous the Antminer S17 consumes roughly 58 kWh per day. At six cents per kilowatt hour that is about $3 of power per day; at twelve cents it doubles to roughly $7. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S17 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S17",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S17 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S17 produces 72 to 80 dB continuously and dumps its entire 2.4 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer S17: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S17 hashrate and power draw?",
+        "a": "The Antminer S17 is rated at 53-56 TH/s drawing 2,400 W at the wall, which is roughly 40-45 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S17 use per day?",
+        "a": "Roughly 58 kWh per day of continuous operation — about $5 per day at eight cents per kilowatt hour, or $138 per month."
+      },
+      {
+        "q": "Is the Antminer S17 still profitable?",
+        "a": "That depends on your power rate more than anything else. S17 and S17 Pro units need very cheap power and cheap acquisition; they are a repair-tolerant operator's machine."
+      },
+      {
+        "q": "Can I run a Antminer S17 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S17 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer S17?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s17",
+        "s19"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "antminer-s17-hosting-costs-and-requirements",
+    "title": "Antminer S17 Hosting: Costs and Requirements",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-07-28",
+    "description": "Hosting an Antminer S17: realistic per-kWh rates, uptime expectations, repair terms and when hosting old hardware stops making sense.",
+    "keywords": [
+      "antminer s17 hosting online",
+      "bitmain s17 miner hosting",
+      "antminer s17",
+      "hosting"
+    ],
+    "intro": [
+      "Hosting is often the only way an S17 earns anything: the noise is brutal, the efficiency is poor, and the machine needs cheap power to clear its own electricity bill. Here is how to judge whether a hosting deal actually works.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S17 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Antminer S17 typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      },
+      {
+        "h2": "Antminer S17 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S17 ships rated 53-56 TH/s, 2,400 W at the wall, roughly 40-45 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S17 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S17 Electricity Looks Like",
+        "paras": [
+          "At 2,400 W continuous the Antminer S17 consumes roughly 58 kWh per day. At six cents per kilowatt hour that is about $3 of power per day; at twelve cents it doubles to roughly $7. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S17 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A Antminer S17 needs a dedicated 120 V or 240 V circuit sized at 125 percent of continuous load — roughly 25 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S17",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S17 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer S17: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S17 hashrate and power draw?",
+        "a": "The Antminer S17 is rated at 53-56 TH/s drawing 2,400 W at the wall, which is roughly 40-45 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S17 use per day?",
+        "a": "Roughly 58 kWh per day of continuous operation — about $5 per day at eight cents per kilowatt hour, or $138 per month."
+      },
+      {
+        "q": "Is the Antminer S17 still profitable?",
+        "a": "That depends on your power rate more than anything else. S17 and S17 Pro units need very cheap power and cheap acquisition; they are a repair-tolerant operator's machine."
+      },
+      {
+        "q": "Can I run a Antminer S17 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S17 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s17",
+        "s19"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s15-for-sale-buying-legacy-bitmain-kit",
+    "title": "Antminer S15 For Sale: Buying Legacy Bitmain Kit",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-07-26",
+    "description": "Antminer S15 for sale: what 28 TH/s at 57 J/TH is really worth, what to test on arrival, and better ways to spend the same money.",
+    "keywords": [
+      "antminer s15 for sale",
+      "buy antminer s15",
+      "buy bitmain s15",
+      "antminer s15"
+    ],
+    "intro": [
+      "The Antminer S15 is genuine collector-and-heat-reuse territory now. If you want one — for a lab, a workshop heater or a learning platform — buy it with clear eyes about what 57 joules per terahash means for your power bill.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S15 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Used and Refurbished Antminer S15 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S15 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Antminer S15 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S15 ships rated 28 TH/s, 1,596 W at the wall, about 57 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S15 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S15 Electricity Looks Like",
+        "paras": [
+          "At 1,596 W continuous the Antminer S15 consumes roughly 38 kWh per day. At six cents per kilowatt hour that is about $2 of power per day; at twelve cents it doubles to roughly $5. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S15 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S15",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S15 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S15 produces 72 to 80 dB continuously and dumps its entire 1.6 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer S15: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S15 hashrate and power draw?",
+        "a": "The Antminer S15 is rated at 28 TH/s drawing 1,596 W at the wall, which is about 57 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S15 use per day?",
+        "a": "Roughly 38 kWh per day of continuous operation — about $3 per day at eight cents per kilowatt hour, or $92 per month."
+      },
+      {
+        "q": "Is the Antminer S15 still profitable?",
+        "a": "That depends on your power rate more than anything else. Only viable with free or heavily curtailed power, or as a heat source you were going to pay for anyway."
+      },
+      {
+        "q": "Can I run a Antminer S15 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S15 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer S15?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s17",
+        "s19"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "buy-antminer-s17-pricing-risks-and-safety-checks",
+    "title": "Buy Antminer S17: Pricing, Risks and Safety Checks",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-07-24",
+    "description": "How to buy an Antminer S17 without getting burned: seller vetting, load-test evidence, warranty language and fair price per terahash.",
+    "keywords": [
+      "buy antminer s17",
+      "buy bitmain s17 hardware",
+      "antminer s17",
+      "bitmain s17 for sale"
+    ],
+    "intro": [
+      "Buying an S17 is a due-diligence exercise, not a shopping trip. The hardware is old enough that condition varies wildly between units, and the difference between a good buy and a bad one is entirely in what you verify first.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S17 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a Antminer S17",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S17 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Antminer S17 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S17 ships rated 53-56 TH/s, 2,400 W at the wall, roughly 40-45 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S17 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S17 Electricity Looks Like",
+        "paras": [
+          "At 2,400 W continuous the Antminer S17 consumes roughly 58 kWh per day. At six cents per kilowatt hour that is about $3 of power per day; at twelve cents it doubles to roughly $7. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S17 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S17 produces 72 to 80 dB continuously and dumps its entire 2.4 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer S17 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S17 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Antminer S17 typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S17 hashrate and power draw?",
+        "a": "The Antminer S17 is rated at 53-56 TH/s drawing 2,400 W at the wall, which is roughly 40-45 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S17 use per day?",
+        "a": "Roughly 58 kWh per day of continuous operation — about $5 per day at eight cents per kilowatt hour, or $138 per month."
+      },
+      {
+        "q": "Is the Antminer S17 still profitable?",
+        "a": "That depends on your power rate more than anything else. S17 and S17 Pro units need very cheap power and cheap acquisition; they are a repair-tolerant operator's machine."
+      },
+      {
+        "q": "Can I run a Antminer S17 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S17 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "s17",
+        "s19"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "antminer-s19-price-guide-across-every-variant",
+    "title": "Antminer S19 Price Guide Across Every Variant",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-07-22",
+    "description": "Antminer S19 pricing by variant: S19, S19j Pro, S19 XP and hydro units in dollars per terahash, plus what moves the used market.",
+    "keywords": [
+      "antminer s19 price",
+      "s19 miner",
+      "antminer s19 xp",
+      "s19 xp"
+    ],
+    "intro": [
+      "S19 pricing spans a huge range because the family does: 29 J/TH base units and 21.5 J/TH XPs share a name and almost nothing else. Price per terahash next to efficiency is the only way to compare them fairly.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S19 XP hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S19 XP Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S19 XP ships rated 141 TH/s, 3,010 W at the wall, 21.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S19 XP before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S19 XP Electricity Looks Like",
+        "paras": [
+          "At 3,010 W continuous the Antminer S19 XP consumes roughly 72 kWh per day. At six cents per kilowatt hour that is about $4 of power per day; at twelve cents it doubles to roughly $9. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S19 XP still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer S19 XP: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer S19 XP Units: What Changes",
+        "paras": [
+          "Second-hand Antminer S19 XP hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S19 XP",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S19 XP stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Compare against the S21 at 17.5 J/TH and the WhatsMiner M60S at 18.5 J/TH; the newer machines cost more per terahash but survive difficulty growth longer. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S19 XP hashrate and power draw?",
+        "a": "The Antminer S19 XP is rated at 141 TH/s drawing 3,010 W at the wall, which is 21.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S19 XP use per day?",
+        "a": "Roughly 72 kWh per day of continuous operation — about $6 per day at eight cents per kilowatt hour, or $173 per month."
+      },
+      {
+        "q": "Is the Antminer S19 XP still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S19 XP at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S19 XP units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer S19 XP?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "s19"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "antminer-e11-ethash-asic-hardware-explained",
+    "title": "Antminer E11: Ethash ASIC Hardware Explained",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-07-20",
+    "description": "Antminer E11 explained: what Ethash ASICs mine after the Ethereum merge, realistic economics, and lower-variance alternatives.",
+    "keywords": [
+      "e11 antminer",
+      "antminer e11",
+      "ethash asic",
+      "antminer"
+    ],
+    "intro": [
+      "Ethash ASICs like the Antminer E-series lost their biggest market when Ethereum moved to proof of stake. They still hash Ethereum Classic and related chains, but the economics now demand a much harder look before you commit capital.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer E11 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer E11 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer E11 ships rated about 6 GH/s, 2,500 W at the wall, roughly 0.4 J/MH efficiency, Ethash / EtcHash algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer E11 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer E11 Sits in the Market",
+        "paras": [
+          "Efficiency (roughly 0.4 J/MH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "Ethash ASICs serve Ethereum Classic and similar chains after the Ethereum merge removed the largest market. Compare the Antminer E11 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer E11 Electricity Looks Like",
+        "paras": [
+          "At 2,500 W continuous the Antminer E11 consumes roughly 60 kWh per day. At six cents per kilowatt hour that is about $4 of power per day; at twelve cents it doubles to roughly $7. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer E11 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer E11 produces 72 to 80 dB continuously and dumps its entire 2.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer E11 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "If you want stable, liquid rewards, SHA-256 hardware pointed at bitcoin is the lower-risk deployment. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer E11 hashrate and power draw?",
+        "a": "The Antminer E11 is rated at about 6 GH/s drawing 2,500 W at the wall, which is roughly 0.4 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer E11 use per day?",
+        "a": "Roughly 60 kWh per day of continuous operation — about $5 per day at eight cents per kilowatt hour, or $144 per month."
+      },
+      {
+        "q": "Is the Antminer E11 still profitable?",
+        "a": "That depends on your power rate more than anything else. Ethash hardware lives or dies on Ethereum Classic economics — a much thinner market than bitcoin, so size positions accordingly."
+      },
+      {
+        "q": "Can I run a Antminer E11 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer E11 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-z11-and-z15-pro-equihash-miner-guide",
+    "title": "Antminer Z11 and Z15 Pro: Equihash Miner Guide",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-07-18",
+    "description": "Antminer Z11 and Z15 Pro guide: Equihash hashrate in kSol/s, power draw, which chains they mine and how to model returns.",
+    "keywords": [
+      "antminer z11",
+      "antminer z15 pro",
+      "equihash miner",
+      "antminer"
+    ],
+    "intro": [
+      "Equihash hardware is a different discipline from bitcoin mining: hashrate is measured in solutions per second, and returns depend on which Zcash-family chain you point at. The Z11 and Z15 Pro are the machines that market runs on.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer Z11 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer Z11 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer Z11 ships rated 135 kSol/s, 1,418 W at the wall, 10.5 W per kSol efficiency, Equihash algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer Z11 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer Z11 Sits in the Market",
+        "paras": [
+          "Efficiency (10.5 W per kSol) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "Z-series Equihash hardware serves Zcash-family chains; the Z11 is legacy but still runs. Compare the Antminer Z11 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer Z11 Electricity Looks Like",
+        "paras": [
+          "At 1,418 W continuous the Antminer Z11 consumes roughly 34 kWh per day. At six cents per kilowatt hour that is about $2 of power per day; at twelve cents it doubles to roughly $4. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer Z11 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer Z11 produces 72 to 80 dB continuously and dumps its entire 1.4 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer Z11 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The Z15 Pro at 840 kSol/s is the modern option if Equihash is the target. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer Z11 hashrate and power draw?",
+        "a": "The Antminer Z11 is rated at 135 kSol/s drawing 1,418 W at the wall, which is 10.5 W per kSol. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer Z11 use per day?",
+        "a": "Roughly 34 kWh per day of continuous operation — about $3 per day at eight cents per kilowatt hour, or $82 per month."
+      },
+      {
+        "q": "Is the Antminer Z11 still profitable?",
+        "a": "That depends on your power rate more than anything else. Equihash rewards depend heavily on the coin you point at, so model per-chain rather than in the abstract."
+      },
+      {
+        "q": "Can I run a Antminer Z11 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer Z11 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "z15",
+        "z11"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "antminer-d3-and-d9-x11-dash-mining-hardware",
+    "title": "Antminer D3 and D9: X11 Dash Mining Hardware",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-07-16",
+    "description": "Antminer D3 and D9 compared: X11 hashrate, efficiency in joules per gigahash, Dash economics and which one is worth buying.",
+    "keywords": [
+      "antminer d3",
+      "antminer d9",
+      "bitmain antminer d9",
+      "x11 miner"
+    ],
+    "intro": [
+      "The Antminer D-series mines X11 for Dash, and the gap between the legacy D3 and the current D9 is enormous — roughly 70 J/GH versus 1.6 J/GH. That single number decides which one belongs in a modern deployment.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer D9 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer D9 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer D9 ships rated 1,770 GH/s, 2,839 W at the wall, 1.6 J/GH efficiency, X11 (Dash) algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer D9 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer D9 Sits in the Market",
+        "paras": [
+          "Efficiency (1.6 J/GH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "The D9 is the current X11 machine and the only Dash miner worth deploying at commercial power rates. Compare the Antminer D9 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer D9 Electricity Looks Like",
+        "paras": [
+          "At 2,839 W continuous the Antminer D9 consumes roughly 68 kWh per day. At six cents per kilowatt hour that is about $4 of power per day; at twelve cents it doubles to roughly $8. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer D9 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer D9 produces 72 to 80 dB continuously and dumps its entire 2.8 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer D9 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Nothing in the X11 space competes; the real comparison is against SHA-256 hardware and Dash's own price risk. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer D9 hashrate and power draw?",
+        "a": "The Antminer D9 is rated at 1,770 GH/s drawing 2,839 W at the wall, which is 1.6 J/GH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer D9 use per day?",
+        "a": "Roughly 68 kWh per day of continuous operation — about $5 per day at eight cents per kilowatt hour, or $164 per month."
+      },
+      {
+        "q": "Is the Antminer D9 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer D9 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer D9 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "antminer-l3-guide-scrypt-mining-on-legacy-kit",
+    "title": "Antminer L3+ Guide: Scrypt Mining on Legacy Kit",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-07-14",
+    "description": "Antminer L3+ guide: 504 MH/s Scrypt output, real power draw, merged Litecoin and Dogecoin economics, and used-market pricing.",
+    "keywords": [
+      "antminer l3+",
+      "antminer l3",
+      "bitmain antminer l3+",
+      "scrypt miner"
+    ],
+    "intro": [
+      "The Antminer L3+ is the machine that taught most people what merged mining means. It is legacy hardware now, but its low wattage and simple servicing keep it in circulation for hobbyists and cheap-power operators.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer L3+ hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Used and Refurbished Antminer L3+ Units: What Changes",
+        "paras": [
+          "Second-hand Antminer L3+ hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Antminer L3+ Specifications That Actually Matter",
+        "paras": [
+          "The Antminer L3+ ships rated 504 MH/s, 800 W at the wall, 1.6 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer L3+ before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer L3+ Electricity Looks Like",
+        "paras": [
+          "At 800 W continuous the Antminer L3+ consumes roughly 19 kWh per day. At six cents per kilowatt hour that is about $1 of power per day; at twelve cents it doubles to roughly $2. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer L3+ still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer L3+",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer L3+ stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer L3+ produces 72 to 80 dB continuously and dumps its entire 0.8 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer L3+: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer L3+ hashrate and power draw?",
+        "a": "The Antminer L3+ is rated at 504 MH/s drawing 800 W at the wall, which is 1.6 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer L3+ use per day?",
+        "a": "Roughly 19 kWh per day of continuous operation — about $2 per day at eight cents per kilowatt hour, or $46 per month."
+      },
+      {
+        "q": "Is the Antminer L3+ still profitable?",
+        "a": "That depends on your power rate more than anything else. L3+ units mostly earn on merged Litecoin and Dogecoin rewards where power is very cheap."
+      },
+      {
+        "q": "Can I run a Antminer L3+ at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer L3+ units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer L3+?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "Used",
+      "terms": [
+        "l3",
+        "l7",
+        "scrypt"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "bitmain-l9-review-the-scrypt-efficiency-leader",
+    "title": "Bitmain L9 Review: The Scrypt Efficiency Leader",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-07-12",
+    "description": "Bitmain L9 review: 16 GH/s Scrypt at roughly 0.21 J/MH, how it beats the L7, and what Litecoin and Doge returns look like.",
+    "keywords": [
+      "bitmain l9",
+      "antminer l9",
+      "antminer l9 for sale",
+      "scrypt asic miner"
+    ],
+    "intro": [
+      "The Antminer L9 nearly halved the energy cost of Scrypt hashing compared with the L7. For anyone mining Litecoin with merged Dogecoin rewards, it is now the machine that sets the benchmark.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer L9 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer L9 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer L9 ships rated 16 GH/s, 3,450 W at the wall, about 0.21 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer L9 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer L9 Sits in the Market",
+        "paras": [
+          "Efficiency (about 0.21 J/MH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "The L9 is the current Scrypt efficiency leader and the machine to buy if Litecoin and Dogecoin are the target. Compare the Antminer L9 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer L9 Electricity Looks Like",
+        "paras": [
+          "At 3,450 W continuous the Antminer L9 consumes roughly 83 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer L9 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer L9 produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer L9 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Against the L7 the L9 cuts energy per megahash by roughly 40 percent for a higher capital cost. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer L9 hashrate and power draw?",
+        "a": "The Antminer L9 is rated at 16 GH/s drawing 3,450 W at the wall, which is about 0.21 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer L9 use per day?",
+        "a": "Roughly 83 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $199 per month."
+      },
+      {
+        "q": "Is the Antminer L9 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer L9 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer L9 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "l9",
+        "l7",
+        "scrypt"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-l9-for-sale-availability-and-pricing",
+    "title": "Antminer L9 For Sale: Availability and Pricing",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-07-10",
+    "description": "Antminer L9 for sale: current availability, what to pay per gigahash, batch differences and the checks that protect the order.",
+    "keywords": [
+      "antminer l9 for sale",
+      "bitmain l9",
+      "antminer l9",
+      "scrypt miners"
+    ],
+    "intro": [
+      "L9 supply has been tight since launch, which makes pricing noisy and scams more common. This guide covers how to price a unit per gigahash, what to demand from a seller, and how to verify a batch before you wire money.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer L9 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer L9 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer L9 ships rated 16 GH/s, 3,450 W at the wall, about 0.21 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer L9 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer L9 Electricity Looks Like",
+        "paras": [
+          "At 3,450 W continuous the Antminer L9 consumes roughly 83 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer L9 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer L9: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer L9 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer L9 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer L9",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer L9 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Against the L7 the L9 cuts energy per megahash by roughly 40 percent for a higher capital cost. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer L9 hashrate and power draw?",
+        "a": "The Antminer L9 is rated at 16 GH/s drawing 3,450 W at the wall, which is about 0.21 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer L9 use per day?",
+        "a": "Roughly 83 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $199 per month."
+      },
+      {
+        "q": "Is the Antminer L9 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer L9 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer L9 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer L9?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "l9",
+        "l7",
+        "scrypt"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "antminer-l7-for-sale-stock-pricing-and-checks",
+    "title": "Antminer L7 For Sale: Stock, Pricing and Checks",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-07-08",
+    "description": "Antminer L7 for sale: how to price 9,050 MH/s units, spot converted or repaired boards, and confirm real Scrypt output on arrival.",
+    "keywords": [
+      "antminer l7 for sale",
+      "bitmain antminer l7",
+      "antminer l7",
+      "scrypt miners"
+    ],
+    "intro": [
+      "The Antminer L7 is the most traded Scrypt machine in the world, which means both the best liquidity and the most misrepresented listings. Buying well is a matter of testing, not trust.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer L7 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer L7 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer L7 ships rated 9,050 MH/s, 3,425 W at the wall, 0.36 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer L7 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer L7 Electricity Looks Like",
+        "paras": [
+          "At 3,425 W continuous the Antminer L7 consumes roughly 82 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer L7 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the Antminer L7: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer L7 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer L7 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer L7",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer L7 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The L9 nearly halves energy per megahash; the L11 pushes further again. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer L7 hashrate and power draw?",
+        "a": "The Antminer L7 is rated at 9,050 MH/s drawing 3,425 W at the wall, which is 0.36 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer L7 use per day?",
+        "a": "Roughly 82 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $197 per month."
+      },
+      {
+        "q": "Is the Antminer L7 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer L7 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer L7 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a Antminer L7?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "l7",
+        "scrypt"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "antminer-l11-review-newest-scrypt-generation",
+    "title": "Antminer L11 Review: Newest Scrypt Generation",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-07-06",
+    "description": "Antminer L11 review: Scrypt hashrate and efficiency, how it compares with the L9 and L7, and when the upgrade pays for itself.",
+    "keywords": [
+      "antminer l11",
+      "antminer l9",
+      "scrypt asic miner",
+      "scrypt miners"
+    ],
+    "intro": [
+      "The Antminer L11 targets operators already running L7 and L9 fleets who want lower joules per megahash. The upgrade case is a spreadsheet exercise: the efficiency gain has to cover the capital cost inside your holding period.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer L11 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer L11 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer L11 ships rated about 16.5 GH/s, 3,500 W at the wall, roughly 0.21 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer L11 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer L11 Sits in the Market",
+        "paras": [
+          "Efficiency (roughly 0.21 J/MH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "The L11 is the newest Scrypt generation, aimed at operators who already run L7 and L9 fleets and want lower J/MH. Compare the Antminer L11 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer L11 Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the Antminer L11 consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer L11 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer L11 produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer L11 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Compare against the L9 on delivered price per gigahash — the two are close enough that price decides. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer L11 hashrate and power draw?",
+        "a": "The Antminer L11 is rated at about 16.5 GH/s drawing 3,500 W at the wall, which is roughly 0.21 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer L11 use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the Antminer L11 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer L11 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer L11 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "l9",
+        "l7",
+        "scrypt"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "antminer-ks5-pro-review-kaspa-mining-economics",
+    "title": "Antminer KS5 Pro Review: Kaspa Mining Economics",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-07-04",
+    "description": "Antminer KS5 Pro review: 21 TH/s on kHeavyHash, power draw, Kaspa network growth risk and how to model payback honestly.",
+    "keywords": [
+      "antminer ks5 pro",
+      "bitmain antminer ks5 pro",
+      "kaspa miner",
+      "antminer"
+    ],
+    "intro": [
+      "The Antminer KS5 Pro is the volume Kaspa machine. Kaspa mining rewards move faster than bitcoin's because the network is smaller and grows in bursts, so the modelling discipline matters more than the hardware choice.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer KS5 Pro hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer KS5 Pro Specifications That Actually Matter",
+        "paras": [
+          "The Antminer KS5 Pro ships rated 21 TH/s, 3,150 W at the wall, 150 J/TH on kHeavyHash efficiency, kHeavyHash (Kaspa) algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer KS5 Pro before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer KS5 Pro Sits in the Market",
+        "paras": [
+          "Efficiency (150 J/TH on kHeavyHash) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "Kaspa hardware is judged on joules per terahash within its own algorithm; the KS5 Pro is the volume choice. Compare the Antminer KS5 Pro against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer KS5 Pro Electricity Looks Like",
+        "paras": [
+          "At 3,150 W continuous the Antminer KS5 Pro consumes roughly 76 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $9. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer KS5 Pro still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer KS5 Pro produces 72 to 80 dB continuously and dumps its entire 3.1 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer KS5 Pro at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The KS7 raises hashrate per box; older KS3 units are cheaper but far less efficient. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer KS5 Pro hashrate and power draw?",
+        "a": "The Antminer KS5 Pro is rated at 21 TH/s drawing 3,150 W at the wall, which is 150 J/TH on kHeavyHash. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer KS5 Pro use per day?",
+        "a": "Roughly 76 kWh per day of continuous operation — about $6 per day at eight cents per kilowatt hour, or $181 per month."
+      },
+      {
+        "q": "Is the Antminer KS5 Pro still profitable?",
+        "a": "That depends on your power rate more than anything else. Kaspa mining economics move fast with network hashrate, so model payback monthly rather than annually."
+      },
+      {
+        "q": "Can I run a Antminer KS5 Pro at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer KS5 Pro units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "ks5",
+        "ks7",
+        "kaspa"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-ks7-guide-kaspa-hashrate-and-power",
+    "title": "Antminer KS7 Guide: Kaspa Hashrate and Power",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-07-02",
+    "description": "Antminer KS7 guide: top-end Kaspa hashrate, efficiency versus KS3 and KS5 Pro, power requirements and realistic return modelling.",
+    "keywords": [
+      "antminer ks7",
+      "bitmain antminer ks7",
+      "antminer ks5 pro",
+      "kaspa miner"
+    ],
+    "intro": [
+      "The Antminer KS7 is the flagship of Bitmain's Kaspa line and a large efficiency step over the KS3 and KS5 generations. That gap matters, because Kaspa's network hashrate has a habit of doubling faster than anyone plans for.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer KS7 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer KS7 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer KS7 ships rated up to 40 TH/s, 3,600 W at the wall, roughly 90 J/TH on kHeavyHash efficiency, kHeavyHash (Kaspa) algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer KS7 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Antminer KS7 Sits in the Market",
+        "paras": [
+          "Efficiency (roughly 90 J/TH on kHeavyHash) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "The KS7 is the top Kaspa box, with a large efficiency gain over the KS3 and KS5 generations. Compare the Antminer KS7 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer KS7 Electricity Looks Like",
+        "paras": [
+          "At 3,600 W continuous the Antminer KS7 consumes roughly 86 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer KS7 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer KS7 produces 72 to 80 dB continuously and dumps its entire 3.6 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer KS7 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The KS5 Pro is the cheaper entry; both should be modelled against Kaspa price volatility, not bitcoin's. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer KS7 hashrate and power draw?",
+        "a": "The Antminer KS7 is rated at up to 40 TH/s drawing 3,600 W at the wall, which is roughly 90 J/TH on kHeavyHash. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer KS7 use per day?",
+        "a": "Roughly 86 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $207 per month."
+      },
+      {
+        "q": "Is the Antminer KS7 still profitable?",
+        "a": "That depends on your power rate more than anything else. Kaspa network hashrate has grown quickly, so stress-test revenue against a doubling of network hashrate."
+      },
+      {
+        "q": "Can I run a Antminer KS7 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer KS7 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "ks5",
+        "ks7",
+        "kaspa"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "scrypt-asic-miner-guide-litecoin-and-doge-hardware",
+    "title": "Scrypt ASIC Miner Guide: Litecoin and Doge Hardware",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-06-30",
+    "description": "Scrypt ASIC miner guide: L7, L9, L11 and Elphapex DG units compared on joules per megahash, with merged Litecoin/Doge economics.",
+    "keywords": [
+      "scrypt miner",
+      "scrypt miners",
+      "scrypt asic miner",
+      "antminer l7",
+      "elphapex dg1"
+    ],
+    "intro": [
+      "Scrypt mining is a two-coin business: you hash Litecoin and receive merged Dogecoin rewards on the same work. That doubling of revenue is why Scrypt hardware holds value, and why joules per megahash is the number to shop on.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer L7 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a Antminer L7",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer L7 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Antminer L7 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer L7 ships rated 9,050 MH/s, 3,425 W at the wall, 0.36 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer L7 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer L7 Electricity Looks Like",
+        "paras": [
+          "At 3,425 W continuous the Antminer L7 consumes roughly 82 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer L7 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer L7 produces 72 to 80 dB continuously and dumps its entire 3.4 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Antminer L7 Units: What Changes",
+        "paras": [
+          "Second-hand Antminer L7 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Antminer L7 typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer L7 hashrate and power draw?",
+        "a": "The Antminer L7 is rated at 9,050 MH/s drawing 3,425 W at the wall, which is 0.36 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer L7 use per day?",
+        "a": "Roughly 82 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $197 per month."
+      },
+      {
+        "q": "Is the Antminer L7 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer L7 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer L7 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "terms": [
+        "l7",
+        "l9",
+        "scrypt",
+        "dg1"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "asic-miners-for-sale-how-to-buy-safely-in-2026",
+    "title": "ASIC Miners For Sale: How to Buy Safely in 2026",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-06-28",
+    "description": "ASIC miners for sale: how to vet sellers, read price per terahash, confirm bench-test evidence and avoid the common mining scams.",
+    "keywords": [
+      "asic miners for sale",
+      "purchase asic miner",
+      "mining rigs for sale",
+      "crypto mining rig for sale"
+    ],
+    "intro": [
+      "There are more ASIC miners for sale than there are honest listings. The hardware is fungible; the seller is not. This guide is the process we would use if we were the buyer rather than the supplier.",
+      "This guide is written from how we source, bench-test, deploy and service ASIC miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a ASIC miner",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our ASIC miner stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "ASIC miner Specifications That Actually Matter",
+        "paras": [
+          "The ASIC miner ships rated varies by model, 3,500 W at the wall, 12-40 J/TH depending on generation efficiency, SHA-256 and altcoin algorithms algorithm, air or hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every ASIC miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What ASIC miner Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the ASIC miner consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the ASIC miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled ASIC miner produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished ASIC miner Units: What Changes",
+        "paras": [
+          "Second-hand ASIC miner hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted ASIC miner typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the ASIC miner hashrate and power draw?",
+        "a": "The ASIC miner is rated at varies by model drawing 3,500 W at the wall, which is 12-40 J/TH depending on generation. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a ASIC miner use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the ASIC miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a ASIC miner at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used ASIC miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {},
+    "readMinutes": 7
+  },
+  {
+    "slug": "purchase-asic-miner-step-by-step-order-process",
+    "title": "Purchase ASIC Miner: Step-by-Step Order Process",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-06-26",
+    "description": "How to purchase an ASIC miner start to finish: shortlisting, quoting, payment, freight, customs and commissioning on arrival.",
+    "keywords": [
+      "purchase asic miner",
+      "asic miners for sale",
+      "buy asic miner"
+    ],
+    "intro": [
+      "Buying a miner is four decisions — model, price, payment and freight — and each one has a way to go wrong. Here is the order process we walk buyers through, from first quote to a hashing machine on your pool dashboard.",
+      "This guide is written from how we source, bench-test, deploy and service ASIC miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a ASIC miner",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our ASIC miner stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "ASIC miner Specifications That Actually Matter",
+        "paras": [
+          "The ASIC miner ships rated varies by model, 3,500 W at the wall, 12-40 J/TH depending on generation efficiency, SHA-256 and altcoin algorithms algorithm, air or hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every ASIC miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What ASIC miner Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the ASIC miner consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the ASIC miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled ASIC miner produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished ASIC miner Units: What Changes",
+        "paras": [
+          "Second-hand ASIC miner hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted ASIC miner typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the ASIC miner hashrate and power draw?",
+        "a": "The ASIC miner is rated at varies by model drawing 3,500 W at the wall, which is 12-40 J/TH depending on generation. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a ASIC miner use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the ASIC miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a ASIC miner at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used ASIC miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {},
+    "readMinutes": 8
+  },
+  {
+    "slug": "crypto-mining-rig-for-sale-complete-buyers-guide",
+    "title": "Crypto Mining Rig For Sale: Complete Buyer's Guide",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-06-24",
+    "description": "Crypto mining rigs for sale: ASIC versus GPU, which algorithms still pay, realistic budgets and how to buy tested hardware safely.",
+    "keywords": [
+      "crypto mining rig for sale",
+      "mining rigs for sale",
+      "asic miners for sale",
+      "purchase asic miner"
+    ],
+    "intro": [
+      "\"Mining rig\" covers two very different products: GPU builds for niche algorithms and ASICs purpose-built for one hash function. Picking the wrong category wastes more money than picking the wrong model within it.",
+      "This guide is written from how we source, bench-test, deploy and service ASIC miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a ASIC miner",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our ASIC miner stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "ASIC miner Specifications That Actually Matter",
+        "paras": [
+          "The ASIC miner ships rated varies by model, 3,500 W at the wall, 12-40 J/TH depending on generation efficiency, SHA-256 and altcoin algorithms algorithm, air or hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every ASIC miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What ASIC miner Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the ASIC miner consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the ASIC miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled ASIC miner produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished ASIC miner Units: What Changes",
+        "paras": [
+          "Second-hand ASIC miner hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted ASIC miner typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the ASIC miner hashrate and power draw?",
+        "a": "The ASIC miner is rated at varies by model drawing 3,500 W at the wall, which is 12-40 J/TH depending on generation. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a ASIC miner use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the ASIC miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a ASIC miner at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used ASIC miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {},
+    "readMinutes": 9
+  },
+  {
+    "slug": "mining-rigs-for-sale-new-and-used-inventory-guide",
+    "title": "Mining Rigs For Sale: New and Used Inventory Guide",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-06-22",
+    "description": "New versus used mining rigs: how to compare warranty, price per terahash and failure risk, and what to test on any second-hand unit.",
+    "keywords": [
+      "mining rigs for sale",
+      "crypto mining rig for sale",
+      "asic miners for sale",
+      "used bitcoin miners"
+    ],
+    "intro": [
+      "The choice between new and used mining hardware is a risk trade, not a quality trade. Used machines give you the best dollars per terahash on the market; new machines give you warranty coverage and a longer profitable life.",
+      "This guide is written from how we source, bench-test, deploy and service ASIC miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Used and Refurbished ASIC miner Units: What Changes",
+        "paras": [
+          "Second-hand ASIC miner hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "ASIC miner Specifications That Actually Matter",
+        "paras": [
+          "The ASIC miner ships rated varies by model, 3,500 W at the wall, 12-40 J/TH depending on generation efficiency, SHA-256 and altcoin algorithms algorithm, air or hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every ASIC miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What ASIC miner Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the ASIC miner consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the ASIC miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a ASIC miner",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our ASIC miner stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled ASIC miner produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the ASIC miner: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the ASIC miner hashrate and power draw?",
+        "a": "The ASIC miner is rated at varies by model drawing 3,500 W at the wall, which is 12-40 J/TH depending on generation. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a ASIC miner use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the ASIC miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a ASIC miner at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used ASIC miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a ASIC miner?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "condition": "Used"
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "1000-th-s-mining-building-a-petahash-bitcoin-setup",
+    "title": "1000 TH/s Mining: Building a Petahash Bitcoin Setup",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-06-20",
+    "description": "How to build a 1000 TH/s bitcoin mining setup: machine count, total kW, circuit planning, cooling choices and realistic budgets.",
+    "keywords": [
+      "1000th/s",
+      "1000 th/s miner",
+      "petahash mining",
+      "antminer s21"
+    ],
+    "intro": [
+      "One petahash — 1,000 TH/s — is a useful planning unit because it forces every real constraint into the open at once: five current-generation machines, roughly 17 to 20 kW of continuous load, and a heat problem you cannot ignore.",
+      "This guide is written from how we source, bench-test, deploy and service Antminer S21 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Antminer S21 Specifications That Actually Matter",
+        "paras": [
+          "The Antminer S21 ships rated 200 TH/s, 3,500 W at the wall, 17.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Antminer S21 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A Antminer S21 needs a dedicated 240 V circuit sized at 125 percent of continuous load — roughly 19 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Antminer S21 produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Antminer S21 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Antminer S21 Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the Antminer S21 consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Antminer S21 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Antminer S21",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Antminer S21 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Antminer S21 hashrate and power draw?",
+        "a": "The Antminer S21 is rated at 200 TH/s drawing 3,500 W at the wall, which is 17.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Antminer S21 use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the Antminer S21 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Antminer S21 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Antminer S21 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s21",
+        "s23"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "120v-bitcoin-miner-options-for-home-mining",
+    "title": "120V Bitcoin Miner Options for Home Mining",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-06-18",
+    "description": "120V bitcoin miner guide: which ASICs run on a standard household circuit, real hashrate limits, noise levels and safe wiring.",
+    "keywords": [
+      "120v bitcoin miner",
+      "home bitcoin miner",
+      "110v asic miner"
+    ],
+    "intro": [
+      "A standard North American 120 V, 15 A circuit safely supports about 1,400 W continuous. That ceiling — not the miner catalogue — is what determines your options when the machine has to plug into an ordinary wall socket.",
+      "This guide is written from how we source, bench-test, deploy and service 120 V bitcoin miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "120 V bitcoin miner Specifications That Actually Matter",
+        "paras": [
+          "The 120 V bitcoin miner ships rated typically 15-40 TH/s, 1,200 W at the wall, 30-80 J/TH depending on model efficiency, SHA-256 and altcoin algorithms algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every 120 V bitcoin miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A 120 V bitcoin miner needs a dedicated 120 V or 240 V circuit sized at 125 percent of continuous load — roughly 13 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled 120 V bitcoin miner produces 72 to 80 dB continuously and dumps its entire 1.2 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the 120 V bitcoin miner at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What 120 V bitcoin miner Electricity Looks Like",
+        "paras": [
+          "At 1,200 W continuous the 120 V bitcoin miner consumes roughly 29 kWh per day. At six cents per kilowatt hour that is about $2 of power per day; at twelve cents it doubles to roughly $3. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the 120 V bitcoin miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a 120 V bitcoin miner",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our 120 V bitcoin miner stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the 120 V bitcoin miner hashrate and power draw?",
+        "a": "The 120 V bitcoin miner is rated at typically 15-40 TH/s drawing 1,200 W at the wall, which is 30-80 J/TH depending on model. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a 120 V bitcoin miner use per day?",
+        "a": "Roughly 29 kWh per day of continuous operation — about $2 per day at eight cents per kilowatt hour, or $69 per month."
+      },
+      {
+        "q": "Is the 120 V bitcoin miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a 120 V bitcoin miner at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used 120 V bitcoin miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "maxPrice": 3000
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "power-miner-setup-psus-circuits-and-redundancy",
+    "title": "Power Miner Setup: PSUs, Circuits and Redundancy",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-06-16",
+    "description": "Powering ASIC miners properly: PSU selection, circuit sizing, breaker headroom, redundancy and the failures that cause downtime.",
+    "keywords": [
+      "power miner",
+      "speed miner",
+      "miner psu",
+      "asic power supply"
+    ],
+    "intro": [
+      "Power delivery causes more mining downtime than chips ever do. PSUs fail, breakers trip, connectors overheat — and every one of those events is preventable with sizing discipline and a spare on the shelf.",
+      "This guide is written from how we source, bench-test, deploy and service ASIC miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "ASIC miner Specifications That Actually Matter",
+        "paras": [
+          "The ASIC miner ships rated varies by model, 3,500 W at the wall, 12-40 J/TH depending on generation efficiency, SHA-256 and altcoin algorithms algorithm, air or hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every ASIC miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A ASIC miner needs a dedicated 240 V circuit sized at 125 percent of continuous load — roughly 19 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled ASIC miner produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the ASIC miner at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What ASIC miner Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the ASIC miner consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the ASIC miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a ASIC miner",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our ASIC miner stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the ASIC miner hashrate and power draw?",
+        "a": "The ASIC miner is rated at varies by model drawing 3,500 W at the wall, which is 12-40 J/TH depending on generation. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a ASIC miner use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the ASIC miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a ASIC miner at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used ASIC miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {},
+    "readMinutes": 9
+  },
+  {
+    "slug": "parallel-miner-psu-guide-breakout-boards-and-cables",
+    "title": "Parallel Miner PSU Guide: Breakout Boards and Cables",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-06-14",
+    "description": "Using server PSUs and breakout boards for ASIC miners: wiring in parallel safely, current ratings, cooling and failure modes.",
+    "keywords": [
+      "parallel miner",
+      "breakout board",
+      "server psu mining",
+      "power miner"
+    ],
+    "intro": [
+      "Server power supplies with breakout boards are the cheap route to serious wattage, and the fastest route to a melted connector if you get the current maths wrong. This guide covers doing it safely.",
+      "This guide is written from how we source, bench-test, deploy and service ASIC miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "ASIC miner Specifications That Actually Matter",
+        "paras": [
+          "The ASIC miner ships rated varies by model, 3,500 W at the wall, 12-40 J/TH depending on generation efficiency, SHA-256 and altcoin algorithms algorithm, air or hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every ASIC miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A ASIC miner needs a dedicated 240 V circuit sized at 125 percent of continuous load — roughly 19 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled ASIC miner produces 72 to 80 dB continuously and dumps its entire 3.5 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the ASIC miner at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What ASIC miner Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the ASIC miner consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the ASIC miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a ASIC miner",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our ASIC miner stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the ASIC miner hashrate and power draw?",
+        "a": "The ASIC miner is rated at varies by model drawing 3,500 W at the wall, which is 12-40 J/TH depending on generation. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a ASIC miner use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the ASIC miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a ASIC miner at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used ASIC miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {},
+    "readMinutes": 6
+  },
+  {
+    "slug": "whatsminer-m30s-and-m30s-used-buyers-guide",
+    "title": "WhatsMiner M30S and M30S++ Used Buyer's Guide",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-06-12",
+    "description": "Used WhatsMiner M30S and M30S++ guide: real efficiency, what to load-test, fair price per terahash and honest life expectancy.",
+    "keywords": [
+      "whatsminer m30s",
+      "whatsminer m30s++",
+      "microbt whatsminer",
+      "used bitcoin miners"
+    ],
+    "intro": [
+      "The WhatsMiner M30S family is the backbone of the value tier: rugged, serviceable and cheap per terahash. It is also the most common machine we are asked to inspect, so the failure patterns are well understood.",
+      "This guide is written from how we source, bench-test, deploy and service WhatsMiner M30S hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Used and Refurbished WhatsMiner M30S Units: What Changes",
+        "paras": [
+          "Second-hand WhatsMiner M30S hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "WhatsMiner M30S Specifications That Actually Matter",
+        "paras": [
+          "The WhatsMiner M30S ships rated 86-112 TH/s, 3,400 W at the wall, 31-38 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every WhatsMiner M30S before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What WhatsMiner M30S Electricity Looks Like",
+        "paras": [
+          "At 3,400 W continuous the WhatsMiner M30S consumes roughly 82 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the WhatsMiner M30S still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a WhatsMiner M30S",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our WhatsMiner M30S stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled WhatsMiner M30S produces 72 to 80 dB continuously and dumps its entire 3.4 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the WhatsMiner M30S: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the WhatsMiner M30S hashrate and power draw?",
+        "a": "The WhatsMiner M30S is rated at 86-112 TH/s drawing 3,400 W at the wall, which is 31-38 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a WhatsMiner M30S use per day?",
+        "a": "Roughly 82 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $196 per month."
+      },
+      {
+        "q": "Is the WhatsMiner M30S still profitable?",
+        "a": "That depends on your power rate more than anything else. M30S and M30S++ units make money under about five cents per kWh and are the classic cash-flow purchase."
+      },
+      {
+        "q": "Can I run a WhatsMiner M30S at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used WhatsMiner M30S units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a WhatsMiner M30S?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "MicroBT"
+      ],
+      "condition": "Used",
+      "terms": [
+        "m30",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "whatsminer-m50-and-m50s-review-26-j-th-value",
+    "title": "WhatsMiner M50 and M50S Review: 26 J/TH Value",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-06-10",
+    "description": "WhatsMiner M50 and M50S review: 126 TH/s at 26 J/TH, running costs, reliability record and how they compare with S19-class units.",
+    "keywords": [
+      "whatsminer m50s",
+      "whatsminer m50",
+      "m50s",
+      "microbt whatsminer m50s"
+    ],
+    "intro": [
+      "The WhatsMiner M50S is arguably the best value machine on the used market: efficient enough to survive difficulty growth, cheap enough to pay back before the next halving cycle reshapes the maths.",
+      "This guide is written from how we source, bench-test, deploy and service WhatsMiner M50S hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "WhatsMiner M50S Specifications That Actually Matter",
+        "paras": [
+          "The WhatsMiner M50S ships rated 126 TH/s, 3,276 W at the wall, 26 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every WhatsMiner M50S before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where WhatsMiner M50S Sits in the Market",
+        "paras": [
+          "Efficiency (26 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "At 26 J/TH the M50S is the sweet spot of the value tier — modern enough to survive difficulty growth, cheap enough to pay back fast. Compare the WhatsMiner M50S against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What WhatsMiner M50S Electricity Looks Like",
+        "paras": [
+          "At 3,276 W continuous the WhatsMiner M50S consumes roughly 79 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $9. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the WhatsMiner M50S still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled WhatsMiner M50S produces 72 to 80 dB continuously and dumps its entire 3.3 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the WhatsMiner M50S at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The M60S at 18.5 J/TH is the efficiency upgrade; the M30S++ is the cheaper entry. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the WhatsMiner M50S hashrate and power draw?",
+        "a": "The WhatsMiner M50S is rated at 126 TH/s drawing 3,276 W at the wall, which is 26 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a WhatsMiner M50S use per day?",
+        "a": "Roughly 79 kWh per day of continuous operation — about $6 per day at eight cents per kilowatt hour, or $189 per month."
+      },
+      {
+        "q": "Is the WhatsMiner M50S still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a WhatsMiner M50S at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used WhatsMiner M50S units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "MicroBT"
+      ],
+      "terms": [
+        "m50",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "microbt-whatsminer-m50s-profitability-model",
+    "title": "MicroBT WhatsMiner M50S Profitability Model",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-06-08",
+    "description": "A complete WhatsMiner M50S profitability model: revenue per TH, power cost by rate, stress tests and realistic payback windows.",
+    "keywords": [
+      "microbt whatsminer m50s",
+      "whatsminer m50s",
+      "m50s",
+      "whatsminer m50"
+    ],
+    "intro": [
+      "The M50S draws 3,276 W for 126 TH/s. Feed those two numbers into a hashprice model and you get a defensible answer on payback — no calculator required, and no optimistic assumptions hidden in someone else's spreadsheet.",
+      "This guide is written from how we source, bench-test, deploy and service WhatsMiner M50S hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "WhatsMiner M50S Specifications That Actually Matter",
+        "paras": [
+          "The WhatsMiner M50S ships rated 126 TH/s, 3,276 W at the wall, 26 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every WhatsMiner M50S before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What WhatsMiner M50S Electricity Looks Like",
+        "paras": [
+          "At 3,276 W continuous the WhatsMiner M50S consumes roughly 79 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $9. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the WhatsMiner M50S still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the WhatsMiner M50S: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where WhatsMiner M50S Sits in the Market",
+        "paras": [
+          "Efficiency (26 J/TH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "At 26 J/TH the M50S is the sweet spot of the value tier — modern enough to survive difficulty growth, cheap enough to pay back fast. Compare the WhatsMiner M50S against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted WhatsMiner M50S typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The M60S at 18.5 J/TH is the efficiency upgrade; the M30S++ is the cheaper entry. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the WhatsMiner M50S hashrate and power draw?",
+        "a": "The WhatsMiner M50S is rated at 126 TH/s drawing 3,276 W at the wall, which is 26 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a WhatsMiner M50S use per day?",
+        "a": "Roughly 79 kWh per day of continuous operation — about $6 per day at eight cents per kilowatt hour, or $189 per month."
+      },
+      {
+        "q": "Is the WhatsMiner M50S still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a WhatsMiner M50S at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used WhatsMiner M50S units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "MicroBT"
+      ],
+      "terms": [
+        "m50",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "whatsminer-m60s-price-and-efficiency-guide",
+    "title": "WhatsMiner M60S Price and Efficiency Guide",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-06-06",
+    "description": "WhatsMiner M60S pricing and efficiency: 186 TH/s at 18.5 J/TH, cost per terahash, and a straight comparison with the Antminer S21.",
+    "keywords": [
+      "whatsminer m60s",
+      "whatsminer m60s price",
+      "microbt m60s",
+      "whatsminer"
+    ],
+    "intro": [
+      "The WhatsMiner M60S is MicroBT's direct answer to the Antminer S21, and the two trade places depending on delivered pricing that week. Efficiency is close enough that price per terahash decides it.",
+      "This guide is written from how we source, bench-test, deploy and service WhatsMiner M60S hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "WhatsMiner M60S Specifications That Actually Matter",
+        "paras": [
+          "The WhatsMiner M60S ships rated 186 TH/s, 3,441 W at the wall, 18.5 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every WhatsMiner M60S before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What WhatsMiner M60S Electricity Looks Like",
+        "paras": [
+          "At 3,441 W continuous the WhatsMiner M60S consumes roughly 83 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the WhatsMiner M60S still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the WhatsMiner M60S: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished WhatsMiner M60S Units: What Changes",
+        "paras": [
+          "Second-hand WhatsMiner M60S hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a WhatsMiner M60S",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our WhatsMiner M60S stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Compare directly against the Antminer S21 at 17.5 J/TH on delivered price per terahash. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the WhatsMiner M60S hashrate and power draw?",
+        "a": "The WhatsMiner M60S is rated at 186 TH/s drawing 3,441 W at the wall, which is 18.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a WhatsMiner M60S use per day?",
+        "a": "Roughly 83 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $198 per month."
+      },
+      {
+        "q": "Is the WhatsMiner M60S still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a WhatsMiner M60S at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used WhatsMiner M60S units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      },
+      {
+        "q": "What should I pay for a WhatsMiner M60S?",
+        "a": "Work in dollars per terahash rather than absolute price: divide the delivered quote by rated hashrate and compare across listings. Ask our desk for current delivered pricing including freight so you can benchmark before committing capital."
+      }
+    ],
+    "match": {
+      "brands": [
+        "MicroBT"
+      ],
+      "terms": [
+        "m60",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "whatsminer-m63-hydro-and-m63s-deployment-guide",
+    "title": "WhatsMiner M63 Hydro and M63S+ Deployment Guide",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-06-04",
+    "description": "WhatsMiner M63 Hydro, M63S and M63S+ guide: per-box hashrate, coolant loop design, power requirements and monitoring practice.",
+    "keywords": [
+      "whatsminer m63 hydro",
+      "m63s whatsminer",
+      "whatsminer m63s+",
+      "whatsminer"
+    ],
+    "intro": [
+      "MicroBT's M63 hydro series brings 366 to 424 TH/s per chassis with the serviceability MicroBT is known for. As with any liquid machine, the loop you build around it determines whether you ever see the rated numbers.",
+      "This guide is written from how we source, bench-test, deploy and service WhatsMiner M63 Hydro hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "WhatsMiner M63 Hydro Specifications That Actually Matter",
+        "paras": [
+          "The WhatsMiner M63 Hydro ships rated 366-390 TH/s, 7,215 W at the wall, 18-18.5 J/TH efficiency, SHA-256 algorithm, hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled units hold their numbers because coolant temperature, not room temperature, sets the thermal ceiling. We bench every WhatsMiner M63 Hydro before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A WhatsMiner M63 Hydro needs a dedicated 240 V circuit sized at 125 percent of continuous load — roughly 38 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "Liquid cooling changes the siting conversation entirely. A WhatsMiner M63 Hydro rejects its heat into a coolant loop, so the room stays quiet — typically 45 to 55 dB from pumps — but you now own a plumbing project: dry cooler or radiator, pump, filtration, coolant chemistry and leak detection. Budget for that infrastructure before the machines land.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the WhatsMiner M63 Hydro at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What WhatsMiner M63 Hydro Electricity Looks Like",
+        "paras": [
+          "At 7,215 W continuous the WhatsMiner M63 Hydro consumes roughly 173 kWh per day. At six cents per kilowatt hour that is about $10 of power per day; at twelve cents it doubles to roughly $21. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the WhatsMiner M63 Hydro still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a WhatsMiner M63 Hydro",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our WhatsMiner M63 Hydro stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the WhatsMiner M63 Hydro hashrate and power draw?",
+        "a": "The WhatsMiner M63 Hydro is rated at 366-390 TH/s drawing 7,215 W at the wall, which is 18-18.5 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a WhatsMiner M63 Hydro use per day?",
+        "a": "Roughly 173 kWh per day of continuous operation — about $14 per day at eight cents per kilowatt hour, or $416 per month."
+      },
+      {
+        "q": "Is the WhatsMiner M63 Hydro still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a WhatsMiner M63 Hydro at home?",
+        "a": "Only with a coolant loop and a heat-rejection path. Liquid units are quieter than air-cooled machines but require plumbing, filtration and leak monitoring, so they suit purpose-built rooms rather than a spare bedroom."
+      },
+      {
+        "q": "Do you sell used WhatsMiner M63 Hydro units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "MicroBT"
+      ],
+      "terms": [
+        "m6",
+        "hydro",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "whatsminer-tool-guide-firmware-config-and-batches",
+    "title": "WhatsMiner Tool Guide: Firmware, Config and Batches",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-06-02",
+    "description": "Using the WhatsMiner tool: batch IP configuration, firmware upgrades, config backups and safe tuning for MicroBT fleets.",
+    "keywords": [
+      "whatsminer tool",
+      "whatsminer firmware",
+      "whatsminer config",
+      "microbt whatsminer"
+    ],
+    "intro": [
+      "MicroBT's WhatsMiner tool is how you configure a fleet without visiting each machine: batch IP assignment, firmware pushes, config backups and log collection. Used carelessly it is also how you brick twenty units at once.",
+      "This guide is written from how we source, bench-test, deploy and service WhatsMiner M50S hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "WhatsMiner M50S Specifications That Actually Matter",
+        "paras": [
+          "The WhatsMiner M50S ships rated 126 TH/s, 3,276 W at the wall, 26 J/TH efficiency, SHA-256 algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every WhatsMiner M50S before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A WhatsMiner M50S needs a dedicated 240 V circuit sized at 125 percent of continuous load — roughly 18 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled WhatsMiner M50S produces 72 to 80 dB continuously and dumps its entire 3.3 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the WhatsMiner M50S at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What WhatsMiner M50S Electricity Looks Like",
+        "paras": [
+          "At 3,276 W continuous the WhatsMiner M50S consumes roughly 79 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $9. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the WhatsMiner M50S still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a WhatsMiner M50S",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our WhatsMiner M50S stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the WhatsMiner M50S hashrate and power draw?",
+        "a": "The WhatsMiner M50S is rated at 126 TH/s drawing 3,276 W at the wall, which is 26 J/TH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a WhatsMiner M50S use per day?",
+        "a": "Roughly 79 kWh per day of continuous operation — about $6 per day at eight cents per kilowatt hour, or $189 per month."
+      },
+      {
+        "q": "Is the WhatsMiner M50S still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a WhatsMiner M50S at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used WhatsMiner M50S units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "brands": [
+        "MicroBT"
+      ],
+      "terms": [
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "elphapex-dg1-review-scrypt-hashrate-and-power",
+    "title": "Elphapex DG1 Review: Scrypt Hashrate and Power",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-05-31",
+    "description": "Elphapex DG1 review: 11 GH/s Scrypt output, power draw, how it stacks up against the Antminer L7, and service considerations.",
+    "keywords": [
+      "elphapex dg1",
+      "elphapex",
+      "scrypt asic miner",
+      "scrypt miner"
+    ],
+    "intro": [
+      "Elphapex arrived in the Scrypt market with hardware that genuinely competes with Bitmain's L-series on efficiency and undercuts it on price. The DG1 is where that story starts.",
+      "This guide is written from how we source, bench-test, deploy and service Elphapex DG1 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Elphapex DG1 Specifications That Actually Matter",
+        "paras": [
+          "The Elphapex DG1 ships rated 11 GH/s, 3,400 W at the wall, about 0.31 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Elphapex DG1 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Elphapex DG1 Sits in the Market",
+        "paras": [
+          "Efficiency (about 0.31 J/MH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "Elphapex entered the Scrypt market with efficiency competitive with the Antminer L7 and aggressive pricing. Compare the Elphapex DG1 against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Elphapex DG1 Electricity Looks Like",
+        "paras": [
+          "At 3,400 W continuous the Elphapex DG1 consumes roughly 82 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Elphapex DG1 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Elphapex DG1 produces 72 to 80 dB continuously and dumps its entire 3.4 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Elphapex DG1 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The Antminer L7 and L9 are the benchmarks; compare on joules per megahash and on service availability. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Elphapex DG1 hashrate and power draw?",
+        "a": "The Elphapex DG1 is rated at 11 GH/s drawing 3,400 W at the wall, which is about 0.31 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Elphapex DG1 use per day?",
+        "a": "Roughly 82 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $196 per month."
+      },
+      {
+        "q": "Is the Elphapex DG1 still profitable?",
+        "a": "That depends on your power rate more than anything else. Scrypt economics are driven by merged Litecoin and Dogecoin rewards, so model both chains together."
+      },
+      {
+        "q": "Can I run a Elphapex DG1 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Elphapex DG1 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "terms": [
+        "dg1",
+        "scrypt",
+        "l7"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "elphapex-dg2-dg2-and-dg2-mini-compared",
+    "title": "Elphapex DG2, DG2+ and DG2 Mini Compared",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-05-29",
+    "description": "Elphapex DG2 family compared: DG2, DG2+ and DG2 Mini on Scrypt hashrate, joules per megahash, noise and total cost of ownership.",
+    "keywords": [
+      "elphapex dg2",
+      "elphapex dg2+",
+      "elphapex dg2 mini",
+      "elphapex"
+    ],
+    "intro": [
+      "The DG2 generation split into three machines aimed at different sites: full-size units for warehouses, and the Mini for people who need Scrypt hashrate without a dedicated building.",
+      "This guide is written from how we source, bench-test, deploy and service Elphapex DG2 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Buying Checklist for a Elphapex DG2",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Elphapex DG2 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      },
+      {
+        "h2": "Elphapex DG2 Specifications That Actually Matter",
+        "paras": [
+          "The Elphapex DG2 ships rated up to 19 GH/s, 3,800 W at the wall, roughly 0.2 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Elphapex DG2 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Elphapex DG2 Electricity Looks Like",
+        "paras": [
+          "At 3,800 W continuous the Elphapex DG2 consumes roughly 91 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $11. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Elphapex DG2 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Elphapex DG2 produces 72 to 80 dB continuously and dumps its entire 3.8 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Used and Refurbished Elphapex DG2 Units: What Changes",
+        "paras": [
+          "Second-hand Elphapex DG2 hardware is where the best dollars-per-terahash usually live, but the risk profile shifts to you. Insist on a load test at full power for at least an hour, verify all hashboards report the expected chip count, check for corrosion on the board edges and PSU connectors, and look for replaced fans or reflowed chips — signs the unit has been repaired before.",
+          "Price used units at a level you would be comfortable writing off inside twelve to eighteen months. Every refurbished machine we sell is stripped, cleaned, load-tested and re-benched, and we publish the measured numbers rather than the datasheet numbers so you can price the risk honestly."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted Elphapex DG2 typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Elphapex DG2 hashrate and power draw?",
+        "a": "The Elphapex DG2 is rated at up to 19 GH/s drawing 3,800 W at the wall, which is roughly 0.2 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Elphapex DG2 use per day?",
+        "a": "Roughly 91 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $219 per month."
+      },
+      {
+        "q": "Is the Elphapex DG2 still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a Elphapex DG2 at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Elphapex DG2 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "terms": [
+        "dg2",
+        "scrypt",
+        "l9"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "elphapex-dg-home-1-quiet-scrypt-home-mining",
+    "title": "Elphapex DG Home 1: Quiet Scrypt Home Mining",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-05-27",
+    "description": "Elphapex DG Home 1 guide: Scrypt mining at household power and noise levels, real returns, siting tips and honest expectations.",
+    "keywords": [
+      "elphapex dg home 1",
+      "elphapex dg1",
+      "home scrypt miner",
+      "elphapex"
+    ],
+    "intro": [
+      "Home-format miners exist because most people cannot live with 80 decibels and a 3.4 kW space heater. The DG Home 1 trades hashrate for a machine your household will actually tolerate.",
+      "This guide is written from how we source, bench-test, deploy and service Elphapex DG Home 1 hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Elphapex DG Home 1 Specifications That Actually Matter",
+        "paras": [
+          "The Elphapex DG Home 1 ships rated about 2.4 GH/s, 700 W at the wall, roughly 0.29 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Elphapex DG Home 1 before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A Elphapex DG Home 1 needs a dedicated 120 V or 240 V circuit sized at 125 percent of continuous load — roughly 8 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Elphapex DG Home 1 produces 72 to 80 dB continuously and dumps its entire 0.7 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Elphapex DG Home 1 at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Elphapex DG Home 1 Electricity Looks Like",
+        "paras": [
+          "At 700 W continuous the Elphapex DG Home 1 consumes roughly 17 kWh per day. At six cents per kilowatt hour that is about $1 of power per day; at twelve cents it doubles to roughly $2. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Elphapex DG Home 1 still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Elphapex DG Home 1",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Elphapex DG Home 1 stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Elphapex DG Home 1 hashrate and power draw?",
+        "a": "The Elphapex DG Home 1 is rated at about 2.4 GH/s drawing 700 W at the wall, which is roughly 0.29 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Elphapex DG Home 1 use per day?",
+        "a": "Roughly 17 kWh per day of continuous operation — about $1 per day at eight cents per kilowatt hour, or $40 per month."
+      },
+      {
+        "q": "Is the Elphapex DG Home 1 still profitable?",
+        "a": "That depends on your power rate more than anything else. Home units rarely produce large profit; they earn modest rewards while being livable, which is the point."
+      },
+      {
+        "q": "Can I run a Elphapex DG Home 1 at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Elphapex DG Home 1 units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "maxPrice": 3000,
+      "terms": [
+        "scrypt",
+        "dg"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "goldshell-mini-doge-iii-review-for-home-miners",
+    "title": "Goldshell Mini Doge III Review for Home Miners",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-05-25",
+    "description": "Goldshell Mini Doge III review: Scrypt hashrate at 700 W, noise levels, real Dogecoin and Litecoin returns, and who it suits.",
+    "keywords": [
+      "goldshell mini doge iii",
+      "goldshell mini doge",
+      "home doge miner",
+      "goldshell"
+    ],
+    "intro": [
+      "The Goldshell Mini Doge III is the friendliest way to actually mine at home: a few hundred watts, tolerable noise, and merged Litecoin and Dogecoin rewards that make the hobby feel real.",
+      "This guide is written from how we source, bench-test, deploy and service Goldshell Mini Doge III hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Goldshell Mini Doge III Specifications That Actually Matter",
+        "paras": [
+          "The Goldshell Mini Doge III ships rated about 6.4 GH/s, 700 W at the wall, roughly 0.11 J/MH efficiency, Scrypt algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Goldshell Mini Doge III before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Goldshell Mini Doge III Sits in the Market",
+        "paras": [
+          "Efficiency (roughly 0.11 J/MH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "Goldshell's Mini Doge line is built for desks and living rooms: low wattage, tolerable noise, real Scrypt rewards. Compare the Goldshell Mini Doge III against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Goldshell Mini Doge III Electricity Looks Like",
+        "paras": [
+          "At 700 W continuous the Goldshell Mini Doge III consumes roughly 17 kWh per day. At six cents per kilowatt hour that is about $1 of power per day; at twelve cents it doubles to roughly $2. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Goldshell Mini Doge III still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Goldshell Mini Doge III produces 72 to 80 dB continuously and dumps its entire 0.7 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Goldshell Mini Doge III at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The Elphapex DG Home 1 is the closest rival; step up to an Antminer L7 or L9 if you have a garage. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Goldshell Mini Doge III hashrate and power draw?",
+        "a": "The Goldshell Mini Doge III is rated at about 6.4 GH/s drawing 700 W at the wall, which is roughly 0.11 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Goldshell Mini Doge III use per day?",
+        "a": "Roughly 17 kWh per day of continuous operation — about $1 per day at eight cents per kilowatt hour, or $40 per month."
+      },
+      {
+        "q": "Is the Goldshell Mini Doge III still profitable?",
+        "a": "That depends on your power rate more than anything else. Expect pocket-money returns rather than fleet economics — this is the friendliest way to actually mine at home."
+      },
+      {
+        "q": "Can I run a Goldshell Mini Doge III at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Goldshell Mini Doge III units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "maxPrice": 2500,
+      "terms": [
+        "goldshell",
+        "scrypt",
+        "doge"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "goldshell-e-ae1m-and-ae-max-alephium-miner-guide",
+    "title": "Goldshell E-AE1M and AE Max: Alephium Miner Guide",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-05-23",
+    "description": "Goldshell E-AE1M and AE Max compared: Blake3 hashrate for Alephium, power draw, market liquidity risk and return modelling.",
+    "keywords": [
+      "goldshell e-ae1m",
+      "goldshell ae max",
+      "alephium miner",
+      "goldshell"
+    ],
+    "intro": [
+      "Alephium mining is a small-network game: rewards can be excellent and can reprice in a week. The Goldshell E-AE1M and AE Max are the hardware most operators use to take that bet.",
+      "This guide is written from how we source, bench-test, deploy and service Goldshell E-AE1M hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Goldshell E-AE1M Specifications That Actually Matter",
+        "paras": [
+          "The Goldshell E-AE1M ships rated about 5.4 GH/s, 750 W at the wall, roughly 0.14 J/MH efficiency, Blake3 (Alephium) algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Goldshell E-AE1M before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where Goldshell E-AE1M Sits in the Market",
+        "paras": [
+          "Efficiency (roughly 0.14 J/MH) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "Alephium hardware is a small, fast-moving market — efficiency matters, but coin liquidity matters more. Compare the Goldshell E-AE1M against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Goldshell E-AE1M Electricity Looks Like",
+        "paras": [
+          "At 750 W continuous the Goldshell E-AE1M consumes roughly 18 kWh per day. At six cents per kilowatt hour that is about $1 of power per day; at twelve cents it doubles to roughly $2. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Goldshell E-AE1M still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Goldshell E-AE1M produces 72 to 80 dB continuously and dumps its entire 0.8 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Goldshell E-AE1M at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "The AE Max raises hashrate per box; bitcoin SHA-256 hardware is the lower-variance alternative. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Goldshell E-AE1M hashrate and power draw?",
+        "a": "The Goldshell E-AE1M is rated at about 5.4 GH/s drawing 750 W at the wall, which is roughly 0.14 J/MH. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Goldshell E-AE1M use per day?",
+        "a": "Roughly 18 kWh per day of continuous operation — about $1 per day at eight cents per kilowatt hour, or $43 per month."
+      },
+      {
+        "q": "Is the Goldshell E-AE1M still profitable?",
+        "a": "That depends on your power rate more than anything else. Alephium rewards can move violently with network hashrate; treat this as a speculative allocation."
+      },
+      {
+        "q": "Can I run a Goldshell E-AE1M at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Goldshell E-AE1M units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "terms": [
+        "goldshell"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "goldshell-byte-and-xt-card-accessories-explained",
+    "title": "Goldshell Byte and XT Card: Accessories Explained",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-05-21",
+    "description": "Goldshell Byte and XT card explained: what each accessory does, how to set one up, firmware notes and troubleshooting basics.",
+    "keywords": [
+      "goldshell byte",
+      "goldshell xt card",
+      "goldshell accessories",
+      "goldshell"
+    ],
+    "intro": [
+      "Goldshell's ecosystem includes small add-ons — the Byte and the XT card among them — that confuse first-time buyers. Here is what they are for, how to set them up, and when you actually need one.",
+      "This guide is written from how we source, bench-test, deploy and service Goldshell miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "Goldshell miner Specifications That Actually Matter",
+        "paras": [
+          "The Goldshell miner ships rated model dependent, 900 W at the wall, model dependent efficiency, Blake3 (Alephium) algorithm, air cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every Goldshell miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Circuits, PSUs and Electrical Requirements",
+        "paras": [
+          "A Goldshell miner needs a dedicated 120 V or 240 V circuit sized at 125 percent of continuous load — roughly 10 A minimum. Never share a circuit between two full-size ASICs, and never run one through an extension lead. Miners run flat out 24 hours a day, which is exactly the duty cycle domestic wiring is not designed for.",
+          "Use the manufacturer PSU where one is supplied and keep a spare on the shelf; power supplies are the most common single point of failure in a mining fleet, ahead of hashboards and control boards. If you are converting to server PSUs or a breakout board, size for 20 percent headroom and check that the DC cabling is rated for the sustained current, not the peak."
+        ]
+      },
+      {
+        "h2": "Heat, Noise and Where the Machine Can Live",
+        "paras": [
+          "An air-cooled Goldshell miner produces 72 to 80 dB continuously and dumps its entire 0.9 kW into the room as heat. That rules out living spaces without a garage, outbuilding, ducted enclosure or hosting contract. Noise, not electricity, is the reason most home mining purchases get resold within a month.",
+          "Whatever the cooling method, intake temperature is the metric to instrument. Log intake, exhaust and chip temperatures, alarm on 75 degrees Celsius chip temperature, and clean filters on a fixed schedule. Thermal discipline is the difference between a five-year machine and an eighteen-month one."
+        ]
+      },
+      {
+        "h2": "Firmware, Tuning and Pool Configuration",
+        "paras": [
+          "Keep firmware on a known-good stock release unless you have a specific reason to change. Vendor firmware includes thermal protections that custom builds sometimes relax, and a machine that hashes five percent faster while running ten degrees hotter is a bad trade over three years. Take a config backup before any flash, and never flash a fleet without testing one unit first.",
+          "Point the Goldshell miner at two or three pools in priority order so a pool outage does not cost you a day of hashrate. Set worker names per machine, monitor accepted versus rejected shares, and alarm on any unit that drops below 95 percent of its benchmarked hashrate — that is usually a failing hashboard long before it fails outright."
+        ]
+      },
+      {
+        "h2": "Running Cost: What Goldshell miner Electricity Looks Like",
+        "paras": [
+          "At 900 W continuous the Goldshell miner consumes roughly 22 kWh per day. At six cents per kilowatt hour that is about $1 of power per day; at twelve cents it doubles to roughly $3. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the Goldshell miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for a Goldshell miner",
+        "paras": [
+          "Ask five questions before money moves: what the measured hashrate and wall draw were on the test bench, which firmware version is installed, whether hashboards are original or replacements, what the warranty covers in writing, and who pays return shipping if the unit arrives dead. A supplier that answers all five in writing is a supplier worth buying from.",
+          "Refuse pressure tactics, avoid escrow-free peer-to-peer deals for machines you cannot inspect, and confirm delivered pricing including freight and duty. Our Goldshell miner stock is bench-tested and hashrate-verified from our Hong Kong facility, with worldwide shipping to the USA, Canada and Europe and written warranty terms."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the Goldshell miner hashrate and power draw?",
+        "a": "The Goldshell miner is rated at model dependent drawing 900 W at the wall, which is model dependent. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a Goldshell miner use per day?",
+        "a": "Roughly 22 kWh per day of continuous operation — about $2 per day at eight cents per kilowatt hour, or $52 per month."
+      },
+      {
+        "q": "Is the Goldshell miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model Alephium revenue weekly — small networks reprice risk far faster than bitcoin does."
+      },
+      {
+        "q": "Can I run a Goldshell miner at home?",
+        "a": "Only with a dedicated 120 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used Goldshell miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {
+      "terms": [
+        "goldshell"
+      ]
+    },
+    "readMinutes": 6
+  },
+  {
+    "slug": "cloudmine-vs-owning-hardware-which-pays-more",
+    "title": "Cloudmine vs Owning Hardware: Which Pays More?",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-05-19",
+    "description": "Cloud mining versus owning ASIC hardware: fee structures, counterparty risk, hosting as the middle ground, and the real math.",
+    "keywords": [
+      "cloudmine",
+      "cloud mining",
+      "hosting",
+      "asic miners for sale"
+    ],
+    "intro": [
+      "Cloud mining sells hashrate without hardware; hosting rents you space and power for machines you own. The difference matters, because one leaves you holding an asset and the other leaves you holding a contract.",
+      "This guide is written from how we source, bench-test, deploy and service ASIC miner hardware at our Hong Kong facility. Every recommendation links to machines we actually hold in stock, so you can go from research to a shortlist and a delivered price in one step — with shipping to the USA, Canada and Europe."
+    ],
+    "sections": [
+      {
+        "h2": "ASIC miner Specifications That Actually Matter",
+        "paras": [
+          "The ASIC miner ships rated varies by model, 3,500 W at the wall, 12-40 J/TH depending on generation efficiency, SHA-256 and altcoin algorithms algorithm, air or hydro cooling. Those four numbers — hashrate, wall draw, efficiency and cooling method — decide everything else: what circuit you need, how much heat the room absorbs, and how the machine behaves when network difficulty climbs. Everything a spec sheet lists beyond that is packaging.",
+          "Treat the rated figures as a ceiling rather than a promise. Air-cooled units typically settle two to five percent below datasheet output once intake air passes 30 degrees Celsius, while liquid-cooled siblings hold their numbers far more consistently. We bench every ASIC miner before it ships and record the actual hashrate and wall draw on the test sheet that travels with the unit."
+        ]
+      },
+      {
+        "h2": "Running Cost: What ASIC miner Electricity Looks Like",
+        "paras": [
+          "At 3,500 W continuous the ASIC miner consumes roughly 84 kWh per day. At six cents per kilowatt hour that is about $5 of power per day; at twelve cents it doubles to roughly $10. Multiply by 30 and you have the only fixed cost that never negotiates.",
+          "Because power is the dominant cost, your electricity rate — not the purchase price — decides whether this machine belongs in your fleet. Run the numbers with hashprice cut by 30 percent before you buy. If the ASIC miner still clears its own power bill in that stressed scenario, the purchase survives a bad quarter; if it does not, you are betting on price appreciation rather than on mining."
+        ]
+      },
+      {
+        "h2": "Payback Model: How to Calculate It Yourself",
+        "paras": [
+          "Payback in months equals delivered machine cost divided by monthly net profit, where net profit is mining revenue minus electricity. Revenue depends on hashprice, which moves daily with bitcoin price and network difficulty; electricity is fixed and known. Build the model in a spreadsheet with hashprice as the single variable and you will never be surprised by a market move again.",
+          "Model three scenarios for the ASIC miner: current hashprice, hashprice down 30 percent, and hashprice down 50 percent. If the middle case still shows positive cash flow, the purchase is defensible. If only the optimistic case works, either negotiate the price down or buy fewer units and keep the reserve."
+        ]
+      },
+      {
+        "h2": "Efficiency in Context: Where ASIC miner Sits in the Market",
+        "paras": [
+          "Efficiency (12-40 J/TH depending on generation) is what determines survival through difficulty growth. Machines above roughly 30 J/TH are cash-flow plays for operators with very cheap or curtailed power. Units between 18 and 28 J/TH are the value tier. Anything under 16 J/TH is current-generation hardware you can plan a multi-year deployment around.",
+          "Across the market, machines under 16 J/TH are current-generation, 18-28 J/TH is the value tier, and above 30 J/TH needs very cheap power. Compare the ASIC miner against alternatives on delivered price per terahash next to efficiency: paying more per terahash is only rational when the extra capital buys materially lower energy draw for the same output."
+        ]
+      },
+      {
+        "h2": "Hosting vs Running It Yourself",
+        "paras": [
+          "Hosting makes sense when your own power is expensive, your site cannot absorb the noise and heat, or you want more machines than your electrical service supports. A hosted ASIC miner typically bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs.",
+          "Run the comparison honestly: hosting rate versus your delivered residential or commercial rate, plus the value of your own time and the capital you would spend on electrical work. If hosting costs less than three cents per kWh above your own rate, the operational relief is usually worth it — especially for older hardware where uptime discipline decides profitability."
+        ]
+      },
+      {
+        "h2": "Alternatives Worth Comparing",
+        "paras": [
+          "Shortlist the Antminer S21 family, MicroBT M60/M6x series and used S19-class hardware, then compare delivered price per terahash. Do not compare on headline hashrate alone; two machines with the same output can differ by 40 percent in electricity cost, which is the entire margin at most power rates.",
+          "Our sales desk will model two or three candidates against your actual electricity rate, available amperage and budget, then quote delivered pricing so you can compare like with like. That takes an afternoon of spreadsheet work off your plate and usually changes the shortlist."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the ASIC miner hashrate and power draw?",
+        "a": "The ASIC miner is rated at varies by model drawing 3,500 W at the wall, which is 12-40 J/TH depending on generation. Expect two to five percent below rated output in warm ambient conditions."
+      },
+      {
+        "q": "How much electricity does a ASIC miner use per day?",
+        "a": "Roughly 84 kWh per day of continuous operation — about $7 per day at eight cents per kilowatt hour, or $202 per month."
+      },
+      {
+        "q": "Is the ASIC miner still profitable?",
+        "a": "That depends on your power rate more than anything else. Model it with hashprice cut 30 percent: if the machine still covers its own electricity, it is a defensible buy."
+      },
+      {
+        "q": "Can I run a ASIC miner at home?",
+        "a": "Only with a dedicated 240 V circuit, real ventilation and tolerance for 72-80 dB. Most buyers end up ducting the exhaust, using an outbuilding, or hosting the machine."
+      },
+      {
+        "q": "Do you sell used ASIC miner units with a warranty?",
+        "a": "Yes. Every used and refurbished unit is stripped, cleaned, load-tested and hashrate-verified before shipping, and ships with written warranty terms and worldwide delivery from Hong Kong."
+      }
+    ],
+    "match": {},
+    "readMinutes": 7
   }
 ];
 
