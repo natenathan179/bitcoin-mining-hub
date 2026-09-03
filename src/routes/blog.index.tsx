@@ -12,7 +12,7 @@ export const Route = createFileRoute("/blog/")({
       {
         name: "description",
         content:
-          "273 operator-written guides on the best bitcoin mining machines, used ASIC miner buying advice, Antminer and WhatsMiner reviews, profitability math and setup.",
+          "276 operator-written guides on the best bitcoin mining machines, used ASIC miner buying advice, Antminer and WhatsMiner reviews, profitability math and setup.",
       },
       { property: "og:title", content: "Bitcoin Mining Blog | Bitcoin Mining Depot" },
       {
@@ -83,7 +83,7 @@ function BlogIndex() {
       <PageHero
         eyebrow="Blog"
         title="Bitcoin Mining Guides & ASIC Reviews"
-        subtitle="273 in-depth articles on choosing, buying, running and profiting from bitcoin mining hardware — every guide linked to the machines we hold in stock."
+        subtitle="276 in-depth articles on choosing, buying, running and profiting from bitcoin mining hardware — every guide linked to the machines we hold in stock."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-10">
@@ -115,7 +115,7 @@ function BlogIndex() {
               id="blog-search"
               value={q}
               onChange={(e) => { setQ(e.target.value); setVisible(24); }}
-              placeholder="Search 273 mining guides..."
+              placeholder="Search 276 mining guides..."
               className="h-10 w-full rounded-md border border-border bg-background px-3 text-sm outline-none focus:border-primary md:w-72"
             />
           </div>

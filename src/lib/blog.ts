@@ -25550,6 +25550,307 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     "match": {},
     "readMinutes": 7
+  },
+  {
+    "slug": "asic-miner-for-sale-single-unit-buyers-walkthrough",
+    "title": "ASIC Miner for Sale: Single-Unit Buyer's Walkthrough",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-03",
+    "description": "Buying one ASIC miner? Pick the model by your power rate, understand delivered cost, payment and warranty terms, then bring the unit online in its first week.",
+    "keywords": [
+      "asic miner for sale",
+      "buy one asic miner",
+      "single asic miner",
+      "asic miner price",
+      "asic miner delivered cost"
+    ],
+    "intro": [
+      "Most of the advice written about buying ASIC miners assumes you are ordering a pallet. If you are buying exactly one machine — for a garage, a spare 240 V circuit, or a hosted slot you already reserved — the decisions are different. Freight is a bigger share of your total, you have no spare unit to swap parts from, and one dead hashboard is one hundred percent of your downtime.",
+      "This walkthrough covers the single-unit purchase end to end: choosing the model your electricity rate can carry, reading a delivered quote properly, the payment and warranty terms worth insisting on, and the first week of running the machine so a warranty claim is still possible if something is wrong."
+    ],
+    "sections": [
+      {
+        "h2": "Start From Your Power Rate, Not the Model List",
+        "paras": [
+          "Your electricity rate decides which generation of hardware you can buy, and nothing else comes close in importance. Above roughly twelve cents per kilowatt hour, only current-generation machines in the 12-18 J/TH band hold margin, because energy is the dominant cost and efficiency is the only lever you control. Between six and twelve cents, the 18-28 J/TH value tier is usually the fastest payback. Below six cents, older 30 J/TH-plus units become viable as a cash-flow play.",
+          "Work out the number before you shop. Take your all-in rate including delivery charges and taxes, not the headline energy rate on the marketing page of your utility. A single machine at 3,500 W runs about 84 kWh per day, so every cent per kilowatt hour is roughly $25 per month of operating cost on that one unit."
+        ]
+      },
+      {
+        "h2": "What One Machine Actually Costs Delivered",
+        "paras": [
+          "A single-unit quote has four components: the machine, the power supply if it ships separately, international freight, and import duties or taxes at your border. On a pallet order freight disappears into the per-unit price; on one machine it can add a meaningful percentage. Ask for the delivered figure to your postcode before you compare sellers, because a lower machine price with expensive freight often loses.",
+          "Convert the delivered total into price per terahash and write it next to the machine's J/TH. Those two numbers are the whole purchase decision. Paying more per terahash is rational only when the extra capital buys materially lower energy draw for the same output, which is exactly the trade you are making when you step up a generation."
+        ]
+      },
+      {
+        "h2": "Verify the Seller Before You Send Money",
+        "paras": [
+          "For a single unit you have less leverage than a fleet buyer, so lean on verifiable facts instead of negotiation. Ask for the specific unit's test report: measured hashrate, power at the wall, chip temperatures and fan status. Ask which firmware is installed and whether the unit has been overclocked or previously immersion-cooled — coolant residue on a board is a durability question you deserve an answer to.",
+          "Insist on written warranty terms in plain language before payment: duration, what is covered, who pays return freight, and the replacement path. A seller who cannot put that in an email is a seller you cannot hold to anything later. Serial numbers on the quote and on the box should match; photograph both at delivery."
+        ]
+      },
+      {
+        "h2": "Payment Terms That Protect a Single Buyer",
+        "paras": [
+          "Crypto payment is standard in this market and is fine when the counterparty is verifiable, but it is final — there is no chargeback. That makes seller verification the whole of your protection. Get the invoice, the serial numbers, the warranty text and the delivery window in writing on the same document you are paying against.",
+          "Be wary of a price far below the market band for that model. Single machines are exactly the size of order that fraud targets, because the loss is small enough that most buyers do not pursue it. If a quote is thirty percent under everyone else for hardware in the same condition, ask what is different about the unit — and expect a specific answer."
+        ]
+      },
+      {
+        "h2": "Electrical and Noise Reality for One Unit at Home",
+        "paras": [
+          "A 3,000-3,500 W air-cooled miner wants a dedicated 240 V circuit with breaker headroom above continuous draw; running one on a shared household circuit trips breakers and stresses wiring. If your only option is 120 V, you are limited to low-power hardware, and that constraint should shape your model choice rather than being discovered after delivery.",
+          "Noise is the reason most single home units get relocated. Rated fan noise of 72-80 dB is louder than a vacuum cleaner and it runs continuously. Plan for a garage, outbuilding or ducted exhaust arrangement, and check exhaust air has somewhere to go — recirculating hot air into the intake derates hashrate and shortens fan life."
+        ]
+      },
+      {
+        "h2": "The First Week: Bring-Up and Burn-In",
+        "paras": [
+          "Power the machine on a known-good circuit, point it at a pool, and let it run 48-72 hours while you record hashrate, per-board chip temperatures and fan speeds. Compare the average against the rated figure: two to five percent below rated is normal in warm ambient conditions, ten percent or more is a fault worth reporting immediately.",
+          "Report anomalies inside the warranty window, not after. A single dead chip, an unstable board or a fan that never reaches full speed are all easier claims in week one with logs attached than in month three from memory. Keep the packaging until burn-in passes — return freight without the original crate is a problem you do not need."
+        ]
+      },
+      {
+        "h2": "When One Machine Should Become a Hosted Machine",
+        "paras": [
+          "If your delivered residential rate is high, your site cannot absorb the noise, or your electrical service has no spare capacity, hosting the same unit often beats running it at home. Hosting bills a flat rate per kilowatt hour plus a management fee, and the operator handles cooling, networking, reboots and basic repairs — which matters more with one machine than many, because your uptime has no redundancy.",
+          "Compare the hosting rate against your own delivered rate plus the capital cost of the electrical work you would otherwise pay for. If hosting lands within about three cents per kWh of your own power, the operational relief is usually worth it for a single unit."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I buy just one ASIC miner?",
+        "a": "Yes. Single-unit orders are normal and ship worldwide from our Hong Kong facility. The main difference from a fleet order is that freight is a larger share of the delivered cost, so always compare sellers on the delivered figure rather than the machine price."
+      },
+      {
+        "q": "What does one ASIC miner cost to run per month?",
+        "a": "A 3,500 W machine uses about 84 kWh per day, roughly 2,520 kWh per month. At eight cents per kilowatt hour that is about $202 per month in electricity for the single unit."
+      },
+      {
+        "q": "Which ASIC miner should I buy at my power rate?",
+        "a": "Above twelve cents per kWh, buy current-generation 12-18 J/TH hardware. Between six and twelve cents, the 18-28 J/TH value tier usually pays back fastest. Below six cents, older high-J/TH units can still cash-flow."
+      },
+      {
+        "q": "What should the warranty cover on a single unit?",
+        "a": "Duration, covered components, who pays return freight, and whether the remedy is repair or replacement — all in writing before payment, with the serial number on the invoice."
+      },
+      {
+        "q": "Do you test the machine before it ships?",
+        "a": "Yes. Every unit is bench-tested and hashrate-verified before shipping, and used or refurbished units are stripped, cleaned and load-tested with written warranty terms."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "asic-mining-buy-decision-hardware-hosting-or-neither",
+    "title": "ASIC Mining Buy Decision: Hardware, Hosting or Neither",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-03",
+    "description": "Before you buy an ASIC miner, run the decision properly: own and host, run it at home, or skip mining. Break-even math at 4, 8, 12 and 16 cents per kWh.",
+    "keywords": [
+      "asic mining buy",
+      "should i buy an asic miner",
+      "asic mining break even",
+      "mining vs hosting",
+      "asic mining investment"
+    ],
+    "intro": [
+      "The question behind \"asic mining buy\" is rarely which model. It is whether buying hardware is the right move at all, given your power rate, your site and how much of your own time you are willing to spend on maintenance. Three honest answers exist: own and host, own and run it yourself, or do not buy.",
+      "This guide runs the decision the way our sales desk runs it for a customer, with the arithmetic in the open. If the numbers say do not buy, that is a useful result — the fastest way to lose money in mining is to deploy capital into a site that cannot support the machine."
+    ],
+    "sections": [
+      {
+        "h2": "The Only Three Outcomes Worth Considering",
+        "paras": [
+          "Own and run at home suits operators with cheap power, a tolerant site and genuine interest in the operations work. Own and host suits buyers with capital but expensive or noise-constrained power. Not buying suits anyone whose delivered power rate makes the machine cash-flow negative in a moderate downside case — and there is no model choice that rescues that situation.",
+          "Notice what is not on the list: buying hardware and hoping bitcoin price growth covers a negative operating margin. A machine that loses money on electricity every day is a bet on price with a daily cost attached. If price exposure is what you want, that can be bought directly without a 3,500 W appliance in the garage."
+        ]
+      },
+      {
+        "h2": "Break-Even Math You Can Do in Five Minutes",
+        "paras": [
+          "Daily electricity cost equals power in kilowatts times 24 times your rate. A 3.5 kW machine uses 84 kWh per day: $3.36 at four cents, $6.72 at eight cents, $10.08 at twelve cents, $13.44 at sixteen cents. Daily revenue equals your machine's terahash times current hashprice per terahash per day. Subtract one from the other and you have daily net.",
+          "Payback in months is delivered machine cost divided by monthly net. Do it three times: at today's hashprice, at hashprice down thirty percent, and at hashprice down fifty percent. If the middle case is still positive, the purchase is defensible. If only today's number works, either negotiate the delivered price down or do not buy."
+        ]
+      },
+      {
+        "h2": "What Each Power Rate Band Actually Permits",
+        "paras": [
+          "At four cents, almost anything cash-flows, including 30 J/TH-plus legacy hardware — which is why cheap-power operators buy old machines at low capital cost and treat them as disposable. At eight cents, the 18-28 J/TH value tier is the sweet spot and legacy hardware becomes marginal. At twelve cents, you need current-generation efficiency under about 18 J/TH.",
+          "At sixteen cents and above, a typical residential rate in much of North America and Europe, most air-cooled machines are cash-flow negative or nearly so through a normal downside. That is the band where hosting, not model selection, is the real decision — or where the honest answer is not to buy hardware."
+        ]
+      },
+      {
+        "h2": "Hosting: What You Are Actually Buying",
+        "paras": [
+          "A hosting contract replaces your power rate with the operator's rate plus a management fee, and replaces your labour with theirs: cooling, networking, reboots, basic repairs and physical security. For a buyer at sixteen cents, a hosted rate in the six-to-nine cent range can turn a negative machine into a positive one without any change of hardware.",
+          "Read the contract for the parts that bite: minimum term, uptime commitment and what happens when it is missed, curtailment policy, who owns firmware decisions, and the exit terms when you want the machine shipped back. A cheap rate with no uptime commitment is not cheap."
+        ]
+      },
+      {
+        "h2": "The Capital and Time You Are Committing",
+        "paras": [
+          "Hardware is not the only capital line. Running machines yourself typically means electrical work — a dedicated 240 V circuit, sometimes a panel upgrade — plus ventilation and noise mitigation. Budget that before you commit to the machine, because discovering it afterwards is how a good purchase turns into a stalled one.",
+          "Time is the cost people underestimate. Expect firmware updates, pool configuration, dust cleaning on a schedule, fan replacements and the occasional board failure. If you would resent that work at 2 a.m. on a hot night, hosting is worth the spread."
+        ]
+      },
+      {
+        "h2": "When Not Buying Is the Right Answer",
+        "paras": [
+          "Do not buy if your delivered power rate makes the machine negative at hashprice down thirty percent and hosting is unavailable or uneconomic where you are. Do not buy if the purchase requires capital you cannot write off, because mining returns are variable and difficulty rises. Do not buy purely to hold price exposure — that can be done without hardware, cooling or noise.",
+          "Do buy when the middle-case model is positive, your site or a hosting contract can carry the machine, and you can leave it powered on at high uptime for the horizon you underwrote. Those three conditions, not the model list, are what separate mining that works from mining that does not."
+        ]
+      },
+      {
+        "h2": "How to Turn the Decision Into a Shortlist",
+        "paras": [
+          "Once the decision is buy, pick two or three candidates within the efficiency band your rate allows and compare them purely on delivered price per terahash next to J/TH. Ignore headline hashrate as a ranking metric — two machines with identical output can differ by forty percent in energy cost, which is the whole margin at most rates.",
+          "Send us your electricity rate, available amperage and budget and we will model the shortlist against your actual numbers and quote delivered pricing, including a hosted alternative for the same hardware so you can see both paths side by side."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is buying an ASIC miner worth it right now?",
+        "a": "It depends almost entirely on your delivered electricity rate. Model the machine at hashprice down thirty percent: if it still covers its electricity and contributes to payback, the purchase is defensible. If not, hosting or not buying is the better answer."
+      },
+      {
+        "q": "What power rate do I need for ASIC mining?",
+        "a": "Below six cents per kWh nearly any generation cash-flows. Six to twelve cents favours 18-28 J/TH hardware. Above twelve cents you need current-generation sub-18 J/TH machines, and above sixteen cents hosting is usually the deciding factor."
+      },
+      {
+        "q": "How do I calculate ASIC mining payback?",
+        "a": "Divide the delivered machine cost by monthly net profit, where net is revenue at current hashprice minus electricity. Run it again at hashprice down thirty and fifty percent to see the realistic range."
+      },
+      {
+        "q": "Is hosting better than mining at home?",
+        "a": "Hosting wins when your own power is expensive, your site cannot absorb noise and heat, or your electrical service has no spare capacity. Running at home wins when power is cheap and you are willing to do the maintenance."
+      },
+      {
+        "q": "Can I mine with a small budget?",
+        "a": "Yes, with one value-tier or used machine on a suitable circuit, priced so you would be comfortable writing it off within twelve to eighteen months. Treat older hardware as a cash-flow play rather than a long-term asset."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "crypto-miner-for-sale-choosing-one-machine-by-coin",
+    "title": "Crypto Miner for Sale: Choosing One Machine by Coin",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-03",
+    "description": "Buying a single crypto miner? Compare SHA-256, Scrypt, kHeavyHash and Blake3 hardware on price, efficiency, noise and power fit before you commit.",
+    "keywords": [
+      "crypto miner for sale",
+      "single crypto miner",
+      "scrypt miner",
+      "kaspa miner",
+      "doge litecoin miner",
+      "altcoin asic"
+    ],
+    "intro": [
+      "\"Crypto miner for sale\" covers far more than bitcoin hardware. Each algorithm has its own ASICs, its own efficiency units and its own economics, and a machine built for one coin cannot mine another. Choosing a single unit therefore starts with the algorithm, not the brand.",
+      "This guide maps the main algorithms to the hardware we actually stock, and gives you the comparison method that works across them: cost per unit of hashrate, energy per unit of hashrate, and whether the machine physically fits your power and noise situation."
+    ],
+    "sections": [
+      {
+        "h2": "Pick the Algorithm First, the Model Second",
+        "paras": [
+          "SHA-256 machines mine bitcoin and are rated in terahash with efficiency in joules per terahash. Scrypt machines mine litecoin and dogecoin together and are rated in gigahash with efficiency in joules per megahash. kHeavyHash units mine Kaspa in terahash with their own efficiency scale, and Blake3 hardware serves Alephium. The units are not comparable across algorithms, so never rank machines from different families on a single number.",
+          "Decide the coin exposure you want first. A Scrypt miner pays in two coins at once and has historically had different revenue dynamics from bitcoin hardware; a Kaspa miner is a bet on a smaller network with more volatility in both directions. Neither is better in the abstract — they are different risk profiles bought with the same capital."
+        ]
+      },
+      {
+        "h2": "SHA-256: Bitcoin Hardware for a Single Unit",
+        "paras": [
+          "For one bitcoin machine, the choice reduces to a generation band set by your power rate: current-generation air or hydro units in the 12-18 J/TH range for expensive power, value-tier 18-28 J/TH hardware for mid-range rates, and legacy units above 30 J/TH only where power is very cheap. Delivered price per terahash next to J/TH is the entire comparison.",
+          "Single-unit buyers should weight serviceability more heavily than a fleet buyer would, because you have no donor machine for parts. Widely deployed models have plentiful hashboards, PSUs and fans on the aftermarket, which matters the first time something fails outside warranty."
+        ]
+      },
+      {
+        "h2": "Scrypt: Litecoin and Dogecoin Merge Mining",
+        "paras": [
+          "Scrypt ASICs such as the Antminer L-series and ElphaPex DG family mine litecoin and dogecoin simultaneously, so one machine earns in two coins from a single hashrate. Efficiency is quoted in joules per megahash, and the spread between generations is wide enough that an old unit at high J/MH can be unprofitable while a current one is comfortable at the same power rate.",
+          "Compare Scrypt hardware on delivered cost per gigahash and J/MH, then check the power draw against your circuit. These machines are popular with single-unit buyers precisely because the dual-coin payout smooths revenue, but they are still subject to difficulty growth on both networks."
+        ]
+      },
+      {
+        "h2": "kHeavyHash, Blake3 and the Smaller Networks",
+        "paras": [
+          "Kaspa miners and Alephium hardware serve networks that are smaller than bitcoin, which cuts both ways: hashrate growth can be explosive, so a machine's share of the network can dilute much faster than a bitcoin ASIC's. Underwrite these purchases on a shorter horizon and a lower price, because the risk is dilution, not just price.",
+          "If you want a single machine on a smaller network, size the purchase so a fast difficulty ramp does not hurt. The upside case is real; the failure mode is buying at peak enthusiasm and watching network hashrate double while revenue per unit halves."
+        ]
+      },
+      {
+        "h2": "Comparing Machines Across Coins Honestly",
+        "paras": [
+          "The only cross-algorithm comparison that means anything is daily net revenue in your own currency: revenue at current market rates minus your electricity cost for that machine. Run each candidate through the same three scenarios — current revenue, down thirty percent, down fifty percent — and compare the results, not the hashrate specs.",
+          "Do the arithmetic with your delivered power rate, not an average. A 3.4 kW machine consumes about 82 kWh per day, so at twelve cents the electricity alone is close to $10 per day regardless of which coin it mines. That fixed cost is what separates a viable single-unit purchase from an expensive hobby."
+        ]
+      },
+      {
+        "h2": "Noise, Power and Where the Machine Will Live",
+        "paras": [
+          "Most altcoin ASICs are as loud and as power-hungry as bitcoin hardware — 70-80 dB continuous and 2,000-3,500 W on a dedicated 240 V circuit. A handful of low-power units genuinely run on a household outlet, and if a 120 V circuit is your only option, that constraint should decide the shortlist before any revenue model does.",
+          "Plan intake and exhaust before delivery. Recirculating hot exhaust into the intake derates hashrate and shortens fan life on every algorithm, and a single machine in a small closed room will do exactly that within an hour."
+        ]
+      },
+      {
+        "h2": "Buying Checks That Apply to Every Algorithm",
+        "paras": [
+          "Ask for the unit's test report with measured hashrate, wall power and chip temperatures; confirm firmware and whether the machine was overclocked or previously liquid-cooled; get warranty duration, coverage, return-freight responsibility and the remedy in writing before payment; and match serial numbers between invoice and box at delivery.",
+          "Then burn the machine in for 48-72 hours and log hashrate, temperatures and fan speeds. Two to five percent below rated output in warm conditions is normal; ten percent or more is a fault to report inside the warranty window with logs attached."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can one crypto miner mine different coins?",
+        "a": "Only within its algorithm. A SHA-256 machine mines bitcoin, a Scrypt machine mines litecoin and dogecoin together, a kHeavyHash machine mines Kaspa. Hardware cannot cross algorithms."
+      },
+      {
+        "q": "Which single crypto miner is most profitable?",
+        "a": "The one with the best daily net at your electricity rate, which you find by running each candidate at current revenue and at revenue down thirty and fifty percent. Hashrate specs across different algorithms are not comparable."
+      },
+      {
+        "q": "Are Scrypt miners better than bitcoin miners?",
+        "a": "They are different exposure. Scrypt hardware earns litecoin and dogecoin from one hashrate, which smooths revenue, but it is still exposed to difficulty growth on both chains. Compare on delivered cost per gigahash and J/MH."
+      },
+      {
+        "q": "Do altcoin ASICs run on a normal home outlet?",
+        "a": "Most do not. Typical units draw 2,000-3,500 W and need a dedicated 240 V circuit. Only a small number of low-power machines are designed for a 120 V household outlet."
+      },
+      {
+        "q": "Do you sell tested single units with warranty?",
+        "a": "Yes. Every machine is bench-tested and hashrate-verified before shipping, used units are stripped, cleaned and load-tested, and all orders ship worldwide from Hong Kong with written warranty terms."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT",
+        "ElphaPex",
+        "Goldshell",
+        "IceRiver"
+      ]
+    },
+    "readMinutes": 8
   }
 ];
 
