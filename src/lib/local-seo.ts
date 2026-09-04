@@ -76,15 +76,17 @@ export function localListingsForProduct(product: Product, perCountry = 6): Local
   return PRIORITY_COUNTRIES.map((country, index) => {
     const pool = MARKET_LOCATIONS.filter((l) => l.country === country);
     const preferred = pool.filter((l) => l.family === family);
-    const cityPool = (preferred.length >= perCountry ? preferred : pool).filter(
-      (l) => l.type === "city",
-    );
+    const base = preferred.length >= perCountry ? preferred : pool;
     const regionPool = pool.filter((l) => l.type === "state");
+    // Some countries in the location database are indexed by state/province only —
+    // fall back to those so every country block lists a usable set of places.
+    const cityPool = base.filter((l) => l.type === "city");
+    const primary = cityPool.length ? cityPool : base;
     return {
       country,
       copy: countryCopy(country),
-      cities: rotatingSlice(cityPool, perCountry, seed + index * 17),
-      regions: rotatingSlice(regionPool, 2, seed * 3 + index * 11),
+      cities: rotatingSlice(primary, perCountry, seed + index * 17),
+      regions: cityPool.length ? rotatingSlice(regionPool, 2, seed * 3 + index * 11) : [],
     };
   }).filter((group) => group.cities.length > 0 || group.regions.length > 0);
 }
