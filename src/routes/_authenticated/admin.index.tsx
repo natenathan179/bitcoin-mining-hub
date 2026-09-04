@@ -5,7 +5,8 @@ import { toast } from "sonner";
 
 import { supabase } from "@/integrations/supabase/client";
 import { productsQuery, categoriesQuery } from "@/lib/data";
-import { formatPrice } from "@/lib/site";
+import { formatPrice, SITE } from "@/lib/site";
+import { pingIndexNowUrls } from "@/lib/indexnow";
 import minerBlack from "@/assets/miner-black.jpg";
 
 export const Route = createFileRoute("/_authenticated/admin/")({
@@ -25,9 +26,14 @@ function AdminProducts() {
     onSuccess: () => {
       toast.success("Product deleted");
       queryClient.invalidateQueries({ queryKey: ["products"] });
+      // Let IndexNow re-crawl the listing pages so the removed item drops out.
+      void pingIndexNowUrls([`${SITE.url}/products`, `${SITE.url}/used-asic-miners`]).catch(
+        () => undefined,
+      );
     },
     onError: (e: Error) => toast.error(e.message),
   });
+
 
   return (
     <div>

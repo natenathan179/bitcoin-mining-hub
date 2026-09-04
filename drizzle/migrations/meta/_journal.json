@@ -8,6 +8,13 @@
       "when": 1788174497346,
       "tag": "0000_import_bitmain_shop_products",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1788552828517,
+      "tag": "0001_create_indexnow_submissions",
+      "breakpoints": true
     }
   ]
 }

@@ -10,6 +10,15 @@ export const INDEXNOW_KEY_LOCATION = `${SITE.url}/${INDEXNOW_KEY}.txt`;
 export const INDEXNOW_SCOPES = ["all", "pages", "products", "blog", "marketplace"] as const;
 export type IndexNowScope = (typeof INDEXNOW_SCOPES)[number];
 
+/** Page counts per sitemap, kept in step with the static sitemap files. */
+export const INDEXNOW_COUNTS: Record<IndexNowScope, number> = {
+  pages: 25,
+  products: 137,
+  blog: 291,
+  marketplace: 1075,
+  all: 25 + 137 + 291 + 1075,
+};
+
 export type IndexNowResult = {
   scope: IndexNowScope;
   urls: number;
@@ -17,6 +26,30 @@ export type IndexNowResult = {
   submitted: number;
   failed: number;
 };
+
+export type IndexNowSubmission = {
+  id: string;
+  scope: string;
+  source: string;
+  url_count: number;
+  accepted: number;
+  failed: number;
+  message: string;
+  created_at: string;
+};
+
+/** Recent submission runs, newest first. */
+export async function fetchIndexNowHistory(limit = 15): Promise<IndexNowSubmission[]> {
+  const { supabase } = await import("@/integrations/supabase/client");
+  const { data, error } = await supabase
+    .from("indexnow_submissions")
+    .select("id, scope, source, url_count, accepted, failed, message, created_at")
+    .order("created_at", { ascending: false })
+    .limit(limit);
+  if (error) throw error;
+  return (data ?? []) as IndexNowSubmission[];
+}
+
 
 /** Ping the site's own IndexNow endpoint from the browser (admin action). */
 export async function pingIndexNow(scope: IndexNowScope): Promise<IndexNowResult> {
