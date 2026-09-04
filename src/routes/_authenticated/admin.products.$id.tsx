@@ -7,6 +7,8 @@ import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { categoriesQuery, productsFullQuery, type Product } from "@/lib/data";
 import { uploadProductImage } from "@/lib/storage";
+import { pingIndexNowUrls } from "@/lib/indexnow";
+import { SITE } from "@/lib/site";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -136,6 +138,11 @@ function ProductEditor() {
       toast.success(isNew ? "Product created" : "Product updated");
       queryClient.invalidateQueries({ queryKey: ["products"] });
       queryClient.invalidateQueries({ queryKey: ["product"] });
+      // Tell Bing & co. about the new/updated page right away (best effort).
+      const slug = form.slug || slugify(form.name);
+      void pingIndexNowUrls([`${SITE.url}/products/${slug}`, `${SITE.url}/products`]).catch(
+        () => undefined,
+      );
       navigate({ to: "/admin" });
     },
     onError: (e: Error) => toast.error(e.message),
