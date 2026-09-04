@@ -41,7 +41,6 @@ import { Route as BitcoinMiningMarketplaceSlugRouteImport } from './routes/bitco
 import { Route as AdminLoginRouteImport } from './routes/admin.login'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
-import { Route as ApiPublicTmpImportUploadRouteImport } from './routes/api/public/tmp-import-upload'
 import { Route as AuthenticatedAdminReviewsRouteImport } from './routes/_authenticated/admin.reviews'
 import { Route as AuthenticatedAdminPaymentsRouteImport } from './routes/_authenticated/admin.payments'
 import { Route as AuthenticatedAdminCategoriesRouteImport } from './routes/_authenticated/admin.categories'
@@ -209,12 +208,6 @@ const AuthenticatedAdminIndexRoute = AuthenticatedAdminIndexRouteImport.update({
   path: '/',
   getParentRoute: () => AuthenticatedAdminRoute,
 } as any)
-const ApiPublicTmpImportUploadRoute =
-  ApiPublicTmpImportUploadRouteImport.update({
-    id: '/api/public/tmp-import-upload',
-    path: '/api/public/tmp-import-upload',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const AuthenticatedAdminReviewsRoute =
   AuthenticatedAdminReviewsRouteImport.update({
     id: '/reviews',
@@ -274,7 +267,6 @@ export interface FileRoutesByFullPath {
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/admin/reviews': typeof AuthenticatedAdminReviewsRoute
-  '/api/public/tmp-import-upload': typeof ApiPublicTmpImportUploadRoute
   '/admin/': typeof AuthenticatedAdminIndexRoute
   '/admin/products/$id': typeof AuthenticatedAdminProductsIdRoute
 }
@@ -311,7 +303,6 @@ export interface FileRoutesByTo {
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/admin/reviews': typeof AuthenticatedAdminReviewsRoute
-  '/api/public/tmp-import-upload': typeof ApiPublicTmpImportUploadRoute
   '/admin': typeof AuthenticatedAdminIndexRoute
   '/admin/products/$id': typeof AuthenticatedAdminProductsIdRoute
 }
@@ -351,7 +342,6 @@ export interface FileRoutesById {
   '/_authenticated/admin/categories': typeof AuthenticatedAdminCategoriesRoute
   '/_authenticated/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/_authenticated/admin/reviews': typeof AuthenticatedAdminReviewsRoute
-  '/api/public/tmp-import-upload': typeof ApiPublicTmpImportUploadRoute
   '/_authenticated/admin/': typeof AuthenticatedAdminIndexRoute
   '/_authenticated/admin/products/$id': typeof AuthenticatedAdminProductsIdRoute
 }
@@ -391,7 +381,6 @@ export interface FileRouteTypes {
     | '/admin/categories'
     | '/admin/payments'
     | '/admin/reviews'
-    | '/api/public/tmp-import-upload'
     | '/admin/'
     | '/admin/products/$id'
   fileRoutesByTo: FileRoutesByTo
@@ -428,7 +417,6 @@ export interface FileRouteTypes {
     | '/admin/categories'
     | '/admin/payments'
     | '/admin/reviews'
-    | '/api/public/tmp-import-upload'
     | '/admin'
     | '/admin/products/$id'
   id:
@@ -467,7 +455,6 @@ export interface FileRouteTypes {
     | '/_authenticated/admin/categories'
     | '/_authenticated/admin/payments'
     | '/_authenticated/admin/reviews'
-    | '/api/public/tmp-import-upload'
     | '/_authenticated/admin/'
     | '/_authenticated/admin/products/$id'
   fileRoutesById: FileRoutesById
@@ -503,7 +490,6 @@ export interface RootRouteChildren {
   BitcoinMiningMarketplaceIndexRoute: typeof BitcoinMiningMarketplaceIndexRoute
   BlogIndexRoute: typeof BlogIndexRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
-  ApiPublicTmpImportUploadRoute: typeof ApiPublicTmpImportUploadRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -732,13 +718,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminIndexRouteImport
       parentRoute: typeof AuthenticatedAdminRoute
     }
-    '/api/public/tmp-import-upload': {
-      id: '/api/public/tmp-import-upload'
-      path: '/api/public/tmp-import-upload'
-      fullPath: '/api/public/tmp-import-upload'
-      preLoaderRoute: typeof ApiPublicTmpImportUploadRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/_authenticated/admin/reviews': {
       id: '/_authenticated/admin/reviews'
       path: '/reviews'
@@ -832,7 +811,6 @@ const rootRouteChildren: RootRouteChildren = {
   BitcoinMiningMarketplaceIndexRoute: BitcoinMiningMarketplaceIndexRoute,
   BlogIndexRoute: BlogIndexRoute,
   ProductsIndexRoute: ProductsIndexRoute,
-  ApiPublicTmpImportUploadRoute: ApiPublicTmpImportUploadRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
