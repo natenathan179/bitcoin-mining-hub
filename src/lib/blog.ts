@@ -25852,31 +25852,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     "readMinutes": 8
   }
-];
-
-export const getPost = (slug: string) => BLOG_POSTS.find((p) => p.slug === slug);
-
-/**
- * Rotating window: every post links to a different slice of siblings, so link
- * equity is spread across the whole library instead of the same first few posts.
- */
-function rotatingWindow<T>(items: T[], count: number, seed: number): T[] {
-  if (items.length === 0 || count <= 0) return [];
-  const n = Math.min(count, items.length);
-  const start = ((seed % items.length) + items.length) % items.length;
-  return Array.from({ length: n }, (_, k) => items[(start + k) % items.length]!);
-}
-
-export function relatedPosts(post: BlogPost, limit = 6): BlogPost[] {
-  const idx = Math.max(0, BLOG_POSTS.findIndex((p) => p.slug === post.slug));
-  const same = BLOG_POSTS.filter((p) => p.slug !== post.slug && p.categoryId === post.categoryId);
-  const other = BLOG_POSTS.filter((p) => p.slug !== post.slug && p.categoryId !== post.categoryId);
-  // Chain link: guarantees every guide has at least one incoming link.
-  const chain = BLOG_POSTS[(idx + 1) % BLOG_POSTS.length]!;
-  const primary = rotatingWindow(same, Math.ceil(limit * 0.7), idx + 1);
-  const secondary = rotatingWindow(other, Math.max(0, limit - 1 - primary.length), idx * 5 + 3);
-  const seen = new Set<string>([post.slug]);
-  const out: BlogPost[] = [  {
+  {
     "slug": "asic-vs-gpu-mining-which-hardware-actually-earns",
     "title": "ASIC vs GPU Mining in 2026: Which Hardware Actually Earns",
     "category": "Hardware Rankings",
@@ -27150,3 +27126,27 @@ export function relatedPosts(post: BlogPost, limit = 6): BlogPost[] {
     "readMinutes": 8
   },
 ];
+
+export const getPost = (slug: string) => BLOG_POSTS.find((p) => p.slug === slug);
+
+/**
+ * Rotating window: every post links to a different slice of siblings, so link
+ * equity is spread across the whole library instead of the same first few posts.
+ */
+function rotatingWindow<T>(items: T[], count: number, seed: number): T[] {
+  if (items.length === 0 || count <= 0) return [];
+  const n = Math.min(count, items.length);
+  const start = ((seed % items.length) + items.length) % items.length;
+  return Array.from({ length: n }, (_, k) => items[(start + k) % items.length]!);
+}
+
+export function relatedPosts(post: BlogPost, limit = 6): BlogPost[] {
+  const idx = Math.max(0, BLOG_POSTS.findIndex((p) => p.slug === post.slug));
+  const same = BLOG_POSTS.filter((p) => p.slug !== post.slug && p.categoryId === post.categoryId);
+  const other = BLOG_POSTS.filter((p) => p.slug !== post.slug && p.categoryId !== post.categoryId);
+  // Chain link: guarantees every guide has at least one incoming link.
+  const chain = BLOG_POSTS[(idx + 1) % BLOG_POSTS.length]!;
+  const primary = rotatingWindow(same, Math.ceil(limit * 0.7), idx + 1);
+  const secondary = rotatingWindow(other, Math.max(0, limit - 1 - primary.length), idx * 5 + 3);
+  const seen = new Set<string>([post.slug]);
+  const out: BlogPost[] = [];
