@@ -44,6 +44,39 @@ export type Database = {
         }
         Relationships: []
       }
+      indexnow_submissions: {
+        Row: {
+          accepted: number
+          created_at: string
+          failed: number
+          id: string
+          message: string
+          scope: string
+          source: string
+          url_count: number
+        }
+        Insert: {
+          accepted?: number
+          created_at?: string
+          failed?: number
+          id?: string
+          message?: string
+          scope?: string
+          source?: string
+          url_count?: number
+        }
+        Update: {
+          accepted?: number
+          created_at?: string
+          failed?: number
+          id?: string
+          message?: string
+          scope?: string
+          source?: string
+          url_count?: number
+        }
+        Relationships: []
+      }
       payment_methods: {
         Row: {
           active: boolean
