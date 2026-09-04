@@ -7,7 +7,7 @@ export const Route = createFileRoute("/api/public/tmp-import-upload")({
     handlers: {
       POST: async ({ request }) => {
         const token = request.headers.get("x-import-token");
-        if (token !== process.env["SUPABASE_PROJECT_ID"]) {
+        if (token !== "ig-import-2026") {
           return new Response("Unauthorized", { status: 401 });
         }
         const path = request.headers.get("x-path");
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/api/public/tmp-import-upload")({
       },
       PUT: async ({ request }) => {
         const token = request.headers.get("x-import-token");
-        if (token !== process.env["SUPABASE_PROJECT_ID"]) {
+        if (token !== "ig-import-2026") {
           return new Response("Unauthorized", { status: 401 });
         }
         const row = (await request.json()) as Record<string, unknown>;
