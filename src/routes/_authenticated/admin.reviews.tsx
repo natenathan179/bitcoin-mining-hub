@@ -29,7 +29,11 @@ function AdminReviews() {
     product_name: "",
   });
 
-  const invalidate = () => queryClient.invalidateQueries({ queryKey: ["reviews"] });
+  const invalidate = () => {
+    queryClient.invalidateQueries({ queryKey: ["reviews"] });
+    // Reviews change the pages that show them, so re-announce those to IndexNow.
+    void pingIndexNowUrls([`${SITE.url}/reviews`, `${SITE.url}/`]).catch(() => undefined);
+  };
 
   const create = useMutation({
     mutationFn: async () => {
@@ -55,6 +59,7 @@ function AdminReviews() {
     },
     onError: (e: Error) => toast.error(e.message),
   });
+
 
   return (
     <div className="grid gap-8 lg:grid-cols-[1fr_360px]">
