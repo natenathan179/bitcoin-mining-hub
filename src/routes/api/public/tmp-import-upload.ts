@@ -24,6 +24,19 @@ export const Route = createFileRoute("/api/public/tmp-import-upload")({
         if (signError || !data) return new Response(signError?.message ?? "sign failed", { status: 500 });
         return Response.json({ url: data.signedUrl });
       },
+      PUT: async ({ request }) => {
+        const token = request.headers.get("x-import-token");
+        if (token !== process.env["SUPABASE_PROJECT_ID"]) {
+          return new Response("Unauthorized", { status: 401 });
+        }
+        const row = (await request.json()) as Record<string, unknown>;
+        const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
+        const { error } = await supabaseAdmin
+          .from("products")
+          .upsert(row as never, { onConflict: "slug" });
+        if (error) return new Response(error.message, { status: 500 });
+        return Response.json({ ok: true });
+      },
     },
   },
 });
