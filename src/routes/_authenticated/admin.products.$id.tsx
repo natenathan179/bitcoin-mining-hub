@@ -136,6 +136,11 @@ function ProductEditor() {
       toast.success(isNew ? "Product created" : "Product updated");
       queryClient.invalidateQueries({ queryKey: ["products"] });
       queryClient.invalidateQueries({ queryKey: ["product"] });
+      // Tell Bing & co. about the new/updated page right away (best effort).
+      const slug = form.slug || slugify(form.name);
+      void pingIndexNowUrls([`${SITE.url}/products/${slug}`, `${SITE.url}/products`]).catch(
+        () => undefined,
+      );
       navigate({ to: "/admin" });
     },
     onError: (e: Error) => toast.error(e.message),
