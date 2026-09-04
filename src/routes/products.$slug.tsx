@@ -740,6 +740,8 @@ function ProductDetail() {
           </div>
       </section>
 
+      <ProductLocalAvailability product={product} />
+
       <ProductInternalLinks product={product} products={all} />
 
       {related.length > 0 && (
