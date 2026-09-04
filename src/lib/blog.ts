@@ -25851,7 +25851,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 8
-  }
+  },
   {
     "slug": "asic-vs-gpu-mining-which-hardware-actually-earns",
     "title": "ASIC vs GPU Mining in 2026: Which Hardware Actually Earns",
