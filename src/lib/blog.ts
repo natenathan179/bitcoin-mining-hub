@@ -27150,3 +27150,10 @@ export function relatedPosts(post: BlogPost, limit = 6): BlogPost[] {
   const secondary = rotatingWindow(other, Math.max(0, limit - 1 - primary.length), idx * 5 + 3);
   const seen = new Set<string>([post.slug]);
   const out: BlogPost[] = [];
+  for (const p of [chain, ...primary, ...secondary]) {
+    if (seen.has(p.slug)) continue;
+    seen.add(p.slug);
+    out.push(p);
+  }
+  return out.slice(0, limit);
+}
