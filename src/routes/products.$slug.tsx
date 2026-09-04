@@ -407,6 +407,12 @@ export const Route = createFileRoute("/products/$slug")({
             })),
           }),
         },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify(
+            localBusinessSchema(p, servedAreaNames(localListingsForProduct(p)), url),
+          ),
+        },
       ],
     };
   },
