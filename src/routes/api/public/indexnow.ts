@@ -9,15 +9,18 @@ import {
   type IndexNowScope,
 } from "@/lib/indexnow";
 
+import sitemapPages from "../../../../public/sitemap-pages.xml?raw";
+import sitemapProducts from "../../../../public/sitemap-products.xml?raw";
+import sitemapBlog from "../../../../public/sitemap-blog.xml?raw";
+import sitemapMarket1 from "../../../../public/sitemap-marketplace-1.xml?raw";
+import sitemapMarket2 from "../../../../public/sitemap-marketplace-2.xml?raw";
+import sitemapMarket3 from "../../../../public/sitemap-marketplace-3.xml?raw";
+
 const SITEMAPS: Record<Exclude<IndexNowScope, "all">, string[]> = {
-  pages: ["/sitemap-pages.xml"],
-  products: ["/sitemap-products.xml"],
-  blog: ["/sitemap-blog.xml"],
-  marketplace: [
-    "/sitemap-marketplace-1.xml",
-    "/sitemap-marketplace-2.xml",
-    "/sitemap-marketplace-3.xml",
-  ],
+  pages: [sitemapPages],
+  products: [sitemapProducts],
+  blog: [sitemapBlog],
+  marketplace: [sitemapMarket1, sitemapMarket2, sitemapMarket3],
 };
 
 const bodySchema = z
@@ -29,12 +32,9 @@ function sitemapsForScope(scope: IndexNowScope) {
   return SITEMAPS[scope];
 }
 
-async function readSitemapUrls(origin: string, scope: IndexNowScope) {
+async function readSitemapUrls(_origin: string, scope: IndexNowScope) {
   const urls: string[] = [];
-  for (const path of sitemapsForScope(scope)) {
-    const res = await fetch(`${origin}${path}`);
-    if (!res.ok) continue;
-    const xml = await res.text();
+  for (const xml of sitemapsForScope(scope)) {
     for (const match of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
       const loc = match[1]?.trim();
       if (loc) urls.push(loc);
@@ -42,6 +42,8 @@ async function readSitemapUrls(origin: string, scope: IndexNowScope) {
   }
   return [...new Set(urls)];
 }
+
+
 
 async function submitBatch(urls: string[]) {
   const res = await fetch("https://api.indexnow.org/indexnow", {
