@@ -7,6 +7,8 @@ import { ShoppingCart, MessageSquare, ShieldCheck, Truck, Wrench, Check } from "
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { ProductInternalLinks } from "@/components/site/ProductInternalLinks";
+import { ProductLocalAvailability } from "@/components/site/ProductLocalAvailability";
+import { localBusinessSchema, localListingsForProduct, servedAreaNames } from "@/lib/local-seo";
 import { InquiryModal } from "@/components/site/InquiryModal";
 import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
 import { formatPrice, SITE, seoDescription, seoTitle } from "@/lib/site";
