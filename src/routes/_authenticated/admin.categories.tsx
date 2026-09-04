@@ -25,7 +25,16 @@ function AdminCategories() {
   const [icon, setIcon] = useState("cpu");
   const [description, setDescription] = useState("");
 
-  const invalidate = () => queryClient.invalidateQueries({ queryKey: ["categories"] });
+  const invalidate = () => {
+    queryClient.invalidateQueries({ queryKey: ["categories"] });
+    // Category changes alter the collection pages — re-announce them.
+    void pingIndexNowUrls([
+      `${SITE.url}/`,
+      `${SITE.url}/products`,
+      ...categories.map((c) => `${SITE.url}/collections/${c.slug}`),
+    ]).catch(() => undefined);
+  };
+
 
   const create = useMutation({
     mutationFn: async () => {
