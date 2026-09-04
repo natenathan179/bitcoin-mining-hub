@@ -20,6 +20,7 @@ const LINKS = [
   { to: "/admin/categories", label: "Categories", icon: Layers, exact: false },
   { to: "/admin/reviews", label: "Reviews", icon: Star, exact: false },
   { to: "/admin/payments", label: "Payments", icon: Wallet, exact: false },
+  { to: "/admin/indexing", label: "Search engines", icon: Radar, exact: false },
 ] as const;
 
 function AdminLayout() {
