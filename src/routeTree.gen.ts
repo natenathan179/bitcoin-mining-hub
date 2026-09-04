@@ -44,6 +44,7 @@ import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authentic
 import { Route as ApiPublicIndexnowRouteImport } from './routes/api/public/indexnow'
 import { Route as AuthenticatedAdminReviewsRouteImport } from './routes/_authenticated/admin.reviews'
 import { Route as AuthenticatedAdminPaymentsRouteImport } from './routes/_authenticated/admin.payments'
+import { Route as AuthenticatedAdminIndexingRouteImport } from './routes/_authenticated/admin.indexing'
 import { Route as AuthenticatedAdminCategoriesRouteImport } from './routes/_authenticated/admin.categories'
 import { Route as AuthenticatedAdminProductsIdRouteImport } from './routes/_authenticated/admin.products.$id'
 
@@ -226,6 +227,12 @@ const AuthenticatedAdminPaymentsRoute =
     path: '/payments',
     getParentRoute: () => AuthenticatedAdminRoute,
   } as any)
+const AuthenticatedAdminIndexingRoute =
+  AuthenticatedAdminIndexingRouteImport.update({
+    id: '/indexing',
+    path: '/indexing',
+    getParentRoute: () => AuthenticatedAdminRoute,
+  } as any)
 const AuthenticatedAdminCategoriesRoute =
   AuthenticatedAdminCategoriesRouteImport.update({
     id: '/categories',
@@ -271,6 +278,7 @@ export interface FileRoutesByFullPath {
   '/blog/': typeof BlogIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
+  '/admin/indexing': typeof AuthenticatedAdminIndexingRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/admin/reviews': typeof AuthenticatedAdminReviewsRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
@@ -308,6 +316,7 @@ export interface FileRoutesByTo {
   '/blog': typeof BlogIndexRoute
   '/products': typeof ProductsIndexRoute
   '/admin/categories': typeof AuthenticatedAdminCategoriesRoute
+  '/admin/indexing': typeof AuthenticatedAdminIndexingRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/admin/reviews': typeof AuthenticatedAdminReviewsRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
@@ -348,6 +357,7 @@ export interface FileRoutesById {
   '/blog/': typeof BlogIndexRoute
   '/products/': typeof ProductsIndexRoute
   '/_authenticated/admin/categories': typeof AuthenticatedAdminCategoriesRoute
+  '/_authenticated/admin/indexing': typeof AuthenticatedAdminIndexingRoute
   '/_authenticated/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/_authenticated/admin/reviews': typeof AuthenticatedAdminReviewsRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
@@ -388,6 +398,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/products/'
     | '/admin/categories'
+    | '/admin/indexing'
     | '/admin/payments'
     | '/admin/reviews'
     | '/api/public/indexnow'
@@ -425,6 +436,7 @@ export interface FileRouteTypes {
     | '/blog'
     | '/products'
     | '/admin/categories'
+    | '/admin/indexing'
     | '/admin/payments'
     | '/admin/reviews'
     | '/api/public/indexnow'
@@ -464,6 +476,7 @@ export interface FileRouteTypes {
     | '/blog/'
     | '/products/'
     | '/_authenticated/admin/categories'
+    | '/_authenticated/admin/indexing'
     | '/_authenticated/admin/payments'
     | '/_authenticated/admin/reviews'
     | '/api/public/indexnow'
@@ -752,6 +765,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminPaymentsRouteImport
       parentRoute: typeof AuthenticatedAdminRoute
     }
+    '/_authenticated/admin/indexing': {
+      id: '/_authenticated/admin/indexing'
+      path: '/indexing'
+      fullPath: '/admin/indexing'
+      preLoaderRoute: typeof AuthenticatedAdminIndexingRouteImport
+      parentRoute: typeof AuthenticatedAdminRoute
+    }
     '/_authenticated/admin/categories': {
       id: '/_authenticated/admin/categories'
       path: '/categories'
@@ -771,6 +791,7 @@ declare module '@tanstack/react-router' {
 
 interface AuthenticatedAdminRouteChildren {
   AuthenticatedAdminCategoriesRoute: typeof AuthenticatedAdminCategoriesRoute
+  AuthenticatedAdminIndexingRoute: typeof AuthenticatedAdminIndexingRoute
   AuthenticatedAdminPaymentsRoute: typeof AuthenticatedAdminPaymentsRoute
   AuthenticatedAdminReviewsRoute: typeof AuthenticatedAdminReviewsRoute
   AuthenticatedAdminIndexRoute: typeof AuthenticatedAdminIndexRoute
@@ -779,6 +800,7 @@ interface AuthenticatedAdminRouteChildren {
 
 const AuthenticatedAdminRouteChildren: AuthenticatedAdminRouteChildren = {
   AuthenticatedAdminCategoriesRoute: AuthenticatedAdminCategoriesRoute,
+  AuthenticatedAdminIndexingRoute: AuthenticatedAdminIndexingRoute,
   AuthenticatedAdminPaymentsRoute: AuthenticatedAdminPaymentsRoute,
   AuthenticatedAdminReviewsRoute: AuthenticatedAdminReviewsRoute,
   AuthenticatedAdminIndexRoute: AuthenticatedAdminIndexRoute,

@@ -1,6 +1,6 @@
 import { createFileRoute, Link, Outlet, useNavigate } from "@tanstack/react-router";
 import { useQueryClient } from "@tanstack/react-query";
-import { LogOut, Package, Layers, Star, Store, Wallet } from "lucide-react";
+import { LogOut, Package, Layers, Star, Store, Wallet, Radar } from "lucide-react";
 
 import { supabase } from "@/integrations/supabase/client";
 import { Logo } from "@/components/site/Logo";
