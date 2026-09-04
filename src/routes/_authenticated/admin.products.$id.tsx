@@ -7,6 +7,8 @@ import { toast } from "sonner";
 import { supabase } from "@/integrations/supabase/client";
 import { categoriesQuery, productsFullQuery, type Product } from "@/lib/data";
 import { uploadProductImage } from "@/lib/storage";
+import { pingIndexNowUrls } from "@/lib/indexnow";
+import { SITE } from "@/lib/site";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
