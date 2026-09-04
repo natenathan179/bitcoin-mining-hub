@@ -25876,11 +25876,1277 @@ export function relatedPosts(post: BlogPost, limit = 6): BlogPost[] {
   const primary = rotatingWindow(same, Math.ceil(limit * 0.7), idx + 1);
   const secondary = rotatingWindow(other, Math.max(0, limit - 1 - primary.length), idx * 5 + 3);
   const seen = new Set<string>([post.slug]);
-  const out: BlogPost[] = [];
-  for (const p of [chain, ...primary, ...secondary]) {
-    if (seen.has(p.slug)) continue;
-    seen.add(p.slug);
-    out.push(p);
-  }
-  return out.slice(0, limit);
-}
+  const out: BlogPost[] = [  {
+    "slug": "asic-vs-gpu-mining-which-hardware-actually-earns",
+    "title": "ASIC vs GPU Mining in 2026: Which Hardware Actually Earns",
+    "category": "Hardware Rankings",
+    "categoryId": "rank",
+    "date": "2026-09-04",
+    "description": "ASIC vs GPU mining compared on efficiency, coin choice, resale and real payback — with the honest answer on which one earns at your electricity rate.",
+    "keywords": [
+      "asic vs gpu mining",
+      "gpu mining vs asic",
+      "mining asic vs gpu",
+      "asic miner vs gpu miner",
+      "asic mining chips",
+      "asic computing"
+    ],
+    "intro": [
+      "ASIC versus GPU mining is not a question of which machine is faster — it is a question of which algorithm you intend to mine and how much you pay for electricity. An ASIC is a chip fabricated to compute exactly one hash function, so on that function it is thousands of times more efficient than a graphics card. A GPU is a general-purpose processor that can switch coins overnight and be resold into the gaming and AI markets when mining stops paying.",
+      "This guide compares the two on the numbers that decide returns: joules per hash, capital cost per unit of hashrate, algorithm flexibility, resale liquidity and operational overhead. Every recommendation points to hardware we stock and test in Hong Kong, so you can move from the comparison to a shortlist in one step."
+    ],
+    "sections": [
+      {
+        "h2": "Efficiency: The Gap Is Not Close on SHA-256",
+        "paras": [
+          "A modern SHA-256 ASIC such as an Antminer S21 family unit does roughly 13 to 18 joules per terahash. A high-end GPU mining SHA-256 would need billions of joules for the same work, which is why no one has GPU-mined Bitcoin profitably since 2011. For Bitcoin, Kaspa, Litecoin, Dash and Handshake, the ASIC wins by orders of magnitude and the comparison is effectively closed.",
+          "The GPU case only exists on algorithms deliberately designed to resist ASICs, or on new coins where no ASIC has shipped yet. On those chains a GPU farm can earn well for a window of months, but that window closes the moment a manufacturer announces silicon — which is exactly what happened to Ethash, Kadena, Alephium and Blake3."
+        ]
+      },
+      {
+        "h2": "Capital Cost per Unit of Hashrate",
+        "paras": [
+          "Price per terahash is where buyers get surprised. A used previous-generation ASIC often costs under ten dollars per terahash delivered, while a GPU rig costs thousands of dollars for hashrate that is not even measured on the same scale. If your goal is Bitcoin exposure through mining, an ASIC always gives more hash per dollar.",
+          "GPUs charge a premium for optionality: the ability to switch coins, mine a launch, run AI inference jobs, or sell the cards into a deep second-hand market. Pay that premium only if you will genuinely use the flexibility. Most buyers who tell us they want to switch coins never do."
+        ]
+      },
+      {
+        "h2": "Coin Flexibility and Algorithm Risk",
+        "paras": [
+          "An ASIC is a bet on one algorithm and the coins that use it. A SHA-256 machine mines Bitcoin and its forks. A Scrypt machine such as the Antminer L7 or L9 mines Litecoin with merge-mined Dogecoin. If that algorithm's price or difficulty turns against you, your only levers are power cost, firmware tuning and selling the machine.",
+          "GPU rigs hedge that risk by rotating between whatever is most profitable this week. The hedge is real but small: profit-switching pools typically move margins by single-digit percentages, while the ASIC efficiency advantage on a supported algorithm is measured in multiples. Diversification does not beat a tenfold efficiency gap."
+        ]
+      },
+      {
+        "h2": "Noise, Heat and Where You Can Actually Run Each",
+        "paras": [
+          "Air-cooled ASICs run at 70 to 80 dB — genuinely loud, closer to a shop vacuum than a computer. They belong in a garage, outbuilding, container or hosting facility unless you buy a low-wattage home unit or a hydro model plumbed to a dry cooler. GPU rigs sit at 40 to 55 dB and can share a spare room, which is why hobbyists start there.",
+          "Heat is proportional to power in both cases: every watt becomes a watt of heat. A single 3,500 W hydro miner rejects more heat than a domestic boiler, and that is an infrastructure problem, not a preference. Plan airflow at roughly 20 CFM per 100 W for air units, or a coolant loop sized to the full nameplate load for liquid machines."
+        ]
+      },
+      {
+        "h2": "The Decision Rule We Give Buyers",
+        "paras": [
+          "Mine Bitcoin or another ASIC-supported chain? Buy an ASIC, and buy on joules per terahash first, price per terahash second. Under about six cents per kilowatt hour a used S19-class or M30S-class unit usually pays back fastest; above ten cents only current-generation hardware in the 12 to 18 J/TH band holds margin through difficulty growth.",
+          "Want to experiment across new chains, keep resale optionality, or run compute workloads between mining cycles? Build with GPUs and accept lower hash per dollar as the price of that freedom. If you are unsure, start with one tested ASIC rather than a multi-card rig: it is cheaper, the payback model is simpler, and our desk can size the circuit with you before you buy."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is ASIC mining more profitable than GPU mining in 2026?",
+        "a": "On any algorithm an ASIC supports, yes — usually by a wide margin, because the efficiency gap is measured in multiples rather than percentages. GPUs only win on deliberately ASIC-resistant chains or brand-new launches where no silicon exists yet."
+      },
+      {
+        "q": "Can I mine Bitcoin with a GPU?",
+        "a": "Technically yes, practically no. A GPU produces a few gigahashes per second against network difficulty measured in zettahashes, so expected revenue is effectively zero. If you want Bitcoin from mining, you need a SHA-256 ASIC."
+      },
+      {
+        "q": "Which is easier to resell, an ASIC or a GPU?",
+        "a": "GPUs, because gamers and AI buyers compete for them. ASICs resell into a smaller pool of miners and prices track Bitcoin and difficulty, so timing matters more. Buying used at a sensible entry price protects your downside."
+      },
+      {
+        "q": "Do ASICs really use less electricity?",
+        "a": "They use less electricity per unit of useful work, which is what matters. In absolute terms a single ASIC often draws 3,000 W or more, so your circuit, breaker and cooling plan must be sized for the full nameplate load."
+      },
+      {
+        "q": "What should a first-time buyer choose?",
+        "a": "One tested air-cooled ASIC on a dedicated 240 V circuit, sized to your power rate. It gives a clean payback model, resells to a known market, and our team can confirm the electrical and airflow requirements before you commit."
+      }
+    ],
+    "match": {
+      "terms": [
+        "antminer",
+        "whatsminer",
+        "asic"
+      ]
+    },
+    "readMinutes": 10
+  },
+  {
+    "slug": "antminer-s9-profitability-2026-can-it-still-pay",
+    "title": "Antminer S9 Profitability in 2026: Can It Still Pay?",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-04",
+    "description": "Antminer S9 profitability modelled at real 2026 difficulty: break-even power rates, hosted-versus-home math, and when a 13.5 TH/s unit is still worth running.",
+    "keywords": [
+      "antminer s9 profitability",
+      "s9 antminer profitability",
+      "antminer s9",
+      "s9 miner",
+      "ant miner s9",
+      "antminer s9 price"
+    ],
+    "intro": [
+      "The Antminer S9 is the machine that taught a generation what mining sounds like. At roughly 13.5 TH/s and 1,350 W it works out near 100 J/TH — around six to eight times worse than current hardware — so its profitability today depends almost entirely on the price of the electricity you feed it.",
+      "This model uses conservative assumptions and no promotional math: nameplate hashrate derated for real intake temperatures, full wall draw including PSU losses, and pool fees included. The conclusion is blunt, and it is the same advice we give buyers who call our desk asking about cheap legacy units."
+    ],
+    "sections": [
+      {
+        "h2": "The Only Number That Matters: Your Power Rate",
+        "paras": [
+          "At 1,350 W an S9 consumes roughly 32.4 kWh per day. At ten cents per kilowatt hour that is about $3.24 per day in electricity, which comfortably exceeds what 13.5 TH/s earns at 2026 difficulty. At three cents the daily power cost drops near a dollar, and the machine moves from loss-making to marginally positive depending on Bitcoin price.",
+          "The practical break-even for an S9 sits somewhere between two and four cents per kilowatt hour, and it moves every difficulty adjustment. If you are paying a residential tariff anywhere in North America, Europe or Australia, an S9 loses money every hour it runs. That is arithmetic, not pessimism."
+        ]
+      },
+      {
+        "h2": "Where S9s Still Make Sense",
+        "paras": [
+          "Three cases genuinely work. Curtailed or stranded power — flare gas, hydro spill, behind-the-meter solar that would otherwise be wasted — where the marginal cost of electricity is near zero. Heat reuse, where the S9 replaces a resistive heater you were going to run anyway and the mining revenue is a rebate on your heating bill. And learning, where you want firmware, pool configuration, PSU swaps and thermal tuning experience before spending real money.",
+          "The fourth case is parts. S9 hashboards, control boards, fans and APW3 PSUs still keep older fleets alive, so a cheap unit can be worth more disassembled than hashing. We see operators buy lots specifically as donor stock."
+        ]
+      },
+      {
+        "h2": "Modelling It Properly in Five Lines",
+        "paras": [
+          "Daily revenue equals your hashrate share of the network multiplied by daily block issuance and fees, minus pool fee. Daily cost equals kilowatts multiplied by 24 multiplied by your rate. Subtract, and you have gross margin per machine per day. Divide the delivered purchase price by that margin and you have payback in days — if the margin is negative, there is no payback at any price.",
+          "Run the model at three Bitcoin prices and two difficulty growth assumptions. A legacy machine is highly sensitive to both, so a spread tells you far more than a single point estimate. Rerun it after every difficulty adjustment rather than trusting a figure from last quarter."
+        ]
+      },
+      {
+        "h2": "Hosting an S9 Almost Never Works",
+        "paras": [
+          "Hosting contracts price per kilowatt, not per terahash, so a hosted S9 pays commercial-rate power plus a hosting margin for hashrate that current hardware produces at a fraction of the energy. Most reputable facilities will not accept sub-20 J/TH-class machines any more, and the ones that do are selling you rack space rather than a return.",
+          "If you want hashrate without running hardware yourself, host an efficient machine instead. The same monthly hosting spend applied to a modern unit produces multiples of the revenue for the same kilowatt."
+        ]
+      },
+      {
+        "h2": "What to Buy Instead at Each Budget",
+        "paras": [
+          "Under a few hundred dollars, a low-wattage 110 V home miner gives you real hashrate at a fraction of the noise and heat, and it is a better teaching platform than an S9. In the low four figures, a tested S19j Pro or M30S++ delivers ten to twenty times the hashrate at roughly a quarter of the joules per terahash.",
+          "If your power is genuinely free or curtailed, buy legacy units by the pallet, expect failures, and keep spares. Every used and refurbished unit we ship is bench-tested under load with hashboards verified chip by chip, so you know what you are getting before it leaves Hong Kong."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How much can an Antminer S9 earn per day in 2026?",
+        "a": "Gross mining revenue for 13.5 TH/s is a few cents to a few tens of cents per day depending on Bitcoin price and difficulty, against roughly $1 to $3 per day in electricity at typical rates. It only clears at very cheap or curtailed power."
+      },
+      {
+        "q": "What is the break-even electricity rate for an S9?",
+        "a": "Roughly two to four cents per kilowatt hour, moving with Bitcoin price and every difficulty adjustment. Above that band the machine burns more value in power than it produces in Bitcoin."
+      },
+      {
+        "q": "What should I pay for a used S9?",
+        "a": "Treat it as scrap-plus-parts pricing — tens of dollars, not hundreds. Pay for tested boards and a working PSU rather than for the badge, and never pay generation-old prices for a nine-year-old machine."
+      },
+      {
+        "q": "Is the S9 good for learning to mine?",
+        "a": "Yes, it is the cheapest way to learn pool configuration, firmware flashing, thermal management and PSU handling. Just budget the electricity as tuition rather than expecting profit."
+      },
+      {
+        "q": "Can I use an S9 to heat a room?",
+        "a": "Many people do. It converts nearly all 1,350 W into heat, so as a replacement for resistive heating during cold months the mining revenue effectively discounts your heating cost. Noise is the limiting factor at 75 to 80 dB."
+      }
+    ],
+    "match": {
+      "terms": [
+        "s9"
+      ],
+      "condition": "Used"
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "bitcoin-mining-profitability-march-2026-cost-model",
+    "title": "Bitcoin Mining Profitability in March 2026: Cost Model",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-04",
+    "description": "How to build a March 2026 bitcoin mining profitability model: hashprice inputs, difficulty drift, machine tiers by J/TH and the break-even power rate for each.",
+    "keywords": [
+      "bitcoin mining profitability march 2026",
+      "bitcoin mining profitability",
+      "mining power",
+      "hashprice"
+    ],
+    "intro": [
+      "A monthly profitability question is really a hashprice question: how much revenue does one terahash per second earn per day, and how does that compare with the electricity your machine burns to produce it. Everything else — machine brand, firmware, pool choice — adjusts the answer by a few percent around those two numbers.",
+      "This guide gives you the March 2026 framework rather than a screenshot that expires. Plug today's hashprice into the same structure and the model stays correct next month, next quarter and after the next difficulty adjustment."
+    ],
+    "sections": [
+      {
+        "h2": "The Two Inputs That Drive Everything",
+        "paras": [
+          "Hashprice is daily network revenue divided by network hashrate, quoted in dollars per terahash per day. It falls when difficulty rises and rises when Bitcoin price or transaction fees rise. Your machine's efficiency, in joules per terahash, converts that revenue into a cost by fixing how many kilowatt hours each terahash consumes.",
+          "Break-even is where hashprice equals efficiency multiplied by your power rate. A 15 J/TH machine consumes 0.36 kWh per terahash per day, so at eight cents per kilowatt hour it needs roughly three cents per terahash per day just to cover power. A 30 J/TH machine needs double that."
+        ]
+      },
+      {
+        "h2": "Machine Tiers and Their March 2026 Positions",
+        "paras": [
+          "Current-generation hardware in the 12 to 18 J/TH band — S21 family, M60 and M6x series, Avalon A15 class — clears power costs at rates up to roughly twelve to fifteen cents in a normal market, which is why hosted fleets standardise on it. These machines carry the highest capital cost per terahash and need uptime to justify it.",
+          "Previous-generation units at 21 to 29 J/TH still work under about six cents. Legacy sub-40 J/TH hardware needs curtailed, stranded or behind-the-meter power. Sort candidates into these three buckets before comparing prices; a cheap machine in the wrong bucket for your tariff is not cheap."
+        ]
+      },
+      {
+        "h2": "Costs Operators Forget",
+        "paras": [
+          "Pool fee of one to two percent, PSU conversion losses of four to eight percent already included if you meter at the wall, roughly one to three percent downtime for maintenance and firmware, plus derating of a few percent when intake air is warm. Together these trim five to fifteen percent off a naive spreadsheet.",
+          "Then add the fixed costs: shipping and duty amortised over the life of the machine, spares inventory, electrical work, cooling fans or pumps, and your own time. A model that ignores fixed costs shows profit right up to the month you replace a hashboard."
+        ]
+      },
+      {
+        "h2": "Difficulty Drift and the Twelve-Month View",
+        "paras": [
+          "Assume difficulty keeps grinding upward. Model a base case of one to two percent growth per adjustment period and a stress case of three percent, then check whether your machine still clears power costs twelve months out. Anything that only works at today's difficulty is a short-horizon trade, not an investment.",
+          "This is why efficiency beats headline hashrate. Difficulty growth is effectively a slow tax on joules per terahash, so the lower your J/TH, the longer your machine stays on the right side of break-even."
+        ]
+      },
+      {
+        "h2": "Turning the Model into a Purchase",
+        "paras": [
+          "Set your power rate, choose the tier the rate allows, then compare delivered price per terahash inside that tier only. Our stock listings publish hashrate, wall draw, efficiency and condition on every product page so the comparison takes minutes, and the sales desk will run the payback with you at your own rate.",
+          "Buy for the site you actually have. A 3,500 W hydro flagship is the wrong answer for a garage with a 15 A circuit, no matter how good its joules per terahash look on paper."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is hashprice and where do I find it?",
+        "a": "Hashprice is daily mining revenue per terahash per second, published by several public mining data services. Use today's figure with your machine's efficiency and power rate to compute margin."
+      },
+      {
+        "q": "Is bitcoin mining profitable in March 2026?",
+        "a": "For efficient hardware on competitive power, yes. For sub-25 J/TH machines on residential tariffs, usually not. Profitability is a function of your specific power rate, not a market-wide yes or no."
+      },
+      {
+        "q": "How often should I rerun the numbers?",
+        "a": "Every difficulty adjustment — roughly every two weeks — and any time Bitcoin moves sharply. Quarterly reviews are too slow to catch a fleet drifting below break-even."
+      },
+      {
+        "q": "Does firmware tuning change the answer?",
+        "a": "Yes, meaningfully. Underclocking with Braiins OS+ or Vnish can improve joules per terahash by ten to twenty percent, which can move a marginal machine back above break-even on expensive power."
+      },
+      {
+        "q": "What margin should I aim for?",
+        "a": "Target power costs below sixty percent of gross revenue so you have room for difficulty growth and downtime. Thinner margins leave no buffer for a bad month."
+      }
+    ],
+    "match": {
+      "terms": [
+        "antminer",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "bitcoin-mining-profitability-april-2026-what-changed",
+    "title": "Bitcoin Mining Profitability in April 2026: What Changed",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-04",
+    "description": "April 2026 bitcoin mining profitability: how difficulty growth, fee revenue and hosting rates shifted margins, and which machine tiers still clear their power bill.",
+    "keywords": [
+      "bitcoin mining profitability april 2026",
+      "current bitcoin mining profitability april 2026",
+      "bitcoin mining profitability"
+    ],
+    "intro": [
+      "Between March and April 2026 nothing about the physics changed — but three inputs did: network difficulty, transaction fee share of block revenue, and the hosting rates operators are quoting per kilowatt. Each moves margin without touching your hardware.",
+      "Here is how to re-baseline your model for April, what shifted for each machine tier, and the decision points that matter if you are buying, hosting or curtailing this month."
+    ],
+    "sections": [
+      {
+        "h2": "Difficulty Keeps Compounding, Quietly",
+        "paras": [
+          "Every upward difficulty adjustment reduces revenue per terahash for every miner on earth simultaneously. Two or three consecutive adjustments of one to two percent look small individually and remove five percent of your revenue collectively. If you last modelled in Q1, your margin is thinner than your spreadsheet says.",
+          "Rebuild from current hashprice rather than adjusting last month's number by feel. Then check the gap between your machine's break-even power rate and your actual rate — that gap is your entire safety margin."
+        ]
+      },
+      {
+        "h2": "Fee Revenue Is the Swing Factor",
+        "paras": [
+          "Transaction fees are the volatile part of block revenue. In busy periods fees add a meaningful percentage on top of subsidy, which flatters marginal hardware; in quiet weeks they collapse toward nothing. Never build a purchase case on an elevated fee month.",
+          "Model your base case on subsidy plus a conservative fee assumption, and treat fee spikes as upside that funds spares and maintenance rather than as the reason a machine works."
+        ]
+      },
+      {
+        "h2": "What Each Tier Looks Like This Month",
+        "paras": [
+          "Flagship hardware at 12 to 18 J/TH keeps the widest buffer and remains the only sensible choice above roughly ten cents per kilowatt hour. Mid-tier machines at 21 to 29 J/TH still deliver the fastest payback under about six cents because their entry price is so much lower per terahash.",
+          "Legacy hardware above 40 J/TH is a curtailment or heat-reuse play only. If you are running it on a metered commercial tariff, April is the month to model powering it down and reallocating the circuit."
+        ]
+      },
+      {
+        "h2": "Hosting Versus Home in April",
+        "paras": [
+          "Hosting quotes move with regional power markets and available rack capacity. When hosted all-in rates sit near your home tariff, hosting wins on uptime, security and noise; when they sit well above it, self-hosting wins if you can handle the heat and the sound.",
+          "Ask any facility for the all-in rate including infrastructure fees, the uptime guarantee, the curtailment policy and who pays for repairs. A cheap per-kilowatt headline with punitive extras is not cheap."
+        ]
+      },
+      {
+        "h2": "Actions Worth Taking Now",
+        "paras": [
+          "Retune firmware for efficiency rather than maximum hashrate, clean intake filters, verify fan health, and reseat any hashboard showing chip errors — each of these buys back percentage points that difficulty just took. Then decide whether to add efficient capacity or hold cash.",
+          "If you are adding capacity, buy on delivered cost per terahash within the tier your power rate allows. Our stock pages list efficiency and wall draw on every unit, and the desk will run the April payback with you before you commit."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Did mining get less profitable in April 2026?",
+        "a": "Revenue per terahash drifts down as difficulty rises, so unless Bitcoin price or fees rose faster, margins tightened. Efficient hardware absorbed it; legacy hardware felt it immediately."
+      },
+      {
+        "q": "Should I power down old machines?",
+        "a": "If gross revenue is below electricity cost at your rate, yes — every hour of runtime destroys value. Keep them as standby capacity for cheap-power windows or sell them while they still hold parts value."
+      },
+      {
+        "q": "Is now a good time to buy hardware?",
+        "a": "It is when your power rate supports the tier you are buying and you can hold through difficulty growth. Buy efficiency, not headline hashrate, and negotiate on delivered price per terahash."
+      },
+      {
+        "q": "How do fees affect my model?",
+        "a": "Fees can add a substantial share of block revenue in busy weeks and nearly nothing in quiet ones. Use a conservative fee assumption in the base case so a quiet month does not break your plan."
+      },
+      {
+        "q": "What margin is healthy?",
+        "a": "Power costs under roughly sixty percent of gross revenue. That leaves headroom for difficulty growth, downtime and repairs without turning cash-flow negative."
+      }
+    ],
+    "match": {
+      "terms": [
+        "antminer",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "asic-monitoring-software-fleet-dashboards-compared",
+    "title": "ASIC Monitoring Software: Fleet Dashboards Compared",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-04",
+    "description": "ASIC monitoring software compared: firmware dashboards, pool-side alerts and fleet managers that catch dead hashboards, throttling and downtime before revenue is lost.",
+    "keywords": [
+      "asic monitoring software",
+      "whatsminer tool",
+      "asic mining monitoring",
+      "miner management"
+    ],
+    "intro": [
+      "Unmonitored miners fail silently. A hashboard drops out, a fan seizes, a pool connection stalls, and the machine keeps drawing power while producing a fraction of its hashrate. Monitoring software exists to turn that invisible loss into an alert you can act on the same day.",
+      "This guide covers the three layers of monitoring every operator needs — firmware, pool and fleet — and how to combine them without paying for tooling a small farm does not need."
+    ],
+    "sections": [
+      {
+        "h2": "Layer One: The Firmware Dashboard",
+        "paras": [
+          "Stock Bitmain, MicroBT and Canaan firmware exposes a web interface showing per-board hashrate, chip temperatures, fan RPM, frequency and error counts. Custom firmware such as Braiins OS+ and Vnish adds autotuning, per-chip telemetry and efficiency targets, which is genuinely useful when you are chasing joules per terahash.",
+          "Read the per-board numbers, not just the total. A machine reporting two of three boards at full speed still shows a plausible-looking total after autotune compensates, and that is exactly the failure people miss for weeks."
+        ]
+      },
+      {
+        "h2": "Layer Two: Pool-Side Alerts",
+        "paras": [
+          "Your pool sees your real accepted hashrate, which is the number that pays. Configure worker names per machine, then enable the pool's offline and low-hashrate alerts. This catches network problems, bad configuration and machines that hash locally but never submit shares.",
+          "Pool alerts are free and vendor-neutral, so set them up before buying any paid tooling. Use one worker name per unit so an alert identifies the machine rather than the site."
+        ]
+      },
+      {
+        "h2": "Layer Three: Fleet Management Tools",
+        "paras": [
+          "Once past roughly ten units, spreadsheets and browser tabs stop scaling. Fleet tools — Braiins Manager, Foreman, Awesome Miner, manufacturer tools such as the WhatsMiner utility for bulk configuration and firmware pushes — give you one table of every machine, batch configuration, scheduled reboots and historical charts.",
+          "Choose on three criteria: does it support every firmware you run, can it batch-configure pools and passwords, and does it alert by a channel you actually read. Charting is pleasant; alerting is what saves money."
+        ]
+      },
+      {
+        "h2": "The Metrics Worth Alerting On",
+        "paras": [
+          "Accepted hashrate below ninety percent of expected for more than fifteen minutes, any board at zero, chip temperature above the manufacturer limit, fan RPM outside range, and power draw drifting up while hashrate stays flat — that last one is early evidence of thermal degradation or a failing PSU.",
+          "Log everything to a time series you keep for at least a year. Warranty conversations and resale valuations both go better when you can show clean historical telemetry for a machine."
+        ]
+      },
+      {
+        "h2": "Network and Access Hygiene",
+        "paras": [
+          "Put miners on their own VLAN or subnet with static leases, never expose control interfaces to the public internet, change default passwords on delivery, and reach the fleet over a VPN. Mining control panels are routinely scanned for and hijacked to redirect hashrate to someone else's pool.",
+          "Snapshot your configuration — pool URLs, worker names, firmware versions, tuning profiles — so a replacement unit can be brought online in minutes rather than rebuilt from memory."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do I need paid monitoring software for a few miners?",
+        "a": "No. Firmware dashboards plus pool-side offline and low-hashrate alerts cover one to ten machines well. Paid fleet tools start paying for themselves when manual checks stop being realistic."
+      },
+      {
+        "q": "Which metric catches the most failures early?",
+        "a": "Accepted hashrate at the pool, per worker. It reflects real paid output and captures firmware, thermal and network faults in one number."
+      },
+      {
+        "q": "Can I monitor mixed Bitmain and WhatsMiner fleets in one tool?",
+        "a": "Yes — several fleet managers support both, though feature depth varies by firmware. Verify support for your exact models and firmware versions before subscribing."
+      },
+      {
+        "q": "Is custom firmware worth it for monitoring alone?",
+        "a": "Its telemetry is better, but the real gain is autotuning efficiency. Treat improved monitoring as a bonus on top of the joules-per-terahash improvement."
+      },
+      {
+        "q": "How do I keep miner interfaces secure?",
+        "a": "Isolate them on a dedicated network segment, change default credentials, disable internet exposure, and access them through a VPN. Never port-forward a mining dashboard."
+      }
+    ],
+    "match": {
+      "terms": [
+        "antminer",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "usb-crypto-mining-and-block-erupters-explained",
+    "title": "USB Crypto Mining and Block Erupters Explained",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-04",
+    "description": "USB crypto mining and block erupters explained: what these desktop miners actually earn, why they exist in 2026, and the better ways to learn or lottery-mine.",
+    "keywords": [
+      "usb crypto mining",
+      "block erupter",
+      "desktop bitcoin miner",
+      "1 th miner",
+      "usb asic miner"
+    ],
+    "intro": [
+      "USB mining sticks and block erupters were the first consumer ASICs — small SHA-256 chips on a USB dongle producing megahashes, later gigahashes, of Bitcoin hashrate. Against 2026 network difficulty they earn effectively nothing, yet people still buy them, and for two defensible reasons.",
+      "This guide explains what USB and desktop miners actually do today, how their expected value works, and what to buy instead when the goal is revenue rather than education or novelty."
+    ],
+    "sections": [
+      {
+        "h2": "What a USB Miner Produces Today",
+        "paras": [
+          "Classic block erupters delivered around 300 MH/s; modern USB sticks reach a few hundred gigahashes at best. Network hashrate is measured in hundreds of exahashes, so a USB device's share of block rewards rounds to zero over any human timescale. Expected pool payouts are fractions of a cent per day.",
+          "That is not a defect — it is scale. These devices exist to demonstrate the protocol, not to compete with industrial hashrate. Judge them as teaching tools or lottery tickets, never as investments."
+        ]
+      },
+      {
+        "h2": "The Two Legitimate Use Cases",
+        "paras": [
+          "Education is the first: a USB miner plus cgminer or a modern bfgminer fork teaches pool configuration, stratum, worker naming, share submission and difficulty in an afternoon, on a device you can run on a desk without a dedicated circuit. It is the cheapest possible mining lab.",
+          "Solo lottery mining is the second: point a small device at a solo pool and you hold a genuine, astronomically small chance at a full block reward. People buy the ticket knowingly. The correct framing is entertainment spending with a lottery-shaped payoff, not yield."
+        ]
+      },
+      {
+        "h2": "Desktop and Home Miners Are a Different Category",
+        "paras": [
+          "Do not confuse a USB stick with a modern low-wattage home miner. Purpose-built quiet units running on 110 V household power produce real terahashes at manageable noise, and they do earn measurable Bitcoin. They cost more and need proper airflow, but the economics are on a completely different scale.",
+          "If you want a machine on a desk or in a home office that genuinely mines, buy a low-wattage home unit rather than a dongle. Our team can match one to your circuit and noise tolerance."
+        ]
+      },
+      {
+        "h2": "Running One Properly",
+        "paras": [
+          "Use a powered USB hub — unpowered ports brown out and cause hardware errors — add a small fan, keep the chip below its thermal limit, and configure a pool with a distinct worker name so you can see shares arriving. Expect firmware and driver quirks; most of these devices predate modern operating systems.",
+          "Track hardware error rate rather than headline hashrate. A stick reporting its rated speed with a high error count is submitting far fewer valid shares than it appears to."
+        ]
+      },
+      {
+        "h2": "Better Uses of the Same Money",
+        "paras": [
+          "A tested used ASIC in the low-to-mid range produces tens of terahashes for a few hundred dollars — millions of times the hashrate of a USB stick. If your electricity is cheap, that is the purchase that actually generates Bitcoin.",
+          "Keep a USB miner as a demo, a conversation piece, or a solo lottery ticket alongside real hardware. Just size the expectation to what the silicon can do."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How much does a USB bitcoin miner earn?",
+        "a": "Effectively nothing — fractions of a cent per day at best. Its share of network hashrate is too small to produce meaningful pool payouts."
+      },
+      {
+        "q": "Are block erupters still usable in 2026?",
+        "a": "They still hash and still submit valid shares, so they work as teaching hardware and solo lottery devices. As revenue equipment they are obsolete."
+      },
+      {
+        "q": "Can a USB miner solo-mine a block?",
+        "a": "Yes, with odds comparable to a large lottery. It happens occasionally to tiny miners, which is precisely why the category persists."
+      },
+      {
+        "q": "What is the smallest miner worth buying for real income?",
+        "a": "A low-wattage purpose-built home ASIC producing real terahashes on a 110 V or 240 V circuit. Below that, revenue is a rounding error."
+      },
+      {
+        "q": "Do I need special software?",
+        "a": "Older USB devices need cgminer or a bfgminer fork and a powered hub. Modern home ASICs ship with their own firmware and a web interface, so no host software is required."
+      }
+    ],
+    "match": {
+      "terms": [
+        "home",
+        "usb",
+        "mini"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitaxe-nerdminer-lucky-miner-lottery-mining-math",
+    "title": "Bitaxe, NerdMiner and Lucky Miner: Lottery Mining Math",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-04",
+    "description": "Bitaxe, NerdMiner v2 and v3 and Lucky Miner LV07 profitability explained honestly: expected value, solo odds, power cost and where open-source miners genuinely fit.",
+    "keywords": [
+      "bitaxe miner profitability",
+      "nerd miner v2 profitability",
+      "nerdminer v2 profitability",
+      "nerd miner v3 profitability",
+      "lucky miner lv07 profitability"
+    ],
+    "intro": [
+      "Open-source desktop miners — Bitaxe, NerdMiner v2 and v3, Lucky Miner LV07 and their clones — occupy a category of their own. They draw single-digit to low tens of watts, are silent enough for a living room, and produce hashrate measured in gigahashes to a few terahashes. Their appeal is sovereignty and fun, not yield.",
+      "Here is the honest math: what these devices earn in a pool, what the solo-block lottery actually looks like, and how to decide whether the electricity is worth it."
+    ],
+    "sections": [
+      {
+        "h2": "Expected Value Is Simple to Calculate",
+        "paras": [
+          "Daily expected revenue equals your hashrate divided by network hashrate, multiplied by daily network revenue. Run that with a few hundred gigahashes to a few terahashes against a network measured in hundreds of exahashes, and the result is a small fraction of a cent to a few cents per day.",
+          "Now subtract power. A 15 W device costs roughly a few cents per day at typical residential rates. For most open-source miners, pool-mode expected revenue does not cover the electricity — the deficit is small, but it is a deficit."
+        ]
+      },
+      {
+        "h2": "Solo Mode Is a Lottery, and That Is the Point",
+        "paras": [
+          "In solo mode you are not buying yield, you are buying tickets. Probability of finding a block over a year is a small fraction of a percent for a device in this class, but the payoff is the entire block reward plus fees. Several hobbyists have genuinely hit blocks, which is why the community exists.",
+          "Treat solo mining on a small device as entertainment spending with a lottery-shaped distribution. The correct budget is what you would spend on a hobby, and the correct expectation is zero with a tiny chance of something remarkable."
+        ]
+      },
+      {
+        "h2": "Comparing the Popular Boards",
+        "paras": [
+          "Bitaxe designs centre on a single modern ASIC chip harvested from current-generation hardware, delivering the best hashrate per watt in the category and appealing to people who want open hardware they can repair and modify. NerdMiner v2 and v3 optimise for cost and simplicity on ESP32-class hardware with far lower hashrate. Lucky Miner units package similar silicon into a consumer-friendly enclosure with a display.",
+          "Rank them on hashrate per watt if you care about pool revenue, on hackability if you want to learn, and on noise and looks if it is going on a shelf. None of them will change your income."
+        ]
+      },
+      {
+        "h2": "Where These Devices Genuinely Shine",
+        "paras": [
+          "They teach the full stack — stratum, difficulty, share submission, solo pool configuration, firmware flashing — at a few watts and zero noise. They are also excellent for testing pool setups and monitoring before you point real hardware at them, and they make the protocol tangible in a way a dashboard cannot.",
+          "For gifts, education and desk presence, they are the best category in mining. For income, they are not competing with a tested ASIC that produces hundreds of terahashes."
+        ]
+      },
+      {
+        "h2": "If You Want Revenue Instead",
+        "paras": [
+          "Take the same budget, add your power rate, and buy the most efficient tested ASIC that your circuit and noise tolerance allow. A single used previous-generation unit produces more hashrate in a second than a NerdMiner produces in a year, and it earns real Bitcoin at cheap power.",
+          "Many operators do both: an efficient machine in the garage for revenue, a Bitaxe on the desk for the lottery ticket and the conversation."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a Bitaxe profitable?",
+        "a": "In pool mode it typically earns less than the electricity it consumes, so no. Its value is in solo lottery odds, education and open hardware, not yield."
+      },
+      {
+        "q": "What are the odds a NerdMiner finds a block?",
+        "a": "Extremely small — a fraction of a percent per year for typical hashrate in this class. It is a genuine lottery ticket rather than an income stream."
+      },
+      {
+        "q": "Which open-source miner has the best hashrate per watt?",
+        "a": "Bitaxe-class boards built around a modern harvested ASIC chip lead the category, well ahead of ESP32-based NerdMiner designs."
+      },
+      {
+        "q": "Should I solo mine or pool mine a small device?",
+        "a": "Pool mining pays tiny but steady amounts; solo mining pays nothing almost always and everything very rarely. Choose based on whether you want a rebate or a lottery ticket."
+      },
+      {
+        "q": "What is the cheapest device that actually earns?",
+        "a": "A purpose-built low-wattage home ASIC producing real terahashes. Below that hashrate scale, revenue does not cover power at ordinary rates."
+      }
+    ],
+    "match": {
+      "terms": [
+        "home",
+        "mini",
+        "usb"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "crypto-mining-container-for-sale-turnkey-buying-guide",
+    "title": "Crypto Mining Container for Sale: Turnkey Buying Guide",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-04",
+    "description": "Crypto mining containers for sale explained: air, hydro and immersion designs, MW sizing, transformer and cooling specs, lead times and what a fair price includes.",
+    "keywords": [
+      "crypto mining container for sale",
+      "mining container",
+      "container mining",
+      "buy mining equipment"
+    ],
+    "intro": [
+      "A mining container is a pre-engineered data centre in a shipping-container shell: racks, ventilation or coolant loops, switchgear, PDUs, fire detection and controls, delivered as one unit. It is how operators go from a pad and a transformer to hashing in weeks instead of months.",
+      "This guide covers the three container families, the specifications that actually matter when you compare quotes, and how we scope and source container builds for buyers from our Hong Kong desk."
+    ],
+    "sections": [
+      {
+        "h2": "Air, Hydro or Immersion",
+        "paras": [
+          "Air-cooled containers are the cheapest per megawatt and the simplest to operate: filtered intake, hot-aisle exhaust, high-static fans. They suit moderate climates and standard air-cooled ASICs, and they tolerate dust and humidity less gracefully than the alternatives.",
+          "Hydro containers plumb liquid-cooled miners to a dry cooler or cooling tower and deliver stable hashrate in hot climates with far lower noise. Immersion tanks submerge machines in dielectric fluid, giving the best thermal control and component longevity at the highest capital cost and the most demanding maintenance discipline."
+        ]
+      },
+      {
+        "h2": "Sizing: Megawatts, Not Machines",
+        "paras": [
+          "Containers are sold by electrical capacity — commonly 1 MW to 5 MW per unit — not by machine count. Divide your available power by machine wall draw to get capacity, then leave ten to fifteen percent headroom for fans, pumps, lighting and future hardware with higher draw.",
+          "Confirm voltage and phase at your site, the transformer rating, and whether the container includes switchgear, PDUs and step-down transformers or expects them externally. That single line item moves quotes by six figures."
+        ]
+      },
+      {
+        "h2": "What a Complete Quote Includes",
+        "paras": [
+          "Structure and insulation, racking, cooling package, electrical distribution to PDU level, controls and monitoring, fire detection, lighting, and factory testing. Then delivery terms: FOB versus DDP, crane requirements on arrival, commissioning support and warranty duration on the container and its components separately.",
+          "Ask for the airflow or coolant flow rating per rack, the design ambient temperature, and the noise figure at ten metres. A container specified for 30 degrees Celsius design ambient will throttle in a 40 degree summer, and that is a revenue problem discovered too late."
+        ]
+      },
+      {
+        "h2": "Site Work You Still Own",
+        "paras": [
+          "A container does not remove civil and utility work. You need a level pad or piles, an interconnect agreement and transformer, grounding, fibre or fixed wireless connectivity, physical security, and permits appropriate to your jurisdiction. Utility timelines are usually the longest item in the whole project.",
+          "Start the interconnect conversation before you order steel. Buyers who order containers first routinely have them sitting idle waiting on a transformer."
+        ]
+      },
+      {
+        "h2": "Buying Sensibly",
+        "paras": [
+          "Compare quotes on delivered cost per megawatt with the same cooling type and the same scope boundary, and insist the boundary is written down. Ask for reference sites, factory acceptance test reports and the bill of materials for the cooling package.",
+          "We scope container builds alongside the machines that go in them, so power, cooling and hardware are matched rather than assembled from three unrelated purchases. Email sales@bitcoinminingdepot.com with your available power, voltage, climate and target machine model and we will size options and lead times."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How much does a mining container cost?",
+        "a": "Pricing is quoted per megawatt and varies widely by cooling type and scope — air is cheapest, immersion the most expensive. Compare only quotes with identical scope boundaries and delivery terms."
+      },
+      {
+        "q": "How many miners fit in a 1 MW container?",
+        "a": "Divide 1 MW by your machine's wall draw and leave ten to fifteen percent headroom for auxiliaries. Roughly 250 to 300 units at 3,000 to 3,500 W each."
+      },
+      {
+        "q": "Air or hydro for a hot climate?",
+        "a": "Hydro or immersion. Liquid cooling holds rated hashrate because coolant temperature, not ambient air, sets the thermal ceiling."
+      },
+      {
+        "q": "What is the longest lead time in a container project?",
+        "a": "Usually the utility interconnect and transformer, not the container itself. Begin that process before ordering."
+      },
+      {
+        "q": "Can you supply containers and machines together?",
+        "a": "Yes — we scope the container, cooling and hardware as one package so the electrical and thermal design matches the machines you actually intend to run."
+      }
+    ],
+    "match": {
+      "terms": [
+        "hydro",
+        "immersion",
+        "container"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "build-your-own-asic-miner-what-diy-can-and-cannot-do",
+    "title": "Build Your Own ASIC Miner: What DIY Can and Cannot Do",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-04",
+    "description": "Can you build your own ASIC miner? What DIY hashboard, controller and PSU projects can realistically achieve, what fails, and the parts of a build worth doing yourself.",
+    "keywords": [
+      "build asic miner",
+      "miner build",
+      "build miner",
+      "what is mining rig",
+      "rig mining"
+    ],
+    "intro": [
+      "People ask whether they can build an ASIC miner the way they would build a PC. The honest answer splits in two: you cannot fabricate competitive mining silicon, but you absolutely can build around it — controllers, power delivery, cooling, enclosures and, at small scale, complete open-source miners using harvested chips.",
+      "This guide separates what DIY genuinely achieves from what quietly wastes money, and where a build beats buying a finished machine."
+    ],
+    "sections": [
+      {
+        "h2": "Why You Cannot Build the Chip",
+        "paras": [
+          "Mining ASICs are custom silicon on leading-edge process nodes. A tape-out costs millions, the design cycle runs years, and the resulting chips only reach competitive joules per terahash at volume. This is why three or four manufacturers dominate the entire industry.",
+          "Anyone selling a plan to fabricate your own competitive mining chip is selling a story. The realistic DIY frontier is boards built around chips that already exist."
+        ]
+      },
+      {
+        "h2": "What DIY Actually Achieves",
+        "paras": [
+          "Open-source miners such as the Bitaxe family put a single modern ASIC chip on a small board with an open controller and firmware — a real, working, repairable miner at a few watts. Building one teaches power delivery, thermal design, firmware and stratum in a way no purchase does.",
+          "At the fleet level, DIY means controllers, custom fan shrouds and ducting, immersion tanks, PSU breakout boards, monitoring and automation. That work is where operators genuinely add value and cut cost."
+        ]
+      },
+      {
+        "h2": "Power Delivery Is Where Builds Go Wrong",
+        "paras": [
+          "Server PSUs plus breakout boards are a common route to cheap kilowatts, and they work when specified correctly: correct voltage rail, adequate current headroom, proper gauge cabling, secure crimps and matched connectors. They fail when someone runs undersized cable, mixes rails or leaves connectors under mechanical stress.",
+          "Undersized or poorly terminated DC wiring is the leading cause of melted connectors and fires in home mining. If you are not confident sizing conductors and torquing lugs, buy a matched PSU or use a licensed electrician."
+        ]
+      },
+      {
+        "h2": "Cooling and Enclosures Reward DIY",
+        "paras": [
+          "Ducting hot exhaust outdoors, building an intake filter box, adding a hot-aisle containment panel or converting a shed with proper intake and exhaust openings all deliver measurable improvements in hashrate stability and machine life. These are carpentry and airflow problems, not silicon problems.",
+          "Immersion is the advanced version: a sealed tank, dielectric fluid, pump, heat exchanger and careful fluid handling. It works, it reduces noise dramatically, and it demands maintenance discipline and a plan for fluid disposal."
+        ]
+      },
+      {
+        "h2": "The Sensible Split",
+        "paras": [
+          "Buy the hashing hardware, build the environment. A tested factory machine gives you warranty, known efficiency and resale value; your build effort goes into power, airflow, noise control, monitoring and automation, where competence pays back immediately.",
+          "If you want the pure DIY experience, build an open-source desktop miner alongside a real machine. You get the education without betting your capital on hand-soldered hashboards."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I build an ASIC miner from scratch?",
+        "a": "Not the chip — that requires semiconductor fabrication at scale. You can build boards, controllers, power delivery and cooling around existing chips, and open-source designs make that accessible."
+      },
+      {
+        "q": "What is a mining rig, exactly?",
+        "a": "Any assembled machine dedicated to mining: an ASIC unit for a specific algorithm, or a multi-GPU frame for ASIC-resistant coins. In both cases the rig is hardware plus power delivery, cooling and a controller."
+      },
+      {
+        "q": "Are server PSUs with breakout boards safe?",
+        "a": "Yes when specified and wired correctly with adequate conductor sizing and proper terminations. Undersized or badly crimped DC wiring is the main fire risk in home mining."
+      },
+      {
+        "q": "Is DIY cheaper than buying a machine?",
+        "a": "Not for hashrate. It is cheaper for infrastructure — ducting, shrouds, containment, monitoring — where your labour replaces a vendor's margin."
+      },
+      {
+        "q": "What should a first build be?",
+        "a": "An open-source desktop miner for learning, plus environmental work around one tested factory ASIC. That combination gives skills and revenue without risking capital on unproven boards."
+      }
+    ],
+    "match": {
+      "terms": [
+        "home",
+        "asic"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "parallel-miner-psus-breakout-boards-and-asic-boards",
+    "title": "Parallel Miner PSUs, Breakout Boards and ASIC Boards",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-04",
+    "description": "A practical guide to mining power hardware: server PSUs and breakout boards, ASIC hashboard and control board replacement, cable sizing and safe DC wiring.",
+    "keywords": [
+      "parallel miner",
+      "asic board",
+      "mining power",
+      "asic miner psu",
+      "breakout board"
+    ],
+    "intro": [
+      "Power hardware is the least glamorous and most dangerous part of mining. Server power supplies with breakout boards, replacement hashboards and control boards, and the cabling between them are what keep a fleet hashing — and what burns houses down when specified carelessly.",
+      "This guide covers how the parts fit together, how to size conductors, and how to decide between repairing a board and replacing a machine."
+    ],
+    "sections": [
+      {
+        "h2": "Server PSUs and Breakout Boards",
+        "paras": [
+          "Enterprise server PSUs deliver kilowatts of 12 V DC cheaply and reliably, and breakout boards convert their edge connectors into standard mining connectors. The combination is popular because it is inexpensive, hot-swappable and easy to source in quantity.",
+          "Check three things before buying: rated output at your input voltage — many units derate heavily on 120 V — the connector standard on the breakout board, and whether the unit needs a fan-speed or enable jumper to run outside its chassis."
+        ]
+      },
+      {
+        "h2": "Sizing Cable Properly",
+        "paras": [
+          "Current, not power, sizes conductors. At 12 V, a 3,000 W load draws 250 A, distributed across multiple leads. Use the manufacturer's specified gauge, keep runs short, avoid daisy-chaining, and never split a single lead to feed two boards. Warm connectors are a warning, discoloured ones are a failure.",
+          "Terminate properly: correct crimp tool, correct lug, correct torque. Most DC failures we see are terminations, not cable, and they show up as intermittent hashrate loss long before anything melts."
+        ]
+      },
+      {
+        "h2": "Hashboards and Control Boards",
+        "paras": [
+          "An ASIC consists of hashboards carrying the mining chips and a control board running firmware. A dead hashboard drops a third of the hashrate on a three-board machine; a dead control board stops it entirely. Both are field-replaceable and both are widely available for common models.",
+          "Repair economics are simple: if a replacement board plus labour costs less than a third of the machine's market value and the rest of the unit is healthy, repair. If chips are failing across multiple boards, the machine is telling you it has been run hot for a long time — sell it for parts."
+        ]
+      },
+      {
+        "h2": "Spares Strategy by Fleet Size",
+        "paras": [
+          "Under ten machines, keep one PSU and one fan set per model. Ten to fifty, add a hashboard and a control board per model. Above that, hold roughly two to five percent of each critical part and track failure rates so ordering becomes predictable rather than reactive.",
+          "Standardising on fewer models is the cheapest reliability upgrade available: one spares pool, one firmware, one thermal profile, one set of technician knowledge."
+        ]
+      },
+      {
+        "h2": "Safety Rules That Are Not Negotiable",
+        "paras": [
+          "Dedicated circuits sized to nameplate load with correct breakers, no domestic extension leads, no daisy-chained power strips, working smoke detection in the mining space, and a licensed electrician for anything on the AC side. Power down and unplug before touching any DC connector.",
+          "We supply PSUs, boards, fans and cable sets alongside machines so the power side is matched rather than improvised. Email the desk with your model and voltage and we will confirm exactly which parts fit."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are server PSU and breakout board setups reliable?",
+        "a": "Yes, when the PSU is rated for your input voltage and the wiring is correctly sized and terminated. Most failures are cabling and crimping errors rather than the supplies themselves."
+      },
+      {
+        "q": "How do I know if a hashboard is dead?",
+        "a": "The firmware dashboard reports a board at zero hashrate or with high chip error counts while the others run normally, and total hashrate drops by roughly its share."
+      },
+      {
+        "q": "Is it worth replacing a hashboard?",
+        "a": "If the part and labour cost under about a third of the machine's value and the other boards are healthy, yes. Widespread chip failure means the machine is near end of life."
+      },
+      {
+        "q": "Can I run a 3,000 W miner on 120 V?",
+        "a": "Generally no. Most high-wattage ASICs require 200 to 240 V, and many PSUs derate severely on 120 V. Only purpose-built low-wattage units are designed for standard household outlets."
+      },
+      {
+        "q": "What spares should a small operator hold?",
+        "a": "One PSU and one fan set per model to start, adding a hashboard and control board once you pass roughly ten machines."
+      }
+    ],
+    "match": {
+      "terms": [
+        "psu",
+        "board",
+        "antminer"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "miners-unplugging-equipment-curtailment-playbook",
+    "title": "Miners Unplugging Equipment: A Curtailment Playbook",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-04",
+    "description": "When miners unplug bitcoin equipment and why: curtailment triggers, break-even thresholds, restart checklists and how to protect machine value while powered down.",
+    "keywords": [
+      "miners unplugging bitcoin equipment",
+      "curtailment",
+      "bitcoin mining shutdown price",
+      "mining power"
+    ],
+    "intro": [
+      "Headlines about miners unplugging equipment usually describe rational behaviour, not distress. When revenue per terahash falls below the cost of the electricity required to produce it, powering down preserves capital. When grid prices spike, selling the power back or curtailing pays better than hashing.",
+      "This playbook covers the arithmetic behind shutdown decisions, how to curtail without damaging hardware, and how to be ready to restart within minutes when the economics turn."
+    ],
+    "sections": [
+      {
+        "h2": "The Shutdown Threshold",
+        "paras": [
+          "Compute your machine's daily revenue at current hashprice and your daily electricity cost at your rate. When cost exceeds revenue, every additional hour destroys value. The threshold is per machine, not per site: a mixed fleet will have efficient units clearing comfortably while legacy units bleed.",
+          "Write the threshold down as a power price per kilowatt hour for each model. Then curtailment becomes a rule your team can execute without a meeting."
+        ]
+      },
+      {
+        "h2": "Grid Programmes and Demand Response",
+        "paras": [
+          "In several markets curtailment is a revenue line rather than a loss. Demand-response programmes pay for the ability to drop load within minutes, and during scarcity pricing the payment for not consuming can exceed mining margin by a wide multiple.",
+          "This is why flexible load is valuable to grids and why miners with fast, verifiable curtailment win contracts. If your site can shed load reliably, ask your utility or retailer what programmes exist."
+        ]
+      },
+      {
+        "h2": "Curtailing Without Damaging Hardware",
+        "paras": [
+          "Stop the miner through firmware or the fleet manager rather than pulling breakers where possible, let fans run through the cool-down, and only then remove power. Thermal cycling is the main stress in repeated shutdowns, so avoid rapid on-off cycling within the same hour.",
+          "For hydro and immersion, follow the manufacturer's shutdown order for pumps and coolant. Keeping fluid circulating briefly after hashing stops prevents localised hot spots."
+        ]
+      },
+      {
+        "h2": "Storage and Restart Readiness",
+        "paras": [
+          "Powered-down machines need dry, dust-free storage with the intake covered, and humidity controlled to avoid condensation and corrosion on boards. Record firmware version, pool configuration and tuning profile so a restart is a configuration restore rather than a rebuild.",
+          "Before restart, blow out dust, check fan spin by hand, inspect connectors for discolouration, then bring machines up in batches while watching per-board hashrate and temperatures for the first hour."
+        ]
+      },
+      {
+        "h2": "Turning Downtime Into a Fleet Upgrade",
+        "paras": [
+          "A shutdown window is the cheapest time to sell inefficient units while they still hold value, retune the rest for efficiency, and replace legacy hardware with machines whose break-even sits well below your tariff. Operators who use curtailment periods to upgrade come back with a lower shutdown threshold than they left with.",
+          "We buy, trade and supply tested hardware for exactly this cycle. Send your fleet list and power rate and we will show which units are worth keeping and which to rotate out."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why do miners unplug their equipment?",
+        "a": "Because revenue per terahash has fallen below their electricity cost, or because grid prices or demand-response payments make not mining more valuable than mining."
+      },
+      {
+        "q": "What is the shutdown price for a miner?",
+        "a": "The electricity price at which daily revenue equals daily power cost for that specific model. It differs per machine and moves with hashprice and difficulty."
+      },
+      {
+        "q": "Does turning miners on and off damage them?",
+        "a": "Repeated rapid thermal cycling adds stress. Shut down through firmware, allow a fan cool-down, and avoid frequent on-off cycles within short windows."
+      },
+      {
+        "q": "How should I store idle miners?",
+        "a": "Dry, dust-free, humidity-controlled storage with intakes covered, plus a saved record of firmware and configuration so restarts are quick."
+      },
+      {
+        "q": "Is curtailment always a loss?",
+        "a": "No. In markets with demand-response or scarcity pricing, curtailment can pay more than hashing — which is why flexible mining load is valuable to grids."
+      }
+    ],
+    "match": {
+      "terms": [
+        "antminer",
+        "whatsminer"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "buying-asic-miners-on-ebay-risk-checklist",
+    "title": "Buying ASIC Miners on eBay: A Risk Checklist",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-04",
+    "description": "Buying ASIC miners on eBay: how to read listings, spot dead hashboards and rebadged units, use buyer protection properly, and when a specialist supplier is cheaper.",
+    "keywords": [
+      "asic ebay",
+      "buy asic miner ebay",
+      "used asic miner",
+      "asic marketplace"
+    ],
+    "intro": [
+      "eBay is a real source of used mining hardware and a real source of expensive mistakes. The platform's buyer protection is genuinely useful, but it does not tell you whether three hashboards hash, whether the PSU matches, or whether the seller flashed development firmware that bricks on update.",
+      "This checklist is what we would want a buyer to run through before bidding — written by a supplier that also sells tested units, so weigh the last section accordingly."
+    ],
+    "sections": [
+      {
+        "h2": "Read the Listing Like an Inspector",
+        "paras": [
+          "Demand a photo of the miner's own status page showing per-board hashrate, chip count, temperatures and uptime — not a stock product image. Check the serial label matches the photos, and look for mismatched screws, missing shroud stickers, dust patterns inconsistent with the claimed hours, and coolant staining on hydro units.",
+          "Vague phrases are the tell: 'powered on last used', 'untested', 'as-is', 'for parts or repair'. Those mean the seller either knows there is a fault or has not checked. Price accordingly or move on."
+        ]
+      },
+      {
+        "h2": "The Questions That Filter Out Bad Sellers",
+        "paras": [
+          "Ask for the exact model and revision, hashrate under load for at least an hour, firmware version and whether it is stock or custom, whether the PSU is included and original, the number of dead or degraded chips, and why it is being sold. A seller with tested inventory answers in one message.",
+          "Ask whether the machine was hydro, immersion or air cooled during its life. Immersion units may have fluid residue and non-standard fan setups; hydro units need a working loop and are not a plug-in purchase."
+        ]
+      },
+      {
+        "h2": "Price It Against Delivered Cost per Terahash",
+        "paras": [
+          "Add shipping, import duty, VAT or GST, a PSU if excluded, and likely repair cost, then divide by real hashrate to get delivered cost per terahash. Compare that number — not the auction price — against a tested unit from a supplier. Auctions frequently lose once freight and duty land.",
+          "Set a hard ceiling before bidding and do not chase. Legacy hardware is abundant; there is always another listing next week."
+        ]
+      },
+      {
+        "h2": "Use Buyer Protection Correctly",
+        "paras": [
+          "Pay only through the platform, never by bank transfer, crypto or gift card off-platform. Record an unboxing video, test within the returns window, and open a case with evidence immediately if the machine does not match the description. Do not accept an offer to move the deal off eBay to 'save fees' — that removes every protection you have.",
+          "Check the seller's feedback specifically on mining hardware, not general electronics, and be cautious with new accounts selling multiple high-value units."
+        ]
+      },
+      {
+        "h2": "When a Specialist Supplier Wins",
+        "paras": [
+          "A tested supplier bench-tests under load, verifies hashboards chip by chip, ships in proper foam-and-carton packaging, handles customs paperwork and stands behind a functional warranty. On used flagship hardware that difference is often worth more than the auction discount.",
+          "Every used and refurbished unit we ship from Hong Kong is load-tested with firmware installed and a limited functional warranty, with worldwide tracked freight and duties itemised before you pay. Compare our delivered price per terahash against the auction total before you bid."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is it safe to buy ASIC miners on eBay?",
+        "a": "It can be, if you insist on status-page evidence, pay through the platform, and test within the returns window. Untested and as-is listings should be priced as parts."
+      },
+      {
+        "q": "What proof should a seller provide?",
+        "a": "A photo or video of the miner's own dashboard showing per-board hashrate, chip counts, temperatures and uptime, plus a serial label matching the machine in the photos."
+      },
+      {
+        "q": "Should I buy a miner without a PSU?",
+        "a": "Only if you already have a compatible supply and have priced one in. PSU cost and availability can erase an apparent discount."
+      },
+      {
+        "q": "How do I compare an auction to a supplier price?",
+        "a": "Convert both to delivered cost per real terahash including freight, duty, taxes, PSU and expected repairs. Auctions often lose on that basis."
+      },
+      {
+        "q": "What are the biggest red flags?",
+        "a": "Off-platform payment requests, stock photos only, 'untested' language on expensive units, new accounts with several high-value listings, and refusal to state firmware or chip health."
+      }
+    ],
+    "match": {
+      "condition": "Used"
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "how-much-can-you-make-mining-crypto-at-home-2026",
+    "title": "How Much Can You Make Mining Crypto at Home in 2026?",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-04",
+    "description": "Realistic home crypto mining income in 2026: what one machine earns at common power rates, the costs beginners miss, and the setups that actually clear a profit.",
+    "keywords": [
+      "how much can you make mining crypto at home",
+      "home bitcoin mining income",
+      "desktop bitcoin miner",
+      "mining power"
+    ],
+    "intro": [
+      "Home mining income comes down to three numbers: your machine's efficiency, your electricity price, and how many hours you can keep the machine running without upsetting the household. Everything else — coin choice, pool, firmware — moves the result by a few percent.",
+      "This guide walks through realistic ranges for a single-machine home setup, the costs beginners leave out, and the configurations that genuinely clear a profit rather than heating a garage at a loss."
+    ],
+    "sections": [
+      {
+        "h2": "Start With the Arithmetic, Not the Hardware",
+        "paras": [
+          "Take your machine's wall draw in kilowatts, multiply by 24 and by your power rate for daily electricity cost. Then take its hashrate multiplied by current hashprice for daily gross revenue. The difference is your daily margin per machine, before pool fees and downtime.",
+          "At residential rates around fifteen cents, only efficient current-generation hardware clears. Between six and ten cents, mid-tier units work. Below six cents, most tested used hardware is viable. Find your bracket before shopping."
+        ]
+      },
+      {
+        "h2": "What a Realistic Single-Machine Setup Earns",
+        "paras": [
+          "One efficient modern machine on cheap power typically produces a few dollars of gross margin per day, which is meaningful but not life-changing — think of it as a slow Bitcoin accumulation plan with hardware risk attached. On expensive residential power the same machine can sit near zero or negative.",
+          "Low-wattage home units earn less in absolute terms but are quiet enough for a home office and run on standard outlets, which is the difference between a machine you keep running and one you unplug after a fortnight."
+        ]
+      },
+      {
+        "h2": "Costs Beginners Forget",
+        "paras": [
+          "Electrical work for a dedicated 240 V circuit, a PSU if not included, ducting or a shroud to move heat outside, filters, spare fans, higher summer cooling costs elsewhere in the house, and the resale haircut when you sell. Together these often exceed the first year's mining margin.",
+          "Add noise as a real cost. At 70 to 80 dB an air-cooled ASIC is not a living-space device. Buyers who ignore this end up running machines part-time, which halves the revenue their model assumed."
+        ]
+      },
+      {
+        "h2": "Where Home Mining Genuinely Wins",
+        "paras": [
+          "Heat reuse during cold months, where the machine replaces heating you would run anyway. Behind-the-meter solar with net export prices below your mining margin. Free or included utilities. And accumulation with conviction, where you value receiving Bitcoin from a machine you control over buying it on an exchange.",
+          "Solo lottery mining is a fifth case, honest about being a lottery: tiny odds, whole-block payoff, budgeted as entertainment."
+        ]
+      },
+      {
+        "h2": "The Setup We Recommend to First-Time Home Miners",
+        "paras": [
+          "One tested machine matched to your circuit and noise tolerance, on a dedicated breaker, with exhaust ducted outside, monitored by pool-side alerts, and modelled at your real power rate before purchase. Scale only after a full month of measured performance.",
+          "Send your power rate, available voltage and where the machine will live to sales@bitcoinminingdepot.com and we will size options and give you the payback range honestly, including when the answer is that mining at your tariff does not pay."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you make money mining crypto at home?",
+        "a": "Yes, when your electricity is cheap and your hardware is efficient. At typical residential rates with older hardware, no — the power bill exceeds the mining revenue."
+      },
+      {
+        "q": "How much does one home miner earn per day?",
+        "a": "Anywhere from negative to a few dollars of gross margin, depending on efficiency, power rate and uptime. Model your specific machine and tariff rather than using averages."
+      },
+      {
+        "q": "What is the quietest way to mine at home?",
+        "a": "A purpose-built low-wattage home ASIC, or a hydro machine plumbed to an outdoor cooler. Standard air-cooled units at 70 to 80 dB belong in a garage or outbuilding."
+      },
+      {
+        "q": "Do I need an electrician?",
+        "a": "For a dedicated 240 V circuit, yes, and it is cheap insurance. Do not run high-wattage miners on domestic extension leads or shared circuits."
+      },
+      {
+        "q": "Is mining better than buying Bitcoin?",
+        "a": "Mining converts cheap electricity into Bitcoin at a discount when your rate is low; buying is simpler and carries no hardware risk. Cheap power is the whole argument for mining."
+      }
+    ],
+    "match": {
+      "terms": [
+        "home",
+        "mini"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "exahash-mining-scaling-from-terahash-to-exahash",
+    "title": "Exahash Mining: Scaling From Terahash to Exahash",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-04",
+    "description": "What an exahash of mining capacity really requires: machine counts, megawatts, cooling, staffing and capital — and the milestones between 1 PH/s and 1 EH/s.",
+    "keywords": [
+      "exahash miner",
+      "1000th/s",
+      "petahash mining",
+      "exahash",
+      "mining scale"
+    ],
+    "intro": [
+      "An exahash per second is one million terahashes. Framed that way, the engineering becomes obvious: with modern machines producing a few hundred terahashes each, 1 EH/s means thousands of units, tens of megawatts, and an organisation rather than a hobby.",
+      "This guide maps the milestones from a single machine to petahash and exahash scale, and what changes at each step in power, cooling, staffing and capital."
+    ],
+    "sections": [
+      {
+        "h2": "The Arithmetic of Scale",
+        "paras": [
+          "A 200 TH/s machine at roughly 3,500 W means 1 PH/s needs about five machines and 17 kW. 1 EH/s needs roughly 5,000 machines and around 17 MW before auxiliaries. Add ten to fifteen percent for fans, pumps, lighting and losses, and you are shopping for a 20 MW interconnect.",
+          "Efficiency changes the electrical bill, not the machine count: a 15 J/TH fleet at 1 EH/s draws about 15 MW, while a 25 J/TH fleet draws about 25 MW for identical hashrate. That difference is the entire business case for buying current-generation hardware at scale."
+        ]
+      },
+      {
+        "h2": "What Changes at Each Milestone",
+        "paras": [
+          "Up to about 100 TH/s, one machine on a dedicated circuit — a household project. To 1 PH/s, a handful of machines needing a small three-phase supply, real ventilation and pool-side monitoring. To 10 PH/s, a dedicated building or container, switchgear, fleet management software and a spares inventory.",
+          "Beyond that, you are running an industrial site: substation-grade interconnect, redundant networking, on-site technicians, formal maintenance schedules, physical security and a repair bench. The transition from hobby to operation happens somewhere around 10 to 50 machines."
+        ]
+      },
+      {
+        "h2": "Power Is the Binding Constraint",
+        "paras": [
+          "Machines are available; megawatts are not. Interconnect studies, transformer lead times and grid queue positions dominate project schedules, and the cheapest power is usually where infrastructure is hardest. Secure power first, then buy hardware to fit it — never the reverse.",
+          "Negotiate on rate, curtailment terms and reliability together. A slightly higher rate with fewer forced outages often beats a headline cheap tariff with frequent curtailment, unless you are paid to curtail."
+        ]
+      },
+      {
+        "h2": "Cooling and Density Decisions",
+        "paras": [
+          "Air cooling scales to a few megawatts comfortably in moderate climates. Beyond that, or in hot climates, hydro and immersion win on density, hashrate stability and noise, at the cost of pumps, heat exchangers, fluid handling and more skilled maintenance.",
+          "Density also drives layout: hot-aisle containment, filtration, and dust management determine whether your machines hit rated hashrate in month eighteen or drift down from month three."
+        ]
+      },
+      {
+        "h2": "Buying at Scale",
+        "paras": [
+          "At scale, procurement is about delivered cost per terahash, warranty terms, spares availability and batch consistency — not headline unit price. Standardise on one or two models to keep firmware, spares and technician knowledge simple.",
+          "We supply fleet quantities from Hong Kong with matched PSUs, spares packages and freight documentation for USA, Canada, Europe and Asia. Send your available megawatts, voltage and target efficiency and we will quote configurations that fit the power you actually hold."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How many miners make 1 EH/s?",
+        "a": "Roughly 5,000 machines at 200 TH/s each, drawing about 17 to 20 MW including auxiliaries. Higher-hashrate units reduce the count but not the power much."
+      },
+      {
+        "q": "What is a petahash in machine terms?",
+        "a": "About five modern 200 TH/s units, or roughly 17 kW — achievable in a well-built garage or a small container."
+      },
+      {
+        "q": "Does efficiency matter more at scale?",
+        "a": "Yes. At 1 EH/s, every joule per terahash difference is megawatts of continuous load and millions in annual electricity cost."
+      },
+      {
+        "q": "What limits growth for most operators?",
+        "a": "Power. Interconnects, transformers and grid queues take far longer than buying machines, so secure megawatts before hardware."
+      },
+      {
+        "q": "When should I move from air to liquid cooling?",
+        "a": "When ambient temperatures throttle your fleet, when noise becomes a constraint, or when density limits your site. Hydro and immersion hold rated hashrate that air cooling loses in heat."
+      }
+    ],
+    "match": {
+      "terms": [
+        "hydro",
+        "immersion",
+        "antminer"
+      ]
+    },
+    "readMinutes": 9
+  },
+  {
+    "slug": "antminer-l3-plus-profitability-legacy-scrypt-math",
+    "title": "Antminer L3+ Profitability: Legacy Scrypt Math",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-04",
+    "description": "Antminer L3+ profitability in 2026: 504 MH/s at 800W modelled against Litecoin and Dogecoin revenue, break-even power rates and better Scrypt alternatives.",
+    "keywords": [
+      "l3+ antminer profitability",
+      "antminer l3+",
+      "antminer l3",
+      "bitmain antminer l3+",
+      "scrypt miner"
+    ],
+    "intro": [
+      "The Antminer L3+ delivered about 504 MH/s of Scrypt hashrate at roughly 800 W — around 1.6 J/MH. It dominated Litecoin and Dogecoin mining for years and is now three Scrypt generations behind the L7, L9 and L11.",
+      "Here is the honest 2026 model: what an L3+ earns from merged Litecoin and Dogecoin mining, where its break-even power rate sits, and when a cheap unit still makes sense."
+    ],
+    "sections": [
+      {
+        "h2": "Efficiency in Context",
+        "paras": [
+          "At roughly 1.6 J/MH, the L3+ is about ten times less efficient than a current L9-class Scrypt machine and several times worse than an L7. On the same electricity, a modern unit produces multiples of the revenue, which is the entire reason legacy Scrypt hardware trades at scrap-adjacent prices.",
+          "Because Litecoin blocks carry merge-mined Dogecoin rewards, Scrypt revenue is more volatile than Bitcoin's — Dogecoin price swings move Scrypt hashprice sharply, which cuts both ways for marginal machines."
+        ]
+      },
+      {
+        "h2": "Running the Numbers",
+        "paras": [
+          "800 W is about 19.2 kWh per day. At ten cents that is $1.92 per day in power against the revenue 504 MH/s earns at current Scrypt difficulty — typically well under that figure. Break-even usually lands in the low single-digit cents per kilowatt hour.",
+          "Model it at three Dogecoin prices. Because merged mining rewards are a large share of Scrypt revenue, a Doge rally can briefly make legacy Scrypt hardware profitable, and a decline removes that just as fast."
+        ]
+      },
+      {
+        "h2": "Where an L3+ Still Earns Its Space",
+        "paras": [
+          "Free, curtailed or behind-the-meter power. Heat reuse in cold months, where 800 W of quiet-ish heat replaces resistive heating. Parts supply for existing L3+ fleets, which remain surprisingly numerous. And learning Scrypt mining, pool configuration and firmware at low cost.",
+          "It is also a reasonable low-stakes platform for testing merged-mining pools before pointing an expensive L9 or L11 at them."
+        ]
+      },
+      {
+        "h2": "Condition Checks Before You Buy",
+        "paras": [
+          "Ask for per-board hashrate from the miner's own status page, chip error counts, fan health and PSU type, and confirm whether the unit ran hot in a farm or gently at home. Nine-year-old boards fail at the chip level, and a machine at eighty percent of rated hashrate is common.",
+          "Pay parts-plus pricing, not nostalgia pricing. Budget for a PSU and fans, and expect to lose one board over time."
+        ]
+      },
+      {
+        "h2": "Better Scrypt Options",
+        "paras": [
+          "If Scrypt is the goal and power costs real money, an L7 gives roughly 9.05 to 9.5 GH/s at far better joules per megahash, and the L9 improves again. Those machines hold margin through difficulty growth that switches an L3+ off permanently.",
+          "We stock tested L3+, L7, L9 and L11 units with bench-verified hashrate and a limited functional warranty. Tell us your power rate and we will show which generation actually pays at your tariff."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is the Antminer L3+ still profitable?",
+        "a": "Only on very cheap, curtailed or free power. At ordinary residential or commercial rates its 1.6 J/MH efficiency means power costs exceed Scrypt revenue."
+      },
+      {
+        "q": "What is the L3+ break-even electricity rate?",
+        "a": "Typically low single-digit cents per kilowatt hour, shifting with Litecoin and Dogecoin prices and Scrypt difficulty."
+      },
+      {
+        "q": "How much should I pay for a used L3+?",
+        "a": "Parts-plus pricing only. Pay for verified per-board hashrate and a working PSU, not for the model name."
+      },
+      {
+        "q": "Does merged Dogecoin mining change the math?",
+        "a": "Yes — Doge rewards are a large share of Scrypt revenue, so Doge price rallies can briefly lift legacy Scrypt hardware above break-even."
+      },
+      {
+        "q": "What should I buy instead?",
+        "a": "An L7 or L9 if Scrypt is the target. Both deliver far better joules per megahash and stay profitable at power rates where an L3+ cannot."
+      }
+    ],
+    "match": {
+      "terms": [
+        "l3",
+        "scrypt",
+        "l7"
+      ]
+    },
+    "readMinutes": 8
+  },
+];
