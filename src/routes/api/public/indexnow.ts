@@ -125,16 +125,23 @@ async function runSubmission(scope: IndexNowScope, source: string, explicit?: st
 }
 
 function cronAuthorized(request: Request) {
-  const secret = process.env["INDEXNOW_CRON_SECRET"];
-  if (!secret) return false;
   const url = new URL(request.url);
   const provided =
     request.headers.get("x-indexnow-secret") ??
     url.searchParams.get("token") ??
     request.headers.get("authorization")?.replace(/^Bearer\s+/i, "") ??
     "";
-  return provided.length === secret.length && provided === secret;
+
+  const secret = process.env["INDEXNOW_CRON_SECRET"];
+  if (secret && provided.length === secret.length && provided === secret) return true;
+
+  // The scheduled job authenticates with the project's publishable key.
+  const apiKey = request.headers.get("apikey") ?? "";
+  const publishable =
+    process.env["SUPABASE_PUBLISHABLE_KEY"] ?? process.env["VITE_SUPABASE_PUBLISHABLE_KEY"] ?? "";
+  return Boolean(publishable) && apiKey.length === publishable.length && apiKey === publishable;
 }
+
 
 export const Route = createFileRoute("/api/public/indexnow")({
   server: {
