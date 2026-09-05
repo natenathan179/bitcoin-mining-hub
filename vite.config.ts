@@ -12,4 +12,23 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          // Large content datasets are shared by several routes, so Rollup would
+          // otherwise hoist them into the entry chunk every visitor downloads.
+          // Pinning them to their own chunks keeps the first page load small.
+          manualChunks(id: string) {
+            if (id.includes("src/lib/blog-index")) return "data-blog-index";
+            if (id.includes("src/lib/blog-match")) return "data-blog-index";
+            if (id.includes("src/lib/page-copy")) return "data-page-copy";
+            if (id.includes("src/lib/marketplace")) return "data-marketplace";
+            if (id.includes("src/lib/collections")) return "data-collections";
+            return undefined;
+          },
+        },
+      },
+    },
+  },
 });
