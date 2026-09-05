@@ -313,19 +313,27 @@ export const Route = createFileRoute("/products/$slug")({
               ? "https://schema.org/NewCondition"
               : "https://schema.org/RefurbishedCondition",
             ...aggregate,
+            // De-duplicated: the same spec (Hashrate, Algorithm…) often appears in
+            // both the column fields and the specs map, and repeating a
+            // PropertyValue name makes the item invalid in structured-data tests.
             additionalProperty: [
-              ["Hashrate", p.hashrate],
-              ["Power draw", p.power],
-              ["Efficiency", p.efficiency],
-              ["Algorithm", p.algorithm],
-              ...Object.entries(p.specs ?? {}),
-            ]
-              .filter(([, v]) => v && v !== "-" && String(v).length <= 200)
-              .map(([name, value]) => ({
-                "@type": "PropertyValue",
-                name,
-                value: String(value),
-              })),
+              ...new Map(
+                (
+                  [
+                    ["Hashrate", p.hashrate],
+                    ["Power draw", p.power],
+                    ["Efficiency", p.efficiency],
+                    ["Algorithm", p.algorithm],
+                    ...Object.entries(p.specs ?? {}),
+                  ] as [string, unknown][]
+                )
+                  .filter(([, v]) => v && v !== "-" && String(v).length <= 200)
+                  .map(([name, value]) => [
+                    name.trim().toLowerCase(),
+                    { "@type": "PropertyValue", name: name.trim(), value: String(value) },
+                  ]),
+              ).values(),
+            ],
             offers: {
               "@type": "Offer",
               url,
