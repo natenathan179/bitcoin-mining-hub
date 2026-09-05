@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { BLOG_CATEGORIES, BLOG_INDEX as BLOG_POSTS } from "@/lib/blog-index";
 import { SITE } from "@/lib/site";
+import { indexVariantMeta, parseIndexSearch, type IndexSearch } from "@/lib/search-meta";
 
 const BASE = {
   title: "Bitcoin Mining Blog: ASIC Guides, Reviews & Profitability",
