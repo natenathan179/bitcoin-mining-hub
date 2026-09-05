@@ -11,7 +11,7 @@ import { ProductLocalAvailability } from "@/components/site/ProductLocalAvailabi
 import { localBusinessSchema, localListingsForProduct, servedAreaNames } from "@/lib/local-seo";
 import { InquiryModal } from "@/components/site/InquiryModal";
 import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
-import { formatPrice, SITE, seoDescription, seoTitle } from "@/lib/site";
+import { formatPrice, SITE, seoDescription, seoPageTitle, seoTitle } from "@/lib/site";
 import { useCart } from "@/lib/cart";
 import minerBlack from "@/assets/miner-black.jpg";
 
