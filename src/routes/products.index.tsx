@@ -50,12 +50,16 @@ export const Route = createFileRoute("/products/")({
     const filter = loaderData?.page
       ? `${base ? `${base} ` : ""}Page ${loaderData.page}`.trim()
       : base;
-    const title = filter
-      ? seoTitle(/miner/i.test(filter) ? `${filter} In Stock` : `${filter} Miners In Stock`, "Bitcoin Mining Depot")
-      : "Shop ASIC Bitcoin Miners | Bitcoin Mining Depot";
+    const pageSuffix = loaderData?.page ? ` — Page ${loaderData.page}` : "";
+    const title = base
+      ? seoTitle(
+          `${/miner/i.test(base) ? `${base} In Stock` : `${base} Miners In Stock`}${pageSuffix}`,
+          "Bitcoin Mining Depot",
+        )
+      : `Shop ASIC Bitcoin Miners${pageSuffix} | Bitcoin Mining Depot`;
     const description = filter
       ? seoDescription(
-          `In-stock ${filter} mining hardware with tested hashrate, written warranty and worldwide shipping from our Hong Kong warehouse. Filter by brand, condition and price.`,
+          `${base ? `In-stock ${base} mining hardware` : "In-stock ASIC mining hardware"}${pageSuffix ? `, page ${loaderData?.page}` : ""} with tested hashrate, written warranty and worldwide shipping from our Hong Kong warehouse.`,
         )
       : "Browse in-stock ASIC bitcoin miners, power supplies, immersion cooling and spare parts. Filter by brand, condition, hashrate and price with wholesale pricing available.";
     return {
