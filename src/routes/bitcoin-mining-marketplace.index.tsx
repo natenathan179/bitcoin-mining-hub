@@ -35,7 +35,8 @@ export const Route = createFileRoute("/bitcoin-mining-marketplace/")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: `${SITE.url}/bitcoin-mining-marketplace` }],
-  }),
+    };
+  },
   component: MarketplaceDirectory,
 });
 
