@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
-import { BLOG_CATEGORIES, BLOG_POSTS } from "@/lib/blog";
+import { BLOG_CATEGORIES, BLOG_INDEX as BLOG_POSTS } from "@/lib/blog-index";
 import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/blog/")({
