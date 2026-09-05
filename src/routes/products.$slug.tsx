@@ -397,6 +397,13 @@ export const Route = createFileRoute("/products/$slug")({
                 merchantReturnDays: 30,
                 returnMethod: "https://schema.org/ReturnByMail",
                 returnFees: "https://schema.org/ReturnFeesCustomerResponsibility",
+                // Required whenever the buyer pays return shipping — omitting it
+                // makes the return-policy item invalid in rich-result tests.
+                returnShippingFeesAmount: {
+                  "@type": "MonetaryAmount",
+                  value: 0,
+                  currency: "USD",
+                },
                 restockingFee: { "@type": "MonetaryAmount", value: 10, currency: "USD" },
                 returnPolicyCountry: "US",
                 merchantReturnLink: `${SITE.url}/shipping-returns`,
