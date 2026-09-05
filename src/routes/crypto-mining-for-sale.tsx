@@ -8,6 +8,7 @@ import { productsQuery, categoriesQuery } from "@/lib/data";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
 import { formatPrice, SITE, seoDescription, seoPageTitle } from "@/lib/site";
+import { indexVariantMeta, parseIndexSearch, type IndexSearch } from "@/lib/search-meta";
 
 const CANONICAL = "https://bitcoinminingdepot.com/crypto-mining-for-sale";
 const TITLE = seoPageTitle("Crypto Mining For Sale: Live Stock", "BMD");
