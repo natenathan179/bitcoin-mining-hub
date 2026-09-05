@@ -1,8 +1,8 @@
 // SEO category landing-page definitions. Each collection auto-matches products
 // from the catalogue and blog posts from the editorial library.
 import type { Product } from "./data";
-import type { BlogPost } from "./blog";
-import { BLOG_POSTS } from "./blog";
+import type { BlogIndexEntry as BlogPost } from "./blog-index";
+import { BLOG_INDEX as BLOG_POSTS } from "./blog-index";
 
 export interface CollectionSection {
   h2: string;
