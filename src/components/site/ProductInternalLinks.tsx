@@ -4,10 +4,10 @@ import type { Product } from "@/lib/data";
 import {
   COLLECTIONS,
   linkSeed,
-  postsForProduct,
   productAnchor,
   rotatingSlice,
 } from "@/lib/collections";
+import { postsForProduct } from "@/lib/blog-match";
 
 /**
  * Keyword-rich internal linking module for product pages: pushes authority to

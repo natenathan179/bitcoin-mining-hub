@@ -2,9 +2,9 @@ import { Link } from "@tanstack/react-router";
 
 import type { Product } from "@/lib/data";
 import type { Collection } from "@/lib/collections";
+import { postsForProduct } from "@/lib/blog-match";
 import {
   brandLinkGroups,
-  postsForProduct,
   productAnchor,
   spotlightProducts,
 } from "@/lib/collections";
