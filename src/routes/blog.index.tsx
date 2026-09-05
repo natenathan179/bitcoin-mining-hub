@@ -61,7 +61,12 @@ function BlogIndex() {
       "@type": "BlogPosting",
       headline: p.title,
       url: `${SITE.url}/blog/${p.slug}`,
-      mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE.url}/blog/${p.slug}` },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `${SITE.url}/blog/${p.slug}`,
+        url: `${SITE.url}/blog/${p.slug}`,
+        name: p.title,
+      },
       datePublished: p.date,
       dateModified: p.date,
       description: p.description,

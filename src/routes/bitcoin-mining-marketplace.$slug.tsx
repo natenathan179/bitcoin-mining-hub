@@ -70,7 +70,7 @@ function MarketplaceLocationPage() {
       dateModified: page.date,
       inLanguage: "en",
       keywords: page.keywords.join(", "),
-      mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      mainEntityOfPage: { "@type": "WebPage", "@id": url, url, name: page.title },
       about: { "@type": "Thing", name: fam.product },
       spatialCoverage: { "@type": "Place", name: `${loc.place}, ${loc.country}` },
       url,

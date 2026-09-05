@@ -88,7 +88,7 @@ function BlogPostPage() {
       inLanguage: "en",
       keywords: post.keywords.join(", "),
       articleSection: post.category,
-      mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      mainEntityOfPage: { "@type": "WebPage", "@id": url, url, name: post.title },
       url,
       image: [SITE.ogImage],
       author: { "@type": "Organization", name: SITE.name, url: SITE.url },
