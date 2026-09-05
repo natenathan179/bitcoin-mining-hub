@@ -24,7 +24,6 @@ export default defineConfig({
             if (id.includes("src/lib/blog-match")) return "data-blog-index";
             if (id.includes("src/lib/page-copy")) return "data-page-copy";
             if (id.includes("src/lib/marketplace")) return "data-marketplace";
-            if (id.includes("src/lib/collections")) return "data-collections";
             return undefined;
           },
         },
