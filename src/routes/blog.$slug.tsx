@@ -74,7 +74,7 @@ function BlogPostPage() {
   const { post } = Route.useLoaderData();
   const { data: products } = useSuspenseQuery(productsQuery());
   const picks = matchProducts(post, products);
-  const related = relatedPosts(post, 6);
+  const related = relatedIndexPosts(post.slug, post.categoryId, 6);
   const url = `${SITE.url}/blog/${post.slug}`;
 
   const jsonLd = [
