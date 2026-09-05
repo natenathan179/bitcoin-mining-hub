@@ -31,20 +31,25 @@ export const Route = createFileRoute("/products/")({
   loaderDeps: ({ search }: { search: ProductSearch }) => ({
     q: search.q,
     category: search.category,
+    page: search.page,
   }),
   loader: ({ context, deps }) => {
     context.queryClient.ensureQueryData(productsQuery());
     context.queryClient.ensureQueryData(categoriesQuery());
-    return { q: deps.q, category: deps.category };
+    return { q: deps.q, category: deps.category, page: deps.page };
   },
   head: ({ loaderData }) => {
     const titleCase = (v: string) =>
       v.replace(/[-_]+/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()).trim();
-    const filter = loaderData?.category
+    const base = loaderData?.category
       ? titleCase(loaderData.category)
       : loaderData?.q
         ? titleCase(loaderData.q)
         : "";
+    // Paginated views count as filtered views: they must not reuse page one's title.
+    const filter = loaderData?.page
+      ? `${base ? `${base} ` : ""}Page ${loaderData.page}`.trim()
+      : base;
     const title = filter
       ? seoTitle(/miner/i.test(filter) ? `${filter} In Stock` : `${filter} Miners In Stock`, "Bitcoin Mining Depot")
       : "Shop ASIC Bitcoin Miners | Bitcoin Mining Depot";
