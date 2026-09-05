@@ -12,6 +12,7 @@ import { seoDescription, seoTitle } from "@/lib/site";
 interface ProductSearch {
   q?: string;
   category?: string;
+  page?: number;
 }
 
 export const Route = createFileRoute("/products/")({
@@ -19,6 +20,10 @@ export const Route = createFileRoute("/products/")({
     q: typeof search.q === "string" && search.q ? search.q : undefined,
     category:
       typeof search.category === "string" && search.category ? search.category : undefined,
+    page:
+      Number.isFinite(Number(search.page)) && Number(search.page) > 1
+        ? Math.floor(Number(search.page))
+        : undefined,
   }),
   // Filtered views (?category=…, ?q=…) get their own title and description so
   // crawlers never see several URLs sharing the shop page's title, and they all
