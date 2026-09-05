@@ -3,44 +3,47 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
-import { getPost, relatedPosts, type BlogPost } from "@/lib/blog";
+import { getBlogPageFn } from "@/lib/blog.functions";
+import type { BlogPost } from "@/lib/blog-types";
 import { productsQuery, type Product } from "@/lib/data";
-import { SITE, seoPageTitle } from "@/lib/site";
+import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/blog/$slug")({
-  loader: ({ params, context }) => {
-    const post = getPost(params.slug);
-    if (!post) throw notFound();
+  loader: async ({ params, context }) => {
+    // Metadata comes from the lightweight index; the article body is fetched on
+    // the server so the 2 MB library never ships to the browser.
     context.queryClient.ensureQueryData(productsQuery());
-    return { post };
+    const data = await getBlogPageFn({ data: { slug: params.slug } });
+    if (!data) throw notFound();
+    return data;
   },
   head: ({ loaderData }) => {
-    const post = loaderData?.post;
-    if (!post) return {};
-    const url = `${SITE.url}/blog/${post.slug}`;
-    // Keep the meta title distinct from the on-page H1 (post.title) so crawlers
-    // don't report duplicated title/H1 pairs across the guide library: drop the
-    // subtitle after the colon and brand the tag instead.
-    const lead = post.title.split(":")[0].trim();
-    const base = lead.length >= 25 ? lead : post.title;
-    const metaTitle = seoPageTitle(base, "BMD Guide");
+    const entry = loaderData?.entry;
+    if (!entry) return {};
+    const url = `${SITE.url}/blog/${entry.slug}`;
+    // metaTitle is generated to be unique across the library and never identical
+    // to the on-page H1, so crawlers see no duplicate title / H1 pairs.
+    const metaTitle = entry.metaTitle;
     return {
       meta: [
         { title: metaTitle },
-        { name: "description", content: post.description },
-        { name: "keywords", content: post.keywords.join(", ") },
+        { name: "description", content: entry.description },
+        { name: "keywords", content: entry.keywords.join(", ") },
         { property: "og:title", content: metaTitle },
-        { property: "og:description", content: post.description },
+        { property: "og:description", content: entry.description },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
-        { property: "article:published_time", content: post.date },
+        { property: "article:published_time", content: entry.date },
         { name: "twitter:card", content: "summary_large_image" },
+        { property: "og:image", content: SITE.ogImage },
+        { name: "twitter:image", content: SITE.ogImage },
       ],
       links: [{ rel: "canonical", href: url }],
     };
   },
   component: BlogPostPage,
 });
+
 
 function matchProducts(post: BlogPost, products: Product[]): Product[] {
   const { brands, condition, terms, maxPrice } = post.match;
@@ -65,10 +68,9 @@ function matchProducts(post: BlogPost, products: Product[]): Product[] {
 }
 
 function BlogPostPage() {
-  const { post } = Route.useLoaderData();
+  const { post, related } = Route.useLoaderData();
   const { data: products } = useSuspenseQuery(productsQuery());
   const picks = matchProducts(post, products);
-  const related = relatedPosts(post, 6);
   const url = `${SITE.url}/blog/${post.slug}`;
 
   const jsonLd = [
@@ -82,7 +84,7 @@ function BlogPostPage() {
       inLanguage: "en",
       keywords: post.keywords.join(", "),
       articleSection: post.category,
-      mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      mainEntityOfPage: { "@type": "WebPage", "@id": url, url, name: post.title },
       url,
       image: [SITE.ogImage],
       author: { "@type": "Organization", name: SITE.name, url: SITE.url },

@@ -1,8 +1,6 @@
 // SEO category landing-page definitions. Each collection auto-matches products
 // from the catalogue and blog posts from the editorial library.
 import type { Product } from "./data";
-import type { BlogPost } from "./blog";
-import { BLOG_POSTS } from "./blog";
 
 export interface CollectionSection {
   h2: string;
@@ -282,83 +280,15 @@ export function matchProducts(collection: Collection, products: Product[], categ
   });
 }
 
-export function matchPosts(collection: Collection, limit = 12): BlogPost[] {
-  const scored = BLOG_POSTS.map((post) => {
-    const hay = `${post.title} ${post.description} ${post.keywords.join(" ")}`.toLowerCase();
-    let score = collection.blogTerms.reduce((n, t) => (hay.includes(t) ? n + 2 : n), 0);
-    if (collection.blogCategoryIds?.includes(post.categoryId)) score += 1;
-    return { post, score };
-  })
-    .filter((s) => s.score > 0)
-    .sort((a, b) => b.score - a.score || a.post.title.localeCompare(b.post.title));
-  return scored.slice(0, limit).map((s) => s.post);
-}
 
-/* ---------------- internal linking helpers ---------------- */
+export {
+  modelTokens,
+  productAnchor,
+  linkSeed,
+  rotatingSlice,
+} from "./link-utils";
+import { linkSeed, modelTokens, rotatingSlice } from "./link-utils";
 
-const STOP = new Set(["miner", "bitcoin", "asic", "for", "sale", "the", "and", "with", "pro", "th/s"]);
-
-/** Distinctive model tokens from a product name, e.g. "s21", "xp", "hyd". */
-export function modelTokens(product: Product): string[] {
-  return Array.from(
-    new Set(
-      `${product.name} ${product.brand}`
-        .toLowerCase()
-        .replace(/[^a-z0-9+ ]/g, " ")
-        .split(/\s+/)
-        .filter((t) => t.length > 1 && !STOP.has(t)),
-    ),
-  );
-}
-
-/** Descriptive anchor text for a product link — good for keyword-rich internal links. */
-export function productAnchor(product: Product): string {
-  const bits = [product.hashrate, product.efficiency].filter(Boolean).join(" · ");
-  return bits ? `${product.name} (${bits})` : product.name;
-}
-
-/** Stable numeric seed from a string, used to rotate internal-link windows. */
-export function linkSeed(value: string): number {
-  let h = 0;
-  for (let i = 0; i < value.length; i++) h = (h * 31 + value.charCodeAt(i)) % 100003;
-  return h;
-}
-
-/**
- * Rotating window over a list: each page links a different slice, so link equity
- * reaches every page instead of piling on the first few entries.
- */
-export function rotatingSlice<T>(items: T[], count: number, seed: number): T[] {
-  if (items.length === 0 || count <= 0) return [];
-  const n = Math.min(count, items.length);
-  const start = ((seed % items.length) + items.length) % items.length;
-  return Array.from({ length: n }, (_, k) => items[(start + k) % items.length]!);
-}
-
-/** Blog posts most relevant to one specific product. */
-export function postsForProduct(product: Product, limit = 3): BlogPost[] {
-  const tokens = modelTokens(product);
-  const brand = product.brand?.toLowerCase() ?? "";
-  const used = /used|refurb/i.test(product.condition);
-  const scored = BLOG_POSTS.map((post) => {
-    const hay = `${post.title} ${post.description} ${post.keywords.join(" ")}`.toLowerCase();
-    let score = 0;
-    for (const t of tokens) if (hay.includes(t)) score += t.length > 2 ? 3 : 1;
-    if (brand && hay.includes(brand)) score += 3;
-    if (used && /(used|refurbish|second-hand|budget)/.test(hay)) score += 2;
-    if (post.categoryId === "profit" || post.categoryId === "buy") score += 1;
-    return { post, score };
-  })
-    .filter((s) => s.score > 0)
-    .sort((a, b) => b.score - a.score || a.post.title.localeCompare(b.post.title));
-  const ranked = scored.map((s) => s.post);
-  if (ranked.length <= limit) return ranked;
-  // Keep the two strongest topical matches, rotate the rest so deeper guides
-  // also collect incoming links from product pages.
-  const head = ranked.slice(0, Math.min(2, limit));
-  const tail = rotatingSlice(ranked.slice(head.length), limit - head.length, linkSeed(product.slug));
-  return [...head, ...tail];
-}
 
 export interface LinkGroup {
   title: string;

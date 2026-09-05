@@ -4,7 +4,8 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { CollectionInternalLinks } from "@/components/site/CollectionInternalLinks";
-import { COLLECTIONS, findCollection, matchPosts, matchProducts } from "@/lib/collections";
+import { COLLECTIONS, findCollection, matchProducts } from "@/lib/collections";
+import { matchPosts } from "@/lib/blog-match";
 import { categoriesQuery, productsQuery } from "@/lib/data";
 import { SITE } from "@/lib/site";
 

@@ -163,10 +163,22 @@ export function localBusinessSchema(product: Product, areaNames: string[], pageU
     areaServed: areaNames.map((name) => ({ "@type": "Place", name })),
     makesOffer: {
       "@type": "Offer",
-      itemOffered: { "@type": "Product", name: product.name, url: pageUrl },
+      url: pageUrl,
+      itemOffered: {
+        "@type": "Product",
+        name: product.name,
+        url: pageUrl,
+        image: (product.images ?? []).filter((i) => i?.startsWith("https://")).slice(0, 1),
+        brand: { "@type": "Brand", name: product.brand },
+      },
       priceCurrency: "USD",
       price: product.sale_price ?? product.price,
+      availability: "https://schema.org/InStock",
+      itemCondition: /new/i.test(product.condition ?? "")
+        ? "https://schema.org/NewCondition"
+        : "https://schema.org/RefurbishedCondition",
       availableAtOrFrom: { "@type": "Place", name: `${BUSINESS.district}, ${BUSINESS.region}` },
     },
+
   };
 }

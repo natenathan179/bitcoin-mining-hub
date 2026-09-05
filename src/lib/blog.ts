@@ -1,21 +1,8 @@
 // AUTO-GENERATED CONTENT LIBRARY — Bitcoin Mining Depot editorial blog.
-export interface BlogSection { h2: string; paras: string[] }
-export interface BlogFaq { q: string; a: string }
-export interface BlogMatch { brands?: string[]; condition?: string; terms?: string[]; maxPrice?: number }
-export interface BlogPost {
-  slug: string;
-  title: string;
-  category: string;
-  categoryId: string;
-  date: string;
-  description: string;
-  keywords: string[];
-  intro: string[];
-  sections: BlogSection[];
-  faqs: BlogFaq[];
-  match: BlogMatch;
-  readMinutes: number;
-}
+import type { BlogPost } from "./blog-types";
+
+export type { BlogSection, BlogFaq, BlogMatch, BlogPost } from "./blog-types";
+
 
 export const BLOG_CATEGORIES = [
   { id: "rank", label: "Hardware Rankings" },

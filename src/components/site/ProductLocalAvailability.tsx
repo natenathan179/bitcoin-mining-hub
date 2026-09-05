@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { MapPin, Clock, Phone, Mail, Navigation } from "lucide-react";
 
 import type { Product } from "@/lib/data";
-import { BUSINESS, localListingsForProduct } from "@/lib/local-seo";
+import { BUSINESS, localBusinessSchema, localListingsForProduct, servedAreaNames } from "@/lib/local-seo";
 import { SITE } from "@/lib/site";
 
 /**
@@ -12,10 +12,21 @@ import { SITE } from "@/lib/site";
  */
 export function ProductLocalAvailability({ product }: { product: Product }) {
   const groups = localListingsForProduct(product);
+  // LocalBusiness markup is emitted next to the local content it describes, which
+  // keeps the 1,000-location dataset out of every page's initial download.
+  const storeSchema = localBusinessSchema(
+    product,
+    servedAreaNames(groups),
+    `${SITE.url}/products/${product.slug}`,
+  );
   const headline = product.name;
 
   return (
     <section className="border-t border-border bg-secondary" aria-labelledby="product-local-seo">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(storeSchema) }}
+      />
       <div className="mx-auto max-w-[1280px] px-4 py-12">
         <h2
           id="product-local-seo"

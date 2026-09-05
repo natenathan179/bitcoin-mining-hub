@@ -4,14 +4,38 @@ import { Facebook, MessageCircle, Mail, MapPin } from "lucide-react";
 import { Logo } from "./Logo";
 import { SITE, openWhatsApp } from "@/lib/site";
 import { COLLECTIONS } from "@/lib/collections";
-import { BLOG_CATEGORIES, BLOG_POSTS } from "@/lib/blog";
 import { Button } from "@/components/ui/button";
 
 // One evergreen guide per editorial category — sitewide internal links that
-// funnel crawl equity into the deepest blog content.
-const GUIDE_LINKS = BLOG_CATEGORIES.map(
-  (c) => BLOG_POSTS.find((p) => p.categoryId === c.id),
-).filter((p): p is (typeof BLOG_POSTS)[number] => Boolean(p));
+// funnel crawl equity into the deepest blog content. Hard-coded on purpose: the
+// footer renders on every page, so it must not pull in the blog library.
+const GUIDE_LINKS = [
+  {
+    slug: "best-bitcoin-mining-machines-in-2026-top-20-asic-miners-ranked",
+    title: "Best Bitcoin Mining Machines in 2026: Top 20 ASIC Miners Ranked",
+  },
+  {
+    slug: "best-asic-miner-for-bitcoin-complete-buyers-guide",
+    title: "Best ASIC Miner for Bitcoin: Complete Buyer's Guide",
+  },
+  {
+    slug: "antminer-s21-review-is-it-still-the-best-bitcoin-miner",
+    title: "Antminer S21 Review: Is It Still the Best Bitcoin Miner?",
+  },
+  {
+    slug: "which-bitcoin-miner-makes-the-most-money-per-day",
+    title: "Which Bitcoin Miner Makes the Most Money Per Day?",
+  },
+  {
+    slug: "best-bitcoin-mining-machines-for-apartments-and-home-offices",
+    title: "Best Bitcoin Mining Machines for Apartments and Home Offices",
+  },
+  {
+    slug: "used-asic-miner-buying-guide-inspection-pricing-and-risk",
+    title: "Used ASIC Miner Buying Guide: Inspection, Pricing and Risk",
+  },
+] as const;
+
 
 const COLUMNS = [
   {
@@ -170,8 +194,9 @@ export function SiteFooter() {
             ))}
             <li>
               <Link to="/blog" className="font-semibold text-ice hover:underline">
-                All 181 guides
+                All 291 guides
               </Link>
+
             </li>
           </ul>
         </div>

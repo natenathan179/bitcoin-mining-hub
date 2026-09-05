@@ -121,6 +121,7 @@ function UsedAsicMinersPage() {
             name: p.name,
             url: `https://bitcoinminingdepot.com/products/${p.slug}`,
             brand: { "@type": "Brand", name: p.brand || SITE.name },
+            image: (p.images ?? []).filter((i) => i?.startsWith("https://")).slice(0, 1),
             itemCondition: "https://schema.org/UsedCondition",
             offers: {
               "@type": "Offer",
@@ -128,7 +129,7 @@ function UsedAsicMinersPage() {
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
               url: `https://bitcoinminingdepot.com/products/${p.slug}`,
-              seller: { "@type": "Organization", name: SITE.name },
+              seller: { "@type": "Organization", name: SITE.name, url: SITE.url },
             },
           },
         })),
@@ -150,7 +151,7 @@ function UsedAsicMinersPage() {
                 highPrice: dearest,
                 offerCount: sorted.length,
                 availability: "https://schema.org/InStock",
-                itemOffered: { "@type": "Product", name: "Used ASIC miner" },
+                itemOffered: { "@type": "Product", name: "Used ASIC miner", image: [SITE.ogImage], url: CANONICAL },
               },
             ],
           }
