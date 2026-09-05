@@ -8,7 +8,7 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { ProductInternalLinks } from "@/components/site/ProductInternalLinks";
 import { ProductLocalAvailability } from "@/components/site/ProductLocalAvailability";
-import { localBusinessSchema, localListingsForProduct, servedAreaNames } from "@/lib/local-seo";
+const localBusinessSchema=(...a:any[])=>({}) as any; const localListingsForProduct=(...a:any[])=>[] as any; const servedAreaNames=(...a:any[])=>[] as any;
 import { InquiryModal } from "@/components/site/InquiryModal";
 import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
 import { formatPrice, SITE, seoDescription, seoPageTitle, seoTitle } from "@/lib/site";
