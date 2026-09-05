@@ -6,7 +6,8 @@
 import type { BlogIndexEntry as BlogPost } from "./blog-index";
 import { BLOG_INDEX as BLOG_POSTS } from "./blog-index";
 import type { Product } from "./data";
-import { type Collection, linkSeed, modelTokens, rotatingSlice } from "./collections";
+import type { Collection } from "./collections";
+import { linkSeed, modelTokens, rotatingSlice } from "./link-utils";
 
 export function matchPosts(collection: Collection, limit = 12): BlogPost[] {
   const scored = BLOG_POSTS.map((post) => {
