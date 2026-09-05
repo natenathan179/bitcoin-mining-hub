@@ -5,15 +5,26 @@ import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { BLOG_CATEGORIES, BLOG_INDEX as BLOG_POSTS } from "@/lib/blog-index";
 import { SITE } from "@/lib/site";
 
+const BASE = {
+  title: "Bitcoin Mining Blog: ASIC Guides, Reviews & Profitability",
+  description:
+    "291 operator-written guides on the best bitcoin mining machines, used ASIC miner buying advice, Antminer and WhatsMiner reviews, profitability math and setup.",
+};
+
 export const Route = createFileRoute("/blog/")({
-  head: () => ({
+  validateSearch: parseIndexSearch,
+  loaderDeps: ({ search }: { search: IndexSearch }) => search,
+  loader: ({ deps }) => deps,
+  head: ({ loaderData }) => {
+    const variant = indexVariantMeta(BASE, loaderData);
+    return {
     meta: [
-      { title: "Bitcoin Mining Blog: ASIC Guides, Reviews & Profitability" },
+      { title: variant?.title ?? BASE.title },
       {
         name: "description",
-        content:
-          "291 operator-written guides on the best bitcoin mining machines, used ASIC miner buying advice, Antminer and WhatsMiner reviews, profitability math and setup.",
+        content: variant?.description ?? BASE.description,
       },
+      ...(variant ? [{ name: "robots", content: variant.robots }] : []),
       { property: "og:title", content: "Bitcoin Mining Blog | Bitcoin Mining Depot" },
       {
         property: "og:description",
