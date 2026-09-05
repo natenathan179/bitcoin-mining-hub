@@ -12,7 +12,7 @@ import { SITE } from "@/lib/site";
 export const Route = createFileRoute("/bitcoin-mining-marketplace/$slug")({
   loader: async ({ params, context }) => {
     context.queryClient.ensureQueryData(productsQuery());
-    const data = await getMarketplacePageFn({ data: { slug: params.slug } });
+    const data = await retryRead(() => getMarketplacePageFn({ data: { slug: params.slug } }));
     if (!data) throw notFound();
     return data;
   },
