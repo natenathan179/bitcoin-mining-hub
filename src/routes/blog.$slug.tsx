@@ -3,8 +3,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
-import { getIndexEntry, relatedIndexPosts } from "@/lib/blog-index";
-import { getBlogPostFn } from "@/lib/blog.functions";
+import { getBlogPageFn } from "@/lib/blog.functions";
 import type { BlogPost } from "@/lib/blog-types";
 import { productsQuery, type Product } from "@/lib/data";
 import { SITE } from "@/lib/site";
@@ -13,12 +12,10 @@ export const Route = createFileRoute("/blog/$slug")({
   loader: async ({ params, context }) => {
     // Metadata comes from the lightweight index; the article body is fetched on
     // the server so the 2 MB library never ships to the browser.
-    const entry = getIndexEntry(params.slug);
-    if (!entry) throw notFound();
     context.queryClient.ensureQueryData(productsQuery());
-    const post = await getBlogPostFn({ data: { slug: params.slug } });
-    if (!post) throw notFound();
-    return { post, entry };
+    const data = await getBlogPageFn({ data: { slug: params.slug } });
+    if (!data) throw notFound();
+    return data;
   },
   head: ({ loaderData }) => {
     const entry = loaderData?.entry;
@@ -71,10 +68,9 @@ function matchProducts(post: BlogPost, products: Product[]): Product[] {
 }
 
 function BlogPostPage() {
-  const { post } = Route.useLoaderData();
+  const { post, related } = Route.useLoaderData();
   const { data: products } = useSuspenseQuery(productsQuery());
   const picks = matchProducts(post, products);
-  const related = relatedIndexPosts(post.slug, post.categoryId, 6);
   const url = `${SITE.url}/blog/${post.slug}`;
 
   const jsonLd = [

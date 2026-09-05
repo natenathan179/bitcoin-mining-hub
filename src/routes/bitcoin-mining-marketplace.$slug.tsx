@@ -3,16 +3,17 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
-import { buildPage, getLocation, relatedLocations, type Family } from "@/lib/marketplace";
+import type { Family } from "@/lib/marketplace";
+import { getMarketplacePageFn } from "@/lib/marketplace.functions";
 import { productsQuery, type Product } from "@/lib/data";
 import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/bitcoin-mining-marketplace/$slug")({
-  loader: ({ params, context }) => {
-    const loc = getLocation(params.slug);
-    if (!loc) throw notFound();
+  loader: async ({ params, context }) => {
     context.queryClient.ensureQueryData(productsQuery());
-    return { page: buildPage(loc) };
+    const data = await getMarketplacePageFn({ data: { slug: params.slug } });
+    if (!data) throw notFound();
+    return data;
   },
   head: ({ loaderData }) => {
     const page = loaderData?.page;
@@ -53,10 +54,9 @@ function matchProducts(fam: Family, products: Product[]): Product[] {
 }
 
 function MarketplaceLocationPage() {
-  const { page } = Route.useLoaderData();
+  const { page, related } = Route.useLoaderData();
   const { data: products } = useSuspenseQuery(productsQuery());
   const picks = matchProducts(page.family, products);
-  const related = relatedLocations(page.location, 12);
   const { location: loc, family: fam } = page;
   const url = `${SITE.url}/bitcoin-mining-marketplace/${loc.slug}`;
 

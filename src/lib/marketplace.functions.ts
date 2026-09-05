@@ -1,9 +1,9 @@
 import { createServerFn } from "@tanstack/react-start";
 
-import type { MarketplacePage } from "./marketplace";
+import type { MarketPage } from "./marketplace";
 
 export interface MarketplacePageData {
-  page: MarketplacePage;
+  page: MarketPage;
   related: { slug: string; keyword: string }[];
 }
 
