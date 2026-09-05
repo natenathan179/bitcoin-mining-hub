@@ -7,6 +7,7 @@ import { ProductCard } from "@/components/site/ProductCard";
 import { categoriesQuery, productsQuery } from "@/lib/data";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
+import { seoDescription, seoTitle } from "@/lib/site";
 
 interface ProductSearch {
   q?: string;
