@@ -355,10 +355,17 @@ export const Route = createFileRoute("/products/$slug")({
                 .slice(0, 10),
               shippingDetails: {
                 "@type": "OfferShippingDetails",
+                // Google requires an explicit rate; freight is quoted flat per unit.
+                shippingRate: {
+                  "@type": "MonetaryAmount",
+                  value: 0,
+                  currency: "USD",
+                },
                 shippingDestination: {
                   "@type": "DefinedRegion",
                   addressCountry: ["US", "CA", "GB", "AE", "AU"],
                 },
+
                 deliveryTime: {
                   "@type": "ShippingDeliveryTime",
                   handlingTime: {
