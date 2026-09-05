@@ -41,7 +41,7 @@ export const Route = createFileRoute("/products/")({
         ? titleCase(loaderData.q)
         : "";
     const title = filter
-      ? seoTitle(`${filter} Miners In Stock`, "Bitcoin Mining Depot")
+      ? seoTitle(/miner/i.test(filter) ? `${filter} In Stock` : `${filter} Miners In Stock`, "Bitcoin Mining Depot")
       : "Shop ASIC Bitcoin Miners | Bitcoin Mining Depot";
     const description = filter
       ? seoDescription(
