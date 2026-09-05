@@ -7,6 +7,21 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          // The 1,000-location dataset is only needed by the marketplace directory,
+          // so it gets its own chunk instead of being folded into the bundle every
+          // visitor downloads on the first page.
+          manualChunks(id: string) {
+            if (id.includes("src/lib/marketplace")) return "data-marketplace";
+            return undefined;
+          },
+        },
+      },
+    },
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
