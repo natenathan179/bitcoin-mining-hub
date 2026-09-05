@@ -58,7 +58,7 @@ export const Route = createFileRoute("/compare/antminer-s21-xp-hyd-vs-s19-xp-plu
           datePublished: "2026-06-01",
           dateModified: "2026-08-01",
           url: COMPARE_URL,
-          mainEntityOfPage: { "@type": "WebPage", "@id": COMPARE_URL, url: COMPARE_URL, name: COMPARE_TITLE },
+          mainEntityOfPage: { "@type": "WebPage", "@id": COMPARE_URL, url: COMPARE_URL, name: TITLE },
           image: [SITE.ogImage],
           author: { "@type": "Organization", name: SITE.name, url: SITE.url },
           publisher: {

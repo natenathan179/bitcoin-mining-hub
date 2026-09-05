@@ -90,6 +90,8 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           "@id": `${SITE.url}/#business`,
+          image: [SITE.ogImage],
+          logo: SITE.logo,
           name: SITE.name,
           url: SITE.url,
           telephone: SITE.phone,
