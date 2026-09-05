@@ -8,6 +8,7 @@ import { productsQuery } from "@/lib/data";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
 import { formatPrice, SITE, seoDescription, seoPageTitle } from "@/lib/site";
+import { indexVariantMeta, parseIndexSearch, type IndexSearch } from "@/lib/search-meta";
 
 const CANONICAL = "https://bitcoinminingdepot.com/used-asic-miners";
 const TITLE = seoPageTitle("Used ASIC Miner Deals: Tested Stock", "BMD");
