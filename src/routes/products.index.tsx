@@ -12,6 +12,7 @@ import { seoDescription, seoTitle } from "@/lib/site";
 interface ProductSearch {
   q?: string;
   category?: string;
+  page?: number;
 }
 
 export const Route = createFileRoute("/products/")({
@@ -19,6 +20,10 @@ export const Route = createFileRoute("/products/")({
     q: typeof search.q === "string" && search.q ? search.q : undefined,
     category:
       typeof search.category === "string" && search.category ? search.category : undefined,
+    page:
+      Number.isFinite(Number(search.page)) && Number(search.page) > 1
+        ? Math.floor(Number(search.page))
+        : undefined,
   }),
   // Filtered views (?category=…, ?q=…) get their own title and description so
   // crawlers never see several URLs sharing the shop page's title, and they all
@@ -26,26 +31,35 @@ export const Route = createFileRoute("/products/")({
   loaderDeps: ({ search }: { search: ProductSearch }) => ({
     q: search.q,
     category: search.category,
+    page: search.page,
   }),
   loader: ({ context, deps }) => {
     context.queryClient.ensureQueryData(productsQuery());
     context.queryClient.ensureQueryData(categoriesQuery());
-    return { q: deps.q, category: deps.category };
+    return { q: deps.q, category: deps.category, page: deps.page };
   },
   head: ({ loaderData }) => {
     const titleCase = (v: string) =>
       v.replace(/[-_]+/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()).trim();
-    const filter = loaderData?.category
+    const base = loaderData?.category
       ? titleCase(loaderData.category)
       : loaderData?.q
         ? titleCase(loaderData.q)
         : "";
-    const title = filter
-      ? seoTitle(/miner/i.test(filter) ? `${filter} In Stock` : `${filter} Miners In Stock`, "Bitcoin Mining Depot")
-      : "Shop ASIC Bitcoin Miners | Bitcoin Mining Depot";
+    // Paginated views count as filtered views: they must not reuse page one's title.
+    const filter = loaderData?.page
+      ? `${base ? `${base} ` : ""}Page ${loaderData.page}`.trim()
+      : base;
+    const pageSuffix = loaderData?.page ? ` — Page ${loaderData.page}` : "";
+    const title = base
+      ? seoTitle(
+          `${/miner/i.test(base) ? `${base} In Stock` : `${base} Miners In Stock`}${pageSuffix}`,
+          "Bitcoin Mining Depot",
+        )
+      : `Shop ASIC Bitcoin Miners${pageSuffix} | Bitcoin Mining Depot`;
     const description = filter
       ? seoDescription(
-          `In-stock ${filter} mining hardware with tested hashrate, written warranty and worldwide shipping from our Hong Kong warehouse. Filter by brand, condition and price.`,
+          `${base ? `In-stock ${base} mining hardware` : "In-stock ASIC mining hardware"}${pageSuffix ? `, page ${loaderData?.page}` : ""} with tested hashrate, written warranty and worldwide shipping from our Hong Kong warehouse.`,
         )
       : "Browse in-stock ASIC bitcoin miners, power supplies, immersion cooling and spare parts. Filter by brand, condition, hashrate and price with wholesale pricing available.";
     return {

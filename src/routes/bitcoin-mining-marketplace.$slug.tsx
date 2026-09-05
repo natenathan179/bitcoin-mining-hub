@@ -5,13 +5,14 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import type { Family } from "@/lib/marketplace";
 import { getMarketplacePageFn } from "@/lib/marketplace.functions";
+import { retryRead } from "@/lib/retry";
 import { productsQuery, type Product } from "@/lib/data";
 import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/bitcoin-mining-marketplace/$slug")({
   loader: async ({ params, context }) => {
     context.queryClient.ensureQueryData(productsQuery());
-    const data = await getMarketplacePageFn({ data: { slug: params.slug } });
+    const data = await retryRead(() => getMarketplacePageFn({ data: { slug: params.slug } }));
     if (!data) throw notFound();
     return data;
   },

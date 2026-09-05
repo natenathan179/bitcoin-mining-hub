@@ -8,6 +8,7 @@ import { productsQuery } from "@/lib/data";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
 import { formatPrice, SITE, seoDescription, seoPageTitle } from "@/lib/site";
+import { indexVariantMeta, parseIndexSearch, type IndexSearch } from "@/lib/search-meta";
 
 const CANONICAL = "https://bitcoinminingdepot.com/used-asic-miners";
 const TITLE = seoPageTitle("Used ASIC Miner Deals: Tested Stock", "BMD");
@@ -16,21 +17,28 @@ const DESCRIPTION = seoDescription(
 );
 
 export const Route = createFileRoute("/used-asic-miners")({
-  loader: ({ context }) => {
+  validateSearch: parseIndexSearch,
+  loaderDeps: ({ search }: { search: IndexSearch }) => search,
+  loader: ({ context, deps }) => {
     context.queryClient.ensureQueryData(productsQuery());
+    return deps;
   },
-  head: () => ({
-    meta: [
-      { title: TITLE },
-      { name: "description", content: DESCRIPTION },
-      { property: "og:title", content: TITLE },
-      { property: "og:description", content: DESCRIPTION },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: CANONICAL },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-    links: [{ rel: "canonical", href: CANONICAL }],
-  }),
+  head: ({ loaderData }) => {
+    const variant = indexVariantMeta({ title: TITLE, description: DESCRIPTION }, loaderData);
+    return {
+      meta: [
+        { title: variant?.title ?? TITLE },
+        { name: "description", content: variant?.description ?? DESCRIPTION },
+        ...(variant ? [{ name: "robots", content: variant.robots }] : []),
+        { property: "og:title", content: TITLE },
+        { property: "og:description", content: DESCRIPTION },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: CANONICAL },
+        { name: "twitter:card", content: "summary_large_image" },
+      ],
+      links: [{ rel: "canonical", href: CANONICAL }],
+    };
+  },
   errorComponent: ({ error }) => (
     <SiteLayout>
       <div role="alert" className="mx-auto max-w-[900px] px-4 py-24 text-center">

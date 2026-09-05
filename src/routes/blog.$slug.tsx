@@ -4,6 +4,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
 import { getBlogPageFn } from "@/lib/blog.functions";
+import { retryRead } from "@/lib/retry";
 import type { BlogPost } from "@/lib/blog-types";
 import { productsQuery, type Product } from "@/lib/data";
 import { SITE } from "@/lib/site";
@@ -13,7 +14,7 @@ export const Route = createFileRoute("/blog/$slug")({
     // Metadata comes from the lightweight index; the article body is fetched on
     // the server so the 2 MB library never ships to the browser.
     context.queryClient.ensureQueryData(productsQuery());
-    const data = await getBlogPageFn({ data: { slug: params.slug } });
+    const data = await retryRead(() => getBlogPageFn({ data: { slug: params.slug } }));
     if (!data) throw notFound();
     return data;
   },

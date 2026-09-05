@@ -80,7 +80,10 @@ const PRODUCT_LIST_COLUMNS =
  * backend requests instead of one per page. If a read still fails we fall back
  * to the last known good value (or an empty list) rather than failing the page.
  */
-const TTL_MS = 60_000;
+// A five-minute window keeps a full-site crawl (1,500+ URLs) down to a handful of
+// backend reads per server instance, which is what stops slow/throttled reads from
+// surfacing as 5xx pages in SEO audits.
+const TTL_MS = 300_000;
 const STALE_MS = 24 * 60 * 60 * 1000;
 const cache = new Map<string, { value: unknown; at: number }>();
 
