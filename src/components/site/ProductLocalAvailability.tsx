@@ -4,7 +4,6 @@ import { MapPin, Clock, Phone, Mail, Navigation } from "lucide-react";
 import type { Product } from "@/lib/data";
 import { BUSINESS, localBusinessSchema, localListingsForProduct, servedAreaNames } from "@/lib/local-seo";
 import { SITE } from "@/lib/site";
-import { SITE } from "@/lib/site";
 
 /**
  * Local search block for product pages: city and state listings the model ships
