@@ -194,8 +194,9 @@ export function SiteFooter() {
             ))}
             <li>
               <Link to="/blog" className="font-semibold text-ice hover:underline">
-                All 181 guides
+                All 291 guides
               </Link>
+
             </li>
           </ul>
         </div>
