@@ -19,30 +19,53 @@ export const Route = createFileRoute("/products/")({
     category:
       typeof search.category === "string" && search.category ? search.category : undefined,
   }),
-  loader: ({ context }) => {
+  // Filtered views (?category=…, ?q=…) get their own title and description so
+  // crawlers never see several URLs sharing the shop page's title, and they all
+  // point back at /products as the preferred version.
+  loaderDeps: ({ search }: { search: ProductSearch }) => ({
+    q: search.q,
+    category: search.category,
+  }),
+  loader: ({ context, deps }) => {
     context.queryClient.ensureQueryData(productsQuery());
     context.queryClient.ensureQueryData(categoriesQuery());
+    return { q: deps.q, category: deps.category };
   },
-  head: () => ({
-    meta: [
-      { title: "Shop ASIC Bitcoin Miners | Bitcoin Mining Depot" },
-      {
-        name: "description",
-        content:
-          "Browse in-stock ASIC bitcoin miners, power supplies, immersion cooling and spare parts. Filter by brand, condition, hashrate and price with wholesale pricing available.",
-      },
-      { property: "og:title", content: "Shop ASIC Bitcoin Miners | Bitcoin Mining Depot" },
-      {
-        property: "og:description",
-        content:
-          "In-stock Bitmain, MicroBT and Canaan mining hardware with tested hashrate, warranty and worldwide shipping.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/products" },
-    ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/products" }],
-  }),
+  head: ({ loaderData }) => {
+    const titleCase = (v: string) =>
+      v.replace(/[-_]+/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()).trim();
+    const filter = loaderData?.category
+      ? titleCase(loaderData.category)
+      : loaderData?.q
+        ? titleCase(loaderData.q)
+        : "";
+    const title = filter
+      ? seoTitle(`${filter} Miners In Stock`, "Bitcoin Mining Depot")
+      : "Shop ASIC Bitcoin Miners | Bitcoin Mining Depot";
+    const description = filter
+      ? seoDescription(
+          `In-stock ${filter} mining hardware with tested hashrate, written warranty and worldwide shipping from our Hong Kong warehouse. Filter by brand, condition and price.`,
+        )
+      : "Browse in-stock ASIC bitcoin miners, power supplies, immersion cooling and spare parts. Filter by brand, condition, hashrate and price with wholesale pricing available.";
+    return {
+      meta: [
+        { title },
+        { name: "description", content: description },
+        { property: "og:title", content: title },
+        {
+          property: "og:description",
+          content:
+            "In-stock Bitmain, MicroBT and Canaan mining hardware with tested hashrate, warranty and worldwide shipping.",
+        },
+        { property: "og:type", content: "website" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { property: "og:url", content: "https://bitcoinminingdepot.com/products" },
+        ...(filter ? [{ name: "robots", content: "noindex, follow" }] : []),
+      ],
+      links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/products" }],
+    };
+  },
+
   component: ProductsPage,
 });
 
