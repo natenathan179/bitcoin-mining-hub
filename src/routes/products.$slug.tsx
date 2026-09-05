@@ -221,11 +221,19 @@ export const Route = createFileRoute("/products/$slug")({
     const hashKey = (p.hashrate || "").toLowerCase().replace(/\s+/g, "");
     const titleBase =
       p.hashrate && hashKey && !nameKey.includes(hashKey) ? `${p.name} ${p.hashrate}` : p.name;
-    const title = seoTitle(titleBase);
+    // When the name alone already fills the limit the brand suffix falls away and
+    // the title would read exactly like the on-page H1 — force the branded form so
+    // title and H1 are never byte-identical.
+    const plain = seoTitle(titleBase);
+    const title = plain === p.name ? seoPageTitle(p.name, "BMD") : plain;
+    const conditionNote = /used|refurb/i.test(p.condition ?? "")
+      ? `Tested, graded ${p.condition?.toLowerCase()} unit`
+      : "Brand new sealed unit";
     const description = seoDescription(
       p.short_description ||
-        `Buy the ${p.name} ${p.brand} bitcoin miner with warranty, tested hashrate and worldwide shipping.`,
+        `${conditionNote}: buy the ${p.name} ${p.brand} miner (${p.hashrate || "verified hashrate"}) with warranty and worldwide shipping from Hong Kong.`,
     );
+
     const path = `/products/${p.slug}`;
     const absolute = (u: string) => (u.startsWith("http") ? u : `${SITE.url}${u.startsWith("/") ? "" : "/"}${u}`);
     const url = absolute(path);
