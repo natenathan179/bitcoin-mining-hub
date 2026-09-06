@@ -170,6 +170,9 @@ export function localBusinessSchema(product: Product, areaNames: string[], pageU
         url: pageUrl,
         image: (product.images ?? []).filter((i) => i?.startsWith("https://")).slice(0, 1),
         brand: { "@type": "Brand", name: product.brand },
+        description:
+          product.short_description ||
+          `${product.name} in stock at ${SITE.name}, shipped worldwide from Hong Kong.`,
       },
       priceCurrency: "USD",
       price: product.sale_price ?? product.price,

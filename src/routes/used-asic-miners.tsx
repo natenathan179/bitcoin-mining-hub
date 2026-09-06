@@ -130,6 +130,9 @@ function UsedAsicMinersPage() {
             url: `https://bitcoinminingdepot.com/products/${p.slug}`,
             brand: { "@type": "Brand", name: p.brand || SITE.name },
             image: (p.images ?? []).filter((i) => i?.startsWith("https://")).slice(0, 1),
+            description:
+              p.short_description ||
+              `${p.name} — tested used ASIC miner in stock at ${SITE.name}, shipped worldwide from Hong Kong.`,
             itemCondition: "https://schema.org/UsedCondition",
             offers: {
               "@type": "Offer",
@@ -159,7 +162,14 @@ function UsedAsicMinersPage() {
                 highPrice: dearest,
                 offerCount: sorted.length,
                 availability: "https://schema.org/InStock",
-                itemOffered: { "@type": "Product", name: "Used ASIC miner", image: [SITE.ogImage], url: CANONICAL },
+                itemOffered: {
+                  "@type": "Product",
+                  name: "Used ASIC miner",
+                  description:
+                    "Tested, graded used ASIC bitcoin miners with warranty, shipped worldwide from Hong Kong.",
+                  image: [SITE.ogImage],
+                  url: CANONICAL,
+                },
               },
             ],
           }

@@ -126,6 +126,9 @@ function CryptoMiningForSalePage() {
             name: p.name,
             url: `https://bitcoinminingdepot.com/products/${p.slug}`,
             brand: { "@type": "Brand", name: p.brand || SITE.name },
+            description:
+              p.short_description ||
+              `${p.name} — crypto mining hardware in stock at ${SITE.name}, shipped worldwide from Hong Kong.`,
             image: (p.images ?? []).filter((i) => i?.startsWith("https://")).slice(0, 1),
             offers: {
               "@type": "Offer",
@@ -155,7 +158,14 @@ function CryptoMiningForSalePage() {
                 highPrice: dearest,
                 offerCount: inStock.length,
                 availability: "https://schema.org/InStock",
-                itemOffered: { "@type": "Product", name: "Crypto mining hardware", image: [SITE.ogImage], url: CANONICAL },
+                itemOffered: {
+                  "@type": "Product",
+                  name: "Crypto mining hardware",
+                  description:
+                    "New and used ASIC crypto mining hardware in stock, shipped worldwide from Hong Kong.",
+                  image: [SITE.ogImage],
+                  url: CANONICAL,
+                },
               },
             ],
           },
