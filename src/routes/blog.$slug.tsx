@@ -14,7 +14,9 @@ export const Route = createFileRoute("/blog/$slug")({
     // Metadata comes from the lightweight index; the article body is fetched on
     // the server so the 2 MB library never ships to the browser.
     context.queryClient.ensureQueryData(productsQuery());
-    const data = await retryRead(() => getBlogPageFn({ data: { slug: params.slug } }));
+    const data = import.meta.env.SSR
+      ? await (await import("@/lib/ssr-pages.server")).loadBlogPage(params.slug)
+      : await retryRead(() => getBlogPageFn({ data: { slug: params.slug } }));
     if (!data) throw notFound();
     return data;
   },

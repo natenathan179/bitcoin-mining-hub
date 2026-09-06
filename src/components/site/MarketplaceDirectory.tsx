@@ -7,7 +7,7 @@ import { useMemo, useState } from "react";
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
-import { SITE } from "@/lib/site";
+import { SITE, siteUrl } from "@/lib/site";
 import {
   MARKET_COUNTRIES,
   MARKET_FAMILY_LIST,
@@ -66,7 +66,7 @@ export default function MarketplaceDirectory() {
         "@type": "ListItem",
         position: i + 1,
         name: l.keyword,
-        url: `${SITE.url}/bitcoin-mining-marketplace/${l.slug}`,
+        url: siteUrl(`/bitcoin-mining-marketplace/${l.slug}`),
       })),
     },
   };
