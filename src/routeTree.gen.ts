@@ -41,6 +41,7 @@ import { Route as BitcoinMiningMarketplaceSlugRouteImport } from './routes/bitco
 import { Route as AdminLoginRouteImport } from './routes/admin.login'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
+import { Route as ApiPublicMerchantFeedRouteImport } from './routes/api/public/merchant-feed'
 import { Route as ApiPublicIndexnowRouteImport } from './routes/api/public/indexnow'
 import { Route as AuthenticatedAdminReviewsRouteImport } from './routes/_authenticated/admin.reviews'
 import { Route as AuthenticatedAdminPaymentsRouteImport } from './routes/_authenticated/admin.payments'
@@ -210,6 +211,11 @@ const AuthenticatedAdminIndexRoute = AuthenticatedAdminIndexRouteImport.update({
   path: '/',
   getParentRoute: () => AuthenticatedAdminRoute,
 } as any)
+const ApiPublicMerchantFeedRoute = ApiPublicMerchantFeedRouteImport.update({
+  id: '/api/public/merchant-feed',
+  path: '/api/public/merchant-feed',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicIndexnowRoute = ApiPublicIndexnowRouteImport.update({
   id: '/api/public/indexnow',
   path: '/api/public/indexnow',
@@ -282,6 +288,7 @@ export interface FileRoutesByFullPath {
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/admin/reviews': typeof AuthenticatedAdminReviewsRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
+  '/api/public/merchant-feed': typeof ApiPublicMerchantFeedRoute
   '/admin/': typeof AuthenticatedAdminIndexRoute
   '/admin/products/$id': typeof AuthenticatedAdminProductsIdRoute
 }
@@ -320,6 +327,7 @@ export interface FileRoutesByTo {
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/admin/reviews': typeof AuthenticatedAdminReviewsRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
+  '/api/public/merchant-feed': typeof ApiPublicMerchantFeedRoute
   '/admin': typeof AuthenticatedAdminIndexRoute
   '/admin/products/$id': typeof AuthenticatedAdminProductsIdRoute
 }
@@ -361,6 +369,7 @@ export interface FileRoutesById {
   '/_authenticated/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/_authenticated/admin/reviews': typeof AuthenticatedAdminReviewsRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
+  '/api/public/merchant-feed': typeof ApiPublicMerchantFeedRoute
   '/_authenticated/admin/': typeof AuthenticatedAdminIndexRoute
   '/_authenticated/admin/products/$id': typeof AuthenticatedAdminProductsIdRoute
 }
@@ -402,6 +411,7 @@ export interface FileRouteTypes {
     | '/admin/payments'
     | '/admin/reviews'
     | '/api/public/indexnow'
+    | '/api/public/merchant-feed'
     | '/admin/'
     | '/admin/products/$id'
   fileRoutesByTo: FileRoutesByTo
@@ -440,6 +450,7 @@ export interface FileRouteTypes {
     | '/admin/payments'
     | '/admin/reviews'
     | '/api/public/indexnow'
+    | '/api/public/merchant-feed'
     | '/admin'
     | '/admin/products/$id'
   id:
@@ -480,6 +491,7 @@ export interface FileRouteTypes {
     | '/_authenticated/admin/payments'
     | '/_authenticated/admin/reviews'
     | '/api/public/indexnow'
+    | '/api/public/merchant-feed'
     | '/_authenticated/admin/'
     | '/_authenticated/admin/products/$id'
   fileRoutesById: FileRoutesById
@@ -516,6 +528,7 @@ export interface RootRouteChildren {
   BlogIndexRoute: typeof BlogIndexRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
   ApiPublicIndexnowRoute: typeof ApiPublicIndexnowRoute
+  ApiPublicMerchantFeedRoute: typeof ApiPublicMerchantFeedRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -744,6 +757,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthenticatedAdminIndexRouteImport
       parentRoute: typeof AuthenticatedAdminRoute
     }
+    '/api/public/merchant-feed': {
+      id: '/api/public/merchant-feed'
+      path: '/api/public/merchant-feed'
+      fullPath: '/api/public/merchant-feed'
+      preLoaderRoute: typeof ApiPublicMerchantFeedRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/indexnow': {
       id: '/api/public/indexnow'
       path: '/api/public/indexnow'
@@ -854,6 +874,7 @@ const rootRouteChildren: RootRouteChildren = {
   BlogIndexRoute: BlogIndexRoute,
   ProductsIndexRoute: ProductsIndexRoute,
   ApiPublicIndexnowRoute: ApiPublicIndexnowRoute,
+  ApiPublicMerchantFeedRoute: ApiPublicMerchantFeedRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
