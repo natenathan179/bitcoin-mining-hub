@@ -40,8 +40,10 @@ export const SHIPPING_REGIONS = [
   },
   {
     name: "Canada",
-    detail: "Door-to-door express delivery to Toronto, Vancouver, Calgary, Montreal and remote farms.",
+    detail:
+      "Direct air freight from Hong Kong (HKG) into Vancouver, Toronto or Calgary with DHL Express, FedEx International Priority, UPS Worldwide Express and Kerry Logistics, then door delivery — including remote farm sites.",
   },
+
   {
     name: "Europe & UK",
     detail: "EU/UK delivery via Rotterdam, Frankfurt and London hubs with VAT/EORI documentation support.",
