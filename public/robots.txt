@@ -8,6 +8,46 @@ Allow: /
 Disallow: /admin
 Disallow: /admin/
 
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
 User-agent: Twitterbot
 Allow: /
 
@@ -20,3 +60,9 @@ Disallow: /admin
 Disallow: /admin/
 
 Sitemap: https://bitcoinminingdepot.com/sitemap.xml
+Sitemap: https://bitcoinminingdepot.com/sitemap-pages.xml
+Sitemap: https://bitcoinminingdepot.com/sitemap-products.xml
+Sitemap: https://bitcoinminingdepot.com/sitemap-blog.xml
+Sitemap: https://bitcoinminingdepot.com/sitemap-marketplace-1.xml
+Sitemap: https://bitcoinminingdepot.com/sitemap-marketplace-2.xml
+Sitemap: https://bitcoinminingdepot.com/sitemap-marketplace-3.xml
