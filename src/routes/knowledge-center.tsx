@@ -4,6 +4,7 @@ import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import articleProfit from "@/assets/article-profit.jpg";
 import articleFarm from "@/assets/article-farm.jpg";
 import articleRepair from "@/assets/article-repair.jpg";
+import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/knowledge-center")({
   head: () => ({
@@ -25,6 +26,50 @@ export const Route = createFileRoute("/knowledge-center")({
       { property: "og:url", content: "https://bitcoinminingdepot.com/knowledge-center" },
     ],
     links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/knowledge-center" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": "https://bitcoinminingdepot.com/knowledge-center#page",
+            url: "https://bitcoinminingdepot.com/knowledge-center",
+            name: "Bitcoin Mining Knowledge Center | Guides & Profitability",
+            description:
+              "In-depth bitcoin mining guides: choosing profitable ASIC miners, building a mining farm, electrical planning, immersion cooling and ASIC maintenance best practice.",
+            inLanguage: "en",
+            isPartOf: { "@type": "WebSite", name: SITE.name, url: SITE.url },
+            primaryImageOfPage: { "@type": "ImageObject", url: SITE.ogImage },
+            publisher: { "@type": "Organization", name: SITE.name, url: SITE.url, logo: SITE.logo },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Bitcoin mining guides",
+            itemListElement: ARTICLES.map((a, i) => ({
+              "@type": "ListItem",
+              position: i + 1,
+              name: a.title,
+              url: `https://bitcoinminingdepot.com/knowledge-center#${a.id}`,
+            })),
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.com/" },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Knowledge Center",
+                item: "https://bitcoinminingdepot.com/knowledge-center",
+              },
+            ],
+          },
+        ]),
+      },
+    ],
   }),
   component: KnowledgePage,
 });

@@ -5,6 +5,7 @@ import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { LeadForm } from "@/components/site/LeadForm";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
+import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/wholesale")({
   head: () => ({
@@ -25,6 +26,63 @@ export const Route = createFileRoute("/wholesale")({
       { property: "og:url", content: "https://bitcoinminingdepot.com/wholesale" },
     ],
     links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/wholesale" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://bitcoinminingdepot.com/wholesale#page",
+            url: "https://bitcoinminingdepot.com/wholesale",
+            name: "Wholesale Bitcoin Miners | Bulk ASIC Pricing & Allocation",
+            description:
+              "Wholesale bitcoin miner pricing for bulk buyers: tiered discounts from 10 units, container freight, escrow-friendly terms and priority allocation on new releases.",
+            inLanguage: "en",
+            isPartOf: { "@type": "WebSite", name: SITE.name, url: SITE.url },
+            primaryImageOfPage: { "@type": "ImageObject", url: SITE.ogImage },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Wholesale ASIC miner supply",
+            serviceType: "Bulk ASIC miner wholesale",
+            description:
+              "Tiered wholesale pricing on new and used ASIC miners from 10 units to full container allocations, with worldwide freight from Hong Kong.",
+            url: "https://bitcoinminingdepot.com/wholesale",
+            provider: { "@type": "Organization", name: SITE.name, url: SITE.url, logo: SITE.logo },
+            areaServed: { "@type": "Place", name: "Worldwide" },
+            offers: {
+              "@type": "Offer",
+              url: "https://bitcoinminingdepot.com/wholesale",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock",
+              priceSpecification: {
+                "@type": "PriceSpecification",
+                priceCurrency: "USD",
+                minPrice: 500,
+                valueAddedTaxIncluded: false,
+              },
+              eligibleQuantity: { "@type": "QuantitativeValue", minValue: 10, unitText: "units" },
+              seller: { "@type": "Organization", name: SITE.name, url: SITE.url },
+            },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.com/" },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Wholesale",
+                item: "https://bitcoinminingdepot.com/wholesale",
+              },
+            ],
+          },
+        ]),
+      },
+    ],
   }),
   component: WholesalePage,
 });
