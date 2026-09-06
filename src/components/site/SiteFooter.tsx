@@ -163,7 +163,7 @@ export function SiteFooter() {
         <div>
           <h3 className="font-display text-sm font-semibold uppercase tracking-wide">Contact Us</h3>
           <ul className="mt-4 space-y-2 text-xs text-charcoal-foreground/70">
-            <li>Phone: {SITE.phone}</li>
+            <li>WhatsApp: {SITE.phone}</li>
             <li>
               Email:{" "}
               <a href={`mailto:${SITE.email}`} className="hover:text-ice">
