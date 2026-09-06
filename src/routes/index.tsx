@@ -572,7 +572,7 @@ function Index() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Every international order ships with a tracking number, commercial invoice and full
                 customs paperwork. Our team supports you in English 24/7 across all time zones —
-                call or WhatsApp {SITE.phone}, or email {SITE.email}.
+                 WhatsApp {SITE.phone}, or email {SITE.email}.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Link
