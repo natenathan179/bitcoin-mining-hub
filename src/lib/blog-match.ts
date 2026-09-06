@@ -1,6 +1,6 @@
 // Guide matching for category and product pages.
 //
-// Kept in its own module so the 291-entry article index only loads on the pages
+// Kept in its own module so the 299-entry article index only loads on the pages
 // that actually render guide links, instead of shipping in the shared bundle
 // that every visitor downloads on the first page view.
 import type { BlogIndexEntry as BlogPost } from "./blog-index";

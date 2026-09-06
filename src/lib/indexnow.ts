@@ -14,9 +14,9 @@ export type IndexNowScope = (typeof INDEXNOW_SCOPES)[number];
 export const INDEXNOW_COUNTS: Record<IndexNowScope, number> = {
   pages: 25,
   products: 137,
-  blog: 291,
+  blog: 299,
   marketplace: 1075,
-  all: 25 + 137 + 291 + 1075,
+  all: 25 + 137 + 299 + 1075,
 };
 
 export type IndexNowResult = {

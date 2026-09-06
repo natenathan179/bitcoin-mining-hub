@@ -5077,6 +5077,142 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
       "scrypt miner"
     ],
     "readMinutes": 8
+  },
+  {
+    "slug": "what-is-bitcoin-mining-how-it-works-costs-and-hardware",
+    "title": "What Is Bitcoin Mining? How It Works, Costs and Hardware",
+    "metaTitle": "What Is Bitcoin Mining? How It Works | BMD",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-06",
+    "description": "Bitcoin mining explained in plain terms: how proof of work secures the network, what miners actually earn, what hardware and power it takes, and what it costs.",
+    "keywords": [
+      "what is bitcoin mining",
+      "bitcoin mining",
+      "how bitcoin mining works",
+      "proof of work",
+      "mining hardware"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "how-to-mine-bitcoin-step-by-step-guide",
+    "title": "How to Mine Bitcoin: A Practical Step-by-Step Guide",
+    "metaTitle": "How to Mine Bitcoin: Step-by-Step | BMD Guide",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-06",
+    "description": "Every step to start mining bitcoin: checking your power and site, choosing hardware, wiring, pool and wallet setup, firmware tuning and monitoring uptime.",
+    "keywords": [
+      "how to mine bitcoin",
+      "how do i mine bitcoin",
+      "start mining bitcoin",
+      "asic setup",
+      "mining pool setup"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitcoin-mining-machine-guide-what-to-buy-and-why",
+    "title": "Bitcoin Mining Machine Guide: What to Buy and Why",
+    "metaTitle": "Bitcoin Mining Machine Guide: What to Buy | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-06",
+    "description": "How bitcoin mining machines differ: hashrate, efficiency, air vs hydro cooling, price per terahash and which models suit home, small-farm or hosted sites.",
+    "keywords": [
+      "bitcoin mining machine",
+      "bitcoin miner machine",
+      "mining machine price",
+      "asic miner",
+      "buy mining machine"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "btc-miner-buying-guide-real-costs-and-payback",
+    "title": "BTC Miner Buying Guide: Real Costs and Payback Math",
+    "metaTitle": "BTC Miner Buying Guide: Costs & Payback | BMD",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-06",
+    "description": "What a BTC miner really costs to own: purchase price per terahash, daily power spend, hosting fees, maintenance, resale value and how to calculate payback.",
+    "keywords": [
+      "btc miner",
+      "bitcoin miner",
+      "miner bitcoin miner",
+      "mining payback",
+      "cost of bitcoin miner"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitcoin-mining-software-firmware-pools-and-monitoring",
+    "title": "Bitcoin Mining Software: Firmware, Pools and Monitoring",
+    "metaTitle": "Bitcoin Mining Software & Firmware Guide | BMD",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-06",
+    "description": "What bitcoin mining software actually does: stock versus custom ASIC firmware, pool configuration, tuning profiles, fleet monitoring and safe update practice.",
+    "keywords": [
+      "bitcoin mining software",
+      "asic firmware",
+      "mining pool software",
+      "miner monitoring",
+      "custom firmware"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "crypto-mining-explained-which-coins-are-worth-mining",
+    "title": "Crypto Mining Explained: Which Coins Are Worth Mining",
+    "metaTitle": "Crypto Mining: Which Coins Are Worth Mining | BMD",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-06",
+    "description": "A practical look at crypto mining beyond bitcoin: SHA-256, Scrypt, kHeavyHash and Monero's RandomX, plus which algorithms and machines still make money.",
+    "keywords": [
+      "crypto mining",
+      "cryptocurrency mining",
+      "monero mining",
+      "scrypt mining",
+      "altcoin mining"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "nerdqaxe-vs-bitaxe-desktop-solo-miners-compared",
+    "title": "NerdQAxe vs Bitaxe: Desktop Solo Miners Compared",
+    "metaTitle": "NerdQAxe vs Bitaxe: Solo Miners Compared | BMD",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-09-06",
+    "description": "NerdQAxe and Bitaxe desktop solo miners compared on hashrate, efficiency, noise and realistic odds — and when a used ASIC earns more for the same money.",
+    "keywords": [
+      "nerdqaxe",
+      "bitaxe",
+      "solo miner",
+      "desktop bitcoin miner",
+      "lottery mining"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "how-does-bitcoin-mining-work-inside-a-mining-operation",
+    "title": "How Does Bitcoin Mining Work Inside a Real Operation",
+    "metaTitle": "How Does Bitcoin Mining Work? Inside a Farm | BMD",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-06",
+    "description": "From hash attempts to payouts: how a working mining operation is wired, cooled, monitored and paid, and which decisions actually move the margin.",
+    "keywords": [
+      "how does bitcoin mining work",
+      "mining farm",
+      "mining operation",
+      "hashrate",
+      "mining pool payouts"
+    ],
+    "readMinutes": 8
   }
 ];
 
