@@ -54,6 +54,17 @@ export const SHIPPING_REGIONS = [
   },
 ] as const;
 
+/**
+ * Absolute site URL with each path segment percent-encoded.
+ *
+ * Some marketplace city slugs contain accented characters (for example
+ * `lévis`). Sitemaps list the encoded form, so canonical/og URLs must match it
+ * exactly or audits report the sitemap entry as a different (incorrect) page.
+ */
+export function siteUrl(path: string) {
+  return `${SITE.url}${encodeURI(path)}`;
+}
+
 export const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/ajax/${SITE.email}`;
 
 export async function submitToEmail(subject: string, payload: Record<string, string>) {

@@ -7,12 +7,14 @@ import type { Family } from "@/lib/marketplace";
 import { getMarketplacePageFn } from "@/lib/marketplace.functions";
 import { retryRead } from "@/lib/retry";
 import { productsQuery, type Product } from "@/lib/data";
-import { SITE } from "@/lib/site";
+import { SITE, siteUrl } from "@/lib/site";
 
 export const Route = createFileRoute("/bitcoin-mining-marketplace/$slug")({
   loader: async ({ params, context }) => {
     context.queryClient.ensureQueryData(productsQuery());
-    const data = await retryRead(() => getMarketplacePageFn({ data: { slug: params.slug } }));
+    const data = import.meta.env.SSR
+      ? await (await import("@/lib/ssr-pages.server")).loadMarketplacePage(params.slug)
+      : await retryRead(() => getMarketplacePageFn({ data: { slug: params.slug } }));
     if (!data) throw notFound();
     return data;
   },
@@ -21,7 +23,7 @@ export const Route = createFileRoute("/bitcoin-mining-marketplace/$slug")({
     if (!page) {
       return { meta: [{ title: "Location unavailable" }, { name: "robots", content: "noindex" }] };
     }
-    const url = `${SITE.url}/bitcoin-mining-marketplace/${page.location.slug}`;
+    const url = siteUrl(`/bitcoin-mining-marketplace/${page.location.slug}`);
     return {
       meta: [
         { title: page.metaTitle },
@@ -59,7 +61,7 @@ function MarketplaceLocationPage() {
   const { data: products } = useSuspenseQuery(productsQuery());
   const picks = matchProducts(page.family, products);
   const { location: loc, family: fam } = page;
-  const url = `${SITE.url}/bitcoin-mining-marketplace/${loc.slug}`;
+  const url = siteUrl(`/bitcoin-mining-marketplace/${loc.slug}`);
 
   const jsonLd = [
     {
