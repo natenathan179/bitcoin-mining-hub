@@ -130,30 +130,32 @@ function buildMetaTitle(title: string, model: string): string {
   return out;
 }
 
-const CTAS = [
-  "In stock at Bitcoin Mining Depot, air-freighted worldwide from Hong Kong.",
-  "Bench-tested units in stock now, shipped worldwide from Hong Kong.",
-  "Compare live prices and buy verified units from Bitcoin Mining Depot.",
-  "See current pricing and verified stock at Bitcoin Mining Depot.",
+const TAILS: Array<[RegExp, string]> = [
+  [/price|cost|what to pay|forecast/i, "current market prices, cost per terahash and what to pay in 2026. Verified stock at Bitcoin Mining Depot."],
+  [/profitab|roi|payback|earn/i, "payback math at real power rates, daily revenue and the break-even hashprice that matters."],
+  [/spec/i, "full specs, hashrate, power draw and efficiency explained by our Hong Kong engineers."],
+  [/firmware|overclock|tuning/i, "safe tuning steps, firmware options and the operating limits worth respecting."],
+  [/noise|db\b|silenc/i, "measured dB levels and practical silencing options for home and hosted sites."],
+  [/setup|deploy|rack|plumb|immersion|hosting|install/i, "power, cooling and networking steps, plus the siting mistakes that cost uptime."],
+  [/\bvs\b|compar|which/i, "side-by-side hashrate, efficiency and cost per TH so you can choose with confidence."],
+  [/review/i, "measured hashrate, efficiency, noise and who it suits, straight from our test bench."],
 ];
 
-function buildDescription(raw: string, model: string, i: number): string {
-  const pretty = model.replace(/\b\w/g, (c) => c.toUpperCase()).replace(/Xp/g, "XP").replace(/Hyd\b/, "Hyd");
-  let d = raw.replace(/\s+/g, " ").trim();
-  const bareModel = model.replace(/^antminer /, "");
-  if (!d.toLowerCase().replace(/\s+/g, "").includes(bareModel.replace(/\s+/g, ""))) {
-    d = `${pretty}: ${d}`;
-  }
-  if (d.length < 120) {
-    d = `${d} ${CTAS[i % CTAS.length]}`.trim();
-  }
+function buildDescription(raw: string, model: string, title: string): string {
+  const pretty = model.replace(/\b\w/g, (c) => c.toUpperCase()).replace(/Xp/g, "XP");
+  const flat = (v: string) => v.toLowerCase().replace(/\s+/g, "");
+  const lead = flat(title).includes(flat(model.replace(/^antminer /, "")))
+    ? title.replace(/[.?!]+$/, "")
+    : `${pretty}: ${title.replace(/[.?!]+$/, "")}`;
+  const tail = (TAILS.find(([re]) => re.test(title)) ?? [null, "what to check before you pay, delivered cost and how to buy a verified unit."])[1];
+  let d = `${lead} — ${tail}`.replace(/\s+/g, " ").trim();
   if (d.length > 155) {
-    let cut = d.slice(0, 156);
-    const stop = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf(" — "));
-    cut = stop > 100 ? cut.slice(0, stop + 1) : trimDangling(cut.slice(0, cut.lastIndexOf(" ")));
-    d = cut;
+    const cut = d.slice(0, 156);
+    const stop = cut.lastIndexOf(". ");
+    d = stop > 105 ? cut.slice(0, stop + 1) : `${trimDangling(cut.slice(0, cut.lastIndexOf(" ")))}.`;
   }
   if (!/[.?!]$/.test(d)) d = `${d}.`;
+  void raw;
   return d;
 }
 
@@ -191,7 +193,7 @@ index.arr.forEach((e, i) => {
   if (!info) return;
   const post = bySlug.get(e.slug as string);
   const metaTitle = buildMetaTitle(e.title as string, info.model);
-  const description = buildDescription(e.description as string, info.model, i);
+  const description = buildDescription(e.description as string, info.model, e.title as string);
   const keywords = buildKeywords(info.model, (e.keywords as string[]) ?? [], e.title as string);
   e.metaTitle = metaTitle;
   e.description = description;

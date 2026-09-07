@@ -763,7 +763,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-04-15",
-    "description": "Antminer S21 Review: Is It Still the Best Bitcoin Miner? deserves an answer grounded in operating data rather than marketing copy. Below we cover the….",
+    "description": "Antminer S21 Review: Is It Still the Best Bitcoin Miner — measured hashrate, efficiency, noise and who it suits, straight from our test bench.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -782,7 +782,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-04-12",
-    "description": "Antminer S21 Pro vs Antminer S21 XP: Which Should You Buy? deserves an answer grounded in operating data rather than marketing copy. Below we cover the….",
+    "description": "Antminer S21 Pro vs Antminer S21 XP: Which Should You Buy — side-by-side hashrate, efficiency and cost per TH so you can choose with confidence.",
     "keywords": [
       "antminer s21 pro",
       "s21 pro",
@@ -801,7 +801,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-04-09",
-    "description": "Antminer S19 Pro Review: Performance, Power, and Profitability deserves an answer grounded in operating data rather than marketing copy. Below we cover….",
+    "description": "Antminer S19 Pro Review: Performance, Power, and Profitability — payback math at real power rates, daily revenue and the break-even hashprice that matters.",
     "keywords": [
       "antminer s19 pro",
       "s19 pro",
@@ -821,7 +821,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-04-06",
-    "description": "Antminer S19 XP vs WhatsMiner M60: Full Comparison deserves an answer grounded in operating data rather than marketing copy. Below we cover the….",
+    "description": "Antminer S19 XP vs WhatsMiner M60: Full Comparison — side-by-side hashrate, efficiency and cost per TH so you can choose with confidence.",
     "keywords": [
       "antminer s19 xp",
       "s19 xp",
@@ -878,7 +878,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-03-28",
-    "description": "Antminer S21 Setup Guide for Beginners is mostly an electrical and airflow problem with a computer attached. Get power, ventilation, noise and monitoring….",
+    "description": "Antminer S21 Setup Guide for Beginners — power, cooling and networking steps, plus the siting mistakes that cost uptime.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -1018,7 +1018,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-03-04",
-    "description": "Is the Antminer S21 Worth Buying in 2026? deserves an answer grounded in operating data rather than marketing copy.",
+    "description": "Is the Antminer S21 Worth Buying in 2026 — what to check before you pay, delivered cost and how to buy a verified unit.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -1089,7 +1089,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-02-20",
-    "description": "WhatsMiner M50S vs Antminer S19 Pro Comparison deserves an answer grounded in operating data rather than marketing copy.",
+    "description": "WhatsMiner M50S vs Antminer S19 Pro Comparison — side-by-side hashrate, efficiency and cost per TH so you can choose with confidence.",
     "keywords": [
       "antminer s19 pro",
       "s19 pro",
@@ -2237,7 +2237,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-31",
-    "description": "Antminer S19 Pro Price in 2026 — used S19 Pro pricing from $195 with 30-day warranty, with live pricing, measured specs and payback math. Buy tested.",
+    "description": "Antminer S19 Pro Price in 2026: Real Market Numbers — current market prices, cost per terahash and what to pay in 2026.",
     "keywords": [
       "antminer s19 pro",
       "s19 pro",
@@ -2257,7 +2257,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-31",
-    "description": "Antminer S19 Price Guide — S19, S19j Pro, S19 XP and Hydro pricing in one table-style breakdown, with live pricing, measured specs and payback math. Buy.",
+    "description": "Antminer S19 Price Guide: Every Variant and What to Pay — current market prices, cost per terahash and what to pay in 2026.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -2277,7 +2277,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-31",
-    "description": "Antminer S19 Noise Level in dB — 75-82 dB reality and the quiet alternatives we stock, with live pricing, measured specs and payback math. Buy tested.",
+    "description": "Antminer S19 Noise Level in dB: Measured, Not Marketed — measured dB levels and practical silencing options for home and hosted sites.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -2297,7 +2297,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-31",
-    "description": "Antminer S19 Noise Level dB Specification and Silencing Options — hydro conversion, shrouds and immersion for residential sites, with live pricing,.",
+    "description": "Antminer S19 Noise Level dB Specification and Silencing Options — full specs, hashrate, power draw and efficiency explained by our Hong Kong engineers.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -2317,7 +2317,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-31",
-    "description": "Antminer S19 Overclock Guide — pushing 95 TH/s units to 110-120 TH/s without killing hashboards, with live pricing, measured specs and payback math. Buy.",
+    "description": "Antminer S19 Overclock Guide: Safe Gains, Real Limits — safe tuning steps, firmware options and the operating limits worth respecting.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -2337,7 +2337,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-31",
-    "description": "Antminer S19 Overclock Firmware Compared — pre-flashed units shipped tuned and tested, with live pricing, measured specs and payback math. Buy tested.",
+    "description": "Antminer S19 Overclock Firmware Compared: Vnish, Braiins, LuxOS — safe tuning steps, firmware options and the operating limits worth respecting.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -2357,7 +2357,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-31",
-    "description": "Antminer S19 Pro Firmware — when stock firmware is the profitable choice, with live pricing, measured specs and payback math. Buy tested Bitmain hardware.",
+    "description": "Antminer S19 Pro Firmware: Stock vs Third-Party Decision Tree — safe tuning steps, firmware options and the operating limits worth respecting.",
     "keywords": [
       "antminer s19 pro",
       "s19 pro",
@@ -2377,7 +2377,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-31",
-    "description": "Antminer S19 Custom Firmware — underclock-for-efficiency profiles that beat raw overclocks, with live pricing, measured specs and payback math. Buy tested.",
+    "description": "Antminer S19 Custom Firmware: Efficiency Tuning Playbook — safe tuning steps, firmware options and the operating limits worth respecting.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -2397,7 +2397,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-31",
-    "description": "Antminer S19 Specs Explained Line by Line — what each datasheet number means for your power bill, with live pricing, measured specs and payback math. Buy.",
+    "description": "Antminer S19 Specs Explained Line by Line — full specs, hashrate, power draw and efficiency explained by our Hong Kong engineers.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -2417,7 +2417,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-31",
-    "description": "Antminer Bitmain S19 Family — S19 vs S19j Pro vs S19k Pro vs S19 XP vs Hydro, with live pricing, measured specs and payback math. Buy tested Bitmain.",
+    "description": "Antminer Bitmain S19 Family: Which Variant Should You Buy — side-by-side hashrate, efficiency and cost per TH so you can choose with confidence.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -2828,7 +2828,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-31",
-    "description": "Antminer S21 Price in 2026 — $3,450 to $9,200 across the S21 family, with live pricing, measured specs and payback math. Buy tested Bitmain hardware with.",
+    "description": "Antminer S21 Price in 2026: Air, Pro, XP and Hydro — current market prices, cost per terahash and what to pay in 2026.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -2848,7 +2848,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-31",
-    "description": "Bitcoin Miner S21 Review — the default production machine for most new sites, with live pricing, measured specs and payback math. Buy tested Bitmain.",
+    "description": "Bitcoin Miner S21 Review: 200 TH/s at 17.5 J/TH — measured hashrate, efficiency, noise and who it suits, straight from our test bench.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -2868,7 +2868,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-31",
-    "description": "S21 Mining Machine Deployment Guide — circuit, airflow and firmware setup for S21 fleets, with live pricing, measured specs and payback math. Buy tested.",
+    "description": "S21 Mining Machine Deployment Guide — power, cooling and networking steps, plus the siting mistakes that cost uptime.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -2888,7 +2888,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-31",
-    "description": "Antminer S21 Price 2026 Forecast and Buying Windows — halving cycle, difficulty and inventory timing, with live pricing, measured specs and payback math.",
+    "description": "Antminer S21 Price 2026 Forecast and Buying Windows — current market prices, cost per terahash and what to pay in 2026.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -2908,7 +2908,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-31",
-    "description": "Bitmain S21+ Review — $4,200 tested units with warranty, with live pricing, measured specs and payback math. Buy tested Bitmain hardware with warranty and.",
+    "description": "Bitmain S21+ Review: 235 TH/s at 16.5 J/TH — measured hashrate, efficiency, noise and who it suits, straight from our test bench.",
     "keywords": [
       "antminer s21+",
       "s21+",
@@ -2928,7 +2928,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Hardware Rankings",
     "categoryId": "rank",
     "date": "2026-08-31",
-    "description": "Bitmain Antminer S21+ vs S21 Pro — 16.5 vs 15 J/TH at identical uptime, with live pricing, measured specs and payback math. Buy tested Bitmain hardware.",
+    "description": "Bitmain Antminer S21+ vs S21 Pro: Which One Pays Better — side-by-side hashrate, efficiency and cost per TH so you can choose with confidence.",
     "keywords": [
       "antminer s21+",
       "s21+",
@@ -2948,7 +2948,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-08-31",
-    "description": "S21 Pro Profitability — $4,290 purchase against daily margin at four power rates, with live pricing, measured specs and payback math. Buy tested Bitmain.",
+    "description": "S21 Pro Profitability: 234 TH/s Cost Model — current market prices, cost per terahash and what to pay in 2026. Verified stock at Bitcoin Mining Depot.",
     "keywords": [
       "antminer s21 pro",
       "s21 pro",
@@ -2968,7 +2968,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-08-31",
-    "description": "Antminer S21 200TH Profitability Explained — 3500 W, 84 kWh a day, and what that leaves you, with live pricing, measured specs and payback math. Buy.",
+    "description": "Antminer S21 200TH Profitability Explained — payback math at real power rates, daily revenue and the break-even hashprice that matters.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -2988,7 +2988,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-31",
-    "description": "Antminer S21 Bitmain Buyer's Guide — S21, S21+, S21 Pro, S21 XP and S21 XP Hyd, with live pricing, measured specs and payback math. Buy tested Bitmain.",
+    "description": "Antminer S21 Bitmain Buyer's Guide: Every SKU Ranked — what to check before you pay, delivered cost and how to buy a verified unit.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -3008,7 +3008,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-31",
-    "description": "Antminer S21 Buy Checklist — test reports, serials, invoices and crypto payment flow, with live pricing, measured specs and payback math. Buy tested.",
+    "description": "Antminer S21 Buy Checklist: Verification Before Payment — what to check before you pay, delivered cost and how to buy a verified unit.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -3028,7 +3028,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-08-31",
-    "description": "Antminer S21 Cost of Ownership Over Three Years — purchase, power, repairs and resale in one model, with live pricing, measured specs and payback math.",
+    "description": "Antminer S21 Cost of Ownership Over Three Years — current market prices, cost per terahash and what to pay in 2026. Verified stock at Bitcoin Mining Depot.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -3048,7 +3048,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-31",
-    "description": "Antminer S21 Efficiency — measured wall draw versus datasheet efficiency, with live pricing, measured specs and payback math. Buy tested Bitmain hardware.",
+    "description": "Antminer S21 Efficiency: 17.5 J/TH in Practice — what to check before you pay, delivered cost and how to buy a verified unit.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -3531,7 +3531,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-15",
-    "description": "Bitmain Antminer S23 Hyd — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s23 hyd, plus tested stock shipped.",
+    "description": "Bitmain Antminer S23 Hyd: Specs, Price and Availability — current market prices, cost per terahash and what to pay in 2026.",
     "keywords": [
       "antminer s23 hyd",
       "s23 hyd",
@@ -3551,7 +3551,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-14",
-    "description": "Antminer S23 Hyd Review — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23 hyd, plus tested stock shipped worldwide.",
+    "description": "Antminer S23 Hyd Review: Efficiency, Cooling and ROI — payback math at real power rates, daily revenue and the break-even hashprice that matters.",
     "keywords": [
       "antminer s23 hyd",
       "s23 hyd",
@@ -3590,7 +3590,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-12",
-    "description": "Antminer S23 Hydro 3U — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s23 hydro 3u, plus tested stock shipped.",
+    "description": "Antminer S23 Hydro 3U: Rack Layout, Plumbing and Power — power, cooling and networking steps, plus the siting mistakes that cost uptime.",
     "keywords": [
       "antminer s23 hydro",
       "s23 hydro",
@@ -3625,7 +3625,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-08-10",
-    "description": "Antminer S21 XP Hydro Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer s21 xp hydro profitability, plus.",
+    "description": "Antminer S21 XP Hydro Profitability: Real Numbers — payback math at real power rates, daily revenue and the break-even hashprice that matters.",
     "keywords": [
       "antminer s21 xp hydro",
       "s21 xp hydro",
@@ -3645,7 +3645,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-09",
-    "description": "Antminer S21e Hydro — real pricing, efficiency in J/TH, power requirements and payback math for antminer s21e hydro, plus tested stock shipped worldwide.",
+    "description": "Antminer S21e Hydro: Specs, Pricing and Use Cases — full specs, hashrate, power draw and efficiency explained by our Hong Kong engineers.",
     "keywords": [
       "antminer s21e hydro",
       "s21e hydro",
@@ -3665,7 +3665,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-08",
-    "description": "Bitmain Antminer S21 Hydro — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s21 hydro, plus tested stock.",
+    "description": "Bitmain Antminer S21 Hydro: Full Specification Review — full specs, hashrate, power draw and efficiency explained by our Hong Kong engineers.",
     "keywords": [
       "antminer s21 hydro",
       "s21 hydro",
@@ -3685,7 +3685,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-07",
-    "description": "Antminer S23 Immersion — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s23 immersion, plus tested stock.",
+    "description": "Antminer S23 Immersion: Tanks, Fluids and Overclocking — safe tuning steps, firmware options and the operating limits worth respecting.",
     "keywords": [
       "antminer s23 immersion",
       "s23 immersion",
@@ -3704,7 +3704,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-06",
-    "description": "Antminer S21 Hyd 335TH Price and Cost per Terahash — real pricing, efficiency in J/TH, power requirements and payback math for antminer s21 hyd 335th.",
+    "description": "Antminer S21 Hyd 335TH Price and Cost per Terahash — current market prices, cost per terahash and what to pay in 2026.",
     "keywords": [
       "antminer s21 hyd",
       "s21 hyd",
@@ -3723,7 +3723,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-05",
-    "description": "Bitmain Antminer S23 — real pricing, efficiency in J/TH, power requirements and payback math for bitmain antminer s23, plus tested stock shipped worldwide.",
+    "description": "Bitmain Antminer S23: Specs, Variants and Release Detail — full specs, hashrate, power draw and efficiency explained by our Hong Kong engineers.",
     "keywords": [
       "antminer s23",
       "s23",
@@ -3777,7 +3777,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-02",
-    "description": "Antminer S23 Hyd Price Guide and Buying Checklist — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23 hyd, plus.",
+    "description": "Antminer S23 Hyd Price Guide and Buying Checklist — current market prices, cost per terahash and what to pay in 2026.",
     "keywords": [
       "antminer s23 hyd",
       "s23 hyd",
@@ -3815,7 +3815,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-07-31",
-    "description": "Antminer S23 Review — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23, plus tested stock shipped worldwide from.",
+    "description": "Antminer S23 Review: Is It Worth Waiting For — measured hashrate, efficiency, noise and who it suits, straight from our test bench.",
     "keywords": [
       "antminer s23",
       "s23",
@@ -3834,7 +3834,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-07-30",
-    "description": "Antminer S21 Pro Price — real pricing, efficiency in J/TH, power requirements and payback math for antminer s21 pro price, plus tested stock shipped.",
+    "description": "Antminer S21 Pro Price: Cost per TH and Payback Math — current market prices, cost per terahash and what to pay in 2026.",
     "keywords": [
       "antminer s21 pro",
       "s21 pro",
@@ -4051,7 +4051,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-27",
-    "description": "Bitmain Antminer S21e XP Hyd 3U review: 860 TH/s per chassis, roughly 13 J/TH, and what a liquid-cooled deployment actually requires.",
+    "description": "Bitmain Antminer S21e XP Hyd 3U 860T Review — measured hashrate, efficiency, noise and who it suits, straight from our test bench.",
     "keywords": [
       "antminer s21e xp hyd",
       "s21e xp hyd",
@@ -4071,7 +4071,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-25",
-    "description": "Antminer S21 Pro review: 234 TH/s at 15 J/TH, real running costs, payback modelling and how it compares to the S21 XP and M60S.",
+    "description": "Antminer S21 Pro 234T Review and ROI Breakdown — payback math at real power rates, daily revenue and the break-even hashprice that matters.",
     "keywords": [
       "antminer s21 pro",
       "s21 pro",
@@ -4091,7 +4091,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-23",
-    "description": "Antminer S19 XP review: 141 TH/s at 21.5 J/TH, running costs, real-world derating and whether it still beats newer hardware on price.",
+    "description": "Antminer S19 XP Review: The 21.5 J/TH Workhorse — measured hashrate, efficiency, noise and who it suits, straight from our test bench.",
     "keywords": [
       "antminer s19 xp",
       "s19 xp",
@@ -4111,7 +4111,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-21",
-    "description": "Antminer S23 review: what sub-10 J/TH efficiency changes for site planning, power contracts and the resale value of older fleets.",
+    "description": "Antminer S23 Review: Inside the Sub-10 J/TH Era — measured hashrate, efficiency, noise and who it suits, straight from our test bench.",
     "keywords": [
       "antminer s23",
       "s23",
@@ -4131,7 +4131,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-19",
-    "description": "Antminer S21 XP buying guide: air vs hydro variants, 13.5 J/TH economics, siting requirements and what to verify before you order.",
+    "description": "Antminer S21 XP Guide: Air and Hydro Variants — what to check before you pay, delivered cost and how to buy a verified unit.",
     "keywords": [
       "antminer s21 xp",
       "s21 xp",
@@ -4151,7 +4151,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-17",
-    "description": "Bitmain Antminer S21 XP Hyd specs, coolant loop requirements, circuit sizing and deployment checks for a 12 J/TH hydro fleet.",
+    "description": "Bitmain Antminer S21 XP Hyd: Specs and Siting — full specs, hashrate, power draw and efficiency explained by our Hong Kong engineers.",
     "keywords": [
       "antminer s21 xp hyd",
       "s21 xp hyd",
@@ -4171,7 +4171,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-15",
-    "description": "Antminer S21 Hyd 335T guide: coolant loops, heat rejection, circuit sizing and monitoring for the entry point into hydro mining.",
+    "description": "Antminer S21 Hyd 335T Hydro Deployment Guide — power, cooling and networking steps, plus the siting mistakes that cost uptime.",
     "keywords": [
       "antminer s21 hyd",
       "s21 hyd",
@@ -4191,7 +4191,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-13",
-    "description": "The full Antminer S21 family compared: S21, S21+, S21 Pro, S21 XP and the hydro variants, with efficiency and cost per terahash.",
+    "description": "Bitcoin Miner S21 Family: Every Variant Compared — side-by-side hashrate, efficiency and cost per TH so you can choose with confidence.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -4211,7 +4211,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-11",
-    "description": "Antminer S21 pricing explained: how to read dollars per terahash, what moves the market, and how to time an order without guessing.",
+    "description": "Antminer S21 Price Guide: February 2026 Market — current market prices, cost per terahash and what to pay in 2026. Verified stock at Bitcoin Mining Depot.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -4231,7 +4231,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-08-09",
-    "description": "A full Antminer S21 profitability model: 200 TH/s revenue, power cost at every rate, stress tests and the payback math that matters.",
+    "description": "Antminer S21 200 TH/s Profitability Breakdown — payback math at real power rates, daily revenue and the break-even hashprice that matters.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -4251,7 +4251,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-07",
-    "description": "Antminer S21+ review: 216 TH/s at 16.5 J/TH, how it differs from the base S21 and S21 Pro, and which one to actually buy.",
+    "description": "Antminer S21+ 216T Review: Specs and Power Draw — full specs, hashrate, power draw and efficiency explained by our Hong Kong engineers.",
     "keywords": [
       "antminer s21+",
       "s21+",
@@ -4271,7 +4271,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-05",
-    "description": "Antminer S23 Hyd 3U guide: a petahash per chassis at 9.5 J/TH, plus the coolant, power and monitoring an install actually needs.",
+    "description": "Antminer S23 Hyd 3U 1.16 PH Deployment Guide — power, cooling and networking steps, plus the siting mistakes that cost uptime.",
     "keywords": [
       "antminer s23 hyd",
       "s23 hyd",
@@ -4291,7 +4291,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-03",
-    "description": "S19 miner buying guide: how the S19j Pro, S19 XP and hydro variants differ in efficiency, price per terahash and resale risk.",
+    "description": "S19 Miner Guide: XP, Pro and Hydro Variants — what to check before you pay, delivered cost and how to buy a verified unit.",
     "keywords": [
       "antminer s19",
       "s19",
@@ -4311,7 +4311,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-08-01",
-    "description": "S19 XP Hyd 255T pricing and returns: 20.8 J/TH hydro economics, coolant costs, payback modelling and used-market risk.",
+    "description": "S19 XP Hyd 255T Price and Profitability Guide — current market prices, cost per terahash and what to pay in 2026. Verified stock at Bitcoin Mining Depot.",
     "keywords": [
       "antminer s19 xp hyd",
       "s19 xp hyd",
@@ -4396,7 +4396,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-07-22",
-    "description": "Antminer S19 pricing by variant: S19, S19j Pro, S19 XP and hydro units in dollars per terahash, plus what moves the used market.",
+    "description": "Antminer S19 Price Guide Across Every Variant — current market prices, cost per terahash and what to pay in 2026. Verified stock at Bitcoin Mining Depot.",
     "keywords": [
       "antminer s19",
       "s19",
