@@ -43,7 +43,7 @@ function readArray(file: string, marker: string): { head: string; arr: Entry[]; 
   if (end < 0) throw new Error("unbalanced array");
   return {
     head: src.slice(0, open),
-    arr: JSON.parse(src.slice(open, end + 1)) as Entry[],
+    arr: (new Function(`return ${src.slice(open, end + 1)}`)() as Entry[]),
     tail: src.slice(end + 1),
   };
 }
