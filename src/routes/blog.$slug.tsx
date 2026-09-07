@@ -228,6 +228,50 @@ function BlogPostPage() {
             </section>
           )}
 
+          {cluster && (
+            <section className="mt-12 rounded-md border border-border bg-card p-6">
+              <h2 className="font-display text-xl font-bold uppercase tracking-tight text-charcoal md:text-2xl">
+                More {cluster.label} Guides
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Everything we publish on the {cluster.label} family — pricing, specs, efficiency,
+                firmware and deployment — plus live {cluster.label} stock you can buy today.
+              </p>
+              <ul className="mt-4 grid gap-2 text-[13px] sm:grid-cols-2">
+                {cluster.posts.map((r) => (
+                  <li key={r.slug}>
+                    <Link to="/blog/$slug" params={{ slug: r.slug }} className="text-primary hover:underline">
+                      {r.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-5 flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-wide">
+                <Link
+                  to="/products"
+                  search={{ q: cluster.query, category: undefined, page: undefined }}
+                  className="rounded-md bg-primary px-5 py-2.5 text-primary-foreground hover:bg-ice"
+                >
+                  Shop {cluster.label} in stock
+                </Link>
+                <Link
+                  to="/used-asic-miners"
+                  className="rounded-md border border-border px-5 py-2.5 text-charcoal hover:border-primary"
+                >
+                  Used {cluster.label} listings
+                </Link>
+                <Link
+                  to="/collections/$slug"
+                  params={{ slug: "asic-miners" }}
+                  className="rounded-md border border-border px-5 py-2.5 text-charcoal hover:border-primary"
+                >
+                  All ASIC miners
+                </Link>
+              </div>
+            </section>
+          )}
+
+
           <div className="mt-12 rounded-md bg-navy px-6 py-10 text-center text-charcoal-foreground">
             <h2 className="font-display text-xl font-bold uppercase tracking-tight">
               Want the numbers run for your site?
