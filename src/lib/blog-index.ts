@@ -5213,6 +5213,142 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
       "mining pool payouts"
     ],
     "readMinutes": 8
+  },
+  {
+    "slug": "antminer-u3s23h-specs-hashrate-and-who-it-suits",
+    "title": "Antminer U3S23H: Specs, Hashrate and Who It Suits",
+    "metaTitle": "Antminer U3S23H Specs and Buying Guide | BMD",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-09-07",
+    "description": "What the Antminer U3S23H is, the hashrate and power figures to confirm before you pay, how it compares with S21-class units, and who should actually buy one.",
+    "keywords": [
+      "antminer u3s23h",
+      "u3s23h",
+      "antminer u3",
+      "bitmain u3s23h",
+      "antminer s23"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "whatsminer-m79s-hydro-specs-efficiency-and-payback",
+    "title": "WhatsMiner M79S: Hydro Specs, Efficiency and Payback",
+    "metaTitle": "WhatsMiner M79S Hydro Specs and Payback | BMD",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-09-07",
+    "description": "The MicroBT WhatsMiner M79S explained: hydro cooling requirements, efficiency class, what to verify before buying, and how payback compares to air-cooled units.",
+    "keywords": [
+      "whatsminer m79s",
+      "microbt whatsminer m79s",
+      "m79s",
+      "microbt whatsminer",
+      "whatsminer hydro"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "whatsminer-m61-review-hydro-hashrate-and-site-fit",
+    "title": "WhatsMiner M61 Review: Hydro Hashrate and Site Fit",
+    "metaTitle": "WhatsMiner M61 Review and Site Fit | BMD",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-09-07",
+    "description": "A practical look at the MicroBT WhatsMiner M61: where it fits in the hydro range, the specs to confirm, cooling and power needs, and whether it suits your site.",
+    "keywords": [
+      "whatsminer m61",
+      "microbt m61",
+      "m61 miner",
+      "whatsminer hydro",
+      "microbt whatsminer"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "whatsminer-m20s-in-2026-is-the-old-workhorse-worth-it",
+    "title": "WhatsMiner M20S in 2026: Is the Old Workhorse Worth It",
+    "metaTitle": "WhatsMiner M20S in 2026: Worth Buying? | BMD",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-09-07",
+    "description": "Whether the WhatsMiner M20S still earns in 2026: efficiency reality, the power price it needs, what a fair used price looks like, and safer alternatives.",
+    "keywords": [
+      "whatsminer m20s",
+      "m20s miner",
+      "used whatsminer",
+      "microbt whatsminer",
+      "m20s price"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "whatsminer-firmware-download-versions-safety-rollback",
+    "title": "WhatsMiner Firmware Download: Versions, Safety, Rollback",
+    "metaTitle": "WhatsMiner Firmware Download and Safety | BMD",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-07",
+    "description": "How to source WhatsMiner firmware safely, which version to run, how to flash without bricking a control board, and how to roll back when an update goes wrong.",
+    "keywords": [
+      "whatsminer firmware download",
+      "whatsminer firmware",
+      "whatsminer tool download",
+      "microbt firmware",
+      "whatsminer update"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "1000-th-s-bitcoin-mining-what-one-petahash-really-costs",
+    "title": "1000 TH/s Bitcoin Mining: What One Petahash Really Costs",
+    "metaTitle": "1000 TH/s Mining: Real Cost of One Petahash | BMD",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-07",
+    "description": "What it takes to run 1000 TH/s: how many machines, kilowatts and dollars, plus payback math at four power rates and the mistakes that wreck petahash builds.",
+    "keywords": [
+      "1000th/s",
+      "1000 th/s bitcoin miner",
+      "petahash mining",
+      "1 ph/s mining",
+      "bitcoin mining hashrate"
+    ],
+    "readMinutes": 9
+  },
+  {
+    "slug": "bitforge-nano-and-small-home-miners-compared",
+    "title": "BitForge Nano and Small Home Miners Compared",
+    "metaTitle": "BitForge Nano vs Small Home Miners | BMD",
+    "category": "Hardware Rankings",
+    "categoryId": "rank",
+    "date": "2026-09-07",
+    "description": "How BitForge Nano class desktop miners compare on hashrate, watts, noise and price, what they realistically earn, and when to step up to a full-size ASIC.",
+    "keywords": [
+      "bitforge nano",
+      "home bitcoin miner",
+      "desktop asic miner",
+      "low power bitcoin miner",
+      "quiet bitcoin miner"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "speed-miner-power-miner-and-monzbit-brands-explained",
+    "title": "Speed Miner, Power Miner and Monzbit Brands Explained",
+    "metaTitle": "Speed Miner, Power Miner, Monzbit Explained | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-07",
+    "description": "What Speed Miner, Power Miner and Monzbit actually are, how to tell a manufacturer from a reseller or clone, and how to vet a smaller mining brand before paying.",
+    "keywords": [
+      "speed miner",
+      "power miner",
+      "monzbit",
+      "asic miner brands",
+      "buy asic"
+    ],
+    "readMinutes": 8
   }
 ];
 
