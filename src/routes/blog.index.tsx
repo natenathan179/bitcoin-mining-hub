@@ -9,7 +9,7 @@ import { indexVariantMeta, parseIndexSearch, type IndexSearch } from "@/lib/sear
 const BASE = {
   title: "Bitcoin Mining Blog: ASIC Guides, Reviews & Profitability",
   description:
-    "299 operator-written guides on the best bitcoin mining machines, used ASIC miner buying advice, Antminer and WhatsMiner reviews, profitability math and setup.",
+    "307 operator-written guides on the best bitcoin mining machines, used ASIC miner buying advice, Antminer and WhatsMiner reviews, profitability math and setup.",
 };
 
 export const Route = createFileRoute("/blog/")({
@@ -101,7 +101,7 @@ function BlogIndex() {
       <PageHero
         eyebrow="Blog"
         title="Bitcoin Mining Guides & ASIC Reviews"
-        subtitle="299 in-depth articles on choosing, buying, running and profiting from bitcoin mining hardware — every guide linked to the machines we hold in stock."
+        subtitle="307 in-depth articles on choosing, buying, running and profiting from bitcoin mining hardware — every guide linked to the machines we hold in stock."
       />
 
       <div className="mx-auto max-w-[1280px] px-4 py-10">
@@ -133,7 +133,7 @@ function BlogIndex() {
               id="blog-search"
               value={q}
               onChange={(e) => { setQ(e.target.value); setVisible(24); }}
-              placeholder="Search 299 mining guides..."
+              placeholder="Search 307 mining guides..."
               className="h-10 w-full rounded-md border border-border bg-background px-3 text-sm outline-none focus:border-primary md:w-72"
             />
           </div>
