@@ -150,7 +150,7 @@ function buildDescription(raw: string, model: string, title: string): string {
   const tail = (TAILS.find(([re]) => re.test(title)) ?? [null, "what to check before you pay, delivered cost and how to buy a verified unit."])[1];
   let d = `${lead} — ${tail}`.replace(/\s+/g, " ").trim();
   if (d.length > 155) {
-    const cut = d.slice(0, 156);
+    const cut = d.slice(0, 155);
     const stop = cut.lastIndexOf(". ");
     d = stop > 105 ? cut.slice(0, stop + 1) : `${trimDangling(cut.slice(0, cut.lastIndexOf(" ")))}.`;
   }
@@ -209,7 +209,7 @@ index.arr.forEach((e, i) => {
 for (const e of index.arr) {
   const d = e.description as string;
   if (d.length <= 155) continue;
-  let cut = d.slice(0, 156);
+  let cut = d.slice(0, 155);
   const stop = cut.lastIndexOf(". ");
   cut = stop > 100 ? cut.slice(0, stop + 1) : `${trimDangling(cut.slice(0, cut.lastIndexOf(" ")))}.`;
   e.description = cut;

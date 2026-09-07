@@ -16971,7 +16971,7 @@ export const BLOG_POSTS: BlogPost[] = [
     "category": "Hardware Rankings",
     "categoryId": "rank",
     "date": "2026-08-26",
-    "description": "Used ASIC Miners for Sale — real pricing, efficiency in J/TH, power requirements and payback math for used asic miners, plus tested stock shipped worldwide.",
+    "description": "Used ASIC Miners for Sale — real pricing, efficiency in J/TH, power requirements and payback math for used asic miners, plus tested stock shipped.",
     "keywords": [
       "used",
       "asic",
