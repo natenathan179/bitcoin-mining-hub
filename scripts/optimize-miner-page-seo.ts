@@ -200,6 +200,18 @@ index.arr.forEach((e, i) => {
   touched++;
 });
 
+// Clamp every remaining meta description to <=155 characters.
+for (const e of index.arr) {
+  const d = e.description as string;
+  if (d.length <= 155) continue;
+  let cut = d.slice(0, 156);
+  const stop = cut.lastIndexOf(". ");
+  cut = stop > 100 ? cut.slice(0, stop + 1) : `${trimDangling(cut.slice(0, cut.lastIndexOf(" ")))}.`;
+  e.description = cut;
+  const post = bySlug.get(e.slug as string);
+  if (post) post.description = cut;
+}
+
 // Guarantee unique title tags across the whole library.
 const used = new Map<string, string>();
 for (const e of index.arr) {

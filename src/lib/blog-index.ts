@@ -1018,7 +1018,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-03-04",
-    "description": "Is the Antminer S21 Worth Buying in 2026? deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications that….",
+    "description": "Is the Antminer S21 Worth Buying in 2026? deserves an answer grounded in operating data rather than marketing copy.",
     "keywords": [
       "antminer s21",
       "s21",
@@ -1089,7 +1089,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-02-20",
-    "description": "WhatsMiner M50S vs Antminer S19 Pro Comparison deserves an answer grounded in operating data rather than marketing copy. Below we cover the specifications….",
+    "description": "WhatsMiner M50S vs Antminer S19 Pro Comparison deserves an answer grounded in operating data rather than marketing copy.",
     "keywords": [
       "antminer s19 pro",
       "s19 pro",
@@ -3288,7 +3288,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-28",
-    "description": "Used Bitcoin Miners — real pricing, efficiency in J/TH, power requirements and payback math for used bitcoin miners, plus tested stock shipped worldwide from ",
+    "description": "Used Bitcoin Miners — real pricing, efficiency in J/TH, power requirements and payback math for used bitcoin miners, plus tested stock shipped worldwide.",
     "keywords": [
       "used",
       "bitcoin",
@@ -3306,7 +3306,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-27",
-    "description": "Used ASIC Miner Buying Guide — real pricing, efficiency in J/TH, power requirements and payback math for used asic miner, plus tested stock shipped worldwide ",
+    "description": "Used ASIC Miner Buying Guide — real pricing, efficiency in J/TH, power requirements and payback math for used asic miner, plus tested stock shipped.",
     "keywords": [
       "used",
       "asic",
@@ -3324,7 +3324,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Hardware Rankings",
     "categoryId": "rank",
     "date": "2026-08-26",
-    "description": "Used ASIC Miners for Sale — real pricing, efficiency in J/TH, power requirements and payback math for used asic miners, plus tested stock shipped worldwide fr",
+    "description": "Used ASIC Miners for Sale — real pricing, efficiency in J/TH, power requirements and payback math for used asic miners, plus tested stock shipped worldwide.",
     "keywords": [
       "used",
       "asic",
@@ -3342,7 +3342,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-25",
-    "description": "Bitcoin Mining Institute — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining institute, plus tested stock shipped world",
+    "description": "Bitcoin Mining Institute — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining institute, plus tested stock shipped.",
     "keywords": [
       "bitcoin",
       "mining",
@@ -3360,7 +3360,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-08-24",
-    "description": "Bitcoin Mining Business Plan — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining business plan, plus tested stock shipp",
+    "description": "Bitcoin Mining Business Plan — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining business plan, plus tested stock.",
     "keywords": [
       "bitcoin",
       "mining",
@@ -3379,7 +3379,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-23",
-    "description": "What Is Bit Mining? Bitcoin Mining Explained Simply — real pricing, efficiency in J/TH, power requirements and payback math for what is bit mining, plus teste",
+    "description": "What Is Bit Mining? Bitcoin Mining Explained Simply — real pricing, efficiency in J/TH, power requirements and payback math for what is bit mining, plus.",
     "keywords": [
       "what",
       "is",
@@ -3398,7 +3398,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-22",
-    "description": "Where to Mine Bitcoins — real pricing, efficiency in J/TH, power requirements and payback math for where to mine bitcoins, plus tested stock shipped worldwide",
+    "description": "Where to Mine Bitcoins — real pricing, efficiency in J/TH, power requirements and payback math for where to mine bitcoins, plus tested stock shipped.",
     "keywords": [
       "where",
       "to",
@@ -3417,7 +3417,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-21",
-    "description": "All About Crypto Mining — real pricing, efficiency in J/TH, power requirements and payback math for all about crypto mining, plus tested stock shipped worldwi",
+    "description": "All About Crypto Mining — real pricing, efficiency in J/TH, power requirements and payback math for all about crypto mining, plus tested stock shipped.",
     "keywords": [
       "all",
       "about",
@@ -3436,7 +3436,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-20",
-    "description": "All About Mining Bitcoins — real pricing, efficiency in J/TH, power requirements and payback math for all about mining bitcoins, plus tested stock shipped wor",
+    "description": "All About Mining Bitcoins — real pricing, efficiency in J/TH, power requirements and payback math for all about mining bitcoins, plus tested stock shipped.",
     "keywords": [
       "all",
       "about",
@@ -3455,7 +3455,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-19",
-    "description": "Are All Crypto Coins Mined? Proof of Work vs Proof of Stake — real pricing, efficiency in J/TH, power requirements and payback math for are all crypto coins m",
+    "description": "Are All Crypto Coins Mined? Proof of Work vs Proof of Stake — real pricing, efficiency in J/TH, power requirements and payback math for are all crypto.",
     "keywords": [
       "are",
       "all",
@@ -3475,7 +3475,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-18",
-    "description": "Are All Cryptocurrencies Mined? What Miners Can Earn — real pricing, efficiency in J/TH, power requirements and payback math for are all cryptocurrencies mine",
+    "description": "Are All Cryptocurrencies Mined? What Miners Can Earn — real pricing, efficiency in J/TH, power requirements and payback math for are all cryptocurrencies.",
     "keywords": [
       "are",
       "all",
@@ -3494,7 +3494,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-08-17",
-    "description": "Are All Cryptos Mined? Mineable Coins Worth Hardware — real pricing, efficiency in J/TH, power requirements and payback math for are all cryptos mined, plus t",
+    "description": "Are All Cryptos Mined? Mineable Coins Worth Hardware — real pricing, efficiency in J/TH, power requirements and payback math for are all cryptos mined.",
     "keywords": [
       "are",
       "all",
@@ -3513,7 +3513,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-16",
-    "description": "Are Bitcoins Mined? How New BTC Enters Circulation — real pricing, efficiency in J/TH, power requirements and payback math for are bitcoins mined, plus tested",
+    "description": "Are Bitcoins Mined? How New BTC Enters Circulation — real pricing, efficiency in J/TH, power requirements and payback math for are bitcoins mined, plus.",
     "keywords": [
       "are",
       "bitcoins",
@@ -3551,7 +3551,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-14",
-    "description": "Antminer S23 Hydro: Antminer S23 Hyd Review — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23 hyd, plus tested stock.",
+    "description": "Antminer S23 Hydro: Antminer S23 Hyd Review — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23 hyd, plus tested.",
     "keywords": [
       "antminer s23 hydro",
       "s23 hydro",
@@ -3570,7 +3570,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-08-13",
-    "description": "Bitdeer SealMiner A2 Pro Hydro — real pricing, efficiency in J/TH, power requirements and payback math for bitdeer sealminer a2 pro hydro, plus tested stock s",
+    "description": "Bitdeer SealMiner A2 Pro Hydro — real pricing, efficiency in J/TH, power requirements and payback math for bitdeer sealminer a2 pro hydro, plus tested.",
     "keywords": [
       "bitdeer",
       "sealminer",
@@ -3609,7 +3609,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-08-11",
-    "description": "Hydrominer Guide — real pricing, efficiency in J/TH, power requirements and payback math for hydrominer, plus tested stock shipped worldwide from Hong Kong.",
+    "description": "Hydrominer Guide — real pricing, efficiency in J/TH, power requirements and payback math for hydrominer, plus tested stock shipped worldwide from Hong.",
     "keywords": [
       "hydrominer",
       "price",
@@ -3704,7 +3704,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-06",
-    "description": "Antminer S21 Hydro: Antminer S21 Hyd 335TH Price and Cost per Terahash — real pricing, efficiency in J/TH, power requirements and payback math for antminer.",
+    "description": "Antminer S21 Hydro: Antminer S21 Hyd 335TH Price and Cost per Terahash — real pricing, efficiency in J/TH, power requirements and payback math.",
     "keywords": [
       "antminer s21 hydro",
       "s21 hydro",
@@ -3796,7 +3796,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-08-01",
-    "description": "Antminer L9 for Sale — real pricing, efficiency in J/TH, power requirements and payback math for antminer l9 for sale, plus tested stock shipped worldwide fro",
+    "description": "Antminer L9 for Sale — real pricing, efficiency in J/TH, power requirements and payback math for antminer l9 for sale, plus tested stock shipped worldwide.",
     "keywords": [
       "antminer",
       "l9",
@@ -3815,7 +3815,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-07-31",
-    "description": "Antminer S23 Review — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23, plus tested stock shipped worldwide from Hong.",
+    "description": "Antminer S23 Review — real pricing, efficiency in J/TH, power requirements and payback math for antminer s23, plus tested stock shipped worldwide from.",
     "keywords": [
       "antminer s23",
       "s23",
@@ -3853,7 +3853,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-07-29",
-    "description": "Antminer D9 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer d9 profitability, plus tested stock shipped wor",
+    "description": "Antminer D9 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer d9 profitability, plus tested stock shipped.",
     "keywords": [
       "antminer",
       "d9",
@@ -3871,7 +3871,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-07-28",
-    "description": "Antminer Daily Profit — real pricing, efficiency in J/TH, power requirements and payback math for antminer daily profit, plus tested stock shipped worldwide f",
+    "description": "Antminer Daily Profit — real pricing, efficiency in J/TH, power requirements and payback math for antminer daily profit, plus tested stock shipped.",
     "keywords": [
       "antminer",
       "daily",
@@ -3889,7 +3889,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-07-27",
-    "description": "Antminer L5 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer l5 profitability, plus tested stock shipped wor",
+    "description": "Antminer L5 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer l5 profitability, plus tested stock shipped.",
     "keywords": [
       "antminer",
       "l5",
@@ -3907,7 +3907,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-07-26",
-    "description": "Antminer L7 9050 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer l7 9050 profitability, plus tested stock s",
+    "description": "Antminer L7 9050 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer l7 9050 profitability, plus tested.",
     "keywords": [
       "antminer",
       "l7",
@@ -3926,7 +3926,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-07-25",
-    "description": "Bitcoin Mining Training — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining institute curriculum, plus tested stock shi",
+    "description": "Bitcoin Mining Training — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining institute curriculum, plus tested stock.",
     "keywords": [
       "bitcoin",
       "mining",
@@ -3962,7 +3962,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Used ASIC Miners",
     "categoryId": "used",
     "date": "2026-08-29",
-    "description": "Used ASIC miner pricing explained: how cost per terahash is set, what drives second-hand prices up and down, pallet discounts and live in-stock price bands.",
+    "description": "Used ASIC miner pricing explained: how cost per terahash is set, what drives second-hand prices up and down, pallet discounts and live in-stock price.",
     "keywords": [
       "used asic miner price",
       "used asic miners for sale",
@@ -4927,7 +4927,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-09-03",
-    "description": "Buying one ASIC miner? Pick the model by your power rate, understand delivered cost, payment and warranty terms, then bring the unit online in its first week.",
+    "description": "Buying one ASIC miner? Pick the model by your power rate, understand delivered cost, payment and warranty terms, then bring the unit online in its first.",
     "keywords": [
       "asic miner for sale",
       "buy one asic miner",
@@ -4997,7 +4997,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-09-04",
-    "description": "Antminer S9 profitability modelled at real 2026 difficulty: break-even power rates, hosted-versus-home math, and when a 13.5 TH/s unit is still worth running.",
+    "description": "Antminer S9 profitability modelled at real 2026 difficulty: break-even power rates, hosted-versus-home math, and when a 13.5 TH/s unit is still worth.",
     "keywords": [
       "antminer s9 profitability",
       "s9 antminer profitability",
@@ -5015,7 +5015,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-09-04",
-    "description": "How to build a March 2026 bitcoin mining profitability model: hashprice inputs, difficulty drift, machine tiers by J/TH and the break-even power rate for each.",
+    "description": "How to build a March 2026 bitcoin mining profitability model: hashprice inputs, difficulty drift, machine tiers by J/TH and the break-even power rate.",
     "keywords": [
       "bitcoin mining profitability march 2026",
       "bitcoin mining profitability",
@@ -5031,7 +5031,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-09-04",
-    "description": "April 2026 bitcoin mining profitability: how difficulty growth, fee revenue and hosting rates shifted margins, and which machine tiers still clear their power bill.",
+    "description": "April 2026 bitcoin mining profitability: how difficulty growth, fee revenue and hosting rates shifted margins, and which machine tiers still clear their.",
     "keywords": [
       "bitcoin mining profitability april 2026",
       "current bitcoin mining profitability april 2026",
@@ -5046,7 +5046,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-09-04",
-    "description": "ASIC monitoring software compared: firmware dashboards, pool-side alerts and fleet managers that catch dead hashboards, throttling and downtime before revenue is lost.",
+    "description": "ASIC monitoring software compared: firmware dashboards, pool-side alerts and fleet managers that catch dead hashboards, throttling and downtime before.",
     "keywords": [
       "asic monitoring software",
       "whatsminer tool",
@@ -5062,7 +5062,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-09-04",
-    "description": "USB crypto mining and block erupters explained: what these desktop miners actually earn, why they exist in 2026, and the better ways to learn or lottery-mine.",
+    "description": "USB crypto mining and block erupters explained: what these desktop miners actually earn, why they exist in 2026, and the better ways to learn.",
     "keywords": [
       "usb crypto mining",
       "block erupter",
@@ -5079,7 +5079,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-09-04",
-    "description": "Bitaxe, NerdMiner v2 and v3 and Lucky Miner LV07 profitability explained honestly: expected value, solo odds, power cost and where open-source miners genuinely fit.",
+    "description": "Bitaxe, NerdMiner v2 and v3 and Lucky Miner LV07 profitability explained honestly: expected value, solo odds, power cost and where open-source miners.",
     "keywords": [
       "bitaxe miner profitability",
       "nerd miner v2 profitability",
@@ -5096,7 +5096,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-09-04",
-    "description": "Crypto mining containers for sale explained: air, hydro and immersion designs, MW sizing, transformer and cooling specs, lead times and what a fair price includes.",
+    "description": "Crypto mining containers for sale explained: air, hydro and immersion designs, MW sizing, transformer and cooling specs, lead times and what a fair price.",
     "keywords": [
       "crypto mining container for sale",
       "mining container",
@@ -5112,7 +5112,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-09-04",
-    "description": "Can you build your own ASIC miner? What DIY hashboard, controller and PSU projects can realistically achieve, what fails, and the parts of a build worth doing yourself.",
+    "description": "Can you build your own ASIC miner? What DIY hashboard, controller and PSU projects can realistically achieve, what fails, and the parts of a build worth.",
     "keywords": [
       "build asic miner",
       "miner build",
@@ -5146,7 +5146,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-09-04",
-    "description": "When miners unplug bitcoin equipment and why: curtailment triggers, break-even thresholds, restart checklists and how to protect machine value while powered down.",
+    "description": "When miners unplug bitcoin equipment and why: curtailment triggers, break-even thresholds, restart checklists and how to protect machine value while.",
     "keywords": [
       "miners unplugging bitcoin equipment",
       "curtailment",
@@ -5162,7 +5162,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-09-04",
-    "description": "Buying ASIC miners on eBay: how to read listings, spot dead hashboards and rebadged units, use buyer protection properly, and when a specialist supplier is cheaper.",
+    "description": "Buying ASIC miners on eBay: how to read listings, spot dead hashboards and rebadged units, use buyer protection properly, and when a specialist supplier.",
     "keywords": [
       "asic ebay",
       "buy asic miner ebay",
@@ -5178,7 +5178,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-09-04",
-    "description": "Realistic home crypto mining income in 2026: what one machine earns at common power rates, the costs beginners miss, and the setups that actually clear a profit.",
+    "description": "Realistic home crypto mining income in 2026: what one machine earns at common power rates, the costs beginners miss, and the setups that actually clear.",
     "keywords": [
       "how much can you make mining crypto at home",
       "home bitcoin mining income",
@@ -5194,7 +5194,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-09-04",
-    "description": "What an exahash of mining capacity really requires: machine counts, megawatts, cooling, staffing and capital — and the milestones between 1 PH/s and 1 EH/s.",
+    "description": "What an exahash of mining capacity really requires: machine counts, megawatts, cooling, staffing and capital — and the milestones between 1 PH/s and 1.",
     "keywords": [
       "exahash miner",
       "1000th/s",
@@ -5228,7 +5228,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-09-06",
-    "description": "Bitcoin mining explained in plain terms: how proof of work secures the network, what miners actually earn, what hardware and power it takes, and what it costs.",
+    "description": "Bitcoin mining explained in plain terms: how proof of work secures the network, what miners actually earn, what hardware and power it takes, and what.",
     "keywords": [
       "what is bitcoin mining",
       "bitcoin mining",
@@ -5296,7 +5296,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-09-06",
-    "description": "What bitcoin mining software actually does: stock versus custom ASIC firmware, pool configuration, tuning profiles, fleet monitoring and safe update practice.",
+    "description": "What bitcoin mining software actually does: stock versus custom ASIC firmware, pool configuration, tuning profiles, fleet monitoring and safe update.",
     "keywords": [
       "bitcoin mining software",
       "asic firmware",
@@ -5364,7 +5364,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-09-07",
-    "description": "What the Antminer U3S23H is, the hashrate and power figures to confirm before you pay, how it compares with S21-class units, and who should actually buy one.",
+    "description": "What the Antminer U3S23H is, the hashrate and power figures to confirm before you pay, how it compares with S21-class units, and who should actually buy.",
     "keywords": [
       "antminer u3s23h",
       "u3s23h",
@@ -5381,7 +5381,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-09-07",
-    "description": "The MicroBT WhatsMiner M79S explained: hydro cooling requirements, efficiency class, what to verify before buying, and how payback compares to air-cooled units.",
+    "description": "The MicroBT WhatsMiner M79S explained: hydro cooling requirements, efficiency class, what to verify before buying, and how payback compares to air-cooled.",
     "keywords": [
       "whatsminer m79s",
       "microbt whatsminer m79s",
@@ -5398,7 +5398,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Brand Reviews",
     "categoryId": "brand",
     "date": "2026-09-07",
-    "description": "A practical look at the MicroBT WhatsMiner M61: where it fits in the hydro range, the specs to confirm, cooling and power needs, and whether it suits your site.",
+    "description": "A practical look at the MicroBT WhatsMiner M61: where it fits in the hydro range, the specs to confirm, cooling and power needs, and whether it suits your.",
     "keywords": [
       "whatsminer m61",
       "microbt m61",
@@ -5432,7 +5432,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Setup & Operations",
     "categoryId": "setup",
     "date": "2026-09-07",
-    "description": "How to source WhatsMiner firmware safely, which version to run, how to flash without bricking a control board, and how to roll back when an update goes wrong.",
+    "description": "How to source WhatsMiner firmware safely, which version to run, how to flash without bricking a control board, and how to roll back when an update goes.",
     "keywords": [
       "whatsminer firmware download",
       "whatsminer firmware",
@@ -5449,7 +5449,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Profitability",
     "categoryId": "profit",
     "date": "2026-09-07",
-    "description": "What it takes to run 1000 TH/s: how many machines, kilowatts and dollars, plus payback math at four power rates and the mistakes that wreck petahash builds.",
+    "description": "What it takes to run 1000 TH/s: how many machines, kilowatts and dollars, plus payback math at four power rates and the mistakes that wreck petahash.",
     "keywords": [
       "1000th/s",
       "1000 th/s bitcoin miner",
@@ -5483,7 +5483,7 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
     "category": "Buying Guides",
     "categoryId": "buy",
     "date": "2026-09-07",
-    "description": "What Speed Miner, Power Miner and Monzbit actually are, how to tell a manufacturer from a reseller or clone, and how to vet a smaller mining brand before paying.",
+    "description": "What Speed Miner, Power Miner and Monzbit actually are, how to tell a manufacturer from a reseller or clone, and how to vet a smaller mining brand before.",
     "keywords": [
       "speed miner",
       "power miner",
