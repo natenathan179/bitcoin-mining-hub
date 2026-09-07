@@ -62,9 +62,10 @@ function normalizeModel(title: string): { family: "s23" | "s21" | "s19"; model: 
     | "s21"
     | "s19";
   const variant = (m[2] ?? "").toLowerCase().replace(/\s+/g, " ").trim();
-  const cooling = (m[3] ?? "").toLowerCase() === "hyd" ? "hydro" : (m[3] ?? "").toLowerCase();
+  const cooling = (m[3] ?? "").toLowerCase();
   const parts = ["antminer", core, variant, cooling].filter(Boolean);
-  return { family, model: parts.join(" ").replace(/\s+/g, " ").trim() };
+  const model = parts.join(" ").replace(/\s+/g, " ").replace(/\s+\+/g, "+").trim();
+  return { family, model };
 }
 
 const STOP = new Set([
@@ -120,7 +121,8 @@ function clampTitle(title: string, limit = 60): string {
 }
 
 function buildMetaTitle(title: string, model: string): string {
-  const hasModel = title.toLowerCase().includes(model.replace(/^antminer /, ""));
+  const flat = (v: string) => v.toLowerCase().replace(/[\s]+/g, "");
+  const hasModel = flat(title).includes(flat(model.replace(/^antminer /, "")));
   const base = hasModel ? title : `${title} (${model})`;
   const out = clampTitle(base);
   // Never lose the exact model token from the title tag.
@@ -138,7 +140,8 @@ const CTAS = [
 function buildDescription(raw: string, model: string, i: number): string {
   const pretty = model.replace(/\b\w/g, (c) => c.toUpperCase()).replace(/Xp/g, "XP").replace(/Hyd\b/, "Hyd");
   let d = raw.replace(/\s+/g, " ").trim();
-  if (!d.toLowerCase().includes(model.split(" ").slice(1).join(" "))) {
+  const bareModel = model.replace(/^antminer /, "");
+  if (!d.toLowerCase().replace(/\s+/g, "").includes(bareModel.replace(/\s+/g, ""))) {
     d = `${pretty}: ${d}`;
   }
   if (d.length < 120) {
