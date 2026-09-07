@@ -165,7 +165,20 @@ function CryptoMiningForSalePage() {
                     "New and used ASIC crypto mining hardware in stock, shipped worldwide from Hong Kong.",
                   image: [SITE.ogImage],
                   url: CANONICAL,
+                  brand: { "@type": "Brand", name: SITE.name },
+                  // Product nodes need their own offers for Google's Product snippets.
+                  offers: {
+                    "@type": "AggregateOffer",
+                    priceCurrency: "USD",
+                    lowPrice: cheapest,
+                    highPrice: dearest,
+                    offerCount: inStock.length,
+                    availability: "https://schema.org/InStock",
+                    url: CANONICAL,
+                    seller: { "@type": "Organization", name: SITE.name, url: SITE.url },
+                  },
                 },
+
               },
             ],
           },

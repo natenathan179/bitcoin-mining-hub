@@ -169,7 +169,21 @@ function UsedAsicMinersPage() {
                     "Tested, graded used ASIC bitcoin miners with warranty, shipped worldwide from Hong Kong.",
                   image: [SITE.ogImage],
                   url: CANONICAL,
+                  brand: { "@type": "Brand", name: SITE.name },
+                  // Google's Product snippet check requires offers on every Product
+                  // node, including the one described by an AggregateOffer.
+                  offers: {
+                    "@type": "AggregateOffer",
+                    priceCurrency: "USD",
+                    lowPrice: cheapest,
+                    highPrice: dearest,
+                    offerCount: sorted.length,
+                    availability: "https://schema.org/InStock",
+                    url: CANONICAL,
+                    seller: { "@type": "Organization", name: SITE.name, url: SITE.url },
+                  },
                 },
+
               },
             ],
           }
