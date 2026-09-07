@@ -5521,3 +5521,38 @@ export function relatedIndexPosts(slug: string, categoryId: string, limit = 6): 
   }
   return out.slice(0, limit);
 }
+
+/* -------------------------------------------------------------------------- */
+/* Model clusters — internal linking for the Antminer S19 / S21 / S23 keywords */
+/* -------------------------------------------------------------------------- */
+
+const MODEL_TOKEN = /\b(s23e?|s21e?|s19)\b/i;
+
+/** The miner model a guide is about ("s21", "s23", "s19"), if any. */
+export function postModel(title: string): string | null {
+  const m = MODEL_TOKEN.exec(title);
+  if (!m) return null;
+  const t = m[1]!.toLowerCase();
+  return t.startsWith("s23") ? "s23" : t.startsWith("s21") ? "s21" : "s19";
+}
+
+export interface ModelCluster {
+  model: string;
+  label: string;
+  query: string;
+  posts: BlogIndexEntry[];
+}
+
+/**
+ * Sibling guides that target the same miner family, so every S21 / S23 / S19
+ * page links to the rest of its cluster and to the matching inventory search.
+ */
+export function modelCluster(slug: string, title: string, limit = 8): ModelCluster | null {
+  const model = postModel(title);
+  if (!model) return null;
+  const label = `Antminer ${model.toUpperCase()}`;
+  const siblings = BLOG_INDEX.filter((p) => p.slug !== slug && postModel(p.title) === model);
+  if (siblings.length === 0) return null;
+  const seed = Math.max(0, BLOG_INDEX.findIndex((p) => p.slug === slug)) + 1;
+  return { model, label, query: label.toLowerCase(), posts: rotatingWindow(siblings, limit, seed) };
+}
