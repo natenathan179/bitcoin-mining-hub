@@ -173,6 +173,18 @@ export function localBusinessSchema(product: Product, areaNames: string[], pageU
         description:
           product.short_description ||
           `${product.name} in stock at ${SITE.name}, shipped worldwide from Hong Kong.`,
+        // Every Product node needs its own offers for Google's Product snippets.
+        offers: {
+          "@type": "Offer",
+          url: pageUrl,
+          priceCurrency: "USD",
+          price: product.sale_price ?? product.price,
+          availability: "https://schema.org/InStock",
+          itemCondition: /new/i.test(product.condition ?? "")
+            ? "https://schema.org/NewCondition"
+            : "https://schema.org/RefurbishedCondition",
+          seller: { "@type": "Organization", name: SITE.name, url: SITE.url },
+        },
       },
       priceCurrency: "USD",
       price: product.sale_price ?? product.price,
@@ -182,6 +194,7 @@ export function localBusinessSchema(product: Product, areaNames: string[], pageU
         : "https://schema.org/RefurbishedCondition",
       availableAtOrFrom: { "@type": "Place", name: `${BUSINESS.district}, ${BUSINESS.region}` },
     },
+
 
   };
 }
