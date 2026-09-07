@@ -16,7 +16,7 @@ function readArray(file: string, marker: string): { head: string; arr: Entry[]; 
   const src = readFileSync(file, "utf8");
   const start = src.indexOf(marker);
   if (start < 0) throw new Error(`marker not found in ${file}`);
-  const open = src.indexOf("[", start);
+  const open = src.indexOf("= [", start) + 2;
   // find matching bracket
   let depth = 0;
   let end = -1;
