@@ -18,6 +18,11 @@ export const getBlogPostFn = createServerFn({ method: "GET" })
 
 export interface BlogPageData {
   post: BlogPost;
+  cluster: {
+    label: string;
+    query: string;
+    posts: { slug: string; title: string }[];
+  } | null;
   entry: {
     slug: string;
     metaTitle: string;
@@ -37,15 +42,19 @@ export interface BlogPageData {
 export const getBlogPageFn = createServerFn({ method: "GET" })
   .inputValidator((data: { slug: string }) => ({ slug: String(data?.slug ?? "") }))
   .handler(async ({ data }): Promise<BlogPageData | null> => {
-    const [{ getPost }, { getIndexEntry, relatedIndexPosts }] = await Promise.all([
+    const [{ getPost }, { getIndexEntry, relatedIndexPosts, modelCluster }] = await Promise.all([
       import("./blog"),
       import("./blog-index"),
     ]);
     const entry = getIndexEntry(data.slug);
     const post = getPost(data.slug);
     if (!entry || !post) return null;
+    const cl = modelCluster(post.slug, post.title, 8);
     return {
       post,
+      cluster: cl
+        ? { label: cl.label, query: cl.query, posts: cl.posts.map((p) => ({ slug: p.slug, title: p.title })) }
+        : null,
       entry: {
         slug: entry.slug,
         metaTitle: entry.metaTitle,
