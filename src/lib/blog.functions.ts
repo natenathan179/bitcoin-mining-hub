@@ -18,6 +18,11 @@ export const getBlogPostFn = createServerFn({ method: "GET" })
 
 export interface BlogPageData {
   post: BlogPost;
+  cluster: {
+    label: string;
+    query: string;
+    posts: { slug: string; title: string }[];
+  } | null;
   entry: {
     slug: string;
     metaTitle: string;
