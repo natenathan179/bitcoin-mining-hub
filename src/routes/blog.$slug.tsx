@@ -71,7 +71,7 @@ function matchProducts(post: BlogPost, products: Product[]): Product[] {
 }
 
 function BlogPostPage() {
-  const { post, related } = Route.useLoaderData();
+  const { post, related, cluster } = Route.useLoaderData();
   const { data: products } = useSuspenseQuery(productsQuery());
   const picks = matchProducts(post, products);
   const url = `${SITE.url}/blog/${post.slug}`;
