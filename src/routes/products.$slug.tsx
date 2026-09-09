@@ -220,10 +220,17 @@ export const Route = createFileRoute("/products/$slug")({
     const hashKey = (p.hashrate || "").toLowerCase().replace(/\s+/g, "");
     const titleBase =
       p.hashrate && hashKey && !nameKey.includes(hashKey) ? `${p.name} ${p.hashrate}` : p.name;
+    // Some models are listed twice — once new, once used — under names that only
+    // differ in casing. Leading with the condition keeps those titles distinct.
+    const isUsed = /used|refurb/i.test(p.condition ?? "");
+    const conditionWord = isUsed ? "Used" : "New";
+    const conditionTitle = nameKey.includes(conditionWord.toLowerCase())
+      ? titleBase
+      : `${conditionWord} ${titleBase}`;
     // When the name alone already fills the limit the brand suffix falls away and
     // the title would read exactly like the on-page H1 — force the branded form so
     // title and H1 are never byte-identical.
-    const plain = seoTitle(titleBase);
+    const plain = seoTitle(conditionTitle);
     const title = plain === p.name ? seoPageTitle(p.name, "BMD") : plain;
     const conditionNote = /used|refurb/i.test(p.condition ?? "")
       ? `Tested, graded ${p.condition?.toLowerCase()} unit`
