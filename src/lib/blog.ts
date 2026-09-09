@@ -1,4 +1,6 @@
 // AUTO-GENERATED CONTENT LIBRARY — Bitcoin Mining Depot editorial blog.
+// Source of truth for article bodies. Runtime pages read the generated shards in
+// src/lib/blog-shards — re-run `bun run blog:shards` after editing this file.
 import type { BlogPost } from "./blog-types";
 
 export type { BlogSection, BlogFaq, BlogMatch, BlogPost } from "./blog-types";
