@@ -54,6 +54,121 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: SemrushBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: SemrushBot-SA
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: SiteAuditBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: SemrushBot-BA
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: AhrefsBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: AhrefsSiteAudit
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: YandexBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: meta-externalagent
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Bytespider
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: PetalBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Slurp
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: LinkedInBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Pinterestbot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: MojeekBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: SeekportBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Diffbot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Google-CloudVertexBot
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+Disallow: /admin
+Disallow: /admin/
+
 User-agent: *
 Allow: /
 Disallow: /admin
