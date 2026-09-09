@@ -225,7 +225,7 @@ export const Route = createFileRoute("/products/$slug")({
     const isUsed = /used|refurb/i.test(p.condition ?? "");
     const conditionWord = isUsed ? "Used" : "New";
     const conditionTitle = nameKey.includes(conditionWord.toLowerCase())
-      ? titleBase
+      ? `Buy ${titleBase}`
       : `${conditionWord} ${titleBase}`;
     // When the name alone already fills the limit the brand suffix falls away and
     // the title would read exactly like the on-page H1 — force the branded form so
