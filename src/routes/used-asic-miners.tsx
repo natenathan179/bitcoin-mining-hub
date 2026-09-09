@@ -346,6 +346,7 @@ function UsedAsicMinersPage() {
       </div>
 
       <SeoCopy title={PAGE_COPY.used.title} blocks={PAGE_COPY.used.blocks} />
+      <SeoCopy title={PAGE_COPY.usedAsic.title} blocks={PAGE_COPY.usedAsic.blocks} />
     </SiteLayout>
   );
 }
