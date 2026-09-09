@@ -25,12 +25,12 @@ export async function loadMarketplacePage(slug: string): Promise<MarketplacePage
 }
 
 export async function loadBlogPage(slug: string): Promise<BlogPageData | null> {
-  const [{ getPost }, { getIndexEntry, relatedIndexPosts, modelCluster }] = await Promise.all([
-    import("./blog"),
+  const [{ getPostAsync }, { getIndexEntry, relatedIndexPosts, modelCluster }] = await Promise.all([
+    import("./blog-shards"),
     import("./blog-index"),
   ]);
   const entry = getIndexEntry(slug);
-  const post = getPost(slug);
+  const post = await getPostAsync(slug);
   if (!entry || !post) return null;
   const cl = modelCluster(post.slug, post.title, 8);
   return {

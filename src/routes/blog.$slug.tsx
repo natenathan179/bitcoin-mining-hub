@@ -9,6 +9,20 @@ import type { BlogPost } from "@/lib/blog-types";
 import { productsQuery, type Product } from "@/lib/data";
 import { SITE } from "@/lib/site";
 
+/**
+ * Keeps the title tag distinguishable from the article H1. A title identical to
+ * the heading is reported as duplicate H1/title content by SEO audits.
+ */
+function distinctTitle(metaTitle: string, h1: string): string {
+  if (metaTitle.trim().toLowerCase() !== h1.trim().toLowerCase()) return metaTitle;
+  for (const suffix of [" | Bitcoin Mining Depot", " | BMD Guide", " | BMD"]) {
+    if (metaTitle.length + suffix.length <= 65) return `${metaTitle}${suffix}`;
+  }
+  const colon = metaTitle.indexOf(":");
+  const lead = colon > 12 ? metaTitle.slice(0, colon) : metaTitle.slice(0, 52).trimEnd();
+  return `${lead} | BMD Guide`;
+}
+
 export const Route = createFileRoute("/blog/$slug")({
   loader: async ({ params, context }) => {
     // Metadata comes from the lightweight index; the article body is fetched on
@@ -24,9 +38,9 @@ export const Route = createFileRoute("/blog/$slug")({
     const entry = loaderData?.entry;
     if (!entry) return {};
     const url = `${SITE.url}/blog/${entry.slug}`;
-    // metaTitle is generated to be unique across the library and never identical
-    // to the on-page H1, so crawlers see no duplicate title / H1 pairs.
-    const metaTitle = entry.metaTitle;
+    // metaTitle must never read exactly like the on-page H1, or audits flag the
+    // page for duplicate content in H1 and title.
+    const metaTitle = distinctTitle(entry.metaTitle, loaderData?.post.title ?? "");
     return {
       meta: [
         { title: metaTitle },

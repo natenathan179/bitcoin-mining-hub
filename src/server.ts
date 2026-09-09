@@ -98,7 +98,7 @@ function withSecurityHeaders(response: Response, request: Request): Response {
     if (/^\/(_build|assets)\//.test(url.pathname) || /\.(js|css|woff2?|jpg|jpeg|png|webp|avif|svg)$/i.test(url.pathname)) {
       headers.set("cache-control", "public, max-age=31536000, immutable");
     } else {
-      headers.set("cache-control", "public, max-age=0, s-maxage=300, stale-while-revalidate=86400");
+      headers.set("cache-control", "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400");
     }
   }
 

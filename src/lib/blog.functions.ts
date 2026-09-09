@@ -12,8 +12,8 @@ import type { BlogPost } from "./blog-types";
 export const getBlogPostFn = createServerFn({ method: "GET" })
   .inputValidator((data: { slug: string }) => ({ slug: String(data?.slug ?? "") }))
   .handler(async ({ data }): Promise<BlogPost | null> => {
-    const { getPost } = await import("./blog");
-    return getPost(data.slug) ?? null;
+    const { getPostAsync } = await import("./blog-shards");
+    return await getPostAsync(data.slug);
   });
 
 export interface BlogPageData {
@@ -42,12 +42,12 @@ export interface BlogPageData {
 export const getBlogPageFn = createServerFn({ method: "GET" })
   .inputValidator((data: { slug: string }) => ({ slug: String(data?.slug ?? "") }))
   .handler(async ({ data }): Promise<BlogPageData | null> => {
-    const [{ getPost }, { getIndexEntry, relatedIndexPosts, modelCluster }] = await Promise.all([
-      import("./blog"),
+    const [{ getPostAsync }, { getIndexEntry, relatedIndexPosts, modelCluster }] = await Promise.all([
+      import("./blog-shards"),
       import("./blog-index"),
     ]);
     const entry = getIndexEntry(data.slug);
-    const post = getPost(data.slug);
+    const post = await getPostAsync(data.slug);
     if (!entry || !post) return null;
     const cl = modelCluster(post.slug, post.title, 8);
     return {
