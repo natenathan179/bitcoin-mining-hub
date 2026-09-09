@@ -3,7 +3,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
-import type { Family } from "@/lib/marketplace";
+import type { Family } from "@/lib/marketplace-page";
 import { getMarketplacePageFn } from "@/lib/marketplace.functions";
 import { retryRead } from "@/lib/retry";
 import { productsQuery, type Product } from "@/lib/data";

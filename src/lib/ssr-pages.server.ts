@@ -15,14 +15,15 @@ import type { BlogPageData } from "./blog.functions";
 import type { MarketplacePageData } from "./marketplace.functions";
 
 export async function loadMarketplacePage(slug: string): Promise<MarketplacePageData | null> {
-  const { getLocation, buildPage, relatedLocations } = await import("./marketplace");
-  const loc = getLocation(slug);
-  if (!loc) return null;
-  return {
-    page: buildPage(loc),
-    related: relatedLocations(loc, 12).map((r) => ({ slug: r.slug, keyword: r.keyword })),
-  };
+  const [{ getLocationEntryAsync }, { buildPage }] = await Promise.all([
+    import("./marketplace-shards"),
+    import("./marketplace-page"),
+  ]);
+  const entry = await getLocationEntryAsync(slug);
+  if (!entry) return null;
+  return { page: buildPage(entry.loc), related: entry.related };
 }
+
 
 export async function loadBlogPage(slug: string): Promise<BlogPageData | null> {
   const [{ getPostAsync }, { getIndexEntry, relatedIndexPosts, modelCluster }] = await Promise.all([
