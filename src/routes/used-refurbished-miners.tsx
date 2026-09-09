@@ -347,6 +347,7 @@ function UsedMinersPage() {
         </section>
       </div>
       <SeoCopy title={PAGE_COPY.used.title} blocks={PAGE_COPY.used.blocks} />
+      <SeoCopy title={PAGE_COPY.usedRefurb.title} blocks={PAGE_COPY.usedRefurb.blocks} />
     </SiteLayout>
   );
 }

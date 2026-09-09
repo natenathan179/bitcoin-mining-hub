@@ -119,7 +119,10 @@ function UsedAsicMinersPage() {
         "@type": "ItemList",
         name: "Used ASIC miners in stock",
         numberOfItems: sorted.length,
-        itemListElement: sorted.slice(0, 40).map((p, i) => ({
+        // Kept deliberately short and lean: a long inline JSON-LD list inflates the
+        // HTML without adding readable text, which audits report as a low
+        // text-to-HTML ratio.
+        itemListElement: sorted.slice(0, 12).map((p, i) => ({
           "@type": "ListItem",
           position: i + 1,
           url: `https://bitcoinminingdepot.com/products/${p.slug}`,
@@ -130,9 +133,6 @@ function UsedAsicMinersPage() {
             url: `https://bitcoinminingdepot.com/products/${p.slug}`,
             brand: { "@type": "Brand", name: p.brand || SITE.name },
             image: (p.images ?? []).filter((i) => i?.startsWith("https://")).slice(0, 1),
-            description:
-              p.short_description ||
-              `${p.name} — tested used ASIC miner in stock at ${SITE.name}, shipped worldwide from Hong Kong.`,
             itemCondition: "https://schema.org/UsedCondition",
             offers: {
               "@type": "Offer",
