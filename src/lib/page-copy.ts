@@ -6,6 +6,81 @@ import type { CopyBlock } from "@/components/site/SeoCopy";
  * that SEO crawlers measure.
  */
 export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> = {
+  usedAsic: {
+    title: "How To Value A Used ASIC Miner Before You Pay",
+    blocks: [
+      {
+        heading: "Start from your electricity rate, not the price tag",
+        paras: [
+          "The single number that decides which used ASIC miner belongs on your site is your delivered electricity cost per kilowatt hour, including demand charges, transmission and any hosting margin. Multiply the machine's wall power in kilowatts by 24, then by 30, then by that rate, and you have the monthly energy bill for one unit. Compare that figure against the revenue the machine's terahash currently earns and you immediately see whether the model is a producer or a space heater at your tariff.",
+          "As a working rule, sites paying under six cents can still run 30 to 38 joules per terahash hardware profitably, sites between six and nine cents want the low twenties, and anything above ten cents needs current-generation efficiency or hosted placement to make sense. We publish measured wall power alongside hashrate on every listing precisely so you can run that arithmetic before you commit capital.",
+        ],
+      },
+      {
+        heading: "What a fair used price looks like",
+        paras: [
+          "Used ASIC pricing is quoted in dollars per terahash, which makes machines of different generations directly comparable. Take the asking price, divide by the verified hashrate, and compare that figure across the listings on this page. A well-priced second-hand unit should land materially below the dollar-per-terahash of a new machine of the same efficiency class, and the discount should widen as the unit's efficiency falls further behind the current fleet average.",
+          "Cheap outliers are usually cheap for a reason: unrepaired hashboards, missing PSUs, water-block corrosion on hydro units, or firmware locked by a previous operator. When a price looks far below the market, ask what was replaced, whether the machine ran on immersion or air, and what hashrate it held for a sustained multi-hour test rather than a thirty-second boot reading.",
+        ],
+      },
+      {
+        heading: "The checks we run so you do not have to",
+        paras: [
+          "Each unit is bench-run under full load until hashrate, chip temperatures and hardware error rate stabilise. Hashboards are read chip by chip, power supplies are load-tested, fans and connectors are replaced when they show wear, and control boards are reflashed to stock or to a tuned firmware you specify. Units that cannot hold rated output are repaired in our own lab or sold openly as repair candidates instead of being mixed into graded stock.",
+          "The result is the data you see on each listing: verified hashrate, wall power, condition grade, firmware, and what was replaced. That record is what turns a used purchase from a gamble into a calculated deployment, and it is why buyers reorder rather than test the market again on every batch.",
+        ],
+      },
+      {
+        heading: "Deployment, freight and support",
+        paras: [
+          "Every order leaves our Hong Kong warehouse by direct air freight with DHL Express, FedEx International Priority, UPS Worldwide Express or Kerry Logistics, arriving with a tracking number, commercial invoice and the customs paperwork your broker needs. Pallet and container quantities move on consolidated air or sea freight, and we will document HS codes and declared values to match your import process.",
+          "Before you order, send us your tariff, available amperage, ambient temperature range and target hashrate. Our desk will come back with the specific units from this inventory that clear your payback threshold, the power distribution they need, and whether hosting is the cheaper route for your first deployment.",
+        ],
+      },
+    ],
+  },
+
+  usedRefurb: {
+    title: "Refurbished Bitcoin Miners: What Refurbishing Actually Changes",
+    blocks: [
+      {
+        heading: "Used, refurbished and repair candidate are not the same thing",
+        paras: [
+          "A used machine is a working miner sold in the condition it arrived in, cleaned and tested but not rebuilt. A refurbished machine has had its wear parts replaced and its performance restored to near factory output before it is listed. A repair candidate is a unit with a known fault, priced accordingly, sold to operators who keep spare boards and a hot-air station on site. Mixing those three categories is the most common way buyers overpay in this market, which is why every listing here states its grade explicitly.",
+          "The filters on this page let you narrow by condition, brand, price ceiling and minimum hashrate, so you can compare like with like instead of guessing from a photograph and a model number.",
+        ],
+      },
+      {
+        heading: "Inside our refurbishing bench",
+        paras: [
+          "Refurbishing starts with a full teardown. Boards fouled by dust or condensation are cleaned ultrasonically, thermal pads and paste are replaced, heat sinks that have lifted are re-seated, and corroded connectors are cut back and re-terminated. Fans are replaced as a set rather than individually so airflow stays balanced, and power supplies are load-tested to rated output before they go back into a chassis.",
+          "The unit then runs a sustained burn-in at rated frequency while we log hashrate, per-chip temperature and hardware error rate. Only machines that hold their numbers across that window are graded refurbished. Anything that drifts goes back to the bench or is relisted honestly as a repair candidate.",
+        ],
+      },
+      {
+        heading: "Firmware, tuning and efficiency",
+        paras: [
+          "Second-hand hardware often arrives with vendor firmware from a previous operator, sometimes locked to their pool or wallet. We reflash control boards to clean stock firmware by default, and on request we can deliver units running tuned firmware so you can underclock for joules per terahash or push frequency where power is genuinely cheap. Underclocking an older machine is frequently the difference between a marginal deployment and a comfortable one.",
+          "Tell us the operating point you want — maximum efficiency, maximum hashrate, or a fixed power budget per unit — and we will set the machines up before they ship rather than leaving you to tune a rack by hand.",
+        ],
+      },
+      {
+        heading: "Warranty, spares and what happens if something fails",
+        paras: [
+          "Graded units ship with a 30-day functional warranty covering hashrate and power draw as listed. If a board fails inside that window we repair or replace it; outside it, our repair lab quotes board-level work at a fraction of replacement cost, which is usually the economic choice on older platforms where spares remain plentiful.",
+          "For fleets above a few dozen machines we recommend buying a small spares pool alongside the order — a spare PSU and hashboard per ten units keeps uptime high without an emergency freight bill every time a chip goes. We will quote those spares with the hardware.",
+        ],
+      },
+      {
+        heading: "Getting a straight answer on payback",
+        paras: [
+          "Payback on used hardware is a function of four inputs: purchase price, wall power, your electricity rate, and how long you expect the machine to remain revenue-positive as difficulty rises. Send us the first three and we will model the fourth against the current network, then tell you plainly which units on this page clear your threshold and which do not.",
+          "That conversation takes minutes and it is free. Message our desk on WhatsApp or email sales@bitcoinminingdepot.com with your tariff and target budget, and we will reply with a shortlist drawn from the stock listed above, including freight to your address.",
+        ],
+      },
+    ],
+  },
+
   cryptoForSale: {
     title: "Crypto Mining Hardware For Sale: How To Buy Well In 2026",
     blocks: [
