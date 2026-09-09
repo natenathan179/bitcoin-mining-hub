@@ -37,6 +37,20 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
           "Before you order, send us your tariff, available amperage, ambient temperature range and target hashrate. Our desk will come back with the specific units from this inventory that clear your payback threshold, the power distribution they need, and whether hosting is the cheaper route for your first deployment.",
         ],
       },
+      {
+        heading: "Which second-hand models are worth shortlisting now",
+        paras: [
+          "The S19 family remains the workhorse of the used market. The base S19 and S19j Pro sit around 90 to 104 terahash at roughly 29 to 30 joules per terahash, which suits cheap-power sites and hosted racks where the hosting fee is the binding constraint. The S19j Pro+ and S19k Pro push efficiency into the mid twenties and command a premium that is usually justified once your tariff passes seven cents. Hydro variants such as the S19 XP Hyd belong in facilities that already have a water loop and a plan for glycol, filtration and leak detection.",
+          "On the MicroBT side, WhatsMiner M30S++ and M50 units are attractive when the seller can document board revisions and PSU history, because those platforms tolerate warm environments well and their power supplies are straightforward to service. Avoid orphan models with no spare-part market, however cheap they look: a machine you cannot repair is a machine you will retire early.",
+        ],
+      },
+      {
+        heading: "Common mistakes buyers make with used hardware",
+        paras: [
+          "The first is buying on hashrate alone and discovering the site cannot deliver the amperage the fleet needs, which turns a bargain into stranded inventory. The second is ignoring ambient conditions: an air-cooled miner in a hot, humid, dusty room will lose chips within months no matter how well it tested on our bench. The third is underestimating landed cost, because freight, duties and local electrical work routinely add a meaningful percentage to the invoice.",
+          "The fourth, and the most expensive, is treating a used fleet as a set-and-forget asset. Machines need monitoring, filter changes, periodic repaste and a spares pool. Operators who budget a small maintenance allowance per unit per year consistently outperform those who buy the cheapest available hardware and hope, and the difference shows up in uptime long before it shows up in the wallet balance.",
+        ],
+      },
     ],
   },
 
