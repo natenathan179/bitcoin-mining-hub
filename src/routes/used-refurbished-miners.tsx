@@ -318,7 +318,7 @@ function UsedMinersPage() {
                   .
                 </p>
               )}
-            </>)
+            </>
           )}
 
           <div className="mt-12 rounded-md border border-border bg-card p-6">
