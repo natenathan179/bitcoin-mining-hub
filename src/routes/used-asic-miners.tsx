@@ -354,6 +354,12 @@ function UsedAsicMinersPage() {
           <Link to="/repair-services" className="rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary">
             Repair lab
           </Link>
+          <Link
+            to="/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro"
+            className="rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary"
+          >
+            Antminer S21 XP Hyd vs S19 XP+ Hydro
+          </Link>
         </nav>
       </div>
 
