@@ -302,11 +302,23 @@ function UsedMinersPage() {
               </Link>
             </div>
           ) : (
-            <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
-              {filtered.map((p) => (
-                <ProductCard key={p.id} product={p} />
-              ))}
-            </div>
+            <>
+              <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
+                {filtered.slice(0, 24).map((p) => (
+                  <ProductCard key={p.id} product={p} />
+                ))}
+              </div>
+              {filtered.length > 24 && (
+                <p className="mt-6 text-sm text-muted-foreground">
+                  Showing 24 of {filtered.length} matching machines. Narrow the filters for a
+                  specific model, or browse{" "}
+                  <Link to="/products" className="font-medium text-primary hover:underline">
+                    the full miner catalogue
+                  </Link>
+                  .
+                </p>
+              )}
+            </>)
           )}
 
           <div className="mt-12 rounded-md border border-border bg-card p-6">
