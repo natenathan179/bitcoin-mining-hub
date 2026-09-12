@@ -270,11 +270,23 @@ function UsedAsicMinersPage() {
             </Link>
           </div>
         ) : (
-          <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
-            {sorted.map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
-          </div>
+          <>
+            <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
+              {sorted.slice(0, 24).map((p) => (
+                <ProductCard key={p.id} product={p} />
+              ))}
+            </div>
+            {sorted.length > 24 && (
+              <p className="mt-6 text-sm text-muted-foreground">
+                Showing the 24 most relevant used ASIC miners of {sorted.length} in stock. The full
+                price and hashrate list below covers more machines, and{" "}
+                <Link to="/products" className="font-medium text-primary hover:underline">
+                  every miner we hold
+                </Link>{" "}
+                is listed on the main catalogue.
+              </p>
+            )}
+          </>
         )}
 
         <div className="mt-12 overflow-x-auto rounded-md border border-border bg-card">
@@ -341,6 +353,12 @@ function UsedAsicMinersPage() {
           </Link>
           <Link to="/repair-services" className="rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary">
             Repair lab
+          </Link>
+          <Link
+            to="/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro"
+            className="rounded-md border border-border px-4 py-2 hover:border-primary hover:text-primary"
+          >
+            Antminer S21 XP Hyd vs S19 XP+ Hydro
           </Link>
         </nav>
       </div>
