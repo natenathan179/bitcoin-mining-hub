@@ -4,13 +4,15 @@ import { toast } from "sonner";
 
 import { useCart } from "@/lib/cart";
 import { formatPrice } from "@/lib/site";
+import { optimizeImageUrl } from "@/lib/image";
 import type { Product } from "@/lib/data";
 import minerBlack from "@/assets/miner-black.jpg";
 
 export function ProductCard({ product }: { product: Product }) {
   const { add } = useCart();
   const price = product.sale_price ?? product.price;
-  const image = product.images?.[0] || minerBlack;
+  const rawImage = product.images?.[0] || minerBlack;
+  const image = optimizeImageUrl(rawImage, 400);
 
   return (
     <article

@@ -11,6 +11,7 @@ import { ProductLocalAvailability } from "@/components/site/ProductLocalAvailabi
 import { InquiryModal } from "@/components/site/InquiryModal";
 import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
 import { formatPrice, SITE, seoDescription, seoPageTitle, seoTitle } from "@/lib/site";
+import { optimizeImageUrl } from "@/lib/image";
 import { useCart } from "@/lib/cart";
 import minerBlack from "@/assets/miner-black.jpg";
 
@@ -515,7 +516,7 @@ function ProductDetail() {
         <div>
           <div className="rounded-md border border-border bg-card p-6">
             <img
-              src={images[active]}
+              src={optimizeImageUrl(images[active], 1000)}
               alt={`${product.name} ${product.hashrate && product.hashrate !== "-" ? `${product.hashrate} ` : ""}${product.algorithm || "SHA-256"} ASIC miner${product.power && product.power !== "-" ? ` at ${product.power}` : ""} — ${product.brand} ${product.condition || "new"} unit for sale at Bitcoin Mining Depot`}
               title={`${product.brand} ${product.name} ASIC miner`}
               width={1000}
@@ -535,7 +536,7 @@ function ProductDetail() {
                   className={`h-20 w-20 overflow-hidden rounded-md border p-1 ${i === active ? "border-primary" : "border-border"}`}
                 >
                   <img
-                    src={img}
+                    src={optimizeImageUrl(img, 160)}
                     alt={`${product.name} ${product.brand} ASIC miner — product photo ${i + 1}`}
                     width={160}
                     height={160}
@@ -621,7 +622,7 @@ function ProductDetail() {
                     slug: product.slug,
                     name: product.name,
                     price,
-                    image: images[0],
+                    image: optimizeImageUrl(images[0], 400),
                   },
                   qty,
                 );

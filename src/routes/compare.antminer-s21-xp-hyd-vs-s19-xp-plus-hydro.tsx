@@ -4,6 +4,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { productQuery, type Product } from "@/lib/data";
+import { optimizeImageUrl } from "@/lib/image";
 import { SITE } from "@/lib/site";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
@@ -214,7 +215,7 @@ function ComparePage() {
           {pair.map((p, i) => (
             <div key={p.id} className="rounded-lg border border-border bg-card p-5">
               <img
-                src={p.images?.[0]}
+                src={optimizeImageUrl(p.images?.[0], 500)}
                 alt={`${p.name} hydro-cooled ASIC Bitcoin miner`}
                 title={p.name}
                 loading="lazy"
