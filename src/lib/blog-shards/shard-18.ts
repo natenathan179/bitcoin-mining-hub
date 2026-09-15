@@ -834,5 +834,98 @@ export const POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 9
+  },
+  {
+    "slug": "small-bitcoin-mining-machines-for-sale-compact-units-and-real-prices",
+    "title": "Small Bitcoin Mining Machines for Sale: Compact Units and Real Prices",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "What's actually available in the small/compact bitcoin miner category, realistic price bands by class, and how to avoid overpaying for a device that earns very little.",
+    "keywords": [
+      "small bitcoin mining machines for sale",
+      "small bitcoin miner for sale",
+      "compact bitcoin mining machine",
+      "mini bitcoin miner for sale",
+      "small asic miner price"
+    ],
+    "intro": [
+      "\"Small bitcoin mining machine\" covers a wide span of hardware, from genuinely tiny desktop devices drawing a few watts, to compact single-board ASICs that still need a real power circuit despite their size. Shopping this category well means being clear about which of those two you actually want before you compare prices.",
+      "This guide breaks down what's realistically for sale in the small/compact category, what price bands to expect, and which class fits a given goal — from a shelf ornament that teaches you the stack, to a genuinely space-saving unit that still contributes real hashrate."
+    ],
+    "sections": [
+      {
+        "h2": "Two Very Different Kinds of \"Small\"",
+        "paras": [
+          "The first kind is a desktop or USB-powered device drawing tens of watts, small enough for a home office and quiet enough to sit near people. The second is a physically compact industrial ASIC that still draws several hundred to over a thousand watts on a 200-240 volt circuit — small in footprint, not in power demand.",
+          "Confusing the two is the most common shopping mistake in this category. A 'small' industrial unit still needs the same electrical planning as a full-size machine; only a genuine desktop-class device runs from a household outlet."
+        ]
+      },
+      {
+        "h2": "Price Bands to Expect",
+        "paras": [
+          "Desktop-class devices sit at the low end of the market, priced more like a consumer gadget than an industrial asset, reflecting their genuinely small hashrate contribution. Compact industrial units price in line with their hashrate and efficiency, generally in the same dollars-per-terahash range as their full-size siblings — the compact chassis is a convenience, not a discount.",
+          "Be skeptical of a 'small miner' priced far below what its stated hashrate would suggest; it usually means the hashrate claim, the condition, or the seller is not what it appears."
+        ]
+      },
+      {
+        "h2": "What Compact Industrial Units Actually Need",
+        "paras": [
+          "Plan a dedicated 200-240 volt circuit regardless of the chassis size, along with adequate airflow and noise tolerance — a smaller case does not mean a quieter or cooler machine. Confirm rated hashrate and wall watts the same way you would for any full-size ASIC.",
+          "The main genuine benefit of a compact chassis is rack or shelf density, which matters if space, not power, is your binding constraint."
+        ]
+      },
+      {
+        "h2": "What Desktop-Class Devices Actually Earn",
+        "paras": [
+          "Set expectations honestly: pooled earnings are measured in cents per day, and the real value is educational or the small positive-tail chance of a solo block. Buy this class to learn firmware, pools and monitoring cheaply, not to generate income.",
+          "If your goal shifts to earning, a compact or full-size industrial unit is the correct next purchase, not a bigger stack of desktop devices."
+        ]
+      },
+      {
+        "h2": "Buying Checklist for This Category",
+        "paras": [
+          "For desktop devices: confirm what's in the box, whether the firmware is reflashable, and what support exists if the board fails. For compact industrial units: run the same load-test and condition-grading checks you'd apply to any full-size ASIC — rated hashrate confirmed under load, hashboards online, normal temperatures.",
+          "In both cases, get warranty terms in writing and compare on delivered price, not the listing price alone."
+        ]
+      },
+      {
+        "h2": "Where We Fit In",
+        "paras": [
+          "We carry compact industrial units bench-tested and condition-graded exactly like our full-size hardware, quoted at delivered prices from Hong Kong with full customs paperwork. If you're shopping the desktop-class end of the market, we can point you toward what genuinely fits a home-office setup versus what's marketed loosely as 'small.'",
+          "Either way, the same rule applies: confirm hashrate, watts and price in writing before paying, regardless of how small the box looks on the listing photo."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does 'small' mean it runs on a household outlet?",
+        "a": "Only for genuine desktop-class devices. Compact industrial ASICs still need a dedicated 200-240 volt circuit despite the smaller chassis."
+      },
+      {
+        "q": "Are small industrial miners cheaper per terahash?",
+        "a": "Generally no — they price in line with hashrate and efficiency like any ASIC. The compact chassis buys density, not a discount."
+      },
+      {
+        "q": "What should a desktop-class miner realistically earn?",
+        "a": "Cents per day on a pool. Treat it as an educational purchase or a lottery-style solo attempt, not an income source."
+      },
+      {
+        "q": "What's the biggest shopping mistake in this category?",
+        "a": "Assuming a physically small industrial unit has small power needs. Confirm wall watts regardless of chassis size."
+      },
+      {
+        "q": "How do I compare two small units fairly?",
+        "a": "The same way as full-size hardware: rated hashrate, wall watts, joules per terahash, and delivered price including freight."
+      }
+    ],
+    "match": {
+      "terms": [
+        "small bitcoin miner",
+        "compact",
+        "desktop"
+      ]
+    },
+    "readMinutes": 7
   }
 ];

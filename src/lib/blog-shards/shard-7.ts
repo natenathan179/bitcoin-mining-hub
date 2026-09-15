@@ -1624,5 +1624,100 @@ export const POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s19-price-usd-india-and-marketplace-listings",
+    "title": "Antminer S19 Price: USD, India and Marketplace Listings Compared",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "How Antminer S19 pricing actually varies between USD list quotes, the Indian market and general marketplace listings like Amazon, and how to compare them fairly.",
+    "keywords": [
+      "antminer s19 price usd",
+      "antminer s19 price in india",
+      "antminer s19 price amazon",
+      "bitmain antminer s19 price",
+      "antminer s19 price today"
+    ],
+    "intro": [
+      "The Antminer S19 has been on the market long enough that its price varies widely depending on where you're looking — a USD wholesale quote, a listing on a general marketplace, or the Indian resale market, each shaped by different import costs, condition mixes and local demand. Comparing them directly without adjusting for those differences is how buyers end up either overpaying or getting an unpleasant surprise on arrival.",
+      "This guide explains what actually drives the difference between those price sources and how to compare them on equal footing before deciding where to buy."
+    ],
+    "sections": [
+      {
+        "h2": "USD Wholesale and Supplier Quotes",
+        "paras": [
+          "A USD quote from a supplier or reseller typically reflects the base hardware price plus their margin, testing and grading work, and may or may not include freight depending on how it's presented. Always ask whether a quoted figure is ex-works, FOB, or delivered — the difference between those terms can be a significant fraction of the total.",
+          "Because the S19 is now several generations old, USD quotes vary widely by condition grade — new-old-stock, used-tested, and used-untested can differ substantially in price for what is nominally the 'same' machine."
+        ]
+      },
+      {
+        "h2": "Pricing on Amazon and General Marketplaces",
+        "paras": [
+          "General marketplace listings mix individual resellers, small businesses and occasionally misleadingly categorised accessories or parts rather than complete working units — read listings carefully for what's actually included. Prices here can run above dedicated mining suppliers because of marketplace fees built into the seller's price, or below because of thin or absent testing.",
+          "Marketplace buyer protection helps with items that never arrive or are grossly misrepresented, but it rarely substitutes for a proper hardware warranty, so weigh that against any price advantage before buying there specifically for the protection."
+        ]
+      },
+      {
+        "h2": "The Indian Market Specifically",
+        "paras": [
+          "Pricing in India reflects import duty, GST, and logistics costs on top of the base hardware price, plus whatever local demand looks like at the time — all of which push landed cost above a bare USD figure. Cryptocurrency mining's regulatory status has also shifted over time in various jurisdictions including India, so confirm current local rules before importing hardware, separate from the price question entirely.",
+          "Buyers in India comparing a local listing against an international USD quote should add estimated duty, GST and freight to the USD figure before concluding the international option is cheaper — it sometimes is, and sometimes isn't, once those are included."
+        ]
+      },
+      {
+        "h2": "Why the Same Model Shows Such Different Prices",
+        "paras": [
+          "Condition grade is the biggest single driver — new-old-stock, tested-used and untested-used can differ by a wide margin for the identical model. Add regional import costs and marketplace fee structures on top, and a 'simple' single-model price question turns into several different questions depending on where and how you're buying.",
+          "Always normalize to delivered price in your own currency, including all fees and duty, before comparing across sources — the sticker price alone tells you very little."
+        ]
+      },
+      {
+        "h2": "How to Compare Fairly",
+        "paras": [
+          "For every listing you're considering, note the condition grade, confirm whether the price includes freight and duty or not, and add whatever's missing to reach a true landed cost. Only compare landed costs against each other, never a landed quote against a bare list price.",
+          "Then weigh the S19's efficiency at whatever landed price you calculate — it's older hardware now, so the price needs to be low enough to compensate for running cost against current-generation alternatives at your power rate."
+        ]
+      },
+      {
+        "h2": "Getting a Straight Quote",
+        "paras": [
+          "We quote delivered S19 pricing from Hong Kong in USD with freight, condition grade and customs documentation stated upfront, so there's no guessing what's included. If you're comparing against a marketplace or regional listing, ask us for the same breakdown so you're comparing like with like.",
+          "Every unit is bench-tested before shipping, with the test result behind the condition grade rather than a guess."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why is the Antminer S19 priced so differently across sources?",
+        "a": "Mainly condition grade, plus whether freight and import duty are included in the quoted figure. Landed cost, not list price, is the number that matters."
+      },
+      {
+        "q": "Does an Amazon listing include a real hardware warranty?",
+        "a": "Not usually to the extent a dedicated mining supplier offers. Marketplace buyer protection covers misrepresentation and non-delivery, but rarely substitutes for a hardware warranty."
+      },
+      {
+        "q": "What adds the most to the price for buyers in India?",
+        "a": "Import duty and GST on top of the base hardware price and freight — always add these before comparing to a bare USD quote."
+      },
+      {
+        "q": "Is the S19 still worth buying at 2026 prices?",
+        "a": "Only if the landed price is low enough to offset its older-generation efficiency against current-generation hardware at your specific power rate."
+      },
+      {
+        "q": "What's the safest way to compare S19 listings across sources?",
+        "a": "Normalize every listing to a fully landed price in your own currency, including freight and duty, before comparing any of them."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "antminer s19",
+        "price"
+      ]
+    },
+    "readMinutes": 7
   }
 ];

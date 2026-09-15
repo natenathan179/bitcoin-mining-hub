@@ -668,5 +668,193 @@ export const POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 9
+  },
+  {
+    "slug": "1-th-s-bitcoin-mining-calculator-how-the-math-works",
+    "title": "1 TH/s Bitcoin Mining Calculator: How the Math Actually Works",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-15",
+    "description": "How to calculate expected earnings at 1 TH/s of bitcoin hashrate, why the figure is so small relative to network difficulty, and what it's actually useful for.",
+    "keywords": [
+      "1 th/s bitcoin calculator",
+      "1 terahash bitcoin calculator",
+      "1 th/s mining profit",
+      "small hashrate bitcoin calculator",
+      "bitcoin mining calculator by hashrate"
+    ],
+    "intro": [
+      "One terahash per second is a useful baseline unit for bitcoin mining calculations — small enough to make the arithmetic simple, and a convenient reference to scale up to whatever hashrate your actual machine runs. On its own, however, 1 TH/s against current network difficulty produces a genuinely tiny expected output, and it's worth understanding why before treating the number as a purchasing decision.",
+      "This guide walks through the calculation for exactly 1 TH/s, explains why network difficulty makes that figure so small, and shows how to scale the same math to whatever real hashrate you're actually evaluating."
+    ],
+    "sections": [
+      {
+        "h2": "What 1 TH/s Actually Represents Today",
+        "paras": [
+          "Network-wide bitcoin hashrate is measured in exahash per second — a number vastly larger than a single terahash. One TH/s is therefore an extremely small fraction of total network hashrate, and your expected share of newly mined bitcoin scales directly with that fraction.",
+          "This isn't a flaw in the calculation; it's simply what a very small unit of hashrate means against a network operating at a very large scale. The math is identical whether you're calculating for 1 TH/s or 1000 TH/s — only the fraction changes."
+        ]
+      },
+      {
+        "h2": "The Calculation Step by Step",
+        "paras": [
+          "A mining calculator takes your hashrate, current network difficulty (or an equivalent total network hashrate figure), and block reward, and computes your expected fraction of blocks found over time, converting that into an expected coin output per day. At 1 TH/s that daily output is a very small decimal amount of bitcoin.",
+          "Multiply that expected daily coin output by the current bitcoin price for daily revenue in dollars, which — for exactly 1 TH/s — will also be a very small figure before any costs are subtracted."
+        ]
+      },
+      {
+        "h2": "Why This Number Alone Doesn't Decide Anything",
+        "paras": [
+          "A 1 TH/s figure is almost never what you're actually evaluating in practice; it's a unit to scale from. A real machine might run at 100, 200 or several hundred terahash, so the useful move is calculating the per-terahash daily revenue at 1 TH/s and then multiplying by your machine's actual rated hashrate.",
+          "Treat 1 TH/s as the 'price per unit' in the calculation, the same way you'd calculate a per-kilogram price before multiplying by the actual quantity you're buying."
+        ]
+      },
+      {
+        "h2": "Scaling to a Real Machine",
+        "paras": [
+          "Take the daily revenue figure calculated at 1 TH/s and multiply it by your machine's actual rated terahash to estimate that machine's real daily revenue. Then subtract daily power cost — wall watts ÷ 1000 × 24 × your electricity rate — and pool fees to get to daily net.",
+          "This scaling approach is exactly how mining calculators work internally; understanding the 1 TH/s baseline just makes the output less opaque and easier to sanity-check."
+        ]
+      },
+      {
+        "h2": "Solo Mining at 1 TH/s: A Different Question Entirely",
+        "paras": [
+          "If the interest in 1 TH/s is about solo mining rather than pool economics, the relevant number isn't daily revenue — it's the (very long) expected time to find a block alone at that hashrate, which for 1 TH/s against current network hashrate is measured in a timescale far beyond any practical planning horizon.",
+          "Solo mining at this hashrate is a lottery-style hobby with a positive expected value in theory but an extremely long variance in practice — enjoy it as that, not as an income plan."
+        ]
+      },
+      {
+        "h2": "Using This to Evaluate a Real Purchase",
+        "paras": [
+          "Whatever machine you're actually considering, run its real rated hashrate through the same steps: revenue via a calculator, cost via the power formula, and net as the difference — then compare that net across your candidate power rate and against alternative machines before buying.",
+          "The 1 TH/s baseline is a teaching tool for understanding the mechanics; the purchase decision itself should always run on the specific machine's real numbers."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is 1 TH/s of bitcoin hashrate worth anything on its own?",
+        "a": "As a standalone figure, its expected daily output is extremely small because network hashrate is measured in exahash — vastly larger than one terahash. It's mainly useful as a baseline to scale up from."
+      },
+      {
+        "q": "How do I scale a 1 TH/s calculation to my actual machine?",
+        "a": "Calculate daily revenue per terahash at 1 TH/s, then multiply by your machine's real rated hashrate to estimate its actual daily revenue."
+      },
+      {
+        "q": "What's the formula for daily net profit?",
+        "a": "Daily revenue (from a calculator, scaled to your hashrate) minus daily power cost (watts ÷ 1000 × 24 × your rate) minus pool fees."
+      },
+      {
+        "q": "Is solo mining at 1 TH/s realistic?",
+        "a": "The expected time to find a block alone at that hashrate is far beyond any practical planning horizon — treat it purely as a long-shot hobby, not a strategy."
+      },
+      {
+        "q": "Why do mining calculators ask for hashrate instead of just showing one universal number?",
+        "a": "Because expected output scales linearly with your share of network hashrate — there's no single answer that applies to every machine."
+      }
+    ],
+    "match": {
+      "terms": [
+        "1 th/s",
+        "calculator",
+        "small hashrate"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "bitmain-antminer-z15-pro-specs-price-and-profitability",
+    "title": "Bitmain Antminer Z15 Pro: Specs, Price and Equihash Profitability",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-09-15",
+    "description": "A focused look at the Bitmain Antminer Z15 Pro on its own terms: Equihash specs to confirm, realistic pricing, and whether it's still worth buying against current alternatives.",
+    "keywords": [
+      "bitmain antminer z15 pro",
+      "antminer z15 pro price",
+      "antminer z15 pro specs",
+      "antminer z15 pro profitability",
+      "equihash asic miner"
+    ],
+    "intro": [
+      "The Antminer Z15 Pro is Bitmain's higher-tier Equihash miner, built for Zcash and other Equihash-based coins rather than SHA-256 bitcoin mining. Buyers searching for it specifically usually already know they want Equihash hardware and are trying to confirm whether this particular model still makes sense against price and current alternatives.",
+      "This guide covers the Z15 Pro on its own terms: the specs worth confirming before paying, what a fair price looks like, and the profitability question for Equihash mining specifically, which behaves differently from the SHA-256 market most bitcoin-focused buyers are used to."
+    ],
+    "sections": [
+      {
+        "h2": "What the Z15 Pro Is Built For",
+        "paras": [
+          "Equihash is the proof-of-work algorithm behind Zcash and a handful of smaller coins, and it's meaningfully different from SHA-256 in memory and computation profile — which is why dedicated Equihash ASICs exist as a separate hardware category rather than overlapping with bitcoin miners. The Z15 Pro sits at the higher-hashrate end of Bitmain's Equihash lineup.",
+          "If your interest is bitcoin specifically, the Z15 Pro is not the right machine regardless of price — confirm the coin you intend to mine actually uses Equihash before shopping this model."
+        ]
+      },
+      {
+        "h2": "Specs Worth Confirming Before You Pay",
+        "paras": [
+          "Get rated hashrate (typically quoted in solutions per second for Equihash hardware), wall watts, and the resulting efficiency figure in writing, then calculate the efficiency yourself rather than trusting a headline number. Also confirm firmware version and whether the unit has run overclocked, since that affects both current output and remaining hardware life.",
+          "Because this is older, lower-volume hardware compared to mainstream SHA-256 ASICs, spare parts and support can be thinner — ask specifically what happens if a hashboard fails before you buy, not after."
+        ]
+      },
+      {
+        "h2": "Equihash Profitability Works Differently",
+        "paras": [
+          "Equihash coin markets are generally smaller and less liquid than bitcoin, and mining difficulty for Zcash specifically can behave differently from bitcoin's steadier difficulty growth curve. Model profitability using current Zcash-specific network hashrate and price, not by assuming bitcoin-market patterns transfer over.",
+          "Pool availability and fee structures for Equihash coins are also less standardized than the major bitcoin pools — confirm your chosen pool supports the Z15 Pro's exact firmware and stratum requirements before buying hardware you can't immediately point at a working pool."
+        ]
+      },
+      {
+        "h2": "Pricing It Fairly in 2026",
+        "paras": [
+          "Price the Z15 Pro on delivered dollars per solution-per-second, the Equihash equivalent of dollars-per-terahash, and compare against both other Bitmain Equihash models and any competing Equihash hardware on the market. Because this niche has fewer active listings than mainstream SHA-256 hardware, expect a wider price spread between sellers for nominally the same condition.",
+          "Discount used units for age and unknown run history the same way you would any older ASIC, and factor in the genuinely thinner resale market if you're thinking about exit value down the line."
+        ]
+      },
+      {
+        "h2": "Power, Cooling and Noise",
+        "paras": [
+          "Like any full-power air-cooled ASIC, plan a dedicated 200-240 volt circuit and a garage, outbuilding or hosted rack rather than a living space — the Z15 Pro doesn't get a pass on heat or noise just because it's a smaller-volume model.",
+          "Check the specific unit's rated wall power rather than assuming it matches a same-generation SHA-256 machine; Equihash hardware's power profile doesn't map directly across algorithms."
+        ]
+      },
+      {
+        "h2": "Buying Checklist and Where We Fit",
+        "paras": [
+          "Insist on a load test showing stable solutions-per-second and normal temperatures, confirm firmware and overclock history, and get warranty terms in writing including who pays return freight. For niche hardware like this, a documented test matters even more than for mainstream ASICs, given the thinner market for comparison listings.",
+          "We bench-test and condition-grade Equihash hardware exactly as rigorously as our SHA-256 inventory, and quote delivered prices from Hong Kong with full customs documentation — ask us directly if you don't see current Z15 Pro stock listed."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can the Antminer Z15 Pro mine bitcoin?",
+        "a": "No. It's built for Equihash, the algorithm behind Zcash and related coins, and cannot mine SHA-256 coins like bitcoin."
+      },
+      {
+        "q": "Is the Z15 Pro still worth buying in 2026?",
+        "a": "It depends on current Zcash-specific mining economics and your power rate — model it with Equihash network hashrate and price, not bitcoin-market assumptions."
+      },
+      {
+        "q": "How do I compare its efficiency to other Equihash hardware?",
+        "a": "Use dollars per solution-per-second, the Equihash equivalent of dollars-per-terahash, calculated from the machine's actual wall watts and rated output."
+      },
+      {
+        "q": "Is support harder to find for this than for a mainstream Antminer?",
+        "a": "Often yes, given the smaller market for Equihash ASICs. Confirm parts and repair options before buying, not after something fails."
+      },
+      {
+        "q": "Does it need special power or cooling compared to a bitcoin ASIC?",
+        "a": "It still needs a dedicated 200-240 volt circuit and proper heat/noise planning like any air-cooled ASIC, but confirm the specific wall-power figure rather than assuming it matches SHA-256 hardware of the same era."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "terms": [
+        "z15 pro",
+        "equihash"
+      ]
+    },
+    "readMinutes": 7
   }
 ];

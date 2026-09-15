@@ -5492,6 +5492,261 @@ export const BLOG_INDEX: BlogIndexEntry[] = [
       "buy asic"
     ],
     "readMinutes": 8
+  },
+  {
+    "slug": "buy-a-bitcoin-miner-what-to-verify-before-you-pay",
+    "title": "Buy a Bitcoin Miner: What to Verify Before You Pay",
+    "metaTitle": "Buy a Bitcoin Miner: Verification Checklist | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "A practical checklist for anyone about to buy a bitcoin miner: which numbers to confirm, how to price it fairly, and the seller behaviour that should make you walk away.",
+    "keywords": [
+      "buy bitcoin miner",
+      "buy a bitcoin miner",
+      "bitcoin miner buying guide",
+      "how to buy a bitcoin miner",
+      "bitcoin asic buying guide"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "bitcoin-miners-for-sale-comparing-todays-models-by-budget",
+    "title": "Bitcoin Miners for Sale: Comparing Today's Models by Budget",
+    "metaTitle": "Bitcoin Miners for Sale by Budget | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "A budget-tier walkthrough of bitcoin miners currently for sale — entry, mid and flagship — with what changes at each price point and how to pick without overspending.",
+    "keywords": [
+      "bitcoin miners for sale",
+      "bitcoin miners for sale near me",
+      "buy bitcoin miners",
+      "bitcoin mining hardware for sale",
+      "bitcoin asic for sale"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "buy-a-crypto-miner-safe-purchase-checklist",
+    "title": "Buy a Crypto Miner: Safe Purchase Checklist From Quote to Delivery",
+    "metaTitle": "Buy a Crypto Miner Safely: Full Checklist | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "The transaction-level checklist for buying a crypto miner safely: quote, invoice, payment, shipping documentation and delivery — the steps that catch a bad supplier before money moves.",
+    "keywords": [
+      "buy crypto miner",
+      "buy a crypto miner",
+      "how to buy a crypto miner safely",
+      "crypto miner purchase checklist",
+      "crypto miner vendor vetting"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "bitcoin-mining-machine-profit-calculator-per-day-and-per-month",
+    "title": "Bitcoin Mining Machine Profit Calculator: Per Day and Per Month",
+    "metaTitle": "Bitcoin Miner Profit Per Day and Per Month | BMD",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-15",
+    "description": "How to calculate a bitcoin mining machine's profit per day and per month from its own specs and your power rate, with a worked example and the inputs people forget.",
+    "keywords": [
+      "bitcoin mining machine profit per day",
+      "bitcoin mining machine profit per month",
+      "bitcoin mining per day calculator",
+      "bitcoin miner daily profit",
+      "bitcoin miner monthly profit"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "used-bitcoin-mining-machines-for-sale-where-to-buy-tested-units",
+    "title": "Used Bitcoin Mining Machines for Sale: Where to Buy Tested Units",
+    "metaTitle": "Used Bitcoin Mining Machines for Sale | BMD",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-09-15",
+    "description": "Where used bitcoin mining machines actually come from, how to tell a load-tested listing from an untested one, and what a fair price looks like before you buy.",
+    "keywords": [
+      "used bitcoin mining machines for sale",
+      "used bitcoin miner for sale",
+      "second hand bitcoin mining machine",
+      "buy used bitcoin miner",
+      "refurbished bitcoin mining machine"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "small-bitcoin-mining-machines-for-sale-compact-units-and-real-prices",
+    "title": "Small Bitcoin Mining Machines for Sale: Compact Units and Real Prices",
+    "metaTitle": "Small Bitcoin Mining Machines for Sale | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "What's actually available in the small/compact bitcoin miner category, realistic price bands by class, and how to avoid overpaying for a device that earns very little.",
+    "keywords": [
+      "small bitcoin mining machines for sale",
+      "small bitcoin miner for sale",
+      "compact bitcoin mining machine",
+      "mini bitcoin miner for sale",
+      "small asic miner price"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "bitcoin-mining-machines-for-sale-ebay-safety-checklist",
+    "title": "Bitcoin Mining Machines for Sale on eBay: Safety Checklist Before You Bid",
+    "metaTitle": "Bitcoin Miners for Sale on eBay: Safety Guide | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "How to buy a bitcoin mining machine on eBay without getting burned: seller checks, listing red flags, buyer protection limits, and what to do if a unit arrives dead.",
+    "keywords": [
+      "bitcoin mining machines for sale ebay",
+      "bitcoin miner ebay",
+      "asic miner ebay",
+      "buy bitcoin miner on ebay",
+      "ebay bitcoin mining machine scams"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitcoin-mining-machine-price-in-russia",
+    "title": "Bitcoin Mining Machine Price in Russia: Import Costs and What to Expect",
+    "metaTitle": "Bitcoin Mining Machine Price in Russia | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "What actually drives the price of a bitcoin mining machine landed in Russia — import duty, logistics routes and local demand — and how to budget for it realistically.",
+    "keywords": [
+      "bitcoin mining machine price in russia",
+      "bitcoin miner price russia",
+      "asic miner russia price",
+      "import bitcoin miner to russia",
+      "russia bitcoin mining hardware"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "what-is-a-crypto-mining-machine",
+    "title": "What Is a Crypto Mining Machine? How ASICs Actually Mine",
+    "metaTitle": "What Is a Crypto Mining Machine? | BMD Explains",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-15",
+    "description": "A plain explanation of what a crypto mining machine actually is, how an ASIC differs from a GPU rig, and what happens inside one every time it submits a share.",
+    "keywords": [
+      "crypto mining machine",
+      "what is a crypto mining machine",
+      "how does a crypto mining machine work",
+      "crypto mining hardware explained",
+      "crypto mining machine definition"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "bitcoin-miner-app-monitoring-and-management-software-compared",
+    "title": "Bitcoin Miner App: Monitoring and Management Software Compared",
+    "metaTitle": "Bitcoin Miner App: Monitoring Software Guide | BMD",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-15",
+    "description": "The apps and software that actually monitor and manage bitcoin ASIC miners — manufacturer tools, fleet-management platforms and mobile monitoring — and which one fits your setup.",
+    "keywords": [
+      "bitcoin miner app",
+      "bitcoin mining app",
+      "asic miner monitoring app",
+      "whatsminer tool app",
+      "bitcoin miner management software"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "100-th-s-bitcoin-miner-profitability-and-calculator",
+    "title": "100 TH/s Bitcoin Miner: Profitability and Calculator Walkthrough",
+    "metaTitle": "100 TH/s Bitcoin Miner Profitability | BMD",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-15",
+    "description": "What a 100 TH/s bitcoin miner actually earns at different power rates, how to run the calculation yourself, and which machines land near that hashrate today.",
+    "keywords": [
+      "100th s bitcoin miner calculator",
+      "100 th/s bitcoin miner profit",
+      "100 th/s profitability",
+      "100th bitcoin miner",
+      "100 terahash bitcoin miner"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "1-th-s-bitcoin-mining-calculator-how-the-math-works",
+    "title": "1 TH/s Bitcoin Mining Calculator: How the Math Actually Works",
+    "metaTitle": "1 TH/s Bitcoin Mining Calculator Explained | BMD",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-15",
+    "description": "How to calculate expected earnings at 1 TH/s of bitcoin hashrate, why the figure is so small relative to network difficulty, and what it's actually useful for.",
+    "keywords": [
+      "1 th/s bitcoin calculator",
+      "1 terahash bitcoin calculator",
+      "1 th/s mining profit",
+      "small hashrate bitcoin calculator",
+      "bitcoin mining calculator by hashrate"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "antminer-s19-price-usd-india-and-marketplace-listings",
+    "title": "Antminer S19 Price: USD, India and Marketplace Listings Compared",
+    "metaTitle": "Antminer S19 Price: USD, India, Amazon | BMD",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "How Antminer S19 pricing actually varies between USD list quotes, the Indian market and general marketplace listings like Amazon, and how to compare them fairly.",
+    "keywords": [
+      "antminer s19 price usd",
+      "antminer s19 price in india",
+      "antminer s19 price amazon",
+      "bitmain antminer s19 price",
+      "antminer s19 price today"
+    ],
+    "readMinutes": 7
+  },
+  {
+    "slug": "antminer-s19-profitability-in-2026",
+    "title": "Antminer S19 Profitability in 2026: Is the Base Model Still Worth It",
+    "metaTitle": "Antminer S19 Profitability in 2026 | BMD",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-09-15",
+    "description": "A blunt look at whether the base Antminer S19 (not Pro or XP) still earns in 2026: the efficiency reality, the power rate it needs, and better alternatives at the same price.",
+    "keywords": [
+      "antminer s19 profitability",
+      "antminer s19 profit",
+      "is antminer s19 profitable",
+      "antminer s19 roi",
+      "antminer s19 2026"
+    ],
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitmain-antminer-z15-pro-specs-price-and-profitability",
+    "title": "Bitmain Antminer Z15 Pro: Specs, Price and Equihash Profitability",
+    "metaTitle": "Antminer Z15 Pro Specs and Profitability | BMD",
+    "category": "Brand Reviews",
+    "categoryId": "brand",
+    "date": "2026-09-15",
+    "description": "A focused look at the Bitmain Antminer Z15 Pro on its own terms: Equihash specs to confirm, realistic pricing, and whether it's still worth buying against current alternatives.",
+    "keywords": [
+      "bitmain antminer z15 pro",
+      "antminer z15 pro price",
+      "antminer z15 pro specs",
+      "antminer z15 pro profitability",
+      "equihash asic miner"
+    ],
+    "readMinutes": 7
   }
 ];
 

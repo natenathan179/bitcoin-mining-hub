@@ -1032,5 +1032,98 @@ export const POSTS: BlogPost[] = [
       "condition": "Used"
     },
     "readMinutes": 9
+  },
+  {
+    "slug": "what-is-a-crypto-mining-machine",
+    "title": "What Is a Crypto Mining Machine? How ASICs Actually Mine",
+    "category": "Setup & Operations",
+    "categoryId": "setup",
+    "date": "2026-09-15",
+    "description": "A plain explanation of what a crypto mining machine actually is, how an ASIC differs from a GPU rig, and what happens inside one every time it submits a share.",
+    "keywords": [
+      "crypto mining machine",
+      "what is a crypto mining machine",
+      "how does a crypto mining machine work",
+      "crypto mining hardware explained",
+      "crypto mining machine definition"
+    ],
+    "intro": [
+      "A crypto mining machine is purpose-built computing hardware that repeatedly runs a cryptographic hashing function, trying different inputs until it finds one that satisfies the network's current difficulty target. For a small chance per attempt, that machine — or the pool it's part of — earns a block reward and transaction fees.",
+      "That description covers everything from a GPU rig to a dedicated ASIC, but the two are built very differently and suit different coins. This guide explains what's actually happening inside a crypto mining machine, and how to tell which type applies to a given coin and goal."
+    ],
+    "sections": [
+      {
+        "h2": "The Core Idea: Hashing, Not Calculating",
+        "paras": [
+          "Mining isn't solving a puzzle in the traditional sense — it's repeatedly hashing a block of transaction data combined with a changing number (the nonce) until the output happens to fall below a target value. There's no shortcut to guessing correctly faster than trying inputs at high speed.",
+          "Hashrate — hashes attempted per second — is the entire game. More hashrate means more attempts per second, which means a proportionally larger share of newly mined coins over time, split fairly across everyone contributing hashrate to the network."
+        ]
+      },
+      {
+        "h2": "ASIC vs GPU: Two Different Machines",
+        "paras": [
+          "An ASIC (application-specific integrated circuit) is silicon designed to do exactly one hashing algorithm, extremely fast and extremely efficiently, and nothing else — it can't be repurposed to mine a different algorithm or do general computing. A GPU is general-purpose hardware that can mine various algorithms (and play games, and render video) at far lower efficiency for any single one.",
+          "Bitcoin's SHA-256 algorithm has been dominated by ASICs for years; GPU mining survives on algorithms deliberately designed to resist ASIC dominance, or on coins too small to justify ASIC development."
+        ]
+      },
+      {
+        "h2": "What's Physically Inside an ASIC Miner",
+        "paras": [
+          "Strip one down and you find hashboards packed with hundreds of small hashing chips, a control board running the mining software and networking, a set of fans (or a water block on hydro models) for cooling, and a power supply converting wall AC into the low, high-current DC the chips need.",
+          "The control board is also what talks to your chosen mining pool over the internet, submitting completed hashes as 'shares' and receiving your portion of the block reward based on the pool's payout scheme."
+        ]
+      },
+      {
+        "h2": "Solo Mining vs Pool Mining",
+        "paras": [
+          "Solo mining means keeping 100% of a block reward on the rare chance your own machine finds a valid hash first — realistic only with enormous hashrate on a major coin, or as a long-shot hobby on a machine you don't need to earn steadily from.",
+          "Pool mining combines many machines' hashrate, splits found blocks proportionally among contributors, and turns mining into steady, small, frequent payouts instead of a rare lottery win. Nearly every serious operation mines through a pool."
+        ]
+      },
+      {
+        "h2": "What Actually Determines Profitability",
+        "paras": [
+          "Four things: the machine's hashrate, its power draw (together giving joules per terahash, the efficiency figure that matters most), your electricity rate, and network difficulty, which rises as more hashrate joins and quietly reduces any fixed machine's output over time.",
+          "Coin price matters too, but it's the one variable you can't control or predict — the other three are knowable in advance and worth optimising before you buy anything."
+        ]
+      },
+      {
+        "h2": "Choosing the Right Machine for a Goal",
+        "paras": [
+          "For bitcoin specifically, that means a SHA-256 ASIC — there is no competitive GPU alternative. For other coins, check whether an ASIC exists for that algorithm at all; if it does and you want steady returns, the ASIC almost always outperforms a GPU rig on efficiency.",
+          "Whatever the algorithm, the buying process is the same: confirm rated hashrate and watts, calculate efficiency yourself, and price the machine on delivered dollars per terahash (or the equivalent unit for that algorithm) before paying."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a crypto mining machine just a powerful computer?",
+        "a": "An ASIC is not a general computer at all — it's silicon built to do one hashing algorithm and nothing else. A GPU rig is general-purpose hardware repurposed for mining."
+      },
+      {
+        "q": "Why can't I mine bitcoin with a graphics card anymore?",
+        "a": "SHA-256 ASICs are so much more efficient than GPUs at that specific algorithm that GPU mining bitcoin has been uncompetitive for years."
+      },
+      {
+        "q": "What is a 'share' in mining?",
+        "a": "A valid hash your machine submits to a pool as proof of work performed, used to calculate your fair portion of any block reward the pool finds."
+      },
+      {
+        "q": "Does a bigger machine always mine faster in a way that matters?",
+        "a": "It contributes more hashrate, which proportionally increases your expected share of rewards — but network difficulty rises over time regardless of any one machine's size."
+      },
+      {
+        "q": "What's the one thing that determines profitability more than any other?",
+        "a": "Your electricity rate combined with the machine's efficiency (joules per terahash) — together they set your running cost, which is the number competing against revenue every single day."
+      }
+    ],
+    "match": {
+      "terms": [
+        "crypto mining machine",
+        "explainer",
+        "asic"
+      ]
+    },
+    "readMinutes": 7
   }
 ];

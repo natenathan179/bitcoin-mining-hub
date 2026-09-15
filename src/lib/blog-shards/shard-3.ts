@@ -1677,5 +1677,101 @@ export const POSTS: BlogPost[] = [
     ],
     "match": {},
     "readMinutes": 8
+  },
+  {
+    "slug": "buy-a-crypto-miner-safe-purchase-checklist",
+    "title": "Buy a Crypto Miner: Safe Purchase Checklist From Quote to Delivery",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "The transaction-level checklist for buying a crypto miner safely: quote, invoice, payment, shipping documentation and delivery — the steps that catch a bad supplier before money moves.",
+    "keywords": [
+      "buy crypto miner",
+      "buy a crypto miner",
+      "how to buy a crypto miner safely",
+      "crypto miner purchase checklist",
+      "crypto miner vendor vetting"
+    ],
+    "intro": [
+      "Choosing which crypto miner to buy is only half the decision — the other half is making sure the purchase itself goes cleanly, from first quote to the box arriving intact. Most disputes in this market are not about hardware quality; they're about a step in the transaction that was skipped or left verbal.",
+      "This checklist covers that transaction end to end: what a proper quote looks like, how to vet the seller before paying, and what documentation should accompany shipping so customs and warranty claims don't become separate headaches later."
+    ],
+    "sections": [
+      {
+        "h2": "What a Proper Quote Contains",
+        "paras": [
+          "A real quote names the exact model and hardware revision, condition grade, rated hashrate and wall watts, unit price, freight cost, and total delivered price. If any of those six items is missing, ask for it before proceeding — a vague quote is the easiest way to end up disputing a detail after payment.",
+          "Get the quote in writing, by email or a documented order system, not only in a chat message that can be edited or deleted later."
+        ]
+      },
+      {
+        "h2": "Vetting the Seller Before You Pay",
+        "paras": [
+          "Ask for a company name, registration and a physical address, and check that the domain, payment details and company name are consistent with each other. Mismatches — payment to a personal account for a company invoice, for example — are the most common tell of a shell operation.",
+          "A short technical question the seller should answer without hesitation also works well: firmware version shipped, PSU voltage range, or condition-grading method. Sellers who resell without understanding the product stumble here."
+        ]
+      },
+      {
+        "h2": "Payment: What's Normal and What Isn't",
+        "paras": [
+          "Bank transfer or card payment against a proper invoice is standard for established suppliers. Crypto payment is common in this industry too and not a red flag by itself — the red flag is crypto-only payment with no invoice and no way to dispute a charge afterwards.",
+          "Never wire full payment to an account name that doesn't match the company on the quote, and be cautious of last-minute changes to payment details sent by email, which is a common fraud pattern industry-wide."
+        ]
+      },
+      {
+        "h2": "Shipping Documentation That Protects You",
+        "paras": [
+          "Insist on a tracked shipment, a commercial invoice with accurate declared value, and — for international orders — the customs paperwork your country requires. Under-declared value can save a little on duty and cost you far more if the shipment is damaged or lost, since insurance and claims are based on the declared figure.",
+          "Confirm who is responsible for import duty and who handles a customs hold before the shipment leaves, not after it's stuck."
+        ]
+      },
+      {
+        "h2": "On Arrival: What to Check Immediately",
+        "paras": [
+          "Photograph the package before opening it, power the unit on the same day, and run it under load long enough to see stable hashrate and normal temperatures. Report any damage or discrepancy from the quote within the window your supplier's terms specify — most warranty terms have a short reporting window for shipping damage specifically.",
+          "Keep the invoice, tracking number and load-test screenshots together. If a warranty claim comes up later, that packet is what makes it fast."
+        ]
+      },
+      {
+        "h2": "How We Run This Process",
+        "paras": [
+          "Every quote we issue names model, condition grade, hashrate, watts and the full delivered price before payment. Machines are bench-tested pre-shipment, and every order ships from Hong Kong by air freight with tracking, a commercial invoice and complete customs documentation.",
+          "Our repair centre handles post-delivery hardware faults directly, so a claim doesn't become a multi-party argument between a marketplace, a manufacturer and a freight company."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What six items should every quote include?",
+        "a": "Exact model and revision, condition grade, rated hashrate, wall watts, unit price and total delivered price."
+      },
+      {
+        "q": "Is crypto payment for a miner a red flag?",
+        "a": "Not by itself — it's standard in this industry. The red flag is crypto-only payment with no invoice and no company details behind it."
+      },
+      {
+        "q": "Why does declared shipping value matter?",
+        "a": "Insurance and any damage or loss claim are based on the declared value, so under-declaring to save on duty can cost far more if something goes wrong in transit."
+      },
+      {
+        "q": "What should I do the day a miner arrives?",
+        "a": "Photograph the package, power it on, and run a load test long enough to confirm stable hashrate and normal temperatures before considering the delivery complete."
+      },
+      {
+        "q": "What's the fastest way to vet an unfamiliar seller?",
+        "a": "Confirm company registration and a physical address, and ask one specific technical question about the exact unit — hesitation or a generic answer is the tell."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT"
+      ],
+      "terms": [
+        "buy",
+        "crypto miner"
+      ]
+    },
+    "readMinutes": 7
   }
 ];

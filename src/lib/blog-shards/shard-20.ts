@@ -1034,5 +1034,194 @@ export const POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 7
+  },
+  {
+    "slug": "bitcoin-mining-machines-for-sale-ebay-safety-checklist",
+    "title": "Bitcoin Mining Machines for Sale on eBay: Safety Checklist Before You Bid",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "How to buy a bitcoin mining machine on eBay without getting burned: seller checks, listing red flags, buyer protection limits, and what to do if a unit arrives dead.",
+    "keywords": [
+      "bitcoin mining machines for sale ebay",
+      "bitcoin miner ebay",
+      "asic miner ebay",
+      "buy bitcoin miner on ebay",
+      "ebay bitcoin mining machine scams"
+    ],
+    "intro": [
+      "eBay carries a genuine supply of bitcoin mining machines — individual sellers clearing home setups, small resellers, and the occasional bulk lot — alongside listings that range from honestly described to actively misleading. The platform's buyer protection helps, but it has real limits with heavy, specialised electronics, so the vetting work still falls on you.",
+      "This guide is specific to eBay's mechanics: what its protection actually covers, the listing patterns that predict trouble, and the steps to take the moment a unit arrives so you're not arguing from a weak position if something's wrong."
+    ],
+    "sections": [
+      {
+        "h2": "What eBay Buyer Protection Actually Covers",
+        "paras": [
+          "Money Back Guarantee generally covers items that never arrive or that are significantly not as described, provided you open a case within the platform's return window and can document the discrepancy. It does not extend a manufacturer warranty, and it does not help once that window has closed.",
+          "Read the listing's stated return policy before bidding — 'no returns' listings still fall under Money Back Guarantee for not-as-described claims in most cases, but a 'as-is, tested working' listing narrows what counts as a valid claim considerably."
+        ]
+      },
+      {
+        "h2": "Seller Signals Worth Checking",
+        "paras": [
+          "Look at feedback specific to mining hardware sales, not just overall feedback percentage — a seller with thousands of positive reviews for unrelated items and one recent, disputed mining sale is a different risk than one with a consistent hardware-selling history.",
+          "Favor sellers who show current photos of the actual unit including the label and serial number, state condition with specifics rather than 'works great,' and answer pre-sale questions about hashrate and testing promptly and specifically."
+        ]
+      },
+      {
+        "h2": "Listing Red Flags Specific to eBay",
+        "paras": [
+          "Stock photos instead of the actual unit, a description that doesn't match the title's model number, prices dramatically below comparable completed listings, and 'buy it now' urgency language paired with no returns accepted. Any one alone isn't disqualifying; two or more together usually is.",
+          "Check completed and sold listings for the same model to build a realistic price expectation before bidding — auction excitement pushes some listings well above fair value, and a suspiciously low 'buy it now' price is often exactly that."
+        ]
+      },
+      {
+        "h2": "Shipping Damage Is the Most Common Real Problem",
+        "paras": [
+          "Mining ASICs are heavy and full of delicate hashboards; poor packaging causes genuine, honest damage even from well-meaning sellers. Ask about packaging method before bidding on anything without a tracking number and declared value that matches the sale price.",
+          "If a package arrives visibly damaged, photograph it before opening and document the unpacking — that record is exactly what a Money Back Guarantee or shipping claim will ask for."
+        ]
+      },
+      {
+        "h2": "The Moment It Arrives",
+        "paras": [
+          "Power it on the same day and run a load test before the platform's return window gets close to closing — waiting weeks to test a used ASIC and then discovering a problem is a much weaker position than testing immediately.",
+          "If hashboards are missing from the status page, temperatures are abnormal, or hashrate is well below what was described, open a case promptly with your test evidence rather than trying to resolve it entirely through direct messages first."
+        ]
+      },
+      {
+        "h2": "A Steadier Alternative",
+        "paras": [
+          "If the vetting above sounds like more diligence than you want to do per purchase, buying from a dedicated supplier trades a lower theoretical price for a bench-tested unit, a stated condition grade, and a warranty that doesn't depend on a marketplace dispute process.",
+          "We bench-test and condition-grade every machine before it ships and back it with a written warranty, quoting delivered prices from Hong Kong with full customs paperwork — the diligence happens before the listing exists rather than after you've already paid."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does eBay's Money Back Guarantee cover a dead miner?",
+        "a": "Often yes, if you open a case within the return window and can show the unit was significantly not as described. It doesn't extend a manufacturer warranty beyond that window."
+      },
+      {
+        "q": "What's the biggest eBay-specific red flag for mining hardware?",
+        "a": "Stock photos instead of the actual unit, combined with a 'no returns' policy and a price well below completed listings for the same model."
+      },
+      {
+        "q": "Should I trust a seller's overall feedback percentage?",
+        "a": "Check feedback specific to mining hardware sales, not just the overall percentage — high general feedback can mask a thin or troubled hardware-selling history."
+      },
+      {
+        "q": "How fast should I test a miner bought on eBay?",
+        "a": "The same day it arrives. Testing well within the return window gives you a much stronger position if something is wrong."
+      },
+      {
+        "q": "Is a dedicated supplier ever the better choice over eBay?",
+        "a": "If you'd rather not do per-listing diligence, yes — a supplier that bench-tests and grades before shipping shifts that work off you at a somewhat higher price."
+      }
+    ],
+    "match": {
+      "terms": [
+        "ebay",
+        "bitcoin miner",
+        "marketplace safety"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "antminer-s19-profitability-in-2026",
+    "title": "Antminer S19 Profitability in 2026: Is the Base Model Still Worth It",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-09-15",
+    "description": "A blunt look at whether the base Antminer S19 (not Pro or XP) still earns in 2026: the efficiency reality, the power rate it needs, and better alternatives at the same price.",
+    "keywords": [
+      "antminer s19 profitability",
+      "antminer s19 profit",
+      "is antminer s19 profitable",
+      "antminer s19 roi",
+      "antminer s19 2026"
+    ],
+    "intro": [
+      "The original Antminer S19 — not the Pro, XP or Hydro variants — is now several generations behind current flagship hardware, and thousands of units are still circulating on the used market at tempting prices. Whether one is worth buying in 2026 comes down entirely to efficiency versus your power rate, the same arithmetic that governs every older ASIC.",
+      "This guide gives a direct answer rather than a hedge: the power rate the base S19 needs to still make sense, what a fair used price looks like today, and when a newer used unit at a similar budget is simply the better purchase."
+    ],
+    "sections": [
+      {
+        "h2": "The Base S19 vs Its Later Variants",
+        "paras": [
+          "The base S19 sits below the Pro, XP and Hydro variants on both hashrate and efficiency — it was the entry point of its generation, not the flagship even at launch. Confirm exactly which variant a listing describes, since 'S19' alone is sometimes used loosely to describe any machine in the family.",
+          "That distinction matters directly for profitability: the base model's higher joules per terahash means its break-even power rate is lower than its own siblings, let alone current-generation hardware."
+        ]
+      },
+      {
+        "h2": "The Efficiency Reality in Plain Terms",
+        "paras": [
+          "Every generation since launch has improved joules per terahash meaningfully, which means the base S19 now costs several times more in electricity per unit of bitcoin earned than current flagship hardware. No firmware tweak changes that generational gap.",
+          "This isn't a reason to dismiss the machine outright — it's a reason to be precise about the power rate at which it still clears a profit, rather than assuming a low purchase price automatically means a good deal."
+        ]
+      },
+      {
+        "h2": "The Power Rate That Makes It Viable",
+        "paras": [
+          "Calculate your delivered rate from an actual bill. In the low single-digit cents per kilowatt-hour, a base S19 can still turn a reasonable margin; in the mid-single digits it gets thin; above roughly six to eight cents it typically struggles against ongoing difficulty growth.",
+          "Free, curtailed or otherwise-wasted power changes the picture entirely, since the capital cost of an old machine is low and the electricity has little alternative value — that is where base S19 units genuinely still belong."
+        ]
+      },
+      {
+        "h2": "What a Fair 2026 Price Looks Like",
+        "paras": [
+          "Price it on delivered dollars per terahash and then discount meaningfully against current hardware to compensate for the efficiency gap — a base S19 needs to be considerably cheaper per terahash than a current flagship to make sense at all, not merely somewhat cheaper.",
+          "Budget for likely repairs on a machine this age: fans, thermal paste, and possibly a hashboard, plus freight, which can be a real fraction of the purchase price on lower-value used hardware."
+        ]
+      },
+      {
+        "h2": "Testing a Used Unit Before Buying",
+        "paras": [
+          "Insist on a load test of at least two hours: all hashboards online, hashrate within a few percent of rated, and temperatures in a normal range. Watch for hashrate that starts near-rated and sags as the case warms — a common tell on older, heavily-used hardware.",
+          "Given the age of these units, a documented test matters more than for newer hardware, since the range of real-world condition among surviving base S19 units is wide."
+        ]
+      },
+      {
+        "h2": "Better Alternatives at the Same Budget",
+        "paras": [
+          "At most budgets where a base S19 looks attractive, a somewhat newer used unit — even at a modestly higher price — often returns capital faster once the lower running cost is factored in over the machine's remaining useful life. Run both scenarios at your real power rate before deciding.",
+          "If the appeal is simply a very low entry price to learn the operational side, that's a legitimate reason to buy one; if the goal is genuine returns, put the same budget toward efficiency instead. Every unit we sell is tested and condition-graded so you can compare options like for like."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is the Antminer S19 (base model) still profitable in 2026?",
+        "a": "Only at fairly low power rates — roughly low single-digit cents per kilowatt-hour — or with free or curtailed power. At typical residential rates it's usually thin to unprofitable against current difficulty."
+      },
+      {
+        "q": "How is the base S19 different from the S19 Pro or XP?",
+        "a": "Lower hashrate and worse efficiency — it was the entry point of the generation, not the flagship, so its break-even power rate is higher than its own siblings."
+      },
+      {
+        "q": "What should I pay for a used base S19 today?",
+        "a": "Price it on delivered dollars per terahash and discount meaningfully against current hardware to reflect its efficiency gap — not just a modest markdown from new pricing."
+      },
+      {
+        "q": "Is it worth buying just to learn on?",
+        "a": "Yes, at a low enough price — the low entry cost is a reasonable trade for learning firmware, pools and monitoring, separate from any income expectation."
+      },
+      {
+        "q": "Should I buy a base S19 or spend slightly more on newer hardware?",
+        "a": "Run the payback math on both at your real power rate. A somewhat newer used unit often returns capital faster once lower running cost is included."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain"
+      ],
+      "condition": "used",
+      "terms": [
+        "antminer s19",
+        "profitability"
+      ]
+    },
+    "readMinutes": 8
   }
 ];

@@ -910,5 +910,197 @@ export const POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 5
+  },
+  {
+    "slug": "buy-a-bitcoin-miner-what-to-verify-before-you-pay",
+    "title": "Buy a Bitcoin Miner: What to Verify Before You Pay",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "A practical checklist for anyone about to buy a bitcoin miner: which numbers to confirm, how to price it fairly, and the seller behaviour that should make you walk away.",
+    "keywords": [
+      "buy bitcoin miner",
+      "buy a bitcoin miner",
+      "bitcoin miner buying guide",
+      "how to buy a bitcoin miner",
+      "bitcoin asic buying guide"
+    ],
+    "intro": [
+      "Buying a bitcoin miner is a bigger commitment than most electronics purchases: the hardware is specialised, the resale market is thin, and a wrong call on power or cooling turns an asset into a very expensive space heater. Most of the risk sits in a handful of numbers and a handful of seller behaviours, and both are checkable in minutes if you know what to ask.",
+      "This guide is written for the buyer who has decided to purchase a SHA-256 bitcoin ASIC and wants a straightforward process, not a hardware encyclopedia. It covers what to confirm before paying, how to judge a price, and what separates a supplier worth trusting from one to avoid."
+    ],
+    "sections": [
+      {
+        "h2": "The Four Numbers That Actually Matter",
+        "paras": [
+          "Rated hashrate in terahash, wall power in watts, the resulting joules per terahash, and the price delivered to your door. Everything else — brand loyalty, marketing language, box art — is noise next to those four figures, because they are what decide whether the machine earns more than it costs to run.",
+          "Ask the seller to state all four in writing before you pay, and calculate joules per terahash yourself from the other two rather than trusting a headline efficiency number. Sellers occasionally quote the efficiency of a different firmware mode than the one the machine ships in."
+        ]
+      },
+      {
+        "h2": "New, Used or Refurbished: Pick the Right Lane First",
+        "paras": [
+          "New hardware costs the most per terahash but carries a full warranty and a known history. Used hardware costs less but needs a load test and an honest look at wear. Refurbished sits between the two if — and only if — the refurbishment included component-level repair and a documented test, not just a wipe and a reboot.",
+          "Decide which lane you are shopping in before you start comparing listings across lanes. A used price next to a new price looks like a bargain until you account for the missing warranty and unknown run history."
+        ]
+      },
+      {
+        "h2": "Pricing It Fairly",
+        "paras": [
+          "Convert every listing to a delivered dollars-per-terahash figure, including freight and any duty, before comparing across sellers or models. A machine that looks cheaper on the sticker price can lose to a competitor once shipping and customs are added.",
+          "Then sanity-check against current-generation efficiency. If a deal is priced well below what its efficiency and condition would justify, that is a reason to ask more questions, not a reason to move faster."
+        ]
+      },
+      {
+        "h2": "Power and Site Reality Check",
+        "paras": [
+          "Confirm your circuit before you confirm the order. Full-size bitcoin ASICs need a dedicated 200-240 volt circuit with headroom for continuous load; nothing about a good price changes that requirement.",
+          "Also plan for noise and heat honestly. Air-cooled units run in the 70-plus decibel range and dump their full power draw as heat into the room — a garage, outbuilding or hosted rack, not a bedroom closet."
+        ]
+      },
+      {
+        "h2": "Questions That Separate Good Sellers From Bad Ones",
+        "paras": [
+          "Ask for a company name and registration, a load-test result with hashboards online and temperatures shown, and a written warranty covering a defined period with a clear return-freight policy. A supplier with nothing to hide answers all three without hesitation.",
+          "Be wary of pressure to pay immediately, crypto-only payment with no invoice, and prices that undercut the entire market by a wide margin. Those three signals cluster together far more often than chance would suggest."
+        ]
+      },
+      {
+        "h2": "How We Handle the Purchase",
+        "paras": [
+          "Every machine we sell is bench-tested and condition-graded before it ships, with the test result behind the grade rather than a marketing label. We quote delivered prices from our Hong Kong warehouse by air freight, with a commercial invoice and full customs paperwork included.",
+          "If something goes wrong after delivery, our repair centre handles hashboard, control board and PSU faults directly rather than routing you to a third party — which is worth asking any supplier whether they can say the same."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the single most important number when buying a bitcoin miner?",
+        "a": "Joules per terahash, calculated yourself from wall watts divided by rated hashrate. It determines your running cost for as long as you own the machine."
+      },
+      {
+        "q": "Should I buy new or used for my first miner?",
+        "a": "New if you want a full warranty and no unknowns. Used if you are comfortable running a load test and want a lower entry price with a shorter or no warranty."
+      },
+      {
+        "q": "What price should raise a red flag?",
+        "a": "Any price well below the market average for the same model and condition, especially paired with pressure to pay immediately or crypto-only payment with no invoice."
+      },
+      {
+        "q": "Can I run a bitcoin miner on a normal household outlet?",
+        "a": "Only very low-power desktop-class units. Full-size ASICs need a dedicated 200-240 volt circuit."
+      },
+      {
+        "q": "What should a warranty actually cover?",
+        "a": "A defined period, a clear statement of what counts as a defect, and who pays return freight. Get it in writing before you pay, not after."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT"
+      ],
+      "terms": [
+        "buy",
+        "bitcoin miner"
+      ]
+    },
+    "readMinutes": 7
+  },
+  {
+    "slug": "used-bitcoin-mining-machines-for-sale-where-to-buy-tested-units",
+    "title": "Used Bitcoin Mining Machines for Sale: Where to Buy Tested Units",
+    "category": "Used ASIC Miners",
+    "categoryId": "used",
+    "date": "2026-09-15",
+    "description": "Where used bitcoin mining machines actually come from, how to tell a load-tested listing from an untested one, and what a fair price looks like before you buy.",
+    "keywords": [
+      "used bitcoin mining machines for sale",
+      "used bitcoin miner for sale",
+      "second hand bitcoin mining machine",
+      "buy used bitcoin miner",
+      "refurbished bitcoin mining machine"
+    ],
+    "intro": [
+      "The used market for bitcoin mining machines is large, constantly turning over as farms upgrade generations, and genuinely useful if you buy carefully. It is also where the widest range of condition and honesty exists, from properly tested fleet retirements to barely-functional units sold as 'for parts' with the caveat left out of the headline.",
+      "This guide focuses on sourcing: where used units legitimately come from, how to tell a tested listing from a hopeful one, and what separates a fair price from a trap."
+    ],
+    "sections": [
+      {
+        "h2": "Where Used Units Actually Come From",
+        "paras": [
+          "Most legitimate used inventory comes from three places: operators upgrading to a newer generation and liquidating the old fleet, hosting facilities clearing space, and resellers who buy in bulk from those liquidations and test before reselling individually. Each source has a different risk profile.",
+          "Direct-from-farm liquidations are often the best value but the least tested — you may be buying at pallet scale with limited per-unit verification. A reseller who has already load-tested and graded individually costs more per unit but shifts the verification burden onto them."
+        ]
+      },
+      {
+        "h2": "Reading a Listing Correctly",
+        "paras": [
+          "A trustworthy listing states condition grade with a definition behind it, shows a load-test result — hashrate, hashboards online, temperatures — and discloses any repairs. A listing that only says 'works great' with no test evidence is not disqualifying by itself, but it should lower your offer and raise your questions.",
+          "Photos matter: ask for current photos of the actual unit, not stock images, including the label and the inside of the case if possible. Dust, corrosion and mismatched fans tell you more than any description."
+        ]
+      },
+      {
+        "h2": "What a Fair Price Looks Like",
+        "paras": [
+          "Price used hardware on delivered dollars per terahash, discounted from new-unit pricing by a margin that reflects both the missing warranty and the model's remaining competitive life. An efficient, recent-generation used unit might only need a modest discount; an old, inefficient one needs a steep one to make sense at all.",
+          "Budget separately for likely repairs — fans, thermal paste, occasionally a hashboard — especially on units with unknown run history. On lower-value machines, factor shipping into the comparison too, since freight can be a meaningful fraction of the price."
+        ]
+      },
+      {
+        "h2": "Testing Before You Commit",
+        "paras": [
+          "Whenever possible, insist on a load test of at least an hour with all hashboards reporting, hashrate within a few percent of rated, and temperatures in a normal range — not just a power-on screenshot, which proves nothing beyond the machine turning on.",
+          "For remote purchases where you can't test yourself, ask the seller to run and video the test, and check the timestamp and machine details in that video against the listing."
+        ]
+      },
+      {
+        "h2": "Warranty and Return Expectations on Used Stock",
+        "paras": [
+          "Set expectations before paying: many used sales carry a short goodwill window rather than a full warranty, and some carry none at all. Whatever the seller offers, get it in writing, including who pays return freight if the unit fails to perform as described on arrival.",
+          "A seller who refuses any post-sale accountability at all is telling you something about the confidence they have in their own testing."
+        ]
+      },
+      {
+        "h2": "Our Approach to Used Inventory",
+        "paras": [
+          "Every used unit we sell is bench-tested and assigned a condition grade based on that test, not on age or appearance alone, and we state plainly what each grade means. Delivered pricing from our Hong Kong warehouse includes freight and customs paperwork, so the number you're quoted is the number you pay.",
+          "If a used unit develops a fault after arrival, our repair centre handles hashboard, control board and PSU issues directly, which is the follow-through that separates a used purchase from a gamble."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Where do the best-value used bitcoin miners come from?",
+        "a": "Fleet liquidations from operators upgrading generations, sold either directly or through a reseller who has load-tested and graded them individually."
+      },
+      {
+        "q": "What test evidence should a used listing show?",
+        "a": "A load test of at least an hour showing all hashboards online, hashrate near rated, and normal temperatures — not just a power-on screenshot."
+      },
+      {
+        "q": "How much should I discount a used price versus new?",
+        "a": "Enough to cover the missing warranty and the model's remaining competitive efficiency. Recent-generation units need a smaller discount than old, inefficient ones."
+      },
+      {
+        "q": "Is buying 'for parts' inventory ever a good idea?",
+        "a": "Only at a price that reflects zero working guarantee — treat it as a source of spare hashboards or fans, not as a working miner."
+      },
+      {
+        "q": "What warranty should I expect on a used unit?",
+        "a": "Often a short goodwill window rather than a full warranty, sometimes none. Get whatever is offered in writing before paying."
+      }
+    ],
+    "match": {
+      "brands": [
+        "Bitmain",
+        "MicroBT"
+      ],
+      "condition": "used",
+      "terms": [
+        "used bitcoin miner"
+      ]
+    },
+    "readMinutes": 8
   }
 ];

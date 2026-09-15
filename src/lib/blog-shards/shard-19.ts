@@ -1190,5 +1190,98 @@ export const POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 8
+  },
+  {
+    "slug": "100-th-s-bitcoin-miner-profitability-and-calculator",
+    "title": "100 TH/s Bitcoin Miner: Profitability and Calculator Walkthrough",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-15",
+    "description": "What a 100 TH/s bitcoin miner actually earns at different power rates, how to run the calculation yourself, and which machines land near that hashrate today.",
+    "keywords": [
+      "100th s bitcoin miner calculator",
+      "100 th/s bitcoin miner profit",
+      "100 th/s profitability",
+      "100th bitcoin miner",
+      "100 terahash bitcoin miner"
+    ],
+    "intro": [
+      "One hundred terahash per second is a convenient round number for thinking about bitcoin mining economics — small enough to be a single machine or a small home setup, large enough that the numbers scale cleanly to bigger builds. Whether it's profitable depends almost entirely on efficiency and your power rate, not on the hashrate figure itself.",
+      "This guide shows the calculation step by step for a 100 TH/s machine, points out where current hardware actually sits relative to that figure, and flags the inputs that change the answer the most."
+    ],
+    "sections": [
+      {
+        "h2": "Where 100 TH/s Sits in the Current Market",
+        "paras": [
+          "Some efficient current and recent-generation air units land close to 100 TH/s individually, while others need to be compared per-terahash against a 100 TH/s benchmark to judge relative efficiency. Treat 100 TH/s as a reference point for the math below rather than a specific model to shop for.",
+          "Whatever specific unit you're evaluating, the calculation is identical: take its actual rated hashrate and wall watts and scale the example below accordingly."
+        ]
+      },
+      {
+        "h2": "Step One: Wall Power and Efficiency",
+        "paras": [
+          "Get the machine's wall watts at 100 TH/s from the manufacturer spec or, better, a measured figure at the plug. Divide watts by 100 to get joules per terahash — the single number that determines running cost per unit of hashrate for the life of the machine.",
+          "Current-generation hardware at this hashrate class generally lands in an efficient band; older or lower-tier hardware at the same hashrate draws meaningfully more power for the same output, so don't assume two 100 TH/s-class machines cost the same to run."
+        ]
+      },
+      {
+        "h2": "Step Two: Daily Power Cost",
+        "paras": [
+          "Daily power cost is watts ÷ 1000 × 24 × your rate per kilowatt-hour. At 100 TH/s efficiency levels typical of recent hardware, this generally lands in a modest daily range at low power rates and climbs meaningfully as your rate rises — run your own machine's watts through the formula rather than relying on someone else's example.",
+          "This is the cost side of the ledger and the one entirely within your control once you've chosen a machine and a power source."
+        ]
+      },
+      {
+        "h2": "Step Three: Daily Revenue and Net",
+        "paras": [
+          "Feed your 100 TH/s figure into a mining calculator alongside current network difficulty and bitcoin price to get expected daily revenue, then subtract the daily power cost above and pool fees (roughly one to two percent) to get daily net.",
+          "Because difficulty and price both move, re-run this weekly rather than treating one calculation as permanent — a 100 TH/s machine's daily net can shift meaningfully over just a few weeks as difficulty climbs."
+        ]
+      },
+      {
+        "h2": "How Sensitive the Result Is to Power Rate",
+        "paras": [
+          "Run the same 100 TH/s efficiency figure at four cents, eight cents and twelve cents per kilowatt-hour and compare the daily net at each. For most current hardware at this scale, the swing between those three rates is large enough to be the difference between comfortably profitable and barely breaking even.",
+          "This is the single most useful exercise before buying: know your actual delivered rate, then know exactly where that rate lands you on the profitability curve for the specific machine you're considering."
+        ]
+      },
+      {
+        "h2": "Scaling the Math Beyond One Machine",
+        "paras": [
+          "Multiply daily net by the number of machines for a fleet-level figure, but also multiply the electrical and cooling requirements — a stack of 100 TH/s-class units adds up to real kilowatts and real heat surprisingly fast, and the infrastructure has to keep pace with the hashrate.",
+          "Price any candidate machine on delivered dollars per terahash before buying at scale, since freight and duty meaningfully change the comparison once you're ordering more than one or two units."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a 100 TH/s bitcoin miner profitable?",
+        "a": "It depends on the specific machine's efficiency and your power rate — run watts ÷ 1000 × 24 × your rate for daily cost, then compare against a mining calculator's revenue estimate for your hashrate."
+      },
+      {
+        "q": "What's the formula for daily power cost?",
+        "a": "Wall watts ÷ 1000 × 24 × your electricity rate per kilowatt-hour. Everything else in the profitability calculation builds on that figure."
+      },
+      {
+        "q": "Why do two 100 TH/s machines cost different amounts to run?",
+        "a": "Because efficiency (joules per terahash) varies by generation and model even at the same hashrate — check wall watts, not just the terahash figure."
+      },
+      {
+        "q": "How often should I re-run the calculation?",
+        "a": "Weekly, since network difficulty and bitcoin price both move and change the revenue side of the equation."
+      },
+      {
+        "q": "What power rate makes 100 TH/s-class hardware clearly profitable?",
+        "a": "Generally the lower end of typical residential rates — run your specific machine's numbers at your actual rate rather than relying on a generic threshold."
+      }
+    ],
+    "match": {
+      "terms": [
+        "100 th/s",
+        "profitability",
+        "calculator"
+      ]
+    },
+    "readMinutes": 8
   }
 ];

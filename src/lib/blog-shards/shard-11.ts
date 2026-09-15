@@ -1625,5 +1625,191 @@ export const POSTS: BlogPost[] = [
       ]
     },
     "readMinutes": 8
+  },
+  {
+    "slug": "bitcoin-mining-machine-profit-calculator-per-day-and-per-month",
+    "title": "Bitcoin Mining Machine Profit Calculator: Per Day and Per Month",
+    "category": "Profitability",
+    "categoryId": "profit",
+    "date": "2026-09-15",
+    "description": "How to calculate a bitcoin mining machine's profit per day and per month from its own specs and your power rate, with a worked example and the inputs people forget.",
+    "keywords": [
+      "bitcoin mining machine profit per day",
+      "bitcoin mining machine profit per month",
+      "bitcoin mining per day calculator",
+      "bitcoin miner daily profit",
+      "bitcoin miner monthly profit"
+    ],
+    "intro": [
+      "Daily and monthly profit figures for a bitcoin mining machine are quoted everywhere, but most of them are stale the moment network difficulty moves or your power rate changes. The number itself is easy to calculate — the discipline is recalculating it with fresh inputs instead of trusting a screenshot from three months ago.",
+      "This guide walks through the calculation from scratch: what inputs you need, how daily and monthly figures relate, and the costs people forget that turn a headline 'profit' figure into a much smaller real one."
+    ],
+    "sections": [
+      {
+        "h2": "The Inputs You Actually Need",
+        "paras": [
+          "Four numbers drive the calculation: your machine's hashrate in terahash, its wall power in watts, current network difficulty (or a mining calculator that already factors it in), and your delivered electricity rate in dollars per kilowatt-hour. Bitcoin's price is the fifth input, and the most volatile one.",
+          "Pull your power rate from an actual bill — total cost divided by kilowatt-hours used — rather than a headline tariff, since delivery charges and taxes are often left out of the advertised rate."
+        ]
+      },
+      {
+        "h2": "From Hashrate to Daily Revenue",
+        "paras": [
+          "A mining calculator converts your hashrate and current difficulty into an expected daily coin output, which multiplied by the current bitcoin price gives daily gross revenue. Because difficulty and price both move, treat any daily figure as a snapshot valid for perhaps a week, not a permanent number.",
+          "Recompute weekly if you're tracking performance closely, and always use a calculator that lets you input your own hashrate and power figures rather than one that only shows generic 'per terahash' averages."
+        ]
+      },
+      {
+        "h2": "Turning Daily Cost Into Monthly Cost",
+        "paras": [
+          "Daily power cost is wall watts divided by 1000, multiplied by 24 hours, multiplied by your rate per kilowatt-hour. Multiply that daily figure by roughly 30.4 (the average days per month) rather than a flat 30, or your monthly cost estimate will drift low over a year.",
+          "Do the same multiplication on the revenue side using your daily revenue figure, and subtract cost from revenue to get monthly net — not the other way around, since rounding errors compound less when you net at the end."
+        ]
+      },
+      {
+        "h2": "Costs the Headline Number Leaves Out",
+        "paras": [
+          "Pool fees typically run one to two percent of revenue. Add proportional cooling or fan replacement cost over the machine's life, and if you're hosting, the facility's per-kilowatt-hour or per-machine fee on top of the raw power cost.",
+          "None of these individually looks large, but stacked together they can turn a machine that looks profitable on a bare hashrate calculator into one that barely breaks even in practice."
+        ]
+      },
+      {
+        "h2": "A Worked Example",
+        "paras": [
+          "Take a machine rated at a given terahash and wall watts, plug both into a calculator alongside current difficulty and price to get daily gross revenue, then subtract daily power cost (watts ÷ 1000 × 24 × your rate) and pool fees to get daily net. Multiply that daily net by 30.4 for a monthly figure.",
+          "Re-run the same machine's numbers at a power rate two cents higher and two cents lower to see how sensitive the monthly result is — for most current hardware, a swing of a few cents per kilowatt-hour changes the monthly outcome more than most people expect."
+        ]
+      },
+      {
+        "h2": "Keep the Calculation Current",
+        "paras": [
+          "Network difficulty rises over time as more hashrate joins the network, which quietly erodes a fixed machine's output even if price and your costs stay flat. Revisit the calculation monthly, not just at purchase time, so you catch the trend before it surprises you.",
+          "If you're comparing machines before buying, run every candidate through the same calculation at the same assumed price and difficulty — that is the only fair way to rank them on expected profit rather than on marketing efficiency claims."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What's the fastest way to estimate daily profit?",
+        "a": "Use a mining calculator with your exact hashrate and wall watts as inputs, then subtract daily power cost (watts ÷ 1000 × 24 × your rate) and pool fees from the revenue it shows."
+      },
+      {
+        "q": "Why does my monthly estimate keep drifting from reality?",
+        "a": "Usually because it was calculated once at purchase and never updated for difficulty growth, which reduces output for a fixed machine month over month."
+      },
+      {
+        "q": "Should I use 30 or 30.4 days for a monthly estimate?",
+        "a": "Use 30.4, the average days per month — using a flat 30 understates monthly figures by roughly one percent, which compounds when comparing across a year."
+      },
+      {
+        "q": "Do pool fees matter enough to include?",
+        "a": "Yes. At one to two percent of revenue they're small individually but worth including for an accurate net figure, especially when comparing machines closely matched on efficiency."
+      },
+      {
+        "q": "What single input most changes the profit figure?",
+        "a": "Your delivered power rate. A swing of just a few cents per kilowatt-hour typically moves the monthly result more than any other single variable."
+      }
+    ],
+    "match": {
+      "terms": [
+        "profit calculator",
+        "per day",
+        "per month"
+      ]
+    },
+    "readMinutes": 8
+  },
+  {
+    "slug": "bitcoin-mining-machine-price-in-russia",
+    "title": "Bitcoin Mining Machine Price in Russia: Import Costs and What to Expect",
+    "category": "Buying Guides",
+    "categoryId": "buy",
+    "date": "2026-09-15",
+    "description": "What actually drives the price of a bitcoin mining machine landed in Russia — import duty, logistics routes and local demand — and how to budget for it realistically.",
+    "keywords": [
+      "bitcoin mining machine price in russia",
+      "bitcoin miner price russia",
+      "asic miner russia price",
+      "import bitcoin miner to russia",
+      "russia bitcoin mining hardware"
+    ],
+    "intro": [
+      "The price tag on a bitcoin mining machine landing in Russia is rarely just the manufacturer's list price converted to rubles. Import logistics, customs duty, currency movement and strong local demand for hosting-friendly regions with cheap power all add layers that a simple currency conversion misses.",
+      "This guide focuses on those layers specifically: what actually drives the landed cost, how to budget for it honestly, and what to verify with any supplier quoting a price into Russia."
+    ],
+    "sections": [
+      {
+        "h2": "Why List Price and Landed Price Diverge",
+        "paras": [
+          "Manufacturer or exporter list prices are typically quoted before freight, insurance, import duty and any domestic delivery within Russia. Add those together and the landed price is routinely well above the number first seen on a global price list.",
+          "Currency movement between the ruble and the dollar or yuan adds another layer of variance — a price that looked competitive when quoted can look different by the time payment and shipping actually happen, especially on larger orders with longer lead times."
+        ]
+      },
+      {
+        "h2": "Logistics Routes and Why They Matter",
+        "paras": [
+          "Freight routing into Russia has shifted over recent years, with some historically common paths less available and alternative routes — often through neighbouring countries — taking their place, generally at a higher cost and longer transit time than a direct route would be.",
+          "Ask any supplier quoting delivery into Russia exactly which route and carrier they use, and get a realistic transit-time estimate rather than a best-case one. Route reliability affects total landed cost as much as the freight rate itself."
+        ]
+      },
+      {
+        "h2": "Customs Duty and Documentation",
+        "paras": [
+          "Import duty and any applicable taxes are calculated against the declared value on the customs paperwork, so an accurately declared shipment avoids both under-declaration risk and unpleasant surprises at the border. Confirm who is responsible for duty — buyer or seller — before the shipment leaves.",
+          "Keep every document — commercial invoice, packing list, tracking — together, since customs delays are far easier to resolve with complete paperwork in hand than after the fact."
+        ]
+      },
+      {
+        "h2": "Why Demand in Russia Affects Price",
+        "paras": [
+          "Regions with low-cost electricity and cool climates have attracted meaningful mining and hosting demand, and that demand shows up in local pricing for hardware, not just in hosting rates. When local demand is strong, landed prices can sit above what the same freight-and-duty math alone would predict.",
+          "Comparing multiple supplier quotes rather than accepting the first one is worth more effort here than in markets with thinner local demand."
+        ]
+      },
+      {
+        "h2": "Budgeting the Total Honestly",
+        "paras": [
+          "Build your budget from unit price, freight, insurance, duty and any domestic delivery, then add a currency-movement buffer if payment and delivery are separated by weeks. Treat the resulting number, not the manufacturer's list price, as the figure that decides whether a purchase makes financial sense.",
+          "Run the payback math with that full landed cost against your actual power rate — a machine that looks profitable at list price can look very different once every layer above is included."
+        ]
+      },
+      {
+        "h2": "What to Ask Any Supplier Quoting Into Russia",
+        "paras": [
+          "Ask for the full landed price broken into unit cost, freight, insurance and duty, the specific route and carrier, an honest transit-time estimate, and who bears responsibility if the shipment is delayed or damaged in transit.",
+          "We quote delivered prices from Hong Kong with full customs documentation and are direct about realistic transit times and route options for orders into Russia — ask for a specific quote rather than assuming a global list price applies."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why is the landed price in Russia higher than the list price?",
+        "a": "Freight, insurance, import duty, domestic delivery and currency movement all sit on top of the manufacturer's list price, and together they're often a large fraction of the total."
+      },
+      {
+        "q": "Has shipping into Russia gotten harder?",
+        "a": "Some historically common freight routes are less available than before, with alternative routes generally costing more and taking longer. Confirm the specific route with your supplier."
+      },
+      {
+        "q": "Who should pay import duty, the buyer or seller?",
+        "a": "Either can, depending on the agreement — confirm it explicitly before the shipment leaves so there's no dispute when it reaches customs."
+      },
+      {
+        "q": "Does local demand really affect the price of imported hardware?",
+        "a": "Yes. Regions with strong mining and hosting demand tend to see landed prices sit above what freight and duty alone would predict."
+      },
+      {
+        "q": "What's the safest way to budget for a purchase into Russia?",
+        "a": "Total unit price, freight, insurance, duty and domestic delivery, plus a buffer for currency movement if payment and delivery are weeks apart."
+      }
+    ],
+    "match": {
+      "terms": [
+        "russia",
+        "import",
+        "bitcoin miner price"
+      ]
+    },
+    "readMinutes": 7
   }
 ];
