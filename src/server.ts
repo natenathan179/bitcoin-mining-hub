@@ -104,6 +104,34 @@ function canonicalRedirect(request: Request): Response | undefined {
   });
 }
 
+// Blog posts retired because they duplicated a richer post on the exact same topic
+// (see scripts/fix-thin-content-2026-09.ts) — 301 straight to the surviving page so
+// bookmarks, backlinks and search results don't 404.
+const RETIRED_BLOG_POSTS: Record<string, string> = {
+  "antminer-daily-profit-how-to-calculate-it-correctly": "antminer-daily-profit-how-to-compute-it-correctly",
+  "antminer-l5-profitability-is-the-old-scrypt-unit-viable": "antminer-l5-profitability-legacy-scrypt-economics",
+  "antminer-d9-profitability-dash-mining-returns-modelled": "antminer-d9-profitability-and-x11-hardware-outlook",
+  "antminer-l7-9050-profitability-litecoin-doge-returns": "antminer-l7-9050-profitability-full-cost-model",
+  "used-asic-miner-buying-guide-grades-tests-and-prices": "used-asic-miner-buying-guide-inspection-pricing-and-risk",
+  "antminer-l9-for-sale-tested-units-price-and-warranty": "antminer-l9-for-sale-availability-and-pricing",
+};
+
+function retiredBlogPostRedirect(request: Request): Response | undefined {
+  const url = new URL(request.url);
+  const match = url.pathname.match(/^\/blog\/([^/]+)\/?$/);
+  const target = match && RETIRED_BLOG_POSTS[match[1]!];
+  if (!target) return undefined;
+
+  url.pathname = `/blog/${target}`;
+  return new Response(null, {
+    status: 301,
+    headers: {
+      location: url.toString(),
+      "cache-control": "public, max-age=3600",
+    },
+  });
+}
+
 function withSecurityHeaders(response: Response, request: Request): Response {
   const url = new URL(request.url);
   if (isLocal(url.hostname)) return response;
@@ -134,7 +162,7 @@ function withSecurityHeaders(response: Response, request: Request): Response {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
-      const redirect = canonicalRedirect(request);
+      const redirect = canonicalRedirect(request) ?? retiredBlogPostRedirect(request);
       if (redirect) return redirect;
 
       const handler = await getServerEntry();

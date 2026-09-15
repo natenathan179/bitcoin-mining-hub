@@ -687,92 +687,83 @@ export const POSTS: BlogPost[] = [
     "title": "Are All Cryptos Mined? Mineable Coins Worth Hardware",
     "category": "Profitability",
     "categoryId": "profit",
-    "date": "2026-08-17",
-    "description": "Are All Cryptos Mined? Mineable Coins Worth Hardware — real pricing, efficiency in J/TH, power requirements and payback math for are all cryptos mined.",
+    "date": "2026-09-16",
+    "description": "Not every mineable coin justifies buying dedicated hardware. A practical filter for deciding which mineable coins are actually worth the capital today.",
     "keywords": [
-      "are",
-      "all",
-      "cryptos",
-      "mined",
-      "price",
-      "specs",
-      "profitability"
+      "mineable coins worth hardware",
+      "is crypto mining worth it",
+      "which coins worth mining",
+      "best coins to mine",
+      "mineable cryptocurrency list"
     ],
     "intro": [
-      "This guide covers which mineable coins justify buying hardware. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"are all cryptos mined\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Being mineable isn't the same as being worth mining — plenty of proof-of-work coins exist with too little liquidity, too little price stability, or too thin a hardware market to justify buying dedicated equipment for. This is a practical filter for the buying decision specifically: given that a coin CAN be mined, should you actually put capital into hardware for it?",
+      "The answer depends on four things: hardware availability and resale value, liquidity to actually sell what you earn, price and difficulty stability, and whether your electricity rate clears the specific coin's economics. Walk through all four before buying anything."
     ],
     "sections": [
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Filter One: Does Real Hardware Exist for It?",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "If a coin has no dedicated ASIC and relies on GPU mining against a resistant algorithm, your hardware doubles as general-purpose equipment with resale value beyond that one coin — a genuine advantage if the coin underperforms. If it has dedicated ASIC hardware, check how many manufacturers make it; a single-manufacturer niche coin means thinner resale and less competitive pricing.",
+          "Coins with no meaningful hardware market at all — announced but never actually supported by real manufacturers — aren't a hardware decision yet; they're speculation on a market that doesn't exist."
         ]
       },
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "Filter Two: Can You Actually Sell What You Earn?",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "Mining a coin you can't easily convert to cash or a more liquid asset is a paper return, not a real one. Check daily trading volume on major exchanges for the specific coin — thin volume means your mined output could move the price against you just by selling it, or worse, sit illiquid when you actually need to cash out.",
+          "Bitcoin, Litecoin, Dogecoin and a handful of others clear this filter easily. Many smaller mineable coins do not, regardless of how attractive their mining economics look on paper."
         ]
       },
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "Filter Three: How Stable Is the Difficulty and Price History?",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "A coin with a long, relatively stable difficulty growth curve is far easier to model reliably than one prone to sudden hashrate spikes or drops, which can happen when a large miner enters or exits a smaller network abruptly. Check historical difficulty charts, not just current difficulty, before committing capital.",
+          "Newer or smaller coins are more prone to this volatility simply because a single large participant represents a bigger share of total network hashrate — the same absolute hashrate swing matters far more on a small network than a large one."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "Filter Four: Does the Electricity Math Actually Clear?",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "This filter is identical regardless of coin: hashrate, wall watts, your electricity rate, and current difficulty determine whether the coin's specific reward and fee structure clears your running cost. A coin can pass every other filter and still fail here if its current price-to-difficulty ratio is simply unfavourable.",
+          "Run this calculation last, after confirming the first three filters, since there's no point modelling profitability for a coin with no viable hardware or no liquid market to sell into."
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Coins That Generally Clear All Four Filters",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "Bitcoin, Litecoin and Dogecoin (via merged mining), and — with somewhat more caution on liquidity and hardware market depth — Kaspa and Monero, generally clear all four filters for most buyers today. This isn't a permanent list; markets and hardware availability shift.",
+          "Beyond these, evaluate case by case using the four filters above rather than trusting a static ranking, since smaller mineable coins can shift from viable to unviable (or the reverse) faster than the mainstream ones."
         ]
       },
       {
-        "h2": "Resale Value and Exit Planning",
+        "h2": "How We Can Help With This Decision",
         "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
-        ]
-      },
-      {
-        "h2": "How This Fits a Diversified Mining Strategy",
-        "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+          "We carry hardware across several of the coins that reliably clear these filters, bench-tested and condition-graded the same way regardless of algorithm. If you're considering a coin we don't stock, we can usually still tell you honestly whether it's likely to clear these four filters before you spend money elsewhere.",
+          "The goal is matching your capital to a coin whose mining economics you can actually verify, not the coin with the most exciting marketing this month."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Can I run are all cryptos mined at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "What's the biggest reason a mineable coin isn't worth hardware?",
+        "a": "Usually thin liquidity — you can mine it, but can't easily sell what you earn without moving the price against yourself."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "Is a coin with dedicated ASIC hardware always a safe bet?",
+        "a": "Not automatically — check how many manufacturers make that hardware and how deep the resale market is before assuming it's a safe purchase."
       },
       {
-        "q": "Is are all cryptos mined a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "Why does difficulty stability matter for the buying decision?",
+        "a": "A volatile difficulty history makes modelling future returns unreliable, since a single large miner entering or leaving a small network can swing your expected output significantly."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "Should I check profitability before or after checking liquidity?",
+        "a": "After. There's no point calculating profitability for a coin you can't actually convert your earnings out of."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Does this list of viable coins change over time?",
+        "a": "Yes — re-run all four filters periodically rather than trusting a static list, since hardware markets and coin liquidity both shift."
       }
     ],
     "match": {
@@ -781,7 +772,7 @@ export const POSTS: BlogPost[] = [
         "x5"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "antminer-s23-immersion-tanks-fluids-and-overclocking",

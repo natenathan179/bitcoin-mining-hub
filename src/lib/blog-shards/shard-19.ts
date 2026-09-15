@@ -724,91 +724,83 @@ export const POSTS: BlogPost[] = [
     "title": "Used ASIC Miners for Sale: Best Value Models Ranked",
     "category": "Hardware Rankings",
     "categoryId": "rank",
-    "date": "2026-08-26",
-    "description": "Used ASIC Miners for Sale — real pricing, efficiency in J/TH, power requirements and payback math for used asic miners, plus tested stock shipped.",
+    "date": "2026-09-16",
+    "description": "Which used ASIC miners actually deliver the best value right now, ranked by delivered dollars per terahash and running cost rather than sticker price alone.",
     "keywords": [
-      "used",
-      "asic",
-      "miners",
-      "price",
-      "specs",
-      "profitability"
+      "used asic miners for sale",
+      "best value used asic",
+      "used asic miner ranking",
+      "cheap used asic miner",
+      "used asic price per terahash"
     ],
     "intro": [
-      "This guide covers which used ASIC miners still return capital at today's difficulty. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"used asic miners\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "\"Best value\" in used ASIC hardware isn't the cheapest machine on the page — it's the one that returns the most hashing capacity per dollar spent, including the electricity it will burn for the next few years. Ranking used miners requires holding purchase price, efficiency and remaining useful life in the same frame at once.",
+      "This is a ranking by tier rather than a fixed model list, because used inventory and pricing shift constantly. Use the framework below to rank whatever is actually available when you're shopping, and you'll land on the same answer this guide would give for today's exact listings."
     ],
     "sections": [
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "The Ranking Metric That Actually Matters",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "Rank candidates on delivered dollars per terahash first, then discount that ranking by joules per terahash relative to current hardware. A machine that's cheap per terahash but burns two or three times the electricity of a current model for the same output can rank below a pricier, more efficient alternative once running cost is included.",
+          "Run both numbers from your own delivered power rate, not a generic assumption — the ranking genuinely changes between a four-cent and a twelve-cent kilowatt-hour rate, sometimes reversing which tier wins outright."
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Tier One: Recent-Generation Used Units",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "Used units one or two generations behind current flagships usually rank highest on value for buyers at moderate-to-high power rates. You give up a little peak efficiency for a meaningfully lower purchase price, and the machine still has years of competitive life ahead.",
+          "This tier is where most serious buyers should be shopping, provided the unit passes a proper load test and carries some form of warranty or return protection."
         ]
       },
       {
-        "h2": "Resale Value and Exit Planning",
+        "h2": "Tier Two: Mid-Generation Value Plays",
         "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "Three to four generations back, prices drop sharply while efficiency drops more gradually than the price does — which is exactly the gap that creates value. This tier ranks well specifically at low power rates, where the extra electricity cost matters less than the capital saved.",
+          "Above roughly eight to ten cents per kilowatt-hour, this tier's ranking usually falls behind Tier One once you run the actual payback math, so don't buy here on price alone without checking your rate first."
         ]
       },
       {
-        "h2": "How This Fits a Diversified Mining Strategy",
+        "h2": "Tier Three: Legacy Hardware",
         "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+          "Old, inefficient units rank at the bottom for nearly every buyer, with one exception: genuinely free or curtailed power, where capital cost is the only variable that matters and running cost is close to irrelevant. Outside that specific situation, legacy hardware's ranking rarely survives contact with real electricity bills.",
+          "If you're tempted by a legacy unit's low price, run the payback math before buying rather than after — it's the fastest way to tell whether you're looking at a bargain or a slow-motion loss."
         ]
       },
       {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "h2": "How Condition Grade Shifts a Model's Rank",
         "paras": [
-          "Every buying decision in used asic miners comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+          "The same model can rank differently depending on whether it's load-tested and graded or sold as an unknown. A properly graded unit at a modest premium usually outranks an untested 'as-is' unit of the identical model, because the discount on the untested unit rarely compensates for the added risk.",
+          "When ranking two listings of the same model, treat the one with real test evidence as the higher-value option even at a somewhat higher price, unless the price gap is large enough to fully cover the risk of a bad unit."
         ]
       },
       {
-        "h2": "Price per Terahash, Not Headline Hashrate",
+        "h2": "Putting a Ranking Together for Your Own Shortlist",
         "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in used asic miners and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
-        ]
-      },
-      {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
-        "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "List your candidates, get rated hashrate and wall watts for each, compute joules per terahash, price each on delivered dollars per terahash, and run payback at your real power rate. Rank by payback period, not by sticker price — that's the number that actually reflects value.",
+          "We bench-test and condition-grade every used unit we carry and quote delivered pricing with freight and customs included, so you can rank our stock against any other listing on a true apples-to-apples basis."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Can I run used asic miners at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "What single number should I rank used ASICs by?",
+        "a": "Delivered dollars per terahash, adjusted downward for any efficiency disadvantage versus current hardware at your actual power rate — not the sticker price alone."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "Does the cheapest used ASIC ever rank best?",
+        "a": "Only with very cheap or free power. At typical rates, a somewhat pricier but more efficient unit usually returns capital faster."
       },
       {
-        "q": "Is used asic miners a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "How much does condition grading change a model's ranking?",
+        "a": "Significantly — a load-tested, graded unit is worth more than an untested one of the identical model, often enough to justify a real price premium."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "Should I rank by hashrate or by efficiency?",
+        "a": "Efficiency (joules per terahash) matters more for ranking value, since it drives your ongoing cost. Hashrate alone just tells you how big the machine is."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "How often does the ranking change?",
+        "a": "Whenever your power rate, network difficulty or available listings change meaningfully — re-run the comparison rather than trusting a ranking from months ago."
       }
     ],
     "match": {
@@ -822,7 +814,7 @@ export const POSTS: BlogPost[] = [
         "m50"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "antminer-s23-hydro-3u-rack-layout-plumbing-and-power",

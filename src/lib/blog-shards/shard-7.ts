@@ -1354,92 +1354,83 @@ export const POSTS: BlogPost[] = [
     "title": "Bitcoin Mining Business Plan: Model, Costs and Margins",
     "category": "Profitability",
     "categoryId": "profit",
-    "date": "2026-08-24",
-    "description": "Bitcoin Mining Business Plan — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining business plan, plus tested stock.",
+    "date": "2026-09-16",
+    "description": "How to build a real bitcoin mining business plan: capital costs, operating margins, break-even timing and the scaling stages that separate a hobby from a business.",
     "keywords": [
-      "bitcoin",
-      "mining",
-      "business",
-      "plan",
-      "price",
-      "specs",
-      "profitability"
+      "bitcoin mining business plan",
+      "bitcoin mining business model",
+      "start a bitcoin mining business",
+      "mining farm business plan",
+      "bitcoin mining margins"
     ],
     "intro": [
-      "This guide covers writing a bitcoin mining business plan a lender will actually read. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"bitcoin mining business plan\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "A bitcoin mining business plan is really just a profitability model with a growth path attached — but most first drafts skip half the real costs and none of the scaling constraints. This guide walks through building one properly: what belongs in the capital and operating columns, how margins actually behave at scale, and the stages a mining business typically moves through.",
+      "It's written for someone planning to run this as an actual operation, not a single home machine — the numbers and constraints below only start to matter once you're deciding whether to commit real capital to multiple units."
     ],
     "sections": [
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "Capital Costs: More Than Just Hardware",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "Hardware is the obvious line item, priced on delivered dollars per terahash including freight and duty. The costs that get missed are electrical infrastructure (panels, breakers, PDUs), cooling or ventilation, racking or shelving, networking and monitoring gear, and — if you're not hosting — the site itself.",
+          "For a first build, budget infrastructure as a meaningful fraction on top of hardware cost, not an afterthought. Operators who skip this line are the ones whose machines sit in boxes waiting on an electrician months after purchase."
         ]
       },
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Operating Costs and Where Margin Actually Comes From",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "Electricity is the dominant operating cost by far, followed by pool fees (roughly one to two percent of revenue), maintenance (fans, thermal paste, occasional hashboard replacement), and — if hosted — the facility's per-kilowatt-hour or per-machine fee on top of raw power.",
+          "Margin is revenue minus all of that, and it compresses over time even with zero changes on your end, because network difficulty rises as more hashrate joins globally. A business plan that assumes today's margin holds forever isn't a plan — it's a snapshot."
         ]
       },
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "Modelling Break-Even Honestly",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "Break-even is the point where cumulative net revenue equals total capital invested. Model it at your real delivered power rate — total bill divided by kilowatt-hours — and re-run it with a conservative difficulty growth assumption, not a flat difficulty that never changes.",
+          "Run the model at your actual rate and at rates one and two cents higher, since utility rates change and a plan that only survives at today's exact price is fragile by design."
         ]
       },
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "How Margins Change With Scale",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "Per-machine margin doesn't really change with scale — the economics of one miner are the economics of a hundred, machine for machine. What changes is fixed overhead: electrical infrastructure, monitoring, and labour spread across more units, which is why a business at real scale often has better margins per machine than a single home unit once those fixed costs are amortised.",
+          "The trade-off is capital intensity and site complexity — scaling requires committing more money upfront and managing a more complex electrical and cooling build, which raises the stakes if the difficulty or price environment shifts against you."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "The Stages a Mining Business Usually Moves Through",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "Stage one is proving the model on a small number of machines at your actual site and power rate. Stage two is scaling that proven setup within your existing electrical capacity. Stage three is a genuine infrastructure decision — upgrading service capacity, moving to a larger site, or shifting to hosting instead of building further yourself.",
+          "Most business plans that fail skip straight from stage one to a large stage-three commitment without the stage-two data to justify it. Prove the model small, then scale deliberately."
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Building the Plan With Real Numbers",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
-        ]
-      },
-      {
-        "h2": "Resale Value and Exit Planning",
-        "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "Get delivered hardware pricing, real electrical quotes, and your actual utility rate before finalising anything — don't plan against list prices or headline tariffs. We quote delivered pricing from Hong Kong with freight and customs included, and can model expected output for specific machines at your rate so your plan starts from real numbers instead of assumptions.",
+          "A plan built on real quotes and a conservative difficulty assumption will disappoint you less than one built on best-case numbers, and it's the only kind that actually survives contact with the first difficulty adjustment."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "What's the biggest cost first-time plans usually miss?",
+        "a": "Electrical infrastructure and site preparation — panels, breakers, PDUs and cooling — which can add a meaningful fraction on top of hardware cost."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "How do margins change as a mining business scales?",
+        "a": "Per-machine economics stay roughly flat, but fixed overhead spreads across more units, often improving overall margin — at the cost of higher capital intensity and site complexity."
       },
       {
-        "q": "Can I run bitcoin mining business plan at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Should a business plan assume today's difficulty stays constant?",
+        "a": "No. Difficulty rises as more global hashrate joins, so a durable plan should model conservative difficulty growth rather than a flat assumption."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "What's the safest way to scale a mining business?",
+        "a": "Prove the model on a small deployment at your real site and power rate first, then scale within existing capacity before committing to a larger infrastructure upgrade."
       },
       {
-        "q": "Is bitcoin mining business plan a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "What power rate should a business plan use?",
+        "a": "Your actual delivered rate from a real utility bill, tested against scenarios one and two cents higher so the plan isn't fragile to a rate change."
       }
     ],
     "match": {

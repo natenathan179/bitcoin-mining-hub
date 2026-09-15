@@ -794,92 +794,83 @@ export const POSTS: BlogPost[] = [
     "title": "Are All Cryptocurrencies Mined? What Miners Can Earn",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-18",
-    "description": "Are All Cryptocurrencies Mined? What Miners Can Earn — real pricing, efficiency in J/TH, power requirements and payback math for are all cryptocurrencies.",
+    "date": "2026-09-16",
+    "description": "A realistic survey of what miners actually earn across bitcoin, Litecoin/Dogecoin, Monero and Kaspa — and why headline numbers rarely match real take-home returns.",
     "keywords": [
-      "are",
-      "all",
-      "cryptocurrencies",
-      "mined",
-      "price",
-      "specs",
-      "profitability"
+      "what can crypto miners earn",
+      "crypto mining earnings",
+      "how much do miners earn",
+      "bitcoin mining earnings",
+      "mining income by coin"
     ],
     "intro": [
-      "This guide covers the mineable share of the crypto market. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"are all cryptocurrencies mined\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Not every cryptocurrency is mined, and among the ones that are, actual earnings vary enormously by coin, hardware efficiency and your electricity rate — headline \"per day\" figures floating around online are almost always stale or best-case. This guide surveys realistic earnings across the coins people most commonly ask about, and explains why the number you'll actually see rarely matches what you read beforehand.",
+      "Every figure here should be treated as a snapshot, not a promise — difficulty, price and your own costs move constantly, and the only reliable earnings figure is one you calculate yourself with current numbers."
     ],
     "sections": [
       {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "h2": "The Formula Behind Every Earnings Figure",
         "paras": [
-          "Every buying decision in are all cryptocurrencies mined comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+          "Whatever the coin, earnings come down to the same calculation: your hashrate's share of total network hashrate, times the coin's reward and fee income, minus your electricity cost and pool fees. Any \"earnings\" number that doesn't disclose the hashrate and difficulty it was calculated at is not useful — it's a snapshot from an unknown moment.",
+          "Recompute this weekly if you're tracking seriously, since difficulty rises over time for a fixed machine and quietly erodes output even when nothing else changes."
         ]
       },
       {
-        "h2": "Price per Terahash, Not Headline Hashrate",
+        "h2": "Bitcoin: The Most Predictable Earnings Model",
         "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in are all cryptocurrencies mined and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+          "Bitcoin has the deepest hashrate, the most mature hardware market, and the most reliable public data for modelling earnings accurately for any specific machine. Earnings scale directly with efficiency — current-generation hardware earns meaningfully more net income than older machines at the same electricity rate, purely from the efficiency gap.",
+          "Because so much hashrate already competes for bitcoin, an individual machine's absolute share — and therefore its raw earnings — is small; profitability comes from the gap between that revenue and your specific running cost, not from a large headline number."
         ]
       },
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "Litecoin and Dogecoin: Merged Earnings",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "Scrypt miners earn both Litecoin and Dogecoin simultaneously through merged mining from the same hashrate, which effectively combines two coins' reward streams into one earnings figure. This can make Scrypt earnings look larger at a glance, but the combined coin value still has to clear your electricity cost the same way any other coin does.",
+          "Scrypt's smaller total network hashrate than bitcoin means an individual machine typically represents a larger share of that network, which can mean steadier, more concentrated earnings relative to Bitcoin's much larger competing hashrate."
         ]
       },
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Monero and Privacy-Coin Mining",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "Monero remains ASIC-resistant by design, meaning CPU and some GPU mining still participate meaningfully — a genuinely different earnings profile than ASIC-dominated coins, generally lower absolute output per dollar of hardware but accessible without specialised equipment.",
+          "Earnings here are more sensitive to software efficiency and CPU/GPU model choice than to a single dominant hardware type, which makes generic 'per day' figures for Monero especially unreliable without knowing the exact hardware referenced."
         ]
       },
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "Kaspa and Newer kHeavyHash Hardware",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "Kaspa's dedicated ASIC hardware is newer and less standardised than Bitcoin's, with efficiency improving quickly between generations — meaning earnings figures for Kaspa age faster than for more established coins as new, more efficient hardware displaces older units.",
+          "Treat any Kaspa earnings figure as valid only for the specific hardware generation it names, and expect the number to compress as newer, more efficient units enter the network."
         ]
       },
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "Why Your Real Number Will Differ From What You Read",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
-        ]
-      },
-      {
-        "h2": "Buying Safely: Verification Before Payment",
-        "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "Every published earnings figure is a snapshot at one difficulty, one price and one assumed electricity rate — almost never yours. The only number worth trusting is one you calculate from your own machine's specifications, your own electricity bill, and current network data.",
+          "We can model expected earnings for any specific machine we sell against your actual power rate before you buy, which is a far more useful number than any generic figure you'll find published online."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Which cryptocurrency has the most predictable mining earnings?",
+        "a": "Bitcoin, because of its deep hashrate history and the most mature public data for modelling any specific machine's expected output accurately."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "Why do online 'earnings per day' figures never match reality?",
+        "a": "They're snapshots at one specific difficulty, price and electricity rate — almost never yours, and quickly outdated as difficulty rises."
       },
       {
-        "q": "Can I run are all cryptocurrencies mined at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Can I earn from mining without an ASIC?",
+        "a": "For ASIC-resistant coins like Monero, yes, with CPU or GPU hardware — though at much lower output per dollar than ASIC-mineable coins."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "Do Litecoin and Dogecoin earnings combine?",
+        "a": "Yes — Scrypt miners earn both simultaneously through merged mining from the same hashrate."
       },
       {
-        "q": "Is are all cryptocurrencies mined a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "How often should I recalculate expected earnings?",
+        "a": "Weekly at minimum, since network difficulty rises over time and silently reduces a fixed machine's output even when nothing else changes."
       }
     ],
     "match": {
@@ -887,110 +878,7 @@ export const POSTS: BlogPost[] = [
         "l7"
       ]
     },
-    "readMinutes": 8
-  },
-  {
-    "slug": "antminer-l9-for-sale-tested-units-price-and-warranty",
-    "title": "Antminer L9 for Sale: Tested Units, Price and Warranty",
-    "category": "Buying Guides",
-    "categoryId": "buy",
-    "date": "2026-08-01",
-    "description": "Antminer L9 for Sale — real pricing, efficiency in J/TH, power requirements and payback math for antminer l9 for sale, plus tested stock shipped worldwide.",
-    "keywords": [
-      "antminer",
-      "l9",
-      "for",
-      "sale",
-      "price",
-      "specs",
-      "profitability"
-    ],
-    "intro": [
-      "This guide covers sourcing an Antminer L9 with a real warranty. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"antminer l9 for sale\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
-    ],
-    "sections": [
-      {
-        "h2": "Price per Terahash, Not Headline Hashrate",
-        "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer l9 for sale and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
-        ]
-      },
-      {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
-        "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
-        ]
-      },
-      {
-        "h2": "Electrical Requirements and Circuit Planning",
-        "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
-        ]
-      },
-      {
-        "h2": "Firmware, Pools and Day-One Configuration",
-        "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
-        ]
-      },
-      {
-        "h2": "Maintenance, Spares and Real Operating Costs",
-        "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
-        ]
-      },
-      {
-        "h2": "Buying Safely: Verification Before Payment",
-        "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
-        ]
-      },
-      {
-        "h2": "Shipping Worldwide from Hong Kong",
-        "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
-        ]
-      }
-    ],
-    "faqs": [
-      {
-        "q": "Is antminer l9 for sale a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
-      },
-      {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
-      },
-      {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
-      },
-      {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
-      },
-      {
-        "q": "Can I run antminer l9 for sale at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
-      }
-    ],
-    "match": {
-      "brands": [
-        "Bitmain"
-      ],
-      "terms": [
-        "l9"
-      ]
-    },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "elphapex-dg-home-1-quiet-scrypt-home-mining",

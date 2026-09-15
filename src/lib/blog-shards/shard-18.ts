@@ -454,89 +454,83 @@ export const POSTS: BlogPost[] = [
     "title": "Hydrominer Guide: Water-Cooled ASIC Mining Explained",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-11",
-    "description": "Hydrominer Guide — real pricing, efficiency in J/TH, power requirements and payback math for hydrominer, plus tested stock shipped worldwide from Hong.",
+    "date": "2026-09-16",
+    "description": "How water-cooled (hydro) ASIC mining actually works, what infrastructure it requires, and when the efficiency gain is worth the added complexity over air cooling.",
     "keywords": [
-      "hydrominer",
-      "price",
-      "specs",
-      "profitability"
+      "hydrominer guide",
+      "water cooled asic mining",
+      "hydro miner explained",
+      "asic hydro cooling",
+      "water cooling bitcoin miner"
     ],
     "intro": [
-      "This guide covers hydro mining hardware and the loop it needs. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"hydrominer\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Water-cooled — or \"hydro\" — ASIC mining runs coolant directly through the miner's cold plates instead of blowing air across a heatsink, letting the chips run at a clock and voltage combination that would overheat an air-cooled board. It's not a different kind of miner so much as a different, more capable cooling method wrapped around similar underlying silicon.",
+      "This guide is brand-agnostic: how hydro cooling actually works, what it requires beyond the miner itself, and the honest trade-off against air cooling that determines whether it's worth the added complexity for your specific site."
     ],
     "sections": [
       {
-        "h2": "Price per Terahash, Not Headline Hashrate",
+        "h2": "How Hydro Cooling Actually Works",
         "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in hydrominer and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+          "Instead of fins and fans, a hydro miner's chips sit against a cold plate with channels that coolant flows directly through, carrying heat away far more efficiently than air can. That efficiency lets manufacturers run the same or similar silicon at a higher clock and voltage than an air-cooled version of the same chip could sustain without overheating.",
+          "The miner itself is only half the system — it needs an external loop with a pump, a dry cooler or heat exchanger to actually reject the heat outdoors, and plumbing to connect them, none of which comes built into the machine."
         ]
       },
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "The Infrastructure a Hydro Loop Actually Requires",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "At minimum: a manifold to distribute coolant across multiple machines, quick-disconnect couplings at each unit, a pump with redundancy (a stopped pump can damage chips within minutes), a dry cooler or heat exchanger sized to your total kilowatts, treated coolant, and a leak-detection plan.",
+          "This is genuine infrastructure cost and complexity on top of the miners themselves — budget it as its own line item, not an afterthought, and expect real commissioning time before the loop is dialled in."
         ]
       },
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Why Inlet Temperature Is the Number That Matters Most",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "A hydro miner's performance depends heavily on the coolant's inlet temperature — keep it within the manufacturer's stated window and the machine holds full clock; let it drift upward and you lose hashrate or trip thermal protection. In hot climates, the dry cooler's capacity, not the miner itself, becomes the limiting factor during summer.",
+          "Size the dry cooler for your worst expected week, not the annual average — undersized heat rejection is the single most common reason a hydro deployment underperforms its modelled hashrate."
         ]
       },
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "Efficiency and Density Gains Over Air",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "Hydro units typically achieve meaningfully better joules per terahash than an air-cooled version of similar-generation silicon, and pack more hashrate into the same rack footprint since there's no need for the airflow clearance air cooling demands. Both gains compound at scale — a hydro rack can out-hash an equivalent air-cooled footprint by a wide margin.",
+          "These gains come specifically from running the chips harder within a thermal envelope water can sustain but air can't — it's a real physical advantage, not a marketing claim."
         ]
       },
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "When Hydro's Extra Cost Is Actually Worth It",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "Hydro wins when electricity is expensive enough that the efficiency gap compounds meaningfully over the machine's life, when rack space is genuinely constrained, or when the waste heat has a second use — district heating, greenhouses, industrial process water. Below those thresholds, air cooling's lower complexity usually wins on total cost.",
+          "Run the comparison including loop capital and pump power, not just the miner's price — hydro's headline efficiency advantage can evaporate once the full infrastructure cost is amortised across too few machines."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "Running a Hydro Loop Day to Day",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
-        ]
-      },
-      {
-        "h2": "Shipping Worldwide from Hong Kong",
-        "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "Monitor coolant temperature and flow rate as first-class metrics alongside hashrate — a slowly failing pump shows up as a gradual temperature climb long before the miner itself throws an error. Keep spares for the parts that fail in loops rather than in miners: pumps, seals, couplings and filters.",
+          "We carry hydro hardware across multiple manufacturers, bench-tested before shipping, and can talk through whether your specific site and power rate actually justify a hydro build versus staying on air."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Can I run hydrominer at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Is a hydro miner just an air miner with water added?",
+        "a": "Not quite — the cold-plate design lets the same or similar silicon run at a higher clock and voltage than air cooling could sustain, so it's a genuinely different thermal envelope, not just a different radiator."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "What's the biggest infrastructure cost people underestimate?",
+        "a": "The dry cooler or heat exchanger, sized for the hottest week of the year rather than the average — undersizing it is the most common reason hydro deployments underperform."
       },
       {
-        "q": "Is hydrominer a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "Does hydro cooling always pay for itself?",
+        "a": "No — it depends on your electricity rate, space constraints, and whether you can use the waste heat. Below certain power rates, air cooling's simplicity usually wins on total cost."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "What fails most often in a hydro loop?",
+        "a": "Pumps, seals, couplings and filters — not the miner's chips themselves. Keep spares for loop components specifically."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Can I run just one hydro machine at home?",
+        "a": "Technically yes with a small loop and an outdoor radiator, but the loop cost per machine only makes sense at multiple units or where heat reuse offsets it."
       }
     ],
     "match": {
@@ -548,7 +542,7 @@ export const POSTS: BlogPost[] = [
         "hyd"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "bitmain-antminer-s21-hydro-full-specification-review",

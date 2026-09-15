@@ -469,92 +469,83 @@ export const POSTS: BlogPost[] = [
     "title": "Where to Mine Bitcoins: Home, Colocation or Hosting",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-22",
-    "description": "Where to Mine Bitcoins — real pricing, efficiency in J/TH, power requirements and payback math for where to mine bitcoins, plus tested stock shipped.",
+    "date": "2026-09-16",
+    "description": "Comparing the three real places to run a bitcoin miner — home, colocation and third-party hosting — on cost, control, noise and how each actually fits different buyers.",
     "keywords": [
-      "where",
-      "to",
-      "mine",
-      "bitcoins",
-      "price",
-      "specs",
-      "profitability"
+      "where to mine bitcoins",
+      "bitcoin mining at home",
+      "bitcoin mining colocation",
+      "bitcoin mining hosting",
+      "where to run a bitcoin miner"
     ],
     "intro": [
-      "This guide covers choosing where your machines physically live. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"where to mine bitcoins\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Once you've decided to buy a bitcoin miner, the next real decision is where it actually runs — and that choice affects your costs, your noise tolerance, your involvement level and your risk far more than most people expect going in. There are three genuine options: your own home, a colocation facility, and a managed hosting provider.",
+      "This guide compares the three directly, on the factors that actually matter for a decision, rather than treating it as an obvious choice. The right answer depends on your site, your power access, and how hands-on you actually want to be."
     ],
     "sections": [
       {
-        "h2": "Resale Value and Exit Planning",
+        "h2": "Running It at Home",
         "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "Home mining means you own the site, the power contract and the hardware, with the lowest ongoing cost per machine since there's no facility fee. The trade-off is real: a full-size air-cooled ASIC runs at 70-80 decibels and needs a dedicated 200-240 volt circuit, which rules out most living spaces and many garages without electrical work.",
+          "Home mining suits someone with a genuinely separate space — a detached garage, workshop or outbuilding — cheap or moderate power, and the willingness to handle their own maintenance, troubleshooting and noise management."
         ]
       },
       {
-        "h2": "How This Fits a Diversified Mining Strategy",
+        "h2": "Colocation: You Bring the Machine, They Bring the Building",
         "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+          "Colocation means renting rack space, power and cooling infrastructure at a facility while you retain full control over the machine's configuration, pool choice and payout wallet — similar to how colocation works for general-purpose servers. You typically pay a per-kilowatt-hour rate plus a space fee, and you (or a technician you hire) still handle hands-on maintenance.",
+          "This suits an operator who wants industrial-grade power and cooling without building it themselves, but still wants direct control over the machine rather than handing configuration to someone else entirely."
         ]
       },
       {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "h2": "Managed Hosting: Full-Service Operation",
         "paras": [
-          "Every buying decision in where to mine bitcoins comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+          "Hosting goes a step further: the facility handles power, cooling, monitoring and often basic maintenance and troubleshooting as part of the service, typically for a per-kilowatt-hour rate that includes more of the operational burden than colocation does. You still own the hardware and receive the mining revenue, but you're not the one fixing a fault at 2 a.m.",
+          "This suits buyers who want the returns of owning hardware without any of the site, noise or hands-on maintenance responsibility — including people who don't have a suitable site at all."
         ]
       },
       {
-        "h2": "Price per Terahash, Not Headline Hashrate",
+        "h2": "Comparing the Real Costs",
         "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in where to mine bitcoins and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+          "Home has the lowest ongoing fee (no facility markup) but the highest upfront and hidden cost if your site needs electrical work, and the highest personal time cost for maintenance. Colocation and hosting both add a facility fee on top of raw power, but remove the site-buildout cost entirely and reduce or eliminate maintenance burden.",
+          "Run the actual numbers for your situation: compare your home electrical-upgrade cost plus your own time against a colocation or hosting quote's all-in rate. For many buyers without an existing suitable site, hosting wins purely on avoided setup cost."
         ]
       },
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "Noise, Heat and Site Constraints",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "This is where home mining most often fails in practice: a machine that seemed fine on paper turns out to be intolerable in a space shared with neighbours, family or nearby windows. Colocation and hosting facilities are purpose-built for exactly this heat and noise load, which is the core value they're selling beyond just electricity.",
+          "If you're unsure whether your home site can handle a full-size unit, that uncertainty alone is a reason to seriously consider colocation or hosting instead of finding out the hard way after buying hardware."
         ]
       },
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Making the Choice",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
-        ]
-      },
-      {
-        "h2": "Firmware, Pools and Day-One Configuration",
-        "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "Choose home if you have a genuinely separate, ventilated space, cheap-to-moderate power, and want hands-on control. Choose colocation if you want industrial infrastructure but still want to configure and manage the machine yourself. Choose hosting if you want the returns of ownership with none of the site or maintenance burden.",
+          "We can help with all three: if you're buying hardware to host, ask about our hosting programme; if you're buying to run yourself, every unit ships bench-tested with clear setup documentation regardless of where it ends up running."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Is where to mine bitcoins a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "What's the cheapest place to run a bitcoin miner?",
+        "a": "Home, on a per-machine basis, since there's no facility fee — but only if your site can actually support the electrical load, heat and noise without costly upgrades."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "What's the difference between colocation and hosting?",
+        "a": "Colocation rents you space, power and cooling while you configure and maintain the machine yourself. Hosting typically includes more hands-on maintenance and monitoring as part of the service."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Can I mine bitcoin from an apartment?",
+        "a": "Not with a full-size air-cooled ASIC — the noise and power requirements rule that out. A low-power desktop miner is the only realistic apartment option, and it earns very little."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "Is hosting worth the extra fee over colocation?",
+        "a": "If you don't want to handle maintenance and troubleshooting yourself, yes. If you're comfortable doing that work, colocation's lower fee may be the better value."
       },
       {
-        "q": "Can I run where to mine bitcoins at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "How do I decide between all three?",
+        "a": "Compare your actual home setup cost and time against colocation and hosting quotes for your specific hardware — the right answer depends entirely on your own site and involvement preference."
       }
     ],
     "match": {
@@ -562,97 +553,90 @@ export const POSTS: BlogPost[] = [
         "s21"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "antminer-al1-alephium-miner-specs-price-and-payback",
     "title": "Antminer AL1: Alephium Miner Specs, Price and Payback",
     "category": "Brand Reviews",
     "categoryId": "brand",
-    "date": "2026-08-03",
-    "description": "Antminer AL1 — real pricing, efficiency in J/TH, power requirements and payback math for antminer al1, plus tested stock shipped worldwide from Hong Kong.",
+    "date": "2026-09-16",
+    "description": "What to verify before buying an Antminer AL1 Alephium miner: real specs to confirm, fair pricing, and the buying checklist — for the profitability math, see our AL1 economics guide.",
     "keywords": [
-      "antminer",
-      "al1",
-      "price",
-      "specs",
-      "profitability"
+      "antminer al1 specs",
+      "antminer al1 price",
+      "antminer al1 buying guide",
+      "alephium miner specs",
+      "buy antminer al1"
     ],
     "intro": [
-      "This guide covers the Antminer AL1 Alephium miner. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"antminer al1\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "The Antminer AL1 mines Alephium, a smaller-cap coin with a thinner hardware and secondary market than mainstream SHA-256 or Scrypt ASICs — which makes the buying process, not just the profitability math, worth getting right. This guide is the buying-side companion to our AL1 profitability analysis: what to verify, what a fair price looks like, and the checklist before you pay.",
+      "If you've already decided Alephium's economics work for you and just need to buy safely, this is the piece to read. If you haven't run the profitability numbers yet, start with our dedicated AL1 economics guide first."
     ],
     "sections": [
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "Specs to Confirm, Not Assume",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "Get the AL1's rated hashrate and wall watts in writing directly from the seller, and calculate joules per unit of hashrate yourself rather than trusting a headline efficiency figure — this is worth doing for any ASIC, but especially so for a lower-volume model where spec sheets circulate less scrutinised than a mainstream Bitmain S-series unit.",
+          "Confirm the exact firmware version installed and whether the unit has ever run overclocked. For a niche coin like Alephium, firmware compatibility with your intended pool matters more than it does for a mainstream, well-supported coin."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "Why the Secondary Market Is Thinner Here",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "Because Alephium is a smaller-cap coin, fewer AL1 units circulate on the used market than mainstream Bitmain hardware, which means fewer comparison listings to price against and a genuinely thinner resale market if you decide to exit later. Factor that illiquidity into your decision, not just the purchase price.",
+          "This isn't a reason to avoid the AL1 if Alephium's economics work for you — it's a reason to be more conservative about exit planning than you might be with a mainstream SHA-256 machine."
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Pricing an AL1 Fairly",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "Price on delivered dollars per unit of hashrate including freight, and expect a wider price spread between sellers than you'd see on a mainstream model, simply because there are fewer active listings to anchor a market price. Get multiple quotes before assuming any single one is representative.",
+          "Discount a used unit for age and unknown run history the same way you would any ASIC, and budget for the fact that niche-hardware repairs can take longer to source parts for than a mainstream Bitmain repair."
         ]
       },
       {
-        "h2": "Resale Value and Exit Planning",
+        "h2": "Pool and Firmware Compatibility Before You Buy",
         "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "Confirm your intended Alephium pool explicitly supports the AL1's exact firmware and stratum requirements before buying — this is a smaller ecosystem than Bitcoin's pool landscape, and not every pool supports every device revision identically.",
+          "If you can't get a straight answer from a pool about AL1 compatibility before buying, treat that as a real warning sign rather than something to sort out after the hardware arrives."
         ]
       },
       {
-        "h2": "How This Fits a Diversified Mining Strategy",
+        "h2": "Buying Checklist",
         "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+          "Insist on a load test showing stable hashrate and normal temperatures for at least an hour, confirm firmware and overclock history, and get warranty terms in writing including who pays return freight. Given the thinner support ecosystem, ask specifically what happens if a board fails — repair turnaround matters more here than on mainstream hardware.",
+          "Photograph and document everything on arrival regardless of new or used, since a niche model's support channel may take longer to respond to a dispute than a mainstream manufacturer's."
         ]
       },
       {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "h2": "Where We Fit In",
         "paras": [
-          "Every buying decision in antminer al1 comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
-        ]
-      },
-      {
-        "h2": "Price per Terahash, Not Headline Hashrate",
-        "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer al1 and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+          "We bench-test AL1 units the same way we test every other ASIC we carry, and quote delivered pricing from Hong Kong with freight and customs paperwork included. Ask us directly about current Alephium pool compatibility and realistic repair turnaround before you buy, since those specifics matter more for a niche coin than for mainstream hardware.",
+          "For the actual profitability question — whether Alephium mining economics work at your power rate — see our dedicated AL1 economics guide, which covers that math directly."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Is the Antminer AL1 harder to buy safely than a mainstream Antminer?",
+        "a": "The verification steps are the same, but the secondary market is thinner, so expect fewer comparison listings and a wider price spread between sellers."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "Where can I find AL1 profitability numbers?",
+        "a": "See our dedicated AL1 profitability and economics guide — this piece focuses on buying safely, not the earnings math."
       },
       {
-        "q": "Can I run antminer al1 at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Should I confirm pool support before buying?",
+        "a": "Yes, explicitly. Alephium's pool ecosystem is smaller than Bitcoin's, and not every pool supports every AL1 firmware revision identically."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "Is a used AL1 riskier than a used mainstream ASIC?",
+        "a": "Somewhat, mainly due to thinner resale liquidity and potentially slower parts sourcing for repairs, not because the hardware itself is inherently less reliable."
       },
       {
-        "q": "Is antminer al1 a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "What's the minimum test before buying a used AL1?",
+        "a": "A load test of at least an hour showing stable hashrate and normal temperatures, plus confirmed firmware and overclock history."
       }
     ],
     "match": {
@@ -663,7 +647,7 @@ export const POSTS: BlogPost[] = [
         "al1"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "antminer-s23-hyd-price-guide-and-buying-checklist",

@@ -549,92 +549,83 @@ export const POSTS: BlogPost[] = [
     "title": "All About Mining Bitcoins: Full Beginner-to-Operator Guide",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-20",
-    "description": "All About Mining Bitcoins — real pricing, efficiency in J/TH, power requirements and payback math for all about mining bitcoins, plus tested stock shipped.",
+    "date": "2026-09-16",
+    "description": "The path from buying your first bitcoin miner to running it like an operator — one machine, the decisions that come next, and when to scale up.",
     "keywords": [
-      "all",
-      "about",
-      "mining",
-      "bitcoins",
-      "price",
-      "specs",
-      "profitability"
+      "mining bitcoins guide",
+      "start mining bitcoin",
+      "bitcoin mining for beginners",
+      "become a bitcoin miner",
+      "scaling bitcoin mining"
     ],
     "intro": [
-      "This guide covers everything a first-time operator needs before buying a machine. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"all about mining bitcoins\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Most people start mining bitcoin with one machine and a rough idea of what they're doing, and either stop there or gradually become an actual operator without ever deciding to. This guide traces that path deliberately — buying the first machine, the decisions that come immediately after, and the signals that tell you it's time to scale.",
+      "It's bitcoin-specific and practical, meant to be read once before you buy anything and referred back to at each stage rather than absorbed all at once."
     ],
     "sections": [
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "Buying the First Machine",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "Pick one efficient machine sized to what your site can actually support electrically — don't buy the biggest unit on the page before confirming your circuit can carry it. Get rated hashrate and wall watts confirmed in writing, and buy from a seller who bench-tests and states a real warranty.",
+          "Resist the urge to buy two or three machines immediately. One machine teaches you everything you need for stage two at a fraction of the capital risk if something about your setup needs adjusting."
         ]
       },
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "The First Week: Setup and Baseline",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "Get it on a dedicated circuit, connected by Ethernet, pointed at a pool with a wallet address you control, and confirm it holds rated hashrate for several days straight. This baseline period is where you learn what normal actually looks like for your specific site — temperature, noise, and how the machine behaves as ambient conditions change.",
+          "Track daily output against your calculated expectation. A meaningful, sustained gap between expected and actual output is worth investigating now, before you've scaled the same problem across more machines."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "The First Month: Real Cost Tracking",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "Pull an actual electricity bill covering the mining period and calculate your true delivered power rate, not an assumed one. Recompute profitability with that real number, and be honest with yourself about whether the machine is actually earning what you expected.",
+          "This is also when maintenance rhythm starts to matter: check for dust accumulation, confirm fans are running at expected speeds, and get comfortable with the manufacturer's monitoring interface so problems don't sit unnoticed."
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Deciding Whether to Scale",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "Scale only after the first machine has proven the model at your real power rate over enough time to be confident, not on optimism. The decision to add machines should follow the same math as the first purchase — payback period at your actual costs — not a different, more hopeful calculation.",
+          "Check your electrical capacity before adding anything. A second machine on the same circuit as the first, without checking amperage headroom, is the single most common way new operators trip a breaker or damage wiring."
         ]
       },
       {
-        "h2": "Resale Value and Exit Planning",
+        "h2": "Becoming a Small Operator",
         "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "Past two or three machines, treat this like a small operation rather than a hobby: dedicated monitoring with alerts, a maintenance schedule instead of reactive fixes, spare parts on hand (fans, a spare PSU), and a clear record of each machine's performance so you catch a degrading unit early.",
+          "This is also the point where hosting becomes worth evaluating seriously if your site's electrical capacity is the binding constraint — moving additional machines to a hosted facility can let you keep scaling without a full electrical upgrade at home."
         ]
       },
       {
-        "h2": "How This Fits a Diversified Mining Strategy",
+        "h2": "What Changes at Real Scale",
         "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
-        ]
-      },
-      {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
-        "paras": [
-          "Every buying decision in all about mining bitcoins comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+          "Beyond a handful of machines, fixed costs — monitoring software, spare inventory, your own time — spread across more units and generally improve your margin per machine versus a single-unit setup, but the electrical and cooling build becomes a genuine capital project rather than a weekend task.",
+          "If you reach this point, revisit your whole plan with real infrastructure quotes rather than scaling by simply repeating what worked for one or two machines — the constraints and the economics both shift at that scale."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Can I run all about mining bitcoins at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "How many machines should I start with?",
+        "a": "One. It teaches you everything needed for the next stage at a fraction of the capital risk if anything about your setup needs adjusting."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "How long should I run one machine before scaling?",
+        "a": "Long enough to calculate real profitability from an actual electricity bill and confirm the machine performs as expected — typically at least a full billing cycle."
       },
       {
-        "q": "Is all about mining bitcoins a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "What's the most common mistake when scaling up?",
+        "a": "Adding machines to the same electrical circuit without checking amperage headroom first, which is how breakers trip and wiring gets damaged."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "When does hosting become worth considering?",
+        "a": "Once your site's electrical capacity becomes the constraint on further scaling, rather than your capital."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Does per-machine profitability change as I add more units?",
+        "a": "The core economics stay similar, but fixed costs — monitoring, spares, your time — spread across more machines, which can improve overall margin at real scale."
       }
     ],
     "match": {
@@ -642,7 +633,7 @@ export const POSTS: BlogPost[] = [
         "s21"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "antminer-s21e-hydro-specs-pricing-and-use-cases",

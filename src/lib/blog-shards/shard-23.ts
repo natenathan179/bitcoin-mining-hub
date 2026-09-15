@@ -637,90 +637,83 @@ export const POSTS: BlogPost[] = [
     "title": "Antminer L11: Scrypt Hashrate, Power and Litecoin ROI",
     "category": "Brand Reviews",
     "categoryId": "brand",
-    "date": "2026-08-04",
-    "description": "Antminer L11 — real pricing, efficiency in J/TH, power requirements and payback math for antminer l11, plus tested stock shipped worldwide from Hong Kong.",
+    "date": "2026-09-16",
+    "description": "The Antminer L11's actual return-on-investment math: hashrate and power figures to confirm, Litecoin/Dogecoin merged-mining payback at real power rates, and the break-even case.",
     "keywords": [
-      "antminer",
-      "l11",
-      "price",
-      "specs",
-      "profitability"
+      "antminer l11 roi",
+      "antminer l11 payback",
+      "antminer l11 hashrate",
+      "antminer l11 litecoin",
+      "antminer l11 profitability"
     ],
     "intro": [
-      "This guide covers the Antminer L11 for Litecoin and Dogecoin. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"antminer l11\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Specs and reviews tell you what the Antminer L11 is; this guide is specifically about whether it pays back, and how fast, once you run its Scrypt merged-mining revenue against a real electricity rate. If you've already read the model overview and comparison content and want the payback math specifically, this is that piece.",
+      "Every figure below is a method, not a fixed promise — Litecoin and Dogecoin price and difficulty both move, so plug in current numbers and your own power rate rather than trusting a snapshot."
     ],
     "sections": [
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "The Numbers the ROI Calculation Needs",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "Confirm rated hashrate in gigahash per second and wall watts in writing from the seller, then compute joules per gigahash yourself — the Scrypt equivalent of joules per terahash — rather than trusting a headline efficiency claim. This single number drives the entire running-cost side of the payback calculation.",
+          "Also confirm firmware version and whether the specific unit has run overclocked, since that affects both current output and how much useful life is left on the hardware."
         ]
       },
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Why Litecoin and Dogecoin Both Count",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "Scrypt merged mining pays the L11 in both Litecoin and Dogecoin simultaneously from the same hashrate, so the revenue side of the ROI calculation has to add both coins' expected output at current price, not just one. Skipping either coin understates revenue and makes the payback period look longer than it actually is.",
+          "Pull current price and difficulty for both coins from a live source before modelling — this pairing has historically moved somewhat differently than bitcoin, so don't substitute bitcoin-market assumptions here."
         ]
       },
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "The Payback Formula Applied to the L11",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "Daily revenue comes from a mining calculator fed the L11's real gigahash rating against current Litecoin and Dogecoin difficulty and price. Daily cost is wall watts ÷ 1000 × 24 × your electricity rate. Subtract cost and pool fees from revenue for daily net, then divide the delivered machine price by daily net for payback in days.",
+          "Run this at your own delivered rate, not a generic assumption — the L11's payback period changes meaningfully between a four-cent and a twelve-cent kilowatt-hour rate, the same as any ASIC."
         ]
       },
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "Where the L11 Sits on Efficiency",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "As a newer-generation Scrypt unit, the L11 generally improves on joules per gigahash versus older Antminer L-series machines, which directly shortens payback at any given power rate compared to those predecessors. Compare its actual measured efficiency against the specific older unit you'd otherwise buy before assuming the newer model automatically wins on ROI.",
+          "A cheaper older L-series unit can still out-pay-back the L11 at very low power rates, where the L11's efficiency advantage matters less against a large price gap — run both scenarios rather than assuming newer always wins."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "Sensitivity: What Actually Moves the Payback Period",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "Electricity rate moves payback the most of any single variable — a few cents per kilowatt-hour shift changes the outcome more than most people expect. Litecoin and Dogecoin price movement is the second-biggest factor, and it's the one you can't control or predict, which is why conservative price assumptions produce more trustworthy payback estimates than optimistic ones.",
+          "Re-run the model whenever your power rate changes or after a significant move in either coin's price, rather than trusting a payback figure calculated months earlier."
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Buying for ROI, Not Just Specs",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
-        ]
-      },
-      {
-        "h2": "Resale Value and Exit Planning",
-        "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "Price the L11 on delivered dollars per gigahash including freight, and insist on a load test showing stable hashrate on both merged coins before finalising a used purchase. A machine priced slightly higher but properly tested and warrantied often beats a cheaper, unverified unit on realised ROI once you account for the risk of a dead-on-arrival board.",
+          "We bench-test every L11 we ship and can model expected payback for your specific power rate before you order, so the ROI number you're deciding on is based on your real numbers, not a generic example."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Is antminer l11 a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "Does the Antminer L11 mine one coin or two?",
+        "a": "Two, simultaneously, through Scrypt merged mining — Litecoin and Dogecoin from the same hashrate, both counted in the revenue side of an ROI calculation."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "What's the single biggest factor in the L11's payback period?",
+        "a": "Your electricity rate. A swing of a few cents per kilowatt-hour changes payback more than almost any other input."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Is the L11 always a better ROI than an older L-series unit?",
+        "a": "Not automatically — at very low power rates, a cheaper older unit's price advantage can outweigh the L11's better efficiency. Run both scenarios."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "How often should I recompute the L11's expected payback?",
+        "a": "Whenever your power rate changes or Litecoin/Dogecoin price moves significantly — treat any single calculation as a snapshot, not a permanent figure."
       },
       {
-        "q": "Can I run antminer l11 at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "What should I check before buying a used L11?",
+        "a": "A load test showing stable hashrate on both merged coins, confirmed firmware version, and overclock history, priced on delivered dollars per gigahash."
       }
     ],
     "match": {
@@ -733,7 +726,7 @@ export const POSTS: BlogPost[] = [
         "l7"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "purchase-asic-miner-step-by-step-order-process",

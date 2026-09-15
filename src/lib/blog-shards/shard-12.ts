@@ -754,92 +754,83 @@ export const POSTS: BlogPost[] = [
     "title": "Bitcoin Mining Training: Skills Every Operator Needs",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-07-25",
-    "description": "Bitcoin Mining Training — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining institute curriculum, plus tested stock.",
+    "date": "2026-09-16",
+    "description": "The practical skill set a bitcoin mining operator actually needs — electrical safety, networking, firmware, monitoring and troubleshooting — and why each one matters.",
     "keywords": [
-      "bitcoin",
-      "mining",
-      "institute",
-      "curriculum",
-      "price",
-      "specs",
-      "profitability"
+      "bitcoin mining skills",
+      "bitcoin mining training",
+      "skills for mining operators",
+      "bitcoin mining competencies",
+      "learn to run asic miners"
     ],
     "intro": [
-      "This guide covers the operational skills that separate profitable sites from failed ones. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"bitcoin mining institute curriculum\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Running bitcoin mining hardware well isn't one skill — it's a small set of practical competencies that each prevent a specific, common failure. This guide breaks down what those skills actually are and why each one earns its place, as a checklist for what to get comfortable with before you're managing hardware at any real scale.",
+      "It's organised by competency rather than by schedule, since different people arrive with different starting knowledge — an electrician needs less help with circuits and more with firmware; a software person is often the reverse."
     ],
     "sections": [
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "Electrical Safety and Circuit Basics",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "You need to understand what a dedicated 200-240 volt circuit actually requires, how to read a breaker's rating against continuous load with proper headroom, and why daisy-chaining PDUs is a fire risk rather than a convenience. You don't need to be a licensed electrician, but you need to know enough to have an informed conversation with one and to recognise when something looks wrong.",
+          "This is the skill where ignorance is most expensive — electrical mistakes cause fires and equipment damage, not just downtime, and it's the one area where guessing is genuinely dangerous rather than just costly."
         ]
       },
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Basic Networking",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "Miners need a wired Ethernet connection, a static or reserved IP (or at least a reliable way to find their DHCP-assigned address), and — for a fleet — a subnet you can scan and manage. You need to understand enough networking to diagnose 'the miner isn't connecting to the pool' as either a local network problem or a pool-side problem, since the fix is completely different depending on which it is.",
+          "This doesn't require deep IT expertise, but it does require comfort with a router's admin interface and, for anything beyond a couple of machines, a basic understanding of how to organise a subnet so machines don't collide on IP addresses."
         ]
       },
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "Firmware Management",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "You need to know where official firmware comes from, why an unofficial image is a warranty and security risk, and how to flash a machine without bricking it — back up configuration first, never interrupt a flash, and test one unit before rolling a change across a fleet. This is the skill most likely to cause an expensive mistake if skipped.",
+          "You also need enough judgment to decide when NOT to update — a stable machine hitting rated hashrate doesn't need the newest firmware just because it exists."
         ]
       },
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "Monitoring and Alerting",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "Beyond a machine or two, you need some system — even a simple one — that tells you when a machine drops offline or underperforms, rather than discovering it days later during a routine check. The specific tool matters less than having one at all; a manufacturer's own interface is enough for a single unit, but a fleet needs aggregated alerting.",
+          "The core skill here isn't technical sophistication, it's discipline: actually checking the dashboard or acting on the alert, rather than setting it up once and ignoring it."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "Basic Diagnostic Sequence",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "When a machine underperforms, the diagnostic sequence is nearly always the same: check hashboards online, check per-board temperatures, check pool connection status, check for recent firmware or configuration changes, in that order. Learning this sequence turns a confusing problem into a five-minute checklist.",
+          "You don't need to know how to repair a hashboard yourself, but you do need to be able to correctly identify WHICH subsystem is failing, since that determines whether you're calling a repair centre, checking your network, or just waiting out a temporary pool issue."
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Buying and Vendor Judgment",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
-        ]
-      },
-      {
-        "h2": "Resale Value and Exit Planning",
-        "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "The last skill isn't technical at all: knowing how to vet a seller, price hardware fairly on delivered dollars per terahash, and recognise the specific red flags — no company registration, pressure to pay immediately, prices far below market — that predict a bad transaction.",
+          "This skill compounds with the others: a well-run electrical and monitoring setup is wasted if the hardware itself was a bad purchase to begin with. We built our own process — bench-testing, condition grading, written warranty terms — around exactly the standard this skill teaches you to demand from any supplier, including us."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Which skill matters most for a first-time operator?",
+        "a": "Electrical safety — it's the one area where a mistake causes real damage or danger, not just downtime, so it deserves the most caution even if you're not doing the wiring yourself."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "Do I need to be able to repair hardware myself?",
+        "a": "No — you need to correctly diagnose WHICH subsystem is failing, so you know whether to call a repair centre, check your network, or wait out a pool issue. Repair is a separate, optional skill."
       },
       {
-        "q": "Can I run bitcoin mining institute curriculum at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "How much networking knowledge is actually required?",
+        "a": "Enough to use your router's admin interface and understand IP basics — not deep IT expertise, but more than zero if you're running more than one machine."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "What's the biggest firmware-related mistake to avoid?",
+        "a": "Flashing unofficial images, or updating firmware for no specific reason on a machine that's already stable and hitting rated hashrate."
       },
       {
-        "q": "Is bitcoin mining institute curriculum a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "Is vendor vetting really a 'skill'?",
+        "a": "Yes — it's learnable and specific: company registration, written quotes, test evidence and clear warranty terms are checkable in minutes once you know to look for them."
       }
     ],
     "match": {
@@ -847,7 +838,7 @@ export const POSTS: BlogPost[] = [
         "s21"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "antminer-s21-216t-review-specs-and-power-draw",

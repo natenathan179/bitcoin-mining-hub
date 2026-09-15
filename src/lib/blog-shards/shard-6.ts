@@ -526,91 +526,83 @@ export const POSTS: BlogPost[] = [
     "title": "Bitcoin Mining Institute: A Practical Self-Taught Curriculum",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-25",
-    "description": "Bitcoin Mining Institute — real pricing, efficiency in J/TH, power requirements and payback math for bitcoin mining institute, plus tested stock shipped.",
+    "date": "2026-09-16",
+    "description": "A structured, self-taught curriculum for learning bitcoin mining from zero — organised into stages with what to study, what to buy, and what to skip at each step.",
     "keywords": [
-      "bitcoin",
-      "mining",
-      "institute",
-      "price",
-      "specs",
-      "profitability"
+      "bitcoin mining institute",
+      "bitcoin mining course",
+      "learn bitcoin mining",
+      "bitcoin mining curriculum",
+      "bitcoin mining education"
     ],
     "intro": [
-      "This guide covers teaching yourself mining properly instead of paying for a course. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"bitcoin mining institute\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "There's no accredited \"Bitcoin Mining Institute\" handing out diplomas — what actually exists is a body of practical knowledge that operators build stage by stage, usually the hard way, one mistake at a time. This guide organises that knowledge into a curriculum you can follow deliberately instead of learning it in a random order.",
+      "It's structured in four stages, each building on the last, with a clear signal for when you're ready to move to the next one. Skip stages at your own risk — most expensive mining mistakes come from buying hardware before finishing stage one."
     ],
     "sections": [
       {
-        "h2": "How This Fits a Diversified Mining Strategy",
+        "h2": "Stage One: The Economics, Before You Own Anything",
         "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+          "Before touching hardware, learn to calculate daily and monthly profit from four inputs: hashrate, wall watts, your electricity rate, and network difficulty. Practice this calculation on three or four different machines using public specifications until it's automatic, not a lookup.",
+          "You're ready for stage two when you can explain, without a calculator in hand, why two machines with the same hashrate can have completely different profitability, and why difficulty growth erodes a fixed machine's output over time."
         ]
       },
       {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "h2": "Stage Two: Electrical and Site Fundamentals",
         "paras": [
-          "Every buying decision in bitcoin mining institute comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+          "Learn what a dedicated 200-240 volt circuit actually requires, why household 120V outlets can't run full-size hardware, and how to size a breaker with proper headroom for continuous load. Learn the noise and heat profile of air, hydro and immersion cooling, and which sites tolerate which type.",
+          "You're ready for stage three when you can look at any site — garage, spare room, shed, hosted rack — and correctly say what class of hardware it can and can't support, and why."
         ]
       },
       {
-        "h2": "Price per Terahash, Not Headline Hashrate",
+        "h2": "Stage Three: Operating a Machine Day to Day",
         "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in bitcoin mining institute and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+          "Learn pool selection and configuration, worker naming conventions, firmware update discipline, and the basic diagnostic sequence for a machine that's underperforming: check hashboards online, check temperatures, check pool connection, in that order. Learn what a normal load-test result looks like so you can recognise an abnormal one.",
+          "You're ready for stage four when you can set up a new machine end to end — power, network, pool, monitoring — without referring to a guide, and diagnose a common fault from symptoms alone."
         ]
       },
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "Stage Four: Buying, Selling and Scaling",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "Learn to vet a seller (company registration, written quote, test evidence, warranty terms), price hardware on delivered dollars per terahash, and plan an exit strategy before you buy rather than after. Learn the difference between building your own site and hosting, and when each makes sense.",
+          "This stage never really ends — market conditions, hardware generations and difficulty all keep moving, and staying current is the actual ongoing curriculum once the fundamentals are solid."
         ]
       },
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Resources Worth Studying at Each Stage",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "For stage one, any mining profitability calculator that accepts your own hashrate and wattage inputs. For stage two, manufacturer datasheets and a conversation with a licensed electrician before any real installation. For stage three, the manufacturer's own configuration documentation and forums where real operators troubleshoot in public.",
+          "For stage four, actual supplier quotes and used-market listings — there's no substitute for reading real pricing and real seller behaviour once you know what to look for."
         ]
       },
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "The Fastest Way to Shortcut This Curriculum",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
-        ]
-      },
-      {
-        "h2": "Maintenance, Spares and Real Operating Costs",
-        "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "Buying from a supplier that bench-tests, condition-grades and documents everything compresses stages two through four considerably, because the verification work that normally takes months of mistakes to learn is already done for you on every unit.",
+          "It doesn't replace stage one — you still need to understand the economics yourself — but it removes most of the operational risk while you're still building that judgment. We're set up to be that shortcut: tested hardware, written warranty terms, and a support desk that answers the stage-three questions directly."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Is bitcoin mining institute a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "Is there an actual accredited bitcoin mining course?",
+        "a": "Not in the traditional sense. The knowledge is practical and operator-taught; this curriculum organises it into stages you can follow deliberately instead of learning by accident."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "What should I learn first?",
+        "a": "The profitability calculation — hashrate, watts, your power rate and network difficulty. Everything else depends on understanding that math first."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "How long does this curriculum take?",
+        "a": "Stages one and two can be learned in a weekend of focused reading. Stage three takes hands-on time with a real machine. Stage four is ongoing for as long as you keep buying and selling hardware."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "Do I need to finish all four stages before buying anything?",
+        "a": "At minimum finish stage one — buying before you can calculate profitability is how most people overpay for the wrong machine."
       },
       {
-        "q": "Can I run bitcoin mining institute at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Can buying from a good supplier replace this curriculum?",
+        "a": "It shortcuts stages two through four considerably by handling verification and testing for you, but you still need stage one's economics knowledge to know if you're even making a sound purchase."
       }
     ],
     "match": {
@@ -625,91 +617,83 @@ export const POSTS: BlogPost[] = [
     "title": "Are Bitcoins Mined? How New BTC Enters Circulation",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-16",
-    "description": "Are Bitcoins Mined? How New BTC Enters Circulation — real pricing, efficiency in J/TH, power requirements and payback math for are bitcoins mined, plus.",
+    "date": "2026-09-16",
+    "description": "Yes, bitcoin is mined — here's exactly how new BTC enters circulation, the halving schedule, the 21 million cap, and what happens when block rewards eventually end.",
     "keywords": [
-      "are",
-      "bitcoins",
-      "mined",
-      "price",
-      "specs",
-      "profitability"
+      "are bitcoins mined",
+      "how new bitcoin is created",
+      "bitcoin halving explained",
+      "bitcoin 21 million cap",
+      "bitcoin block reward"
     ],
     "intro": [
-      "This guide covers how bitcoin issuance and mining rewards actually work. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"are bitcoins mined\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Yes — every bitcoin in existence was created through mining, and mining remains the only mechanism by which new bitcoin enters circulation. There is no other issuance method, no founder allocation still being released, and no central authority that can create more. This guide explains exactly how that issuance works, on a fixed and fully predictable schedule.",
+      "Understanding this schedule matters beyond trivia — it directly explains why bitcoin's supply is capped, why mining rewards shrink over time, and what that means for the mining business model decades from now."
     ],
     "sections": [
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "The Coinbase Transaction: Where New BTC Is Actually Created",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "Every roughly ten minutes, the miner who wins that round's competition includes a special transaction — called the coinbase transaction — at the start of the new block, paying themselves a fixed amount of brand-new bitcoin. This is literally the only place in the entire system where bitcoin is created from nothing; every other transaction just moves existing bitcoin between addresses.",
+          "The winning miner also collects the transaction fees from everyone else's transactions included in that same block, but the coinbase transaction's new-coin portion is separate from those fees and is what people mean by \"the block reward.\""
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "The Halving: Why the Reward Shrinks on a Schedule",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "The new-coin reward started at 50 bitcoin per block in 2009 and cuts exactly in half every 210,000 blocks — roughly every four years — a rule written directly into Bitcoin's code that no one can change without near-universal agreement across the network. This event is called \"the halving,\" and it has already happened multiple times, each time permanently reducing new supply growth.",
+          "Because the halving is scheduled by block count rather than calendar date, its exact timing shifts slightly based on how fast blocks are actually found, but it has never missed its programmed target by more than a few days across Bitcoin's history."
         ]
       },
       {
-        "h2": "Resale Value and Exit Planning",
+        "h2": "Why the Total Supply Is Capped at 21 Million",
         "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "Because the reward keeps halving indefinitely rather than continuing at a fixed rate, the total amount of bitcoin that will ever be created converges toward a fixed ceiling — 21 million coins — rather than growing forever. No new rule needs to trigger this; it's simply the mathematical result of a reward that keeps cutting in half.",
+          "The vast majority of that 21 million cap has already been mined, since the earliest halvings released the largest absolute amounts of new bitcoin. The remaining unmined supply is a small and shrinking fraction of the total."
         ]
       },
       {
-        "h2": "How This Fits a Diversified Mining Strategy",
+        "h2": "What Happens When Block Rewards Eventually End",
         "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+          "Once the new-coin reward eventually rounds down to zero — projected for around the year 2140, after enough halvings — miners will earn only from transaction fees, not from newly created bitcoin. Whether that fee income alone will be enough to sustain mining security at that point is a genuinely open question that depends heavily on Bitcoin's transaction volume and fee market by then.",
+          "This transition is far enough in the future that it has no bearing on mining economics today, but it's the honest answer to \"what happens after all 21 million are mined\" — mining doesn't necessarily stop, but its economics change fundamentally."
         ]
       },
       {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "h2": "Why This Schedule Is Considered Trustworthy",
         "paras": [
-          "Every buying decision in are bitcoins mined comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+          "The issuance schedule is enforced by every participant's software independently verifying every block, not by trusting a company or government to honour a promise. Changing it would require convincing the overwhelming majority of the network to run different software simultaneously, which has never happened and is deliberately difficult by design.",
+          "This is the core reason bitcoin's fixed supply is treated as credible rather than as a marketing claim — it's mathematically enforced by the same distributed verification that secures every transaction, not stated policy that could quietly change."
         ]
       },
       {
-        "h2": "Price per Terahash, Not Headline Hashrate",
+        "h2": "How This Connects to Mining Economics Today",
         "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in are bitcoins mined and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
-        ]
-      },
-      {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
-        "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "Every halving cuts a miner's new-coin revenue in half overnight without warning changing anything else — hardware, electricity cost and difficulty all stay wherever they were. This is exactly why efficiency matters so much for surviving a halving: only operators with a low enough cost per unit of output remain profitable after the reward drops.",
+          "If you're mining bitcoin specifically, understand where the next halving falls and model your hardware's economics against a post-halving reward, not just today's — it's the single most predictable disruption in this entire industry."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Is are bitcoins mined a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "Is bitcoin actually mined, or was it all created at launch?",
+        "a": "It's mined continuously — every bitcoin in existence, from the very first block to today, was created through the mining process. None of it was pre-allocated at launch."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "What is the bitcoin halving?",
+        "a": "A scheduled event, roughly every four years, that cuts the new-coin mining reward exactly in half. It's written directly into Bitcoin's code."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Why is bitcoin's supply capped at 21 million?",
+        "a": "Because the reward keeps halving indefinitely rather than staying fixed, total issuance mathematically converges toward that ceiling rather than growing forever."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "What happens to miners after all 21 million bitcoin are mined?",
+        "a": "They'll earn only from transaction fees rather than newly created coins — a transition projected for around the year 2140."
       },
       {
-        "q": "Can I run are bitcoins mined at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Can the bitcoin issuance schedule be changed?",
+        "a": "Only if the overwhelming majority of the network agreed to run different software simultaneously, which has never happened and is deliberately difficult."
       }
     ],
     "match": {
@@ -717,7 +701,7 @@ export const POSTS: BlogPost[] = [
         "s21"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "buy-antminer-s17-pricing-risks-and-safety-checks",

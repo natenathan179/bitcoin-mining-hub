@@ -790,92 +790,83 @@ export const POSTS: BlogPost[] = [
     "title": "All About Crypto Mining: Hardware, Coins and Returns",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-21",
-    "description": "All About Crypto Mining — real pricing, efficiency in J/TH, power requirements and payback math for all about crypto mining, plus tested stock shipped.",
+    "date": "2026-09-16",
+    "description": "A coin-agnostic survey of crypto mining hardware — which algorithms need ASICs, which still use GPUs, and how realistic returns compare across the mineable coin landscape.",
     "keywords": [
-      "all",
-      "about",
-      "crypto",
-      "mining",
-      "price",
-      "specs",
-      "profitability"
+      "crypto mining hardware",
+      "crypto mining coins compared",
+      "asic vs gpu mining",
+      "which coins are mineable",
+      "crypto mining returns"
     ],
     "intro": [
-      "This guide covers the full picture of crypto mining across coins and hardware. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"all about crypto mining\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "Crypto mining hardware splits along algorithm lines, not brand lines — the machine that mines bitcoin cannot mine most other coins, and the machine that mines Litecoin cannot mine bitcoin. This guide surveys the landscape coin-agnostically: which algorithms dominate the mineable coin space, what hardware each needs, and how realistic returns compare across them.",
+      "It's meant as an orientation for someone deciding where to point mining capital, not a deep dive into any single coin — for that, see our model-specific and coin-specific guides once you've picked a lane."
     ],
     "sections": [
       {
-        "h2": "Price per Terahash, Not Headline Hashrate",
+        "h2": "SHA-256: Bitcoin and Its Merged-Mining Cousins",
         "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in all about crypto mining and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+          "SHA-256 is Bitcoin's algorithm, fully dominated by ASICs, with the deepest secondary market and the most predictable hardware pipeline of any mineable coin. A handful of smaller SHA-256 coins can be merge-mined alongside bitcoin at effectively no extra cost, adding marginal revenue to an existing bitcoin operation.",
+          "This is the default choice for most new entrants because of hardware availability, resale liquidity and the sheer amount of public information available for modelling returns accurately."
         ]
       },
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "Scrypt: Litecoin and Dogecoin's Merged Pair",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
+          "Scrypt ASICs mine Litecoin and Dogecoin simultaneously through merged mining, paying out in both coins from the same hashrate. Scrypt hardware is a smaller market than SHA-256 but still mature, with efficient current-generation units available from established manufacturers.",
+          "Returns here depend on both coins' combined price and difficulty, which historically has moved somewhat independently of bitcoin — a genuine diversification angle for an operator already holding SHA-256 capacity."
         ]
       },
       {
-        "h2": "Electrical Requirements and Circuit Planning",
+        "h2": "Equihash and kHeavyHash: Smaller, Specialised Niches",
         "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "Equihash (Zcash and related coins) and kHeavyHash (Kaspa) each have dedicated ASIC hardware from a small number of manufacturers, with thinner secondary markets and less price history to model against than SHA-256 or Scrypt. Efficiency gains between generations can be dramatic, which also means older units age out of profitability faster.",
+          "These niches suit buyers who specifically want exposure to that coin rather than bitcoin, understanding that liquidity — both for the coin and for reselling the hardware later — is thinner than the mainstream algorithms."
         ]
       },
       {
-        "h2": "Firmware, Pools and Day-One Configuration",
+        "h2": "Where GPU Mining Still Survives",
         "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
+          "GPU mining persists only on algorithms deliberately designed to resist ASIC dominance, or on coins too small or too new to justify ASIC development yet. The trade-off is efficiency: a GPU rig burns far more electricity per unit of output than an ASIC on an algorithm that has one, which caps realistic returns compared to ASIC-mineable coins at the same power rate.",
+          "GPU mining's real advantage is flexibility — the same hardware can switch between algorithms and coins as profitability shifts, something no ASIC can do. That flexibility has value for an operator actively managing a portfolio, less so for someone who just wants steady returns."
         ]
       },
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "Comparing Realistic Returns Across the Landscape",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "Regardless of algorithm, returns come down to the same four inputs: hashrate, wall power, your electricity rate, and network difficulty for that specific coin. SHA-256 and Scrypt have the most reliable data to model against; smaller niches require more caution because price and difficulty history is thinner and more volatile.",
+          "Never assume a smaller coin's headline return figures will hold — they're typically calculated at a snapshot in time and can swing hard with a single large miner joining or leaving that specific network."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "Choosing a Lane",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
-        ]
-      },
-      {
-        "h2": "Shipping Worldwide from Hong Kong",
-        "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "For most buyers, SHA-256 remains the default: deepest market, best information, most predictable hardware pipeline. Scrypt is a reasonable second position for diversification. Equihash, kHeavyHash and other niches suit buyers with specific coin conviction who accept thinner liquidity in exchange for that exposure.",
+          "We carry hardware across SHA-256, Scrypt and several smaller algorithms, bench-tested and condition-graded the same way regardless of which coin it mines — talk to us about your specific goal and we'll point you to the right lane rather than the biggest-margin sale."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Can one machine mine multiple different cryptocurrencies?",
+        "a": "Only within the same algorithm family, and only via merged mining (like Scrypt's Litecoin/Dogecoin pair). A machine built for one algorithm cannot mine a coin using a different one."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "Is bitcoin still the best coin to mine?",
+        "a": "For most buyers, yes — it has the deepest hardware market, the most reliable modelling data, and the best resale liquidity of any mineable coin."
       },
       {
-        "q": "Can I run all about crypto mining at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Why does GPU mining still exist if ASICs are so much faster?",
+        "a": "Only on algorithms specifically designed to resist ASIC dominance, or on coins too new or small for ASIC development yet to make sense."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "Are smaller mineable coins riskier to mine?",
+        "a": "Generally yes — thinner liquidity for both the coin and the hardware, and less historical data to model returns against reliably."
       },
       {
-        "q": "Is all about crypto mining a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "How do I compare returns across different algorithms fairly?",
+        "a": "Use the same four inputs for each — hashrate, wall watts, your power rate, and that coin's network difficulty — rather than comparing headline return percentages from different sources."
       }
     ],
     "match": {

@@ -7,92 +7,83 @@ export const POSTS: BlogPost[] = [
     "title": "What Is Bit Mining? Bitcoin Mining Explained Simply",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-23",
-    "description": "What Is Bit Mining? Bitcoin Mining Explained Simply — real pricing, efficiency in J/TH, power requirements and payback math for what is bit mining, plus.",
+    "date": "2026-09-16",
+    "description": "A plain-language explanation of what bitcoin mining actually is, why it uses electricity to secure the network, and how new bitcoin gets created — no jargon.",
     "keywords": [
-      "what",
-      "is",
-      "bit",
-      "mining",
-      "price",
-      "specs",
-      "profitability"
+      "what is bit mining",
+      "what is bitcoin mining",
+      "bitcoin mining explained simply",
+      "how does bitcoin mining work",
+      "bitcoin mining for beginners"
     ],
     "intro": [
-      "This guide covers what bit mining actually is, in plain language. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"what is bit mining\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "\"Bit mining\" is a common shorthand for bitcoin mining — the process that both secures the Bitcoin network and creates new bitcoin. If you've never touched cryptocurrency before, the word \"mining\" is genuinely misleading: nothing is dug out of the ground, and there's no physical resource involved at all.",
+      "This is the plain-language version, written for someone who has heard the term and wants to actually understand it, not for someone already comfortable with blockchain terminology. No prior knowledge assumed."
     ],
     "sections": [
       {
-        "h2": "Maintenance, Spares and Real Operating Costs",
+        "h2": "The One-Sentence Version",
         "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
+          "Bitcoin mining is specialised computers competing to solve a math puzzle roughly every ten minutes; whoever solves it first gets to add the next batch of transactions to Bitcoin's public ledger and receives newly created bitcoin as a reward.",
+          "Everything else about mining is detail on top of that one sentence — the hardware, the electricity, the pools, the difficulty adjustments. If you only remember one thing, remember that it's a competition, and computers with more processing power have a proportionally better chance of winning it."
         ]
       },
       {
-        "h2": "Buying Safely: Verification Before Payment",
+        "h2": "Why Compete for a Math Puzzle at All",
         "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
+          "Bitcoin needs an agreed-upon order for transactions, and it needs to prevent anyone from spending the same bitcoin twice. Instead of trusting a bank or company to keep that order, Bitcoin makes computers compete for the right to record it, and rewards the winner — this is called \"proof of work,\" because winning proves you spent real computing effort.",
+          "That competition is also what makes the network secure: rewriting Bitcoin's history would require re-winning that competition over and over faster than everyone else combined, which becomes effectively impossible once enough computing power is competing honestly."
         ]
       },
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Where the New Bitcoin Actually Comes From",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "Every time someone wins the competition, the Bitcoin software creates a fixed amount of new bitcoin and gives it to them — this is the only way new bitcoin enters circulation. That reward is cut in half roughly every four years, which is why Bitcoin's total supply is capped and shrinks toward zero new coins over time.",
+          "The winner also collects the transaction fees from everyone whose transactions they included in that batch, which is why miners' income has two parts: the fixed new-coin reward and variable transaction fees."
         ]
       },
       {
-        "h2": "Resale Value and Exit Planning",
+        "h2": "Why It Takes Special Computers, Not a Laptop",
         "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "The math puzzle is just a specific type of calculation performed over and over as fast as possible. Specialised chips called ASICs are built to do exactly that one calculation and nothing else, making them thousands of times faster at it than a general-purpose computer chip — which is why mining bitcoin on a laptop today earns essentially nothing.",
+          "This specialisation is also why mining hardware can't be repurposed for anything else. An ASIC built for Bitcoin's specific calculation cannot mine a different cryptocurrency that uses a different calculation, and it can't do general computing tasks either."
         ]
       },
       {
-        "h2": "How This Fits a Diversified Mining Strategy",
+        "h2": "Why Individual Miners Join \"Pools\"",
         "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+          "Winning the competition alone is now extremely unlikely for any single machine, because so much computing power is competing globally. Pools let many machines combine their computing power, win collectively far more often, and split the reward proportionally — turning an unpredictable jackpot into steady, small, frequent payments.",
+          "Almost every miner today, from a single home machine to a large operation, mines through a pool rather than trying to win the competition alone."
         ]
       },
       {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "h2": "Why Mining Uses So Much Electricity",
         "paras": [
-          "Every buying decision in what is bit mining comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
-        ]
-      },
-      {
-        "h2": "Price per Terahash, Not Headline Hashrate",
-        "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in what is bit mining and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+          "Because the competition rewards raw calculation speed, and running calculations at high speed on real hardware consumes real electricity — there's no way around that trade-off, and it's intentional. The electricity cost is what makes attacking the network expensive, which is the whole security model working as designed.",
+          "This is also why mining profitability comes down almost entirely to your electricity price: the machine's calculation speed is fixed once you buy it, but your power cost determines whether that speed earns more than it costs to run."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Can I run what is bit mining at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Is bitcoin mining actually digging anything up?",
+        "a": "No. \"Mining\" is a metaphor. It's specialised computers competing to solve a calculation, with no physical resource involved at all."
       },
       {
-        "q": "How do you test hardware before shipping?",
-        "a": "Every unit runs on our bench under load, and we record hashrate against rated output, per-board temperature spread, fan RPM and PSU behaviour. You receive that report plus photographs of the serial numbers on the machines actually reserved for your order."
+        "q": "Can I mine bitcoin on a normal computer?",
+        "a": "Not profitably. Specialised ASIC chips are thousands of times faster at Bitcoin's specific calculation than a general-purpose computer, which has made regular hardware uncompetitive for years."
       },
       {
-        "q": "Is what is bit mining a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "Where does new bitcoin actually come from?",
+        "a": "It's created by the Bitcoin software itself as a reward for winning the mining competition — that's the only way new bitcoin enters circulation."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "Why does mining need so much electricity?",
+        "a": "The competition rewards raw calculation speed, and speed costs electricity on real hardware. That cost is intentional — it's what makes attacking the network expensive."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "What's a mining pool and why does it matter?",
+        "a": "A pool combines many machines' computing power to win the competition more often and split the reward proportionally, turning a rare jackpot into steady, predictable payouts."
       }
     ],
     "match": {
@@ -100,100 +91,90 @@ export const POSTS: BlogPost[] = [
         "s21"
       ]
     },
-    "readMinutes": 8
+    "readMinutes": 6
   },
   {
     "slug": "are-all-crypto-coins-mined-proof-of-work-vs-proof-of-stake",
     "title": "Are All Crypto Coins Mined? Proof of Work vs Proof of Stake",
     "category": "Setup & Operations",
     "categoryId": "setup",
-    "date": "2026-08-19",
-    "description": "Are All Crypto Coins Mined? Proof of Work vs Proof of Stake — real pricing, efficiency in J/TH, power requirements and payback math for are all crypto.",
+    "date": "2026-09-16",
+    "description": "No — most major cryptocurrencies today use proof of stake, not mining. Here's which major coins are actually mined, which aren't, and why the split happened.",
     "keywords": [
-      "are",
-      "all",
-      "crypto",
-      "coins",
-      "mined",
-      "price",
-      "specs",
-      "profitability"
+      "are all crypto coins mined",
+      "proof of work vs proof of stake",
+      "which cryptocurrencies are mined",
+      "mined vs staked coins",
+      "crypto consensus mechanisms"
     ],
     "intro": [
-      "This guide covers which coins are mined and which are not. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"are all crypto coins mined\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
+      "No — most cryptocurrencies today aren't mined at all. Mining is specific to \"proof of work\" coins; a large and growing share of the market runs on \"proof of stake\" instead, which secures the network through locked-up coin ownership rather than computing power. Confusing the two is common, and it matters if you're deciding whether buying mining hardware even applies to a coin you're interested in.",
+      "This guide draws that line clearly: which major coins are mined, which are staked, and why the split happened in the first place."
     ],
     "sections": [
       {
-        "h2": "Shipping Worldwide from Hong Kong",
+        "h2": "Proof of Work: Security Through Computation",
         "paras": [
-          "We ship from our Hong Kong facility by DHL and FedEx air freight with commercial invoices, HS codes and EORI or VAT documentation where required. Typical door-to-door transit is three to seven business days to the USA, Canada, the UK and Europe, with sea freight available for container-scale orders where the saving justifies the timeline.",
-          "Duty treatment varies by destination, so ask for a landed-cost figure rather than a hardware price when you compare suppliers. A machine that looks cheap ex-works often is not once freight, duty and import VAT are added, and that difference changes payback by weeks."
+          "Proof-of-work coins secure their network by having computers compete to solve a calculation, rewarding the winner with newly created coins — this is mining, in the literal sense used throughout this site. Bitcoin, Litecoin, Dogecoin, Monero, Kaspa and Zcash are all proof-of-work coins that are genuinely mined with dedicated hardware.",
+          "The defining trait is that security scales with computing power and electricity spent — more honest computing power competing makes the network harder to attack, at the direct cost of real energy consumption."
         ]
       },
       {
-        "h2": "Resale Value and Exit Planning",
+        "h2": "Proof of Stake: Security Through Ownership",
         "paras": [
-          "Hardware is a depreciating asset with a liquid secondary market, so plan your exit when you buy. Current-generation efficiency holds value best; older units track the profitability threshold and can lose half their price in a single difficulty cycle. Keep original boxes, PSUs and test reports because complete, documented units sell faster and higher.",
-          "If you intend to upgrade on a two-year cadence, factor expected resale into your model rather than assuming zero residual. We buy back and trade in tested fleets, which gives operators a predictable floor and removes the marketplace risk from the exit side of the trade."
+          "Proof-of-stake coins secure their network differently: participants lock up (\"stake\") coins they already own as collateral, and are chosen to validate transactions roughly in proportion to how much they've staked, earning rewards for honest participation and risking penalties for misbehaviour. There's no computational race and no mining hardware involved at all.",
+          "Ethereum made this exact switch in 2022, moving from proof-of-work mining to proof-of-stake validation — which is why older content mentioning \"mining Ethereum\" describes a method that no longer applies to that network."
         ]
       },
       {
-        "h2": "How This Fits a Diversified Mining Strategy",
+        "h2": "Why the Split Happened",
         "paras": [
-          "Most serious operators run a blend: current-generation SHA-256 machines for the core position, older units for cheap seasonal capacity, and sometimes a Scrypt or altcoin unit for exposure to a different reward curve. That mix smooths revenue across difficulty and price cycles better than an all-in bet on one model.",
-          "Match the blend to your power contract. Firm, cheap, year-round power favours a large fleet of efficient machines; interruptible or seasonal power favours cheap hardware you can switch off without regret. The hardware follows the electricity, never the other way round."
+          "Proof of stake emerged largely as a response to proof of work's energy consumption and the centralisation pressure of specialised mining hardware, offering security without the same electricity cost or the ASIC arms race. Critics of proof of stake argue it can concentrate influence among large coin holders instead, a different but real centralisation concern.",
+          "Neither model is objectively superior — they're different trade-offs between energy use, hardware requirements, and how security ties to existing wealth versus computing investment. Different projects have made different bets on which trade-off suits their goals."
         ]
       },
       {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
+        "h2": "How to Tell Which Type a Coin Is",
         "paras": [
-          "Every buying decision in are all crypto coins mined comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
+          "Check the project's own documentation for the term \"consensus mechanism\" — it will say proof of work, proof of stake, or occasionally a hybrid or variant of either. If a coin markets itself around staking rewards or validator nodes, it's proof of stake; if it markets itself around hashrate and mining hardware, it's proof of work.",
+          "Be cautious of outdated articles and old forum posts, since some major coins (Ethereum being the clearest example) switched mechanisms entirely, making pre-2022 mining content about them obsolete."
         ]
       },
       {
-        "h2": "Price per Terahash, Not Headline Hashrate",
+        "h2": "What This Means for Buying Hardware",
         "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in are all crypto coins mined and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
+          "Mining hardware — ASICs or GPUs — is only relevant to proof-of-work coins. There is no hardware to buy for mining a proof-of-stake coin; participation there means acquiring and staking the coin itself, an entirely different capital and risk profile than buying a physical machine.",
+          "If you're specifically interested in a proof-of-stake coin, mining guides and mining hardware simply don't apply — you're looking at a staking guide instead, a different topic with different mechanics and different risks."
         ]
       },
       {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
+        "h2": "Which Major Coins Are Actually Mined Today",
         "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
-        ]
-      },
-      {
-        "h2": "Electrical Requirements and Circuit Planning",
-        "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
+          "Bitcoin, Litecoin, Dogecoin, Monero, Kaspa, Zcash and Dash remain genuinely proof-of-work and mined with dedicated hardware as of today. Ethereum, Cardano, Solana, Polkadot and most newer large-cap chains launched with or switched to proof of stake and are not mined at all.",
+          "This list shifts over time as projects evolve, so if you're evaluating a specific coin, check its current consensus mechanism directly rather than assuming based on age or reputation alone."
         ]
       }
     ],
     "faqs": [
       {
-        "q": "Is are all crypto coins mined a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
+        "q": "Is bitcoin proof of work or proof of stake?",
+        "a": "Proof of work. Bitcoin is genuinely mined with dedicated hardware and has no plans to change that."
       },
       {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
+        "q": "Can I still mine Ethereum?",
+        "a": "No. Ethereum switched entirely to proof of stake in 2022; mining hardware no longer applies to it."
       },
       {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
+        "q": "Is proof of stake better than proof of work?",
+        "a": "They're different trade-offs, not a strict better-or-worse — proof of stake uses far less energy but ties security to existing coin ownership rather than computing investment."
       },
       {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
+        "q": "How do I know if a coin is mined or staked?",
+        "a": "Check its documentation for \"consensus mechanism.\" It will state proof of work (mined), proof of stake (staked), or a variant of either."
       },
       {
-        "q": "Can I run are all crypto coins mined at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
+        "q": "Do I need mining hardware for a proof-of-stake coin?",
+        "a": "No. There's no hardware involved in proof of stake at all — participation means staking coins you already hold, not buying a physical machine."
       }
     ],
     "match": {
@@ -202,109 +183,7 @@ export const POSTS: BlogPost[] = [
         "kas"
       ]
     },
-    "readMinutes": 8
-  },
-  {
-    "slug": "antminer-d9-profitability-dash-mining-returns-modelled",
-    "title": "Antminer D9 Profitability: Dash Mining Returns Modelled",
-    "category": "Profitability",
-    "categoryId": "profit",
-    "date": "2026-07-29",
-    "description": "Antminer D9 Profitability — real pricing, efficiency in J/TH, power requirements and payback math for antminer d9 profitability, plus tested stock shipped.",
-    "keywords": [
-      "antminer",
-      "d9",
-      "profitability",
-      "price",
-      "specs",
-      "profitability"
-    ],
-    "intro": [
-      "This guide covers Antminer D9 returns from X11 Dash mining. It is written from the perspective of a dealer that stocks, bench-tests, ships and repairs this hardware every week from Hong Kong, not from a spec sheet or an affiliate feed.",
-      "Search interest in \"antminer d9 profitability\" is dominated by two practical questions: what does it cost delivered, and does it earn at my electricity rate. Both are answered below with the arithmetic you can reuse for any machine, followed by the units we currently hold in stock."
-    ],
-    "sections": [
-      {
-        "h2": "Efficiency in Joules per Terahash Decides Everything",
-        "paras": [
-          "Every buying decision in antminer d9 profitability comes back to joules per terahash. That single ratio tells you how much electricity the machine burns for each unit of work, and it is the number that survives difficulty increases, halvings and price drawdowns. A unit at 13 J/TH earns through conditions that push a 26 J/TH machine into a daily loss.",
-          "Work out your own break-even before comparing models: multiply the machine's wall draw in kilowatts by 24 hours and by your all-in electricity rate, including delivery, demand and transmission charges. Compare that daily cost to expected daily revenue at current difficulty. If the margin is thin today, the next adjustment will erase it."
-        ]
-      },
-      {
-        "h2": "Price per Terahash, Not Headline Hashrate",
-        "paras": [
-          "Headline hashrate sells machines; delivered cost per terahash pays for them. Take the landed price — hardware plus freight plus duties — and divide by rated terahash to get a comparable figure across brands. That normalised number is how professional buyers shortlist hardware in antminer d9 profitability and it routinely reorders the ranking you get from marketing pages.",
-          "Then weigh capital efficiency against efficiency. Cheap power favours low purchase price and tolerates higher J/TH; expensive power demands current-generation efficiency even at a premium. There is no single right answer, only the right answer for your rate and your holding period."
-        ]
-      },
-      {
-        "h2": "Thermals, Noise and Where the Machine Will Live",
-        "paras": [
-          "Air-cooled ASICs run at 72 to 80 decibels — comparable to a vacuum cleaner that never stops — and dump their entire electrical draw into the room as heat. That makes them fine for a warehouse or an insulated outbuilding and unpleasant anywhere near living space. Hydro and immersion units are near-silent because the noise source is the pump loop, not high-static fans.",
-          "Plan intake and exhaust so hot air never recirculates into the intake. Separate hot and cold aisles physically, run slight positive pressure with filtered intake so dust is pushed out rather than drawn in, and size total CFM with margin for filter loading. Recirculation is the most common cause of unexplained hashrate loss."
-        ]
-      },
-      {
-        "h2": "Electrical Requirements and Circuit Planning",
-        "paras": [
-          "Nearly all modern ASICs need 200-240 V at roughly 16 to 20 amps per machine, which is a dedicated circuit, not a household outlet. Allow about 3.5 kW per air-cooled unit and add 15 to 20 percent headroom for inrush, ventilation and lighting. A 200 A three-phase 208 V service supports roughly 20 machines at full load.",
-          "Use properly rated PDUs, never daisy-chain, and have a licensed electrician sign off the design before energising anything. Send us your panel schedule and we will return a circuit plan mapped to the exact machines in your order so the fleet earns from day one rather than week three."
-        ]
-      },
-      {
-        "h2": "Firmware, Pools and Day-One Configuration",
-        "paras": [
-          "Keep firmware current but conservative. Manufacturer releases usually improve stability and thermal management; aggressive third-party overclock profiles raise voltage and shorten hardware life. If you do tune, do it on hydro or immersion machines where coolant temperature sets the ceiling, and watch results closely for the first month.",
-          "Point the fleet at one pool standard with a worker naming scheme you can read at a glance, and send payouts to a wallet you control rather than an exchange deposit address. Set alerting on hashrate deviation and per-board temperature spread so a failure shows up in minutes, not on the next invoice."
-        ]
-      },
-      {
-        "h2": "Maintenance, Spares and Real Operating Costs",
-        "paras": [
-          "Dust is what kills mining hardware. It insulates heatsinks, raises junction temperatures and accelerates solder fatigue. Compressed-air cleaning quarterly and a full ultrasonic hashboard clean annually add years of usable life. Treat fans as consumables and replace them proactively at around two years — a stalled fan can cook a board in minutes.",
-          "Budget five to eight percent of hardware value per year for operations: PDUs and cabling, filtration, a spare PSU and hashboard per ten machines, and the labour hours nobody puts in a spreadsheet. Watch temperature spread across board sensors rather than peak temperature; a widening spread predicts failure weeks in advance."
-        ]
-      },
-      {
-        "h2": "Buying Safely: Verification Before Payment",
-        "paras": [
-          "The risk in this market is almost never the silicon — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, photographed serial numbers of the actual units, and a bench-test report showing hashrate and per-board temperatures from a real run.",
-          "Every machine referenced in this guide is listed on our catalogue with a live price, a bench-test report and a photograph of the unit you receive. Orders are paid in major cryptocurrencies using QR-code addresses with transaction verification, and nothing ships until payment is confirmed against an issued invoice."
-        ]
-      }
-    ],
-    "faqs": [
-      {
-        "q": "Is antminer d9 profitability a good buy at my electricity rate?",
-        "a": "Under about six cents per kilowatt hour, cheap previous-generation hardware usually pays back fastest. Above ten cents, only current-generation efficiency in the 12-18 J/TH band holds margin. Send us your rate and capacity and we will model the specific machines that make sense before you spend anything."
-      },
-      {
-        "q": "Do you ship worldwide and handle customs?",
-        "a": "Yes. We ship from our Hong Kong warehouse to the USA, Canada, Europe, the UK, Asia, the Middle East, Latin America, Africa and Oceania via DHL and FedEx air freight, with commercial invoices, HS codes and EORI/VAT paperwork where required. Typical transit is three to seven business days."
-      },
-      {
-        "q": "What payment methods do you accept?",
-        "a": "Payment is in major cryptocurrencies — Bitcoin, USDT, Bitcoin Cash, BNB and Dogecoin among others. You choose the asset, pay to the QR-coded address shown at checkout, submit the transaction ID, and the order is released once the payment is verified against your invoice."
-      },
-      {
-        "q": "Is there a warranty on used machines?",
-        "a": "Yes. Used units ship with a written warranty, commonly 30 to 90 days depending on model and grade, covering dead-on-arrival hashboards and PSU failure. New hardware carries manufacturer warranty, and our repair centre performs board-level work beyond the warranty window."
-      },
-      {
-        "q": "Can I run antminer d9 profitability at home?",
-        "a": "Only with a dedicated 200-240 V circuit, somewhere the 72-80 dB of an air-cooled unit will not be a problem, and a plan for the heat. Hydro and immersion machines are far quieter and suit basements and garages, but they need a coolant loop and a heat rejection path."
-      }
-    ],
-    "match": {
-      "brands": [
-        "Bitmain"
-      ],
-      "terms": [
-        "d9"
-      ]
-    },
-    "readMinutes": 8
+    "readMinutes": 7
   },
   {
     "slug": "used-asic-miner-buying-guide-how-to-inspect-test-and-negotiate",
