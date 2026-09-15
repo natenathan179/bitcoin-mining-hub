@@ -74,10 +74,10 @@ export const Route = createFileRoute("/products/")({
         },
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary_large_image" },
-        { property: "og:url", content: "https://bitcoinminingdepot.com/products" },
+        { property: "og:url", content: "https://bitcoinminingdepot.net/products" },
         ...(filter ? [{ name: "robots", content: "noindex, follow" }] : []),
       ],
-      links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/products" }],
+      links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/products" }],
     };
   },
 
@@ -144,13 +144,13 @@ function ProductsPage() {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Shop ASIC Bitcoin Miners",
-      url: "https://bitcoinminingdepot.com/products",
+      url: "https://bitcoinminingdepot.net/products",
       description:
         "In-stock ASIC bitcoin miners, power supplies, immersion cooling and spare parts with worldwide shipping.",
       isPartOf: {
         "@type": "WebSite",
         name: "Bitcoin Mining Depot",
-        url: "https://bitcoinminingdepot.com",
+        url: "https://bitcoinminingdepot.net",
       },
       mainEntity: {
         "@type": "ItemList",
@@ -159,7 +159,7 @@ function ProductsPage() {
           "@type": "ListItem",
           position: i + 1,
           name: p.name,
-          url: `https://bitcoinminingdepot.com/products/${p.slug}`,
+          url: `https://bitcoinminingdepot.net/products/${p.slug}`,
         })),
       },
     },
@@ -167,12 +167,12 @@ function ProductsPage() {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.com/" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.net/" },
         {
           "@type": "ListItem",
           position: 2,
           name: "Shop",
-          item: "https://bitcoinminingdepot.com/products",
+          item: "https://bitcoinminingdepot.net/products",
         },
       ],
     },

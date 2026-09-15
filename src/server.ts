@@ -50,9 +50,17 @@ function isLocal(hostname: string) {
   return LOCAL_HOSTS.has(hostname) || hostname.endsWith(".local");
 }
 
+// We moved from the .com to the .net domain. Any request that still arrives on the old
+// domain (stale backlinks, bookmarks, cached search results) is 301'd to the same path on
+// the new one instead of 404ing — this only fires while the old domain's DNS still points
+// at this server, so the registrar/host also needs the .com forwarded here (or to .net directly).
+const RETIRED_DOMAIN = "bitcoinminingdepot.com";
+const CURRENT_DOMAIN = "bitcoinminingdepot.net";
+
 /**
- * Canonical-origin redirect: force HTTPS and strip a leading "www." so every
- * page has exactly one indexable URL. Skipped for local/sandbox hosts.
+ * Canonical-origin redirect: force HTTPS, strip a leading "www.", and move requests off
+ * the retired domain onto the current one, so every page has exactly one indexable URL.
+ * Skipped for local/sandbox hosts.
  */
 function canonicalRedirect(request: Request): Response | undefined {
   const url = new URL(request.url);
@@ -69,6 +77,10 @@ function canonicalRedirect(request: Request): Response | undefined {
   }
   if (url.hostname.startsWith("www.")) {
     url.hostname = url.hostname.slice(4);
+    changed = true;
+  }
+  if (url.hostname === RETIRED_DOMAIN || url.hostname === `www.${RETIRED_DOMAIN}`) {
+    url.hostname = CURRENT_DOMAIN;
     changed = true;
   }
   if (!changed) return undefined;

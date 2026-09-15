@@ -19,9 +19,9 @@ export const Route = createFileRoute("/shipping-returns")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/shipping-returns" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/shipping-returns" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/shipping-returns" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/shipping-returns" }],
   }),
   component: () => (
     <PolicyPage

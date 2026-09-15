@@ -9,7 +9,7 @@ import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
 
 const COMPARE_URL =
-  "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro";
+  "https://bitcoinminingdepot.net/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro";
 
 const SLUG_A = "antminer-s21-xp-hyd";
 const SLUG_B = "bitmain-antminer-s19-xp-plus-hydro";
@@ -37,13 +37,13 @@ export const Route = createFileRoute("/compare/antminer-s21-xp-hyd-vs-s19-xp-plu
       {
         property: "og:url",
         content:
-          "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+          "https://bitcoinminingdepot.net/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
       },
     ],
     links: [
       {
         rel: "canonical",
-        href: "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+        href: "https://bitcoinminingdepot.net/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
       },
     ],
     scripts: [
@@ -75,13 +75,13 @@ export const Route = createFileRoute("/compare/antminer-s21-xp-hyd-vs-s19-xp-plu
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.com/" },
-            { "@type": "ListItem", position: 2, name: "Compare Miners", item: "https://bitcoinminingdepot.com/products" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.net/" },
+            { "@type": "ListItem", position: 2, name: "Compare Miners", item: "https://bitcoinminingdepot.net/products" },
             {
               "@type": "ListItem",
               position: 3,
               name: "S21 XP Hyd vs S19 XP+ Hydro",
-              item: "https://bitcoinminingdepot.com/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
+              item: "https://bitcoinminingdepot.net/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro",
             },
           ],
         }),

@@ -26629,7 +26629,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "h2": "Buying Sensibly",
         "paras": [
           "Compare quotes on delivered cost per megawatt with the same cooling type and the same scope boundary, and insist the boundary is written down. Ask for reference sites, factory acceptance test reports and the bill of materials for the cooling package.",
-          "We scope container builds alongside the machines that go in them, so power, cooling and hardware are matched rather than assembled from three unrelated purchases. Email sales@bitcoinminingdepot.com with your available power, voltage, climate and target machine model and we will size options and lead times."
+          "We scope container builds alongside the machines that go in them, so power, cooling and hardware are matched rather than assembled from three unrelated purchases. Email sales@bitcoinminingdepot.net with your available power, voltage, climate and target machine model and we will size options and lead times."
         ]
       }
     ],
@@ -27050,7 +27050,7 @@ export const BLOG_POSTS: BlogPost[] = [
         "h2": "The Setup We Recommend to First-Time Home Miners",
         "paras": [
           "One tested machine matched to your circuit and noise tolerance, on a dedicated breaker, with exhaust ducted outside, monitored by pool-side alerts, and modelled at your real power rate before purchase. Scale only after a full month of measured performance.",
-          "Send your power rate, available voltage and where the machine will live to sales@bitcoinminingdepot.com and we will size options and give you the payback range honestly, including when the answer is that mining at your tariff does not pay."
+          "Send your power rate, available voltage and where the machine will live to sales@bitcoinminingdepot.net and we will size options and give you the payback range honestly, including when the answer is that mining at your tariff does not pay."
         ]
       }
     ],

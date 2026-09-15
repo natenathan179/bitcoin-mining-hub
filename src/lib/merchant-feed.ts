@@ -27,7 +27,7 @@ export interface FeedProduct {
   category_id: string | null;
 }
 
-export const FEED_SITE = "https://bitcoinminingdepot.com";
+export const FEED_SITE = "https://bitcoinminingdepot.net";
 
 const SHIP_COUNTRIES = [
   "US","CA","GB","IE","DE","FR","NL","BE","LU","AT","CH","IT","ES","PT","SE","NO","DK","FI","PL","CZ",

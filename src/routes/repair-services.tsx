@@ -24,9 +24,9 @@ export const Route = createFileRoute("/repair-services")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/repair-services" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/repair-services" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/repair-services" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/repair-services" }],
     scripts: [
       {
         type: "application/ld+json",

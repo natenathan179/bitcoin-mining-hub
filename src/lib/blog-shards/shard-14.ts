@@ -1159,7 +1159,7 @@ export const POSTS: BlogPost[] = [
         "h2": "The Setup We Recommend to First-Time Home Miners",
         "paras": [
           "One tested machine matched to your circuit and noise tolerance, on a dedicated breaker, with exhaust ducted outside, monitored by pool-side alerts, and modelled at your real power rate before purchase. Scale only after a full month of measured performance.",
-          "Send your power rate, available voltage and where the machine will live to sales@bitcoinminingdepot.com and we will size options and give you the payback range honestly, including when the answer is that mining at your tariff does not pay."
+          "Send your power rate, available voltage and where the machine will live to sales@bitcoinminingdepot.net and we will size options and give you the payback range honestly, including when the answer is that mining at your tariff does not pay."
         ]
       }
     ],

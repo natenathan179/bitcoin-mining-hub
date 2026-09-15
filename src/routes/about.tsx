@@ -20,10 +20,10 @@ export const Route = createFileRoute("/about")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/about" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/about" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/about" }],
-    scripts: [{ type: "application/ld+json", children: "[{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"name\": \"About Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.com/about\", \"isPartOf\": {\"@type\": \"WebSite\", \"name\": \"Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.com\"}}, {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://bitcoinminingdepot.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"About\", \"item\": \"https://bitcoinminingdepot.com/about\"}]}]" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/about" }],
+    scripts: [{ type: "application/ld+json", children: "[{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"name\": \"About Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.net/about\", \"isPartOf\": {\"@type\": \"WebSite\", \"name\": \"Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.net\"}}, {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://bitcoinminingdepot.net/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"About\", \"item\": \"https://bitcoinminingdepot.net/about\"}]}]" }],
   }),
   component: AboutPage,
 });

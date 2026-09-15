@@ -23,9 +23,9 @@ export const Route = createFileRoute("/wholesale")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/wholesale" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/wholesale" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/wholesale" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/wholesale" }],
     scripts: [
       {
         type: "application/ld+json",
@@ -33,8 +33,8 @@ export const Route = createFileRoute("/wholesale")({
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "@id": "https://bitcoinminingdepot.com/wholesale#page",
-            url: "https://bitcoinminingdepot.com/wholesale",
+            "@id": "https://bitcoinminingdepot.net/wholesale#page",
+            url: "https://bitcoinminingdepot.net/wholesale",
             name: "Wholesale Bitcoin Miners | Bulk ASIC Pricing & Allocation",
             description:
               "Wholesale bitcoin miner pricing for bulk buyers: tiered discounts from 10 units, container freight, escrow-friendly terms and priority allocation on new releases.",
@@ -49,12 +49,12 @@ export const Route = createFileRoute("/wholesale")({
             serviceType: "Bulk ASIC miner wholesale",
             description:
               "Tiered wholesale pricing on new and used ASIC miners from 10 units to full container allocations, with worldwide freight from Hong Kong.",
-            url: "https://bitcoinminingdepot.com/wholesale",
+            url: "https://bitcoinminingdepot.net/wholesale",
             provider: { "@type": "Organization", name: SITE.name, url: SITE.url, logo: SITE.logo },
             areaServed: { "@type": "Place", name: "Worldwide" },
             offers: {
               "@type": "Offer",
-              url: "https://bitcoinminingdepot.com/wholesale",
+              url: "https://bitcoinminingdepot.net/wholesale",
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
               priceSpecification: {
@@ -71,12 +71,12 @@ export const Route = createFileRoute("/wholesale")({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.com/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.net/" },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Wholesale",
-                item: "https://bitcoinminingdepot.com/wholesale",
+                item: "https://bitcoinminingdepot.net/wholesale",
               },
             ],
           },

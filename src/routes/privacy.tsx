@@ -20,9 +20,9 @@ export const Route = createFileRoute("/privacy")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/privacy" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/privacy" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/privacy" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/privacy" }],
   }),
   component: () => (
     <PolicyPage

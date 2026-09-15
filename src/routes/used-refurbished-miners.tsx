@@ -24,9 +24,9 @@ export const Route = createFileRoute("/used-refurbished-miners")({
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/used-refurbished-miners" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/used-refurbished-miners" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/used-refurbished-miners" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/used-refurbished-miners" }],
   }),
   errorComponent: ({ error }) => (
     <SiteLayout>
@@ -70,7 +70,7 @@ const FAQS = [
   },
   {
     q: "What warranty comes with a refurbished miner?",
-    a: "Refurbished and used machines ship with a 30-day functional warranty covering hashboard and PSU failure. Bulk buyers can extend coverage or add on-site spares — email sales@bitcoinminingdepot.com for terms.",
+    a: "Refurbished and used machines ship with a 30-day functional warranty covering hashboard and PSU failure. Bulk buyers can extend coverage or add on-site spares — email sales@bitcoinminingdepot.net for terms.",
   },
   {
     q: "What power and cooling do these miners need?",
@@ -338,7 +338,7 @@ function UsedMinersPage() {
               load-tested at rated hashrate, thermally verified, cleaned, repasted where required and
               packed in professional foam and carton for worldwide DHL or FedEx delivery with
               tracking. Send your electricity rate and available amperage to
-              sales@bitcoinminingdepot.com and our engineers will confirm which of these machines
+              sales@bitcoinminingdepot.net and our engineers will confirm which of these machines
               actually pays back on your site.
             </p>
           </div>

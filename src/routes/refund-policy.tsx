@@ -20,9 +20,9 @@ export const Route = createFileRoute("/refund-policy")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/refund-policy" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/refund-policy" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/refund-policy" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/refund-policy" }],
   }),
   component: () => (
     <PolicyPage

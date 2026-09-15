@@ -89,7 +89,7 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
         heading: "Getting a straight answer on payback",
         paras: [
           "Payback on used hardware is a function of four inputs: purchase price, wall power, your electricity rate, and how long you expect the machine to remain revenue-positive as difficulty rises. Send us the first three and we will model the fourth against the current network, then tell you plainly which units on this page clear your threshold and which do not.",
-          "That conversation takes minutes and it is free. Message our desk on WhatsApp or email sales@bitcoinminingdepot.com with your tariff and target budget, and we will reply with a shortlist drawn from the stock listed above, including freight to your address.",
+          "That conversation takes minutes and it is free. Message our desk on WhatsApp or email sales@bitcoinminingdepot.net with your tariff and target budget, and we will reply with a shortlist drawn from the stock listed above, including freight to your address.",
         ],
       },
     ],

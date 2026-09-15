@@ -1,6 +1,6 @@
 # Bitcoin Mining Hub
 
-BitcoinMiningDepot.com – Professional Enterprise Website Plan
+BitcoinMiningDepot.net – Professional Enterprise Website Plan
 
 Brand Positioning
 

@@ -93,8 +93,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Bitcoin Mining Depot" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: "https://bitcoinminingdepot.com/og-preview.jpg" },
-      { name: "twitter:image", content: "https://bitcoinminingdepot.com/og-preview.jpg" },
+      { property: "og:image", content: "https://bitcoinminingdepot.net/og-preview.jpg" },
+      { name: "twitter:image", content: "https://bitcoinminingdepot.net/og-preview.jpg" },
     ],
     links: [
       // Fonts are self-hosted from /public/fonts — preload the body face used above the fold.

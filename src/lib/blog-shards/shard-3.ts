@@ -1560,7 +1560,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Sensibly",
         "paras": [
           "Compare quotes on delivered cost per megawatt with the same cooling type and the same scope boundary, and insist the boundary is written down. Ask for reference sites, factory acceptance test reports and the bill of materials for the cooling package.",
-          "We scope container builds alongside the machines that go in them, so power, cooling and hardware are matched rather than assembled from three unrelated purchases. Email sales@bitcoinminingdepot.com with your available power, voltage, climate and target machine model and we will size options and lead times."
+          "We scope container builds alongside the machines that go in them, so power, cooling and hardware are matched rather than assembled from three unrelated purchases. Email sales@bitcoinminingdepot.net with your available power, voltage, climate and target machine model and we will size options and lead times."
         ]
       }
     ],

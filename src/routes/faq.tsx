@@ -77,9 +77,9 @@ export const Route = createFileRoute("/faq")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/faq" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/faq" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/faq" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/faq" }],
     scripts: [
       {
         type: "application/ld+json",

@@ -630,7 +630,7 @@ let sm = readFileSync(smPath, "utf8");
 const entries = posts
   .map(
     (p) =>
-      `  <url><loc>https://bitcoinminingdepot.com/blog/${p.slug}</loc><lastmod>${p.date}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>`,
+      `  <url><loc>https://bitcoinminingdepot.net/blog/${p.slug}</loc><lastmod>${p.date}</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>`,
   )
   .join("\n");
 sm = sm.replace("</urlset>", `${entries}\n</urlset>`);

@@ -31,9 +31,9 @@ export const Route = createFileRoute("/reviews")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/reviews" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/reviews" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/reviews" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/reviews" }],
     scripts:
       loaderData && loaderData.count > 0
         ? [
@@ -43,8 +43,8 @@ export const Route = createFileRoute("/reviews")({
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 name: "Bitcoin Mining Depot",
-                url: "https://bitcoinminingdepot.com",
-                logo: "https://bitcoinminingdepot.com/favicon.png",
+                url: "https://bitcoinminingdepot.net",
+                logo: "https://bitcoinminingdepot.net/favicon.png",
               }),
             },
           ]

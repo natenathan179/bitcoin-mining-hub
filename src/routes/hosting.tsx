@@ -23,10 +23,10 @@ export const Route = createFileRoute("/hosting")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/hosting" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/hosting" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/hosting" }],
-    scripts: [{ type: "application/ld+json", children: "[{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"name\": \"Bitcoin Mining Hosting\", \"url\": \"https://bitcoinminingdepot.com/hosting\", \"isPartOf\": {\"@type\": \"WebSite\", \"name\": \"Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.com\"}}, {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://bitcoinminingdepot.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Hosting\", \"item\": \"https://bitcoinminingdepot.com/hosting\"}]}]" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/hosting" }],
+    scripts: [{ type: "application/ld+json", children: "[{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"name\": \"Bitcoin Mining Hosting\", \"url\": \"https://bitcoinminingdepot.net/hosting\", \"isPartOf\": {\"@type\": \"WebSite\", \"name\": \"Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.net\"}}, {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://bitcoinminingdepot.net/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Hosting\", \"item\": \"https://bitcoinminingdepot.net/hosting\"}]}]" }],
   }),
   component: HostingPage,
 });

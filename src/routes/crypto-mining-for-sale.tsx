@@ -10,7 +10,7 @@ import { PAGE_COPY } from "@/lib/page-copy";
 import { formatPrice, SITE, seoDescription, seoPageTitle } from "@/lib/site";
 import { indexVariantMeta, parseIndexSearch, type IndexSearch } from "@/lib/search-meta";
 
-const CANONICAL = "https://bitcoinminingdepot.com/crypto-mining-for-sale";
+const CANONICAL = "https://bitcoinminingdepot.net/crypto-mining-for-sale";
 const TITLE = seoPageTitle("Crypto Mining For Sale: Live Stock", "BMD");
 const DESCRIPTION = seoDescription(
   "Crypto mining hardware for sale with live pricing: Bitcoin, Litecoin, Dogecoin, Kaspa and Monero miners, tested and shipped worldwide from Hong Kong.",
@@ -119,12 +119,12 @@ function CryptoMiningForSalePage() {
         itemListElement: featured.map((p, i) => ({
           "@type": "ListItem",
           position: i + 1,
-          url: `https://bitcoinminingdepot.com/products/${p.slug}`,
+          url: `https://bitcoinminingdepot.net/products/${p.slug}`,
           name: p.name,
           item: {
             "@type": "Product",
             name: p.name,
-            url: `https://bitcoinminingdepot.com/products/${p.slug}`,
+            url: `https://bitcoinminingdepot.net/products/${p.slug}`,
             brand: { "@type": "Brand", name: p.brand || SITE.name },
             description:
               p.short_description ||
@@ -135,7 +135,7 @@ function CryptoMiningForSalePage() {
               price: p.sale_price ?? p.price,
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
-              url: `https://bitcoinminingdepot.com/products/${p.slug}`,
+              url: `https://bitcoinminingdepot.net/products/${p.slug}`,
               seller: { "@type": "Organization", name: SITE.name, url: SITE.url },
             },
           },
@@ -188,7 +188,7 @@ function CryptoMiningForSalePage() {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.com/" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://bitcoinminingdepot.net/" },
         { "@type": "ListItem", position: 2, name: "Crypto Mining For Sale", item: CANONICAL },
       ],
     },

@@ -23,10 +23,10 @@ export const Route = createFileRoute("/contact")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:url", content: "https://bitcoinminingdepot.com/contact" },
+      { property: "og:url", content: "https://bitcoinminingdepot.net/contact" },
     ],
-    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.com/contact" }],
-    scripts: [{ type: "application/ld+json", children: "[{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"name\": \"Contact Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.com/contact\", \"isPartOf\": {\"@type\": \"WebSite\", \"name\": \"Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.com\"}}, {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://bitcoinminingdepot.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Contact\", \"item\": \"https://bitcoinminingdepot.com/contact\"}]}]" }],
+    links: [{ rel: "canonical", href: "https://bitcoinminingdepot.net/contact" }],
+    scripts: [{ type: "application/ld+json", children: "[{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"name\": \"Contact Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.net/contact\", \"isPartOf\": {\"@type\": \"WebSite\", \"name\": \"Bitcoin Mining Depot\", \"url\": \"https://bitcoinminingdepot.net\"}}, {\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"https://bitcoinminingdepot.net/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Contact\", \"item\": \"https://bitcoinminingdepot.net/contact\"}]}]" }],
   }),
   component: ContactPage,
 });
