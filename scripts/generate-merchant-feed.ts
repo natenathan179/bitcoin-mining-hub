@@ -9,6 +9,7 @@ import {
   buildFeedXml,
   feedDescription,
   feedHighlights,
+  feedId,
   feedTitle,
   isFeedEligible,
   priceBand,
@@ -51,7 +52,7 @@ const rows = live.map((p) => {
   const isUsed = /used|refurb/i.test(p.condition);
   const gCondition = isUsed ? "used" : "new";
   return {
-    id: p.slug,
+    id: feedId(p.slug),
     title: feedTitle(p),
     description: feedDescription(p),
     link: `${SITE}/products/${p.slug}`,

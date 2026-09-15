@@ -42,6 +42,25 @@ export const esc = (s: string) =>
 
 const clean = (s: string) => (s || "").replace(/\s+/g, " ").trim();
 
+function stableHash(s: string): string {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+  return h.toString(16).padStart(8, "0");
+}
+
+/**
+ * Google Merchant Center's `id` attribute is capped at 50 characters. Most of our
+ * slugs fit as-is; for the ones that don't, truncate and append a short stable hash
+ * of the full slug so the id stays unique and — critically — identical on every
+ * feed regeneration (Merchant Center tracks an item by this id over time, so it must
+ * not change between runs).
+ */
+export function feedId(slug: string, max = 50): string {
+  if (slug.length <= max) return slug;
+  const suffix = `-${stableHash(slug)}`;
+  return slug.slice(0, max - suffix.length) + suffix;
+}
+
 export function clamp(s: string, max: number) {
   const t = clean(s);
   if (t.length <= max) return t;
@@ -109,7 +128,7 @@ export function buildFeedItem(p: FeedProduct, categoryName?: string) {
   const gCondition = isUsed ? "used" : "new";
   const type = `Bitcoin Mining Hardware > ${categoryName ?? (isUsed ? "Used & Refurbished Miners" : "ASIC Miners")}`;
   const fields = [
-    `<g:id>${esc(p.slug)}</g:id>`,
+    `<g:id>${esc(feedId(p.slug))}</g:id>`,
     `<g:title>${esc(feedTitle(p))}</g:title>`,
     `<g:description>${esc(feedDescription(p))}</g:description>`,
     `<g:link>${FEED_SITE}/products/${esc(p.slug)}</g:link>`,
