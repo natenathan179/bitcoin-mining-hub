@@ -2,8 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { buildFeedXml, type FeedProduct } from "@/lib/merchant-feed";
 
-const SUPABASE_URL = process.env["VITE_SUPABASE_URL"] ?? "";
-const SUPABASE_KEY = process.env["VITE_SUPABASE_PUBLISHABLE_KEY"] ?? "";
+// Cloudflare binds the runtime secret as plain SUPABASE_URL/SUPABASE_PUBLISHABLE_KEY;
+// VITE_-prefixed names only exist for client-bundle build-time replacement (see
+// src/integrations/supabase/client.ts, which uses this same fallback order).
+const SUPABASE_URL = process.env["SUPABASE_URL"] ?? process.env["VITE_SUPABASE_URL"] ?? "";
+const SUPABASE_KEY = process.env["SUPABASE_PUBLISHABLE_KEY"] ?? process.env["VITE_SUPABASE_PUBLISHABLE_KEY"] ?? "";
 
 const PRODUCT_COLUMNS =
   "id,name,slug,brand,hashrate,power,efficiency,algorithm,condition,stock_status,price,sale_price,short_description,description,specs,images,category_id";
