@@ -152,7 +152,13 @@ export async function fetchProductBySlug(slug: string): Promise<Product | null> 
     async () => {
       const { data, error } = await table("products").select("*").eq("slug", slug).maybeSingle();
       if (error) throw error;
-      return (data ?? null) as unknown as Product | null;
+      // A NULL `description` column (common on merchant-feed imports that only ever got a
+      // short_description) must not crash the product page's `description.split(...)` call.
+      // The fallback has to come after the spread, or a present-but-null column would
+      // override it, since object spread keeps whichever key's value was assigned last.
+      return data
+        ? ({ ...(data as { description?: string | null }), description: (data as { description?: string | null }).description ?? "" } as unknown as Product)
+        : null;
     },
     null,
   );

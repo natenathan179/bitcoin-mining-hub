@@ -57,10 +57,17 @@ function isLocal(hostname: string) {
 const RETIRED_DOMAIN = "bitcoinminingdepot.com";
 const CURRENT_DOMAIN = "bitcoinminingdepot.net";
 
+// Crawlers are conservative about robots.txt and sitemaps specifically: several treat a
+// redirect to a *different* domain for these files as "unreachable" and fall back to
+// disallow-all, rather than following it like a normal page redirect. So these paths get
+// served directly on whatever domain asked (their content already points at the current
+// domain), instead of bouncing the crawler across domains first.
+const CRAWL_CONTROL_PATH = /^\/(robots\.txt|sitemap[^/]*\.xml)$/;
+
 /**
  * Canonical-origin redirect: force HTTPS, strip a leading "www.", and move requests off
  * the retired domain onto the current one, so every page has exactly one indexable URL.
- * Skipped for local/sandbox hosts.
+ * Skipped for local/sandbox hosts, and the domain swap is skipped for robots.txt/sitemaps.
  */
 function canonicalRedirect(request: Request): Response | undefined {
   const url = new URL(request.url);
@@ -79,7 +86,10 @@ function canonicalRedirect(request: Request): Response | undefined {
     url.hostname = url.hostname.slice(4);
     changed = true;
   }
-  if (url.hostname === RETIRED_DOMAIN || url.hostname === `www.${RETIRED_DOMAIN}`) {
+  if (
+    !CRAWL_CONTROL_PATH.test(url.pathname) &&
+    (url.hostname === RETIRED_DOMAIN || url.hostname === `www.${RETIRED_DOMAIN}`)
+  ) {
     url.hostname = CURRENT_DOMAIN;
     changed = true;
   }
