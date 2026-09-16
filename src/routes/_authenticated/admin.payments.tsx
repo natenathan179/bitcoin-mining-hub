@@ -213,16 +213,6 @@ function AdminPayments() {
                       update.mutate({ id: m.id, patch: { address: e.target.value } })
                     }
                   />
-                  <Input
-                    aria-label="Handle or tag"
-                    className="sm:col-span-2"
-                    defaultValue={m.handle}
-                    placeholder="Cash App $Cashtag / Chime handle (optional, shown to customer)"
-                    onBlur={(e) =>
-                      e.target.value !== m.handle &&
-                      update.mutate({ id: m.id, patch: { handle: e.target.value } })
-                    }
-                  />
                   <Textarea
                     aria-label="Payment instructions"
                     className="sm:col-span-2"
@@ -345,15 +335,6 @@ function AdminPayments() {
               className="font-mono text-xs"
               value={form.address}
               onChange={(e) => set("address", e.target.value)}
-            />
-          </div>
-          <div className="space-y-1.5">
-            <Label htmlFor="p-handle">Handle / tag (Cash App, Chime)</Label>
-            <Input
-              id="p-handle"
-              value={form.handle}
-              onChange={(e) => set("handle", e.target.value)}
-              placeholder="$yourcashtag"
             />
           </div>
           <div className="space-y-1.5">
