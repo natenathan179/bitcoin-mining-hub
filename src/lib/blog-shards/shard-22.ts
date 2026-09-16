@@ -150,7 +150,7 @@ export const POSTS: BlogPost[] = [
       {
         "h2": "Why Buyers Choose Bitcoin Mining Depot",
         "paras": [
-          "We hold physical stock in North America, publish real specifications, bench-test every unit before it ships, provide written warranty terms, and support crypto, CashApp, Chime and direct bank payment with an order confirmation before funds move. Our team runs machines, so the advice you get is operational rather than promotional.",
+          "We hold physical stock in North America, publish real specifications, bench-test every unit before it ships, provide written warranty terms, and support crypto payment with an order confirmation before funds move. Our team runs machines, so the advice you get is operational rather than promotional.",
           "Tell us your power rate, available amperage and budget and we will model the specific machines that make sense for you — including the honest answer when the right move is to buy fewer units or host them instead."
         ]
       }
@@ -170,7 +170,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "Can I pay for mining hardware in cryptocurrency?",
-        "a": "Yes. We accept major cryptocurrencies with QR-code payment and transaction verification, plus reviewed CashApp, Chime and direct bank transfer."
+        "a": "Yes. We accept major cryptocurrencies with QR-code payment and transaction verification."
       }
     ],
     "match": {},
@@ -192,7 +192,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for antminer vs asic miner usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: Antminer is a brand, ASIC is the technology — and it changes what you buy. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: Antminer is a brand, ASIC is the technology — and it changes what you buy. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -234,7 +234,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -260,7 +260,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",
@@ -289,7 +289,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for antminer s19 custom firmware usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: underclock-for-efficiency profiles that beat raw overclocks. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: underclock-for-efficiency profiles that beat raw overclocks. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -331,7 +331,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -357,7 +357,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",
@@ -392,7 +392,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for buy antminer s17 usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: why S19-class used units usually beat an S17 purchase. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: why S19-class used units usually beat an S17 purchase. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -427,14 +427,14 @@ export const POSTS: BlogPost[] = [
         "h2": "If You Do Buy: Verification Steps",
         "paras": [
           "Insist on a hashing test report with all boards online, photographs of serials, disclosure of any repairs, and a warranty even if it is short. Legacy hardware has usually lived a hard life and the seller should be able to describe that life honestly.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -460,7 +460,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",
@@ -494,7 +494,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for antminer l7 custom firmware usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: 0.36 to 0.31 J/MH with tuned voltage curves. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: 0.36 to 0.31 J/MH with tuned voltage curves. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -536,7 +536,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -562,7 +562,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",
@@ -596,7 +596,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for antminer d7 profitability calculator usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: the five inputs every calculator gets wrong. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: the five inputs every calculator gets wrong. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -638,7 +638,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -664,7 +664,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",

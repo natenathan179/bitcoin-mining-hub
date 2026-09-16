@@ -284,7 +284,7 @@ function MarketplaceLocationPage() {
             <ul className="mt-3 space-y-2">
               <li>Bench-tested, hashrate-verified hardware</li>
               <li>Tracked freight from Hong Kong to {loc.country}</li>
-              <li>Crypto, CashApp, Chime and bank payment</li>
+              <li>Crypto payment, verified on-chain</li>
               <li>Written warranty and in-house repair support</li>
             </ul>
             <a

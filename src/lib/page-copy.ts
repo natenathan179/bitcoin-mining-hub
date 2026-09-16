@@ -155,7 +155,7 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
       {
         heading: "Payment, warranty and support",
         paras: [
-          "We accept major cryptocurrencies with published QR addresses and transaction-ID confirmation, plus CashApp, Chime and bank transfer. Warranty terms are written in plain language, and claims are handled against those terms with spares kept for the models we sell in volume.",
+          "We accept major cryptocurrencies with published QR addresses and transaction-ID confirmation. Warranty terms are written in plain language, and claims are handled against those terms with spares kept for the models we sell in volume.",
           "After delivery we help with pool setup, firmware and tuning, undervolting for efficiency, and fault diagnosis. Talk to the sales desk on WhatsApp, email or the contact form and you will reach someone who has commissioned the machine you are asking about.",
         ],
       },
@@ -229,7 +229,7 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
       {
         heading: "Payment, freight and warranty",
         paras: [
-          "We accept cryptocurrency, CashApp, Chime and bank transfer. Crypto orders are confirmed on-chain: you choose the coin, pay to the published address shown at checkout, then paste the transaction ID with your delivery details so our team can verify the payment before dispatch. Payment details are only ever published on this website — never act on wallet addresses received by email or social media.",
+          "We accept payment in major cryptocurrencies. Orders are confirmed on-chain: you choose the coin, pay to the published address shown at checkout, then paste the transaction ID with your delivery details so our team can verify the payment before dispatch. Payment details are only ever published on this website — never act on wallet addresses received by email or social media.",
           "New hardware carries the manufacturer warranty where applicable; used and refurbished machines carry our own 30-day functional warranty on hashboards and power supplies. Freight claims are handled with the carrier on your behalf, and our repair lab can service most units instead of writing them off.",
         ],
       },
@@ -552,7 +552,7 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
         heading: "What ships with every order",
         paras: [
           "Listings state hashrate, power draw, efficiency and condition as tested, not as printed on the manufacturer datasheet. Units are bench-tested and hashrate-verified before dispatch, packed for international air freight, and accompanied by commercial invoices and HS codes so customs clearance is routine.",
-          "Payment options include major cryptocurrencies, CashApp, Chime and bank transfer, and every order is confirmed in writing with the exact model, quantity, PSU revision and delivery window before funds move.",
+          "Payment is in major cryptocurrencies, and every order is confirmed in writing with the exact model, quantity, PSU revision and delivery window before funds move.",
         ],
       },
       {
@@ -586,7 +586,7 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
       {
         heading: "Ordering, payment and confirmation",
         paras: [
-          "Add hardware to the cart or open the inquiry form on any listing to request a quote with your destination and quantity. We confirm availability, PSU revision, firmware, freight cost and delivery window in writing before any payment. Settlement is by major cryptocurrency against a published address with QR code and transaction-ID confirmation, or by CashApp, Chime or bank transfer for buyers who prefer fiat rails.",
+          "Add hardware to the cart or open the inquiry form on any listing to request a quote with your destination and quantity. We confirm availability, PSU revision, firmware, freight cost and delivery window in writing before any payment. Settlement is by major cryptocurrency against a published address with QR code and transaction-ID confirmation.",
           "Once payment is verified you receive an invoice, packing confirmation and tracking. Larger fleet orders can be staged across multiple shipments so your electrical build and your hardware arrive in step.",
         ],
       },

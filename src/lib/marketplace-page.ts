@@ -191,7 +191,7 @@ export function buildPage(loc: MarketplaceLocation): MarketPage {
   const intro = [
     pick(openers, seed),
     `We are a Hong Kong-based supplier sitting next to the factories and the secondary market, which is why buyers in ${where} get current-generation pricing instead of a reseller markup. Delivery runs on ${L.lane}, and ${L.duty}.`,
-    `Every ${p} listed on this page is real inventory you can add to the cart, pay for in crypto, CashApp, Chime or bank transfer, and track to your door in ${loc.place}. Specification for this model family: ${fam.spec}, running ${fam.algorithm}.`,
+    `Every ${p} listed on this page is real inventory you can add to the cart, pay for in crypto, and track to your door in ${loc.place}. Specification for this model family: ${fam.spec}, running ${fam.algorithm}.`,
   ];
 
   const sections: MarketSection[] = [
@@ -230,7 +230,7 @@ export function buildPage(loc: MarketplaceLocation): MarketPage {
     {
       h2: `How to Order From ${loc.place}`,
       paras: [
-        `The process is deliberately simple. Choose your machine on the product page, add it to the cart or open the inquiry form for a tailored quote, then complete checkout by selecting a payment method — Bitcoin, USDT and other major crypto, or CashApp, Chime and bank transfer for buyers who prefer fiat rails.`,
+        `The process is deliberately simple. Choose your machine on the product page, add it to the cart or open the inquiry form for a tailored quote, then complete checkout with your preferred cryptocurrency — Bitcoin, USDT and other major coins.`,
         `Crypto payers get the receiving address and QR code on screen, then paste the transaction ID and full delivery details for ${loc.place} into the order form. Fiat payers upload proof of payment for manual review. Either way you receive written confirmation, then dispatch tracking once the machine ships.`,
         `Every unit ships with written warranty terms in plain language, and our repair team supports hashboard, PSU and controller faults for the life of the machine — including units already deployed in ${loc.country}.`,
       ],
@@ -248,7 +248,7 @@ export function buildPage(loc: MarketplaceLocation): MarketPage {
   const faqs = [
     {
       q: `Can I buy a ${p} in ${where}?`,
-      a: `Yes. We ship the ${p} directly to ${where} from Hong Kong with express air freight, full customs documentation and tracking. Order online and pay in crypto, CashApp, Chime or bank transfer.`,
+      a: `Yes. We ship the ${p} directly to ${where} from Hong Kong with express air freight, full customs documentation and tracking. Order online and pay in crypto.`,
     },
     {
       q: `How long does delivery to ${loc.place} take?`,
@@ -268,7 +268,7 @@ export function buildPage(loc: MarketplaceLocation): MarketPage {
     },
     {
       q: `Which payment methods can I use from ${loc.country}?`,
-      a: `Bitcoin, USDT and other major cryptocurrencies, plus CashApp, Chime and bank transfer. Crypto payments are confirmed by transaction ID; fiat payments are verified from your uploaded proof of payment.`,
+      a: `Bitcoin, USDT and other major cryptocurrencies. Payments are confirmed by transaction ID on-chain before an order ships.`,
     },
   ];
 
@@ -285,7 +285,7 @@ export function buildPage(loc: MarketplaceLocation): MarketPage {
     h1: `Buy ${p} in ${where}`,
     metaTitle,
     metaDescription:
-      `Buy a ${p} in ${where} from ${SITE.name}. In-stock, bench-tested hardware shipped from Hong Kong with tracked delivery, warranty and crypto, CashApp, Chime or bank payment.`.slice(
+      `Buy a ${p} in ${where} from ${SITE.name}. In-stock, bench-tested hardware shipped from Hong Kong with tracked delivery, warranty and crypto payment.`.slice(
         0,
         158,
       ),

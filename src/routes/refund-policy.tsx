@@ -68,13 +68,6 @@ export const Route = createFileRoute("/refund-policy")({
           ],
         },
         {
-          heading: "How CashApp, Chime and bank refunds are paid",
-          paras: [
-            "CashApp and Chime payments are refunded to the same handle or account that sent the funds, usually within 3 to 5 business days of approval. Bank wire and bank transfer refunds are returned to the originating account and typically settle in 5 to 10 business days, longer for international wires where correspondent banks are involved. Intermediary bank charges on international wires are deducted from the refunded amount.",
-            "We do not send refunds to a third-party account, handle or wallet that did not make the original payment. This protects both sides against fraud and chargeback abuse.",
-          ],
-        },
-        {
           heading: "Refund timeline",
           paras: [
             "Returned goods are inspected within 3 business days of arrival at our warehouse. Once inspection passes, the refund is approved and processed within 10 business days, and in most cases much sooner. For lost-parcel claims the refund follows the carrier's loss declaration, normally 10 to 21 days after the claim is filed. We keep you updated in writing at each step.",

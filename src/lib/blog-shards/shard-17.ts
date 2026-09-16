@@ -125,7 +125,7 @@ export const POSTS: BlogPost[] = [
       {
         "h2": "Payment Methods and How to Protect Yourself",
         "paras": [
-          "Crypto payments are standard in this industry because they settle quickly and internationally, but they are irreversible — so escrow, staged payments or a deposit-plus-balance-on-test arrangement protect both sides. Bank transfer with an invoice provides a paper trail. We also support reviewed CashApp, Chime and direct bank flows for buyers who prefer fiat rails.",
+          "Crypto payments are standard in this industry because they settle quickly and internationally, but they are irreversible — so escrow, staged payments or a deposit-plus-balance-on-test arrangement protect both sides. We accept payment exclusively in major cryptocurrencies, verified on-chain before an order ships.",
           "Whatever the rail, insist on a written order confirmation listing model, quantity, hashrate, condition, warranty term, delivered price and shipping timeline before funds move. That single document resolves nearly every dispute that ever arises."
         ]
       },
@@ -166,7 +166,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "Can I pay for mining hardware in cryptocurrency?",
-        "a": "Yes. We accept major cryptocurrencies with QR-code payment and transaction verification, plus reviewed CashApp, Chime and direct bank transfer."
+        "a": "Yes. We accept major cryptocurrencies with QR-code payment and transaction verification."
       }
     ],
     "match": {},
@@ -203,7 +203,7 @@ export const POSTS: BlogPost[] = [
       {
         "h2": "Why Buyers Choose Bitcoin Mining Depot",
         "paras": [
-          "We hold physical stock in North America, publish real specifications, bench-test every unit before it ships, provide written warranty terms, and support crypto, CashApp, Chime and direct bank payment with an order confirmation before funds move. Our team runs machines, so the advice you get is operational rather than promotional.",
+          "We hold physical stock in North America, publish real specifications, bench-test every unit before it ships, provide written warranty terms, and support crypto payment with an order confirmation before funds move. Our team runs machines, so the advice you get is operational rather than promotional.",
           "Tell us your power rate, available amperage and budget and we will model the specific machines that make sense for you — including the honest answer when the right move is to buy fewer units or host them instead."
         ]
       },
@@ -224,7 +224,7 @@ export const POSTS: BlogPost[] = [
       {
         "h2": "Payment Methods and How to Protect Yourself",
         "paras": [
-          "Crypto payments are standard in this industry because they settle quickly and internationally, but they are irreversible — so escrow, staged payments or a deposit-plus-balance-on-test arrangement protect both sides. Bank transfer with an invoice provides a paper trail. We also support reviewed CashApp, Chime and direct bank flows for buyers who prefer fiat rails.",
+          "Crypto payments are standard in this industry because they settle quickly and internationally, but they are irreversible — so escrow, staged payments or a deposit-plus-balance-on-test arrangement protect both sides. We accept payment exclusively in major cryptocurrencies, verified on-chain before an order ships.",
           "Whatever the rail, insist on a written order confirmation listing model, quantity, hashrate, condition, warranty term, delivered price and shipping timeline before funds move. That single document resolves nearly every dispute that ever arises."
         ]
       },
@@ -251,7 +251,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "Can I pay for mining hardware in cryptocurrency?",
-        "a": "Yes. We accept major cryptocurrencies with QR-code payment and transaction verification, plus reviewed CashApp, Chime and direct bank transfer."
+        "a": "Yes. We accept major cryptocurrencies with QR-code payment and transaction verification."
       }
     ],
     "match": {},
@@ -610,7 +610,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for crypto mining equipment for sale usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: miners, PDUs, immersion tanks, radiators and spares in one order. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: miners, PDUs, immersion tanks, radiators and spares in one order. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -652,7 +652,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -678,7 +678,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",
@@ -704,7 +704,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for used asic miners usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: sub-$500 hashrate for operators with cheap or free power. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: sub-$500 hashrate for operators with cheap or free power. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -746,7 +746,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -772,7 +772,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",
@@ -806,7 +806,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for asic bitmain usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: S, T, L, D, K and Z series side by side. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: S, T, L, D, K and Z series side by side. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -848,7 +848,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -874,7 +874,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",
@@ -903,7 +903,7 @@ export const POSTS: BlogPost[] = [
     ],
     "intro": [
       "Searching for antminer bitmain s19 usually means one of two things: you are close to buying and want to make sure you are not about to overpay, or you are still working out whether the numbers make sense at all. This guide answers both, using the pricing, measured performance and failure data we see running and reselling mining hardware from our Hong Kong facility.",
-      "The short version: S19 vs S19j Pro vs S19k Pro vs S19 XP vs Hydro. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, CashApp, Chime or bank transfer, and worldwide delivery to the USA, Canada, Europe and beyond."
+      "The short version: S19 vs S19j Pro vs S19k Pro vs S19 XP vs Hydro. Every machine mentioned below is in our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can go from reading to ordering in a couple of clicks — with crypto, and worldwide delivery to the USA, Canada, Europe and beyond."
     ],
     "sections": [
       {
@@ -945,7 +945,7 @@ export const POSTS: BlogPost[] = [
         "h2": "Buying Safely and Paying Without Exposure",
         "paras": [
           "The failure mode in this market is almost never the hardware — it is the transaction. Insist on a named legal entity, a verifiable phone number, a written warranty term, an invoice issued before funds move, serial numbers photographed on the machines you are actually buying, and a test report showing hashrate and per-board temperatures from a real bench run.",
-          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto, CashApp, Chime and bank transfer are all accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
+          "Every machine referenced here is listed on our catalogue with a live price, a bench-test report and a photograph of the actual unit, so you can move from this guide to a checkout in two clicks. Crypto is accepted, and orders ship worldwide from our Hong Kong warehouse to the USA, Canada, Europe, Asia, the Middle East, Latin America and Australia."
         ]
       },
       {
@@ -971,7 +971,7 @@ export const POSTS: BlogPost[] = [
       },
       {
         "q": "What payment methods do you accept?",
-        "a": "Major cryptocurrencies with QR-code payment and transaction verification, plus CashApp, Chime and direct bank transfer. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
+        "a": "Major cryptocurrencies with QR-code payment and transaction verification. Every order is confirmed with an invoice before funds move, and orders are only released after payment verification."
       },
       {
         "q": "Is there a warranty on used machines?",

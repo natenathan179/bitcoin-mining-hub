@@ -336,7 +336,7 @@ function BlogPostPage() {
             <ul className="mt-3 space-y-2">
               <li>Bench-tested, hashrate-verified hardware</li>
               <li>Written warranty terms in plain language</li>
-              <li>Crypto, CashApp, Chime and bank payment</li>
+              <li>Crypto payment, verified on-chain</li>
               <li>Shipping from Hong Kong worldwide</li>
             </ul>
             <a
