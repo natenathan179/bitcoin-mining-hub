@@ -86,26 +86,42 @@ const PRODUCT_LIST_COLUMNS =
 const TTL_MS = 300_000;
 const STALE_MS = 24 * 60 * 60 * 1000;
 const cache = new Map<string, { value: unknown; at: number }>();
+// A crawler (or a traffic spike) hitting many pages that share one cache key — e.g.
+// every marketplace and product page reads the same "products" list — can land dozens
+// of requests inside the same cold/expired window. Without this, each one fired its own
+// Supabase read simultaneously, and that redundant burst of outbound requests was
+// slowing down (occasionally past a crawler's own timeout) the very pages it was
+// supposed to make fast. In-flight de-duplication means concurrent callers for the same
+// key share one read instead of each starting their own.
+const inFlight = new Map<string, Promise<unknown>>();
 
 async function resilientRead<T>(key: string, read: () => Promise<T>, fallback: T): Promise<T> {
   const hit = cache.get(key);
   if (hit && Date.now() - hit.at < TTL_MS) return hit.value as T;
 
-  for (let attempt = 0; attempt < 3; attempt += 1) {
-    try {
-      const value = await read();
-      cache.set(key, { value, at: Date.now() });
-      return value;
-    } catch (error) {
-      if (attempt === 2) {
-        console.error(`[data] read failed for ${key}`, error);
-        if (hit && Date.now() - hit.at < STALE_MS) return hit.value as T;
-        return fallback;
+  const pending = inFlight.get(key);
+  if (pending) return pending as Promise<T>;
+
+  const promise = (async () => {
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      try {
+        const value = await read();
+        cache.set(key, { value, at: Date.now() });
+        return value;
+      } catch (error) {
+        if (attempt === 2) {
+          console.error(`[data] read failed for ${key}`, error);
+          if (hit && Date.now() - hit.at < STALE_MS) return hit.value as T;
+          return fallback;
+        }
+        await new Promise((resolve) => setTimeout(resolve, 150 * (attempt + 1)));
       }
-      await new Promise((resolve) => setTimeout(resolve, 150 * (attempt + 1)));
     }
-  }
-  return fallback;
+    return fallback;
+  })().finally(() => inFlight.delete(key));
+
+  inFlight.set(key, promise);
+  return promise;
 }
 
 export async function fetchCategories(): Promise<Category[]> {

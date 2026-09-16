@@ -351,8 +351,8 @@ export const PAGE_COPY: Record<string, { title: string; blocks: CopyBlock[] }> =
       {
         heading: "Payment methods",
         paras: [
-          "We accept major cryptocurrencies, CashApp, Chime and bank transfer. Crypto payments are made to the address and QR code published on our checkout page; after sending funds you paste the transaction ID so the payment can be matched on-chain. CashApp, Chime and bank payments are reviewed manually by our finance desk, which usually completes within one business day.",
-          "For security, wallet addresses and bank details are only ever shown on this website. Treat any payment instruction that arrives by email, chat or social media as fraudulent and contact us directly to verify.",
+          "We accept major cryptocurrencies. Payments are made to the address and QR code published on our checkout page; after sending funds you paste the transaction ID so the payment can be matched and verified on-chain before your order is confirmed.",
+          "For security, wallet addresses are only ever shown on this website. Treat any payment instruction that arrives by email, chat or social media as fraudulent and contact us directly to verify.",
         ],
       },
       {
