@@ -8,7 +8,6 @@ import {
   ShieldCheck,
   ShoppingBag,
   Truck,
-  Upload,
   Wallet,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -20,7 +19,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/lib/cart";
 import { paymentMethodsQuery, type PaymentMethod } from "@/lib/data";
-import { uploadProductImage } from "@/lib/storage";
 import { formatPrice, submitToEmail, SITE } from "@/lib/site";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
@@ -50,22 +48,18 @@ export const Route = createFileRoute("/checkout")({
 
 const STEPS = ["Review order", "Choose payment method", "Payment details & delivery"] as const;
 
-const isCrypto = (m: PaymentMethod | null) => !m || m.kind === "crypto";
-const isBank = (m: PaymentMethod | null) => m?.kind === "bank";
-const isRequest = (m: PaymentMethod | null) => m?.kind === "cashapp" || m?.kind === "chime";
-
 function CheckoutPage() {
   const { items, total, clear } = useCart();
   const navigate = useNavigate();
   const { data: methods = [], isLoading } = useQuery(paymentMethodsQuery());
-  const active = useMemo(() => methods.filter((m) => m.active), [methods]);
+  // Checkout is crypto-only: bank/cashapp/chime rows (still selectable in the admin
+  // payment-methods editor) are simply never offered here.
+  const active = useMemo(() => methods.filter((m) => m.active && m.kind === "crypto"), [methods]);
 
   const [step, setStep] = useState(0);
   const [selected, setSelected] = useState<PaymentMethod | null>(null);
   const [sending, setSending] = useState(false);
   const [done, setDone] = useState(false);
-  const [proofUrl, setProofUrl] = useState("");
-  const [uploading, setUploading] = useState(false);
 
   async function copy(value: string) {
     try {
@@ -76,55 +70,24 @@ function CheckoutPage() {
     }
   }
 
-  async function handleProofUpload(file: File) {
-    try {
-      setUploading(true);
-      setProofUrl(await uploadProductImage(file));
-      toast.success("Payment screenshot uploaded");
-    } catch (e) {
-      toast.error((e as Error).message);
-    } finally {
-      setUploading(false);
-    }
-  }
-
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const get = (k: string) => String(form.get(k) ?? "").trim();
 
-    if (isCrypto(selected) && !get("txid")) {
+    if (!get("txid")) {
       toast.error("Please paste the transaction ID (hash) of your payment.");
       return;
     }
 
-    const requestType = isCrypto(selected)
-      ? "Crypto Order — Payment Submitted"
-      : isBank(selected)
-        ? "Bank Transfer Order — Account Details Requested"
-        : `${selected?.name} Order — Awaiting Payment Request`;
-
     const payload: Record<string, string> = {
-      "Request Type": requestType,
+      "Request Type": "Crypto Order — Payment Submitted",
       "Payment Method": `${selected?.name} (${selected?.symbol})`,
       "Payment Network": selected?.network || "—",
-      ...(isCrypto(selected)
-        ? {
-            "Receiving Address": selected?.address || "—",
-            "Transaction ID": get("txid"),
-            "Amount Sent": get("amount"),
-            "Sending Wallet (optional)": get("wallet"),
-          }
-        : {}),
-      ...(isRequest(selected)
-        ? {
-            "Customer Payment Handle": get("handle"),
-            "Payment Screenshot": proofUrl || "Not uploaded yet — customer will send after paying",
-          }
-        : {}),
-      ...(isBank(selected)
-        ? { "Bank / Transfer Preference": get("banknote") || "Not specified" }
-        : {}),
+      "Receiving Address": selected?.address || "—",
+      "Transaction ID": get("txid"),
+      "Amount Sent": get("amount"),
+      "Sending Wallet (optional)": get("wallet"),
       Items: items
         .map(
           (i) =>
@@ -154,11 +117,7 @@ function CheckoutPage() {
       await submitToEmail(`${selected?.name ?? "Order"} checkout from ${get("name")}`, payload);
       setDone(true);
       clear();
-      toast.success(
-        isCrypto(selected)
-          ? "Payment details received. We are verifying your transaction."
-          : "Order received. Our finance desk will contact you shortly.",
-      );
+      toast.success("Payment details received. We are verifying your transaction.");
     } catch {
       toast.error(`Could not submit. Please email ${SITE.email} with your transaction ID.`);
     } finally {
@@ -172,35 +131,15 @@ function CheckoutPage() {
         <div className="mx-auto max-w-2xl px-4 py-24 text-center">
           <CheckCircle2 className="mx-auto h-14 w-14 text-success" aria-hidden="true" />
           <h1 className="mt-5 font-display text-2xl font-bold uppercase text-charcoal">
-            {isCrypto(selected)
-              ? "Payment submitted — order pending confirmation"
-              : "Order received — our finance desk will contact you"}
+            Payment submitted — order pending confirmation
           </h1>
-          {isCrypto(selected) ? (
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Thank you. Our finance team is verifying your transaction on-chain. Once the required
-              network confirmations are reached you will receive an order confirmation and invoice by
-              email, followed by freight documents and a tracking number when your hardware ships.
-              For urgent questions call {SITE.phone} or email {SITE.email} and quote your
-              transaction ID.
-            </p>
-          ) : isBank(selected) ? (
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Thank you. Our finance team is reviewing your order and will reply by email with the
-              full bank account details — account name, account number, routing or SWIFT code and
-              your unique payment reference. Complete the transfer from your bank, send us the
-              transfer receipt, and we crate and ship once the funds clear. Questions? Call{" "}
-              {SITE.phone} or email {SITE.email}.
-            </p>
-          ) : (
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              Thank you. Our finance team is reviewing your order and will send you a{" "}
-              {selected?.name} payment request with the exact amount and the verified handle to pay.
-              Confirm the request, complete the payment, then reply with a screenshot of the
-              completed payment so we can release your order. Never pay a handle you receive from
-              anyone other than {SITE.email} or {SITE.phone}.
-            </p>
-          )}
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            Thank you. Our finance team is verifying your transaction on-chain. Once the required
+            network confirmations are reached you will receive an order confirmation and invoice by
+            email, followed by freight documents and a tracking number when your hardware ships.
+            For urgent questions call {SITE.phone} or email {SITE.email} and quote your
+            transaction ID.
+          </p>
           <Button className="mt-6" onClick={() => navigate({ to: "/products" })}>
             Continue shopping
           </Button>
@@ -356,10 +295,7 @@ function CheckoutPage() {
                         <button
                           key={m.id}
                           type="button"
-                          onClick={() => {
-                            setSelected(m);
-                            setProofUrl("");
-                          }}
+                          onClick={() => setSelected(m)}
                           className={`rounded-md border p-4 text-left ${
                             selected?.id === m.id
                               ? "border-primary bg-primary/5"
@@ -373,17 +309,13 @@ function CheckoutPage() {
                             <p className="text-xs text-muted-foreground">Network: {m.network}</p>
                           )}
                           <p className="mt-1 text-[11px] text-muted-foreground">
-                            {m.kind === "crypto"
-                              ? "On-chain payment · pay now, submit your TXID"
-                              : m.kind === "bank"
-                                ? "Reviewed by finance · we send account details"
-                                : "Reviewed by finance · we send a payment request"}
+                            On-chain payment · pay now, submit your TXID
                           </p>
                         </button>
                       ))}
                     </div>
 
-                    {selected && isCrypto(selected) && (
+                    {selected && (
                       <div className="mt-6 grid gap-6 rounded-md bg-secondary p-5 sm:grid-cols-[200px_1fr]">
                         {selected.qr_image_url ? (
                           <img
@@ -426,52 +358,6 @@ function CheckoutPage() {
                       </div>
                     )}
 
-                    {selected && !isCrypto(selected) && (
-                      <div className="mt-6 rounded-md bg-secondary p-5">
-                        <h3 className="text-sm font-semibold text-charcoal">
-                          Paying with {selected.name} — here is exactly what happens
-                        </h3>
-                        <ol className="mt-3 space-y-2 text-xs leading-relaxed text-muted-foreground">
-                          <li>
-                            <strong>Step 1:</strong> Continue and fill in your contact and delivery
-                            details, plus{" "}
-                            {isBank(selected)
-                              ? "a short message telling us how you want to transfer (ACH, domestic wire or international SWIFT)."
-                              : `the ${selected.name} handle you will pay from.`}
-                          </li>
-                          <li>
-                            <strong>Step 2:</strong> Our finance desk reviews your order and replies
-                            with{" "}
-                            {isBank(selected)
-                              ? "the full bank account details — account name, account number, routing/SWIFT code and a unique payment reference."
-                              : `a ${selected.name} payment request showing the exact amount and our verified handle.`}
-                          </li>
-                          <li>
-                            <strong>Step 3:</strong>{" "}
-                            {isBank(selected)
-                              ? "Complete the transfer from your bank and send us the transfer receipt."
-                              : "Confirm the request, complete the payment, then send us a screenshot of the completed payment (you can upload it on the next step or reply to our email)."}
-                          </li>
-                          <li>
-                            <strong>Step 4:</strong> We verify the funds, issue your invoice, then
-                            crate and ship your hardware with tracking.
-                          </li>
-                        </ol>
-                        {selected.handle && (
-                          <p className="mt-3 text-xs text-charcoal">
-                            Verified handle: <strong>{selected.handle}</strong>
-                          </p>
-                        )}
-                        <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                          {selected.instructions}
-                        </p>
-                        {selected.review_note && (
-                          <p className="mt-2 rounded-md border border-border bg-background p-3 text-[11px] leading-relaxed text-muted-foreground">
-                            {selected.review_note}
-                          </p>
-                        )}
-                      </div>
-                    )}
                   </>
                 )}
                 <div className="mt-6 flex gap-3">
@@ -484,7 +370,7 @@ function CheckoutPage() {
                       setStep(2);
                     }}
                   >
-                    {isCrypto(selected) ? "I have sent the payment" : "Continue"}
+                    I have sent the payment
                   </Button>
                 </div>
               </section>
@@ -492,7 +378,6 @@ function CheckoutPage() {
 
             {step === 2 && selected && (
               <form onSubmit={handleSubmit} className="space-y-6">
-                {isCrypto(selected) ? (
                 <section className="rounded-md border border-border bg-card p-6">
                   <h2 className="font-display text-lg uppercase tracking-wide text-charcoal">
                     Payment proof
@@ -532,90 +417,6 @@ function CheckoutPage() {
                     </p>
                   </div>
                 </section>
-                ) : (
-                  <section className="rounded-md border border-border bg-card p-6">
-                    <h2 className="font-display text-lg uppercase tracking-wide text-charcoal">
-                      {isBank(selected) ? "Bank transfer request" : `${selected.name} payment request`}
-                    </h2>
-                    <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                      {isBank(selected)
-                        ? "Tell us how you would like to transfer the funds. Our finance team reviews your order and replies with the full bank account details and a unique payment reference — we never publish account numbers on the website."
-                        : `Enter the ${selected.name} handle you will pay from. Our finance team reviews your order and sends you a payment request with the exact amount and our verified handle. After you pay, upload a screenshot of the completed payment below (or reply to our email with it) so we can release your order.`}
-                    </p>
-                    <div className="mt-4 grid gap-4 sm:grid-cols-2">
-                      {isBank(selected) ? (
-                        <div className="space-y-1.5 sm:col-span-2">
-                          <Label htmlFor="co-banknote">Your message to our finance team *</Label>
-                          <Textarea
-                            id="co-banknote"
-                            name="banknote"
-                            rows={4}
-                            required
-                            maxLength={1200}
-                            placeholder="e.g. I would like to pay by domestic wire from a US business account, and I need an invoice addressed to my company."
-                          />
-                        </div>
-                      ) : (
-                        <>
-                          <div className="space-y-1.5">
-                            <Label htmlFor="co-handle">
-                              Your {selected.name} handle / tag *
-                            </Label>
-                            <Input
-                              id="co-handle"
-                              name="handle"
-                              required
-                              maxLength={100}
-                              placeholder={selected.kind === "cashapp" ? "$yourcashtag" : "your Chime handle"}
-                            />
-                          </div>
-                          <div className="space-y-1.5">
-                            <Label>Payment screenshot (upload after you pay)</Label>
-                            {proofUrl ? (
-                              <div className="flex items-center gap-3">
-                                <img
-                                  src={proofUrl}
-                                  alt="Uploaded payment screenshot preview"
-                                  className="h-20 w-20 rounded-md border border-border object-contain p-1"
-                                />
-                                <button
-                                  type="button"
-                                  onClick={() => setProofUrl("")}
-                                  className="text-xs text-destructive"
-                                >
-                                  Remove
-                                </button>
-                              </div>
-                            ) : (
-                              <label className="flex h-20 cursor-pointer flex-col items-center justify-center gap-1 rounded-md border border-dashed border-border text-xs text-muted-foreground">
-                                {uploading ? (
-                                  <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
-                                ) : (
-                                  <>
-                                    <Upload className="h-4 w-4" aria-hidden="true" /> Upload screenshot
-                                  </>
-                                )}
-                                <input
-                                  type="file"
-                                  accept="image/*"
-                                  className="hidden"
-                                  aria-label="Upload payment screenshot"
-                                  onChange={(e) => {
-                                    const f = e.target.files?.[0];
-                                    if (f) handleProofUpload(f);
-                                  }}
-                                />
-                              </label>
-                            )}
-                            <p className="text-[11px] text-muted-foreground">
-                              Optional now — you can also send it by email once you have paid.
-                            </p>
-                          </div>
-                        </>
-                      )}
-                    </div>
-                  </section>
-                )}
 
                 <section className="rounded-md border border-border bg-card p-6">
                   <h2 className="font-display text-lg uppercase tracking-wide text-charcoal">
@@ -718,11 +519,7 @@ function CheckoutPage() {
                   </Button>
                   <Button type="submit" disabled={sending}>
                     {sending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                    {isCrypto(selected)
-                      ? "Submit payment & delivery details"
-                      : isBank(selected)
-                        ? "Request bank account details"
-                        : "Submit order & request payment"}
+                    Submit payment & delivery details
                   </Button>
                 </div>
               </form>
@@ -747,20 +544,11 @@ function CheckoutPage() {
                 <dd className="font-bold text-charcoal">{formatPrice(total)}</dd>
               </div>
             </dl>
-            {selected && isCrypto(selected) && (
+            {selected && (
               <p className="rounded-md bg-secondary p-3 text-xs text-muted-foreground">
                 Paying in <strong>{selected.symbol}</strong>
                 {selected.network ? ` on ${selected.network}` : ""} · released after{" "}
                 {selected.confirmations} confirmation(s).
-              </p>
-            )}
-            {selected && !isCrypto(selected) && (
-              <p className="rounded-md bg-secondary p-3 text-xs text-muted-foreground">
-                Paying with <strong>{selected.name}</strong> ·{" "}
-                {isBank(selected)
-                  ? "account details sent after review"
-                  : "payment request sent after review"}
-                .
               </p>
             )}
             <p className="text-[11px] leading-relaxed text-muted-foreground">
