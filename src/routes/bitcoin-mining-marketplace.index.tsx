@@ -7,7 +7,7 @@ import { indexVariantMeta, parseIndexSearch, type IndexSearch } from "@/lib/sear
 const BASE = {
   title: "Bitcoin Mining Marketplace | Buy ASIC Miners Near You",
   description:
-    "Buy ASIC miners, the Bitmain Antminer S23 and Antminer Z15 Pro in 1,000+ cities and states across the USA, Canada, UK, Europe and Australia — shipped worldwide from Hong Kong.",
+    "Buy ASIC miners, the Bitmain Antminer S23 and Antminer Z15 Pro in 1,000+ cities across the USA, Canada, UK, Europe and Australia — shipped from Hong Kong.",
 };
 
 export const Route = createFileRoute("/bitcoin-mining-marketplace/")({

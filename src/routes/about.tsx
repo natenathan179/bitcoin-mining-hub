@@ -10,7 +10,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Bitcoin Mining Depot is headquartered in Causeway Bay, Hong Kong, supplying genuine ASIC miners to 10,000+ customers in the USA, Canada, Europe and 100+ countries.",
+          "Bitcoin Mining Depot is headquartered in Causeway Bay, Hong Kong, supplying genuine ASIC miners to 10,000+ customers across 100+ countries.",
       },
       { property: "og:title", content: "About Bitcoin Mining Depot" },
       {

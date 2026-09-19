@@ -68,7 +68,7 @@ export const Route = createFileRoute("/faq")({
       {
         name: "description",
         content:
-          "Answers to common questions about buying ASIC bitcoin miners: ordering, payment methods, worldwide shipping, warranty terms, returns, hosting and electrical requirements.",
+          "Answers to common questions about buying ASIC bitcoin miners: ordering, payment methods, worldwide shipping, warranty, returns and hosting.",
       },
       { property: "og:title", content: "Bitcoin Mining Depot FAQ" },
       {

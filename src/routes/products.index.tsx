@@ -61,7 +61,7 @@ export const Route = createFileRoute("/products/")({
       ? seoDescription(
           `${base ? `In-stock ${base} mining hardware` : "In-stock ASIC mining hardware"}${pageSuffix ? `, page ${loaderData?.page}` : ""} with tested hashrate, written warranty and worldwide shipping from our Hong Kong warehouse.`,
         )
-      : "Browse in-stock ASIC bitcoin miners, power supplies, immersion cooling and spare parts. Filter by brand, condition, hashrate and price with wholesale pricing available.";
+      : "Browse in-stock ASIC bitcoin miners, power supplies, immersion cooling and spare parts. Filter by brand, condition and price — wholesale pricing available.";
     return {
       meta: [
         { title },

@@ -13,7 +13,7 @@ export const Route = createFileRoute("/knowledge-center")({
       {
         name: "description",
         content:
-          "In-depth bitcoin mining guides: choosing profitable ASIC miners, building a mining farm, electrical planning, immersion cooling and ASIC maintenance best practice.",
+          "In-depth bitcoin mining guides: choosing profitable ASIC miners, building a mining farm, electrical planning and ASIC maintenance best practice.",
       },
       { property: "og:title", content: "Bitcoin Mining Knowledge Center" },
       {
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/knowledge-center")({
             url: "https://bitcoinminingdepot.net/knowledge-center",
             name: "Bitcoin Mining Knowledge Center | Guides & Profitability",
             description:
-              "In-depth bitcoin mining guides: choosing profitable ASIC miners, building a mining farm, electrical planning, immersion cooling and ASIC maintenance best practice.",
+              "In-depth bitcoin mining guides: choosing profitable ASIC miners, building a mining farm, electrical planning and ASIC maintenance best practice.",
             inLanguage: "en",
             isPartOf: { "@type": "WebSite", name: SITE.name, url: SITE.url },
             primaryImageOfPage: { "@type": "ImageObject", url: SITE.ogImage },

@@ -18,7 +18,7 @@ const SLUG_B = "bitmain-antminer-s19-xp-plus-hydro";
 const TITLE =
   "Antminer S21 XP Hyd vs S19 XP+ Hydro: Hashrate, Efficiency & Profitability Compared";
 const DESCRIPTION =
-  "Side-by-side comparison of the Bitmain Antminer S21 XP Hyd (473 TH/s, 12 J/TH) and S19 XP+ Hydro (558 TH/s, 19 J/TH) — hashrate, efficiency, power draw, price and estimated daily profit.";
+  "Side-by-side comparison of the Bitmain Antminer S21 XP Hyd (473 TH/s, 12 J/TH) and S19 XP+ Hydro (558 TH/s, 19 J/TH) — hashrate, efficiency and daily profit.";
 
 export const Route = createFileRoute("/compare/antminer-s21-xp-hyd-vs-s19-xp-plus-hydro")({
   loader: async ({ context }) => {

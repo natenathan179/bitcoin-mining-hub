@@ -60,7 +60,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Hong Kong-based supplier of genuine ASIC miners — Bitmain Antminer, WhatsMiner and Avalon. Wholesale pricing, hosting and fast worldwide delivery to the USA, Canada, Europe and 100+ countries.",
+          "Hong Kong-based supplier of genuine ASIC miners — Bitmain Antminer, WhatsMiner and Avalon. Wholesale pricing, hosting and worldwide delivery.",
       },
       { property: "og:title", content: "Bitcoin Mining Depot | ASIC Miners for Every Scale" },
       {
