@@ -4,6 +4,7 @@ import { MapPin, Clock, Phone, Mail, Navigation } from "lucide-react";
 import type { Product } from "@/lib/data";
 import { BUSINESS, localBusinessSchema, localListingsForProduct, servedAreaNames } from "@/lib/local-seo";
 import { SITE } from "@/lib/site";
+import { ObfuscatedEmail } from "./ObfuscatedEmail";
 
 /**
  * Local search block for product pages: city and state listings the model ships
@@ -116,9 +117,7 @@ export function ProductLocalAvailability({ product }: { product: Product }) {
                 <div>
                   <dt className="font-semibold text-charcoal">Sales desk</dt>
                   <dd>
-                    <a href={`mailto:${SITE.email}`} className="text-primary hover:underline">
-                      {SITE.email}
-                    </a>
+                    <ObfuscatedEmail className="text-primary hover:underline" />
                   </dd>
                 </div>
               </div>

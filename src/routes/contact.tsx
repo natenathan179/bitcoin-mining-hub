@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 import { SiteLayout, PageHero } from "@/components/site/SiteLayout";
 import { LeadForm } from "@/components/site/LeadForm";
+import { ObfuscatedEmail } from "@/components/site/ObfuscatedEmail";
 import { SITE } from "@/lib/site";
 import { SeoCopy } from "@/components/site/SeoCopy";
 import { PAGE_COPY } from "@/lib/page-copy";
@@ -61,12 +62,30 @@ function ContactPage() {
         </div>
 
         <aside className="space-y-4">
+          <div className="rounded-md border border-border bg-card p-5">
+            <div className="flex items-center gap-2 text-primary">
+              <Phone className="h-4 w-4" aria-hidden="true" />
+              <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-charcoal">Phone</h3>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              <a href={`tel:${SITE.phone.replace(/[^+\d]/g, "")}`} className="hover:text-primary">
+                {SITE.phone}
+              </a>
+            </p>
+          </div>
+          <div className="rounded-md border border-border bg-card p-5">
+            <div className="flex items-center gap-2 text-primary">
+              <Mail className="h-4 w-4" aria-hidden="true" />
+              <h3 className="font-display text-sm font-semibold uppercase tracking-wide text-charcoal">Email</h3>
+            </div>
+            <p className="mt-2 text-sm text-muted-foreground">
+              <ObfuscatedEmail className="hover:text-primary" />
+            </p>
+          </div>
           {[
-            { icon: Phone, title: "Phone", value: SITE.phone, href: `tel:${SITE.phone.replace(/[^+\d]/g, "")}` },
-            { icon: Mail, title: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
             { icon: MapPin, title: "Address", value: SITE.address },
             { icon: Clock, title: "Hours", value: "Sales & technical support, 24 hours a day, 7 days a week" },
-          ].map(({ icon: Icon, title, value, href }) => (
+          ].map(({ icon: Icon, title, value }) => (
             <div key={title} className="rounded-md border border-border bg-card p-5">
               <div className="flex items-center gap-2 text-primary">
                 <Icon className="h-4 w-4" aria-hidden="true" />
@@ -74,15 +93,7 @@ function ContactPage() {
                   {title}
                 </h3>
               </div>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {href ? (
-                  <a href={href} className="hover:text-primary">
-                    {value}
-                  </a>
-                ) : (
-                  value
-                )}
-              </p>
+              <p className="mt-2 text-sm text-muted-foreground">{value}</p>
             </div>
           ))}
           <div className="rounded-md border border-primary/30 bg-secondary p-5">

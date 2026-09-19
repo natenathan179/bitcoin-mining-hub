@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Facebook, MessageCircle, Mail, MapPin } from "lucide-react";
 
 import { Logo } from "./Logo";
+import { ObfuscatedEmail } from "./ObfuscatedEmail";
 import { SITE, openWhatsApp } from "@/lib/site";
 import { COLLECTIONS } from "@/lib/collections";
 import { Button } from "@/components/ui/button";
@@ -114,13 +115,9 @@ export function SiteFooter() {
             >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
             </Button>
-            <a
-              href={`mailto:${SITE.email}`}
-              aria-label="Email Bitcoin Mining Depot sales"
-              className="hover:text-ice"
-            >
+            <ObfuscatedEmail aria-label="Email Bitcoin Mining Depot sales" className="hover:text-ice">
               <Mail className="h-4 w-4" aria-hidden="true" />
-            </a>
+            </ObfuscatedEmail>
           </div>
         </div>
 
@@ -165,10 +162,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-2 text-xs text-charcoal-foreground/70">
             <li>WhatsApp: {SITE.phone}</li>
             <li>
-              Email:{" "}
-              <a href={`mailto:${SITE.email}`} className="hover:text-ice">
-                {SITE.email}
-              </a>
+              Email: <ObfuscatedEmail className="hover:text-ice" />
             </li>
             <li>Mon – Sun: 24/7 Support (HKT / GMT+8)</li>
             <li className="font-semibold text-charcoal-foreground/90">Head Office — Hong Kong</li>

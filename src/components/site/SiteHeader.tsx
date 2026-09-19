@@ -3,6 +3,7 @@ import { Link, useNavigate } from "@tanstack/react-router";
 import { Search, ShoppingCart, User, Menu, X, ChevronDown, Phone, Facebook } from "lucide-react";
 
 import { Logo } from "./Logo";
+import { ObfuscatedEmail } from "./ObfuscatedEmail";
 import { useCart } from "@/lib/cart";
 import { SITE } from "@/lib/site";
 
@@ -43,9 +44,7 @@ export function SiteHeader() {
             <span className="hidden items-center gap-1 sm:flex">
               USD <ChevronDown className="h-3 w-3" aria-hidden="true" />
             </span>
-            <a href={`mailto:${SITE.email}`} className="hidden hover:text-ice sm:inline">
-              {SITE.email}
-            </a>
+            <ObfuscatedEmail className="hidden hover:text-ice sm:inline" />
             <span className="flex items-center gap-1">
               <Phone className="h-3 w-3" aria-hidden="true" /> {SITE.phone}
             </span>

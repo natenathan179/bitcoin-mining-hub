@@ -1,8 +1,10 @@
+import type { ReactNode } from "react";
+
 import { SiteLayout, PageHero } from "./SiteLayout";
 
 export interface PolicySection {
   heading: string;
-  paras: string[];
+  paras: ReactNode[];
   list?: string[];
 }
 

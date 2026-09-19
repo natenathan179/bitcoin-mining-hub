@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { SeoCopy } from "@/components/site/SeoCopy";
+import { ObfuscatedEmail } from "@/components/site/ObfuscatedEmail";
 import { PAGE_COPY } from "@/lib/page-copy";
 import { Suspense, useState } from "react";
 import { toast } from "sonner";
@@ -572,7 +573,7 @@ function Index() {
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 Every international order ships with a tracking number, commercial invoice and full
                 customs paperwork. Our team supports you in English 24/7 across all time zones —
-                 WhatsApp {SITE.phone}, or email {SITE.email}.
+                 WhatsApp {SITE.phone}, or email <ObfuscatedEmail />.
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <Link

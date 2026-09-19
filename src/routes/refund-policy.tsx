@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { PolicyPage } from "@/components/site/PolicyPage";
+import { ObfuscatedEmail } from "@/components/site/ObfuscatedEmail";
 import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/refund-policy")({
@@ -90,7 +91,12 @@ export const Route = createFileRoute("/refund-policy")({
         {
           heading: "Disputes and how to request a refund",
           paras: [
-            `To request a refund, email ${SITE.email} with your invoice number, the transaction ID or payment reference, photographs where relevant, and a short description of the issue. We reply within one business day and confirm in writing whether the refund is approved, what will be deducted, and the expected payout date.`,
+            <>
+              To request a refund, email <ObfuscatedEmail /> with your invoice number, the transaction ID or payment
+              reference, photographs where relevant, and a short description of the issue. We reply within one
+              business day and confirm in writing whether the refund is approved, what will be deducted, and the
+              expected payout date.
+            </>,
             `If you disagree with an outcome, reply asking for escalation and a senior member of the team will review the file. We would far rather resolve a problem directly than see you open a payment dispute. Our head office is ${SITE.address}, and this policy is governed by the laws of Hong Kong.`,
           ],
         },

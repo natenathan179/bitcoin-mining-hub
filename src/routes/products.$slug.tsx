@@ -9,6 +9,7 @@ import { ProductCard } from "@/components/site/ProductCard";
 import { ProductInternalLinks } from "@/components/site/ProductInternalLinks";
 import { ProductLocalAvailability } from "@/components/site/ProductLocalAvailability";
 import { InquiryModal } from "@/components/site/InquiryModal";
+import { ObfuscatedEmail } from "@/components/site/ObfuscatedEmail";
 import { productQuery, productsQuery, reviewsQuery } from "@/lib/data";
 import { formatPrice, SITE, seoDescription, seoPageTitle, seoTitle } from "@/lib/site";
 import { optimizeImageUrl } from "@/lib/image";
@@ -657,10 +658,7 @@ function ProductDetail() {
 
           <p className="mt-6 text-xs text-muted-foreground">
             Questions about this model? Call {SITE.phone} or email{" "}
-            <a href={`mailto:${SITE.email}`} className="text-primary">
-              {SITE.email}
-            </a>
-            .
+            <ObfuscatedEmail className="text-primary" />.
           </p>
         </div>
       </div>

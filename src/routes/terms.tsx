@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { PolicyPage } from "@/components/site/PolicyPage";
+import { ObfuscatedEmail } from "@/components/site/ObfuscatedEmail";
 import { SITE } from "@/lib/site";
 
 export const Route = createFileRoute("/terms")({
@@ -64,7 +65,9 @@ export const Route = createFileRoute("/terms")({
         {
           heading: "Contact",
           paras: [
-            `Questions about these terms can be sent to ${SITE.email} or posted to ${SITE.address}.`,
+            <>
+              Questions about these terms can be sent to <ObfuscatedEmail /> or posted to {SITE.address}.
+            </>,
           ],
         },
       ]}

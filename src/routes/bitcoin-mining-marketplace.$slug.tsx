@@ -3,6 +3,7 @@ import { useSuspenseQuery } from "@tanstack/react-query";
 
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
+import { ObfuscatedEmail } from "@/components/site/ObfuscatedEmail";
 import type { Family } from "@/lib/marketplace-page";
 import { getMarketplacePageFn } from "@/lib/marketplace.functions";
 import { retryRead } from "@/lib/retry";
@@ -287,12 +288,7 @@ function MarketplaceLocationPage() {
               <li>Crypto payment, verified on-chain</li>
               <li>Written warranty and in-house repair support</li>
             </ul>
-            <a
-              href={`mailto:${SITE.email}`}
-              className="mt-4 inline-block text-xs font-semibold uppercase tracking-wide text-primary hover:underline"
-            >
-              {SITE.email}
-            </a>
+            <ObfuscatedEmail className="mt-4 inline-block text-xs font-semibold uppercase tracking-wide text-primary hover:underline" />
           </div>
         </aside>
       </div>

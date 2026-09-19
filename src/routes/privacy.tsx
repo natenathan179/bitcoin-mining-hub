@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { PolicyPage } from "@/components/site/PolicyPage";
+import { ObfuscatedEmail } from "@/components/site/ObfuscatedEmail";
 import { SITE } from "@/lib/site";
 import { PAGE_COPY } from "@/lib/page-copy";
 
@@ -64,7 +65,9 @@ export const Route = createFileRoute("/privacy")({
           heading: "Your rights and contact",
           paras: [
             `You can request a copy of the information we hold about you, ask for corrections, or ask us to delete it where we are not legally required to keep it. Newsletter emails can be unsubscribed at any time using the link in the message.`,
-            `For any privacy question, contact ${SITE.email} or write to ${SITE.address}.`,
+            <>
+              For any privacy question, contact <ObfuscatedEmail /> or write to {SITE.address}.
+            </>,
           ],
         },
         ...PAGE_COPY.privacy.blocks.map((b) => ({ heading: b.heading, paras: b.paras })),
