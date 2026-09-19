@@ -132,6 +132,41 @@ function retiredBlogPostRedirect(request: Request): Response | undefined {
   });
 }
 
+/**
+ * Edge caching via Cloudflare's Cache API.
+ *
+ * Cache-Control headers with `s-maxage` were already being set on every SSR page
+ * (see withSecurityHeaders below) with the intent of edge caching them, but that
+ * header alone does nothing here: unlike Cloudflare Pages' static asset serving,
+ * a Worker's `fetch` response is never automatically written to Cloudflare's edge
+ * cache. Every single page view was silently re-running full SSR (and its Supabase
+ * queries) even though the response was identical for the next hour. This makes
+ * that caching real by explicitly reading from and writing to `caches.default`.
+ *
+ * Safe because nothing server-rendered here is personalized: there are no cookies
+ * or server-side sessions anywhere in this app (admin auth is `ssr: false` and
+ * client-only; cart/checkout read from `localStorage` after hydration, never from
+ * the server) — so the same URL always renders the same HTML for every visitor.
+ */
+const CACHE_API_UNAVAILABLE = typeof caches === "undefined" || !("default" in caches);
+
+function edgeCache(): Cache | undefined {
+  if (CACHE_API_UNAVAILABLE) return undefined;
+  return (caches as unknown as { default: Cache }).default;
+}
+
+/** API routes may have side effects or auth-dependent bodies — never edge-cache them, except the deterministic image proxy. */
+function isEdgeCacheEligiblePath(pathname: string): boolean {
+  return !pathname.startsWith("/api/") || pathname === "/api/public/img";
+}
+
+function isEdgeCacheableResponse(response: Response): boolean {
+  if (response.status !== 200) return false;
+  if (response.headers.has("set-cookie")) return false;
+  const cacheControl = response.headers.get("cache-control") ?? "";
+  return /s-maxage=\d+/.test(cacheControl) && !/no-store|private/.test(cacheControl);
+}
+
 function withSecurityHeaders(response: Response, request: Request): Response {
   const url = new URL(request.url);
   if (isLocal(url.hostname)) return response;
@@ -162,12 +197,30 @@ function withSecurityHeaders(response: Response, request: Request): Response {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
-      const redirect = canonicalRedirect(request) ?? retiredBlogPostRedirect(request);
-      if (redirect) return withSecurityHeaders(redirect, request);
+      const url = new URL(request.url);
+      const cacheEligible =
+        request.method === "GET" && !isLocal(url.hostname) && isEdgeCacheEligiblePath(url.pathname);
+      const cache = cacheEligible ? edgeCache() : undefined;
+      if (cache) {
+        const cached = await cache.match(request);
+        if (cached) return cached;
+      }
 
-      const handler = await getServerEntry();
-      const response = await handler.fetch(request, env, ctx);
-      return withSecurityHeaders(await normalizeCatastrophicSsrResponse(response), request);
+      const redirect = canonicalRedirect(request) ?? retiredBlogPostRedirect(request);
+      const response = redirect
+        ? withSecurityHeaders(redirect, request)
+        : withSecurityHeaders(
+            await normalizeCatastrophicSsrResponse(await (await getServerEntry()).fetch(request, env, ctx)),
+            request,
+          );
+
+      if (cache && isEdgeCacheableResponse(response)) {
+        const executionCtx = ctx as { waitUntil?: (p: Promise<unknown>) => void } | undefined;
+        const put = cache.put(request, response.clone());
+        if (executionCtx?.waitUntil) executionCtx.waitUntil(put);
+        else await put;
+      }
+      return response;
     } catch (error) {
       console.error(error);
       return new Response(renderErrorPage(), {
