@@ -1,0 +1,37 @@
+# Bitcoin Mining Depot
+
+> Hong Kong-based supplier of new, used and refurbished ASIC bitcoin mining hardware (Antminer, WhatsMiner, Avalon), shipped worldwide with bench-tested units, wholesale pricing, hosting and repair services.
+
+Bitcoin Mining Depot sells and ships SHA-256 and Equihash ASIC miners direct from a Causeway Bay, Hong Kong warehouse to the USA, Canada, Europe, the UK, Australia and 100+ other countries. Every unit is bench-tested and hashrate-verified before dispatch. Payment is by major cryptocurrency; orders ship within 24–72 hours of cleared payment with full customs documentation.
+
+## Shop
+
+- [All products](https://bitcoinminingdepot.net/products): Full catalog of new, used and refurbished ASIC miners with live price and stock status.
+- [ASIC miners](https://bitcoinminingdepot.net/collections/asic-miners): SHA-256 bitcoin mining hardware collection.
+- [Used & refurbished miners](https://bitcoinminingdepot.net/collections/used-refurbished-asic-miners): Bench-tested secondary-market units.
+- [Immersion cooling miners](https://bitcoinminingdepot.net/collections/immersion-cooling-miners): Immersion-cooled ASIC models.
+- [Hosting solutions](https://bitcoinminingdepot.net/collections/hosting-solutions): Machines available with managed hosting.
+- [Wholesale](https://bitcoinminingdepot.net/wholesale): Volume/pallet pricing for multi-unit orders.
+- [Bitcoin mining marketplace](https://bitcoinminingdepot.net/bitcoin-mining-marketplace): Local buying, pricing and shipping guides by city and country.
+
+## Services
+
+- [Hosting](https://bitcoinminingdepot.net/hosting): Managed hosting for customer-owned miners.
+- [Repair services](https://bitcoinminingdepot.net/repair-services): Hashboard, PSU and controller repair.
+- [Warranty](https://bitcoinminingdepot.net/warranty): Warranty terms and DOA protection.
+- [Shipping & returns](https://bitcoinminingdepot.net/shipping-returns): Freight lanes, customs and returns policy.
+
+## Learn
+
+- [Knowledge center](https://bitcoinminingdepot.net/knowledge-center): Blog index — buying guides, hardware rankings, brand reviews, profitability and setup articles.
+- [FAQ](https://bitcoinminingdepot.net/faq): Common questions about ordering, shipping and hardware.
+- [Reviews](https://bitcoinminingdepot.net/reviews): Customer reviews.
+
+## Company
+
+- [About](https://bitcoinminingdepot.net/about): Company background and Hong Kong facility.
+- [Contact](https://bitcoinminingdepot.net/contact): Sales desk contact details.
+
+## Full content index
+
+- [Sitemap index](https://bitcoinminingdepot.net/sitemap.xml): Complete, always-current list of every product, blog post and marketplace location page.

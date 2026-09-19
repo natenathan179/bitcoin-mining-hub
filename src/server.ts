@@ -163,7 +163,7 @@ export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
       const redirect = canonicalRedirect(request) ?? retiredBlogPostRedirect(request);
-      if (redirect) return redirect;
+      if (redirect) return withSecurityHeaders(redirect, request);
 
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);

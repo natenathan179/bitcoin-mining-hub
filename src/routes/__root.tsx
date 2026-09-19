@@ -123,11 +123,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             { rel: "dns-prefetch", href: import.meta.env.VITE_SUPABASE_URL as string },
           ]
         : []),
-      // Some product photos are proxied through wsrv.nl for resizing/WebP conversion
-      // (see src/lib/image.ts) — warm this connection too since it's on the critical
-      // path for product images on nearly every page.
-      { rel: "preconnect", href: "https://wsrv.nl", crossOrigin: "anonymous" as const },
-      { rel: "dns-prefetch", href: "https://wsrv.nl" },
       {
         rel: "stylesheet",
         href: appCss,

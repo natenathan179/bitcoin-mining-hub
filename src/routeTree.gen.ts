@@ -43,6 +43,7 @@ import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/
 import { Route as AuthenticatedAdminIndexRouteImport } from './routes/_authenticated/admin.index'
 import { Route as ApiPublicMerchantFeedRouteImport } from './routes/api/public/merchant-feed'
 import { Route as ApiPublicIndexnowRouteImport } from './routes/api/public/indexnow'
+import { Route as ApiPublicImgRouteImport } from './routes/api/public/img'
 import { Route as AuthenticatedAdminReviewsRouteImport } from './routes/_authenticated/admin.reviews'
 import { Route as AuthenticatedAdminPaymentsRouteImport } from './routes/_authenticated/admin.payments'
 import { Route as AuthenticatedAdminIndexingRouteImport } from './routes/_authenticated/admin.indexing'
@@ -221,6 +222,11 @@ const ApiPublicIndexnowRoute = ApiPublicIndexnowRouteImport.update({
   path: '/api/public/indexnow',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicImgRoute = ApiPublicImgRouteImport.update({
+  id: '/api/public/img',
+  path: '/api/public/img',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AuthenticatedAdminReviewsRoute =
   AuthenticatedAdminReviewsRouteImport.update({
     id: '/reviews',
@@ -287,6 +293,7 @@ export interface FileRoutesByFullPath {
   '/admin/indexing': typeof AuthenticatedAdminIndexingRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/admin/reviews': typeof AuthenticatedAdminReviewsRoute
+  '/api/public/img': typeof ApiPublicImgRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
   '/api/public/merchant-feed': typeof ApiPublicMerchantFeedRoute
   '/admin/': typeof AuthenticatedAdminIndexRoute
@@ -326,6 +333,7 @@ export interface FileRoutesByTo {
   '/admin/indexing': typeof AuthenticatedAdminIndexingRoute
   '/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/admin/reviews': typeof AuthenticatedAdminReviewsRoute
+  '/api/public/img': typeof ApiPublicImgRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
   '/api/public/merchant-feed': typeof ApiPublicMerchantFeedRoute
   '/admin': typeof AuthenticatedAdminIndexRoute
@@ -368,6 +376,7 @@ export interface FileRoutesById {
   '/_authenticated/admin/indexing': typeof AuthenticatedAdminIndexingRoute
   '/_authenticated/admin/payments': typeof AuthenticatedAdminPaymentsRoute
   '/_authenticated/admin/reviews': typeof AuthenticatedAdminReviewsRoute
+  '/api/public/img': typeof ApiPublicImgRoute
   '/api/public/indexnow': typeof ApiPublicIndexnowRoute
   '/api/public/merchant-feed': typeof ApiPublicMerchantFeedRoute
   '/_authenticated/admin/': typeof AuthenticatedAdminIndexRoute
@@ -410,6 +419,7 @@ export interface FileRouteTypes {
     | '/admin/indexing'
     | '/admin/payments'
     | '/admin/reviews'
+    | '/api/public/img'
     | '/api/public/indexnow'
     | '/api/public/merchant-feed'
     | '/admin/'
@@ -449,6 +459,7 @@ export interface FileRouteTypes {
     | '/admin/indexing'
     | '/admin/payments'
     | '/admin/reviews'
+    | '/api/public/img'
     | '/api/public/indexnow'
     | '/api/public/merchant-feed'
     | '/admin'
@@ -490,6 +501,7 @@ export interface FileRouteTypes {
     | '/_authenticated/admin/indexing'
     | '/_authenticated/admin/payments'
     | '/_authenticated/admin/reviews'
+    | '/api/public/img'
     | '/api/public/indexnow'
     | '/api/public/merchant-feed'
     | '/_authenticated/admin/'
@@ -527,6 +539,7 @@ export interface RootRouteChildren {
   BitcoinMiningMarketplaceIndexRoute: typeof BitcoinMiningMarketplaceIndexRoute
   BlogIndexRoute: typeof BlogIndexRoute
   ProductsIndexRoute: typeof ProductsIndexRoute
+  ApiPublicImgRoute: typeof ApiPublicImgRoute
   ApiPublicIndexnowRoute: typeof ApiPublicIndexnowRoute
   ApiPublicMerchantFeedRoute: typeof ApiPublicMerchantFeedRoute
 }
@@ -771,6 +784,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicIndexnowRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/img': {
+      id: '/api/public/img'
+      path: '/api/public/img'
+      fullPath: '/api/public/img'
+      preLoaderRoute: typeof ApiPublicImgRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/_authenticated/admin/reviews': {
       id: '/_authenticated/admin/reviews'
       path: '/reviews'
@@ -873,6 +893,7 @@ const rootRouteChildren: RootRouteChildren = {
   BitcoinMiningMarketplaceIndexRoute: BitcoinMiningMarketplaceIndexRoute,
   BlogIndexRoute: BlogIndexRoute,
   ProductsIndexRoute: ProductsIndexRoute,
+  ApiPublicImgRoute: ApiPublicImgRoute,
   ApiPublicIndexnowRoute: ApiPublicIndexnowRoute,
   ApiPublicMerchantFeedRoute: ApiPublicMerchantFeedRoute,
 }
