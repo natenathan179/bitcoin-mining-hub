@@ -203,7 +203,11 @@ export default {
       const cache = cacheEligible ? edgeCache() : undefined;
       if (cache) {
         const cached = await cache.match(request);
-        if (cached) return cached;
+        if (cached) {
+          const headers = new Headers(cached.headers);
+          headers.set("x-edge-cache", "HIT");
+          return new Response(cached.body, { status: cached.status, statusText: cached.statusText, headers });
+        }
       }
 
       const redirect = canonicalRedirect(request) ?? retiredBlogPostRedirect(request);
@@ -214,13 +218,17 @@ export default {
             request,
           );
 
-      if (cache && isEdgeCacheableResponse(response)) {
+      const cacheableResponse = cache && isEdgeCacheableResponse(response);
+      if (cacheableResponse) {
         const executionCtx = ctx as { waitUntil?: (p: Promise<unknown>) => void } | undefined;
         const put = cache.put(request, response.clone());
         if (executionCtx?.waitUntil) executionCtx.waitUntil(put);
         else await put;
       }
-      return response;
+
+      const headers = new Headers(response.headers);
+      headers.set("x-edge-cache", cacheableResponse ? "MISS" : "BYPASS");
+      return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
     } catch (error) {
       console.error(error);
       return new Response(renderErrorPage(), {
